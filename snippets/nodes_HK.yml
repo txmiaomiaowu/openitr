@@ -1,16 +1,129 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11|香港特别行政区 15
+  name: 5|香港 001
+  network: ws
+  port: 44036
+  server: 202.81.232.199
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5d32ed13-095b-42b5-bf0a-5dff3db3348d
+  ws-opts:
+    headers:
+      Host: dj.changding.tech
+    path: /vm-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 5|香港 002
+  network: ws
+  port: 80
+  server: hkcn2.s2fjeyeeyafe.bond
+  servername: www.microsoft.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
+  ws-opts:
+    headers:
+      Host: hkcn2.s2fjeyeeyafe.bond
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 5|香港 003
+  network: ws
+  port: 443
+  server: 199.15.76.35
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 752384e2-92eb-4a18-bad9-17c0f64fa888
+  ws-opts:
+    headers:
+      Host: shs.changding.tech
+    path: /vm-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 5|香港 004
+  network: ws
+  port: 30809
+  server: 202.81.228.133
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  ws-opts:
+    headers:
+      host: hk-300.changding.tech
+    path: /changding-tls0?ed=2048
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 5|香港 005
+  network: ws
+  port: 443
+  server: 92.223.76.25
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 75a6bbc8-458a-4f31-827e-029d89718352
+  ws-opts:
+    headers:
+      Host: forwardv2ray.zapto.org
+    path: /forwardv2raytelegramchannel1forwardv2raytelegramchannel4
+- alterId: 0
+  cipher: auto
+  name: 5|香港 006
+  network: ws
+  port: 52369
+  server: 103.20.222.133
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 5|香港 007
+  network: ws
+  port: 1111
+  server: 156.251.226.106
+  skip-cert-verify: true
+  type: vmess
+  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls0?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 5|香港 008
+  network: ws
+  port: 50009
+  server: 103.225.199.146
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 12,18,29|🇲🇾 马来|频道 t.me/SSRSUB
   network: tcp
-  port: 45343
+  port: '45343'
   server: 154.90.39.63
+  servername: ''
   tls: false
   type: vmess
   uuid: 08aa8499-d616-4ff1-d6ab-ce0c522824aa
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
+  name: 14,25|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
   network: tcp
   port: '26389'
   server: 34.92.50.99
@@ -18,8 +131,82 @@ proxies:
   tls: false
   type: vmess
   uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+- cipher: rc4-md5
+  name: 16|🇭🇰 adi|0703v - dg-hk-node01
+  obfs: http_post
+  obfs-param: ajax.microsoft.com
+  password: abK09D1FnV
+  port: 10210
+  protocol: auth_aes128_md5
+  protocol-param: 176327:l8AeWKocJF
+  server: dg-hk-node01.linkthink.app
+  type: ssr
+- cipher: aes-256-cfb
+  name: 16|🇭🇰 adi|0703v - dg-hk-node02
+  obfs: http_post
+  obfs-param: ajax.microsoft.com
+  password: e5opjuLDEQ
+  port: 12025
+  protocol: auth_aes128_md5
+  protocol-param: 176327:l8AeWKocJF
+  server: dg-hk-node02.linkthink.app
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 19|Relay_-🇭🇰HK_22
+  network: ws
+  port: 2052
+  server: scadn.yydsii.com
+  tls: false
+  type: vmess
+  uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|🇭🇰HK_89 |29.57Mb
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: ''
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: '19,25,36|美国【付费推荐：https://jdyvip.link/】5... #1'
+  network: ws
+  port: '2052'
+  server: 104.18.140.242
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5
+  ws-opts:
+    headers:
+      Host: hkyx.651568.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|HK
+  network: ws
+  port: '443'
+  server: gur.gov.ua
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 39b180da-910e-4f4e-a2d7-c76f37f746f4
+  ws-opts:
+    headers:
+      Host: ss.sxmzkfyy.com
+    path: /8uEzB6n2/
 - cipher: aes-128-gcm
-  name: 15|🇭🇰 香港KT|@ripaojiedian
+  name: 27|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -33,7 +220,7 @@ proxies:
   server: 1.65.139.54
   type: ss
 - cipher: aes-128-gcm
-  name: 15|🇭🇰 香港KT2|@ripaojiedian
+  name: 27|🇭🇰 香港KT2|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: obfs
   plugin-opts:
@@ -42,38 +229,151 @@ proxies:
   port: 80
   server: 8.217.217.138
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  port: 46602
-  server: 112.28.208.10
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: 15|🇭🇰 香港2|@ripaojiedian
+  name: 27|🇭🇰 香港2|@ripaojiedian
   password: 73637cec-699d-4d87-99af-0776ac880604
   port: 20001
   server: service.ouluyun9803.com
   type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 16|香港1|@ripaojiedian
-  network: tcp
-  port: '45055'
-  server: 112.28.208.10
+  name: 29|🇭🇰 azhk|频道 t.me/SSRSUB
+  network: ws
+  port: '48156'
+  server: 20.189.73.85
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  uuid: cbb6f155-9492-4056-9e32-b66cc2a8740e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
   cipher: auto
-  name: 16|香港3|@ripaojiedian
+  name: 29|🇭🇰 hk@SSRSUB
   network: tcp
-  port: '46602'
-  server: 112.28.208.10
+  port: '59638'
+  server: 91.149.236.70
   servername: ''
   tls: false
   type: vmess
+  uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 0
+  cipher: auto
+  name: 29|🇭🇰 香港ARM|频道 t.me/SSRSUB
+  network: tcp
+  port: '16399'
+  server: 115.126.50.111
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0a824660-8b17-4665-d2b4-a86c7f15d32a
+- alterId: 0
+  cipher: auto
+  name: 31|github.com/freefq - 香港ADCDATA数...
+  network: tcp
+  port: '8443'
+  server: 194.156.98.167
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 8cb670df-17e8-4dab-bfd9-15c79d519bdd
+- alterId: 0
+  cipher: auto
+  name: 31|[vmess]香港2-流媒体解锁
+  network: ws
+  port: '443'
+  server: aa6.wuxianliulianng.xyz
+  servername: golinkwuxian.top
+  tls: true
+  type: vmess
+  uuid: 4d7732ee-986a-4c25-8443-d6fefa8d2190
+  ws-opts:
+    headers:
+      Host: 333.golinkwuxian.top
+    path: apple
+- alterId: 64
+  cipher: auto
+  name: 31|HK香港(mibei77.com 米贝节点分享)
+  network: ws
+  port: '30000'
+  server: 192.74.231.40
+  servername: ''
+  tls: true
+  type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.87867147.xyz
+    path: /path/1701001686463
+- alterId: 64
+  cipher: auto
+  name: '31|HK香港(mibei77.com 米贝节点分享) #1'
+  network: ws
+  port: '30000'
+  server: 142.0.135.1
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.90469567.xyz
+    path: /path/1701091133409
+- alterId: 64
+  cipher: auto
+  name: 31|香港(yudou66.com 玉豆免费节点)
+  network: ws
+  port: '30000'
+  server: 156.245.8.150
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4
+  ws-opts:
+    headers:
+      Host: www.31281448.xyz
+    path: /path/1702650992491
+- alterId: 64
+  cipher: auto
+  name: '31|香港(yudou66.com 玉豆免费节点) #1'
+  network: ws
+  port: '30000'
+  server: 156.245.8.180
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a
+  ws-opts:
+    headers:
+      Host: www.13553832.xyz
+    path: /path/1702650992491
+- alterId: 0
+  cipher: auto
+  name: 32|🇭🇰HK香港
+  network: ws
+  port: '1000'
+  server: shouer4jia24.209966.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7428815e-d341-450d-b4ee-2fff878519ce
+  ws-opts:
+    headers:
+      Host: data.video.qiyi.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 32|🇭🇰HK香港3
+  network: ws
+  port: '80'
+  server: 66hk66.fr99kt.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: ad13f574-f6b7-427e-bb29-224a07c56d10
+  ws-opts:
+    headers:
+      Host: 66hk66.fr99kt.top
+    path: /efdg
