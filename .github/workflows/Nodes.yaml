@@ -2,7 +2,7 @@ name: Nodes
 
 on: 
   schedule:
-  - cron: "0/10 * * * *"
+  - cron: "* 1 * * *"
   repository_dispatch: #https://www.chenshaowen.com/blog/how-to-trigger-github-action-remotely.html
      types:
        - Webhook
@@ -36,6 +36,8 @@ jobs:
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
+    - name: premission 
+      run: sudo chmod 777 ./*
     - name: pool #input ./utils/pool/config.yaml
       run: cd ./utils/pool/ && python main.py #output ./utils/pool/output.yaml
     - name: copy pool to clashcheck  #input ./utils/pool/output.yaml
