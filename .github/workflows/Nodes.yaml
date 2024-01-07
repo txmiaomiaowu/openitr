@@ -37,7 +37,7 @@ jobs:
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
     - name: premission 
-      run: sudo chmod 777 ./*
+      run: sudo chmod -R 777 ./*
     - name: pool #input ./utils/pool/config.yaml
       run: cd ./utils/pool/ && python main.py #output ./utils/pool/output.yaml
     - name: copy pool to clashcheck  #input ./utils/pool/output.yaml
