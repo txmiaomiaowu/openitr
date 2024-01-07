@@ -43,7 +43,7 @@ jobs:
     - name: fetch
       run: python ./fetch.py
     - name: push
-      run: ./.github/update-repo.sh
+      run: sudo sh ./.github/update-repo.sh
     - name: 计算要清除缓存的文件
       id: purge_urls
       run: |
@@ -110,4 +110,4 @@ jobs:
     - name: git push and redo
       if: ${{ always() }}
       run: |
-           ./.github/update-repo.sh
+           sudo sh ./.github/update-repo.sh
