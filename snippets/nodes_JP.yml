@@ -10,6 +10,20 @@ proxies:
   uuid: 88348dbd-0869-4eb9-88f5-befe970df472
 - alterId: 0
   cipher: auto
+  name: 4|日本 002
+  network: ws
+  port: 443
+  server: fullaccesstojapannetsubnode1.azurewebsites.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+    path: /ws
+- alterId: 0
+  cipher: auto
   name: 14|🇯🇵日本04
   network: tcp
   port: '36116'
@@ -17,7 +31,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c81a773a-ef9c-4fa9-b921-8c9b9d1e1aa8
+  uuid: 9ba0617c-a43b-48d5-8e8e-b69b9bc39bc1
 - alterId: 0
   cipher: auto
   name: 14|🇯🇵日本05
@@ -27,7 +41,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c81a773a-ef9c-4fa9-b921-8c9b9d1e1aa8
+  uuid: 9ba0617c-a43b-48d5-8e8e-b69b9bc39bc1
 - alterId: 0
   cipher: auto
   name: 14|🇯🇵日本06
@@ -37,7 +51,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c81a773a-ef9c-4fa9-b921-8c9b9d1e1aa8
+  uuid: 9ba0617c-a43b-48d5-8e8e-b69b9bc39bc1
 - alterId: 0
   cipher: auto
   name: 15|🇯🇵 adi|0703v - 日本-04 免流
@@ -84,7 +98,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: a23304d7-f886-4474-aec2-f281b23b5b05
+  uuid: 37cafbeb-2931-45f1-8eb5-ea01f7b2d2ec
 - alterId: 0
   cipher: auto
   name: 25|【BGP】日本 05  | 1x JP
@@ -94,7 +108,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: a23304d7-f886-4474-aec2-f281b23b5b05
+  uuid: 37cafbeb-2931-45f1-8eb5-ea01f7b2d2ec
 - alterId: 0
   cipher: auto
   name: 25|【BGP】日本 06  | 1x JP
@@ -104,7 +118,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: a23304d7-f886-4474-aec2-f281b23b5b05
+  uuid: 37cafbeb-2931-45f1-8eb5-ea01f7b2d2ec
 - cipher: aes-128-gcm
   name: 26|🇯🇵 日本KT|@ripaojiedian
   password: g12sQi#ss#&1
@@ -117,7 +131,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 10016
-  server: 122.118.173.97
+  server: 122.118.173.209
   type: ss
 - cipher: aes-128-gcm
   name: 26|🇯🇵 日本KT2|@ripaojiedian
@@ -131,30 +145,29 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 10012
-  server: 122.118.173.97
+  server: 122.118.173.209
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 26|🇯🇵 日本|@ripaojiedian
-  password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491
-  port: 20007
-  server: service.ouluyun9803.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 26,27|日本2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ae16d5a4-9a22-4177-8884-77aa3b309d30
+  ws-opts:
+    headers:
+      Host: wtywwcrzjp5.yofnhkfc.xyz
+    path: /video/9TfVEyku
 - cipher: aes-256-cfb
   name: 26|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 176.32.83.84
+  server: 3.112.250.142
   type: ss
-- cipher: chacha20-ietf
-  name: 26|🇯🇵 日本R|@ripaojiedian
-  obfs: plain
-  obfs-param: cf48250916.microsoft.com
-  password: jFa4F1
-  port: 3703
-  protocol: auth_aes128_sha1
-  protocol-param: 50916:0104-W259_71
-  server: cm01.newcome.xyz
-  type: ssr
 - alterId: 0
   cipher: auto
   name: 28|冰消2-日@SSRSUB
@@ -355,7 +368,7 @@ proxies:
     path: /argo-vmess?ed=2048
 - alterId: 0
   cipher: auto
-  name: 31|🇯🇵JP日本4
+  name: 31|🇯🇵JP日本7
   network: ws
   port: '80'
   server: 86jpjp.fr99kt.top
@@ -367,12 +380,3 @@ proxies:
     headers:
       Host: 86jpjp.fr99kt.top
     path: /rdg
-- alterId: 0
-  cipher: auto
-  name: 32|JP 1|TG@BPXD666
-  network: auto
-  port: '49499'
-  server: 139.162.125.97
-  tls: false
-  type: vmess
-  uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
