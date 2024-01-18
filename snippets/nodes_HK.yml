@@ -1,14 +1,27 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,4,7,13,16,17,19,24|🇭🇰_HK_香港 #2'
+  name: 0|_HK_
   network: ws
   port: 443
   server: 199.15.76.35
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
+  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  ws-opts:
+    headers:
+      host: hk-300.changding.tech
+    path: /changding-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 3,4,6,34|🇭🇰 _HK_香港
+  network: ws
+  port: '443'
+  server: 199.15.76.35
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
   ws-opts:
     headers:
@@ -97,7 +110,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 4,13|HK_448
+  name: 4,13,32|HK 2|TG@BPXD666
   network: http
   port: '30515'
   server: 103.30.76.173
@@ -107,20 +120,30 @@ proxies:
   uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
 - alterId: 0
   cipher: auto
-  name: 13,18|🇭🇰HK_89 |29.57Mb
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  tls: false
+  name: 4|香港 010
+  network: tcp
+  port: 18691
+  server: A001.STANDARD-NODES-CHICKENFARMS.TOP
+  skip-cert-verify: true
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: ''
-    path: /opt/video/images
+  uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2
 - alterId: 0
   cipher: auto
-  name: '13|netflix_HK #2'
+  name: 4|香港 011
+  network: ws
+  port: 56120
+  server: hk5.ansh.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1fec02d1-d750-424f-a552-6eb5770c7e2c
+  ws-opts:
+    headers:
+      Host: ywhk1.kcjs.me
+    path: /gd3245vd2S32cr
+- alterId: 0
+  cipher: auto
+  name: 13,32|DE 7|TG@BPXD666
   network: ws
   port: '40400'
   server: 85.208.104.22
@@ -133,7 +156,17 @@ proxies:
     path: /eb6f75a1
 - alterId: 0
   cipher: auto
-  name: 13|HK_445
+  name: '13,24,30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:... #1'
+  network: tcp
+  port: '26389'
+  server: 34.92.50.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+- alterId: 0
+  cipher: auto
+  name: 13,32|RU 5|TG@BPXD666
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -142,98 +175,33 @@ proxies:
   uuid: 0855b410-0e96-4d0a-9b6e-80830edec462
 - alterId: 0
   cipher: auto
-  name: '13|netflix_HK #3'
-  network: ws
-  port: '2096'
-  server: 47.242.155.183
-  tls: true
-  type: vmess
-  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vm-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 Relay_🇭🇰HK-🇪🇬EG_447
+  name: 13|Relay_-🇺🇸US_225 |32.16Mb
   network: ws
   port: '80'
-  server: 47.243.162.49
+  server: hk02.duckulaolga.online
   tls: false
   type: vmess
-  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  uuid: 5f373214-b955-4467-a582-62be14c59bce
   ws-opts:
     headers:
-      Host: ''
-    path: /vm-tls0?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '13|netflix_HK #4'
-  network: ws
-  port: '53535'
-  server: 43.229.154.121
-  tls: true
-  type: vmess
-  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vm-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 Relay_🇭🇰HK-🇪🇬EG_451
-  network: ws
-  port: '8080'
-  server: 8.217.167.88
-  tls: false
-  type: vmess
-  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vm-tls0?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 Relay_🇭🇰HK-🇭🇰HK_452
-  network: ws
-  port: '80'
-  server: 3ab83739-e995-4f97-9629-41faac2255c9.xn--9kq12xdq7a.com
-  tls: false
-  type: vmess
-  uuid: caa995ed-86a9-4968-a332-9c11e7e13107
-  ws-opts:
-    headers:
-      Host: 3ab83739-e995-4f97-9629-41faac2255c9.xn--9kq12xdq7a.com
+      Host: hk02.duckulaolga.online
     path: /
 - alterId: 0
   cipher: auto
-  name: '13|netflix_HK #5'
-  network: ws
-  port: '2087'
-  server: 47.242.155.183
-  tls: true
-  type: vmess
-  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vm-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '13|netflix_HK #6'
+  name: 13|Relay_🇿🇦ZA-🇭🇰HK_1109
   network: ws
   port: '56120'
-  server: 156.251.226.251
+  server: 156.251.226.140
   tls: true
   type: vmess
-  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  uuid: 1fec02d1-d750-424f-a552-6eb5770c7e2c
   ws-opts:
     headers:
       Host: ''
-    path: /vm-tls1?ed=2048
+    path: /gd3245vd2S32cr
 - alterId: 0
   cipher: auto
-  name: '13|netflix_HK #7'
+  name: '13|netflix_HK #2'
   network: ws
   port: '443'
   server: 104.21.11.98
@@ -244,19 +212,19 @@ proxies:
     headers:
       Host: ''
     path: /baseOn
-- alterId: 32
+- alterId: 0
   cipher: auto
-  name: 13|Relay_-🇭🇰HK_247 |31.05Mb
+  name: 13|Relay_🏁ZZ-🇭🇰HK_1120
   network: ws
-  port: '80'
-  server: hrgdvpn.flycdnedc55.vip
-  tls: false
+  port: '443'
+  server: 104.21.34.70
+  tls: true
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  uuid: 9DC41E4B-53A8-A442-E911-4BC5F490F2CD
   ws-opts:
     headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
+      Host: ''
+    path: /myblog
 - cipher: rc4-md5
   name: 15|🇭🇰 adi|0703v - dg-hk-node01
   obfs: http_post
@@ -320,7 +288,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|HK
+  name: 22,32|US 73|TG@BPXD666
   network: ws
   port: '443'
   server: gur.gov.ua
@@ -332,6 +300,16 @@ proxies:
     headers:
       Host: ss.sxmzkfyy.com
     path: /8uEzB6n2/
+- alterId: 0
+  cipher: auto
+  name: 24|🔒 VM-TCP-NA 🇭🇰 HK-103.30.76.17...
+  network: tcp
+  port: '30515'
+  server: 103.30.76.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
 - cipher: aes-128-gcm
   name: 26|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -344,7 +322,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 1.65.139.54
+  server: 42.3.135.230
   type: ss
 - cipher: aes-128-gcm
   name: 26|🇭🇰 香港KT2|@ripaojiedian
@@ -354,19 +332,13 @@ proxies:
     host: ''
     mode: http
   port: 80
-  server: 8.217.217.138
+  server: 8.217.53.93
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 26|🇭🇰 香港1|@ripaojiedian
-  password: bfgph2xwr4q
-  port: 56001
-  server: ef30833c.h2m5m5m7s3-fb-hk01.6pzfwf.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 26|🇭🇰 香港5|@ripaojiedian
-  password: 893562d2-2e36-4c87-aebc-3ca3fc78de3e
-  port: 19511
-  server: nc.cn2.go002.xyz
+- cipher: aes-256-gcm
+  name: 26|🇭🇰 香港|@ripaojiedian
+  password: 47c97380-6525-46ca-88ef-d23866fc904c
+  port: 36999
+  server: a3ca.e2s.buzz
   type: ss
 - alterId: 0
   cipher: auto
@@ -380,10 +352,20 @@ proxies:
   uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
 - alterId: 64
   cipher: auto
-  name: 27|香港3|@ripaojiedian
+  name: '27|香港4|@ripaojiedian #1'
   network: tcp
-  port: '40702'
+  port: '41702'
   server: 112.28.208.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 27|香港5|@ripaojiedian
+  network: tcp
+  port: '35601'
+  server: 183.240.232.94
   servername: ''
   tls: false
   type: vmess
@@ -424,30 +406,6 @@ proxies:
   uuid: 0a824660-8b17-4665-d2b4-a86c7f15d32a
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
-  network: tcp
-  port: '26389'
-  server: 34.92.50.99
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
-- alterId: 0
-  cipher: auto
-  name: 31|🇭🇰HK香港
-  network: ws
-  port: '1000'
-  server: shouer4jia24.209966.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7428815e-d341-450d-b4ee-2fff878519ce
-  ws-opts:
-    headers:
-      Host: data.video.qiyi.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 31|🇭🇰HK香港2
   network: ws
   port: '80'
@@ -460,3 +418,17 @@ proxies:
     headers:
       Host: 66hk66.fr99kt.top
     path: /efdg
+- alterId: 0
+  cipher: auto
+  name: 31|🇭🇰HK香港3
+  network: ws
+  port: '1000'
+  server: shouer4jia24.209966.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7428815e-d341-450d-b4ee-2fff878519ce
+  ws-opts:
+    headers:
+      Host: data.video.qiyi.com
+    path: /
