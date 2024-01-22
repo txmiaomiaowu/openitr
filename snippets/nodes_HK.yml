@@ -54,7 +54,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 4,13,32|HK 1|TG@BPXD666
+  name: 4,32|HK 2|TG@BPXD666
   network: http
   port: '30515'
   server: 103.30.76.173
@@ -64,12 +64,11 @@ proxies:
   uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
 - alterId: 0
   cipher: auto
-  name: 4,32|SG 2|TG@BPXD666
+  name: 4|香港 006
   network: tcp
-  port: '18691'
+  port: 18691
   server: A001.STANDARD-NODES-CHICKENFARMS.TOP
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2
 - alterId: 0
@@ -151,20 +150,7 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 13|🇸🇬 SG |11.92Mb
-  network: ws
-  port: '443'
-  server: 8.217.93.104
-  tls: true
-  type: vmess
-  uuid: dcd70249-06fa-4fe7-aaed-cbba86ac125b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 Relay_🇭🇰HK-🇭🇰HK_508
+  name: 13|🇭🇰 Relay_🇭🇰HK-🇭🇰HK_522
   network: ws
   port: '443'
   server: hk-full.privateip.net
@@ -177,13 +163,36 @@ proxies:
     path: /racevpn
 - alterId: 0
   cipher: auto
-  name: 13,32|RU 4|TG@BPXD666
+  name: 13,24|🔒 VM-TCP-NA 🇭🇰 HK-207.148.45.8...
+  network: tcp
+  port: '39201'
+  server: 207.148.45.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd9f5a81-4d40-40b3-eb2f-dfe0a4e7bb2a
+- alterId: 0
+  cipher: auto
+  name: 13,32|RU 3|TG@BPXD666
   network: tcp
   port: '80'
   server: 194.156.98.179
   tls: false
   type: vmess
   uuid: 0855b410-0e96-4d0a-9b6e-80830edec462
+- alterId: 0
+  cipher: auto
+  name: 13|HK_525
+  network: ws
+  port: '443'
+  server: 8.217.93.104
+  tls: true
+  type: vmess
+  uuid: dcd70249-06fa-4fe7-aaed-cbba86ac125b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /stream
 - cipher: rc4-md5
   name: 15|🇭🇰 adi|0703v - dg-hk-node01
   obfs: http_post
@@ -261,30 +270,13 @@ proxies:
     path: /8uEzB6n2/
 - alterId: 0
   cipher: auto
-  name: 24|🇭🇰香港3丨白嫖机场.com
-  network: ws
-  port: '80'
-  server: 162.159.200.4
+  name: 24|【直连】香港 - 4 - A Group
+  network: tcp
+  port: '38752'
+  server: 00000000000000000000000000000000000000000000000000000000000032.agroup-node-for-bigairport.sbs
   tls: false
   type: vmess
-  uuid: 9b170ad4-3211-4f0f-8bc9-80d356b67662
-  ws-opts:
-    headers:
-      Host: hk3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰香港2丨白嫖机场.com
-  network: ws
-  port: '80'
-  server: 104.18.15.148
-  tls: false
-  type: vmess
-  uuid: 9b170ad4-3211-4f0f-8bc9-80d356b67662
-  ws-opts:
-    headers:
-      Host: hk3.889611.com
-    path: /
+  uuid: 843764ed-637a-4085-856e-72c507df3447
 - cipher: aes-128-gcm
   name: 26|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -323,16 +315,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
-- alterId: 0
-  cipher: auto
-  name: 27|香港4|@ripaojiedian
-  network: tcp
-  port: '39201'
-  server: 207.148.45.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fd9f5a81-4d40-40b3-eb2f-dfe0a4e7bb2a
 - alterId: 0
   cipher: auto
   name: 27|香港2|@ripaojiedian
