@@ -1,10 +1,10 @@
 proxies:
-- name: 0,4|美国 115
+- name: 0|_FR_
   network: tcp
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   port: 22222
-  server: 13.39.1.177
-  skip-cert-verify: true
+  server: 15.237.201.223
+  skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
   udp: true
@@ -12,129 +12,71 @@ proxies:
   cipher: auto
   name: 4|法国 001
   network: ws
-  port: 80
-  server: 4fr2.09vpn.com
+  port: 443
+  server: 185.193.31.201
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  udp: true
-  uuid: 3a19be40-cf8c-4347-b474-3a2eb9d4b230
+  uuid: c8abf66a-1903-4638-a448-9c86733e4254
   ws-opts:
     headers:
-      Host: 4fr2.09vpn.com
-    path: /vmess/
+      Host: sand.blanku.me
+    path: /wss13480
 - alterId: 0
   cipher: auto
   name: 4|法国 002
   network: ws
-  port: 443
-  server: 5.openiisee.monster
+  port: 80
+  server: 37.187.75.40
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a
+  ws-opts:
+    headers:
+      Host: fr1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 4|法国 003
+  network: grpc
+  port: 2083
+  server: 141.101.122.55
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 04602f60-746d-3f43-8beb-a739e9c2902c
+  uuid: 8354f73d-1f51-4445-8d73-b917cde3b469
+- alterId: 0
+  cipher: auto
+  name: 4|法国 004
+  network: grpc
+  port: 2083
+  server: 141.101.122.220
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8354f73d-1f51-4445-8d73-b917cde3b469
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 4|法国 005
+  network: ws
+  port: 80
+  server: 173.245.49.1
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4fd4c27a-2b01-4dd6-94ee-a2c465542177
   ws-opts:
     headers:
-      Host: lovemylive.top
-    path: /jfjhju4u9fi9d2207
-- name: 4|法国 003
+      Host: 1.digikala.sbs
+    path: /c7z8J4SE3QpsmJZmSRZp3WCDd7QY
+- alterId: 0
+  cipher: auto
+  name: 4|法国 006
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.243.70
+  port: 443
+  server: greencloudcongo.ednovas.org
   skip-cert-verify: true
-  sni: trj.rollingnext.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 4,16|🇫🇷 法国  7
-  network: ws
-  port: 30870
-  server: 141.11.123.205
-  skip-cert-verify: false
-  tls: false
   type: vmess
-  udp: true
-  uuid: f8e7c07a-4c32-4fc7-9169-073669416331
-  ws-opts:
-    headers:
-      Host: 141.11.123.205
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🇫🇷 Relay_🇫🇷FR-🇷🇺RU_338 |18.60M...
-  network: ws
-  port: '443'
-  server: 92.223.55.6
-  tls: true
-  type: vmess
-  uuid: 14bb927f-a4ec-4de7-90fb-388c1f69dbc1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 13|🇫🇷 Relay_🇫🇷FR-🇫🇷FR_339 |17.60M...
-  network: ws
-  port: '80'
-  server: UK99.5GTOCDOCAO.COM
-  tls: false
-  type: vmess
-  uuid: 7a2c5296-683d-48db-9856-373cafac48b5
-  ws-opts:
-    headers:
-      Host: UK99.5GTOCDOCAO.COM
-    path: /5gtocdocao.com
-- alterId: 0
-  cipher: auto
-  name: 13|Relay_ |123.78Mb
-  network: ws
-  port: '443'
-  server: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- cipher: aes-256-gcm
-  name: 16|🇫🇷 法国巴黎Online S.A.S 3
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 51.158.150.168
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24|FR法国(mibei77.com 米贝节点分享)
-  network: ws
-  port: '443'
-  server: 92.223.55.6
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 22aa72b1-605b-4807-8a81-fb414cbb409c
-  ws-opts:
-    headers:
-      Host: mizban888.servecounterstrike.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 24|🔒 VM-WS-NA 🇫🇷 FR-141.11.123.20...
-  network: ws
-  port: '32902'
-  server: 141.11.123.205
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f7388a5e-8ae2-4e5a-bdbe-b8b29e172ec2
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736
 - alterId: 0
   cipher: auto
   name: 28|🇫🇷 法国@SSRSUB
@@ -145,44 +87,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 179c21e7-e11b-492a-a227-9fbf95438c97
-- alterId: 0
-  cipher: auto
-  name: 29|🇫🇷 _FR_法国_39
-  network: ws
-  port: '80'
-  server: 173.245.49.236
-  tls: false
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts:
-    headers:
-      Host: ca.ilovescp.com
-    path: /shirker
-- alterId: 64
-  cipher: auto
-  name: 30|法国(yudou66.com 玉豆免费节点)
-  network: ws
-  port: '30000'
-  server: 156.249.18.96
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b
-  ws-opts:
-    headers:
-      Host: www.36735131.xyz
-    path: /path/1702650992491
-- alterId: 64
-  cipher: auto
-  name: '30|法国(yudou66.com 玉豆免费节点) #1'
-  network: ws
-  port: '443'
-  server: 156.249.18.74
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
-  ws-opts:
-    headers:
-      Host: www.11977475.xyz
-    path: /path/1702650992491
