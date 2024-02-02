@@ -39,7 +39,11 @@ jobs:
     - name: premission 
       run: sudo chmod -R 777 ./*
     # --No More Walls--#
-
+    - name: getsub
+      run: |
+        cd ./sublist
+        sudo sh ./merge.sh
+        cd ..
     - name: fetch
       run: python ./fetch.py
     - name: push
