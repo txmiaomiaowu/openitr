@@ -7,6 +7,8 @@ ls *.txt |
 while read file_name;
 do
     cat "$file_name" >> all.txt
+    echo "
+" >> all.txt
 done
 #去重
 sort all.txt |uniq > alls.txt
