@@ -1,0 +1,37 @@
+# your domain
+domain: mylittleserver.myasustor.com   # or example.com:9443 for reserve proxy server
+port:                 # default 12580
+
+# source list file
+source-files:
+  # use local file
+  - source.yaml
+  # use web file
+  # - https://example.com/config/source.yaml
+
+# ======= 可选项，留空使用default值  ======= #
+
+#====Postgresql database info ====#
+database_url: "postgresql://postgres:admin@192.168.50.84:5432/postgres"
+
+#==== Interval between each crawling ====#
+crawl-interval:             # v0.5.x default 60 (minutes)
+#crontime:                  # v0.4.x default 60 (minutes). Deprecated in the newest version
+healthcheck-timeout: 1       # default 5 (seconds)
+healthcheck-connection: 50    # default 500. The number of health check connections simultaneously
+
+#==== Speed test ====#
+speedtest: true            # default false. Warning: this will consume large network resources.
+speedtest-interval:         # default 720 (min)
+speed-timeout:              # default 10 (seconds).
+speed-connection:           # v0.7.2 default 5. The number of speed test connections simultaneously
+#connection                 # v0.7.1 and beblow
+
+#==== Active proxy speed test ====#
+active-interval: 20           # default 60 (min)
+active-frequency:           # default 100 (requests per interval)
+active-max-number: 30         # default 100. If more than this number of active proxies, the extra will be deprecated by speed
+
+#==== Cloudflare api ====#
+cf_email: ""
+cf_key: ""
