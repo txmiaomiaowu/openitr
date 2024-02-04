@@ -1,14 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '2,6,7,26,34,35,61,65,67,69,70,73,79,94,105|_CN_中国->🇮🇶_IQ_伊拉克 #6'
+  name: 2,8,9,10,26,34,61,65,69,70,73,79,94|伊拉克 01 | ws
   network: ws
   port: '20011'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   skip-cert-verify: false
   skip-cert-vertify: true
-  tfo: false
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
@@ -21,8 +19,8 @@ proxies:
   client-fingerprint: chrome
   h2-opts: {}
   http-opts: {}
-  name: '2,6,7,14,20,26,34,44,47,48,65,67,69,70,73,79,80,94,97,104,105|🇺🇸 _US_美国->🇮🇷_IR_伊朗
-    #11'
+  name: '2,6,7,8,9,10,11,14,20,26,34,44,47,65,67,69,70,73,79,80,94,97,104,105|🇺🇸 _US_美国->🇮🇷_IR_伊朗
+    #15'
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
@@ -40,14 +38,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '2,6,7,26,34,35,61,65,67,69,70,73,79,94,105|🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 #6'
+  name: '2,8,9,10,26,34,61,65,69,70,73,79,94|🇨🇳_CN_中国->🇺🇦_UA_乌克兰 #5'
   network: ws
-  port: '20005'
+  port: 20005
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   skip-cert-verify: false
   skip-cert-vertify: true
-  tfo: false
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
@@ -55,46 +51,74 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '4,53,60,73,78|🇨🇳_CN_中国->🇮🇶_IQ_伊拉克 #5'
-  network: ws
-  port: 20011
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+- name: 4,73|1|_CN_->_US__1
+  network: tcp
+  password: e8977c57-c5c2-478f-a67a-5af7ba873eac
+  port: 10850
+  server: xibaozi.19890604.day
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      host: tms.dingtalk.com
-    path: /
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 4,73|1|_CN_->_CZ_
+  network: tcp
+  password: e8977c57-c5c2-478f-a67a-5af7ba873eac
+  port: 10846
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 4,13,16,18,47,53,59,60,69,73,78,88|🇺🇸US美国5
+  name: 4,13,14,15,16,18,20,21,48,53,73,97|🇺🇸_US_美国_31
   network: ws
-  port: 80
-  server: 104.17.25.1
-  servername: kr1.ljyyds.top
+  port: '8080'
+  server: www.crispyrainbow.biz
+  servername: www.crispyrainbow.biz
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  udp: true
-  uuid: aa8edc9c-978a-4f09-906f-a2668751e935
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
-    headers:
-      host: usnatvpn.catnipballs.gay
     path: /
+- name: 4,73|1|_CN_->_US__2
+  network: tcp
+  password: e8977c57-c5c2-478f-a67a-5af7ba873eac
+  port: 10837
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 4,73|1|_CN_->_US__3
+  network: tcp
+  password: e8977c57-c5c2-478f-a67a-5af7ba873eac
+  port: 10847
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 4,73|1|_CN_->_US__4
+  network: tcp
+  password: e8977c57-c5c2-478f-a67a-5af7ba873eac
+  port: 10838
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: chacha20-poly1305
   country: US
   h2-opts: {}
   http-opts: {}
   name: '4,13,14,15,16,18,20,21,53,59,73,97,104|美国【付费推荐：https://jdyvip.link/】7...
-    #3'
+    #2'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -108,125 +132,42 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 4,73|1|_CN_->_AT_
+  network: tcp
+  password: e8977c57-c5c2-478f-a67a-5af7ba873eac
+  port: 10848
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 4,73|1|_CN_->_UA_
+  network: tcp
+  password: e8977c57-c5c2-478f-a67a-5af7ba873eac
+  port: 10845
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 4,13,14,15,16,18,20,21,53,73,97|🇺🇸_US_美国_31
+  name: 4,13,14,15,18,47,53,59,60,69,73,78,88|🇺🇸US美国5
   network: ws
-  port: '8080'
-  server: www.crispyrainbow.biz
-  servername: www.crispyrainbow.biz
+  port: 80
+  server: 104.17.25.1
+  servername: kr1.ljyyds.top
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4,53,60,73,78|🇨🇳_CN_中国->🇺🇦_UA_乌克兰 #5'
-  network: ws
-  port: 20005
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  udp: true
+  uuid: aa8edc9c-978a-4f09-906f-a2668751e935
   ws-opts:
     headers:
-      host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '35,61,69,73,79,94|🇨🇳_CN_中国->🇺🇸_US_美国 #7'
-  network: ws
-  port: 20018
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '35,61,69,73,79,94|🇨🇳_CN_中国->🇺🇸_US_美国 #8'
-  network: ws
-  port: 2004
-  server: 223.113.54.131
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35,61,69,73,79,94|斯洛伐克 01 | ws
-  network: ws
-  port: '20026'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35,61,69,73,79,94|白俄罗斯 01  | ws
-  network: ws
-  port: '20019'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '35,61,69,73,79,94|🇨🇳_CN_中国->🇹🇷_TR_土耳其 #3'
-  network: ws
-  port: 2000
-  server: 223.113.54.131
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35,61,69,73,79,94|波黑 01 | ws
-  network: ws
-  port: '20014'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
+      host: usnatvpn.catnipballs.gay
     path: /
 - alterId: 2
   cipher: auto
@@ -298,7 +239,35 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: 53,60,78|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: 53,60|🇨🇳_CN_中国->_IQ_克
+  network: ws
+  port: 20011
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 53,60|🇨🇳_CN_中国->🇺_UA_克
+  network: ws
+  port: 20005
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 53,60|_CN_国->🇸_US_美国_1
   network: ws
   port: 20018
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -312,21 +281,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53,60,69,78|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: 53,60,69|🇨🇳CN-223.113.54.131-1117
   network: ws
   port: 2004
   server: 223.113.54.131
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
   ws-opts:
-    headers:
-      host: tms.dingtalk.com
     path: /
 - alterId: 0
   cipher: auto
-  name: '53,60,78|🇨🇳_CN_中国->🇸🇰_SK_斯洛伐克 #2'
+  name: 53,60|🇨🇳_CN_中国->🇰_SK_
   network: ws
   port: 20026
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -340,7 +307,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '53,60,78|🇨🇳_CN_中国->🇧🇾_BY_白俄罗斯 #2'
+  name: 53,60|🇨🇳_CN_中国->_BY_罗斯
   network: ws
   port: 20019
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -354,21 +321,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '53,60,69,78|🇨🇳_CN_中国->🇹🇷_TR_土耳其 #2'
+  name: 53,60,69|🇨🇳CN-223.113.54.131-1121
   network: ws
   port: 2000
   server: 223.113.54.131
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
   ws-opts:
-    headers:
-      host: tms.dingtalk.com
     path: /
 - alterId: 0
   cipher: auto
-  name: '53,60,78|🇨🇳_CN_中国->🇧🇦_BA_波黑 #2'
+  name: 53,60|🇳_CN_中国->🇧_BA_
   network: ws
   port: 20014
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -382,7 +347,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '53,60,78|🇨🇳_CN_中国->🇺🇸_US_美国_3 #1'
+  name: 53,60|🇨🇳_CN_中国->🇺🇸_US_美国_3
   network: ws
   port: 20021
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -684,6 +649,96 @@ proxies:
   uuid: 7b1b2fa3-e361-48cc-b73d-2c9636c76f4b
   ws-opts:
     path: /UMW36262
+- alterId: 0
+  cipher: auto
+  name: 61,69,73,79,94|哈萨克斯坦 01 | ws
+  network: ws
+  port: '20018'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 61,69,73,79,94|美国 02 | ws
+  network: ws
+  port: '2004'
+  server: 223.113.54.131
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 61,69,73,79,94|斯洛伐克 01 | ws
+  network: ws
+  port: '20026'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 61,69,73,79,94|白俄罗斯 01  | ws
+  network: ws
+  port: '20019'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 61,69,73,79,94|土耳其 01 | ws
+  network: ws
+  port: '2000'
+  server: 223.113.54.131
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 61,69,73,79,94|波黑 01 | ws
+  network: ws
+  port: '20014'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 62|🇺🇸_US_美国->_DE_国
@@ -1148,21 +1203,6 @@ proxies:
     path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: 94,99|CN_speednode_0027
-  network: ws
-  port: 38887
-  server: aws.daxun.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us3
-- alterId: 0
-  cipher: auto
   name: 94,99|CN_speednode_0028
   network: ws
   port: 38888
@@ -1176,3 +1216,18 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /daxun/us1
+- alterId: 0
+  cipher: auto
+  name: 94,99|CN_speednode_0027
+  network: ws
+  port: 38887
+  server: aws.daxun.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us3
