@@ -89,7 +89,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,26,34,35,48,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '2,6,7,8,9,10,11,26,34,35,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
     #35'
   network: ws
   port: '80'
@@ -208,7 +208,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,53,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_6
+  name: '4,53,76,81,89|美国 CloudFlare节点 #53'
   network: ws
   port: 80
   server: www.greendam.site
@@ -219,6 +219,7 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
+    host: my1.tooters.ir
     path: /?ed=2048
 - alterId: 2
   cipher: auto
@@ -236,9 +237,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44,51,72|🏁RELAY-203.24.108.9-1594
+  name: '44,51,72,73|🇪🇺 欧洲(油管:破解资源君) #76'
   network: ws
-  port: 443
+  port: '443'
   server: 203.24.108.9
   servername: ''
   skip-cert-verify: false
@@ -963,3 +964,42 @@ proxies:
   port: 31659
   server: free.node.kk-proxy.pro
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 101|美国凤凰城-高速中转|1x
+  network: ws
+  port: '38887'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us3
+- alterId: 0
+  cipher: auto
+  name: 101|美国洛杉矶-中转|1x
+  network: ws
+  port: '38888'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us1
+- alterId: 0
+  cipher: auto
+  name: 101|美国圣何塞-中转|1x
+  network: ws
+  port: '38889'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us2
