@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '1,2,6,7,8,9,10,11,26,34,35,44,51,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '1,2,6,7,8,9,10,11,26,34,35,44,51,61,66,70,72,73,76,82,96,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
     #37'
   network: ws
   port: '80'
@@ -18,7 +18,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,26,34,35,51,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '1,2,6,7,8,9,10,11,26,34,35,44,51,61,66,70,72,73,76,82,83,96,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
+    #36'
+  network: ws
+  port: '80'
+  server: 104.22.51.162
+  servername: ''
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,26,34,35,51,61,66,70,72,73,76,82,96,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
     #38'
   network: ws
   port: '80'
@@ -72,7 +89,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,26,34,35,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '2,6,7,8,9,10,11,26,34,35,48,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
     #35'
   network: ws
   port: '80'
@@ -102,7 +119,7 @@ proxies:
     path: /jsjc/de1
 - alterId: 0
   cipher: auto
-  name: '4,47,51,53,72,76,81,89|美国 CloudFlare节点 #60'
+  name: 4,47,51,53,72,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_4
   network: ws
   port: 80
   server: 104.24.208.37
@@ -115,7 +132,6 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
-    host: my1.tooters.ir
     path: /
 - name: 4,53,76|1|_US_->_DE__2
   network: ws
@@ -132,7 +148,7 @@ proxies:
     path: /jsjc/nl1
 - alterId: 0
   cipher: auto
-  name: '4,53,76,81,89|美国 CloudFlare节点 #61'
+  name: 4,53,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 80
   server: for-irancell.outline-vpn.cloud
@@ -143,11 +159,10 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
-    host: my1.tooters.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,53,76,89,95|🇺🇸US美国8
+  name: 4,53,76,95|🇺🇸US美国8
   network: ws
   port: 8080
   server: ip.sb
@@ -161,7 +176,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '4,47,51,53,59,72,76,81,89|美国 CloudFlare节点 #57'
+  name: 4,47,51,53,59,72,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 80
   server: 104.20.231.30
@@ -174,7 +189,6 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
-    host: my1.tooters.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -206,22 +220,6 @@ proxies:
     headers:
       host: my1.tooters.ir
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 35,48,53,61,70,76,81,82,101,111|中国【付费推荐：https://jdyvip.link/】5...
-  network: tcp
-  port: '30128'
-  server: 183.232.170.22
-  servername: ''
-  skip-cert-verify: true
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
-  ws-opts:
-    headers:
-      Host: 183.232.170.22
-    path: /
 - alterId: 2
   cipher: auto
   name: 44,83|中转-1.47MB/s
@@ -965,42 +963,3 @@ proxies:
   port: 31659
   server: free.node.kk-proxy.pro
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 101|美国洛杉矶-中转|1x
-  network: ws
-  port: '38888'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us1
-- alterId: 0
-  cipher: auto
-  name: 101|美国凤凰城-高速中转|1x
-  network: ws
-  port: '38887'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us3
-- alterId: 0
-  cipher: auto
-  name: 101|美国圣何塞-中转|1x
-  network: ws
-  port: '38889'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us2
