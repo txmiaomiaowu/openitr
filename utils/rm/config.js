@@ -1,4 +1,4 @@
 module.exports={
-    nodeAddName:'|TG@BPXD666',
-    dnsServers:['119.29.29.29','8.8.8.8']
+    nodeAddName:'|openitr',
+    dnsServers:['223.5.5.5','1.1.1.1']
 }
