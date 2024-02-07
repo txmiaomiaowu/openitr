@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '1,2,6,7,8,9,10,11,26,34,35,44,51,61,66,70,72,73,76,82,96,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '1,2,6,7,8,9,10,11,26,34,35,44,51,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
     #37'
   network: ws
   port: '80'
@@ -35,7 +35,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,26,34,35,51,61,66,70,72,73,76,82,96,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '2,6,7,8,9,10,11,26,34,35,48,51,66,70,72,73,76,82,96,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
     #38'
   network: ws
   port: '80'
@@ -89,8 +89,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,26,34,35,61,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国
-    #35'
+  name: '2,6,7,8,9,10,11,26,34,35,66,70,72,73,76,82,101,112|🇺🇸 _US_美国->🇩🇪_DE_德国 #35'
   network: ws
   port: '80'
   server: www.greendam.site
@@ -119,7 +118,7 @@ proxies:
     path: /jsjc/de1
 - alterId: 0
   cipher: auto
-  name: 4,47,51,53,72,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_4
+  name: '4,47,51,53,60,72,76,80,81|🇺🇸_US_美国_2 #4'
   network: ws
   port: 80
   server: 104.24.208.37
@@ -146,11 +145,11 @@ proxies:
     headers:
       host: jnl1.jsjc.sbs
     path: /jsjc/nl1
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 4,53,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: '4,53,76,80,89|美国 CloudFlare节点 #52'
   network: ws
-  port: 80
+  port: '80'
   server: for-irancell.outline-vpn.cloud
   skip-cert-verify: true
   tls: false
@@ -159,6 +158,7 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
+    host: my1.tooters.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -176,7 +176,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,47,51,53,59,72,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  name: '4,47,51,53,59,60,72,76,80,81|🇺🇸_US_美国_1 #1'
   network: ws
   port: 80
   server: 104.20.231.30
@@ -192,7 +192,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,47,51,53,72,76,81|🇺🇸_US_美国->🇩🇪_DE_德国_3
+  name: '4,47,51,53,60,72,76,80,81|🇺🇸_US_美国_3 #4'
   network: ws
   port: 80
   server: 104.22.51.162
@@ -208,7 +208,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '4,53,76,81,89|美国 CloudFlare节点 #53'
+  name: 4,53,76|1|_US_->_DE__6
   network: ws
   port: 80
   server: www.greendam.site
@@ -219,7 +219,6 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
-    host: my1.tooters.ir
     path: /?ed=2048
 - alterId: 2
   cipher: auto
@@ -418,6 +417,15 @@ proxies:
     headers:
       host: uk2.v2rayserv.com
     path: /sshocean
+- name: 60|🇨🇳_CN_中国->_CZ_
+  network: tcp
+  password: 4623e7ff-47b4-41d6-8f5a-33c8e6ac3fd5
+  port: 10846
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 62|🇺🇸_US_美国->_DE_国
@@ -504,7 +512,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '62,75|🇺🇸_US_美国_3 #1'
+  name: '62,75|🇺🇸_US_美国_3 #2'
   network: ws
   port: 80
   server: mm3.shabijichang.com
