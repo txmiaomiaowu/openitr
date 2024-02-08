@@ -17,7 +17,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '2,6,10,11,35,36,54,64,69,73,75,76,79,85,99,104,115,116|🇺🇸_US_美国 #279'
+  name: '2,6,10,11,35,36,54,64,69,73,75,79,85,104,115,116|🇺🇸_US_美国 #279'
   network: ws
   port: 80
   server: www.greendam.site
@@ -33,7 +33,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,10,35,54,61,75,76,79,85,104|🇺🇸_US_美国->🇧🇷_BR_巴西 #9'
+  name: '2,10,35,54,61,75,79,85,104|🇺🇸_US_美国->🇧🇷_BR_巴西 #9'
   network: ws
   port: 80
   server: s16.956256.xyz
@@ -50,7 +50,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,8,10,11,27,35,36,46,54,64,69,71,73,75,76,79,85,104,115,116|🇺🇸_US_美国 #275'
+  name: '2,6,8,10,11,27,35,36,46,54,64,69,71,73,75,79,85,104,115,116|🇺🇸_US_美国 #275'
   network: ws
   port: 80
   server: 104.22.51.162
@@ -65,9 +65,10 @@ proxies:
     headers:
       Host: my1.tooters.ir
     path: /
-- grpc-opts:
+- client-fingerprint: chrome
+  grpc-opts:
     grpc-service-name: server-53651.prod.hosts.ooklaserver.net
-  name: 4,13,56,75,79|1|_US_->_TR_
+  name: 4,43,56,75,79|1|_US_->_TR_
   network: grpc
   password: YS7mIZvKNt
   port: 2053
@@ -77,9 +78,10 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- grpc-opts:
+- client-fingerprint: chrome
+  grpc-opts:
     grpc-service-name: 443trojan
-  name: 4,56,61,75,79|1|_US_->_RU_
+  name: 4,43,56,61,75,79|1|_US_->_RU_
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -108,7 +110,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: aes-128-gcm
-  name: '46,109|中转节点-1.47MB/s #1'
+  name: '46,109|中转节点-1.48MB/s #2'
   network: tcp
   port: 1002
   server: 183.236.48.169
@@ -184,21 +186,6 @@ proxies:
     headers:
       host: my1.tooters.ir
     path: /
-- alterId: '0'
-  cipher: auto
-  name: 56,92|东Fastly节点
-  network: ws
-  port: '80'
-  server: fastly.alipay.ovh
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
-  ws-opts:
-    headers:
-      host: beeline.ru
-    host: beeline.ru
-    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 56|🇺🇸_US_美国->🇧🇷_BR_巴西_0@25
