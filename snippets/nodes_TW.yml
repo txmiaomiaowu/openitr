@@ -2,7 +2,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇼TW
-  name: 14,16,17,18,19,40,43,68,75,79,82|🇹🇼 台湾|@ripaojiedian
+  name: 14,16,17,18,19,20,40,41,43,68,75,79,82|🇹🇼 台湾|@ripaojiedian
   password: qwerREWQ@@
   port: 2003
   server: e001.panda003.net
@@ -12,7 +12,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: TW
-  name: 14,43|TW_959
+  name: 14,20,43|TW_945
   password: qwerREWQ@@
   port: 2003
   server: 103.4.29.39
@@ -24,49 +24,45 @@ proxies:
   country: TW
   h2-opts: {}
   http-opts: {}
-  name: 14,58,79|21|🔒 VM-TCP-NA 🇭🇰 HK-103.169.1...
-  network: tcp
-  port: '35035'
-  server: 103.169.126.96
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 33d9574e-bc7f-4ad5-e930-9c9a0ef0432d
-- alterId: 0
-  cipher: auto
-  country: TW
-  h2-opts: {}
-  http-opts: {}
-  name: 16,17,18,46,58,79,97,99|TW 3|openitr
-  network: tcp
-  port: '12002'
-  server: 118.167.68.167
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: TW
-  h2-opts: {}
-  http-opts: {}
-  name: 16,17,18,56,58,61,79,104|TW-台中1-2(TCP)
+  name: 16,17,18,56,58,61,79,85,99,104|TW-台中1-2(TCP)
   network: tcp
   port: '6122'
   server: c12.twtc.dynu.net
   servername: ''
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+  ws-opts:
+    headers:
+      Host: c12.twtc.dynu.net
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: 16,17,18,46,58,79,85,97,99|TW 2|openitr
+  network: tcp
+  port: '12002'
+  server: 118.167.68.167
+  servername: ''
+  skip-cert-verify: true
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a
+  ws-opts:
+    headers:
+      Host: 118.167.68.167
+    path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: ' TW'
-  name: 17,43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_962
+  name: 17,43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_948
   password: d3f5c39d-610c-4b98-9b01-d5b847033cf9
   port: 3234
   server: c11.twtc.dynu.net
@@ -76,7 +72,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: ' TW'
-  name: 17,43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_960
+  name: 17,43|netflix_TW
   password: d3f5c39d-610c-4b98-9b01-d5b847033cf9
   port: 9443
   server: b12.ntbq.dynu.net
@@ -88,50 +84,87 @@ proxies:
   country: TW
   h2-opts: {}
   http-opts: {}
-  name: 17,18,21,56,58,61,79,104|TW-板桥2-2(TCP)
+  name: 17,18,21,56,58,61,79,85,104|TW-板桥2-2(TCP)
   network: tcp
   port: '12002'
   server: nb22.ntbq.dynu.net
   servername: ''
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: '17,19,23,40|_71 #1'
-  network: ws
-  port: 443
-  server: 123.58.197.70
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-opts:
+    headers:
+      Host: nb22.ntbq.dynu.net
+    path: /
   ws-path: /
 - alterId: 0
   cipher: auto
   country: TW
   h2-opts: {}
   http-opts: {}
-  name: 17,18,24,56,58,61,79,99,104|TW-板桥2-3(TCP)
+  name: 17,18,24,56,58,61,79,85,99,104|TW-板桥2-3(TCP)
   network: tcp
   port: '2024'
   server: b23.ntbq.dynu.net
   servername: ''
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+  ws-opts:
+    headers:
+      Host: b23.ntbq.dynu.net
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: '17,18,46,56,58,61,79,85,104,109|台湾-4.61MB/s #1'
+  network: tcp
+  port: 4443
+  server: nb24.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
+  ws-opts:
+    headers:
+      Host: nb24.ntbq.dynu.net
+    path: /
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ZZ
+  country: ' TW'
   h2-opts: {}
   http-opts: {}
-  name: '17,19,23,29,40|_69 #1'
+  name: 17,56,58,61,79,85,97|🔒 VM-TCP-NA 🇹🇼 TW-118.167.68.3...
+  network: tcp
+  port: '4443'
+  server: 118.167.68.3
+  servername: ''
+  skip-cert-verify: true
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: de9558f3-d11b-410e-ab27-26956dde256d
+  ws-opts:
+    headers:
+      Host: 118.167.68.3
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: '17,19,23,40|_73 #1'
   network: ws
   port: 31945
   server: 103.159.206.35
@@ -140,35 +173,64 @@ proxies:
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-path: /
 - alterId: 0
-  cipher: aes-128-gcm
-  country: TW
-  h2-opts: {}
-  http-opts: {}
-  name: '17,18,46,56,58,61,79,104,109|台湾-4.61MB/s #1'
-  network: tcp
-  port: 4443
-  server: nb24.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
-  ws-path: /
-- alterId: 0
   cipher: auto
-  country: ' TW'
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: '17,48,56,58,61,79,97,99,108|رایگان | VMESS | @oneclickvpnk... #4'
-  network: tcp
-  port: '4443'
-  server: 118.167.68.3
-  servername: ''
+  name: 17,19| HK_142
+  network: ws
+  port: 443
+  server: 123.58.197.70
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-path: /
+- auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+  client-fingerprint: chrome
+  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_942
+  password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+  port: 8886
+  server: b37.ntbq.dynu.net
+  skip-cert-verify: true
+  sni: b37.ntbq.dynu.net
+  type: hysteria2
+  udp: true
+- auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd
+  client-fingerprint: chrome
+  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_943
+  password: e15a928d-cd74-4a8c-9305-19db97c2f3fd
+  port: 8086
+  server: hinet.wumaojichang.com
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 43|Relay_-🇹🇼TW_404
+  password: b6cd1e64-484a-431a-90c2-41bb0d579ee6
+  port: 7773
+  server: b13.ntbq.dynu.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 43|Relay_-🇹🇼TW_363
+  password: b6cd1e64-484a-431a-90c2-41bb0d579ee6
+  port: 4303
+  server: ty12.twty.dynu.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 43|Relay_-🇹🇼TW_408
+  password: b6cd1e64-484a-431a-90c2-41bb0d579ee6
+  port: 2203
+  server: ty11.twty.dynu.net
+  tfo: false
+  type: ss
+  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -184,42 +246,6 @@ proxies:
   type: hysteria
   udp: true
   up: 11 Mbps
-- auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd
-  client-fingerprint: chrome
-  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_955
-  password: e15a928d-cd74-4a8c-9305-19db97c2f3fd
-  port: 8086
-  server: hinet.wumaojichang.com
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 43|Relay_-🇹🇼TW_280
-  password: b6cd1e64-484a-431a-90c2-41bb0d579ee6
-  port: 2203
-  server: ty11.twty.dynu.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 43|Relay_-🇹🇼TW_319
-  password: de9558f3-d11b-410e-ab27-26956dde256d
-  port: 7773
-  server: b13.ntbq.dynu.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 43|Relay_-🇹🇼TW_317
-  password: de9558f3-d11b-410e-ab27-26956dde256d
-  port: 4303
-  server: ty12.twty.dynu.net
-  tfo: false
-  type: ss
-  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -227,23 +253,7 @@ proxies:
   client-fingerprint: chrome
   down: 55
   fast-open: false
-  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_952
-  port: 22334
-  protocol: udp
-  server: www4.dtku49.xyz
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  udp: true
-  up: 11
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55
-  fast-open: false
-  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_949
+  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_939
   port: 11229
   protocol: udp
   server: www.dtku50.xyz
@@ -254,33 +264,17 @@ proxies:
   up: 11
 - auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
   client-fingerprint: chrome
-  name: 43|disney_netflix_TW 4
+  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_940
   password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
   port: 8886
-  server: b37.ntbq.dynu.net
+  server: nb21.ntbq.dynu.net
   skip-cert-verify: true
-  sni: b37.ntbq.dynu.net
+  sni: nb21.ntbq.dynu.net
   type: hysteria2
   udp: true
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55
-  fast-open: false
-  name: 43|disney_netflix_TW 5
-  port: 22334
-  protocol: udp
-  server: 1.162.147.177
-  skip-cert-verify: true
-  sni: www2.dtku48.xyz
-  type: hysteria
-  udp: true
-  up: 11
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 43|TW_963
+  name: 43|TW_946
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 223.165.4.173
@@ -307,25 +301,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 43,46,47,50,54,57,58,73,75,99|CN 1|openitr
-  network: ws
-  port: '443'
-  server: 123.58.197.70
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 46,54,56,61,75|🇹TW-114.37.199.120-1314
+  name: 46,54,56,61,75|🇹TW-114.37.199.120-1323
   network: ws
   port: 80
   server: 1b314bb0-24cd-7d15-ee61-f98c4385068f.neo-awaken.uk
@@ -368,7 +344,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 46,54,75|TW-45.121.51.103-1714
+  name: 46,54,75|TW-45.121.51.103-1768
   network: http
   port: 20715
   server: 45.121.51.103
@@ -379,7 +355,7 @@ proxies:
   uuid: f6406b6d-5487-46da-f793-46611269a306
 - alterId: 0
   cipher: auto
-  name: 46,54,75|🇼TW-114.43.148.86-3673
+  name: 46,54,75|🇼TW-103.23.89.100-3618
   network: ws
   port: 45215
   server: 012.AP.POP.node-for-smallairport.win
@@ -410,7 +386,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 46,54,56,61,75|TW-61.224.80.105-1309
+  name: 46,54,56,61,75|TW-61.224.80.105-1318
   network: ws
   port: 443
   server: xt001.xmrthnode.com
@@ -425,7 +401,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇹🇼TW-61.224.75.39-6671 #1'
+  name: 46,54,75|🇼TW-61.224.75.39-6623
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -440,7 +416,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇹🇼TW-61.224.94.70-6672 #1'
+  name: 46,54,75|🇹🇼TW-61.224.94.70-6624
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -500,7 +476,7 @@ proxies:
   uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
 - alterId: 0
   cipher: auto
-  name: 46,58,99|TW 2|openitr
+  name: '46,58|TW_965 #1'
   network: tcp
   port: '6122'
   server: 36.233.245.119
@@ -520,7 +496,7 @@ proxies:
   uuid: 60ab817e-0566-44cb-becd-6b51698d5672
 - alterId: 0
   cipher: auto
-  name: 46,54,56,61,75|🇼TW-36.228.208.15-1313
+  name: 46,54,56,61,75|🇼TW-61.228.88.141-1322
   network: ws
   port: 80
   server: df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk
@@ -605,7 +581,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '54,56,61,75|🇹🇼TW-111.247.40.248-1381 #1'
+  name: 54,56,61,75|🇹🇼TW-111.247.40.248-1390
   network: ws
   port: 18803
   server: 111.247.40.248
@@ -620,7 +596,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75|TW-165.154.246.71-2455
+  name: 54,75|🇹🇼TW-165.154.246.71-2510
   network: ws
   port: 80
   server: 165.154.246.71
@@ -635,7 +611,7 @@ proxies:
     path: ?ed=2048
 - alterId: 1
   cipher: auto
-  name: 54,75|TW-1.161.186.146-3467
+  name: 54,75|TW-1.161.186.146-3412
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -648,7 +624,7 @@ proxies:
     path: /clientarea
 - alterId: 0
   cipher: auto
-  name: 54,75|🇼TW-114.42.198.166-3543
+  name: 54,75|🇼TW-114.42.198.166-3488
   network: ws
   port: 80
   server: tw1g.jeidian.xyz
@@ -663,7 +639,7 @@ proxies:
     path: /mugua
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-36.227.192.33-3831 #1'
+  name: 54,75|🇹🇼TW-36.227.192.33-3776
   network: ws
   port: 2053
   server: emea-ru-mow-01-edgecast.qdns.live
@@ -678,7 +654,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75|🇼TW-211.72.35.110-6308
+  name: 54,75|🇼TW-211.72.35.110-6260
   network: ws
   port: 443
   server: 211.72.35.110
@@ -693,7 +669,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-211.72.35.110-6309 #1'
+  name: 54,75|🇹🇼TW-211.72.35.110-6261
   network: ws
   port: 443
   server: 211.72.35.110
@@ -708,7 +684,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-211.72.35.110-6310 #1'
+  name: 54,75|🇹🇼TW-211.72.35.110-6262
   network: ws
   port: 443
   server: 211.72.35.110
@@ -723,7 +699,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-211.72.35.110-6311 #1'
+  name: 54,75|🇹🇼TW-211.72.35.110-6263
   network: ws
   port: 443
   server: 211.72.35.110
@@ -738,7 +714,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-211.72.35.110-6312 #1'
+  name: 54,75|🇹🇼TW-211.72.35.110-6264
   network: ws
   port: 443
   server: 211.72.35.110
@@ -753,7 +729,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: 54,75|🇼TW-220.130.80.179-6651
+  name: 54,75|🇼TW-220.130.80.179-6603
   network: ws
   port: 443
   server: 220.130.80.179
@@ -768,7 +744,7 @@ proxies:
     path: /howdy
 - alterId: 0
   cipher: auto
-  name: 54,75|🇼TW-165.154.226.45-6653
+  name: 54,75|🇼TW-165.154.226.45-6605
   network: ws
   port: 80
   server: 165.154.226.45
@@ -781,7 +757,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-211.72.35.110-6654 #1'
+  name: 54,75|🇹🇼TW-211.72.35.110-6606
   network: ws
   port: 443
   server: 211.72.35.110
@@ -796,7 +772,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-165.154.253.35-6656 #1'
+  name: 54,75|🇹🇼TW-165.154.253.35-6608
   network: ws
   port: 443
   server: tw-1.qwqjsq.top
@@ -811,7 +787,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '54,75|🇹🇼TW-61.216.85.68-6661 #1'
+  name: 54,75|🇹🇼TW-61.216.85.68-6613
   network: ws
   port: 443
   server: 61.216.85.68
@@ -826,7 +802,7 @@ proxies:
     path: /path/243535322906
 - alterId: 2
   cipher: auto
-  name: 54,75|🇼TW-114.37.209.177-6662
+  name: 54,75|🇼TW-114.37.209.177-6614
   network: ws
   port: 10001
   server: ddns2.airtcp.vip
@@ -841,7 +817,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-165.154.246.107-6664 #1'
+  name: 54,75|🇹🇼TW-165.154.246.107-6616
   network: ws
   port: 80
   server: 165.154.246.107
@@ -856,25 +832,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '58|TW_983 #1'
+  name: '58|netflix_TW #2'
   network: tcp
   port: '2024'
   server: 61.228.144.69
   tls: false
   type: vmess
   uuid: d3f5c39d-610c-4b98-9b01-d5b847033cf9
-- cipher: chacha20-ietf-poly1305
-  name: 75,101|油管绵阿羊_Taiwan_ss_49
-  password: dongtaiwang.com
-  port: 12345
-  server: 111.243.98.243
-  type: ss
 - cipher: aes-256-cfb
-  name: 75|TW-61.220.130.70-9265
+  name: 75|TW-61.220.130.70-9217
   password: qwerREWQ@@
   port: 50701
   server: 61.220.130.70
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 99|TW 5|openitr
+  network: ws
+  port: '80'
+  server: 103.118.29.229
+  tls: false
+  type: vmess
+  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alpn:
   - h3
   auth_str: dongtaiwang.com

@@ -1,30 +1,35 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: ' CN'
-  h2-opts: {}
-  http-opts: {}
-  name: '0,1,2,4,6,7,9,10,11,12,14,27,35,36,56,63,64,69,73,76,79,84,104,115,116|🇨🇳_CN_中国->🇮🇳_IN_印度
+  name: '0,1,2,4,6,7,9,10,11,12,27,35,36,56,63,64,69,73,76,79,84,85,104,115,116|🇨🇳_CN_中国->🇮🇳_IN_印度
     #14'
   network: tcp
   port: 30128
   server: 183.232.170.22
   servername: ''
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
-- cipher: chacha20-ietf-poly1305
-  country: ' CN'
-  name: 14|Relay_ CN-ZZ_19 |10.36Mb
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 23102
-  server: p1.bxy-fun1.com
-  type: ss
+  ws-opts:
+    headers:
+      Host: 183.232.170.22
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   country: CN
-  name: 14,20,43|CN_513
+  name: 14,20,43|CN_512
+  password: desperadoj.com_free_proxy_etg0
+  port: 30003
+  server: music.desperadoj.com
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  country: CN
+  name: 14,20,43|CN_514
   password: desperadoj.com_free_proxy_etg0
   port: 30001
   server: music.desperadoj.com
@@ -34,26 +39,16 @@ proxies:
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   country: CN
-  name: 14,20,43|CN_515
+  name: 14,20,43|CN_513
   password: desperadoj.com_free_proxy_etg0
   port: 30003
   server: 101.132.192.212
   tfo: false
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  country: CN
-  name: 14,20,43|CN_514
-  password: desperadoj.com_free_proxy_etg0
-  port: 30003
-  server: music.desperadoj.com
-  tfo: false
-  type: ss
-  udp: true
 - cipher: chacha20-ietf
   country: CN
-  name: 14,20|Relay_CN-CN_43 |11.15Mb
+  name: 14,20|Relay_CN-CN_45 |120.14Mb
   obfs: plain
   password: mblank1port
   port: 601
@@ -71,6 +66,24 @@ proxies:
   protocol-param: 15979:R0c]V7l-6JymJ3
   server: cntwlayer1.standurl.xyz
   type: ssr
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 14,20|Relay_CN-US_48 |13.89Mb
+  network: ws
+  port: 27102
+  server: rl1.269999.xyz
+  servername: u2.269999.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 460d53e3-3fa4-456a-83d1-d75d17d87c65
+  ws-opts:
+    headers:
+      HOST: u2.269999.xyz
+    path: /
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   country: CN
@@ -83,6 +96,23 @@ proxies:
   protocol-param: 30031:ZDe5ic
   server: jp.12138.one
   type: ssr
+- alterId: 64
+  cipher: auto
+  country: 🇨CN
+  h2-opts: {}
+  http-opts: {}
+  name: 19,23,40|🇨CN_91
+  network: ws
+  port: 443
+  server: 202.79.171.239
+  servername: www.46130221.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
+  ws-headers:
+    HOST: www.46130221.xyz
+  ws-path: /path/143534141104
 - alterId: 0
   cipher: auto
   country: 🇳CN
@@ -97,60 +127,21 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇨CN
-  h2-opts: {}
-  http-opts: {}
-  name: 19,23,29,40|🇨CN_89
-  network: ws
-  port: 443
-  server: 202.79.171.239
-  servername: www.46130221.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
-  ws-headers:
-    HOST: www.46130221.xyz
-  ws-path: /path/143534141104
 - cipher: chacha20-ietf-poly1305
   country: CN
-  name: 20,50,79|12|freenode_9
-  password: ca7e0c98-136d-472c-927b-b56bcba722e3
-  port: 20167
-  server: uydyfkghjrtcsdx.youcansee.cyou
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: 20,79,101|油管绵阿羊_China_ss_110
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  port: 27103
-  server: foshan.chiguayun.shop
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: 20,79,92|江苏省江市+移动
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  port: '27105'
-  server: hefei.chiguayun.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: 20,79|12|freenode_6
+  name: 20,75,79,101|油管绵阿羊_China_ss_06
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   port: 27101
   server: hefei.chiguayun.shop
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: CN
-  name: 20,75,79,101|油管绵阿羊_China_ss_09
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  port: 27108
-  server: foshan.chiguayun.shop
+  name: 20,50,75,79,101|油管绵阿羊_United States_ss_09
+  password: ca7e0c98-136d-472c-927b-b56bcba722e3
+  port: 20167
+  server: uydyfkghjrtcsdx.youcansee.cyou
   type: ss
+  udp: true
 - cipher: chacha20-ietf
   name: 21|Relay_-CN_283
   obfs: plain
@@ -657,7 +648,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf
   country: CN
-  name: 22|Relay_CN-CN_07
+  name: 22|Relay_CN-CN_05
   obfs: plain
   password: mblank1port
   port: 560
@@ -668,11 +659,10 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 43,58,99,108|رایگان | VMESS | @v2Line | HK🇭...
+  name: 43,58,99|RU 17|openitr
   network: ws
   port: '80'
   server: hk1.xv2ray.net
-  servername: hk1.xv2ray.net
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -685,7 +675,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 46,50,54,73,75|🇳CN-159.75.178.50-0456
+  name: 46,50,54,73,75|🇳CN-159.75.178.50-0465
   network: ws
   port: 47551
   server: 159.75.178.50
@@ -699,7 +689,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-153.101.64.221-3397 #1'
+  name: 46,54,75|🇨🇳CN-153.101.64.221-3342
   network: ws
   port: 40013
   server: 153.101.64.221
@@ -712,7 +702,7 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: '46,54,56,61,75|🇨🇳CN-110.72.101.49-1306 #1'
+  name: 46,54,56,61,75|🇨🇳CN-110.72.101.49-1315
   network: ws
   port: 5001
   server: steam.dnspro.icu
@@ -727,7 +717,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-183.240.191.104-3516 #1'
+  name: 46,54,75|🇨🇳CN-183.240.191.104-3461
   network: ws
   port: 5100
   server: st-2.dnspro.icu
@@ -742,7 +732,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-106.55.187.139-3745 #1'
+  name: 46,54,75|🇨🇳CN-106.55.187.139-3690
   network: ws
   port: 8448
   server: 106.55.187.139
@@ -759,7 +749,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '46,54,75|🇨🇳CN-124.221.131.176-3839 #1'
+  name: 46,54,75|🇨🇳CN-124.221.131.176-3784
   network: http
   port: 50797
   server: 124.221.131.176
@@ -770,7 +760,7 @@ proxies:
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
 - alterId: 1
   cipher: auto
-  name: '46,54,75|🇨🇳CN-112.30.145.132-6440 #1'
+  name: 46,54,75|🇨🇳CN-112.30.145.132-6392
   network: ws
   port: 50205
   server: data-hk-v1.heisey.cn
@@ -785,7 +775,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 46,54,75|🇳CN-123.249.101.15-7249
+  name: 46,54,75|🇳CN-123.249.101.15-7201
   network: ws
   port: 19709
   server: 123.249.101.15
@@ -798,7 +788,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 46,54,75|🇳CN-103.184.45.80-10158
+  name: 46,54,75|🇳CN-103.184.45.80-10110
   network: ws
   port: 80
   server: 103.184.45.80
@@ -811,7 +801,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: 46,54,75|🇳CN-103.184.45.79-10159
+  name: 46,54,75|🇳CN-103.184.45.79-10111
   network: ws
   port: 80
   server: 103.184.45.79
@@ -824,7 +814,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.57-10160 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.57-10112
   network: ws
   port: 443
   server: 103.184.45.57
@@ -837,7 +827,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.43-10161 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.43-10113
   network: ws
   port: 443
   server: 103.184.45.43
@@ -850,7 +840,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.40-10162 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.40-10114
   network: ws
   port: 80
   server: 103.184.45.40
@@ -863,7 +853,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.253-10163 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.253-10115
   network: ws
   port: 80
   server: 103.184.45.253
@@ -876,7 +866,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.25-10164 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.25-10116
   network: ws
   port: 80
   server: 103.184.45.25
@@ -889,7 +879,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.188-10165 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.188-10117
   network: ws
   port: 80
   server: 103.184.45.188
@@ -902,7 +892,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.180-10166 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.180-10118
   network: ws
   port: 80
   server: 103.184.45.180
@@ -915,7 +905,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.177-10167 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.177-10119
   network: ws
   port: 443
   server: 103.184.45.177
@@ -928,7 +918,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.45.137-10168 #1'
+  name: 46,54,75|🇨🇳CN-103.184.45.137-10120
   network: ws
   port: 80
   server: 103.184.45.137
@@ -941,7 +931,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.91-10169 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.91-10121
   network: ws
   port: 80
   server: 103.184.44.91
@@ -954,7 +944,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.84-10170 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.84-10122
   network: ws
   port: 443
   server: 103.184.44.84
@@ -967,7 +957,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.82-10171 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.82-10123
   network: ws
   port: 80
   server: 103.184.44.82
@@ -980,7 +970,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.73-10172 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.73-10124
   network: ws
   port: 80
   server: 103.184.44.73
@@ -993,7 +983,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.224-10173 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.224-10125
   network: ws
   port: 80
   server: 103.184.44.224
@@ -1006,7 +996,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.221-10174 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.221-10126
   network: ws
   port: 80
   server: 103.184.44.221
@@ -1019,7 +1009,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.202-10175 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.202-10127
   network: ws
   port: 80
   server: 103.184.44.202
@@ -1032,7 +1022,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.2-10176 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.2-10128
   network: ws
   port: 80
   server: 103.184.44.2
@@ -1045,7 +1035,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.190-10177 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.190-10129
   network: ws
   port: 443
   server: 103.184.44.190
@@ -1058,7 +1048,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.18-10178 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.18-10130
   network: ws
   port: 80
   server: 103.184.44.18
@@ -1071,7 +1061,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.164-10179 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.164-10131
   network: ws
   port: 80
   server: 103.184.44.164
@@ -1084,7 +1074,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.160-10180 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.160-10132
   network: ws
   port: 80
   server: 103.184.44.160
@@ -1097,7 +1087,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.148-10181 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.148-10133
   network: ws
   port: 80
   server: 103.184.44.148
@@ -1110,7 +1100,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.118-10182 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.118-10134
   network: ws
   port: 443
   server: 103.184.44.118
@@ -1123,7 +1113,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '46,54,75|🇨🇳CN-103.184.44.117-10183 #1'
+  name: 46,54,75|🇨🇳CN-103.184.44.117-10135
   network: ws
   port: 80
   server: 103.184.44.117
@@ -1150,7 +1140,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 46,54,56,61,75|CN-123.60.12.229-1277
+  name: 46,54,56,61,75|CN-123.60.12.229-1286
   network: ws
   port: 80
   server: cn.s2fjeyeeyafe.bond
@@ -1263,7 +1253,7 @@ proxies:
     path: /04235e8c-cea8-4f16-8934-b704a89b40cb.live238.m3u8
 - alterId: 0
   cipher: auto
-  name: 46,54,56,61,75|🇳CN-60.215.152.138-1312
+  name: 46,54,56,61,75|🇳CN-60.215.152.138-1321
   network: ws
   port: 80
   server: 60.215.152.138
@@ -1278,7 +1268,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '46,54,56,61,75|🇨🇳CN-120.195.181.4-1318 #1'
+  name: 46,54,56,61,75|🇨🇳CN-120.195.181.4-1327
   network: ws
   port: 80
   server: b656cb57-8eaa-ba34-7efb-ca39f894c08c.genshinimpact.moe
@@ -1293,7 +1283,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '46,54,56,61,75|🇨🇳CN-222.187.254.39-1405 #1'
+  name: 46,54,56,61,75|🇨🇳CN-222.187.254.39-1414
   network: ws
   port: 10123
   server: 8275cl.mc5173.cn
@@ -1308,7 +1298,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '46,54,56,61,75|🇨🇳CN-221.131.165.126-1407 #1'
+  name: 46,54,56,61,75|🇨🇳CN-221.131.165.126-1416
   network: ws
   port: 20105
   server: 2667v2.mc5173.cn
@@ -1337,388 +1327,29 @@ proxies:
       Host: 26.sking.app
     path: /
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 259 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 633
-  server: neoeur.upperlay.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 184 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 631
-  server: neoeur.upperlay.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 50|🇨🇳 CN 102 → tg@nicevpn123
-  network: ws
-  port: 58081
-  server: 101.89.219.103
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8c456efc-67d7-3190-8b75-5c879e133288
-  ws-opts:
-    path: /dabai.in
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 103 → tg@nicevpn123
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20210
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 105 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10707
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 242 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 562
-  server: shzzzhk.eucdurl.me
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 110 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10710
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 115 → tg@nicevpn123
-  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
-  port: 10002
-  server: jp.jiedian.stream
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 256 → tg@nicevpn123
-  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
-  port: 563
-  server: cmrefhk1.labtechs.xyz
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 50|🇨🇳 CN 118 → tg@nicevpn123
-  network: ws
-  port: 30000
-  server: 198.2.202.81
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    path: /
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 156 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 563
-  server: shcuzxhk.eucdurl.me
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 120 → tg@nicevpn123
-  obfs: plain
-  obfs-param: 511df45641.microsoft.com
-  password: jFa4F1
-  port: 7703
-  protocol: auth_aes128_sha1
-  protocol-param: 45641:1119_jE165t
-  server: cm01.newcome.xyz
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 50|🇨🇳 CN 123 → tg@nicevpn123
-  network: ws
-  port: 550
-  server: 10.sking.app
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0c44d0d1-de5c-4e54-b407-6e855a217d75
-  ws-opts:
-    headers:
-      Host: 10.sking.app
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 126 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10714
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50,56|🇨🇳CN-120.238.122.159-144_2@144
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 21003
-  server: service.ouluyun9803.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 50|🇨🇳 CN 129 → tg@nicevpn123
-  network: ws
-  port: 594
-  server: 21.sking.app
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0c44d0d1-de5c-4e54-b407-6e855a217d75
-  ws-opts:
-    headers:
-      Host: 21.sking.app
-    path: /
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 300 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 574
-  server: usastart1.upperlay.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 132 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10702
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 398 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 636
-  server: neoeur.upperlay.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 421 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 573
-  server: usastart2.upperlay.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 136 → tg@nicevpn123
-  password: 51d6e5a6-cedb-45f5-a3ef-c4ab0e3f2822
-  port: 49759
-  server: 223.111.162.173
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 183 → tg@nicevpn123
-  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
-  port: 565
-  server: cmlayer2.labtechs.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 139 → tg@nicevpn123
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20203
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 14 → tg@nicevpn123
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20109
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 50,56,75,79,82|🇸🇬 新加坡2|@ripaojiedian
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20009
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 181 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 572
-  server: usastart1.upperlay.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 50|🇨🇳 CN 147 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: jp3.s2fjeyeeyafe.bond
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
-  ws-opts:
-    headers:
-      Host: jp3.s2fjeyeeyafe.bond
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 148 → tg@nicevpn123
-  password: c8e1a97e-0e69-4c1b-9fad-edbf30ab9bfb
-  port: 32312
-  server: fzus.mofacloud.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 149 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10721
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 368 → tg@nicevpn123
-  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
-  port: 568
-  server: aisalayer01.upperlay.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 50|🇨🇳 CN 154 → tg@nicevpn123
-  network: ws
-  port: 16648
-  server: m.cnmjcn.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      Host: m.cnmjcn.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 16 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10719
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 160 → tg@nicevpn123
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: 6707
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm03.newcome.xyz
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 161 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10705
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 227 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 571
-  server: usastart1.upperlay.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 164 → tg@nicevpn123
-  password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
-  port: 46601
-  server: tw01.network-cdn-gw.cc
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 166 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10712
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 176 → tg@nicevpn123
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: 6701
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm03.newcome.xyz
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 177 → tg@nicevpn123
-  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
-  port: 10708
-  server: yidong.liulangdiqiu.life
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 223 → tg@nicevpn123
-  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
-  port: 564
-  server: rcgm.labtechs.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 37 → tg@nicevpn123
-  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
-  port: 565
-  server: cminit.labtechs.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 381 → tg@nicevpn123
-  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
-  port: 563
-  server: rcgm.labtechs.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 440 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 574
-  server: usastart2.upperlay.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 218 → tg@nicevpn123
-  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
-  port: 564
-  server: cmrefhk1.labtechs.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 341 → tg@nicevpn123
+  name: 50|🇨🇳 CN 270 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 570
   server: aisalayer02.upperlay.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 231 → tg@nicevpn123
+  name: 50|🇨🇳 CN 148 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 566
   server: aisalayer01.upperlay.xyz
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 160 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 562
+  server: shzzzhk.eucdurl.me
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 198 → tg@nicevpn123
+  name: 50|🇨🇳 CN 110 → tg@nicevpn123
   network: ws
   port: 25244
   server: hk1.awslcn.info
@@ -1732,77 +1363,105 @@ proxies:
       Host: hk1.awslcn.info
     path: /
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 258 → tg@nicevpn123
+  name: 50|🇨🇳 CN 177 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 564
   server: cmthkd-d.net-lag.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 426 → tg@nicevpn123
+  name: 50|🇨🇳 CN 364 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 563
   server: cmthkd-d.net-lag.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 55 → tg@nicevpn123
+  name: 50|🇨🇳 CN 398 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 570
   server: neoeur.upperlay.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 206 → tg@nicevpn123
+  name: 50|🇨🇳 CN 120 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10718
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 209 → tg@nicevpn123
+  name: 50|🇨🇳 CN 123 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10715
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 21 → tg@nicevpn123
+  name: 50|🇨🇳 CN 124 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20106
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 224 → tg@nicevpn123
+  name: 50|🇨🇳 CN 140 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 569
   server: aisalayer02.upperlay.xyz
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 99 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 564
+  server: cmrefhk1.labtechs.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 22 → tg@nicevpn123
+  name: 50|🇨🇳 CN 135 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10717
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 415 → tg@nicevpn123
+  name: 50|🇨🇳 CN 90 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 564
+  server: rcgm.labtechs.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 14 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10710
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 72 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 571
+  server: usastart1.upperlay.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 352 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 564
   server: cmlayer2.labtechs.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 229 → tg@nicevpn123
+  name: 50|🇨🇳 CN 145 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10709
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 23 → tg@nicevpn123
+  name: 50|🇨🇳 CN 146 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20118
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
@@ -1810,7 +1469,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 232 → tg@nicevpn123
+  name: 50|🇨🇳 CN 149 → tg@nicevpn123
   network: ws
   port: 25256
   server: us1.awslcn.info
@@ -1824,49 +1483,63 @@ proxies:
       Host: us1.awslcn.info
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 236 → tg@nicevpn123
+  name: 50|🇨🇳 CN 153 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10725
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 244 → tg@nicevpn123
+  name: 50|🇨🇳 CN 162 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20120
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 446 → tg@nicevpn123
+  name: 50|🇨🇳 CN 386 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 564
   server: cnrefhk2.labtechs.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 248 → tg@nicevpn123
+  name: 50|🇨🇳 CN 166 → tg@nicevpn123
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 23106
   server: p1.bxy-fun3.com
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 379 → tg@nicevpn123
+  name: 50|🇨🇳 CN 311 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 637
   server: neoeur.upperlay.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 255 → tg@nicevpn123
+  name: 50|🇨🇳 CN 174 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 46604
   server: tw04.network-cdn-gw.cc
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 21 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 563
+  server: cmrefhk1.labtechs.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 3 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 633
+  server: neoeur.upperlay.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 26 → tg@nicevpn123
+  name: 50|🇨🇳 CN 179 → tg@nicevpn123
   obfs: plain
   obfs-param: 511df45641.microsoft.com
   password: jFa4F1
@@ -1877,7 +1550,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 260 → tg@nicevpn123
+  name: 50|🇨🇳 CN 180 → tg@nicevpn123
   obfs: plain
   obfs-param: Y2Y0ODI1MDkxNi5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -1888,14 +1561,14 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 261 → tg@nicevpn123
+  name: 50|🇨🇳 CN 181 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10713
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 266 → tg@nicevpn123
+  name: 50|🇨🇳 CN 186 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -1907,7 +1580,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 267 → tg@nicevpn123
+  name: 50|🇨🇳 CN 187 → tg@nicevpn123
   network: ws
   port: 34881
   server: 183.233.187.221
@@ -1919,35 +1592,42 @@ proxies:
   ws-opts:
     path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 324 → tg@nicevpn123
+  name: 50|🇨🇳 CN 251 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 634
   server: neoeur.upperlay.xyz
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 19 → tg@nicevpn123
+  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
+  port: 10002
+  server: jp.jiedian.stream
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 270 → tg@nicevpn123
+  name: 50|🇨🇳 CN 191 → tg@nicevpn123
   password: db1708c1-6f40-4515-92a4-7e9bb3df187a
   port: 27256
   server: gtm.ktmwan.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 271 → tg@nicevpn123
+  name: 50|🇨🇳 CN 192 → tg@nicevpn123
   password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491
   port: 20007
   server: service.ouluyun9803.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 272 → tg@nicevpn123
+  name: 50|🇨🇳 CN 193 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 45506
   server: sgp01.network-cdn-gw.cc
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 69 → tg@nicevpn123
+  name: 50|🇨🇳 CN 413 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 572
   server: usastart2.upperlay.xyz
@@ -1955,7 +1635,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 28 → tg@nicevpn123
+  name: 50|🇨🇳 CN 201 → tg@nicevpn123
   network: ws
   port: 46242
   server: 101.91.226.84
@@ -1967,50 +1647,70 @@ proxies:
   ws-opts:
     path: /dabai.in
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 280 → tg@nicevpn123
+  name: 50|🇨🇳 CN 202 → tg@nicevpn123
   password: db1708c1-6f40-4515-92a4-7e9bb3df187a
   port: 27255
   server: gtm.ktmwan.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 281 → tg@nicevpn123
+  name: 50|🇨🇳 CN 203 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10716
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 289 → tg@nicevpn123
+  name: 50,56,75,85|_CN_中国->🇳_IN_印度+1
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 21003
+  server: service.ouluyun9803.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 211 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20113
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 308 → tg@nicevpn123
+  name: 50|🇨🇳 CN 233 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 630
   server: neoeur.upperlay.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 404 → tg@nicevpn123
+  name: 50|🇨🇳 CN 340 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 635
   server: neoeur.upperlay.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 296 → tg@nicevpn123
+  name: 50|🇨🇳 CN 219 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 46602
   server: tw02.network-cdn-gw.cc
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 50|🇨🇳 CN 22 → tg@nicevpn123
+  network: ws
+  port: 30000
+  server: 198.2.202.81
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 297 → tg@nicevpn123
+  name: 50|🇨🇳 CN 220 → tg@nicevpn123
   network: ws
   port: 35940
   server: 58.242.130.170
@@ -2022,42 +1722,56 @@ proxies:
   ws-opts:
     path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 388 → tg@nicevpn123
+  name: 50|🇨🇳 CN 321 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 567
   server: cminit.labtechs.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 52 → tg@nicevpn123
+  name: 50|🇨🇳 CN 395 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 564
   server: shcuzxhk.eucdurl.me
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50,75|🇨🇳CN-120.238.122.160-2591
-  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  name: 50|🇨🇳 CN 257 → tg@nicevpn123
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
   port: 26668
   server: service.ouluyun9803.com
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 36 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 574
+  server: usastart1.upperlay.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 304 → tg@nicevpn123
+  name: 50|🇨🇳 CN 229 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10701
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 35 → tg@nicevpn123
+  name: 50|🇨🇳 CN 64 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 563
+  server: shcuzxhk.eucdurl.me
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 279 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 571
   server: aisalayer02.upperlay.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 80 → tg@nicevpn123
+  name: 50|🇨🇳 CN 426 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 571
   server: usastart2.upperlay.xyz
@@ -2065,7 +1779,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 309 → tg@nicevpn123
+  name: 50|🇨🇳 CN 234 → tg@nicevpn123
   network: ws
   port: 80
   server: dpt-vn1.uudai4g.com
@@ -2079,21 +1793,21 @@ proxies:
       Host: dpt-vn1.uudai4g.com
     path: /uudai4g.com
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 336 → tg@nicevpn123
+  name: 50|🇨🇳 CN 264 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 565
   server: cnrefhk2.labtechs.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 314 → tg@nicevpn123
+  name: 50|🇨🇳 CN 240 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20105
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 32 → tg@nicevpn123
+  name: 50|🇨🇳 CN 246 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2105,7 +1819,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 320 → tg@nicevpn123
+  name: 50|🇨🇳 CN 247 → tg@nicevpn123
   network: ws
   port: 25284
   server: cu.awslcn.info
@@ -2118,43 +1832,54 @@ proxies:
     headers:
       Host: cu.awslcn.info
     path: /
+- cipher: chacha20-ietf
+  name: 50|🇨🇳 CN 25 → tg@nicevpn123
+  obfs: plain
+  obfs-param: 511df45641.microsoft.com
+  password: jFa4F1
+  port: 7703
+  protocol: auth_aes128_sha1
+  protocol-param: 45641:1119_jE165t
+  server: cm01.newcome.xyz
+  type: ssr
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 323 → tg@nicevpn123
+  name: 50|🇨🇳 CN 250 → tg@nicevpn123
   password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
   port: 20007
   server: 120.238.122.160
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 354 → tg@nicevpn123
+  name: 50|🇨🇳 CN 284 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 567
   server: aisalayer01.upperlay.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 406 → tg@nicevpn123
+  name: 50|🇨🇳 CN 342 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 569
   server: aisalayer01.upperlay.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 6 → tg@nicevpn123
+  name: 50|🇨🇳 CN 403 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 570
   server: usastart2.upperlay.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 331 → tg@nicevpn123
+  name: 50|🇨🇳 CN 259 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20202
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 332 → tg@nicevpn123
+  name: 50|🇨🇳 CN 260 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2166,7 +1891,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 337 → tg@nicevpn123
+  name: 50|🇨🇳 CN 265 → tg@nicevpn123
   network: ws
   port: 20011
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -2181,7 +1906,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 338 → tg@nicevpn123
+  name: 50|🇨🇳 CN 266 → tg@nicevpn123
   network: ws
   port: 585
   server: 22.sking.app
@@ -2196,7 +1921,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 339 → tg@nicevpn123
+  name: 50|🇨🇳 CN 267 → tg@nicevpn123
   network: ws
   port: 20005
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -2217,14 +1942,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 344 → tg@nicevpn123
+  name: 50|🇨🇳 CN 273 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10704
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 345 → tg@nicevpn123
+  name: 50|🇨🇳 CN 274 → tg@nicevpn123
   obfs: plain
   obfs-param: cf48250916.microsoft.com
   password: jFa4F1
@@ -2235,28 +1960,43 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 347 → tg@nicevpn123
+  name: 50|🇨🇳 CN 276 → tg@nicevpn123
   password: db1708c1-6f40-4515-92a4-7e9bb3df187a
   port: 27253
   server: gtm.ktmwan.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 348 → tg@nicevpn123
+  name: 50|🇨🇳 CN 277 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20107
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 349 → tg@nicevpn123
+  name: 50|🇨🇳 CN 278 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20117
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 50|🇨🇳 CN 28 → tg@nicevpn123
+  network: ws
+  port: 550
+  server: 10.sking.app
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0c44d0d1-de5c-4e54-b407-6e855a217d75
+  ws-opts:
+    headers:
+      Host: 10.sking.app
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 351 → tg@nicevpn123
+  name: 50|🇨🇳 CN 281 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 45508
   server: sgp03.network-cdn-gw.cc
@@ -2290,21 +2030,21 @@ proxies:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 356 → tg@nicevpn123
+  name: 50|🇨🇳 CN 286 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 46603
   server: tw03.network-cdn-gw.cc
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 91 → tg@nicevpn123
+  name: 50|🇨🇳 CN 438 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 565
   server: cmthkd-d.net-lag.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 362 → tg@nicevpn123
+  name: 50|🇨🇳 CN 293 → tg@nicevpn123
   obfs: plain
   obfs-param: 5d3ee46961.microsoft.com
   password: jFa4F1
@@ -2315,42 +2055,63 @@ proxies:
   type: ssr
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 393 → tg@nicevpn123
+  name: 50|🇨🇳 CN 327 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 575
   server: usastart1.upperlay.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 416 → tg@nicevpn123
+  name: 50|🇨🇳 CN 353 → tg@nicevpn123
   password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
   port: 570
   server: aisalayer01.upperlay.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 96 → tg@nicevpn123
+  name: 50|🇨🇳 CN 443 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 566
   server: cminit.labtechs.xyz
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 59 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 568
+  server: aisalayer01.upperlay.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 93 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 565
+  server: cminit.labtechs.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 375 → tg@nicevpn123
+  name: 50|🇨🇳 CN 307 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20201
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 377 → tg@nicevpn123
+  name: 50|🇨🇳 CN 309 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 45510
   server: sgp05.network-cdn-gw.cc
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 31 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10714
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 38 → tg@nicevpn123
+  name: 50|🇨🇳 CN 312 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2362,7 +2123,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 380 → tg@nicevpn123
+  name: 50|🇨🇳 CN 313 → tg@nicevpn123
   network: ws
   port: 16648
   server: t.cnmjcn.cyou
@@ -2375,8 +2136,15 @@ proxies:
     headers:
       Host: t.cnmjcn.cyou
     path: /
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 97 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 563
+  server: rcgm.labtechs.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 384 → tg@nicevpn123
+  name: 50|🇨🇳 CN 317 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2387,14 +2155,14 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 385 → tg@nicevpn123
+  name: 50|🇨🇳 CN 318 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 46605
   server: tw05.network-cdn-gw.cc
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 386 → tg@nicevpn123
+  name: 50|🇨🇳 CN 319 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2405,21 +2173,21 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 39 → tg@nicevpn123
+  name: 50|🇨🇳 CN 323 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10726
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 392 → tg@nicevpn123
+  name: 50|🇨🇳 CN 326 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10706
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 394 → tg@nicevpn123
+  name: 50|🇨🇳 CN 328 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10711
   server: yidong.liulangdiqiu.life
@@ -2428,7 +2196,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 50,56,59,75,79,82,98|🇳广东4
+  name: 50,56,59,75,79,82,92,98|🇳广东4
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26601
   server: service.ouluyun9803.com
@@ -2437,8 +2205,15 @@ proxies:
   tls: true
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 39 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 636
+  server: neoeur.upperlay.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 40 → tg@nicevpn123
+  name: 50|🇨🇳 CN 335 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2449,7 +2224,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 401 → tg@nicevpn123
+  name: 50|🇨🇳 CN 337 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2461,7 +2236,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 402 → tg@nicevpn123
+  name: 50|🇨🇳 CN 338 → tg@nicevpn123
   network: ws
   port: 25257
   server: us2.awslcn.info
@@ -2474,22 +2249,37 @@ proxies:
     headers:
       Host: us2.awslcn.info
     path: /
+- alterId: 0
+  cipher: auto
+  name: 50|🇨🇳 CN 34 → tg@nicevpn123
+  network: ws
+  port: 594
+  server: 21.sking.app
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0c44d0d1-de5c-4e54-b407-6e855a217d75
+  ws-opts:
+    headers:
+      Host: 21.sking.app
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 405 → tg@nicevpn123
+  name: 50|🇨🇳 CN 341 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20115
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 407 → tg@nicevpn123
+  name: 50|🇨🇳 CN 343 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10722
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 410 → tg@nicevpn123
+  name: 50|🇨🇳 CN 347 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 45509
   server: sgp04.network-cdn-gw.cc
@@ -2497,7 +2287,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 418 → tg@nicevpn123
+  name: 50|🇨🇳 CN 355 → tg@nicevpn123
   network: ws
   port: 25239
   server: us1.awslcn.info
@@ -2511,23 +2301,30 @@ proxies:
       Host: us1.awslcn.info
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 42 → tg@nicevpn123
+  name: 50|🇨🇳 CN 357 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20119
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 420 → tg@nicevpn123
+  name: 50|🇨🇳 CN 358 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10723
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 41 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 573
+  server: usastart2.upperlay.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 50,56,59,75,79,90,98,101|油管绵阿羊_China_ss_43
+  name: 50,56,59,75,79,90,92,98,101|油管绵阿羊_China_ss_42
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -2537,21 +2334,21 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 423 → tg@nicevpn123
+  name: 50|🇨🇳 CN 361 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20205
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 427 → tg@nicevpn123
+  name: 50|🇨🇳 CN 365 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20111
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 430 → tg@nicevpn123
+  name: 50|🇨🇳 CN 369 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2562,7 +2359,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 436 → tg@nicevpn123
+  name: 50|🇨🇳 CN 375 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2573,14 +2370,14 @@ proxies:
   type: ssr
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 82 → tg@nicevpn123
+  name: 50|🇨🇳 CN 428 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 565
   server: shcuzxhk.eucdurl.me
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 44 → tg@nicevpn123
+  name: 50|🇨🇳 CN 379 → tg@nicevpn123
   password: g12sQi#ss#&1
   plugin: v2ray-plugin
   plugin-opts:
@@ -2595,14 +2392,28 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 442 → tg@nicevpn123
+  name: 50|🇨🇳 CN 38 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10702
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 98 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 574
+  server: usastart2.upperlay.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 382 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20112
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 443 → tg@nicevpn123
+  name: 50|🇨🇳 CN 383 → tg@nicevpn123
   password: db1708c1-6f40-4515-92a4-7e9bb3df187a
   port: 27258
   server: gtm.ktmwan.com
@@ -2610,7 +2421,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 51 → tg@nicevpn123
+  name: 50|🇨🇳 CN 394 → tg@nicevpn123
   network: ws
   port: 532
   server: 1.sking.app
@@ -2625,7 +2436,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 56 → tg@nicevpn123
+  name: 50|🇨🇳 CN 399 → tg@nicevpn123
   network: ws
   port: 16626
   server: yes.cnmjcn.net
@@ -2638,9 +2449,16 @@ proxies:
     headers:
       Host: yes.cnmjcn.net
     path: /
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 95 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 631
+  server: neoeur.upperlay.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 59 → tg@nicevpn123
+  name: 50|🇨🇳 CN 402 → tg@nicevpn123
   network: ws
   port: 2095
   server: 120.233.45.104
@@ -2652,7 +2470,7 @@ proxies:
   ws-opts:
     path: /dabai.in
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 61 → tg@nicevpn123
+  name: 50|🇨🇳 CN 405 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2664,7 +2482,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 63 → tg@nicevpn123
+  name: 50|🇨🇳 CN 407 → tg@nicevpn123
   network: ws
   port: 16648
   server: yes.cnmjcn.net
@@ -2679,7 +2497,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 67 → tg@nicevpn123
+  name: 50|🇨🇳 CN 411 → tg@nicevpn123
   network: ws
   port: 50394
   server: 218.204.179.53
@@ -2691,14 +2509,14 @@ proxies:
   ws-opts:
     path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
 - cipher: aes-128-gcm
-  name: 50|🇨🇳 CN 8 → tg@nicevpn123
+  name: 50|🇨🇳 CN 425 → tg@nicevpn123
   password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 573
   server: usastart1.upperlay.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 71 → tg@nicevpn123
+  name: 50|🇨🇳 CN 416 → tg@nicevpn123
   password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
   port: 45507
   server: sgp02.network-cdn-gw.cc
@@ -2706,15 +2524,22 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 50,56,62,75,79,82,92|+
+  name: 50,56,62,75,79,82|🇰🇷 韩国3|@ripaojiedian
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: '26666'
+  port: 26666
   server: service.ouluyun9803.com
   tfo: false
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 42 → tg@nicevpn123
+  password: 51d6e5a6-cedb-45f5-a3ef-c4ab0e3f2822
+  port: 49759
+  server: 223.111.162.173
+  type: ss
+  udp: true
 - cipher: chacha20-ietf
-  name: 50|🇨🇳 CN 79 → tg@nicevpn123
+  name: 50|🇨🇳 CN 424 → tg@nicevpn123
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -2725,42 +2550,42 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 84 → tg@nicevpn123
+  name: 50|🇨🇳 CN 430 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20114
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 85 → tg@nicevpn123
+  name: 50|🇨🇳 CN 431 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20116
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 86 → tg@nicevpn123
+  name: 50|🇨🇳 CN 432 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10703
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 87 → tg@nicevpn123
+  name: 50|🇨🇳 CN 433 → tg@nicevpn123
   password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
   port: 10720
   server: yidong.liulangdiqiu.life
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 88 → tg@nicevpn123
+  name: 50|🇨🇳 CN 434 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20108
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 50|🇨🇳 CN 90 → tg@nicevpn123
+  name: 50|🇨🇳 CN 437 → tg@nicevpn123
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   port: 20204
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
@@ -2768,7 +2593,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 92 → tg@nicevpn123
+  name: 50|🇨🇳 CN 439 → tg@nicevpn123
   network: ws
   port: 25103
   server: 183.233.187.221
@@ -2779,9 +2604,16 @@ proxies:
   uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
   ws-opts:
     path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 94 → tg@nicevpn123
+  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  port: 565
+  server: cmlayer2.labtechs.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 93 → tg@nicevpn123
+  name: 50|🇨🇳 CN 440 → tg@nicevpn123
   network: ws
   port: 41082
   server: 101.89.154.94
@@ -2794,7 +2626,7 @@ proxies:
     path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: 50|🇨🇳 CN 98 → tg@nicevpn123
+  name: 50|🇨🇳 CN 445 → tg@nicevpn123
   network: ws
   port: 25230
   server: cm1.awslcn.info
@@ -2807,9 +2639,167 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 45 → tg@nicevpn123
+  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+  port: 20203
+  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 46 → tg@nicevpn123
+  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+  port: 20109
+  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 50,56,75,79,82|🇸🇬 新加坡2|@ripaojiedian
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20009
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 54,73,75|🇳CN-171.221.21.13-0405
+  name: 50|🇨🇳 CN 5 → tg@nicevpn123
+  network: ws
+  port: 58081
+  server: 101.89.219.103
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8c456efc-67d7-3190-8b75-5c879e133288
+  ws-opts:
+    path: /dabai.in
+- cipher: aes-128-gcm
+  name: 50|🇨🇳 CN 92 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
+  port: 572
+  server: usastart1.upperlay.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 50|🇨🇳 CN 54 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: jp3.s2fjeyeeyafe.bond
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
+  ws-opts:
+    headers:
+      Host: jp3.s2fjeyeeyafe.bond
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 55 → tg@nicevpn123
+  password: c8e1a97e-0e69-4c1b-9fad-edbf30ab9bfb
+  port: 32312
+  server: fzus.mofacloud.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 56 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10721
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 6 → tg@nicevpn123
+  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+  port: 20210
+  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 50|🇨🇳 CN 62 → tg@nicevpn123
+  network: ws
+  port: 16648
+  server: m.cnmjcn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: m.cnmjcn.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 68 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10719
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: 50|🇨🇳 CN 69 → tg@nicevpn123
+  obfs: plain
+  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
+  password: jFa4F1
+  port: 6707
+  protocol: auth_aes128_sha1
+  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
+  server: cm03.newcome.xyz
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 70 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10705
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 73 → tg@nicevpn123
+  password: 7184dbdc-14b2-49a8-becd-ecde0be9047c
+  port: 46601
+  server: tw01.network-cdn-gw.cc
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 75 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10712
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 8 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10707
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: 50|🇨🇳 CN 86 → tg@nicevpn123
+  obfs: plain
+  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
+  password: jFa4F1
+  port: 6701
+  protocol: auth_aes128_sha1
+  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
+  server: cm03.newcome.xyz
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳 CN 87 → tg@nicevpn123
+  password: 4d0da6e1-d5fd-4539-9240-0d7a95000255
+  port: 10708
+  server: yidong.liulangdiqiu.life
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 54,73,75|🇳CN-171.221.21.13-0414
   network: ws
   port: 8081
   server: 171.221.21.13
@@ -2823,7 +2813,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2278
-  name: 54,75,110|CN_speednode_0043
+  name: 54,110|CN_speednode_0043
   network: ws
   port: 27102
   server: rl1.269999.xyz
@@ -2838,7 +2828,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-183.232.159.153-3395 #1'
+  name: 54,75|🇨🇳CN-183.232.159.153-3340
   network: ws
   port: 30023
   server: v01.gutingting.com
@@ -2853,7 +2843,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-120.233.47.170-3396 #1'
+  name: 54,75|🇨🇳CN-120.233.47.170-3341
   network: ws
   port: 30015
   server: v02.gutingting.com
@@ -2868,7 +2858,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-183.232.159.153-3446 #1'
+  name: 54,75|🇨🇳CN-183.232.159.153-3391
   network: ws
   port: 30009
   server: ns01.gutingting.com
@@ -2883,7 +2873,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-120.233.42.195-3447 #1'
+  name: 54,75|🇨🇳CN-120.233.42.195-3392
   network: ws
   port: 48203
   server: v2hk-ws-tls.ytv2line.top
@@ -2898,7 +2888,7 @@ proxies:
     path: /cpyhyfd3
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-183.232.159.153-3448 #1'
+  name: 54,75|🇨🇳CN-183.232.159.153-3393
   network: ws
   port: 30044
   server: ns01.gutingting.com
@@ -2913,7 +2903,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-120.233.47.170-3449 #1'
+  name: 54,75|🇨🇳CN-120.233.47.170-3394
   network: ws
   port: 30041
   server: v02.gutingting.com
@@ -2928,7 +2918,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-183.240.191.106-3515 #1'
+  name: 54,75|🇨🇳CN-183.240.191.106-3460
   network: ws
   port: 9111
   server: st-1.dnspro.icu
@@ -2943,7 +2933,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: 54,75|🇳CN-183.240.191.106-3520
+  name: 54,75|🇨🇳CN-183.240.191.106-3465
   network: ws
   port: 20025
   server: sh-cn-1.dnspro.icu
@@ -2958,7 +2948,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: '54,75|🇨🇳CN-223.111.202.139-3527 #1'
+  name: 54,75|🇨🇳CN-223.111.202.139-3472
   network: ws
   port: 63088
   server: 223.111.202.139
@@ -2971,7 +2961,7 @@ proxies:
     path: /mugua
 - alterId: 0
   cipher: auto
-  name: 54,75|🇳CN-223.111.202.139-3550
+  name: 54,75|🇳CN-223.111.202.139-3495
   network: ws
   port: 63086
   server: 223.111.202.139
@@ -2984,7 +2974,7 @@ proxies:
     path: /mugua
 - alterId: 1
   cipher: auto
-  name: 54,75|🇳CN-120.233.42.199-3734
+  name: 54,75|🇳CN-120.233.42.199-3679
   network: ws
   port: 50205
   server: data-hk-v2.shwjfkw.cn
@@ -2999,7 +2989,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 54,75|🇳CN-124.222.189.225-3813
+  name: 54,75|🇳CN-124.222.189.225-3758
   network: ws
   port: 80
   server: 124.222.189.225
@@ -3012,12 +3002,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,79|29|🇨🇳_CN_中国->🇨🇦_CA_加拿大_由快嘴科技提供...
+  name: 54|🇨🇳CN-36.139.239.162-4014
   network: ws
   port: 11301
   server: 36.139.239.162
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 205e8e1a-f0a5-3778-8a6a-3493c0cf2bef
@@ -3027,7 +3016,7 @@ proxies:
     path: /ef483582-6269-468c-93af-c512ec2b8a61
 - alterId: 4
   cipher: auto
-  name: 54,75|🇳CN-117.28.242.156-6439
+  name: 54,75|🇳CN-117.28.242.156-6391
   network: ws
   port: 2164
   server: 117.28.242.156
@@ -3042,7 +3031,7 @@ proxies:
     path: /ws
 - alterId: 1
   cipher: auto
-  name: '54,75|🇨🇳CN-120.233.42.199-6441 #1'
+  name: 54,75|🇨🇳CN-120.233.42.199-6393
   network: ws
   port: 50207
   server: data-hk-v1.shwjfkw.cn
@@ -3057,7 +3046,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 4
   cipher: auto
-  name: 54,75|🇳CN-157.254.193.68-7053
+  name: 54,75|🇳CN-157.254.193.68-7005
   network: ws
   port: 10020
   server: 157.254.193.68
@@ -3070,12 +3059,13 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君) #7'
+  name: 54,75,76,85|香港(欢迎订阅Youtube破解资源君)+7
   network: ws
-  port: '111'
+  port: 111
   server: 120.232.214.89
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: b5b579f4-3320-301c-a04b-c2473062b46c
@@ -3085,12 +3075,13 @@ proxies:
     path: /vvv
 - alterId: 1
   cipher: auto
-  name: '54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君) #6'
+  name: 54,75,76,85|香港(欢迎订阅Youtube破解资源君)+6
   network: ws
-  port: '117'
+  port: 117
   server: 120.232.214.89
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: b5b579f4-3320-301c-a04b-c2473062b46c
@@ -3100,12 +3091,13 @@ proxies:
     path: /vvv
 - alterId: 1
   cipher: auto
-  name: '54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君) #5'
+  name: 54,75,76,85|香港(欢迎订阅Youtube破解资源君)+5
   network: ws
-  port: '110'
+  port: 110
   server: 120.232.214.89
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: b5b579f4-3320-301c-a04b-c2473062b46c
@@ -3115,12 +3107,13 @@ proxies:
     path: /vvv
 - alterId: 1
   cipher: auto
-  name: '54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君) #4'
+  name: 54,75,76,85|香港(欢迎订阅Youtube破解资源君)+4
   network: ws
-  port: '115'
+  port: 115
   server: 120.232.214.89
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: b5b579f4-3320-301c-a04b-c2473062b46c
@@ -3130,12 +3123,13 @@ proxies:
     path: /vvv
 - alterId: 0
   cipher: auto
-  name: '54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君) #3'
+  name: 54,75,76,85|香港(欢迎订阅Youtube破解资源君)+3
   network: ws
-  port: '64088'
+  port: 64088
   server: 120.232.41.242
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: 51f79218-4c27-3a41-9c4f-bda3462a9b27
@@ -3145,12 +3139,13 @@ proxies:
     path: /biteb
 - alterId: 0
   cipher: auto
-  name: '54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君) #2'
+  name: 54,75,76,85|香港(欢迎订阅Youtube破解资源君)+2
   network: ws
-  port: '64088'
+  port: 64088
   server: 139.226.78.178
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: 51f79218-4c27-3a41-9c4f-bda3462a9b27
@@ -3160,12 +3155,13 @@ proxies:
     path: /biteb
 - alterId: 1
   cipher: auto
-  name: '54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君) #1'
+  name: 54,75,76,85|香港(欢迎订阅Youtube破解资源君)+1
   network: ws
-  port: '116'
+  port: 116
   server: 120.232.214.89
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: b5b579f4-3320-301c-a04b-c2473062b46c
@@ -3175,12 +3171,13 @@ proxies:
     path: /vvv
 - alterId: 1
   cipher: auto
-  name: 54,75,76|🇭🇰 香港(欢迎订阅Youtube破解资源君)
+  name: 54,75,76,85|(欢迎订阅Youtube破解资源君)
   network: ws
-  port: '114'
+  port: 114
   server: 120.232.214.89
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: b5b579f4-3320-301c-a04b-c2473062b46c
@@ -3308,7 +3305,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 56,59,75,79,90,92,98,101|油管绵阿羊_China_ss_45
+  name: 56,59,75,79,85,90,92,98,101|油管绵阿羊_China_ss_44
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -3318,7 +3315,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 56,75|🇨🇳CN-117.149.247.11-2159
+  name: 56,75|🇨🇳CN-117.149.247.11-2214
   password: 8e949d75-3510-4678-8593-3c5032dd931a
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
@@ -3326,7 +3323,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 56,75,79,82,98|🇳广东2
+  name: 56,75,79,82,85,98|🇳广东2
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 21001
   server: service.ouluyun9803.com
@@ -3337,7 +3334,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 56,59,75,79,82,98,110|CN_speednode_0040
+  name: 56,75,79,82,98,110|CN_speednode_0040
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 50004
   server: service.ouluyun9803.com
@@ -3414,11 +3411,12 @@ proxies:
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
-  name: 56,61|中国 034
+  name: 56,61,75|🇳CN-60.215.152.138-1438
   network: ws
   port: 80
   server: aa566209-895d-00d5-72c1-9f2e7c68f9ea.genshinimpact.moe
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
   ws-opts:
@@ -3436,12 +3434,31 @@ proxies:
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 64
   cipher: auto
-  name: '56,61,79|21|US美国(mibei77.com 米贝节点分享) #8'
+  client-fingerprint: chrome
+  name: '56,59,60,61,73,75,76,79,99,104|美国 V2CROSS.COM #4'
   network: ws
-  port: '38000'
+  port: '37000'
+  server: 108.186.196.170
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.86222404.xyz
+    path: /path/1707385668735
+- alterId: 64
+  cipher: auto
+  name: 56,61,75,79,85|US美国(mibei77.com 米贝节点分享)+8
+  network: ws
+  port: 38000
   server: 137.175.29.76
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
+  skip-cert-vertify: true
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -3451,11 +3468,13 @@ proxies:
     path: /path/1707212417349
 - alterId: 64
   cipher: auto
-  name: 56,61,73|美国 加利福尼亚州圣何塞PEG TECH
+  name: 56,61,75,79,85|US美国(mibei77.com 节点)
   network: ws
   port: 36000
   server: 142.4.97.68
-  skip-cert-verify: true
+  servername: ''
+  skip-cert-verify: false
+  skip-cert-vertify: true
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -3465,11 +3484,11 @@ proxies:
     path: /path/1707385668735
 - alterId: 64
   cipher: auto
-  name: 56,61|中国 039
+  name: 56,61,75|🇺🇸US-198.2.196.165-1459
   network: ws
   port: 36000
   server: 198.2.196.165
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -3477,8 +3496,48 @@ proxies:
     headers:
       Host: www.54701745.xyz
     path: /path/1707128600260
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: '56,59,60,61,73,75,76,79,85,99,104|美国 V2CROSS.COM #5'
+  network: ws
+  port: '37000'
+  server: 108.186.164.74
+  servername: ''
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.98382183.xyz
+    path: /path/1707385668735
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 59,75,79,85,92,101|油管绵阿羊_China_ss_411
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  port: 27102
+  server: foshan.chiguayun.shop
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 59,75,79,82,92,98|🇳广东6
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 50005
+  server: service.ouluyun9803.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
 - cipher: aes-128-cfb
-  name: 62,75|🇨🇳CN-14.29.124.168-3701
+  name: 62,75|🇨🇳CN-14.29.124.168-3646
   password: QazEdcTgb159@$*
   port: 25266
   server: 14.29.124.168
@@ -3511,74 +3570,224 @@ proxies:
   tls: false
   type: vmess
   uuid: 828e30d3-fbe6-4607-bbd6-ba6eaba89d70
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.195-0133
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.194-0156
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5955
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.195-0162
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.194-0164
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.194-0168
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.195-0170
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5958
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇨🇳CN-122.193.251.197-0172
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.197-0173
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.195-0201
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5951
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.197-0202
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇨🇳CN-122.193.251.197-0213
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.197-0215
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5955
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.195-0217
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇳CN-122.193.251.197-0221
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 75|🇨🇳CN-122.193.251.197-0223
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5951
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.174-0275
+  name: 75|🇳CN-14.29.124.174-0284
   password: QazEdcTgb159@$*
   port: 11043
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨CN-14.29.124.174-0276
+  name: 75|🇨🇳CN-14.29.124.174-0285
   password: QazEdcTgb159@$*
   port: 11009
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0277
+  name: 75|🇨🇳CN-14.29.124.174-0286
   password: QazEdcTgb159@$*
   port: 11036
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0278
+  name: 75|🇨🇳CN-14.29.124.174-0287
   password: QazEdcTgb159@$*
   port: 11013
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0279
+  name: 75|🇨🇳CN-14.29.124.174-0288
   password: QazEdcTgb159@$*
   port: 11004
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0280
+  name: 75|🇨🇳CN-14.29.124.174-0289
   password: QazEdcTgb159@$*
   port: 11005
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0281
+  name: 75|🇨🇳CN-14.29.124.174-0290
   password: QazEdcTgb159@$*
   port: 11016
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0282
+  name: 75|🇨🇳CN-14.29.124.174-0291
   password: QazEdcTgb159@$*
   port: 11040
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0283
+  name: 75|🇨🇳CN-14.29.124.174-0292
   password: QazEdcTgb159@$*
   port: 11003
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0284
+  name: 75|🇨🇳CN-14.29.124.174-0293
   password: QazEdcTgb159@$*
   port: 11047
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-0285
+  name: 75|🇨🇳CN-14.29.124.174-0294
   password: QazEdcTgb159@$*
   port: 11044
   server: 14.29.124.174
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨CN-42.157.196.103-2315
+  name: 75|🇨CN-42.157.196.103-2370
   obfs: http_post
   obfs-param: ajax.microsoft.com
   password: Yk4UdrOyQg
@@ -3588,7 +3797,7 @@ proxies:
   server: 42.157.196.103
   type: ssr
 - cipher: aes-256-cfb
-  name: 75|🇨🇳CN-42.157.196.104-2316
+  name: 75|🇨🇳CN-42.157.196.104-2371
   obfs: tls1.2_ticket_auth
   obfs-param: ajax.microsoft.com
   password: vCmp8ALih6
@@ -3598,7 +3807,7 @@ proxies:
   server: 42.157.196.104
   type: ssr
 - cipher: aes-256-cfb
-  name: 75|🇨🇳CN-42.157.196.104-2317
+  name: 75|🇨🇳CN-42.157.196.104-2372
   obfs: http_post
   obfs-param: ajax.microsoft.com
   password: CWSZscLkjf
@@ -3608,7 +3817,7 @@ proxies:
   server: 42.157.196.104
   type: ssr
 - cipher: chacha20-ietf
-  name: 75|🇨🇳CN-120.198.71.184-3369
+  name: 75|🇨🇳CN-120.198.71.184-3314
   obfs: plain
   obfs-param: t.me/vpnhat
   password: mblank1port
@@ -3618,175 +3827,175 @@ proxies:
   server: 120.198.71.184
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 75|🇨🇳CN-211.140.157.183-3526
+  name: 75|🇨🇳CN-211.140.157.183-3471
   password: 030d48b3-80e9-49ae-8cbd-6327b1ba84d2
   port: 34394
   server: zj.bbcloud.life
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3686
+  name: 75|🇨🇳CN-14.29.124.168-3631
   password: QazEdcTgb159@$*
   port: 25226
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3687
+  name: 75|🇨🇳CN-14.29.124.168-3632
   password: QazEdcTgb159@$*
   port: 25261
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3688
+  name: 75|🇨🇳CN-14.29.124.168-3633
   password: QazEdcTgb159@$*
   port: 25267
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3689
+  name: 75|🇨🇳CN-14.29.124.168-3634
   password: QazEdcTgb159@$*
   port: 25233
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3690
+  name: 75|🇨🇳CN-14.29.124.168-3635
   password: QazEdcTgb159@$*
   port: 25238
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3691
+  name: 75|🇨🇳CN-14.29.124.168-3636
   password: QazEdcTgb159@$*
   port: 25235
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3692
+  name: 75|🇨🇳CN-14.29.124.168-3637
   password: QazEdcTgb159@$*
   port: 25219
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3702
+  name: 75|🇨🇳CN-14.29.124.168-3647
   password: QazEdcTgb159@$*
   port: 25245
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3703
+  name: 75|🇨🇳CN-14.29.124.168-3648
   password: QazEdcTgb159@$*
   port: 25231
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3704
+  name: 75|🇨🇳CN-14.29.124.168-3649
   password: QazEdcTgb159@$*
   port: 25220
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3705
+  name: 75|🇨🇳CN-14.29.124.168-3650
   password: QazEdcTgb159@$*
   port: 25296
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3706
+  name: 75|🇨🇳CN-14.29.124.168-3651
   password: QazEdcTgb159@$*
   port: 25287
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3715
+  name: 75|🇨🇳CN-14.29.124.168-3660
   password: QazEdcTgb159@$*
   port: 25283
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3716
+  name: 75|🇨🇳CN-14.29.124.168-3661
   password: QazEdcTgb159@$*
   port: 25270
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3717
+  name: 75|🇨🇳CN-14.29.124.168-3662
   password: QazEdcTgb159@$*
   port: 25247
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3718
+  name: 75|🇨🇳CN-14.29.124.168-3663
   password: QazEdcTgb159@$*
   port: 25218
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3719
+  name: 75|🇨🇳CN-14.29.124.168-3664
   password: QazEdcTgb159@$*
   port: 25222
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3720
+  name: 75|🇨🇳CN-14.29.124.168-3665
   password: QazEdcTgb159@$*
   port: 25254
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3722
+  name: 75|🇳CN-14.29.124.168-3667
   password: QazEdcTgb159@$*
   port: 25286
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3725
+  name: 75|🇳CN-14.29.124.168-3670
   password: QazEdcTgb159@$*
   port: 25217
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨CN-14.29.124.168-3743
+  name: 75|🇨CN-14.29.124.168-3688
   password: QazEdcTgb159@$*
   port: 25294
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3744
+  name: 75|🇳CN-14.29.124.168-3689
   password: QazEdcTgb159@$*
   port: 25210
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3746
+  name: 75|🇨🇳CN-14.29.124.168-3691
   password: QazEdcTgb159@$*
   port: 25256
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3748
+  name: 75|🇨🇳CN-14.29.124.168-3693
   password: QazEdcTgb159@$*
   port: 25284
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3752
+  name: 75|🇨🇳CN-14.29.124.168-3697
   password: QazEdcTgb159@$*
   port: 25272
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3770
+  name: 75|🇳CN-14.29.124.168-3715
   password: QazEdcTgb159@$*
   port: 24003
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3773
+  name: 75|🇳CN-14.29.124.168-3718
   password: QazEdcTgb159@$*
   port: 24007
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3775
+  name: 75|🇨🇳CN-14.29.124.168-3720
   obfs: plain
   obfs-param: ''
   password: QazEdcTgb159@$*
@@ -3796,61 +4005,61 @@ proxies:
   server: 14.29.124.168
   type: ssr
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3780
+  name: 75|🇳CN-14.29.124.168-3725
   password: QazEdcTgb159@$*
   port: 25289
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3787
+  name: 75|🇳CN-14.29.124.168-3732
   password: QazEdcTgb159@$*
   port: 25259
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-3788
+  name: 75|🇳CN-14.29.124.168-3733
   password: QazEdcTgb159@$*
   port: 25241
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3790
+  name: 75|🇨🇳CN-14.29.124.168-3735
   password: QazEdcTgb159@$*
   port: 25268
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3791
+  name: 75|🇨🇳CN-14.29.124.168-3736
   password: QazEdcTgb159@$*
   port: 25279
   server: 14.29.124.168
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 75|🇨🇳CN-36.140.122.228-3792
+  name: 75|🇨🇳CN-36.140.122.228-3737
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 24105
   server: p1.bxy-fun3.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 75|🇨🇳CN-183.240.222.210-3793
+  name: 75|🇨🇳CN-183.240.222.210-3738
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 44101
   server: p1.bxy-fun1.com
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3799
+  name: 75|🇨🇳CN-14.29.124.168-3744
   password: QazEdcTgb159@$*
   port: 25295
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3800
+  name: 75|🇨🇳CN-14.29.124.168-3745
   password: QazEdcTgb159@$*
   port: 25230
   server: 14.29.124.168
   type: ss
 - cipher: chacha20-ietf
-  name: 75|🇨🇳CN-36.156.222.25-3808
+  name: 75|🇨🇳CN-36.156.222.25-3753
   obfs: http_simple
   obfs-param: e5ab06181.microsoft.com
   password: zztw9jk7gu
@@ -3860,27 +4069,75 @@ proxies:
   server: 36.156.222.25
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 75|🇨🇳CN-112.26.46.71-3835
+  name: 75|🇨🇳CN-112.26.46.71-3780
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 24101
   server: p1.bxy-fun2.com
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-3838
+  name: 75|🇨🇳CN-14.29.124.168-3783
   password: QazEdcTgb159@$*
   port: 25207
   server: 14.29.124.168
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 75,101|油管绵阿羊_China_ss_07
+  name: 75,79,101|油管绵阿羊_China_ss_01
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  port: 27103
+  server: foshan.chiguayun.shop
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,101|油管绵阿羊_China_ss_02
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
-  port: 10818
+  port: 10809
   server: yd.qianggewangluo.buzz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 75,79,101|油管绵阿羊_China_ss_08
+  name: 75,79,101|油管绵阿羊_China_ss_03
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  port: 10813
+  server: yd.qianggewangluo.buzz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,101|油管绵阿羊_China_ss_05
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  port: 10803
+  server: yd.qianggewangluo.buzz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,85,101|油管绵阿羊_China_ss_08
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   port: 27105
+  server: hefei.chiguayun.shop
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,101|油管绵阿羊_China_ss_010
+  password: 432fe02f-b649-4bdc-91d8-f91ae87002f7
+  port: 32143
+  server: zhejiang.52vpn.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,101|油管绵阿羊_China_ss_47
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  port: 27105
+  server: foshan.chiguayun.shop
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,101|油管绵阿羊_China_ss_48
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  port: 27108
+  server: foshan.chiguayun.shop
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,101|油管绵阿羊_China_ss_49
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  port: 10808
+  server: yd.qianggewangluo.buzz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 75,79,101|油管绵阿羊_China_ss_410
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  port: 27104
   server: foshan.chiguayun.shop
   type: ss
 - cipher: aes-128-gcm
@@ -3899,37 +4156,26 @@ proxies:
   server: cnamepc-d2zdrzg6ilecsynk.kujiguaji235.com
   tfo: false
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 75,79,82,98|🇳广东6
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 50005
-  server: service.ouluyun9803.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.174-4055
+  name: 75|🇳CN-14.29.124.174-4007
   password: QazEdcTgb159@$*
   port: 11048
   server: 14.29.124.174
   type: ss
 - cipher: aes-256-gcm
-  name: 75|🇳CN-36.139.166.252-4109
+  name: 75|🇳CN-36.139.166.252-4061
   password: ll668668@
   port: 11023
   server: 36.139.166.252
   type: ss
 - cipher: aes-256-gcm
-  name: 75|🇳CN-101.89.111.34-4118
+  name: 75|🇨🇳CN-101.89.111.34-4070
   password: 44e4e808-db1e-494d-9d7e-c67b38b13556
   port: 30010
   server: 62e2186f.0f7802c4.83df.34fb5e38.cc
   type: ss
 - cipher: chacha20-ietf
-  name: 75|🇨🇳CN-183.232.117.21-4119
+  name: 75|🇨🇳CN-183.232.117.21-4071
   obfs: plain
   obfs-param: ''
   password: mblank1port
@@ -3939,7 +4185,7 @@ proxies:
   server: layercm05.initcloud.pro
   type: ssr
 - cipher: aes-256-cfb
-  name: 75|🇨🇳CN-36.140.121.243-4120
+  name: 75|🇨🇳CN-36.140.122.128-4072
   obfs: plain
   obfs-param: ab93117422.jd.hk
   password: vyunme
@@ -3948,7 +4194,7 @@ proxies:
   protocol-param: 17422:TTp0SX
   server: en2.vfun.icu
   type: ssr
-- name: 75|🇳CN-124.15.12.24-4125
+- name: 75|🇳CN-124.15.12.24-4077
   password: password
   port: 251
   server: 124.15.12.24
@@ -3956,79 +4202,79 @@ proxies:
   tls: false
   type: http
   username: username
-- name: 75|🇨🇳CN-124.15.12.24-4126
+- name: 75|🇨🇳CN-124.15.12.24-4078
   port: 2312
   server: 124.15.12.24
   skip-cert-verify: false
   type: socks5
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-4272
+  name: 75|🇳CN-14.29.124.168-4224
   password: QazEdcTgb159@$*
   port: 25251
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.168-4288
+  name: 75|🇳CN-14.29.124.168-4240
   password: QazEdcTgb159@$*
   port: 25252
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|CN-14.29.124.168-6324
+  name: 75|CN-14.29.124.168-6276
   password: QazEdcTgb159@$*
   port: 25271
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇳CN-14.29.124.174-6325
+  name: 75|🇳CN-14.29.124.174-6277
   password: QazEdcTgb159@$*
   port: 11035
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-6327
+  name: 75|🇨🇳CN-14.29.124.174-6279
   password: QazEdcTgb159@$*
   port: 11037
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-6328
+  name: 75|🇨🇳CN-14.29.124.174-6280
   password: QazEdcTgb159@$*
   port: 11049
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-6334
+  name: 75|🇨🇳CN-14.29.124.174-6286
   password: QazEdcTgb159@$*
   port: 11010
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-6335
+  name: 75|🇨🇳CN-14.29.124.174-6287
   password: QazEdcTgb159@$*
   port: 11012
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-6336
+  name: 75|🇨🇳CN-14.29.124.168-6288
   password: QazEdcTgb159@$*
   port: 24009
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-6337
+  name: 75|🇨🇳CN-14.29.124.168-6289
   password: QazEdcTgb159@$*
   port: 24002
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.174-6338
+  name: 75|🇨🇳CN-14.29.124.174-6290
   password: QazEdcTgb159@$*
   port: 11032
   server: 14.29.124.174
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨CN-120.240.236.125-6621
+  name: 75|🇨CN-120.240.236.125-6573
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4038,7 +4284,7 @@ proxies:
   server: bs1.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.184-6622
+  name: 75|🇨🇳CN-183.232.170.184-6574
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4048,7 +4294,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.184-6623
+  name: 75|🇨🇳CN-183.232.170.184-6575
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4058,7 +4304,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.240.236.126-6624
+  name: 75|🇨🇳CN-120.240.236.126-6576
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4068,7 +4314,7 @@ proxies:
   server: pr1.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.179-6625
+  name: 75|🇨🇳CN-183.232.170.179-6577
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4078,7 +4324,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.184-6626
+  name: 75|🇨🇳CN-183.232.170.184-6578
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4088,7 +4334,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.179-6628
+  name: 75|🇨🇳CN-183.232.170.179-6580
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4098,7 +4344,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.240.236.126-6629
+  name: 75|🇨🇳CN-120.240.236.126-6581
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4108,7 +4354,7 @@ proxies:
   server: pr1.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.179-6630
+  name: 75|🇨🇳CN-183.232.170.179-6582
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4118,7 +4364,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.184-6631
+  name: 75|🇨🇳CN-183.232.170.184-6583
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4128,7 +4374,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.184-6633
+  name: 75|🇨🇳CN-183.232.170.184-6585
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4138,7 +4384,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-183.232.170.179-6635
+  name: 75|🇨🇳CN-183.232.170.179-6587
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4148,7 +4394,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 75|🇳CN-183.232.170.179-6636
+  name: 75|🇳CN-183.232.170.179-6588
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4158,7 +4404,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: chacha20-ietf
-  name: 75|🇳CN-120.232.206.251-6704
+  name: 75|🇳CN-120.232.206.251-6656
   obfs: plain
   obfs-param: ''
   password: mblank1port
@@ -4168,13 +4414,13 @@ proxies:
   server: eduall.buzzline.org
   type: ssr
 - cipher: aes-256-cfb
-  name: 75|🇳CN-180.101.193.226-8894
+  name: 75|🇳CN-180.101.193.226-8846
   password: RsDk3peCSuo76B68
   port: 10068
   server: 180.101.193.226
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8895
+  name: 75|🇨🇳CN-111.6.86.119-8847
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4184,13 +4430,13 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-8896
+  name: 75|🇨🇳CN-14.29.124.168-8848
   password: QazEdcTgb159@$*
   port: 24006
   server: 14.29.124.168
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.80-8897
+  name: 75|🇨🇳CN-111.6.86.80-8849
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4200,7 +4446,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8898
+  name: 75|🇨🇳CN-111.6.86.119-8850
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4210,7 +4456,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8899
+  name: 75|🇨🇳CN-111.6.86.119-8851
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4220,7 +4466,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8900
+  name: 75|🇨🇳CN-111.6.86.119-8852
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4230,7 +4476,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.80-8901
+  name: 75|🇨🇳CN-111.6.86.80-8853
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4240,7 +4486,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.155-8902
+  name: 75|🇨🇳CN-120.195.181.155-8854
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4250,7 +4496,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.82-8903
+  name: 75|🇨🇳CN-120.195.181.82-8855
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4260,7 +4506,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.155-8904
+  name: 75|🇨🇳CN-120.195.181.155-8856
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4270,7 +4516,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.82-8905
+  name: 75|🇨🇳CN-120.195.181.82-8857
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4280,7 +4526,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.111-8906
+  name: 75|🇨🇳CN-120.195.181.111-8858
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4290,7 +4536,7 @@ proxies:
   server: 120.195.181.111
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.155-8907
+  name: 75|🇨🇳CN-120.195.181.155-8859
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4300,7 +4546,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.170-8908
+  name: 75|🇨🇳CN-120.195.181.170-8860
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4310,7 +4556,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.80-8909
+  name: 75|🇨🇳CN-111.6.86.80-8861
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4320,7 +4566,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8910
+  name: 75|🇨🇳CN-111.6.86.119-8862
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4330,7 +4576,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.82-8911
+  name: 75|🇨🇳CN-120.195.181.82-8863
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4340,7 +4586,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.155-8912
+  name: 75|🇨🇳CN-120.195.181.155-8864
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4350,7 +4596,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.111-8913
+  name: 75|🇨🇳CN-120.195.181.111-8865
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4360,7 +4606,7 @@ proxies:
   server: 120.195.181.111
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.82-8914
+  name: 75|🇨🇳CN-120.195.181.82-8866
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4370,7 +4616,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.155-8915
+  name: 75|🇨🇳CN-120.195.181.155-8867
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4380,7 +4626,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.155-8916
+  name: 75|🇨🇳CN-120.195.181.155-8868
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4390,13 +4636,13 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: aes-128-cfb
-  name: 75|🇨🇳CN-14.29.124.168-8917
+  name: 75|🇨🇳CN-14.29.124.168-8869
   password: QazEdcTgb159@$*
   port: 24008
   server: 14.29.124.168
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.170-8919
+  name: 75|🇨🇳CN-120.195.181.170-8871
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4406,7 +4652,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.170-8920
+  name: 75|🇨🇳CN-120.195.181.170-8872
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4416,7 +4662,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-120.195.181.170-8922
+  name: 75|🇨🇳CN-120.195.181.170-8874
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4426,7 +4672,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8923
+  name: 75|🇨🇳CN-111.6.86.119-8875
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4436,7 +4682,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8924
+  name: 75|🇨🇳CN-111.6.86.119-8876
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4446,7 +4692,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 75|🇨🇳CN-111.6.86.119-8925
+  name: 75|🇨🇳CN-111.6.86.119-8877
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4456,13 +4702,13 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 75|🇨🇳CN-183.240.222.210-9074
+  name: 75|🇨🇳CN-183.240.222.210-9026
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 30470
   server: p1.bxy-fun1.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 75|CN-183.240.222.15-9621
+  name: 75|CN-183.240.222.15-9573
   password: a5a0a8d9-ab2c-407f-89a4-bf027d216184
   port: 870
   server: 183.240.222.15
