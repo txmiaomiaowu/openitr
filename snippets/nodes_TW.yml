@@ -2,16 +2,17 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇼TW
-  name: 14,16,17,18,19,20,40,68,75,79,82|🇹🇼 台湾|@ripaojiedian
+  name: 14,16,17,18,19,40,43,68,75,79,82|🇹🇼 台湾|@ripaojiedian
   password: qwerREWQ@@
   port: 2003
   server: e001.panda003.net
   tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: TW
-  name: 14,20,43|TW_947
+  name: 14,43|TW_959
   password: qwerREWQ@@
   port: 2003
   server: 103.4.29.39
@@ -23,7 +24,21 @@ proxies:
   country: TW
   h2-opts: {}
   http-opts: {}
-  name: 16,17,18,58,79,97,99|TW 1|openitr
+  name: 14,58,79|21|🔒 VM-TCP-NA 🇭🇰 HK-103.169.1...
+  network: tcp
+  port: '35035'
+  server: 103.169.126.96
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 33d9574e-bc7f-4ad5-e930-9c9a0ef0432d
+- alterId: 0
+  cipher: auto
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: 16,17,18,46,58,79,97,99|TW 3|openitr
   network: tcp
   port: '12002'
   server: 118.167.68.167
@@ -51,7 +66,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: ' TW'
-  name: 17,43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_946
+  name: 17,43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_962
   password: d3f5c39d-610c-4b98-9b01-d5b847033cf9
   port: 3234
   server: c11.twtc.dynu.net
@@ -61,28 +76,13 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: ' TW'
-  name: 17,43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_949
+  name: 17,43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_960
   password: d3f5c39d-610c-4b98-9b01-d5b847033cf9
   port: 9443
   server: b12.ntbq.dynu.net
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  country: TW
-  h2-opts: {}
-  http-opts: {}
-  name: 17,18,56,58,61,79,104,109|台湾-4.61MB/s
-  network: tcp
-  port: 4443
-  server: nb24.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
-  ws-path: /
 - alterId: 0
   cipher: auto
   country: TW
@@ -97,6 +97,19 @@ proxies:
   tls: false
   type: vmess
   uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: '17,19,23,40|_71 #1'
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -115,25 +128,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ' TW'
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 17,56,58,61,79,97,99|TW 3|openitr
-  network: tcp
-  port: '4443'
-  server: 118.167.68.3
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: de9558f3-d11b-410e-ab27-26956dde256d
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: '23,40|_72 #1'
+  name: '17,19,23,29,40|_69 #1'
   network: ws
   port: 31945
   server: 103.159.206.35
@@ -142,84 +140,35 @@ proxies:
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-path: /
 - alterId: 0
+  cipher: aes-128-gcm
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: '17,18,46,56,58,61,79,104,109|台湾-4.61MB/s #1'
+  network: tcp
+  port: 4443
+  server: nb24.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
+  ws-path: /
+- alterId: 0
   cipher: auto
   country: ' TW'
   h2-opts: {}
   http-opts: {}
-  name: 23| TW_126
-  network: ws
-  port: 443
-  server: 123.58.197.70
+  name: '17,48,56,58,61,79,97,99,108|رایگان | VMESS | @oneclickvpnk... #4'
+  network: tcp
+  port: '4443'
+  server: 118.167.68.3
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
   ws-path: /
-- auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd
-  client-fingerprint: chrome
-  name: 43|disney_TW 3
-  password: e15a928d-cd74-4a8c-9305-19db97c2f3fd
-  port: 8086
-  server: hinet.wumaojichang.com
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-- auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-  client-fingerprint: chrome
-  name: 43|disney_TW 4
-  password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-  port: 8886
-  server: nb21.ntbq.dynu.net
-  skip-cert-verify: true
-  sni: nb21.ntbq.dynu.net
-  type: hysteria2
-  udp: true
-- auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-  client-fingerprint: chrome
-  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_944
-  password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-  port: 8882
-  server: ty16.twty.dynu.net
-  skip-cert-verify: true
-  sni: ty16.twty.dynu.net
-  type: hysteria2
-  udp: true
-- auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-  client-fingerprint: chrome
-  name: 43|disney_TW 2
-  password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-  port: 8886
-  server: b26.ntbq.dynu.net
-  skip-cert-verify: true
-  sni: b26.ntbq.dynu.net
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 43|Relay_-🇹🇼TW_389
-  password: de9558f3-d11b-410e-ab27-26956dde256d
-  port: 7773
-  server: b13.ntbq.dynu.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 43|Relay_-🇹🇼TW_379
-  password: de9558f3-d11b-410e-ab27-26956dde256d
-  port: 2203
-  server: ty11.twty.dynu.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 43|Relay_-🇹🇼TW_380
-  password: de9558f3-d11b-410e-ab27-26956dde256d
-  port: 4303
-  server: ty12.twty.dynu.net
-  tfo: false
-  type: ss
-  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -235,6 +184,42 @@ proxies:
   type: hysteria
   udp: true
   up: 11 Mbps
+- auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd
+  client-fingerprint: chrome
+  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_955
+  password: e15a928d-cd74-4a8c-9305-19db97c2f3fd
+  port: 8086
+  server: hinet.wumaojichang.com
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 43|Relay_-🇹🇼TW_280
+  password: b6cd1e64-484a-431a-90c2-41bb0d579ee6
+  port: 2203
+  server: ty11.twty.dynu.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 43|Relay_-🇹🇼TW_319
+  password: de9558f3-d11b-410e-ab27-26956dde256d
+  port: 7773
+  server: b13.ntbq.dynu.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 43|Relay_-🇹🇼TW_317
+  password: de9558f3-d11b-410e-ab27-26956dde256d
+  port: 4303
+  server: ty12.twty.dynu.net
+  tfo: false
+  type: ss
+  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -242,10 +227,10 @@ proxies:
   client-fingerprint: chrome
   down: 55
   fast-open: false
-  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_940
-  port: 11229
+  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_952
+  port: 22334
   protocol: udp
-  server: www.dtku50.xyz
+  server: www4.dtku49.xyz
   skip-cert-verify: true
   sni: bing.com
   type: hysteria
@@ -256,16 +241,27 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   client-fingerprint: chrome
-  down: 55 Mbps
+  down: 55
   fast-open: false
-  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_941
-  port: 22334
+  name: 43|🇹🇼 Relay_🇹🇼TW-🇹🇼TW_949
+  port: 11229
   protocol: udp
-  server: www4.dtku49.xyz
+  server: www.dtku50.xyz
   skip-cert-verify: true
+  sni: bing.com
   type: hysteria
   udp: true
-  up: 11 Mbps
+  up: 11
+- auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+  client-fingerprint: chrome
+  name: 43|disney_netflix_TW 4
+  password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+  port: 8886
+  server: b37.ntbq.dynu.net
+  skip-cert-verify: true
+  sni: b37.ntbq.dynu.net
+  type: hysteria2
+  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -273,7 +269,7 @@ proxies:
   client-fingerprint: chrome
   down: 55
   fast-open: false
-  name: 43|disney_netflix_TW 6
+  name: 43|disney_netflix_TW 5
   port: 22334
   protocol: udp
   server: 1.162.147.177
@@ -284,7 +280,7 @@ proxies:
   up: 11
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 43|TW_948
+  name: 43|TW_963
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 223.165.4.173
@@ -294,7 +290,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 43,54,57,58,73,75,97|🔒 VM-WS-NA 🇹🇼 TW-103.159.206.3...
+  name: 43,46,54,57,58,73,75,97|🔒 VM-WS-NA 🇹🇼 TW-103.159.206.3...
   network: ws
   port: '31945'
   server: 103.159.206.35
@@ -312,7 +308,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 43,47,50,54,57,58,73,75,99|CN 1|openitr
+  name: 43,46,47,50,54,57,58,73,75,99|CN 1|openitr
   network: ws
   port: '443'
   server: 123.58.197.70
@@ -326,6 +322,232 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 46,54,56,61,75|🇹TW-114.37.199.120-1314
+  network: ws
+  port: 80
+  server: 1b314bb0-24cd-7d15-ee61-f98c4385068f.neo-awaken.uk
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 46,47|未知_121320708
+  network: ws
+  port: '80'
+  server: dl1.doushimeng.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c0ff2f90-9f83-451a-a7d3-0994845d9208
+  ws-opts:
+    headers:
+      Host: cf-tww.doushimeng.com
+    path: /asdas
+- alterId: 0
+  cipher: auto
+  name: 46|@ZDYZ2_🇹🇼_TW_11
+  network: tcp
+  port: '3283'
+  server: hinet-tw99.myfreenodes2024.xyz
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 89387c02-4f9f-33fc-8c50-a9941ed226be
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 46,54,75|TW-45.121.51.103-1714
+  network: http
+  port: 20715
+  server: 45.121.51.103
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f6406b6d-5487-46da-f793-46611269a306
+- alterId: 0
+  cipher: auto
+  name: 46,54,75|🇼TW-114.43.148.86-3673
+  network: ws
+  port: 45215
+  server: 012.AP.POP.node-for-smallairport.win
+  servername: 012.AP.POP.node-for-smallairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cd0e1cd4-9aac-41df-9746-4d76182c8009
+  ws-opts:
+    headers:
+      Host: 012.AP.POP.node-for-smallairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  country: mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
+  name: '46,54,75,84|mattkaydiary.com|中国台湾(TW)Taiwa... #1'
+  network: ws
+  port: 33792
+  server: 61.222.202.140
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
+  ws-opts:
+    headers:
+      host: 61.222.202.140
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 46,54,56,61,75|TW-61.224.80.105-1309
+  network: ws
+  port: 443
+  server: xt001.xmrthnode.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a6c72103-b2a0-3e7f-9d49-cf378209e73b
+  ws-opts:
+    headers:
+      Host: ws-aicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '46,54,75|🇹🇼TW-61.224.75.39-6671 #1'
+  network: ws
+  port: 11463
+  server: tw4.594888.xyz
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
+  ws-opts:
+    headers:
+      Host: tw4.594888.xyz
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '46,54,75|🇹🇼TW-61.224.94.70-6672 #1'
+  network: ws
+  port: 25551
+  server: tw3.594888.xyz
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
+  ws-opts:
+    headers:
+      Host: tw3.594888.xyz
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 46,56,61|中国 021
+  network: tcp
+  port: 21353
+  server: tw1-vds3.anyhk.co
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 46|TG@ZDYZ2_🇹🇼_TW_53
+  network: ws
+  port: '19888'
+  server: 113.61.250.18
+  servername: xray1.freeh1.xyz
+  tls: true
+  type: vmess
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  ws-opts:
+    headers:
+      Host: xray1.freeh1.xyz
+    path: /gzogws
+- alterId: 0
+  cipher: auto
+  name: 46|TG@ZDYZ2 🇹🇼 TW 88
+  network: tcp
+  port: '12002'
+  server: 118.167.72.107
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
+- alterId: 0
+  cipher: auto
+  name: 46|21|TW_736
+  network: tcp
+  port: '6122'
+  server: 36.233.223.116
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+- alterId: 0
+  cipher: auto
+  name: 46,58,99|TW 2|openitr
+  network: tcp
+  port: '6122'
+  server: 36.233.245.119
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
+- alterId: 0
+  cipher: auto
+  name: 46|TG@ZDYZ2 🇹🇼 TW 124
+  network: tcp
+  port: '6122'
+  server: 36.232.135.215
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
+- alterId: 0
+  cipher: auto
+  name: 46,54,56,61,75|🇼TW-36.228.208.15-1313
+  network: ws
+  port: 80
+  server: df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 46,54,56,61,75,110|TW_speednode_0121
+  network: ws
+  port: 18803
+  server: taiwan2.209966.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b5857d5-a7b8-445b-bcc8-f34745e75929
+  ws-opts:
+    headers:
+      Host: a.189.cn
     path: /
 - alterId: 0
   cipher: auto
@@ -383,80 +605,6 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 54,73,75|🇼TW-103.106.230.153-0455
-  network: ws
-  port: 32732
-  server: 103.106.230.153
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: eb931108-646b-4ceb-a741-d32490cb00f4
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 54,56,61,75|TW-61.224.80.105-1309
-  network: ws
-  port: 443
-  server: xt001.xmrthnode.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: a6c72103-b2a0-3e7f-9d49-cf378209e73b
-  ws-opts:
-    headers:
-      Host: ws-aicdn.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 54,56,61,75|🇼TW-36.228.208.15-1313
-  network: ws
-  port: 80
-  server: df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 54,56,61,75|🇹TW-114.37.199.120-1314
-  network: ws
-  port: 80
-  server: 1b314bb0-24cd-7d15-ee61-f98c4385068f.neo-awaken.uk
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 54,56,61,75,110|TW_speednode_0121
-  network: ws
-  port: 18803
-  server: taiwan2.209966.xyz
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1b5857d5-a7b8-445b-bcc8-f34745e75929
-  ws-opts:
-    headers:
-      Host: a.189.cn
-    path: /
-- alterId: 0
-  cipher: auto
   name: '54,56,61,75|🇹🇼TW-111.247.40.248-1381 #1'
   network: ws
   port: 18803
@@ -470,21 +618,6 @@ proxies:
     headers:
       Host: a.189.cn
     path: /
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 54,75|TW-45.121.51.103-1714
-  network: http
-  port: 20715
-  server: 45.121.51.103
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f6406b6d-5487-46da-f793-46611269a306
 - alterId: 0
   cipher: auto
   name: 54,75|TW-165.154.246.71-2455
@@ -530,21 +663,6 @@ proxies:
     path: /mugua
 - alterId: 0
   cipher: auto
-  name: 54,75|🇼TW-114.43.148.86-3673
-  network: ws
-  port: 45215
-  server: 012.AP.POP.node-for-smallairport.win
-  servername: 012.AP.POP.node-for-smallairport.win
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cd0e1cd4-9aac-41df-9746-4d76182c8009
-  ws-opts:
-    headers:
-      Host: 012.AP.POP.node-for-smallairport.win
-    path: /
-- alterId: 0
-  cipher: auto
   name: '54,75|🇹🇼TW-36.227.192.33-3831 #1'
   network: ws
   port: 2053
@@ -557,22 +675,6 @@ proxies:
   ws-opts:
     headers:
       Host: emea-ru-mow-01-edgecast.qdns.live
-    path: /
-- alterId: 0
-  cipher: auto
-  country: mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
-  name: '54,75,84|mattkaydiary.com|中国台湾(TW)Taiwa... #1'
-  network: ws
-  port: 33792
-  server: 61.222.202.140
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
-  ws-opts:
-    headers:
-      host: 61.222.202.140
     path: /
 - alterId: 0
   cipher: auto
@@ -754,46 +856,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇹🇼TW-61.224.75.39-6671 #1'
-  network: ws
-  port: 11463
-  server: tw4.594888.xyz
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
-  ws-opts:
-    headers:
-      Host: tw4.594888.xyz
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: '54,75|🇹🇼TW-61.224.94.70-6672 #1'
-  network: ws
-  port: 25551
-  server: tw3.594888.xyz
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
-  ws-opts:
-    headers:
-      Host: tw3.594888.xyz
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 58,99|TW 2|openitr
-  network: tcp
-  port: '6122'
-  server: 36.233.245.119
-  tls: false
-  type: vmess
-  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
-- alterId: 0
-  cipher: auto
-  name: '58|TW_956 #1'
+  name: '58|TW_983 #1'
   network: tcp
   port: '2024'
   server: 61.228.144.69
@@ -812,19 +875,6 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 99|TW 5|openitr
-  network: ws
-  port: '80'
-  server: 103.118.29.229
-  tls: false
-  type: vmess
-  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alpn:
   - h3
   auth_str: dongtaiwang.com
