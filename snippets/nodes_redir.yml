@@ -37,10 +37,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: ' CN'
-  h2-opts: {}
-  http-opts: {}
-  name: '2,4,6,7,9,10,11,14,27,35,36,37,57,61,64,65,70,74,77,80,85,86,105,116,117|🇨🇳_CN_中国->🇮🇳_IN_印度
+  name: '2,4,6,7,9,10,11,27,35,36,37,57,61,64,65,70,74,77,80,85,86,105,116,117|🇨🇳_CN_中国->🇮🇳_IN_印度
     #14'
   network: tcp
   port: 30128
@@ -58,7 +55,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,7,9,10,11,36,37,46,49,55,60,61,65,70,74,76,77,80,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
+  name: '2,6,7,9,10,11,36,37,46,49,55,60,61,65,70,74,76,77,80,100,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
     #22'
   network: ws
   port: 80
@@ -90,7 +87,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,7,9,10,11,36,49,55,60,61,62,70,71,74,76,77,80,98,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
+  name: '2,6,7,9,10,11,36,46,49,55,60,61,62,70,71,74,76,77,80,100,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
     #23'
   network: ws
   port: 80
@@ -128,7 +125,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,7,9,10,11,27,36,37,52,55,65,70,72,74,76,77,80,86,105,117|🇺🇸_US_美国->🇩🇪_DE_德国
+  name: '2,6,7,9,10,11,27,36,37,52,55,65,70,72,74,76,77,80,86,100,105,117|🇺🇸_US_美国->🇩🇪_DE_德国
     #52'
   network: ws
   port: 80
@@ -204,9 +201,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,55,57,76,80,93,100|IT 2|openitr
+  name: 4,55,57,76,80|1|_NL_->_DE__2
   network: ws
-  port: '80'
+  port: 80
   server: 188.114.96.11
   servername: ''
   skip-cert-verify: true
@@ -215,7 +212,7 @@ proxies:
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: ''
+      host: a.prapt5.ir
     path: /?ed=2048
 - alpn:
   - http/1.1
@@ -246,10 +243,9 @@ proxies:
     headers:
       host: my1.tooters.ir
     path: /
-- client-fingerprint: chrome
-  grpc-opts:
+- grpc-opts:
     grpc-service-name: 443trojan
-  name: 4,44,57,62,64,76,80|1|_US_->_RU_
+  name: 4,57,62,64,76,80|1|_US_->_RU_
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -268,9 +264,9 @@ proxies:
   sni: 083ab9ab-s8usg0-0-zzkl.s5.p5pv.com
   type: trojan
   udp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 4,51,55,57,64,76,80,85,100|US 45|openitr
+  name: 4,51,55,57,64,76,80,85,93|美国 CloudFlare
   network: ws
   port: '80'
   server: 104.24.208.37
@@ -282,7 +278,8 @@ proxies:
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: ''
+      host: my1.tooters.ir
+    host: my1.tooters.ir
     path: /
 - client-fingerprint: chrome
   name: 57,62,72,76|🏁RELAY-104.17.175.159-1317
@@ -297,21 +294,6 @@ proxies:
     headers:
       Host: jnl1.jsjc.sbs
     path: /jsjc/nl1
-- cipher: chacha20-ietf-poly1305
-  name: 57,64,76|🇨CN-36.133.253.99-1145
-  password: dongtaiwang.com
-  port: 44672
-  server: lg3.dtku41.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 57,60,64,76,80,93,102|油管绵阿羊_China_ss_05
-  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
-  port: 10815
-  server: yd.qianggewangluo.buzz
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 63|🇵_US_美国->🇵_JP_日本13
