@@ -21,13 +21,14 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2278
-  name: '1,2,6,7,9,10,11,36,37,55,65,70,74,76,77,80,105,111,117|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '1,2,6,7,9,10,11,36,37,55,65,70,74,76,77,80,86,105,111,117|🇨🇳_CN_中国->🇺🇸_US_美国
     #13'
   network: ws
   port: 27102
   server: rl1.269999.xyz
   servername: u2.269999.xyz
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: true
   type: vmess
   uuid: 460d53e3-3fa4-456a-83d1-d75d17d87c65
@@ -37,10 +38,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: '2,4,6,7,9,10,11,20,27,35,36,37,57,61,64,65,70,74,77,80,85,86,105,116,117|🇨🇳_CN_中国->🇮🇳_IN_印度
+  name: '2,4,6,7,9,10,11,27,35,36,37,57,64,65,70,74,77,80,85,86,105,116,117|🇨🇳_CN_中国->🇮🇳_IN_印度
     #14'
   network: tcp
   port: 30128
@@ -58,13 +56,14 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,7,9,10,11,36,37,46,47,49,52,55,60,61,65,70,74,76,77,80,100,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
+  name: '2,6,7,9,10,11,36,37,46,47,49,55,60,61,65,70,74,76,77,80,86,100,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
     #22'
   network: ws
   port: 80
   server: mci--join.outline-vpn.cloud
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tfo: false
   tls: false
   type: vmess
@@ -76,10 +75,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '2,6,7,9,10,11,36,37,65,70,74,77,80,105,117|🇺🇸_US_美国->🇩🇪_DE_德国 #50'
+  name: '2,6,7,9,10,11,36,37,65,70,74,77,80,86,105,117|🇺🇸_US_美国->🇩🇪_DE_德国 #50'
   network: ws
   port: 80
   server: www.greendam.site
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -89,18 +89,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '2,6,7,9,10,11,36,46,47,49,55,60,61,62,70,71,74,76,77,80,98,100,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
+  name: '2,6,7,9,10,11,36,46,47,49,55,62,70,71,76,77,80,86,100,105,109,110,117|🇳🇱_NL_荷兰->🇩🇪_DE_德国
     #23'
   network: ws
   port: 80
   server: 188.114.96.11
   servername: ''
   skip-cert-verify: false
-  tfo: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
@@ -109,7 +107,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,7,9,10,11,27,36,37,55,65,70,72,74,76,77,80,86,105,117|🇺🇸_US_美国->🇩🇪_DE_德国
+  name: '2,6,7,9,10,11,27,36,37,52,55,65,70,72,74,76,77,80,86,105,117|🇺🇸_US_美国->🇩🇪_DE_德国
     #51'
   network: ws
   port: 80
@@ -128,7 +126,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,7,9,10,11,27,36,37,47,55,65,70,72,74,76,77,80,86,100,105,117|🇺🇸_US_美国->🇩🇪_DE_德国
+  name: '2,6,7,9,10,11,27,36,37,47,55,65,70,72,74,76,77,80,86,98,100,105,117|🇺🇸_US_美国->🇩🇪_DE_德国
     #52'
   network: ws
   port: 80
@@ -144,11 +142,11 @@ proxies:
     headers:
       Host: my1.tooters.ir
     path: /
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: '4,57,64,80,85|🇳🇱_NL_荷兰->🇩🇪_DE_德国 #19'
+  name: 4,57,64,80,85,93|罗 CloudFlare节点
   network: ws
-  port: 80
+  port: '80'
   server: mci--join.outline-vpn.cloud
   skip-cert-verify: true
   tls: false
@@ -157,6 +155,7 @@ proxies:
   ws-opts:
     headers:
       host: a.prapt5.ir
+    host: a.prapt5.ir
     path: /?ed=2048
 - alterId: 0
   cipher: auto
@@ -269,7 +268,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '4,51,55,57,64,76,80,85,93|美国 CloudFlare节点 #50'
+  name: 4,51,55,57,64,76,80,85|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 80
   server: 104.24.208.37
@@ -282,7 +281,6 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
-    host: my1.tooters.ir
     path: /
 - alterId: 2
   cipher: aes-128-gcm
@@ -348,7 +346,7 @@ proxies:
     path: /@golestan_vpn
 - alterId: 0
   cipher: auto
-  name: 47,55,57,62,76|🇷BR-129.148.50.163-1422
+  name: 47,55,57,62,76|🇷BR-129.148.50.163-1409
   network: ws
   port: 80
   server: s16.956256.xyz
@@ -379,7 +377,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '47,55,76|🏁RELAY-203.24.108.9-1825 #1'
+  name: 47,55,76|🏁RELAY-203.24.108.9-1841
   network: ws
   port: 443
   server: 203.24.108.9
@@ -433,7 +431,7 @@ proxies:
       Host: sg-ovh.sharecentre.online
     path: /shirker
 - client-fingerprint: chrome
-  name: 57,62,72,76|🏁RELAY-104.17.175.159-1317
+  name: 57,62,72,76|🏁RELAY-104.17.175.159-1304
   network: ws
   password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
   port: 443
@@ -899,7 +897,7 @@ proxies:
     path: /zh-cn/news
 - alterId: 0
   cipher: auto
-  name: 86|_US_美国->🇱_NL_荷兰_由快嘴科技提供：kkzui....
+  name: 86|_US_美国->_NL_荷兰_由快嘴科技提供：kkzui.c...
   network: ws
   port: 80
   server: 162.159.253.39
@@ -926,7 +924,7 @@ proxies:
       Host: 156.225.67.243
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 86|_CN_中国->_US_美国\r_2由快嘴科技提供：kkzu...
+  name: 86|_CN_中国->🇺🇸_US_美国\r_2由快嘴科技提供：kk...
   password: a863473a-78be-403b-a69e-addee3fc6e28
   port: 54455
   server: free.node.kk-proxy.pro
@@ -989,7 +987,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 86|_NL_荷兰->🇺🇸_US_美国_37
+  name: 86|_NL_荷兰->🇸_US_美国_37
   network: ws
   port: 80
   server: 188.114.97.152
@@ -1091,17 +1089,3 @@ proxies:
   port: 31659
   server: free.node.kk-proxy.pro
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 86|_US_美国->🇫🇷_FR_法国
-  network: ws
-  port: 2082
-  server: 104.18.202.250
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 104.18.202.250
-    path: /nina.bond/linkvws
