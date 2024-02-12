@@ -1,26 +1,92 @@
 proxies:
-- cipher: aes-128-gcm
-  country: ' HK'
-  name: 14,17,21,24,76|🇭🇰HK-47.243.59.144-4200
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: false
-    tls: false
-  port: 443
-  server: 47.243.59.144
+- auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd
+  client-fingerprint: chrome
+  country: HK
+  name: 13,44|🇭🇰 Relay_🇭🇰HK-🇭🇰HK_350
+  password: e15a928d-cd74-4a8c-9305-19db97c2f3fd
+  port: 8086
+  server: hkt.wumaojichang.com
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13,44|netflix_HK 2
+  password: a376081c-14dc-43aa-8cc2-e18fe81a6f66
+  port: 31511
+  server: hk.cooc.icu
+  tfo: false
   type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: ' SG'
+  name: 13,17,19,22,23,40,41,44,51,76,92,112| SG_41 |15.35Mb
+  password: jmtgsmW40R
+  port: 1146
+  server: 8.210.231.146
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: HK
+  name: '13,44|_58 #2'
+  password: d36b5bb1-fae7-4ddc-b023-1935f64e350b
+  port: 20697
+  server: 212.192.12.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: ' HK'
+  name: 13,16,17,18,20,21,22,23,24,40,41,47,101,111,112| HK_28 | 1.42Mb
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
+- cipher: chacha20-ietf
+  country: HK
+  name: 13|Relay_HK-HK_561
+  obfs: plain
+  password: haRBh7
+  port: 2860
+  protocol: auth_aes128_sha1
+  protocol-param: 51591:YR8kgd
+  server: zzcm06.cacbce.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: HK
+  name: 13|Relay_HK-HK_562
+  obfs: plain
+  password: haRBh7
+  port: 3050
+  protocol: auth_aes128_sha1
+  protocol-param: 51591:YR8kgd
+  server: zzcm06.cacbce.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: HK
+  name: 13|Relay_HK-HK_563
+  obfs: tls1.2_ticket_auth
+  obfs-param: d62c422663.microsoft.com
+  password: zxOmdD
+  port: 11000
+  protocol: auth_aes128_sha1
+  protocol-param: 22663:naiboob
+  server: gzyd.120.817777.xyz
+  type: ssr
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: '14,20,44,93|V2CROSS.COM #1'
+  name: '13,44,59,64,85|🇭🇰_HK_香港->🇳🇱_NL_荷兰 #1'
   network: ws
   port: 41000
   server: 156.245.8.185
@@ -34,45 +100,55 @@ proxies:
   ws-opts:
     headers:
       host: www.20163322.xyz
-    host: www.20163322.xyz
     path: /path/271624282113
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: ' SG'
-  name: 16,17,19,23,44,51,76,92,112| SG_41 |15.35Mb
-  password: jmtgsmW40R
-  port: 1146
-  server: 8.210.231.146
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: ' HK'
-  name: 16,17,18,20,21,22,23,24,40,47,101,111,112| HK_28 | 1.42Mb
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  protocol-param: ''
-  server: 150.107.46.21
-  type: ssr
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 16,44,55,76,98,100|HK 1|openitr
+  name: 13|HK_565
+  network: ws
+  port: 58620
+  server: 23.102.239.134
+  skip-cert-verify: true
+  type: vmess
+  uuid: b3ed7c17-4a89-4bb3-aa06-e49a4540db8a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: ' HK'
+  h2-opts: {}
+  http-opts:
+    headers:
+      Host:
+      - internet.life.com.by
+    method: GET
+  name: 13,14,17,20,44,47,55,57,59,62,76,80,100,111|HK_speednode_0083
+  network: http
+  port: 3389
+  server: 185.244.208.61
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 13,16,18,55,76,98,100|HK 2|openitr
   network: ws
   port: '10510'
   server: 23.99.120.52
   servername: www.alipay.com
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 619d8b66-469f-4dce-fc71-b74f05810212
   ws-opts:
     headers:
@@ -80,10 +156,94 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: '13,21,44,47,51,59,110|🇭🇰ConfigV2RayNG #1'
+  network: ws
+  port: '80'
+  server: 182.16.1.194
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: ''
+    path: /opt/video/images
+- alterId: 64
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 13|HK_569
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 13,21,59,82,100|RU 6|openitr
+  network: tcp
+  port: '80'
+  server: 194.156.98.179
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0855b410-0e96-4d0a-9b6e-80830edec462
+- alterId: 0
+  cipher: auto
+  country: NL
+  h2-opts: {}
+  http-opts: {}
+  name: 13,21|Relay_NL-DE_526
+  network: ws
+  port: 80
+  server: ges1.diaffz.top
+  servername: ges1.diaffz.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a
+  ws-opts:
+    headers:
+      HOST: ges1.diaffz.top
+    path: /r5yergvfdxv
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  country: ' HK'
+  name: 14,17,21,24,41,44,76|🇭🇰HK-47.243.59.144-4200
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: false
+  port: 443
+  server: 47.243.59.144
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 17| HK_246
+  name: 17| HK_252
   network: ws
   port: 58620
   server: 23.102.239.134
@@ -99,24 +259,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 17,57|🇭🇰HK-212.192.12.231-175_2@175
-  network: ws
-  port: 80
-  server: 212.192.12.231
-  servername: www.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b5a75d3a-cd95-4b04-9cd6-b1ef4d9b763c
-  ws-headers:
-    Host: www.apple.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 17| HK_249
+  name: 17| HK_253
   network: ws
   port: 10510
   server: 23.99.120.52
@@ -132,7 +275,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 19| HK_156
+  name: 19| HK_159
   network: ws
   port: 41000
   server: 156.245.8.185
@@ -144,12 +287,25 @@ proxies:
   ws-headers:
     HOST: www.20163322.xyz
   ws-path: /path/271624282113
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 19,41|🇭🇰HK_186
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
 - alterId: 32
   cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 19| HK_158
+  name: 19| HK_161
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -160,71 +316,6 @@ proxies:
   ws-headers:
     HOST: hrgdvpn.flycdnedc55.vip
   ws-path: /opt/video/images
-- alterId: 64
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 19| HK_159
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 21,47,48,51,55,58,74,76,100|CN 1|openitr
-  network: ws
-  port: '443'
-  server: 123.58.197.70
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 21,82,100|RU 6|openitr
-  network: tcp
-  port: '80'
-  server: 194.156.98.179
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0855b410-0e96-4d0a-9b6e-80830edec462
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: '21,47,51,110|🇭🇰ConfigV2RayNG #1'
-  network: ws
-  port: '80'
-  server: 182.16.1.194
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: ''
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 25|🇭🇰香港03-广移 | X1
@@ -234,21 +325,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 186b8cda-a7bd-4538-ac4c-28169670121c
-- auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd
+- alterId: 32
+  cipher: auto
   client-fingerprint: chrome
-  name: 44|🇭🇰 Relay_🇭🇰HK-🇭🇰HK_375
-  password: e15a928d-cd74-4a8c-9305-19db97c2f3fd
-  port: 8086
-  server: hkt.wumaojichang.com
-  skip-cert-verify: true
-  type: hysteria2
+  name: 44,55,59,76|🇭🇰HK-182.16.1.194-9297
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 44|netflix_HK 5
+  name: '44,59|netflix_HK #6'
   network: ws
-  port: 80
+  port: '80'
   server: ges1.diaffz.top
   servername: ges1.diaffz.top
   skip-cert-verify: true
@@ -1056,120 +1156,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
-- alterId: 0
-  cipher: auto
-  name: 51|🇭🇰 HK 104 → tg@nicevpn123
-  network: ws
-  port: 25744
-  server: 43.229.154.114
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
-  ws-opts:
-    path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
-- alterId: 0
-  cipher: auto
-  name: 51|🇭🇰 HK 107 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 92.223.76.25
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4
-  ws-opts:
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 51|🇭🇰 HK 11 → tg@nicevpn123
-  network: ws
-  port: 443
-  server: 92.223.76.24
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
-  ws-opts:
-    path: /MEHDI
-- alterId: 0
-  cipher: auto
-  name: 51|🇭🇰 HK 116 → tg@nicevpn123
-  network: ws
-  port: 44036
-  server: 202.81.232.199
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5d32ed13-095b-42b5-bf0a-5dff3db3348d
-  ws-opts:
-    path: /vm-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 51|🇭🇰 HK 140 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 154.194.2.28
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0ece175a-58bb-4062-ec92-74e34f33f9e2
-  ws-opts:
-    path: /0ece175a
-- alterId: 0
-  cipher: auto
-  name: 51|🇭🇰 HK 21 → tg@nicevpn123
-  network: ws
-  port: 53331
-  server: 103.225.199.15
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ceb30839-9bee-40c4-a8af-5ae1f9d980be
-  ws-opts:
-    path: /vm-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 51|🇭🇰 HK 28 → tg@nicevpn123
-  network: ws
-  port: 443
-  server: 92.223.76.20
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
-  ws-opts:
-    path: /MEHDI
 - cipher: aes-128-gcm
-  name: 51|🇭🇰 HK 8 → tg@nicevpn123
-  password: 2e0c256a-223a-4cf0-b9ef-2d496b8c7d01
+  name: 51|🇭🇰 HK 79 → tg@nicevpn123
+  password: 3f196d94-f040-48bf-bc75-a572bbef72b9
   port: 563
   server: hktactivc-e.onlineqitv-ns.xyz
   type: ss
   udp: true
-- alterId: 64
-  cipher: auto
-  name: 51|🇭🇰 HK 59 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
-  name: 51|🇭🇰 HK 83 → tg@nicevpn123
+  name: 51|🇭🇰 HK 105 → tg@nicevpn123
   network: ws
   port: 80
   server: 154.194.2.177
@@ -1182,7 +1178,33 @@ proxies:
     path: /de2b04f9
 - alterId: 0
   cipher: auto
-  name: 51|🇭🇰 HK 98 → tg@nicevpn123
+  name: 51|🇭🇰 HK 116 → tg@nicevpn123
+  network: ws
+  port: 443
+  server: 92.223.76.24
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
+  ws-opts:
+    path: /MEHDI
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 121 → tg@nicevpn123
+  network: ws
+  port: 443
+  server: 92.223.76.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
+  ws-opts:
+    path: /MEHDI
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 125 → tg@nicevpn123
   network: ws
   port: 80
   server: hk1.jiedian.stream
@@ -1194,6 +1216,99 @@ proxies:
   ws-opts:
     headers:
       Host: hk1.jiedian.stream
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 132 → tg@nicevpn123
+  network: ws
+  port: 44036
+  server: 202.81.232.199
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5d32ed13-095b-42b5-bf0a-5dff3db3348d
+  ws-opts:
+    path: /vm-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 25 → tg@nicevpn123
+  network: ws
+  port: 25744
+  server: 43.229.154.114
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
+  ws-opts:
+    path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 32 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 154.194.2.28
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0ece175a-58bb-4062-ec92-74e34f33f9e2
+  ws-opts:
+    path: /0ece175a
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 47 → tg@nicevpn123
+  network: ws
+  port: 53331
+  server: 103.225.199.15
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ceb30839-9bee-40c4-a8af-5ae1f9d980be
+  ws-opts:
+    path: /vm-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 49 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: baystateparent.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 417df789-074f-4d97-b00d-83b266c3724b
+  ws-opts:
+    headers:
+      Host: baystateparent.com
+    path: /cctv13/hd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 51|🇭🇰 HK 75 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 92.223.76.25
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4
+  ws-opts:
+    path: /@forwardv2ray
+- alterId: 64
+  cipher: auto
+  name: 51|🇭🇰 HK 83 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
     path: /
 - alterId: 64
   cipher: auto
@@ -1763,21 +1878,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 3ffddc7c-80a3-4677-ab9e-30da4190ec6a
-- alterId: 32
-  cipher: auto
-  name: 55,76|🇭🇰HK-182.16.1.194-9297
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 55,76|🇰HK-218.255.149.45-9639
@@ -1847,6 +1947,19 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 57|🇭🇰HK-212.192.12.231-175_2@175
+  network: ws
+  port: 80
+  server: 212.192.12.231
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b5a75d3a-cd95-4b04-9cd6-b1ef4d9b763c
+  ws-headers:
+    Host: www.apple.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 63|🇰_HK_39
   network: ws
   port: 443
@@ -1895,7 +2008,7 @@ proxies:
     path: /path/1693018744512
 - alterId: 0
   cipher: auto
-  name: 73,100|US 117|openitr
+  name: 73,100|US 120|openitr
   network: ws
   port: '443'
   server: gur.gov.ua
@@ -2109,19 +2222,22 @@ proxies:
     headers:
       Host: download.cn.connecat.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: 80|21|HK_youtube@资源分享师_88
-  network: ws
-  port: 41000
-  server: 156.245.8.185
-  tls: true
-  type: vmess
-  uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7
-  ws-opts:
-    headers:
-      Host: www.20163322.xyz
-    path: /path/271624282113
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 80,83|🇭🇰 香港KT|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.71.80
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 81|香港(油管:破解资源君)
