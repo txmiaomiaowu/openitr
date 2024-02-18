@@ -2,8 +2,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,2,6,7,8,9,10,11,12,27,35,36,54,68,69,71,73,75,76,79,99,104,115,116|🇯🇵_JP_日本->🇩🇪_DE_德国
-    #15'
+  name: '0,2,6,7,8,9,10,11,12,27,35,36,54,64,68,69,71,75,76,79,99,104,115,116|🇯🇵_JP_日本->🇩🇪_DE_德国
+    #18'
   network: ws
   port: 80
   server: 141.147.181.148
@@ -20,123 +20,83 @@ proxies:
 - auth: sharecentrepro
   client-fingerprint: chrome
   country: JP
-  name: 13,43|🇯🇵 Relay_🇯🇵JP-🇯🇵JP_642
+  name: 13,43|🇯🇵 Relay_🇯🇵JP-🇯🇵JP_534
   password: sharecentrepro
   port: 4433
   server: jpntt2.sharecentre.online
   skip-cert-verify: true
   type: hysteria2
   udp: true
-- alpn:
-  - h2
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 13,43,56,61|日本 002
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-5.cmydns2.com
-  skip-cert-verify: true
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 13,43,56,61|美国 008
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-6.cmydns2.com
-  skip-cert-verify: true
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 13,43,56,61|日本 001
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-2.cmydns2.com
-  skip-cert-verify: true
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 13,43,56,61|日本 003
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-8.cmydns2.com
-  skip-cert-verify: true
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 13,43,56,61|美国 011
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-10.cmydns2.com
-  skip-cert-verify: true
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 13,56,61|美国 007
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-1.cmydns2.com
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 13,43,56,61|美国 010
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-9.cmydns2.com
-  skip-cert-verify: true
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
   country: JP
-  name: 13|JP_559
-  password: amazonskr05
-  port: 443
-  server: 52.197.162.65
+  name: 13,17,21,40,43,75,91|🇯🇵JP-185.172.113.182-1118
+  password: G!yBwPWH3Vao
+  port: '812'
+  server: 185.172.113.182
+  tfo: false
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: JP
+  name: 13,17,18,21,43,75,91|🇵JP-185.172.113.182-1121
+  password: G!yBwPWH3Vao
+  port: '809'
+  server: 185.172.113.182
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: JP
+  name: 13,43|Pool__80
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 185.172.113.182
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 13,14,16,17,18,19,41,43,56,68,75,79,82,91,92|美国+V2CROSS.COM
+  password: shadowsocks
+  port: '443'
+  server: 154.47.20.240
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: JP
+  name: 13,17,18,21,43,75,91|🇵JP-185.172.113.182-1122
+  password: G!yBwPWH3Vao
+  port: '804'
+  server: 185.172.113.182
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: JP
+  name: 13,17,21,43,75,91|🇯🇵JP-185.172.113.182-1111
+  password: G!yBwPWH3Vao
+  port: '800'
+  server: 185.172.113.182
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: JP
+  name: 13,17,21,43,75,91|🇵JP-185.172.113.182-1119
+  password: G!yBwPWH3Vao
+  port: '811'
+  server: 185.172.113.182
+  tfo: false
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: JP
@@ -157,65 +117,15 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  country: US
-  name: 13,14,16,17,18,19,20,43,56,68,75,79,82,91|🇵JP-154.47.20.240-1073
-  password: shadowsocks
-  port: '443'
-  server: 154.47.20.240
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
+- cipher: aes-256-cfb
   country: JP
-  name: 13,17,18,21,43,75,91|🇵JP-185.172.113.182-1121
-  password: G!yBwPWH3Vao
-  port: '809'
-  server: 185.172.113.182
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: JP
-  name: 13,17,18,21,43,75,91|🇵JP-185.172.113.182-1122
-  password: G!yBwPWH3Vao
-  port: '804'
-  server: 185.172.113.182
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: JP
-  name: 13,43|Pool__81
-  password: G!yBwPWH3Vao
-  port: 801
-  server: 185.172.113.182
-  tfo: false
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  country: JP
-  name: 13|Relay_JP-JP_566
-  obfs: http_simple
-  obfs-param: 29590-edE92DcI.download.microsoft.com
-  password: passwd
-  port: 2000
-  protocol: origin
-  server: osjp02.mynode.me
-  type: ssr
-- cipher: rc4-md5
-  country: JP
-  name: 13|Relay_JP-JP_567
-  obfs: http_simple
-  obfs-param: 29590-edE92DcI.download.microsoft.com
-  password: passwd
-  port: 2000
-  protocol: origin
-  server: osjp04.mynode.me
+  name: 13|Relay_JP-JP_724
+  obfs: plain
+  password: vyunme
+  port: 443
+  protocol: auth_aes128_sha1
+  protocol-param: 16952:9bik8I
+  server: hk5.vfun.icu
   type: ssr
 - cipher: aes-256-cfb
   country: JP
@@ -228,17 +138,18 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: JP
-  name: 13|Relay_JP-JP_574
-  obfs: plain
-  password: vyunme
-  port: 443
-  protocol: auth_aes128_sha1
-  protocol-param: 16952:9bik8I
-  server: hk5.vfun.icu
+  name: 13,14,16,17,18,21,75,100|[02-16]-🇵-日本-085-jp-am48-6.eqn...
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: 8081
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
   type: ssr
 - cipher: aes-256-cfb
   country: JP
-  name: 13|Relay_JP-JP_570
+  name: 13|Relay_JP-JP_725
   obfs: tls1.2_ticket_auth
   obfs-param: PT09PQ==
   password: eAokbaDN6
@@ -246,6 +157,37 @@ proxies:
   protocol: origin
   protocol-param: PT09PQ==
   server: jp-am48-6.eqnode.net
+  type: ssr
+- cipher: rc4-md5
+  country: JP
+  name: 13|Relay_JP-JP_726
+  obfs: http_simple
+  obfs-param: 29590-edE92DcI.download.microsoft.com
+  password: passwd
+  port: 2000
+  protocol: origin
+  server: osjp02.mynode.me
+  type: ssr
+- cipher: aes-256-cfb
+  country: JP
+  name: 13|Relay_JP-JP_727
+  obfs: tls1.2_ticket_auth
+  obfs-param: PT09JSXvv70=
+  password: eAokbaDN6
+  port: 8081
+  protocol: origin
+  protocol-param: PT09JSXvv70=
+  server: jp-am48-6.eqnode.net
+  type: ssr
+- cipher: rc4-md5
+  country: JP
+  name: 13|Relay_JP-JP_728
+  obfs: http_simple
+  obfs-param: 29590-edE92DcI.download.microsoft.com
+  password: passwd
+  port: 2000
+  protocol: origin
+  server: osjp04.mynode.me
   type: ssr
 - cipher: aes-256-cfb
   country: JP
@@ -258,71 +200,13 @@ proxies:
   protocol-param: PT09PQ======
   server: jp-am48-6.eqnode.net
   type: ssr
-- cipher: aes-256-cfb
-  country: JP
-  name: 13,16,17,18,20,21,75,100|[02-16]-🇵-日本-085-jp-am48-6.eqn...
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: eAokbaDN6
-  port: 8081
-  protocol: origin
-  protocol-param: ''
-  server: jp-am48-6.eqnode.net
-  type: ssr
-- cipher: aes-256-cfb
-  country: JP
-  name: 13|Relay_JP-JP_573
-  obfs: tls1.2_ticket_auth
-  obfs-param: PT09JSXvv70=
-  password: eAokbaDN6
-  port: 8081
-  protocol: origin
-  protocol-param: PT09JSXvv70=
-  server: jp-am48-6.eqnode.net
-  type: ssr
-- alterId: 1
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 13|JP_576
-  network: ws
-  port: 8443
-  server: iij.ddddns.xyz
-  servername: ablenet.cdn.e-v.vip
-  skip-cert-verify: true
-  type: vmess
-  uuid: 21bb35ea-4e67-38c1-8d01-67fb2d64aa12
-  ws-opts:
-    headers:
-      HOST: ablenet.cdn.e-v.vip
-    path: /download
-- alterId: 0
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 13,21,54,75,91,99,104|🇯🇵JP-152.69.197.74-4109
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: '13,43,58|🇯🇵 Relay_🇯🇵JP-🇳🇱NL_645 #1'
+  name: '13,43,58|🇯🇵 Relay_🇯🇵JP-🇳🇱NL_537 #1'
   network: ws
   port: '7999'
   server: 147.78.245.53
@@ -337,34 +221,46 @@ proxies:
     headers:
       Host: ''
     path: /urnxewzvh.site:443/kwhmvws
-- alterId: 0
-  cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 13,16,18,21,54,57,73,75,91,99,104|🇯🇵JP-183.181.36.194-0603
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+- country: JP
+  name: 13|JP_734
+  network: tcp
+  password: 5359861e-515b-46e2-8348-9c08fcdd2586
+  port: 443
+  server: 13.115.117.169
+  sni: 112.ybkl.shop
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '13,14,20,43,58|Relay_🏁ZZ-🇯🇵JP_1350 #1'
+  name: '13,43,58|Relay_🏁ZZ-🇯🇵JP_1154 #1'
   network: ws
   port: '80'
-  server: 162.159.241.204
+  server: 104.16.125.64
+  servername: GWYp69Yujp2.yofnhkfc.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3566ed4a-5103-4f3c-917d-a6e6e1315062
+  ws-opts:
+    headers:
+      Host: ''
+    path: /video/VDXcaM7r
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: '13,14,20,43,58|🇺🇸 Relay_🇺🇸 US-🇯🇵JP_908 #1'
+  network: ws
+  port: '80'
+  server: 104.18.107.163
   servername: GWYp69Yujp2.yofnhkfc.xyz
   skip-cert-verify: true
   tfo: false
@@ -382,21 +278,42 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '13,43,58|Relay_🏁ZZ-🇯🇵JP_1341 #1'
+  name: '13,14,20,43,58|Relay_🏁ZZ-🇯🇵JP_1171 #1'
   network: ws
-  port: '443'
-  server: 104.21.12.103
-  servername: ming2.kiwireich.com
+  port: '80'
+  server: 104.17.193.124
+  servername: GWYp69Yujp2.yofnhkfc.xyz
   skip-cert-verify: true
   tfo: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+  uuid: 3566ed4a-5103-4f3c-917d-a6e6e1315062
   ws-opts:
     headers:
       Host: ''
-    path: /ray
+    path: /video/VDXcaM7r
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '13,14,20,43,58|Relay_🏁ZZ-🇯🇵JP_1135 #1'
+  network: ws
+  port: '80'
+  server: 162.159.241.204
+  servername: GWYp69Yujp2.yofnhkfc.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3566ed4a-5103-4f3c-917d-a6e6e1315062
+  ws-opts:
+    headers:
+      Host: ''
+    path: /video/VDXcaM7r
 - alterId: 0
   cipher: auto
   country: ' US'
@@ -416,94 +333,32 @@ proxies:
       host: GWYp69Yujp2.yofnhkfc.xyz
     host: GWYp69Yujp2.yofnhkfc.xyz
     path: /video/VDXcaM7r
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '13,14,20,43,58|Relay_🏁ZZ-🇯🇵JP_1306 #1'
-  network: ws
-  port: '80'
-  server: 104.17.193.124
-  servername: GWYp69Yujp2.yofnhkfc.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3566ed4a-5103-4f3c-917d-a6e6e1315062
-  ws-opts:
-    headers:
-      Host: ''
-    path: /video/VDXcaM7r
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: '13,14,20,43,58|🇺🇸 Relay_🇺🇸 US-🇯🇵JP_1053 #1'
-  network: ws
-  port: '80'
-  server: 104.18.107.163
-  servername: GWYp69Yujp2.yofnhkfc.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3566ed4a-5103-4f3c-917d-a6e6e1315062
-  ws-opts:
-    headers:
-      Host: ''
-    path: /video/VDXcaM7r
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: JP
-  name: 14,16,18,19,20,43,75|🇵JP-18.183.131.85-1076
+  name: 14,16,18,20,43,75|🇵JP-18.183.131.85-1076
   password: amazonskr05
   port: 443
   server: 18.183.131.85
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: JP
-  name: 17,21,43,75,91|🇵JP-185.172.113.182-1119
-  password: G!yBwPWH3Vao
-  port: '811'
-  server: 185.172.113.182
-  tfo: false
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: ' CN'
+  name: 17,19,21,98| 66.9KB/s
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  skip-cert-verify: true
+  tls: true
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: JP
-  name: 17,21,43,75,91|🇯🇵JP-185.172.113.182-1111
-  password: G!yBwPWH3Vao
-  port: '800'
-  server: 185.172.113.182
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: JP
-  name: 17,21,40,43,75,91|🇯🇵JP-185.172.113.182-1118
-  password: G!yBwPWH3Vao
-  port: '812'
-  server: 185.172.113.182
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
   country: ' AU'
   h2-opts: {}
   http-opts: {}
-  name: 17,18,19,21,22,23,40,57,58,99,111| AU_03 |10.89Mb
+  name: 17,18,19,20,21,22,23,40,57,58,99,111| AU_03 |10.89Mb
   network: tcp
   port: 24445
   server: 140.83.63.38
@@ -514,25 +369,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 17,23,40,47,58,97,99,111| US_76 |19.73Mb
-  network: tcp
-  port: 1069
-  server: 152.69.197.60
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-  ws-path: /
-- alterId: 64
-  cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 17,18,19,21,23,40,47,57,58,97,99|US 16|openitr
+  name: 17,18,19,21,23,40,47,57,58,97,99|US 6|openitr
   network: tcp
   port: '20081'
   server: 138.2.44.211
@@ -544,22 +384,39 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ' JP'
+  country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 19| JP_177
-  network: ws
-  port: 41597
-  server: 183.181.36.194
+  name: 17,22,40,47,58,97,99,111| US_76 |19.73Mb
+  network: tcp
+  port: 1069
+  server: 152.69.197.60
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 19,23,29,57,73,97,99|US 265|openitr
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
   ws-path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '20,76,115|美国_【付费推荐：https://jdyvip.link/】... #3'
+  name: '20,76,115|美国【付费推荐：https://jdyvip.link/】2... #25'
   network: ws
   port: '8080'
   server: 104.17.123.55
@@ -572,6 +429,24 @@ proxies:
     headers:
       Host: pq.kmoljklj.top
     path: /qZTtpya?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 21,54,57,73,75,91,97,99,104|🇯🇵JP-183.181.36.194-0603
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-cfb
   country: JP
   name: 21|Relay_JP-JP_518
@@ -583,6 +458,19 @@ proxies:
   protocol-param: PT09JS%
   server: jp-am48-6.eqnode.net
   type: ssr
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 23| JP_73
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 25|🇯🇵日本Eone2-IPLC | X12
@@ -601,18 +489,129 @@ proxies:
   tls: false
   type: vmess
   uuid: 186b8cda-a7bd-4538-ac4c-28169670121c
-- cipher: chacha20-ietf-poly1305
+- alpn:
+  - h2
   client-fingerprint: chrome
-  name: 43,68|🇯🇵-JP-006
-  password: e421dc3f-ed8d-4caa-b575-1f4eb1e2c80b
-  port: 51310
-  server: jp.colacloud.site
-  tfo: false
-  type: ss
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|美国 008
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-6.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|美国 007
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-1.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|日本 003
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-8.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|美国 011
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-10.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|日本 002
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-5.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|日本 001
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-2.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|美国 010
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-9.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: mm_grpc
+  name: 43,56,61|美国 009
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
+  port: 443
+  server: kaizen-jp-7.cmydns2.com
+  skip-cert-verify: true
+  sni: paydiu.com
+  tls: true
+  type: trojan
   udp: true
 - auth: cc83520b-f30e-4c84-93b0-187587156902
   client-fingerprint: chrome
-  name: 43|Pool_🇯🇵JP_643
+  name: 43|Pool_🇯🇵JP_532
   password: cc83520b-f30e-4c84-93b0-187587156902
   port: 443
   server: 205.178.183.20
@@ -620,28 +619,19 @@ proxies:
   sni: www.microsoft.com
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '43,58|Relay_🏁ZZ-🇯🇵JP_1326 #1'
-  network: ws
-  port: '80'
-  server: 104.16.125.64
-  servername: GWYp69Yujp2.yofnhkfc.xyz
-  skip-cert-verify: true
+  name: 43|JP_535
+  password: e421dc3f-ed8d-4caa-b575-1f4eb1e2c80b
+  port: 51310
+  server: 158.101.88.181
   tfo: false
-  tls: false
-  type: vmess
+  type: ss
   udp: true
-  uuid: 3566ed4a-5103-4f3c-917d-a6e6e1315062
-  ws-opts:
-    headers:
-      Host: ''
-    path: /video/VDXcaM7r
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '43,58|Relay_🏁ZZ-🇯🇵JP_1354 #1'
+  name: '43,58|Relay_🏁ZZ-🇯🇵JP_1172 #1'
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -1202,9 +1192,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,99|JP 3|openitr
+  name: '54,75|🇯🇵JP-47.91.31.231-1830 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 47.91.31.231
   servername: ''
   skip-cert-verify: false
@@ -1217,9 +1207,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,99|US 249|openitr
+  name: '54,75|🇯🇵JP-155.248.186.182-1831 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 155.248.186.182
   servername: ''
   skip-cert-verify: false
@@ -1232,9 +1222,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇯🇵JP-47.245.26.167-1832 #1'
+  name: 54,75,99|JP 6|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 47.245.26.167
   servername: ''
   skip-cert-verify: false
@@ -1247,7 +1237,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,99|JP 4|openitr
+  name: 54,75,99|JP 3|openitr
   network: ws
   port: '80'
   server: 47.74.40.13
@@ -1292,7 +1282,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,99|SG 4|openitr
+  name: 54,75,99|SG 1|openitr
   network: ws
   port: '80'
   server: 8.209.242.25
@@ -1307,7 +1297,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,99|JP 5|openitr
+  name: '54,56,68,73,75,79,115|日本【付费推荐：https://jdyvip.link/】1... #1'
+  network: ws
+  port: '80'
+  server: 131.186.63.127
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 54,75,99|JP 4|openitr
   network: ws
   port: '80'
   server: 47.245.54.58
@@ -1322,9 +1327,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇯🇵JP-47.91.19.249-1842 #1'
+  name: 54,75,99|JP 5|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 47.91.19.249
   servername: ''
   skip-cert-verify: false
@@ -1491,9 +1496,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,99|JP 6|openitr
+  name: '54,75|🇯🇵JP-47.245.7.212-1957 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 47.245.7.212
   servername: ''
   skip-cert-verify: false
@@ -1506,9 +1511,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '54,75|🇯🇵JP-47.245.58.250-1958 #1'
+  name: 54,75,99|JP 7|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 47.245.58.250
   servername: ''
   skip-cert-verify: false
@@ -1846,7 +1851,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 54,75,83,84,92|日本东京 云
+  name: '54,63,75,83,84|🇯🇵_JP_日本->🇩🇪_DE_德国_3 #1'
   network: ws
   port: 80
   server: 43.153.181.217
@@ -1858,7 +1863,6 @@ proxies:
   ws-opts:
     headers:
       host: my1.tooters.ir
-    host: my1.tooters.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -1894,7 +1898,7 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: 68,79|21|🇯🇵 [V2/尊享]日本 无限流量/NF
+  name: 68|🇵-JP-011
   network: ws
   port: 8080
   server: ntt3.ddddns.xyz
@@ -2730,7 +2734,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0e29332a-7913-4f72-a89a-70755c0eaba2
+  uuid: 0d2f706a-d4d6-4b99-95c5-024d0f5a859a
 - alterId: 0
   cipher: auto
   name: 79|18|🇯🇵日本05
@@ -2740,7 +2744,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0e29332a-7913-4f72-a89a-70755c0eaba2
+  uuid: 0d2f706a-d4d6-4b99-95c5-024d0f5a859a
 - alterId: 0
   cipher: auto
   name: 79|18|🇯🇵日本06
@@ -2750,7 +2754,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0e29332a-7913-4f72-a89a-70755c0eaba2
+  uuid: 0d2f706a-d4d6-4b99-95c5-024d0f5a859a
 - alterId: 0
   cipher: auto
   name: 79|22|【BGP】日本 04  | 1x JP
@@ -2760,7 +2764,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 161802bb-63a4-4297-936c-09592743da8b
+  uuid: 75e25f5f-7bd4-4b8d-9485-caa49287adf7
 - alterId: 0
   cipher: auto
   name: 79|22|【BGP】日本 05  | 1x JP
@@ -2770,7 +2774,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 161802bb-63a4-4297-936c-09592743da8b
+  uuid: 75e25f5f-7bd4-4b8d-9485-caa49287adf7
 - alterId: 0
   cipher: auto
   name: 79|22|【BGP】日本 06  | 1x JP
@@ -2780,7 +2784,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 161802bb-63a4-4297-936c-09592743da8b
+  uuid: 75e25f5f-7bd4-4b8d-9485-caa49287adf7
 - alterId: 0
   cipher: auto
   name: 80|日本(油管:破解资源君)
@@ -2881,19 +2885,6 @@ proxies:
     path: /soda
 - alterId: 0
   cipher: auto
-  name: 104|日本 01|AzureCloud|京都|1.0
-  network: ws
-  port: 20002
-  server: 221.131.165.179
-  tls: false
-  type: vmess
-  uuid: 796f2257-58f6-320b-9022-2655c256703e
-  ws-opts:
-    headers:
-      Host: www.alidns.com
-    path: /soda
-- alterId: 0
-  cipher: auto
   name: 104|日本 02|AzureCloud|大阪|1.0
   network: ws
   port: 20001
@@ -2904,6 +2895,19 @@ proxies:
   ws-opts:
     headers:
       Host: jpp2.wakutls.com
+    path: /soda
+- alterId: 0
+  cipher: auto
+  name: 104|日本 01|AzureCloud|京都|1.0
+  network: ws
+  port: 20002
+  server: 221.131.165.179
+  tls: false
+  type: vmess
+  uuid: 796f2257-58f6-320b-9022-2655c256703e
+  ws-opts:
+    headers:
+      Host: www.alidns.com
     path: /soda
 - alterId: 0
   cipher: auto
@@ -2978,3 +2982,17 @@ proxies:
     headers:
       Host: a.189.cn
     path: /
+- alterId: 0
+  cipher: auto
+  name: 115|节点日期：02-18 19:20
+  network: ws
+  port: '80'
+  server: 104.21.225.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt5.ir
+    path: /?ed=2048&Telegram🇨🇳@WangCai_8
