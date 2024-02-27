@@ -1,21 +1,129 @@
 proxies:
-- cipher: aes-256-cfb
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
   country: TW
-  name: 15,16,18,20,84|_TW_台湾_1
+  down: 55 Mbps
+  name: 13,99|油管绵阿羊_Taiwan_hysteria_61
+  port: 22334
+  protocol: udp
+  server: www2.dtku48.xyz
+  skip-cert-verify: true
+  type: hysteria
+  udp: true
+  up: 11 Mbps
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: '55'
+  name: 13|Relay_TW-TW_987
+  port: 22334
+  protocol: udp
+  server: www4.dtku49.xyz
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: '11'
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: '55'
+  name: 13|Relay_TW-TW_985
+  port: 11229
+  protocol: udp
+  server: www.dtku50.xyz
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: '11'
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: 100
+  fast-open: true
+  name: 13,99|油管绵阿羊_Taiwan_hy_2
+  port: 18490
+  ports: 18490
+  protocol: udp
+  server: www.dtku40.xyz
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: 80
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: 10
+  name: 13,99|油管绵阿羊_Taiwan_hysteria_91
+  port: 18470
+  protocol: udp
+  server: www.dtku50.xyz
+  skip-cert-verify: true
+  sni: www.amazon.cn
+  type: hysteria
+  udp: true
+  up: 2
+- cipher: aes-256-cfb
+  country: 🇼TW
+  name: 13,15,18,20,38,84|_TW_台湾_1
   password: qwerREWQ@@
   port: 2003
   server: e001.panda003.net
+  type: ss
+- cipher: aes-256-cfb
+  country: TW
+  name: 13|TW_993
+  password: qwerREWQ@@
+  port: 2003
+  server: 103.4.29.39
+  type: ss
+- cipher: aes-256-cfb
+  country: TW
+  name: 13|TW_994
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 223.165.4.173
   type: ss
 - alterId: 0
   cipher: auto
   country: TW
   h2-opts: {}
   http-opts: {}
-  name: 15,16,20,21,29,36,37,54,58,71,74,77,84,97|TW 1|openitr
+  name: 13,45,55,71,73,97|CN 1|openitr
+  network: ws
+  port: '443'
+  server: 123.58.197.70
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 13,15,16,20,21,36,37,54,58,71,74,77,84,97|TW 1|openitr
   network: tcp
   port: '12002'
   server: nb22.ntbq.dynu.net
-  servername: mehdi20.mehdimoghaddam.fun
+  servername: ''
   skip-cert-verify: true
   skip-cert-vertify: true
   tls: false
@@ -27,6 +135,54 @@ proxies:
     headers:
       Host: nb22.ntbq.dynu.net
     path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 13,14,19|Relay_HK-FR_399 | 1.39Mb
+  network: ws
+  port: 443
+  server: 1.chlmxfcjy.top
+  servername: h197-fr.kxnn.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3b89f882-0c3f-4144-811d-91fce7ab3c05
+  ws-opts:
+    headers:
+      HOST: h197-fr.kxnn.eu.org
+    path: /D26xvdqUdCpvvPTz4R
+- alterId: 0
+  cipher: auto
+  country: NL
+  h2-opts: {}
+  http-opts: {}
+  name: 13,20|Relay_NL-US_475
+  network: ws
+  port: 80
+  server: ges4.3h.lv
+  servername: ges4.3h.lv
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a
+  ws-opts:
+    headers:
+      HOST: ges4.3h.lv
+    path: /rh5dgdvsd
+- alterId: 0
+  cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: '16,18,22,38|_54 #1'
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-path: /
 - alterId: 0
   cipher: aes-128-gcm
@@ -66,19 +222,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
-  name: 45,55,71,73|🇼TW-123.58.197.70-0677
-  network: ws
-  port: 443
-  server: 123.58.197.70
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 45,71|🇨🇳 台湾11.10|频道 t.me/SSRSUB
@@ -121,19 +264,6 @@ proxies:
     headers:
       host: 103.118.29.229
     path: /5gtocdocao.com
-- alterId: 0
-  cipher: auto
-  name: 66|🇳-TW-003
-  network: ws
-  port: 20009
-  server: 188.253.6.35
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 68d00e13-c3d1-4d29-8d19-b6b99de150bc
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   http-opts:
@@ -454,20 +584,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 77,111|台湾【付费推荐：https://jdyvip.link/】1...
+  network: tcp
+  port: '5681'
+  server: b23.ntbq.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: de92df70-f63f-47ca-a551-b2a95f636a25
+- alterId: 0
+  cipher: auto
   name: 77,102|台湾|@ripaojiedian
   network: tcp
   port: '14431'
   server: 36.232.170.118
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c1400d1-f58b-4551-8df7-c7e3557e1a98
-- alterId: 0
-  cipher: auto
-  name: 77|21|baipaovpn台湾省台北市
-  network: tcp
-  port: '3278'
-  server: 61.228.166.29
   servername: ''
   tls: false
   type: vmess
@@ -560,16 +690,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 95|🔒 VM-TCP-NA 🇹🇼 TW-1.162.135.46...
-  network: tcp
-  port: '21353'
-  server: 1.162.135.46
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
-- alterId: 0
-  cipher: auto
   name: 95|🔒 VM-WS-NA 🇹🇼 TW-188.253.6.35:...
   network: ws
   port: '20009'
@@ -584,51 +704,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 97,111|台湾【付费推荐：https://jdyvip.link/】1...
+  name: 95|🔒 VM-TCP-NA 🇹🇼 TW-1.162.135.46...
   network: tcp
-  port: '5681'
-  server: b23.ntbq.dynu.net
+  port: '21353'
+  server: 1.162.135.46
   servername: ''
   tls: false
   type: vmess
-  uuid: de92df70-f63f-47ca-a551-b2a95f636a25
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 99|油管绵阿羊_Taiwan_hysteria_61
-  port: 22334
-  protocol: udp
-  server: www2.dtku48.xyz
-  skip-cert-verify: true
-  type: hysteria
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 10
-  name: 99|油管绵阿羊_Taiwan_hysteria_91
-  port: 18470
-  protocol: udp
-  server: www.dtku50.xyz
-  skip-cert-verify: true
-  sni: www.amazon.cn
-  type: hysteria
-  up: 2
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 100
-  fast-open: true
-  name: 99|油管绵阿羊_Taiwan_hy_2
-  port: 18490
-  ports: 18490
-  protocol: udp
-  server: www.dtku40.xyz
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 80
+  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
 - alterId: 0
   cipher: auto
   name: 108|TW_speednode_0119
