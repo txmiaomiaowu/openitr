@@ -1,58 +1,93 @@
 proxies:
-- cipher: aes-128-gcm
-  country: ' AU'
-  name: 14,19|Relay_ AU-CA_118 | 7.55Mb
-  password: e0beb700-d059-4dec-a9e3-dbe8a1c5c583
-  port: 20058
-  server: edge.xsus.zj.cn
-  type: ss
-- cipher: aes-128-gcm
-  country: ' CA'
-  name: 14,19|Relay_ CA-CA_120 | 6.98Mb
-  password: e0beb700-d059-4dec-a9e3-dbe8a1c5c583
-  port: 20047
-  server: edge.xsus.zj.cn
-  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 14,19,98|US 39|openitr
+  network: ws
+  port: '80'
+  server: us-west-anycast.lnaspiring.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4c391e67-94ac-4a4f-9b37-6c95112ccad2
+  ws-opts:
+    headers:
+      Host: uspz.edge.233.tw
+    path: /geg/44?ed=2048
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 14,19|Relay_-CA_99 |18.17Mb
+  network: ws
+  port: 8080
+  server: 198.41.218.55
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 14,19|Relay_-CA_114 |29.02Mb
+  network: ws
+  port: 8080
+  server: 190.93.244.249
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
 - alterId: 0
   cipher: auto
   country: CA
   h2-opts: {}
   http-opts: {}
-  name: 14,19|CA_121 | 3.08Mb
+  name: 14,19,98|CA 4|openitr
   network: ws
-  port: 8880
+  port: '8880'
   server: 142.171.174.206
   servername: 142.171.174.206
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: b46cb204-5849-4b86-852d-8154fb8eb580
   ws-opts:
     headers:
-      HOST: 142.171.174.206
+      Host: ''
     path: b46cb204-5849-4b86-852d-8154fb8eb580-vm
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,20,98|US 71|openitr
+  name: 15,20|Relay_ZZ-CA_892
   network: ws
-  port: '80'
+  port: 80
   server: 104.18.202.232
   servername: ca4.tehme2.fun
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     headers:
-      Host: ''
+      HOST: ca4.tehme2.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
   country: ' CA'
-  name: 16,20|_22
+  name: 16,20|_92
   password: G!yBwPWH3Vao
-  port: 810
+  port: 809
   server: 134.195.196.178
   type: ss
   udp: true
@@ -66,17 +101,9 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' CA'
-  name: 16,20|_23
+  name: 16,20,48,74,90|🇨CA-134.195.196.178-1045
   password: G!yBwPWH3Vao
-  port: 800
-  server: 134.195.196.178
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: ' CA'
-  name: 16,20|_213
-  password: G!yBwPWH3Vao
-  port: 806
+  port: '804'
   server: 134.195.196.178
   type: ss
   udp: true
@@ -105,26 +132,34 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' CA'
-  name: 16,20,48,74,90|🇨CA-134.195.196.178-1045
+  name: 16,20|_23
   password: G!yBwPWH3Vao
-  port: '804'
+  port: 800
   server: 134.195.196.178
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' CA'
-  name: 16,20|_92
+  name: 16,20|_22
   password: G!yBwPWH3Vao
-  port: 809
+  port: 810
+  server: 134.195.196.178
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: ' CA'
+  name: 16,20|_213
+  password: G!yBwPWH3Vao
+  port: 806
   server: 134.195.196.178
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇦CA
+  country: ' CA'
   h2-opts: {}
   http-opts: {}
-  name: 16,18,20,22,38,45,55,98|CA 1|openitr
+  name: 16,18,20,22,45,55,98|CA 1|openitr
   network: tcp
   port: '22324'
   server: 198.57.27.212
@@ -138,10 +173,27 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19|Relay_-CA_08 |19.39Mb
+  name: 19,98|US 95|openitr
+  network: ws
+  port: '8080'
+  server: 108.162.194.215
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_09 |21.31Mb
   network: ws
   port: 8080
-  server: 190.93.244.61
+  server: 162.159.24.165
   servername: pcs-referenced-camera-concerns.trycloudflare.com
   skip-cert-verify: true
   type: vmess
@@ -154,7 +206,206 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19,98|US 110|openitr
+  name: 19|Relay_-CA_17 |24.90Mb
+  network: ws
+  port: 8080
+  server: 190.93.246.226
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 105|openitr
+  network: ws
+  port: '8080'
+  server: 108.162.193.241
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_21 |23.58Mb
+  network: ws
+  port: 8080
+  server: 162.159.61.113
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_None_vmess_54
+  network: ws
+  port: 8080
+  server: fbi.gov
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
+  ws-opts:
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_31 |24.52Mb
+  network: ws
+  port: 8080
+  server: 103.21.244.90
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_None_vmess_58
+  network: ws
+  port: 8080
+  server: yh1.freeh1.xyz
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
+  ws-opts:
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_None_vmess_59
+  network: ws
+  port: 8080
+  server: yh2.freeh1.xyz
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
+  ws-opts:
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_None_vmess_56
+  network: ws
+  port: 8080
+  server: yh1.freeh1.xyz
+  servername: nest-emily-healing-h.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6
+  ws-opts:
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+    path: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_38 |24.12Mb
+  network: ws
+  port: 8080
+  server: 198.41.222.161
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_None_vmess_52
+  network: ws
+  port: 8080
+  server: fbi.gov
+  servername: nest-emily-healing-h.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6
+  ws-opts:
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+    path: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_None_vmess_55
+  network: ws
+  port: 8080
+  server: yh1.freeh1.xyz
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
+  ws-opts:
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_43 |83.20Mb
+  network: ws
+  port: 8080
+  server: 162.159.61.64
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 107|openitr
   network: ws
   port: '8080'
   server: 108.162.195.228
@@ -171,106 +422,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19|Relay_-CA_11 | 7.20Mb
-  network: ws
-  port: 8080
-  server: 190.93.246.226
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,98|US 111|openitr
-  network: ws
-  port: '8080'
-  server: 108.162.193.241
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_172 |17.01Mb
-  network: ws
-  port: 8080
-  server: 198.41.222.161
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_16 | 6.08Mb
-  network: ws
-  port: 8080
-  server: 188.114.98.193
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_17 |13.32Mb
-  network: ws
-  port: 8080
-  server: 162.159.61.64
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_169 |19.51Mb
-  network: ws
-  port: 8080
-  server: 162.159.24.165
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_19 |26.42Mb
+  name: 19|Relay_-CA_46 |28.38Mb
   network: ws
   port: 8080
   server: 162.159.13.39
@@ -286,7 +438,75 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19,36,100|油管绵阿羊_United States_vmess_511
+  name: 19,100|油管绵阿羊_None_vmess_516
+  network: ws
+  port: 8080
+  server: yh3.freeh1.xyz
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
+  ws-opts:
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 99|openitr
+  network: ws
+  port: '8080'
+  server: 173.245.59.251
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_United States_vmess_510
+  network: ws
+  port: 8080
+  server: yh2.freeh1.xyz
+  servername: nest-emily-healing-h.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6
+  ws-opts:
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+    path: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_None_vmess_51
+  network: ws
+  port: 8080
+  server: fbi.gov
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
+  ws-opts:
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,100|油管绵阿羊_United States_vmess_511
   network: ws
   port: 8080
   server: yh2.freeh1.xyz
@@ -303,44 +523,10 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19|Relay_-CA_21 |11.84Mb
+  name: 19|Relay_-CA_57 |15.05Mb
   network: ws
   port: 8080
-  server: 198.41.192.209
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|FR 3|openitr
-  network: ws
-  port: '8080'
-  server: 173.245.49.10
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_29 | 7.49Mb
-  network: ws
-  port: 8080
-  server: 141.101.121.130
+  server: 162.159.22.71
   servername: pcs-referenced-camera-concerns.trycloudflare.com
   skip-cert-verify: true
   type: vmess
@@ -370,40 +556,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19|Relay_-CA_32 |14.44Mb
-  network: ws
-  port: 8080
-  server: 162.159.22.71
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_164 |25.38Mb
-  network: ws
-  port: 8080
-  server: 198.41.199.22
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,98|FR 5|openitr
+  name: 19,98|FR 7|openitr
   network: ws
   port: '8080'
   server: 173.245.49.32
@@ -418,43 +571,42 @@ proxies:
     path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_173 |25.81Mb
+  name: 19|Relay_-CA_61 |17.42Mb
   network: ws
   port: 8080
-  server: 141.101.114.11
+  server: 198.41.192.209
   servername: pcs-referenced-camera-concerns.trycloudflare.com
   skip-cert-verify: true
   type: vmess
   uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
   ws-opts:
     headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
+      host: pcs-referenced-camera-concerns.trycloudflare.com
     path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19,98|US 39|openitr
+  name: 19,98|FR 5|openitr
   network: ws
-  port: '80'
-  server: us-west-anycast.lnaspiring.com
+  port: '8080'
+  server: 173.245.49.10
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 87780c14-ed86-4d45-832f-e90f9de59656
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
   ws-opts:
     headers:
-      Host: uspz.edge.233.tw
-    path: /geg/44?ed=2048
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19,98|FR 4|openitr
+  name: 19,98|FR 6|openitr
   network: ws
   port: '8080'
   server: 173.245.49.157
@@ -471,475 +623,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19,36,100|油管绵阿羊_None_vmess_59
-  network: ws
-  port: 8080
-  server: yh2.freeh1.xyz
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
-  ws-opts:
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,100|油管绵阿羊_None_vmess_54
-  network: ws
-  port: 8080
-  server: fbi.gov
-  servername: larger-marketing-amounts-skin.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
-  ws-opts:
-    headers:
-      host: larger-marketing-amounts-skin.trycloudflare.com
-    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,100|油管绵阿羊_None_vmess_52
-  network: ws
-  port: 8080
-  server: fbi.gov
-  servername: nest-emily-healing-h.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6
-  ws-opts:
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-    path: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_46 | 7.93Mb
-  network: ws
-  port: 8080
-  server: 188.114.98.66
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|IT 9|openitr
-  network: ws
-  port: '8080'
-  server: 188.114.97.49
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,100|油管绵阿羊_United States_vmess_510
-  network: ws
-  port: 8080
-  server: yh2.freeh1.xyz
-  servername: nest-emily-healing-h.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6
-  ws-opts:
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-    path: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,100|油管绵阿羊_None_vmess_56
-  network: ws
-  port: 8080
-  server: yh1.freeh1.xyz
-  servername: nest-emily-healing-h.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6
-  ws-opts:
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-    path: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 106|openitr
-  network: ws
-  port: '8080'
-  server: 108.162.195.102
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|IT 10|openitr
-  network: ws
-  port: '8080'
-  server: 188.114.98.128
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,100|油管绵阿羊_None_vmess_55
-  network: ws
-  port: 8080
-  server: yh1.freeh1.xyz
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
-  ws-opts:
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,100|油管绵阿羊_None_vmess_51
-  network: ws
-  port: 8080
-  server: fbi.gov
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
-  ws-opts:
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_65 |12.04Mb
-  network: ws
-  port: 8080
-  server: 190.93.246.239
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 96|openitr
-  network: ws
-  port: '8080'
-  server: 172.67.92.67
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_162 |17.98Mb
-  network: ws
-  port: 8080
-  server: 198.41.223.157
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_72 | 8.02Mb
-  network: ws
-  port: 8080
-  server: 108.162.196.163
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 105|openitr
-  network: ws
-  port: '8080'
-  server: 173.245.58.57
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🇨🇴CO-🇨🇦CA_68 |59.57Mb
-  network: ws
-  port: 8080
-  server: 188.114.98.33
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_175 |22.12Mb
-  network: ws
-  port: 8080
-  server: 141.101.121.11
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|IT 8|openitr
-  network: ws
-  port: '8080'
-  server: 188.114.97.32
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 100|openitr
-  network: ws
-  port: '8080'
-  server: 172.66.173.72
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|IT 6|openitr
-  network: ws
-  port: '8080'
-  server: 188.114.98.201
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|IT 5|openitr
-  network: ws
-  port: '8080'
-  server: 188.114.96.31
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 94|openitr
-  network: ws
-  port: '8080'
-  server: 173.245.59.251
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_176 |17.61Mb
-  network: ws
-  port: 8080
-  server: 162.159.61.113
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|IT 7|openitr
-  network: ws
-  port: '8080'
-  server: 188.114.96.8
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🇺🇸US-🇦CA_130 |23.27Mb
-  network: ws
-  port: 8080
-  server: 172.67.234.151
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 107|openitr
-  network: ws
-  port: '8080'
-  server: 172.67.105.98
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,100|油管绵阿羊_United States_vmess_57
+  name: 19,100|油管绵阿羊_United States_vmess_57
   network: ws
   port: 8080
   server: yh1.freeh1.xyz
@@ -954,149 +638,12 @@ proxies:
     path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 19,36,98|US 99|openitr
-  network: ws
-  port: '8080'
-  server: 172.67.3.129
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_ZZ-🇦CA_163 |15.52Mb
+  name: 19|Relay_-CA_67 |79.95Mb
   network: ws
   port: 8080
-  server: 198.41.195.33
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_91 | 9.57Mb
-  network: ws
-  port: 8080
-  server: 103.21.244.92
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 108|openitr
-  network: ws
-  port: '8080'
-  server: 108.162.194.215
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_161 |22.90Mb
-  network: ws
-  port: 8080
-  server: 141.101.122.49
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,98|US 97|openitr
-  network: ws
-  port: '8080'
-  server: 172.66.128.78
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_95 |18.17Mb
-  network: ws
-  port: 8080
-  server: 198.41.201.21
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 102|openitr
-  network: ws
-  port: '8080'
-  server: 108.162.195.142
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_97 | 6.85Mb
-  network: ws
-  port: 8080
-  server: 198.41.217.193
+  server: 141.101.114.11
   servername: pcs-referenced-camera-concerns.trycloudflare.com
   skip-cert-verify: true
   type: vmess
@@ -1109,190 +656,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 19|Relay_-CA_98 |25.74Mb
-  network: ws
-  port: 8080
-  server: 103.21.244.90
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_157 |25.46Mb
-  network: ws
-  port: 8080
-  server: 190.93.245.232
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36,98|US 104|openitr
-  network: ws
-  port: '8080'
-  server: 108.162.194.192
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_ZZ-🇨🇦CA_178 |33.36Mb
-  network: ws
-  port: 8080
-  server: 198.41.218.126
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_102 |25.79Mb
-  network: ws
-  port: 8080
-  server: 103.21.244.76
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_104 | 6.28Mb
-  network: ws
-  port: 8080
-  server: 198.41.218.55
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,98|US 101|openitr
-  network: ws
-  port: '8080'
-  server: 172.66.165.149
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19|Relay_-CA_107 |11.35Mb
-  network: ws
-  port: 8080
-  server: 190.93.244.249
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_168 |23.90Mb
-  network: ws
-  port: 8080
-  server: 141.101.114.186
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,98|US 113|openitr
-  network: ws
-  port: '8880'
-  server: au-01.snangua.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a81e47a0-b43b-4536-9cc3-9aae7bae0a4a
-  ws-opts:
-    headers:
-      Host: au-01.snangua.com
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 19,36|Relay_🏁ZZ-🇨🇦CA_167 |25.80Mb
-  network: ws
-  port: 8080
-  server: 141.101.114.54
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 19,98|US 93|openitr
+  name: 19,98|US 103|openitr
   network: ws
   port: '8080'
   server: 173.245.59.42
@@ -1309,7 +673,677 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,80,98|US 139|openitr
+  name: 19|Relay_-CA_70 | 7.18Mb
+  network: ws
+  port: 8080
+  server: 188.114.97.49
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_72 | 8.81Mb
+  network: ws
+  port: 8080
+  server: 188.114.98.128
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_75 |13.31Mb
+  network: ws
+  port: 8080
+  server: 198.41.223.157
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 102|openitr
+  network: ws
+  port: '8080'
+  server: 108.162.195.102
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_78 | 6.02Mb
+  network: ws
+  port: 8080
+  server: 190.93.246.239
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_83 |15.78Mb
+  network: ws
+  port: 8080
+  server: 141.101.121.130
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 101|openitr
+  network: ws
+  port: '8080'
+  server: 108.162.196.163
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 100|openitr
+  network: ws
+  port: '8080'
+  server: 173.245.58.57
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_86 |32.96Mb
+  network: ws
+  port: 8080
+  server: 141.101.114.54
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_87 |22.15Mb
+  network: ws
+  port: 8080
+  server: 141.101.114.186
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 98|openitr
+  network: ws
+  port: '8080'
+  server: 108.162.194.192
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_91 |17.98Mb
+  network: ws
+  port: 8080
+  server: 103.21.244.76
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_92 | 8.88Mb
+  network: ws
+  port: 8080
+  server: 188.114.98.193
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_93 |21.39Mb
+  network: ws
+  port: 8080
+  server: 198.41.218.126
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|IT 4|openitr
+  network: ws
+  port: '8080'
+  server: 188.114.98.201
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_95 | 9.20Mb
+  network: ws
+  port: 8080
+  server: 188.114.97.32
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_96 | 7.84Mb
+  network: ws
+  port: 8080
+  server: 188.114.98.66
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_97 | 9.53Mb
+  network: ws
+  port: 8080
+  server: 141.101.121.11
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|IT 3|openitr
+  network: ws
+  port: '8080'
+  server: 188.114.98.33
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|IT 2|openitr
+  network: ws
+  port: '8080'
+  server: 188.114.96.31
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 82|openitr
+  network: ws
+  port: '8080'
+  server: 172.67.234.151
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_102 | 7.44Mb
+  network: ws
+  port: 8080
+  server: 188.114.96.8
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|IT 5|openitr
+  network: ws
+  port: '8080'
+  server: 188.114.96.69
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_104 | 8.91Mb
+  network: ws
+  port: 8080
+  server: 188.114.98.162
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_105
+  network: ws
+  port: 8880
+  server: au-01.snangua.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a81e47a0-b43b-4536-9cc3-9aae7bae0a4a
+  ws-opts:
+    headers:
+      Host: au-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_106 |10.72Mb
+  network: ws
+  port: 8080
+  server: 190.93.246.26
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 104|openitr
+  network: ws
+  port: '8080'
+  server: 172.67.3.129
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 92|openitr
+  network: ws
+  port: '8080'
+  server: 172.67.105.98
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 93|openitr
+  network: ws
+  port: '8080'
+  server: 172.67.92.67
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 97|openitr
+  network: ws
+  port: '8080'
+  server: 172.66.173.72
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_112 | 9.86Mb
+  network: ws
+  port: 8080
+  server: 172.66.128.78
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 96|openitr
+  network: ws
+  port: '8080'
+  server: 172.66.165.149
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_115 |15.38Mb
+  network: ws
+  port: 8080
+  server: 198.41.199.22
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_116 |24.37Mb
+  network: ws
+  port: 8080
+  server: 190.93.244.61
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_117 |42.59Mb
+  network: ws
+  port: 8080
+  server: 190.93.245.232
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_118 |23.24Mb
+  network: ws
+  port: 8080
+  server: 141.101.122.49
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_119 |19.81Mb
+  network: ws
+  port: 8080
+  server: 198.41.201.21
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19,98|US 94|openitr
+  network: ws
+  port: '8080'
+  server: 108.162.195.142
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      Host: ''
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_123 |94.35Mb
+  network: ws
+  port: 8080
+  server: 198.41.217.193
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_124 |24.89Mb
+  network: ws
+  port: 8080
+  server: 103.21.244.92
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 19|Relay_-CA_125 |30.33Mb
+  network: ws
+  port: 8080
+  server: 198.41.195.33
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 20,80,98|US 119|openitr
   network: ws
   port: '2086'
   server: 172.67.229.19
@@ -1326,7 +1360,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,45,52,74,80,98,103|🏁RELAY-172.67.229.33-2762
+  name: 20,45,52,74,80,98,103|🏁RELAY-172.67.229.33-2697
   network: ws
   port: 2086
   server: 172.67.229.33
@@ -1343,7 +1377,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,52,74,80,98,103|🏁RELAY-172.67.229.25-2778
+  name: 20,52,74,80,98,103|🏁RELAY-172.67.229.25-2713
   network: ws
   port: 2086
   server: 172.67.229.25
@@ -1360,7 +1394,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,80,98|US 132|openitr
+  name: 20,80,98|US 118|openitr
   network: ws
   port: '2086'
   server: 172.67.229.37
@@ -1377,7 +1411,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,45,52,74,80,98,103|🏁RELAY-172.67.229.35-2754
+  name: 20,45,52,74,80,98,103|🏁RELAY-172.67.229.35-2689
   network: ws
   port: 2086
   server: 172.67.229.35
@@ -1395,7 +1429,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,45,52,74,80,98|US 137|openitr
+  name: 20,45,52,74,80,98|US 121|openitr
   network: ws
   port: '2086'
   server: 172.67.229.13
@@ -1412,7 +1446,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,80,98|US 140|openitr
+  name: 20,80,98|US 123|openitr
   network: ws
   port: '2086'
   server: 172.67.229.36
@@ -1429,9 +1463,9 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 20,45,52,74,80,98|US 134|openitr
+  name: 20,45,52,74,80,98,103|🏁RELAY-172.67.229.39-2727
   network: ws
-  port: '2086'
+  port: 2086
   server: 172.67.229.39
   servername: ''
   skip-cert-verify: false
@@ -1575,92 +1609,6 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 36,100|油管绵阿羊_None_vmess_514
-  network: ws
-  port: 8080
-  server: yh3.freeh1.xyz
-  servername: nest-emily-healing-h.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6
-  ws-opts:
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-    path: c3f22c72-8c9e-4dd1-80e9-cc64b72846a6-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 36,100|油管绵阿羊_United States_vmess_513
-  network: ws
-  port: 8080
-  server: yh3.freeh1.xyz
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
-  ws-opts:
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 36,100|油管绵阿羊_None_vmess_58
-  network: ws
-  port: 8080
-  server: yh1.freeh1.xyz
-  servername: larger-marketing-amounts-skin.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
-  ws-opts:
-    headers:
-      host: larger-marketing-amounts-skin.trycloudflare.com
-    path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
-- alterId: 0
-  cipher: auto
-  country: 🇨CO
-  h2-opts: {}
-  http-opts: {}
-  name: 36,98|IT 4|openitr
-  network: ws
-  port: '8080'
-  server: 188.114.98.162
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      Host: ''
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 36|Relay_🏁ZZ-🇨🇦CA_160 |16.15Mb
-  network: ws
-  port: 8080
-  server: 190.93.246.26
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-  ws-opts:
-    headers:
-      HOST: pcs-referenced-camera-concerns.trycloudflare.com
-    path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-- alterId: 0
-  cipher: auto
   name: 41,56,64|_CA_
   network: ws
   port: 80
@@ -1706,7 +1654,7 @@ proxies:
     path: /jsjc/nl1
 - alterId: 0
   cipher: auto
-  name: 41,52,56,59,74,103,112|美国【付费推荐：https://jdyvip.link/】2...
+  name: 41,52,54,56,59,74,103,112|美国【付费推荐：https://jdyvip.link/】2...
   network: ws
   port: '2052'
   server: 104.21.30.249
@@ -1722,7 +1670,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,44,48,49,52,56,59,61,72,74,75,78,98,103,112|美国【付费推荐：https://jdyvip.link/】5...
+  name: 41,44,48,52,56,59,61,74,75,78,98,103,112|美国【付费推荐：https://jdyvip.link/】5...
   network: ws
   port: '8080'
   server: www.ywnouvbale.biz
@@ -1738,7 +1686,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '41,52,54,56,59,67,74|🏁RELAY-172.67.188.193-1322 #1'
+  name: '41,52,54,56,59,74|🏁RELAY-172.67.188.193-1322 #1'
   network: ws
   port: 8080
   server: 172.67.188.193
@@ -1754,9 +1702,9 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,67,74,98|US 166|openitr
+  name: '41,52,54,56,59,74|🏁RELAY-172.67.131.246-1323 #1'
   network: ws
-  port: '8080'
+  port: 8080
   server: 172.67.131.246
   servername: ''
   skip-cert-verify: false
@@ -1770,7 +1718,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '41,52,54,56,59,67,74|🏁RELAY-172.67.171.177-1324 #1'
+  name: 41,52,54,56,59,74,103|🏁RELAY-172.67.171.177-1372
   network: ws
   port: 8080
   server: 172.67.171.177
@@ -1894,7 +1842,7 @@ proxies:
     path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
 - alterId: 0
   cipher: auto
-  name: '41,52,54,56,59,67,74|🏁RELAY-172.67.66.46-1351 #1'
+  name: '41,52,54,56,59,74|🏁RELAY-172.67.66.46-1351 #1'
   network: ws
   port: 8080
   server: 172.67.66.46
@@ -1926,22 +1874,6 @@ proxies:
     path: /video/Zo98PYfE
 - alterId: 0
   cipher: auto
-  name: '41,52,54,56,59,67,74|🏁RELAY-172.64.68.208-1353 #1'
-  network: ws
-  port: 8080
-  server: 172.64.68.208
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
-  ws-opts:
-    headers:
-      Host: eu3.openxai.link
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
   name: 41,52,54,56,59,61,78|16|加拿大 198
   network: ws
   port: 80
@@ -1958,7 +1890,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,61,74,78,98|US 160|openitr
+  name: 41,52,54,56,59,61,74,78,98|US 148|openitr
   network: ws
   port: '80'
   server: 104.21.226.128
@@ -1974,7 +1906,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,61,74,78,98|US 159|openitr
+  name: 41,52,54,56,59,61,74,78,98|US 149|openitr
   network: ws
   port: '80'
   server: 104.21.226.78
@@ -1990,7 +1922,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,61,74,78,98|US 161|openitr
+  name: 41,52,54,56,59,61,74,78,98|US 151|openitr
   network: ws
   port: '80'
   server: 104.21.226.43
@@ -2006,7 +1938,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,74,98|US 162|openitr
+  name: 41,52,54,56,59,74,98|US 152|openitr
   network: ws
   port: '80'
   server: 104.21.226.100
@@ -2022,7 +1954,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,74,98|US 163|openitr
+  name: 41,52,54,56,59,74,98|US 153|openitr
   network: ws
   port: '80'
   server: 104.21.226.122
@@ -2038,7 +1970,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,61,74,78,98|US 164|openitr
+  name: 41,52,54,56,59,61,74,78,98|US 154|openitr
   network: ws
   port: '80'
   server: 104.21.226.136
@@ -2054,7 +1986,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,61,74,78,98|US 165|openitr
+  name: 41,52,54,56,59,61,74,78,98|US 155|openitr
   network: ws
   port: '80'
   server: 104.21.226.61
@@ -2086,7 +2018,7 @@ proxies:
     path: /oscarspy
 - alterId: 0
   cipher: auto
-  name: 41,52,54,56,59,61,74,78,98|US 167|openitr
+  name: 41,52,54,56,59,61,74,78,98|US 156|openitr
   network: ws
   port: '80'
   server: 104.21.226.196
@@ -2135,7 +2067,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '41,52,54,56,59,61,67,74,78,81,98,103,112|美国【付费推荐：https://jdyvip.link/】5...
+  name: '41,52,54,56,59,61,72,74,78,81,98,103,112|美国【付费推荐：https://jdyvip.link/】5...
     #8'
   network: ws
   port: '80'
@@ -2227,7 +2159,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '44,108|[🇨🇦]t.me/ConfigV2RayNG #18'
+  name: '44,98,108|[🇨🇦]t.me/ConfigV2RayNG #18'
   network: ws
   port: '443'
   server: nelly.homes
@@ -2269,7 +2201,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '44,98,108|[🇨🇦]t.me/ConfigV2RayNG #12'
+  name: '44,108|[🇨🇦]t.me/ConfigV2RayNG #12'
   network: ws
   port: '443'
   server: 172.67.161.77
@@ -2311,7 +2243,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '44,98,108|[🇨🇦]t.me/ConfigV2RayNG #16'
+  name: '44,108|[🇨🇦]t.me/ConfigV2RayNG #16'
   network: ws
   port: '443'
   server: 104.21.25.0
@@ -2339,7 +2271,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '44,46,98,107,108|[🇨🇦]t.me/ConfigV2RayNG #11'
+  name: '44,46,107,108|[🇨🇦]t.me/ConfigV2RayNG #11'
   network: ws
   port: '443'
   server: 172.67.71.160
@@ -2363,7 +2295,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 45,98|RU 11|openitr
+  name: 45,98|RU 8|openitr
   network: ws
   port: '80'
   server: 193.203.203.63
@@ -2434,7 +2366,7 @@ proxies:
     path: /afrhms07.xfixedfloat.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: '46,107|رایگان | VMESS | @DeamNet_Prox... #5'
+  name: '46,107|رایگان | VMESS | @DeamNet_Prox... #6'
   network: ws
   port: '443'
   server: 185.135.9.208
@@ -2446,21 +2378,6 @@ proxies:
     headers:
       Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
     path: /glweidf.cfd/linkws
-- alterId: 0
-  cipher: auto
-  name: '46,51,52,61,74,78,103,107|رایگان | VMESS | @oneclickvpnk... #6'
-  network: ws
-  port: '443'
-  server: kellie.makeup
-  servername: kellie.makeup
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kellie.makeup
-    path: /linkvws
 - alterId: 1
   cipher: auto
   name: '46,55,80,107|رایگان | VMESS | @ShadowProxy6... #7'
@@ -2477,7 +2394,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '46,107|رایگان | VMESS | @ShadowProxy6... #10'
+  name: '46,96,107|رایگان | VMESS | @ShadowProxy6... #10'
   network: tcp
   port: '3389'
   server: 142.93.144.99
@@ -2530,6 +2447,20 @@ proxies:
     path: /video/VDXcaM7r
 - alterId: 0
   cipher: auto
+  name: '46,107|رایگان | VMESS | @Hope_Net | C... #3'
+  network: ws
+  port: '443'
+  server: 192.200.160.18
+  servername: sany116free.delanie.WOrKErS.deV
+  tls: true
+  type: vmess
+  uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143
+  ws-opts:
+    headers:
+      Host: sany116free.delanie.WOrKErS.deV
+    path: /urnxewzvh.site/kwhmvws
+- alterId: 0
+  cipher: auto
   name: '46,80,107|رایگان | VMESS | @v2Line | CA🇨... #1'
   network: ws
   port: '80'
@@ -2544,7 +2475,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '46,98,107|رایگان | VMESS | @eliya_chiter... #2'
+  name: '46,107|رایگان | VMESS | @eliya_chiter... #3'
   network: ws
   port: '443'
   server: 104.18.202.209
@@ -2556,6 +2487,16 @@ proxies:
     headers:
       Host: hdfy5c1.foriran.trade
     path: /Nbs2DSTSkFW6MrrFQHeSDQ7
+- alterId: 0
+  cipher: auto
+  name: '46|رایگان | VMESS | @eliya_chiter... #2'
+  network: tcp
+  port: '2053'
+  server: 95.179.214.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d06e9021-8d55-4d34-81a0-7c629cadd1da
 - alterId: 0
   cipher: auto
   name: '46,107|رایگان | VMESS | @FoXrayIran |... #1'
@@ -2609,19 +2550,32 @@ proxies:
   uuid: ac750859-79e7-4507-ba93-e92584ac49e3
   ws-opts:
     path: ac750859-79e7-4507-ba93-e92584ac49e3-vm
-- name: 48,74|🏁RELAY-23.227.38.11-0388
+- name: 48|🇨🇦 CA 6 → tg@nicevpn123
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
   server: 23.227.38.11
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: syndication-statutes-wanted-logo.trycloudflare.com
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2Fargox-tr'
+    path: '%252525252Fargox-tr'
+- name: 48|🇨🇦 CA 7 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252Fargox-tr'
 - alterId: 0
   cipher: auto
   name: 52,74|🇦CA-132.145.99.228-3436
@@ -2839,7 +2793,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e2c87393-3532-4b79-a907-ce670c3df918
+  uuid: 85f84b38-d16b-4da6-b9ff-9c0af1a127a6
 - alterId: 0
   cipher: auto
   name: 61,78|17|【BGP】加拿大 02 | 1x CA
@@ -2849,7 +2803,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 3429772d-7090-4804-b448-6ef9a0516219
+  uuid: d45a3fb7-8301-400e-91e3-c6626d05f6ad
 - alterId: 0
   cipher: auto
   name: 65|加拿大_【YouTube-VV科技】
@@ -3255,7 +3209,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 98|CA 11|openitr
+  name: 98|CA 12|openitr
   network: http
   port: '3389'
   server: 178.128.237.6
@@ -3264,7 +3218,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: 98|CA 12|openitr
+  name: 98|CA 13|openitr
   network: ws
   port: '443'
   server: ca2-full.privateip.net
@@ -3275,19 +3229,6 @@ proxies:
     headers:
       Host: ca2-full.privateip.net
     path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  name: 98|CA 13|openitr
-  network: ws
-  port: '8080'
-  server: 23.227.39.11
-  tls: false
-  type: vmess
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    headers:
-      Host: dongtaiwang15.dtku47.xyz
-    path: /1IKYjV0r/
 - cipher: aes-256-gcm
   name: 99|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7
