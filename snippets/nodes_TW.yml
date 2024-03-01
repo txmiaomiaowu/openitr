@@ -14,42 +14,35 @@ proxies:
   udp: true
   up: 11 Mbps
 - alpn:
-  - h2
-  - http/1.1
-  alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  delay: 1260
-  h2-opts: {}
-  http-opts: {}
-  name: 13,14,15,16,18,19,20,22,29,36,38,39,41,48,50,51,54,57,60,61,67,74,78,81,90,91,97,99,109,111|🇺🇸US_1155
-  password: zIvR7ryOXv
-  port: 34428
-  server: 159.223.207.182
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: '55'
+  name: 13|Relay_TW-TW_1037
+  port: 11229
+  protocol: udp
+  server: www.dtku50.xyz
   skip-cert-verify: true
-  sni: trojan.miwan.co.uk
-  tfo: false
-  tls: false
-  type: trojan
+  sni: bing.com
+  type: hysteria
   udp: true
-  uuid: 4c09b776-6f83-4bf2-f7f7-4e286dbbb6da
-  ws-path: h=%2F
-- alterId: 0
-  cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 13,16,103|TW-板桥2-3(TCP)
-  network: tcp
-  port: '5681'
-  server: b23.ntbq.dynu.net
-  servername: b23.ntbq.dynu.net
+  up: '11'
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: '55'
+  name: 13|Relay_TW-TW_1038
+  port: 22334
+  protocol: udp
+  server: www4.dtku49.xyz
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ff0a98ef-e829-4a62-b625-998593df5249
-  ws-path: /
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: '11'
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -82,64 +75,50 @@ proxies:
   type: hysteria
   udp: true
   up: 80
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
+- cipher: aes-256-cfb
   country: TW
-  down: 55 Mbps
-  name: 13|Relay_TW-TW_1001
-  port: 22334
-  protocol: udp
-  server: www4.dtku49.xyz
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  country: TW
-  down: '55'
-  name: 13|Relay_TW-TW_1003
-  port: 11229
-  protocol: udp
-  server: www.dtku50.xyz
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  udp: true
-  up: '11'
+  name: 13|TW_1042
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 223.165.4.173
+  type: ss
 - cipher: aes-128-gcm
   country: TW
-  name: 13,111|Relay_-TW_24 |36.23Mb
+  name: 13|TW_1043
   password: Catulus_11D
   port: 50000
   server: 188.253.6.86
   type: ss
 - cipher: aes-256-cfb
   country: TW
-  name: 13,14,19|TW_375 | 3.21Mb
-  password: qwerREWQ@@
-  port: 2003
-  server: 103.4.29.39
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇼TW
-  name: 13,15,16,18,19,20,38|TW_204
+  name: 13,14,15,16,18,19,20,78|6|-https://t.me/MrXbin-5
   password: qwerREWQ@@
   port: 2003
   server: e001.panda003.net
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: TW
-  name: 13|TW_1007
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 223.165.4.173
+  name: 13,14,19|TW_405 | 2.28Mb
+  password: qwerREWQ@@
+  port: 2003
+  server: 103.4.29.39
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 13,15,16,21,36,61,78,103|TW-板桥2-2(TCP)
+  network: tcp
+  port: '12002'
+  server: nb22.ntbq.dynu.net
+  servername: nb22.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ff0a98ef-e829-4a62-b625-998593df5249
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇹🇼TW
@@ -157,14 +136,68 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇹🇼TW
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 13,15,16,21,36,61,78,103|TW-板桥2-2(TCP)
+  name: 13,20,45,55,72,74,98|CN 1|openitr
+  network: ws
+  port: '443'
+  server: 123.58.197.70
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: 13|TW_1065
+  network: ws
+  port: 10914
+  server: 211.75.233.120
+  servername: warp-sub.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143
+  ws-opts:
+    headers:
+      HOST: warp-sub.pages.dev
+    path: /urnxewzvh.site:443/kwhmvws
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 13,14,19|Relay_HK-FR_333 | 2.20Mb
+  network: ws
+  port: 443
+  server: 1.chlmxfcjy.top
+  servername: h197-fr.kxnn.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3b89f882-0c3f-4144-811d-91fce7ab3c05
+  ws-opts:
+    headers:
+      HOST: h197-fr.kxnn.eu.org
+    path: /D26xvdqUdCpvvPTz4R
+- alterId: 0
+  cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 13,16,103|TW-板桥2-3(TCP)
   network: tcp
-  port: '12002'
-  server: nb22.ntbq.dynu.net
-  servername: nb22.ntbq.dynu.net
+  port: '5681'
+  server: b23.ntbq.dynu.net
+  servername: b23.ntbq.dynu.net
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -186,30 +219,19 @@ proxies:
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 13,14,19|Relay_HK-FR_300 | 1.88Mb
-  network: ws
-  port: 443
-  server: 1.chlmxfcjy.top
-  servername: h197-fr.kxnn.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3b89f882-0c3f-4144-811d-91fce7ab3c05
-  ws-opts:
-    headers:
-      HOST: h197-fr.kxnn.eu.org
-    path: /D26xvdqUdCpvvPTz4R
+- cipher: aes-128-gcm
+  country: ' TW'
+  name: 14,19|Relay_ TW-US_163 |23.67Mb
+  password: e0beb700-d059-4dec-a9e3-dbe8a1c5c583
+  port: 20546
+  server: tw.xsus.zj.cn
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 15,16,19,29,36,54,58,61,72,75,78,98|TW 1|openitr
+  name: 15,16,29,36,54,58,61,72,75,78,98|TW 2|openitr
   network: tcp
   port: '5681'
   server: 118.167.70.36
@@ -223,29 +245,16 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ZZ
+  country: ' TW'
   h2-opts: {}
   http-opts: {}
-  name: '16,18,22,28,38|_53 #1'
+  name: 16,18,22| TW_113
   network: ws
   port: 31945
   server: 103.159.206.35
   skip-cert-verify: true
   type: vmess
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 16,28|HK_02
-  network: ws
-  port: 443
-  server: 123.58.197.70
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -262,6 +271,28 @@ proxies:
   type: vmess
   uuid: ff0a98ef-e829-4a62-b625-998593df5249
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,18,22| TW_114
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '44,108|台湾-4.61MB/s #1'
+  network: tcp
+  port: 4443
+  server: nb24.ntbq.dynu.net
+  tls: false
+  type: vmess
+  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
 - alterId: 0
   cipher: auto
   name: 45|台湾_121320001
@@ -316,16 +347,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: '46,107|رایگان | VMESS | @mftizi | TW🇹... #1'
-  network: tcp
-  port: '21353'
-  server: tw1-vds3.anyhk.co
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
 - alterId: 0
   cipher: auto
   name: 54,56,59|台湾 001
@@ -668,7 +689,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 78,98|TW 2|openitr
+  name: 78|19|台湾1|@ripaojiedian
+  network: tcp
+  port: '30116'
+  server: 183.232.170.22
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6ae43308-07ef-4f0d-aa8f-25e480de542c
+- alterId: 0
+  cipher: auto
+  name: '78|21|baipaovpn台湾省 #1'
   network: tcp
   port: '14431'
   server: 125.224.142.242
@@ -702,13 +733,17 @@ proxies:
   uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
 - alterId: 0
   cipher: auto
-  name: 103|B台湾1
-  network: tcp
-  port: 16002
-  server: bgp1.ktyyun.com
-  tls: false
+  name: 98|TW 1|openitr
+  network: ws
+  port: '443'
+  server: 1.chlmxfcjy.top
+  tls: true
   type: vmess
-  uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
+  uuid: 3b89f882-0c3f-4144-811d-91fce7ab3c05
+  ws-opts:
+    headers:
+      Host: 1.chlmxfcjy.top
+    path: /D26xvdqUdCpvvPTz4R
 - alterId: 0
   cipher: auto
   name: 103|台湾2
@@ -718,15 +753,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
-- alterId: 2
-  cipher: auto
-  name: 103|【VIP2】V2ray-E台湾2-IEPL-视频-禁止下载
-  network: tcp
-  port: 11018
-  server: komeetta-c.uraqpachan.xyz
-  tls: true
-  type: vmess
-  uuid: e12d68e6-7859-3708-9258-127aabc4d351
 - alterId: 2
   cipher: auto
   name: 103|v2ray-E台湾2
@@ -755,14 +781,23 @@ proxies:
   type: vmess
   uuid: e12d68e6-7859-3708-9258-127aabc4d351
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 108|台湾-4.61MB/s
+  cipher: auto
+  name: 103|B台湾1
   network: tcp
-  port: 4443
-  server: nb24.ntbq.dynu.net
+  port: 16002
+  server: bgp1.ktyyun.com
   tls: false
   type: vmess
-  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
+  uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
+- alterId: 2
+  cipher: auto
+  name: 103|【VIP2】V2ray-E台湾2-IEPL-视频-禁止下载
+  network: tcp
+  port: 11018
+  server: komeetta-c.uraqpachan.xyz
+  tls: true
+  type: vmess
+  uuid: e12d68e6-7859-3708-9258-127aabc4d351
 - alterId: 0
   cipher: auto
   name: 109|TW_speednode_0119
