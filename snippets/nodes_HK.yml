@@ -28,7 +28,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: HK
-  name: 13,19|Relay_HK-CN_266 |311.00Mb
+  name: 13,19|Relay_HK-CN_259 |35.30Mb
   obfs: tls1.2_ticket_auth
   obfs-param: d62c422663.microsoft.com
   password: zxOmdD
@@ -49,7 +49,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: HK
-  name: 13,19|Relay_HK-CN_267 |87.88Mb
+  name: 13,19|Relay_HK-CN_260 |643.00Mb
   obfs: tls1.2_ticket_auth
   obfs-param: ZDU3NTgyMjY2My5taWNyb3NvZnQuY29t
   password: zxOmdD
@@ -72,7 +72,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 13,15,20|Relay_US-FR_738
+  name: 13,15,20|Relay_US-FR_729
   network: ws
   port: 443
   server: agenting.dynv6.net
@@ -87,10 +87,10 @@ proxies:
     path: /D26xvdqUdCpvvPTz4R
 - alterId: 0
   cipher: auto
-  country: HK
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 13|Relay_HK-GB_471
+  name: 13,20|ZZ_870
   network: ws
   port: 443
   server: cf-cdn.tiktokcloud.top
@@ -108,11 +108,11 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 13,16,98|CZ 1|openitr
+  name: 13,16,96,98|CZ 1|openitr
   network: tcp
   port: '25185'
   server: 185.242.232.164
-  servername: b12.ntbq.dynu.net
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -176,7 +176,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 13,20,80,98|RU 13|openitr
+  name: 13,20,80,98|RU 11|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -208,7 +208,7 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 13,15|Relay_ZZ-DE_219 | 8.42Mb
+  name: 13,15|Relay_ZZ-DE_231 | 8.42Mb
   network: ws
   port: 443
   server: www.visa.com.sg
@@ -246,18 +246,49 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 13|Relay_ZZ-HK_1714
+  name: 13,19,98|US 55|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 104.20.28.215
   servername: newhk1.xn--mes53ddysu0o3gl.top
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
   ws-opts:
     headers:
-      HOST: newhk1.xn--mes53ddysu0o3gl.top
+      Host: ''
     path: /xn--mes53ddysu0o3gl
+- cipher: aes-128-gcm
+  country: ' HK'
+  name: 14,18,19,74|🇭🇰HK-42.2.115.231-3454
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    tls: false
+  port: 443
+  server: 42.2.115.231
+  type: ss
+- alterId: 64
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14,19|Relay_HK-NL_261 |10.69Mb
+  network: ws
+  port: 41000
+  server: 156.225.67.157
+  servername: www.53854245.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9c026efe-6af0-465f-b8c0-3f58c8c2d4c5
+  ws-opts:
+    headers:
+      HOST: www.53854245.xyz
+    path: /path/153428133302
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -277,19 +308,79 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 41,56,72|香港 V2CROSS.COM
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 18| HK_198
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-headers:
+    HOST: hrgdvpn.flycdnedc55.vip
+  ws-path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 18,22,28|HK_02
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-path: /
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 20,52,74,103|🇭🇰HK-182.16.1.194-8603
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
+- cipher: chacha20-ietf
+  country: HK
+  name: 20|Relay_HK-HK_431
+  obfs: plain
+  obfs-param: 090cf34.microsoft.com
+  password: fXuEWU
+  port: 10002
+  protocol: auth_aes128_sha1
+  protocol-param: 34:tnuzJZDS
+  server: cm01.bestvmr.com
+  type: ssr
+- alterId: 64
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 29|Relay_HK-NL_06
   network: ws
   port: 41000
-  server: 156.245.8.182
+  server: 156.245.8.243
+  servername: www.47523375.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
-  uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a
-  ws-opts:
-    headers:
-      Host: www.55825203.xyz
-    path: /path/153428133302
+  uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4
+  ws-headers:
+    HOST: www.47523375.xyz
+  ws-path: /path/153428133302
 - alterId: 0
   cipher: auto
   name: 45|香港_121320001
@@ -387,19 +478,17 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 52,74,103|🇭🇰HK-182.16.1.194-8601
+  name: '49,78,103|香港 V2CROSS.COM #1'
   network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  skip-cert-verify: false
-  tls: false
+  port: '41000'
+  server: 156.245.8.243
+  tls: true
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4
   ws-opts:
     headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
+      Host: www.47523375.xyz
+    path: /path/153428133302
 - alterId: 0
   cipher: auto
   name: 52,74|🇰HK-8.217.93.104-0861
@@ -1715,13 +1804,13 @@ proxies:
   name: 98|HK 1|openitr
   network: ws
   port: '80'
-  server: fastly.alipay.ovh
+  server: miracle.bilibili.ovh
   tls: false
   type: vmess
-  uuid: 041f0d5b-c647-4a8d-8e4e-fa7f3526a490
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
   ws-opts:
     headers:
-      Host: fastly.alipay.ovh
+      Host: miracle.bilibili.ovh
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
