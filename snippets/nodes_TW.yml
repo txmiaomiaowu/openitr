@@ -1,36 +1,188 @@
 proxies:
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: '55'
+  name: 13|Relay_TW-TW_1022
+  port: 22334
+  protocol: udp
+  server: www4.dtku49.xyz
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: '11'
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: 100
+  fast-open: true
+  name: 13,99,105|hysteria_2
+  port: 18490
+  ports: 18490
+  protocol: udp
+  server: www.dtku40.xyz
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: 80
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: '55'
+  name: 13|Relay_TW-TW_1026
+  port: 11229
+  protocol: udp
+  server: www.dtku50.xyz
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: '11'
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  country: TW
+  down: 10
+  name: 13,99,105|meta_hysteria_71
+  port: 18470
+  protocol: udp
+  server: www.dtku50.xyz
+  skip-cert-verify: true
+  sni: www.amazon.cn
+  type: hysteria
+  udp: true
+  up: 2
 - cipher: aes-256-cfb
   country: TW
-  name: 15,16,18,20|Relay_TW-TW_509
+  name: 13|TW_1030
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 223.165.4.173
+  type: ss
+- cipher: aes-128-gcm
+  country: TW
+  name: 13|TW_1031
+  password: Catulus_11D
+  port: 50000
+  server: 188.253.6.86
+  type: ss
+- cipher: aes-256-cfb
+  country: TW
+  name: 13,15,16,18,20|Relay_TW-TW_509
   password: qwerREWQ@@
   port: 2003
   server: e001.panda003.net
   type: ss
+- cipher: aes-256-cfb
+  country: TW
+  name: 13|TW_1033
+  password: qwerREWQ@@
+  port: 2003
+  server: 103.4.29.39
+  type: ss
 - alterId: 0
   cipher: auto
-  country: ' TW'
+  country: TW
   h2-opts: {}
   http-opts: {}
-  name: 16,18,22| TW_108
+  name: 13|Relay_TW-GB_1034
+  network: ws
+  port: 443
+  server: 1.chlmxfcjy.top
+  servername: h197-fr.kxnn.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3b89f882-0c3f-4144-811d-91fce7ab3c05
+  ws-opts:
+    headers:
+      HOST: h197-fr.kxnn.eu.org
+    path: /D26xvdqUdCpvvPTz4R
+- alterId: 0
+  cipher: auto
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: 13,52,55,71,73|TW-103.159.206.35-0350
   network: ws
   port: 31945
   server: 103.159.206.35
-  skip-cert-verify: true
+  servername: ''
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: 13,45,52,55,71,73,97|CN 1|openitr
+  network: ws
+  port: '443'
+  server: 123.58.197.70
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  country: NL
+  h2-opts: {}
+  http-opts: {}
+  name: 13,20,25|disney_netflix_TW
+  network: ws
+  port: 80
+  server: ges4.3h.lv
+  servername: ges4.3h.lv
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a
+  ws-opts:
+    headers:
+      HOST: ges4.3h.lv
+    path: /rh5dgdvsd
 - alterId: 0
   cipher: auto
   country: ' TW'
   h2-opts: {}
   http-opts: {}
-  name: 16,18,22| TW_107
+  name: 16,18,22| TW_114
   network: ws
   port: 443
   server: 123.58.197.70
   skip-cert-verify: true
   type: vmess
   uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,18,22| TW_113
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  skip-cert-verify: true
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -58,20 +210,7 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: 45,52,55,72,74|🇼TW-123.58.197.70-0381
-  network: ws
-  port: 443
-  server: 123.58.197.70
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 45,72|🇨🇳 台湾11.10|频道 t.me/SSRSUB
+  name: 45,71|🇨🇳 台湾11.10|频道 t.me/SSRSUB
   network: tcp
   port: '19588'
   server: 152.32.167.166
@@ -81,7 +220,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 45,55,72|🇨🇳 台湾9@SSRSUB
+  name: 45,55,71|🇨🇳 台湾9@SSRSUB
   network: tcp
   port: '10001'
   server: 45.121.48.196
@@ -101,37 +240,11 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 52,55,72,74|TW-103.159.206.35-0353
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 52,72,74|🇼TW-103.106.230.153-0382
-  network: ws
-  port: 32732
-  server: 103.106.230.153
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: eb931108-646b-4ceb-a741-d32490cb00f4
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: 52,74|TW-45.121.51.103-1380
+  name: 52,73|TW-45.121.51.103-1381
   network: http
   port: 20715
   server: 45.121.51.103
@@ -142,7 +255,7 @@ proxies:
   uuid: f6406b6d-5487-46da-f793-46611269a306
 - alterId: 0
   cipher: auto
-  name: 52,74|TW-165.154.246.71-2055
+  name: 52,73|TW-165.154.246.71-2051
   network: ws
   port: 80
   server: 165.154.246.71
@@ -155,9 +268,22 @@ proxies:
     headers:
       Host: 165.154.246.71
     path: ?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 52,71,73|🇼TW-103.106.230.153-0379
+  network: ws
+  port: 32732
+  server: 103.106.230.153
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: eb931108-646b-4ceb-a741-d32490cb00f4
+  ws-opts:
+    path: /
 - alterId: 1
   cipher: auto
-  name: 52,74|TW-1.161.186.146-2957
+  name: 52,73|TW-1.161.186.146-3063
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -170,7 +296,7 @@ proxies:
     path: /clientarea
 - alterId: 0
   cipher: auto
-  name: 52,74|🇼TW-114.42.198.166-3033
+  name: 52,73|🇼TW-114.42.198.166-3139
   network: ws
   port: 80
   server: tw1g.jeidian.xyz
@@ -185,7 +311,7 @@ proxies:
     path: /mugua
 - alterId: 0
   cipher: auto
-  name: 52,74|🇼TW-114.43.156.4-3163
+  name: 52,73|🇼TW-114.43.156.4-3269
   network: ws
   port: 45215
   server: 012.AP.POP.node-for-smallairport.win
@@ -200,7 +326,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-36.227.192.33-3321 #1'
+  name: '52,73|🇹🇼TW-36.227.192.33-3427 #1'
   network: ws
   port: 2053
   server: emea-ru-mow-01-edgecast.qdns.live
@@ -216,7 +342,7 @@ proxies:
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
-  name: '52,74,83|mattkaydiary.com|中国台湾(TW)Taiwa... #1'
+  name: '52,73,82|mattkaydiary.com|中国台湾(TW)Taiwa... #1'
   network: ws
   port: 33792
   server: 61.222.202.140
@@ -231,7 +357,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 52,74|🇼TW-211.72.35.110-5777
+  name: 52,73|🇼TW-211.72.35.110-5874
   network: ws
   port: 443
   server: 211.72.35.110
@@ -246,7 +372,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-211.72.35.110-5778 #1'
+  name: '52,73|🇹🇼TW-211.72.35.110-5875 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -261,7 +387,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-211.72.35.110-5779 #1'
+  name: '52,73|🇹🇼TW-211.72.35.110-5876 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -276,7 +402,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-211.72.35.110-5780 #1'
+  name: '52,73|🇹🇼TW-211.72.35.110-5877 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -291,7 +417,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-211.72.35.110-5781 #1'
+  name: '52,73|🇹🇼TW-211.72.35.110-5878 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -306,7 +432,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: 52,74|🇼TW-220.130.80.179-6120
+  name: 52,73|🇼TW-220.130.80.179-6217
   network: ws
   port: 443
   server: 220.130.80.179
@@ -321,7 +447,7 @@ proxies:
     path: /howdy
 - alterId: 0
   cipher: auto
-  name: 52,74|🇼TW-165.154.226.45-6122
+  name: 52,73|🇼TW-165.154.226.45-6219
   network: ws
   port: 80
   server: 165.154.226.45
@@ -334,7 +460,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-211.72.35.110-6123 #1'
+  name: '52,73|🇹🇼TW-211.72.35.110-6220 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -349,7 +475,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-165.154.253.35-6125 #1'
+  name: '52,73|🇹🇼TW-165.154.253.35-6222 #1'
   network: ws
   port: 443
   server: tw-1.qwqjsq.top
@@ -364,7 +490,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '52,74|🇹🇼TW-61.216.85.68-6130 #1'
+  name: '52,73|🇹🇼TW-61.216.85.68-6227 #1'
   network: ws
   port: 443
   server: 61.216.85.68
@@ -379,7 +505,7 @@ proxies:
     path: /path/243535322906
 - alterId: 2
   cipher: auto
-  name: 52,74|🇼TW-114.37.209.177-6131
+  name: 52,73|🇼TW-114.37.209.177-6228
   network: ws
   port: 10001
   server: ddns2.airtcp.vip
@@ -394,7 +520,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-165.154.246.107-6133 #1'
+  name: '52,73|🇹🇼TW-165.154.246.107-6230 #1'
   network: ws
   port: 80
   server: 165.154.246.107
@@ -409,7 +535,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-122.118.143.20-6140 #1'
+  name: '52,73|🇹🇼TW-122.118.132.38-6237 #1'
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -424,7 +550,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '52,74|🇹🇼TW-61.224.125.19-6141 #1'
+  name: '52,73|🇹🇼TW-61.224.64.232-6238 #1'
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -437,68 +563,15 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 60|github.com/freefq-台湾省公司2222
-  network: ws
-  port: 80
-  server: 103.118.29.229
-  type: vmess
-  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  ws-opts:
-    headers:
-      host: 103.118.29.229
-    path: /5gtocdocao.com
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 61,74,78,81|🇹🇼 台湾|@ripaojiedian
-  password: 82ac01ab-25c7-453c-a42a-6343e68c2768
-  port: 20702
-  server: tw02.jjjjjj.icu
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 67,96|🔒 VM-WS-NA 🇹🇼 TW-188.253.6.35:...
-  network: ws
-  port: '20009'
-  server: 188.253.6.35
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1ca1ae78-d7ee-4ab4-9061-a74c2888dfeb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: aes-256-cfb
-  name: 74|TW-61.220.130.70-8734
+  name: 73|TW-61.220.130.70-8831
   password: qwerREWQ@@
   port: 50701
   server: 61.220.130.70
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 78,81,103|台湾2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 5bfd0956-dfa6-4c63-a8a8-adbf6f9e8366
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 98|TW 1|openitr
+  name: 97|TW 1|openitr
   network: ws
   port: '443'
   server: 1.chlmxfcjy.top
@@ -509,85 +582,8 @@ proxies:
     headers:
       Host: 1.chlmxfcjy.top
     path: /D26xvdqUdCpvvPTz4R
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 100|油管绵阿羊_Taiwan_hysteria_61
-  port: 22334
-  protocol: udp
-  server: www2.dtku48.xyz
-  skip-cert-verify: true
-  type: hysteria
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 10
-  name: 100|油管绵阿羊_Taiwan_hysteria_91
-  port: 18470
-  protocol: udp
-  server: www.dtku50.xyz
-  skip-cert-verify: true
-  sni: www.amazon.cn
-  type: hysteria
-  up: 2
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 100
-  fast-open: true
-  name: 100|油管绵阿羊_Taiwan_hy_2
-  port: 18490
-  ports: 18490
-  protocol: udp
-  server: www.dtku40.xyz
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 80
 - cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5LmM5YWL5YWwMDEt5q...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdkjda&dj23gsa
-  port: '19982'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5Y2X6Z2eMDEt5qCH5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdkjda&dja*/?
-  port: '2406'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5b635Zu9MDEt5qCH5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: 2sa2/1a
-  port: '10059'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5paw5Yqg5Z2hMDIt5q...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdkjda&dj23gsa
-  port: '19996'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5Y2w5bqm5bC86KW_5L...
+  name: 102|TWFuaWZvbGQt5Y2w5bqm5bC86KW_5L...
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -597,147 +593,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5Y-w5rm-MDIt6Kej6Z...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkl&dja*/?
-  port: '39001'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5oSP5aSn5YipMDEt5q...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: 2sa2/321a
-  port: '11271'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQg576O5Zu9MDIt5Y6f55...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: ayds232112sffssd1
-  port: '2541'
-  protocol: auth_aes128_sha1
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQg5pav5rSb5paH5bC85L...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: V2efNeJZr
-  port: '11112'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103levelx.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5q-U5Yip5pe2MDEt5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: 2sa2/321a
-  port: '10071'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5LyK5pyXMDEt5qCH5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdessa&dja*/?
-  port: '38012'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103levelx.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5Y-w5rm-MDEt5Y6f55...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: ayds232sffssd1
-  port: '1034'
-  protocol: auth_aes128_sha1
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQg6Z-p5Zu9MDEt5Y6f55...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: aa2sda31a
-  port: '9666'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt55Ge5YW4MDEt5qCH5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdkjda&dja*/?
-  port: '6450'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQg5be05Z-65pav5Z2mMD...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdkjda&dja*/?
-  port: '11110'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103levelx.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt55Ge5aOrMDEt5qCH5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdkjda&dja*/?
-  port: '6558'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt6LaK5Y2XMDEt5qCH5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: aa2sacs/1a
-  port: '10013'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt6I235YWwMDEt5Y6f55...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: 2sa2/1a
-  port: '10055'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5Lul6Imy5YiXMDEt5q...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: dajkdkjda&sdja*/?
-  port: '2214'
-  protocol: auth_aes128_md5
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5aKo6KW_5ZOlMDEt5q...
+  name: 102|TWFuaWZvbGQt5aKo6KW_5ZOlMDEt5q...
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dj23gsa
@@ -747,27 +603,87 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5pel5pysMDEt5Y6f55...
+  name: 102|TWFuaWZvbGQt6LaK5Y2XMDEt5qCH5Y...
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: ayds232sffssd1
-  port: '1134'
-  protocol: auth_aes128_sha1
-  protocol-param: NjE2MTA6RzVnZHlw
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt6L-q5oucMDEt5qCH5Y...
-  obfs: http_simple
-  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: aa2sda31a
-  port: '3035'
+  password: aa2sacs/1a
+  port: '10013'
   protocol: auth_aes128_md5
   protocol-param: NjE2MTA6RzVnZHlw
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQg56uL6Zm25a6bMDEg5Y...
+  name: 102|TWFuaWZvbGQt5paw5Yqg5Z2hMDIt5q...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkdkjda&dj23gsa
+  port: '19996'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5oSP5aSn5YipMDEt5q...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: 2sa2/321a
+  port: '11271'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQg576O5Zu9MDIt5Y6f55...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: ayds232112sffssd1
+  port: '2541'
+  protocol: auth_aes128_sha1
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQg5pav5rSb5paH5bC85L...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: V2efNeJZr
+  port: '11112'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103levelx.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5LyK5pyXMDEt5qCH5Y...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkdessa&dja*/?
+  port: '38012'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103levelx.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt55Ge5aOrMDEt5qCH5Y...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkdkjda&dja*/?
+  port: '6558'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5Lul6Imy5YiXMDEt5q...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkdkjda&sdja*/?
+  port: '2214'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQg56uL6Zm25a6bMDEg5Y...
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: d1da&dja*/?
@@ -777,17 +693,17 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5rOw5Zu9MDEt5qCH5Y...
+  name: 102|TWFuaWZvbGQt5Y2X6Z2eMDEt5qCH5Y...
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
-  password: aa2cs/1a
-  port: '10011'
+  password: dajkdkjda&dja*/?
+  port: '2406'
   protocol: auth_aes128_md5
   protocol-param: NjE2MTA6RzVnZHlw
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt6ams5p2l6KW_5LqaMD...
+  name: 102|TWFuaWZvbGQt6ams5p2l6KW_5LqaMD...
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dj23gsa
@@ -797,7 +713,17 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: 103|TWFuaWZvbGQt5aWl5Zyw5YipMDEt5Y...
+  name: 102|TWFuaWZvbGQt5Y-w5rm-MDEt5Y6f55...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: ayds232sffssd1
+  port: '1034'
+  protocol: auth_aes128_sha1
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5aWl5Zyw5YipMDEt5Y...
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -806,9 +732,119 @@ proxies:
   protocol-param: NjE2MTA6RzVnZHlw
   server: 231103level4.unclemanco.com
   type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt6L-q5oucMDEt5qCH5Y...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: aa2sda31a
+  port: '3035'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5rOw5Zu9MDEt5qCH5Y...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: aa2cs/1a
+  port: '10011'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5q-U5Yip5pe2MDEt5Y...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: 2sa2/321a
+  port: '10071'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQg6Z-p5Zu9MDEt5Y6f55...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: aa2sda31a
+  port: '9666'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt6I235YWwMDEt5Y6f55...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: 2sa2/1a
+  port: '10055'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5Y-w5rm-MDIt6Kej6Z...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkl&dja*/?
+  port: '39001'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5LmM5YWL5YWwMDEt5q...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkdkjda&dj23gsa
+  port: '19982'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5b635Zu9MDEt5qCH5Y...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: 2sa2/1a
+  port: '10059'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt55Ge5YW4MDEt5qCH5Y...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkdkjda&dja*/?
+  port: '6450'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQg5be05Z-65pav5Z2mMD...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: dajkdkjda&dja*/?
+  port: '11110'
+  protocol: auth_aes128_md5
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103levelx.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 102|TWFuaWZvbGQt5pel5pysMDEt5Y6f55...
+  obfs: http_simple
+  obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
+  password: ayds232sffssd1
+  port: '1134'
+  protocol: auth_aes128_sha1
+  protocol-param: NjE2MTA6RzVnZHlw
+  server: 231103level4.unclemanco.com
+  type: ssr
 - alterId: 0
   cipher: auto
-  name: 109|TW_speednode_0119
+  name: 108|TW_speednode_0119
   network: ws
   port: 3331
   server: ffbf920.t3.gladns.com
@@ -824,7 +860,7 @@ proxies:
     path: /s/ffbf920.fm.apple.com:68447
 - alterId: 0
   cipher: auto
-  name: 109|TW_speednode_0120
+  name: 108|TW_speednode_0120
   network: ws
   port: 3331
   server: ffbf920.t2.gladns.com
@@ -840,7 +876,7 @@ proxies:
     path: /s/ffbf920.fm.apple.com:68447
 - alterId: 0
   cipher: auto
-  name: 109|TW_speednode_0121
+  name: 108|TW_speednode_0121
   network: ws
   port: 18803
   server: taiwan2.209966.xyz
