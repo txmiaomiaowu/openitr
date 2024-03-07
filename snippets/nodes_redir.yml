@@ -1,8 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '1,2,6,7,8,9,10,11,26,33,52,60,62,67,71,73,74,77,83,102,111,112|🇨🇦_CA_加拿大->🇺🇸_US_美国
-    #18'
+  name: '1,2,6,7,8,9,10,11,26,33,52,60,67,71,73,74,77,83,102,111,112|🇨🇦_CA_加拿大->🇺🇸_US_美国
+    #14'
   network: ws
   port: 8080
   server: 23.227.38.11
@@ -19,7 +19,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '2,6,7,8,9,10,11,26,33,48,52,60,67,73,74,77,83,102,111,112|🇺🇸_US_美国->🇩🇪_DE_德国
-    #11'
+    #10'
   network: ws
   port: 8080
   server: de-01.cloudlion.me
@@ -36,7 +36,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,26,33,34,52,60,67,73,74,77,102,112|🇺🇸_US_美国->🇨🇦_CA_加拿大 #13'
+  name: '2,6,7,8,9,10,11,26,33,34,52,60,62,67,73,74,77,102,112|🇺🇸_US_美国->🇨🇦_CA_加拿大
+    #13'
   network: ws
   port: 8080
   server: fbi.gov
@@ -51,7 +52,7 @@ proxies:
     path: 0a5903c5-0ff3-4d79-9420-2a966873f787-vm
 - alterId: 0
   cipher: auto
-  name: 4,52,54,60,61,69,73,77,99,105|meta_vmess_04
+  name: 4,52,54,60,69,73,77,99,105|meta_vmess_04
   network: ws
   port: 8080
   server: 23.227.38.11
@@ -77,10 +78,14 @@ proxies:
     path: /argox-tr
 - alterId: 0
   cipher: auto
-  name: '4,54,60,69,77|1|_US_->_DE_ #1'
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: '4,15,19,54,60,69,77|1|_US_->_DE_ #1'
   network: ws
   port: 8080
   server: de-01.cloudlion.me
+  servername: de-01.cloudlion.me
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -91,10 +96,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: 4,13,14,15,36,48,52,54,60,61,69,73,77,82,89,110| | 2.26Mb
+  name: '4,48,52,54,60,61,69,73,77,82,89|🏁RELAY-94.140.0.110-0143 #2'
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -107,10 +109,13 @@ proxies:
   ws-opts:
     headers:
       host: food.zhaal.ir
+    host: food.zhaal.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,54,60,69,77,82,89,99,105|meta_vmess_51
+  h2-opts: {}
+  http-opts: {}
+  name: 4,19,54,60,61,69,77,82,89,99,105|meta_vmess_51
   network: ws
   port: 8080
   server: fbi.gov
@@ -836,3 +841,42 @@ proxies:
   port: 31659
   server: free.node.kk-proxy.pro
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 102|美国洛杉矶-中转|1x
+  network: ws
+  port: '38888'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us1
+- alterId: 0
+  cipher: auto
+  name: 102|美国圣何塞-中转|1x
+  network: ws
+  port: '38889'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us2
+- alterId: 0
+  cipher: auto
+  name: 102|美国凤凰城-高速中转|1x
+  network: ws
+  port: '38887'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us3
