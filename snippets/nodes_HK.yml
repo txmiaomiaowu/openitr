@@ -1,26 +1,31 @@
 proxies:
-- cipher: aes-256-cfb
+- cipher: aes-128-gcm
   country: ' HK'
-  name: 14,15,18,19,20,33,95,104|HK_speednode_0086
+  name: 13,16,17,70|🇭🇰HK-42.2.115.231-3790
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    tls: false
+  port: 443
+  server: 42.2.115.231
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 14,15,18,19,20,33,34,95,104|HK_speednode_0086
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
   protocol: origin
   server: 150.107.46.21
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 15|ChatGPT Relay  HK_160
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 11407
-  server: p1.bxy-fun1.com
-  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇸US
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 15,26|Relay_US-🇺🇸US_04
+  name: 15| HK_162
   network: ws
   port: 2052
   server: onea.flha.ru
@@ -52,7 +57,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 5|openitr
+  name: 18,76,94|RU 7|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -66,17 +71,14 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,94|HK 1|openitr
+  name: 18|HK_398
   network: ws
-  port: '80'
+  port: 80
   server: 182.16.1.194
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
-    headers:
-      Host: ''
     path: /opt/video/images
 - alterId: 0
   cipher: auto
@@ -168,7 +170,7 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '43,94,102|رایگان | VMESS | @v2Line | HK🇭... #3'
+  name: '43,94,102|رایگان | VMESS | @v2Line | HK🇭... #1'
   network: ws
   port: '80'
   server: hk1.xv2ray.net
@@ -1521,20 +1523,6 @@ proxies:
     headers:
       Host: iepl02.zerohost.live
     path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 74|21|baipaovpn香港
-  network: ws
-  port: '36801'
-  server: 20.6.161.252
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec
-  ws-opts:
-    headers:
-      Host: annie50.ceoiii.com
-    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: 75|香港(油管:破解资源君)
