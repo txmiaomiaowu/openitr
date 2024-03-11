@@ -1,25 +1,36 @@
 proxies:
-- cipher: aes-128-gcm
-  country: ' HK'
-  name: 13,16,17,70|🇭🇰HK-42.2.115.231-3790
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    tls: false
-  port: 443
-  server: 42.2.115.231
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 14,15,18,19,20,34,95,104|HK_speednode_0086
+  country: ' HK'
+  name: 14,15,18,19,20,33,95,104|HK_speednode_0086
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
   protocol: origin
   server: 150.107.46.21
   type: ssr
+- cipher: chacha20-ietf-poly1305
+  country: ' HK'
+  name: 15|ChatGPT Relay  HK_160
+  password: d7bee830-09aa-43b2-8945-3b341b8787db
+  port: 11407
+  server: p1.bxy-fun1.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 15,26|Relay_US-🇺🇸US_04
+  network: ws
+  port: 2052
+  server: onea.flha.ru
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-headers:
+    HOST: onea.flha.ru
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -41,7 +52,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 3|openitr
+  name: 18,76,94|RU 5|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -55,14 +66,17 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18|HK_398
+  name: 18,94|HK 1|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 182.16.1.194
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
+    headers:
+      Host: ''
     path: /opt/video/images
 - alterId: 0
   cipher: auto
@@ -152,6 +166,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 0
+  cipher: auto
+  name: '43,94,102|رایگان | VMESS | @v2Line | HK🇭... #3'
+  network: ws
+  port: '80'
+  server: hk1.xv2ray.net
+  servername: hk1.xv2ray.net
+  tls: false
+  type: vmess
+  uuid: 6f20c1ae-c712-4a26-a9f4-5e5b3c480b9d
+  ws-opts:
+    headers:
+      Host: hk1.xv2ray.net
+    path: /vmess
 - alterId: 32
   cipher: auto
   name: 45,49,70|HK-182.16.1.194-1849
@@ -1212,17 +1240,6 @@ proxies:
   server: 42.2.115.231
   tfo: false
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 57,70,74,77,93|🇨🇳
-  password: 06a4d7d1-8169-4bd1-9726-d68d5c2fe92a
-  port: 44606
-  server: hk.1.thap.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 57,70,74,77|🇭🇰 香港4|@ripaojiedian
@@ -1506,6 +1523,20 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
+  name: 74|21|baipaovpn香港
+  network: ws
+  port: '36801'
+  server: 20.6.161.252
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec
+  ws-opts:
+    headers:
+      Host: annie50.ceoiii.com
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
   name: 75|香港(油管:破解资源君)
   network: ws
   port: '443'
@@ -1660,19 +1691,6 @@ proxies:
     headers:
       Host: hkt.littleqqq.co
     path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 94|HK 1|openitr
-  network: ws
-  port: '80'
-  server: miracle.bilibili.ovh
-  tls: false
-  type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: miracle.bilibili.ovh
-    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   http-opts:
