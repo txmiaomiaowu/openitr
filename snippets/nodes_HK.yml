@@ -13,54 +13,21 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 14,15,18,19,20,34,95,104|HK_speednode_0086
+  name: 14,15,18,19,20,33,34,95,104|HK_speednode_0086
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
   protocol: origin
   server: 150.107.46.21
   type: ssr
-- alterId: 64
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 16| HK_88
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: hrgdvpn.flycdnedc55.vip
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-headers:
-    HOST: hrgdvpn.flycdnedc55.vip
-  ws-path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 17|Relay_-HK_12 | 7.90Mb
-  network: ws
-  port: 443
-  server: aliyunhk.caliburnonline.work
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 595a4760-b748-425b-9e5b-4a96705ef340
-  ws-opts:
-    headers:
-      Host: aliyunhk.caliburnonline.work
-    path: /oscarspy
 - alterId: 0
   cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 18,42,49,52,68,70|🇼TW-123.58.197.70-0439
+  name: 18,42,49,52,68,70,94|CN 1|openitr
   network: ws
-  port: 443
+  port: '443'
   server: 123.58.197.70
   servername: ''
   skip-cert-verify: false
@@ -68,13 +35,15 @@ proxies:
   type: vmess
   uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 6|openitr
+  name: 18,76,94|RU 3|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -88,14 +57,17 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18|HK_398
+  name: 18,94|HK 2|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 182.16.1.194
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
+    headers:
+      Host: ''
     path: /opt/video/images
 - alterId: 0
   cipher: auto
@@ -117,11 +89,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 38,51,53,56,63,74|16|🇭🇰|HK|香港|@wxgqlfx|37
+  name: 38,51,53,56|香港 002
   network: ws
   port: 20759
   server: hkt.littleqqq.co
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -183,6 +155,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 0
+  cipher: auto
+  name: '43,94,102|رایگان | VMESS | @v2Line | HK🇭... #3'
+  network: ws
+  port: '80'
+  server: hk1.xv2ray.net
+  servername: hk1.xv2ray.net
+  tls: false
+  type: vmess
+  uuid: 6f20c1ae-c712-4a26-a9f4-5e5b3c480b9d
+  ws-opts:
+    headers:
+      Host: hk1.xv2ray.net
+    path: /vmess
 - alterId: 32
   cipher: auto
   name: 45|🇭🇰 HK 2 → tg@nicevpn123
@@ -224,9 +210,9 @@ proxies:
   uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
   ws-opts:
     path: /
-- alterId: 32
+- alterId: 64
   cipher: auto
-  name: 49,70,98|🇭🇰HK-182.16.1.194-9122
+  name: 49,70,98|🇭🇰HK-182.16.1.194-9120
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -1242,6 +1228,17 @@ proxies:
   server: 42.2.115.231
   tfo: false
   type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 57,70,74,77,93|🇨🇳
+  password: 06a4d7d1-8169-4bd1-9726-d68d5c2fe92a
+  port: 44606
+  server: hk.1.thap.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 57,70,74,77|🇭🇰 香港4|@ripaojiedian
@@ -1699,19 +1696,6 @@ proxies:
     headers:
       Host: hkt.littleqqq.co
     path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 94|HK 1|openitr
-  network: ws
-  port: '80'
-  server: fastly.alipay.ovh
-  tls: false
-  type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: fastly.alipay.ovh
-    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   http-opts:
