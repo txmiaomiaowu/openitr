@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '1,2,6,7,8,9,10,11,24,30,31,54,55,57,59,64,68,70,71,74,80,98,107,108|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  name: '1,2,6,7,8,9,10,11,24,30,31,49,54,55,57,59,63,64,68,70,71,74,80,98,107,108|🇨🇦_CA_加拿大->🇺🇸_US_美国
     #27'
   network: ws
   port: 8080
@@ -22,7 +22,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '1,2,6,7,8,9,10,11,24,30,31,54,55,57,59,64,68,70,71,74,80,98,107,108|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  name: '1,2,6,7,8,9,10,11,24,30,31,46,49,54,55,57,59,63,64,68,70,71,74,80,98,107,108|🇨🇦_CA_加拿大->🇺🇸_US_美国
     #26'
   network: ws
   port: 8080
@@ -41,7 +41,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '1,2,6,7,8,9,10,11,24,30,31,38,53,57,59,64,68,70,71,74,80,98,107,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
+  name: '1,2,6,7,8,9,10,11,24,30,31,49,57,59,64,68,70,71,74,80,92,98,107,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
     #50'
   network: ws
   port: 8080
@@ -51,7 +51,6 @@ proxies:
   skip-cert-vertify: true
   tls: false
   type: vmess
-  udp: true
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
   ws-opts:
     headers:
@@ -60,7 +59,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '2,6,7,8,9,10,11,24,30,31,46,54,55,57,59,64,68,70,71,74,80,94,98,107,108|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+  name: '2,6,7,8,9,10,11,24,30,31,49,54,55,57,59,63,64,68,70,71,74,80,94,98,107,108|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
     #14'
   network: ws
   port: 8880
@@ -79,11 +78,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,24,30,31,57,59,64,68,70,71,74,80,98,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
+  name: '2,6,7,8,9,10,11,24,30,31,49,57,59,64,68,70,71,74,80,98,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
     #52'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
+  servername: ''
   skip-cert-verify: false
   skip-cert-vertify: true
   tls: false
@@ -112,7 +112,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,24,30,31,57,59,64,68,70,71,74,80,98,107,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
+  name: '2,6,7,8,9,10,11,24,30,31,49,57,59,64,68,70,71,74,80,98,107,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
     #49'
   network: ws
   port: 8080
@@ -129,7 +129,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,24,30,31,46,57,59,64,68,70,71,74,80,98,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
+  name: '2,6,7,8,9,10,11,24,30,31,49,57,59,64,68,70,71,74,80,98,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
     #51'
   network: ws
   port: 8080
@@ -148,7 +148,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: 443trojan
-  name: 4,51,57,66,70,74,93|🇺🇸US美国15
+  name: 4,51,57,66,70,74,93|🇺🇸US美国20
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -160,7 +160,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 4,45,51,57,66,70,74,78,79,86,101|meta_vmess_03
+  h2-opts: {}
+  http-opts: {}
+  name: 4,17,45,49,51,57,66,70,74,78,79,86,101|meta_vmess_03
   network: ws
   port: 8080
   server: 23.227.38.22
@@ -176,7 +178,10 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: 4,45,51,57,66,70,74,78,79,101|meta_vmess_01
+  country: CA
+  h2-opts: {}
+  http-opts: {}
+  name: 4,14,45,49,51,57,66,70,74,78,79,101|meta_vmess_01
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -192,12 +197,16 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '4,51,57,66,70,74,78,79|🇺🇸_US_美国->🇨🇦_CA_加拿大_4 #2'
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 4,14,49,51,57,66,70,74,78,79,93|🇺🇸US美国10
   network: ws
   port: 8080
   server: 162.159.1.33
+  servername: ''
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
   ws-opts:
@@ -206,10 +215,14 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '4,45,51,57,66,70,74,78,79|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #12'
+  country: 🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: '4,13,17,33,45,49,51,57,66,70,74,78,79|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #12'
   network: ws
   port: 8880
   server: 94.140.0.110
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -247,7 +260,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  country: US
+  country: ZZ
   h2-opts: {}
   http-opts: {}
   name: '4,19,51,57,66,74,79,84,107|美国【付费推荐：https://jdyvip.link/】3... #3'
@@ -265,7 +278,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,51,57,66,74,78,79,101|meta_vmess_52
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 4,17,33,51,57,66,74,78,79,101|meta_vmess_52
   network: ws
   port: 8080
   server: fbi.gov
@@ -295,10 +311,11 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '31,45,57,59,68,70,74,98|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: '31,45,49,57,59,68,70,74,98|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -355,10 +372,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 38,53,70|🏁RELAY-172.67.184.13-7299
+  name: '38,49,53,70|🏁RELAY-172.67.184.13-7299 #1'
   network: ws
   port: 80
   server: ld2.shabijichang.com
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -400,10 +418,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 38,53,70|🏁RELAY-104.21.75.246-7297
+  name: '38,49,53,70|🏁RELAY-104.21.75.246-7297 #1'
   network: ws
   port: 80
   server: mm2.shabijichang.com
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -415,10 +434,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 38,53,70|🏁RELAY-172.67.184.13-7305
+  name: '38,49,53,70|🏁RELAY-172.67.184.13-7305 #1'
   network: ws
   port: 80
   server: mm3.shabijichang.com
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -430,10 +450,11 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 38,53,60,70|🇳🇱NL-45.199.138.191-7279
+  name: '38,49,53,60,70|🇳🇱NL-45.199.138.191-7279 #1'
   network: ws
   port: 30000
   server: 45.199.138.191
+  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -443,10 +464,11 @@ proxies:
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 38,53,70|🏁RELAY-104.21.75.246-7304
+  name: '38,49,53,70|🏁RELAY-104.21.75.246-7304 #1'
   network: ws
   port: 80
   server: jd3.shabijichang.com
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
