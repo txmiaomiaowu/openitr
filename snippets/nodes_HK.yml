@@ -1,19 +1,7 @@
 proxies:
-- cipher: aes-128-gcm
-  country: ' HK'
-  name: 13,16,17,70|🇭🇰HK-42.2.115.231-4178
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    tls: false
-  port: 443
-  server: 42.2.115.231
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14,15,18,19,20,33,34,35,95,104|HK_speednode_0086
+  country: 🇰HK
+  name: 14,15,18,19,20,33,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -57,7 +45,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 5|openitr
+  name: 18,76,94|RU 3|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -66,19 +54,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0855b410-0e96-4d0a-9b6e-80830edec462
-- alterId: 0
-  cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 35|🇭🇰HK_148
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -166,20 +141,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
-- alterId: 0
-  cipher: auto
-  name: '43,94,102|رایگان | VMESS | @v2Line | HK🇭... #3'
-  network: ws
-  port: '80'
-  server: hk1.xv2ray.net
-  servername: hk1.xv2ray.net
-  tls: false
-  type: vmess
-  uuid: 6f20c1ae-c712-4a26-a9f4-5e5b3c480b9d
-  ws-opts:
-    headers:
-      Host: hk1.xv2ray.net
-    path: /vmess
 - alterId: 32
   cipher: auto
   name: 45,70|HK-182.16.1.194-2010
@@ -331,22 +292,6 @@ proxies:
   server: 47.76.185.99
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 57,74,77|🇭🇰 香港KT2|@ripaojiedian
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 42.2.115.231
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: chacha20-poly1305
   client-fingerprint: chrome
@@ -364,6 +309,14 @@ proxies:
     headers:
       Host: cache-hk-1.cn-db.top
     path: /db00
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 57,70,74,77|🇭🇰 香港4|@ripaojiedian
+  password: 069e43cb-15cd-4d3c-9710-6aeb074a5b18
+  port: 43217
+  server: hk05.jjjjjj.icu
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: 61|香港_【YouTube-VV科技】
@@ -798,8 +751,7 @@ proxies:
   server: 47.243.59.144
   type: ss
 - cipher: aes-128-gcm
-  delay: 929
-  name: 70,104|HK_speednode_0082
+  name: 70|🇭🇰HK-1.65.139.54-4207
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -807,6 +759,7 @@ proxies:
     mode: websocket
     mux: true
     path: ''
+    skip-cert-verify: false
     tls: false
   port: 443
   server: 1.65.139.54
@@ -1530,6 +1483,18 @@ proxies:
     headers:
       Host: a.189.cn
     path: /zh-cn/download
+- cipher: aes-128-gcm
+  name: 82|港-408.6KB/s
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 47.243.59.144
+  type: ss
+- cipher: aes-128-gcm
+  name: 82|香港-1.39MB/s
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 1.65.139.54
+  type: ss
 - alterId: 0
   cipher: auto
   name: 84|香港(yudou66.com 玉豆免费节点)
@@ -1622,17 +1587,28 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - internet.life.com.by
-    method: GET
-  name: 104|HK_speednode_0083
-  network: http
-  port: 3389
-  server: 185.244.208.61
-  skip-cert-verify: true
+  name: 94|HK 1|openitr
+  network: ws
+  port: '80'
+  server: fastly.alipay.ovh
   tls: false
   type: vmess
-  udp: true
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: fastly.alipay.ovh
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '98,107|美国【付费推荐：https://jdyvip.link/】1... #12'
+  network: ws
+  port: '2087'
+  server: hkaa.sectigo.pp.ua
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 274284ed-be5d-4218-bc1c-f3c9cd21a6a1
+  ws-opts:
+    headers:
+      Host: hkhytronadas.cxzntq.tech
+    path: /apopop
