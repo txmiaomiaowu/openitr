@@ -12,8 +12,8 @@ proxies:
   server: 42.2.115.231
   type: ss
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14,15,18,19,20,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 14,15,18,19,20,33,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -25,7 +25,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 15| HK_158
+  name: 15| HK_156
   network: ws
   port: 2052
   server: onea.flha.ru
@@ -36,6 +36,22 @@ proxies:
   ws-headers:
     HOST: onea.flha.ru
   ws-path: /
+- alterId: 64
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 16| HK_63
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-headers:
+    HOST: hrgdvpn.flycdnedc55.vip
+  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -59,21 +75,24 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18|HK_378
+  name: 18,94|HK 1|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 182.16.1.194
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
+    headers:
+      Host: ''
     path: /opt/video/images
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 4|openitr
+  name: 18,76,94|RU 3|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -85,7 +104,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 38,51,53,56,57,70,74,92,94,98|🇭🇰HK-152.32.190.239-0112
+  name: 38,51,53,56,57,70,92,94,98|🇭🇰HK-152.32.190.239-0112
   network: ws
   port: 4431
   server: 152.32.190.239
@@ -211,7 +230,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 51,71,80|欧洲(欢迎订阅Youtube破解资源君)+71
+  name: 51,80|欧洲(欢迎订阅Youtube破解资源君)+71
   network: tcp
   port: 18951
   server: 43.128.12.51
@@ -235,7 +254,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 51,71,80|香港(欢迎订阅Youtube破解资源君)+3
+  name: 51,80|香港(欢迎订阅Youtube破解资源君)+3
   network: tcp
   port: 5656
   server: 119.42.147.76
@@ -253,7 +272,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 51,71,80|香港(欢迎订阅Youtube破解资源君)+4
+  name: 51,80|香港(欢迎订阅Youtube破解资源君)+4
   network: tcp
   port: 22836
   server: 124.156.146.231
@@ -271,7 +290,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 51,71,80|香港(欢迎订阅Youtube破解资源君)+5
+  name: 51,80|香港(欢迎订阅Youtube破解资源君)+5
   network: tcp
   port: 5656
   server: 119.42.147.77
@@ -309,22 +328,23 @@ proxies:
   server: 47.76.185.99
   tfo: false
   type: ss
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: chacha20-poly1305
   client-fingerprint: chrome
-  name: 57,74,77,104|HK_speednode_0027
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: false
-    tls: false
-  port: 443
-  server: 42.2.115.231
+  name: 57,70,71,98|香港2|@ripaojiedian
+  network: ws
+  port: '58080'
+  server: 223.113.130.55
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 5d75216f-c2ec-3136-b749-fcfe40ed4b4e
+  ws-opts:
+    headers:
+      Host: cache-hk-1.cn-db.top
+    path: /db00
 - alterId: 0
   cipher: auto
   name: 57,74,80,92,98|香港3|@ripaojiedian
@@ -1478,20 +1498,37 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 71,80|香港(欢迎订阅Youtube破解资源君)+2
+  client-fingerprint: chrome
+  name: 74,77|🇭🇰 香港2|@ripaojiedian
   network: ws
-  port: 11001
-  server: iepl02.zerohost.live
-  skip-cert-vertify: true
+  port: 16627
+  server: vip.basicnode.host
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: c008a763-2123-312f-bae6-bf7630517e22
+  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts:
     headers:
-      Host: iepl02.zerohost.live
-    path: /v2ray
+      Host: 193.25.215.160
+    path: /niuniu
+- alterId: 0
+  cipher: auto
+  name: '74|21|baipaovpn香港 #1'
+  network: ws
+  port: '36801'
+  server: 20.255.223.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec
+  ws-opts:
+    headers:
+      Host: annie50.ceoiii.com
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: 75|香港(油管:破解资源君)
@@ -1520,6 +1557,20 @@ proxies:
     headers:
       Host: a.189.cn
     path: /zh-cn/download
+- alterId: 2
+  cipher: auto
+  name: 80|香港(欢迎订阅Youtube破解资源君)+2
+  network: ws
+  port: 11001
+  server: iepl02.zerohost.live
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: c008a763-2123-312f-bae6-bf7630517e22
+  ws-opts:
+    headers:
+      Host: iepl02.zerohost.live
+    path: /v2ray
 - cipher: aes-128-gcm
   name: 82|港-408.6KB/s
   password: a-wym4ovY4Yw
