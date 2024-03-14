@@ -1,13 +1,14 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '1,6,7,8,9,11,31,32,39,50,52,54,57,58,65,71,72,75,99,109|🇨🇭_CH_瑞士->🇭🇰_HK_香港
-    #41'
+  name: '1,2,6,7,8,9,10,11,24,30,31,38,49,53,56,57,64,70,71,74,81,98,108|🇨🇭_CH_瑞士->🇭🇰_HK_香港
+    #51'
   network: ws
   port: 25857
   server: 64.110.65.177
   servername: data-hk-3.cn-db.top
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: true
   type: vmess
   udp: true
@@ -21,18 +22,24 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: '1,4,6,7,8,9,11,17,31,32,58,65,67,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #102'
+  name: '1,2,4,6,7,8,9,10,11,17,24,30,31,51,57,64,66,71,74,79,81,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #118'
   network: tcp
   port: 30139
   server: 183.232.170.22
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: false
   type: vmess
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+  ws-opts:
+    headers:
+      Host: 183.232.170.22
+    path: /
 - alterId: 0
   cipher: auto
-  name: '1,6,7,8,9,11,31,32,39,50,52,54,57,58,65,71,72,75,99,109|🇰🇷_KR_韩国->🇭🇰_HK_香港
-    #17'
+  name: '1,2,6,7,8,9,10,11,24,30,31,38,49,53,56,57,64,70,71,74,98,108|🇰🇷_KR_韩国->🇭🇰_HK_香港
+    #21'
   network: ws
   port: 32454
   server: 130.162.151.122
@@ -49,8 +56,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '1,2,6,7,8,9,10,11,24,30,31,50,55,56,58,60,65,69,71,72,75,81,99,108,109|🇺🇸_US_美国->🇨🇦_CA_加拿大
-    #34'
+  name: '1,2,6,7,8,9,10,11,24,30,46,49,54,55,57,59,64,68,70,71,74,80,81,98,107,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
+    #32'
   network: ws
   port: 8080
   server: yh1.freeh1.xyz
@@ -68,8 +75,8 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '1,4,6,7,8,9,11,31,32,47,54,58,65,67,69,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国
-    #103'
+  name: '1,2,4,6,7,8,9,10,11,24,30,31,51,53,57,64,66,68,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #119'
   network: tcp
   port: 30061
   server: 183.232.170.22
@@ -79,53 +86,259 @@ proxies:
   uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
 - alterId: 0
   cipher: auto
-  name: 2,10,24,30,52,58,75,81|_CN_国->_HK_
-  network: tcp
-  port: 50022
-  server: 218.204.179.210
-  skip-cert-verify: true
+  name: '2,6,7,8,9,10,11,24,30,49,57,59,64,68,70,71,74,80,98,107,108|🇨🇦_CA_加拿大->🇺🇸_US_美国
+    #13'
+  network: ws
+  port: 8080
+  server: 23.227.38.22
+  servername: ''
+  skip-cert-verify: false
   skip-cert-vertify: true
   tls: false
   type: vmess
-  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
   ws-opts:
     headers:
-      Host: 218.204.179.210
-    path: /
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: 2,10,24,30,52,58,59,60,69,75,81|_CN_中国->🇸_US_美国
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '2,4,6,7,8,9,10,11,13,17,24,30,31,51,53,57,64,66,68,71,74,79,98,108|🇨🇳_CN_中国->🇵🇸_PS_巴勒斯坦
+    #11'
   network: tcp
-  port: 50003
-  server: 183.232.159.163
+  port: 30015
+  server: 183.232.170.22
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,24,30,31,49,57,59,64,68,70,71,74,80,81,98,107,108|🇺🇸_US_美国->🇨🇦_CA_加拿大
+    #33'
+  network: ws
+  port: 8080
+  server: yh3.freeh1.xyz
+  servername: ''
+  skip-cert-verify: false
   skip-cert-vertify: true
   tls: false
   type: vmess
-  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
   ws-opts:
     headers:
-      Host: 183.232.159.163
-    path: /
+      Host: larger-marketing-amounts-skin.trycloudflare.com
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: 2,10,24,30,52,58,75,81|_CN_中国->🇭🇰_HK_香港+1
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '2,4,6,7,8,9,10,11,17,24,30,31,51,57,64,66,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #120'
   network: tcp
-  port: 50022
-  server: 50022.baidu-cdn.top
+  port: 30145
+  server: 183.232.170.22
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  country: ' CN'
+  h2-opts: {}
+  http-opts: {}
+  name: '2,4,6,7,8,9,10,11,13,17,24,30,31,46,51,53,57,64,66,68,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #121'
+  network: tcp
+  port: 30032
+  server: 183.232.170.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  name: '2,4,6,7,8,9,10,11,24,30,31,46,51,57,64,66,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #122'
+  network: tcp
+  port: 30129
+  server: 183.232.170.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,24,30,31,38,49,53,56,57,64,70,71,74,81,98,108|🇨🇭_CH_瑞士->🇭🇰_HK_香港
+    #52'
+  network: ws
+  port: 21203
+  server: 64.110.78.246
+  servername: data-hk-3.cn-db.top
+  skip-cert-verify: false
+  skip-cert-vertify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
+  ws-opts:
+    headers:
+      Host: data-hk-3.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,24,30,31,38,49,53,56,57,64,70,71,74,98,108|🇰🇷_KR_韩国->🇭🇰_HK_香港
+    #22'
+  network: ws
+  port: 32453
+  server: 130.162.151.122
+  servername: cache-hk-2.cn-db.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
+  ws-opts:
+    headers:
+      Host: cache-hk-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '2,4,6,7,8,9,10,11,24,30,31,46,51,57,64,66,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #123'
+  network: tcp
+  port: 30013
+  server: 183.232.170.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  name: '2,4,6,7,8,9,10,11,24,30,31,51,57,64,66,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #124'
+  network: tcp
+  port: 30058
+  server: 183.232.170.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '2,4,6,7,8,9,10,11,17,24,30,31,46,51,57,64,66,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #125'
+  network: tcp
+  port: 30137
+  server: 183.232.170.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '2,4,6,7,8,9,10,11,13,17,24,30,31,46,51,53,57,64,66,68,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #126'
+  network: tcp
+  port: 30141
+  server: 183.232.170.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,24,30,31,49,57,59,64,68,70,71,74,80,81,92,94,98,107,108|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+    #13'
+  network: ws
+  port: 8880
+  server: 94.140.0.110
+  servername: ''
+  skip-cert-verify: false
   skip-cert-vertify: true
   tls: false
   type: vmess
-  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
-      Host: 50022.baidu-cdn.top
+      Host: food.zhaal.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,7,8,9,10,11,24,30,31,32,46,50,58,60,65,69,71,72,75,81,82,99,109|🇺🇸_US_美国->🇫🇷_FR_法国
-    #19'
+  name: '2,6,7,8,9,10,11,24,30,31,38,49,53,56,57,64,70,71,74,98,108|🇨🇭_CH_瑞士->🇭🇰_HK_香港
+    #53'
+  network: ws
+  port: 25856
+  server: 64.110.65.177
+  servername: cache-hk-1.cn-db.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
+  ws-opts:
+    headers:
+      Host: cache-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '2,4,6,7,8,9,10,11,24,30,31,46,51,57,64,66,71,74,79,98,108|🇨🇳_CN_中国->🇺🇸_US_美国
+    #127'
+  network: tcp
+  port: 30051
+  server: 183.232.170.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,24,30,31,38,49,53,56,57,64,70,71,74,98,108|🇨🇭_CH_瑞士->🇭🇰_HK_香港
+    #54'
+  network: ws
+  port: 21205
+  server: 64.110.78.246
+  servername: cache-hk-2.cn-db.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
+  ws-opts:
+    headers:
+      Host: cache-hk-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,24,30,31,38,49,53,56,57,64,70,71,74,98,108|🇨🇭_CH_瑞士->🇭🇰_HK_香港
+    #55'
+  network: ws
+  port: 45703
+  server: 64.110.78.246
+  servername: data-hk-1.cn-db.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
+  ws-opts:
+    headers:
+      Host: data-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '2,6,7,8,9,10,11,24,30,31,45,49,57,59,64,68,70,71,74,80,81,98,108|🇺🇸_US_美国->🇫🇷_FR_法国
+    #15'
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -142,73 +355,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,10,24,30,52,58,59,60,69,75,81|_CN_中国->🇺🇸_US_美国+1
-  network: tcp
-  port: 50003
-  server: 50003.baidu-cdn.top
-  skip-cert-verify: true
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
-  ws-opts:
-    headers:
-      Host: 50003.baidu-cdn.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,6,7,8,9,10,11,24,30,31,32,50,58,60,64,65,69,71,72,75,81,82,93,99,108,109|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
-    #14'
-  network: ws
-  port: 8880
-  server: 94.140.0.110
-  servername: ''
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      Host: food.zhaal.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,10,24,30,47,50,58,60,64,69,71,75,81,99,108|加拿大【付费推荐：https://jdyvip.link/】...
-    #2'
-  network: ws
-  port: '8080'
-  server: 23.227.38.23
-  servername: ''
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
-  ws-opts:
-    headers:
-      Host: uh-lawyers-instruments-kernel.trycloudflare.com
-    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
-- alterId: 0
-  cipher: auto
-  name: '2,6,7,8,9,10,11,24,30,31,50,58,60,65,69,71,72,75,81,99,108,109|🇨🇦_CA_加拿大->🇺🇸_US_美国
-    #17'
-  network: ws
-  port: 8080
-  server: 23.227.38.22
-  servername: ''
-  skip-cert-verify: false
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- alterId: 0
-  cipher: auto
-  name: 4,58,67,75,80|🇨🇭_CH_瑞士->🇭🇰_HK_香港_3
+  name: 4,51,57,66,74,79|🇨🇭_CH_瑞士->🇭🇰_HK_香港_3
   network: ws
   port: 25857
   server: 64.110.65.177
@@ -223,7 +370,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 4,58,67,75,80|🇰🇷_KR_韩国->🇭🇰_HK_香港_1
+  name: 4,51,57,66,74,79|🇰🇷_KR_韩国->🇭🇰_HK_香港_1
   network: ws
   port: 32454
   server: 130.162.151.122
@@ -238,7 +385,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 4,52,58,59,67,75,102|meta_vmess_55
+  name: 4,51,57,58,66,74,101|meta_vmess_55
   network: ws
   port: 8080
   server: yh1.freeh1.xyz
@@ -253,7 +400,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: 4,46,50,52,58,59,67,71,75,102|meta_vmess_03
+  name: 4,45,49,51,57,58,66,70,74,101|meta_vmess_03
   network: ws
   port: 8080
   server: 23.227.38.22
@@ -269,23 +416,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  country: ' CN'
-  h2-opts: {}
-  http-opts: {}
-  name: '4,6,7,8,9,11,13,31,32,52,58,65,67,72,75,80,99,109|🇨🇳_CN_中国->🇵🇸_PS_巴勒斯坦 #9'
-  network: tcp
-  port: 30015
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-  ws-headers:
-    Host: 183.232.170.22
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 4,52,58,59,67,75,80,102|meta_vmess_516
+  name: 4,51,57,58,66,74,79,101|meta_vmess_516
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -300,43 +431,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '4,6,7,8,9,11,31,32,54,58,65,67,69,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #104'
-  network: tcp
-  port: 30145
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  country: ' CN'
-  h2-opts: {}
-  http-opts: {}
-  name: '4,6,7,8,9,11,17,31,32,54,58,65,67,69,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #105'
-  network: tcp
-  port: 30032
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: '4,6,7,8,9,11,17,31,32,54,58,65,67,69,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #106'
-  network: tcp
-  port: 30129
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  name: 4,58,67,75,80|🇨🇭_CH_瑞士->🇭🇰_HK_香港_5
+  name: 4,51,57,66,74,79|🇨🇭_CH_瑞士->🇭🇰_HK_香港_5
   network: ws
   port: 21203
   server: 64.110.78.246
@@ -351,7 +446,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 4,58,67,75,80|🇰🇷_KR_韩国->🇭🇰_HK_香港_2
+  name: 4,51,57,66,74,79|🇰🇷_KR_韩国->🇭🇰_HK_香港_2
   network: ws
   port: 32453
   server: 130.162.151.122
@@ -369,7 +464,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 443trojan
-  name: 4,52,55,58,59,67,71,75,94|🇸US美国11
+  name: 4,51,54,57,58,66,70,74,93|🇺🇸US美国16
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -381,61 +476,11 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: '4,6,7,8,9,11,17,31,32,58,65,67,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #107'
-  network: tcp
-  port: 30013
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  name: '4,6,7,8,9,11,31,32,58,65,67,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #108'
-  network: tcp
-  port: 30058
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  name: '4,6,7,8,9,11,31,32,58,65,67,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #109'
-  network: tcp
-  port: 30137
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: '4,6,7,8,9,11,13,17,31,32,47,54,58,65,67,69,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国
-    #110'
-  network: tcp
-  port: 30141
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  country: AE
-  h2-opts: {}
-  http-opts: {}
-  name: '4,13,14,17,34,46,50,52,58,59,67,71,75,80|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #12'
+  name: '4,45,49,51,57,58,66,70,74,79|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #11'
   network: ws
   port: 8880
   server: 94.140.0.110
-  servername: food.zhaal.ir
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -447,7 +492,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,58,67,75,80|🇨🇭_CH_瑞士->🇭🇰_HK_香港_2
+  name: 4,51,57,66,74,79|🇨🇭_CH_瑞士->🇭🇰_HK_香港_2
   network: ws
   port: 25856
   server: 64.110.65.177
@@ -462,17 +507,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '4,6,7,8,9,11,31,32,58,65,67,72,75,80,99,109|🇨🇳_CN_中国->🇺🇸_US_美国 #111'
-  network: tcp
-  port: 30051
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-- alterId: 0
-  cipher: auto
-  name: 4,58,67,75,80|🇨🇭_CH_瑞士->🇭🇰_HK_香港_1
+  name: 4,51,57,66,74,79|🇨🇭_CH_瑞士->🇭🇰_HK_香港_1
   network: ws
   port: 21205
   server: 64.110.78.246
@@ -487,7 +522,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 4,58,67,75,80|🇨🇭_CH_瑞士->🇭🇰_HK_香港_4
+  name: 4,51,57,66,74,79|🇨🇭_CH_瑞士->🇭🇰_HK_香港_4
   network: ws
   port: 45703
   server: 64.110.78.246
@@ -502,10 +537,10 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 4,17,34,52,58,59,67,75,80,85,88,108|美国【付费推荐：https://jdyvip.link/】1...
+  name: 4,17,51,57,58,66,74,79,84,87,107|美国【付费推荐：https://jdyvip.link/】1...
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -518,7 +553,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '4,52,58,59,67,75|1|_CA_->_US__2 #1'
+- name: '4,51,57,58,66,74|1|_CA_->_US__2 #1'
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
@@ -531,92 +566,7 @@ proxies:
     path: /argox-tr
 - alterId: 0
   cipher: auto
-  name: '6,7,8,9,11,31,32,39,50,52,54,57,58,65,71,72,75,99,109|🇨🇭_CH_瑞士->🇭🇰_HK_香港
-    #42'
-  network: ws
-  port: 21203
-  server: 64.110.78.246
-  servername: data-hk-3.cn-db.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
-  ws-opts:
-    headers:
-      Host: data-hk-3.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '6,7,8,9,11,31,32,39,50,52,54,57,58,65,71,72,75,99,109|🇰🇷_KR_韩国->🇭🇰_HK_香港
-    #18'
-  network: ws
-  port: 32453
-  server: 130.162.151.122
-  servername: cache-hk-2.cn-db.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
-  ws-opts:
-    headers:
-      Host: cache-hk-2.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '6,7,8,9,11,31,32,39,50,52,54,57,58,65,71,72,75,99,109|🇨🇭_CH_瑞士->🇭🇰_HK_香港
-    #43'
-  network: ws
-  port: 25856
-  server: 64.110.65.177
-  servername: cache-hk-1.cn-db.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
-  ws-opts:
-    headers:
-      Host: cache-hk-1.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '6,7,8,9,11,31,32,39,50,52,54,57,58,65,71,72,75,99,109|🇨🇭_CH_瑞士->🇭🇰_HK_香港
-    #44'
-  network: ws
-  port: 21205
-  server: 64.110.78.246
-  servername: cache-hk-2.cn-db.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
-  ws-opts:
-    headers:
-      Host: cache-hk-2.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '6,7,8,9,11,31,32,39,50,52,54,57,58,65,71,72,75,99,109|🇨🇭_CH_瑞士->🇭🇰_HK_香港
-    #45'
-  network: ws
-  port: 45703
-  server: 64.110.78.246
-  servername: data-hk-1.cn-db.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
-  ws-opts:
-    headers:
-      Host: data-hk-1.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '32,50,58,71,75,99|🇺🇸_US_美国->🇨🇦_CA_加拿大 #31'
+  name: '31,38,49,53,57,68,70,74,98|🇺🇸_US_美国->🇨🇦_CA_加拿大 #31'
   network: ws
   port: 8080
   server: yh2.freeh1.xyz
@@ -624,6 +574,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
   ws-opts:
     headers:
@@ -633,13 +584,12 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '32,34,39,50,54,57,58,69,71,72,75,99,105,108|美国【付费推荐：https://jdyvip.link/】2...
-    #3'
+  name: '31,33,38,49,53,56,57,70,71,74,98,107|美国【付费推荐：https://jdyvip.link/】2... #3'
   network: ws
   port: '80'
   server: 104.21.20.19
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -650,11 +600,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '32,39,52,54,57,58,71,75,99|🇺🇸_US_美国->🇨🇦_CA_加拿大 #28'
+  name: '31,38,46,51,53,56,57,70,74,98|美国 CloudFlare节点 #486'
   network: ws
   port: 8080
   server: 162.159.137.249
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -666,7 +615,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: 39,54,61|_TW_->🇸_US_美国
+  name: 38,53,60|_TW_->🇸_US_美国
   network: ws
   port: 80
   server: 107.167.182.230
@@ -681,7 +630,7 @@ proxies:
     path: /tg@hkaa0
 - alterId: 0
   cipher: auto
-  name: 39,54|🇩🇪 _US_美国->🇩🇪_DE_德国
+  name: 38,53|🇩🇪 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '80'
   server: flkf2.shabijichang.com
@@ -696,7 +645,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 39,54|🇬🇧 _US_美国->🇬🇧_GB_英国_1
+  name: 38,53|🇬🇧 _US_美国->🇬🇧_GB_英国_1
   network: ws
   port: '80'
   server: mrb2.shabijichang.com
@@ -711,7 +660,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 39,50,54,71|🏁RELAY-172.64.80.1-7310
+  name: 38,49,53,70|🏁RELAY-172.64.80.1-7310
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -727,7 +676,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 39,54,61|🇺🇸_US_美国->🇳_IN__1
+  name: 38,53,60|🇺🇸_US_美国->🇳_IN__1
   network: ws
   port: 80
   server: 104.17.18.26
@@ -742,7 +691,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 39,54,61|🇺🇸_US_美国->🇮🇳_IN_印度_2
+  name: 38,53,60|🇺🇸_US_美国->🇮🇳_IN_印度_2
   network: ws
   port: 80
   server: 104.26.8.44
@@ -757,7 +706,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 39,50,54,71|🏁RELAY-104.21.75.246-7308
+  name: 38,49,53,70|🏁RELAY-104.21.75.246-7308
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -773,7 +722,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 39,50,54,71|🏁RELAY-104.21.75.246-7316
+  name: 38,49,53,70|🏁RELAY-104.21.75.246-7316
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -789,7 +738,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 39,50,54,61,71|🇳🇱NL-45.199.138.191-7290
+  name: 38,49,53,60,70|🇳🇱NL-45.199.138.191-7290
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -803,7 +752,7 @@ proxies:
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 39,50,54,71|🏁RELAY-172.67.184.13-7315
+  name: 38,49,53,70|🏁RELAY-172.67.184.13-7315
   network: ws
   port: 80
   server: jd3.shabijichang.com
@@ -817,23 +766,45 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 51,58,70,80|_CN_中国->🇷_FR_法国
+  password: 7a28d32b-a693-4451-8ee2-1f1def6bf89f
+  port: 10815
+  server: yd1.qianggewangluo.buzz
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 52,59,85|美国(yudou66.com 玉豆免费节点)_9
-  network: ws
-  port: 80
-  server: yhnsb3.shabijichang.com
+  name: 51,58,59,68,80|_CN_中国->🇸_US_美国
+  network: tcp
+  port: 50003
+  server: 183.232.159.163
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: false
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
   ws-opts:
     headers:
-      host: yhnsb3.shabijichang.com
+      Host: 183.232.159.163
     path: /
 - alterId: 0
   cipher: auto
-  name: 61|🇺🇸_US_美国->_DE_国
+  name: 51,58,59,68,80|_CN_中国->🇺🇸_US_美国+1
+  network: tcp
+  port: 50003
+  server: 50003.baidu-cdn.top
+  skip-cert-verify: true
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
+  ws-opts:
+    headers:
+      Host: 50003.baidu-cdn.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 60|🇺🇸_US_美国->_DE_国
   network: ws
   port: 80
   server: flkf2.shabijichang.com
@@ -847,7 +818,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 61|🇺🇸_US_美国->🇦_SA_
+  name: 60|🇺🇸_US_美国->🇦_SA_
   network: ws
   port: 80
   server: jd3.shabijichang.com
@@ -861,7 +832,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 61,74|🇸_US_美国->🇳_IN_
+  name: 60,73|🇸_US_美国->🇳_IN_
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -875,7 +846,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 61|🇺🇸_US_美国->_GB_国_1
+  name: 60|🇺🇸_US_美国->_GB_国_1
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -889,7 +860,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 61|🇺🇸_US_美国->🇬🇧_GB_英国_2
+  name: 60|🇺🇸_US_美国->🇬🇧_GB_英国_2
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -903,7 +874,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '61,74|🇺🇸_US_美国_3 #2'
+  name: '60,73|🇺🇸_US_美国_3 #2'
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -917,7 +888,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 68|KR -> US
+  name: 67|KR -> US
   network: ws
   port: '54403'
   server: transkr.sxmzkfyy.com
@@ -931,7 +902,7 @@ proxies:
     path: /btvyrzAW/
 - alterId: 0
   cipher: auto
-  name: 68|JP -> US
+  name: 67|JP -> US
   network: ws
   port: '22956'
   server: transjp.sxmzkfyy.com
@@ -945,7 +916,7 @@ proxies:
     path: /btvyrzAW/
 - alterId: 0
   cipher: auto
-  name: 68|KR -> US2
+  name: 67|KR -> US2
   network: ws
   port: '54404'
   server: transkr.sxmzkfyy.com
@@ -959,7 +930,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 68|JP -> US2
+  name: 67|JP -> US2
   network: ws
   port: '22954'
   server: transjp.sxmzkfyy.com
@@ -973,7 +944,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 68|KR -> RU
+  name: 67|KR -> RU
   network: ws
   port: '54405'
   server: transkr.sxmzkfyy.com
@@ -987,7 +958,7 @@ proxies:
     path: /VK4yTEQZ/
 - alterId: 0
   cipher: auto
-  name: 68|JP -> RU
+  name: 67|JP -> RU
   network: ws
   port: '22955'
   server: transjp.sxmzkfyy.com
@@ -1001,7 +972,7 @@ proxies:
     path: /VK4yTEQZ/
 - alterId: 0
   cipher: auto
-  name: 74|_SG_->🇺🇸_US_美国
+  name: 73|_SG_->🇺🇸_US_美国
   network: ws
   port: 80
   server: 8.222.198.105
@@ -1013,7 +984,7 @@ proxies:
     headers:
       host: warp.chigua.tk
     path: /
-- name: 74|_CN_国->🇺_UA_
+- name: 73|_CN_国->🇺_UA_
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
   port: 10845
@@ -1022,7 +993,7 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- name: 74|🇳_CN_中国->🇺_US_美国_1
+- name: 73|🇳_CN_中国->🇺_US_美国_1
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
   port: 10837
@@ -1031,7 +1002,7 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- name: '74|🇳_CN_中国->🇺🇸_US_美国_2 #2'
+- name: '73|🇳_CN_中国->🇺🇸_US_美国_2 #2'
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
   port: 10838
@@ -1040,7 +1011,7 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- name: 74|🇨🇳_CN_中国->🇺_US_美国_3
+- name: 73|🇨🇳_CN_中国->🇺_US_美国_3
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
   port: 10850
@@ -1052,7 +1023,7 @@ proxies:
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
-  name: 80|mattkaydiary.com|中国香港/中国台湾(CN)...
+  name: 79|mattkaydiary.com|中国香港/中国台湾(CN)...
   network: ws
   port: 26104
   server: V104.bgpnet.top
@@ -1067,7 +1038,7 @@ proxies:
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Beijing/小东的程序未能精准识别(可能是中转节点)_17
-  name: '80|mattkaydiary.com|中国香港/中国台湾(CN)... #2'
+  name: '79|mattkaydiary.com|中国香港/中国台湾(CN)... #2'
   network: tcp
   port: 47389
   server: shcu.forgebukkit.com
@@ -1082,7 +1053,7 @@ proxies:
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Beijing/小东的程序未能精准识别(可能是中转节点)_20
-  name: '80|mattkaydiary.com|中国香港/中国台湾(CN)... #3'
+  name: '79|mattkaydiary.com|中国香港/中国台湾(CN)... #3'
   network: tcp
   port: 26309
   server: V309.bgpnet.top
@@ -1097,7 +1068,7 @@ proxies:
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_30
-  name: '80|mattkaydiary.com|中国香港/中国台湾(CN)... #5'
+  name: '79|mattkaydiary.com|中国香港/中国台湾(CN)... #5'
   network: tcp
   port: 26203
   server: V203.bgpnet.top
@@ -1109,7 +1080,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 80,102|meta_vmess_510
+  name: 79,101|meta_vmess_510
   network: ws
   port: 8080
   server: yh2.freeh1.xyz
@@ -1124,7 +1095,35 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇨🇦_CA_加拿大+3
+  name: 80|_CN_国->_HK_
+  network: tcp
+  port: 50022
+  server: 218.204.179.210
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
+  ws-opts:
+    headers:
+      Host: 218.204.179.210
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 80|_CN_中国->🇭🇰_HK_香港+1
+  network: tcp
+  port: 50022
+  server: 50022.baidu-cdn.top
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
+  ws-opts:
+    headers:
+      Host: 50022.baidu-cdn.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 80|_US_美国->🇨🇦_CA_加拿大+3
   network: ws
   port: 80
   server: 162.159.200.3
@@ -1138,7 +1137,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇦_UA_克兰
+  name: 80|_US_美国->🇦_UA_克兰
   network: ws
   port: 80
   server: 104.17.2.183
@@ -1152,7 +1151,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_LY_->🇷_TR_
+  name: 80|_LY_->🇷_TR_
   network: ws
   port: 80
   server: 197.215.140.234
@@ -1166,7 +1165,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇨🇦_CA_加拿大+4
+  name: 80|_US_美国->🇨🇦_CA_加拿大+4
   network: ws
   port: 80
   server: 162.159.200.4
@@ -1179,14 +1178,14 @@ proxies:
       Host: ca3.889611.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 81|_CN_中国->🇬_SG_新加\r_由快嘴科技提供：kkzu...
+  name: 80|_CN_中国->🇬_SG_新加\r_由快嘴科技提供：kkzu...
   password: a863473a-78be-403b-a69e-addee3fc6e28
   port: 54087
   server: free.node.kk-proxy.pro
   type: ss
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇷_BR_西_8
+  name: 80|_US_美国->🇷_BR_西_8
   network: ws
   port: 80
   server: sblarm.kaolll.tech
@@ -1200,7 +1199,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_CN_中国->🇸🇬_SG_新加坡_由快嘴科技提供：kkzu...
+  name: 80|_CN_中国->🇸🇬_SG_新加坡_由快嘴科技提供：kkzu...
   network: ws
   port: 15002
   server: gz-1.jdweblink.lol
@@ -1214,7 +1213,7 @@ proxies:
     path: /zh-cn/news
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->_NL_兰_由快嘴科技提供：kkzui.co...
+  name: 80|_US_美国->_NL_兰_由快嘴科技提供：kkzui.co...
   network: ws
   port: 80
   server: 162.159.253.39
@@ -1228,7 +1227,7 @@ proxies:
     path: /shirker
 - alterId: 64
   cipher: auto
-  name: 81|_US_美国->🇱_NL_荷兰_2_由快嘴科技提供：kkzu...
+  name: 80|_US_美国->🇱_NL_荷兰_2_由快嘴科技提供：kkzu...
   network: tcp
   port: 43582
   server: 156.225.67.243
@@ -1241,14 +1240,14 @@ proxies:
       Host: 156.225.67.243
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 81|_CN_中国->🇺🇸_US_美国\r_2由快嘴科技提供：kk...
+  name: 80|_CN_中国->🇺🇸_US_美国\r_2由快嘴科技提供：kk...
   password: a863473a-78be-403b-a69e-addee3fc6e28
   port: 54455
   server: free.node.kk-proxy.pro
   type: ss
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇪_SE__28
+  name: 80|_US_美国->🇪_SE__28
   network: ws
   port: 80
   server: 198.41.220.181
@@ -1262,7 +1261,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 81|_CN_中国->🇧_GB_英国_29
+  name: 80|_CN_中国->🇧_GB_英国_29
   network: tcp
   port: 47009
   server: 120.226.50.91
@@ -1276,7 +1275,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇧_GB_英国_3由快嘴科技提供：kkzui...
+  name: 80|_US_美国->🇧_GB_英国_3由快嘴科技提供：kkzui...
   network: ws
   port: 443
   server: 104.31.16.14
@@ -1290,7 +1289,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇸_SG_新加坡_34
+  name: 80|_US_美国->🇸_SG_新加坡_34
   network: ws
   port: 80
   server: wxxjp.e5outllok.me
@@ -1304,7 +1303,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_NL_荷兰->🇺🇸_US_美国_37
+  name: 80|_NL_荷兰->🇺🇸_US_美国_37
   network: ws
   port: 80
   server: 188.114.97.152
@@ -1318,7 +1317,7 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: 81|_CN_中国->🇺🇸_US_美国_由快嘴科技提供：kkzui...
+  name: 80|_CN_中国->🇺🇸_US_美国_由快嘴科技提供：kkzui...
   network: tcp
   port: 59902
   server: 183.232.249.189
@@ -1332,7 +1331,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_CN_中国->🇺🇸_US_美国_2_40
+  name: 80|_CN_中国->🇺🇸_US_美国_2_40
   network: tcp
   port: 26661
   server: us2.node52.xyz
@@ -1346,7 +1345,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_CN_中国->🇺🇸_US_美国_3_4由快嘴科技提供：kk...
+  name: 80|_CN_中国->🇺🇸_US_美国_3_4由快嘴科技提供：kk...
   network: tcp
   port: 28351
   server: gzca1.node52.xyz
@@ -1360,7 +1359,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 81|_US_美国->🇳🇱_NL_荷兰_3_42
+  name: 80|_US_美国->🇳🇱_NL_荷兰_3_42
   network: tcp
   port: 46412
   server: 986.outline-vpn.cloud
@@ -1374,7 +1373,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_CN_中国->🇺🇸_US_美国_4_47
+  name: 80|_CN_中国->🇺🇸_US_美国_4_47
   network: tcp
   port: 28042
   server: us1.node52.xyz
@@ -1388,7 +1387,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81|_US_美国->🇫🇷_FR_法国_48
+  name: 80|_US_美国->🇫🇷_FR_法国_48
   network: ws
   port: 2082
   server: scw-fr.iiio.wiki
@@ -1401,7 +1400,7 @@ proxies:
       Host: scw-fr.iiio.wiki
     path: /aries?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: 81|_CN_中国->🇸🇬_SG_新加坡\r_2_49
+  name: 80|_CN_中国->🇸🇬_SG_新加坡\r_2_49
   password: a863473a-78be-403b-a69e-addee3fc6e28
   port: 31659
   server: free.node.kk-proxy.pro
