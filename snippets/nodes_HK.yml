@@ -1,7 +1,36 @@
 proxies:
+- cipher: aes-128-gcm
+  country: ' HK'
+  name: 13,16,17,70|🇭🇰HK-42.2.115.231-3659
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    tls: false
+  port: 443
+  server: 42.2.115.231
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 13|Relay_HK-BE_154 | 8.75Mb
+  network: ws
+  port: 8880
+  server: 103.160.204.38
+  servername: food.zhaal.ir
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      HOST: food.zhaal.ir
+    path: /
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 14,15,18,19,20,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  name: 14,15,18,19,20,33,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -74,7 +103,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 6|openitr
+  name: 18,76,94|RU 5|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -1150,15 +1179,6 @@ proxies:
   ws-headers:
     Host: www.baidu.com
   ws-path: /index
-- alterId: 2
-  cipher: auto
-  name: 57|13|YouTube面具人哈乐_香港_110
-  network: tcp
-  port: 1001
-  server: 62.216.92.70
-  tls: false
-  type: vmess
-  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
 - alterId: 0
   cipher: auto
   name: 57,74,81,92,98|香港3|@ripaojiedian
@@ -1191,22 +1211,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 57,74,77|🇭🇰 香港KT2|@ripaojiedian
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 42.2.115.231
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 57,70,74,77|🇭🇰 香港4|@ripaojiedian
@@ -1272,50 +1276,6 @@ proxies:
     path: /path/1693018744512
 - alterId: 0
   cipher: auto
-  name: 63|🇰-HK-001
-  network: ws
-  port: 443
-  server: aliyunhk01.caliburnonline.work
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a3aeff37-7a5d-4e2b-82fc-8daf44b216c2
-  ws-opts:
-    headers:
-      Host: aliyunhk01.caliburnonline.work
-    path: /oscarspy
-- alterId: 0
-  cipher: auto
-  name: 63|🇰-HK-002
-  network: ws
-  port: 20759
-  server: hkt.littleqqq.co
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f654c428-dc1d-47b9-b9ba-7c5fac15eeed
-  ws-opts:
-    headers:
-      Host: hkt.littleqqq.co
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 63,70,74,94|SG 3|openitr
-  network: ws
-  port: '80'
-  server: 8.217.147.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
-  ws-opts:
-    headers:
-      Host: 90104413082607.tw.chisi.link
-    path: /mls.html
-- alterId: 0
-  cipher: auto
   name: 67|HK
   network: ws
   port: '443'
@@ -1330,7 +1290,7 @@ proxies:
     path: /8uEzB6n2/
 - alterId: 0
   cipher: auto
-  name: 70,74|16|YouTube面具人哈乐_香港_4
+  name: 70|🇭🇰HK-8.218.158.94-0099
   network: ws
   port: 80
   server: 8.218.158.94
@@ -1341,6 +1301,20 @@ proxies:
   ws-opts:
     headers:
       Host: 8187541099772.tw.chisi.link
+    path: /mls.html
+- alterId: 0
+  cipher: auto
+  name: 70|🇭🇰HK-8.217.147.230-0101
+  network: ws
+  port: 80
+  server: 8.217.147.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
+  ws-opts:
+    headers:
+      Host: 90104413082607.tw.chisi.link
     path: /mls.html
 - cipher: aes-256-gcm
   name: 70|🇰HK-104.234.202.187-0425
@@ -1666,18 +1640,16 @@ proxies:
     headers:
       Host: hkt.littleqqq.co
     path: /hls/cctv5phd.m3u8
-- cipher: aes-128-gcm
-  name: 104|HK_speednode_0057
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 8.218.82.85
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 94|HK 1|openitr
+  network: ws
+  port: '80'
+  server: fastly.alipay.ovh
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: fastly.alipay.ovh
+    path: /aries?ed=2048
