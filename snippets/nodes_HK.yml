@@ -1,4 +1,21 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 13|Relay_HK-BE_97 | 8.75Mb
+  network: ws
+  port: 8880
+  server: 103.160.204.38
+  servername: food.zhaal.ir
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      HOST: food.zhaal.ir
+    path: /
 - cipher: aes-256-cfb
   country: 🇰 HK
   name: 14,15,18,19,20,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
@@ -31,7 +48,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 7|openitr
+  name: 18,76,94|RU 6|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -45,31 +62,15 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,94|HK 1|openitr
-  network: ws
-  port: '80'
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: ''
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 35|🇭🇰HK_142
+  name: 18|HK_426
   network: ws
   port: 80
   server: 182.16.1.194
   skip-cert-verify: true
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
+  ws-opts:
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 42|香港_121320001
@@ -181,9 +182,9 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: 57,74|16|YouTube面具人哈乐_香港_44
+  name: 57,74,94|SG 3|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 8.217.147.230
   tls: false
   type: vmess
@@ -689,12 +690,6 @@ proxies:
   uuid: 58d4ad2b-82d5-4847-b88c-889de4d38c19
   ws-opts:
     path: /
-- cipher: aes-128-gcm
-  name: 70|🇰HK-47.76.185.99-4244
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 47.76.185.99
-  type: ss
 - cipher: aes-128-gcm
   name: 70|🇭🇰HK-42.2.115.231-4245
   password: a-wym4ovY4Yw
@@ -1450,21 +1445,6 @@ proxies:
     path: /zh-cn/download
 - alterId: 0
   cipher: auto
-  name: 78|香港_Telegram@kxswa
-  network: ws
-  port: 20301
-  server: data-jp-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      host: data-jp-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
   name: 84|香港(yudou66.com 玉豆免费节点)
   network: ws
   port: 443
@@ -1491,3 +1471,33 @@ proxies:
     headers:
       Host: hkt.littleqqq.co
     path: /hls/cctv5phd.m3u8
+- cipher: aes-128-gcm
+  name: 104|HK_speednode_0043
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.82.85
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 104|HK_speednode_0045
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.71.80
+  type: ss
+  udp: true
