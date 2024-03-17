@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14,15,18,19,20,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 14,15,18,19,20,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -13,7 +13,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 18,42,49,52,68,70,94|CN 3|openitr
+  name: 18,42,49,52,68,70,94|CN 1|openitr
   network: ws
   port: '443'
   server: 123.58.197.70
@@ -26,12 +26,23 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf
+  country: HK
+  name: 18|Relay_HK-HK_424
+  obfs: plain
+  obfs-param: 090cf34.microsoft.com
+  password: fXuEWU
+  port: 10002
+  protocol: auth_aes128_sha1
+  protocol-param: 34:tnuzJZDS
+  server: cm01.bestvmr.com
+  type: ssr
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,76,94|RU 7|openitr
+  name: 18,76,94|RU 10|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -40,36 +51,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0855b410-0e96-4d0a-9b6e-80830edec462
-- alterId: 64
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 18,94|HK 2|openitr
-  network: ws
-  port: '80'
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: ''
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 35|🇭🇰HK_148
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 42|香港_121320001
@@ -181,7 +162,7 @@ proxies:
     path: /aries?ed=2048
 - alterId: 64
   cipher: auto
-  name: 49,70,98|🇭🇰HK-182.16.1.194-8915
+  name: 49,70,98|🇭🇰HK-182.16.1.194-9366
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -1081,6 +1062,19 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: 51,53,56,92,94|RO 1|openitr
+  network: tcp
+  port: '1001'
+  server: 62.216.92.70
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
+  ws-headers:
+    Host: 62.216.92.70
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 57,74,77|🇭🇰 香港KT|@ripaojiedian
@@ -1116,16 +1110,16 @@ proxies:
   server: hk05.jjjjjj.icu
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 57,74,98|香港|@ripaojiedian
+  name: 57,74,92,94,98|香港3|@ripaojiedian
   network: tcp
-  port: '44827'
-  server: hkjcdn03.dorabbb.top
+  port: '54882'
+  server: 120.238.122.199
   servername: ''
   tls: false
   type: vmess
-  uuid: 40c58958-2432-4f60-9b5d-746f9cded85f
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 61|香港_【YouTube-VV科技】
@@ -1450,9 +1444,9 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 92,98|🇭🇰HK-152.32.190.239-0094
+  name: 92|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2...
   network: ws
-  port: 4431
+  port: '4431'
   server: 152.32.190.239
   servername: cfhk.393930.xyz
   tls: true
@@ -1478,44 +1472,29 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 98|🇭🇰HK-8.218.158.94-0099
+  name: 98|官网 xxyy.me
   network: ws
-  port: 80
-  server: 8.218.158.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f898582b-33de-4bea-aee1-d83e9a369c7d
-  ws-opts:
-    headers:
-      Host: 8187541099772.tw.chisi.link
-    path: /mls.html
-- alterId: 0
-  cipher: auto
-  name: 98|🇭🇰HK-47.76.80.72-0774
-  network: ws
-  port: 2053
-  server: 47.76.80.72
-  servername: cfhk.393930.xyz
+  port: '13080'
+  server: 119.8.62.199
+  servername: hk.pdda.me
   tls: true
   type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  uuid: b3bb2518-1435-48e5-b01a-4f9f628baaf1
   ws-opts:
     headers:
-      Host: cfhk.393930.xyz
-    path: /
+      Host: hk.pdda.me
+    path: /pdd?ed=2048
 - cipher: aes-128-gcm
-  name: 104|HK_speednode_0045
+  name: 104|HK_speednode_0126
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
     host: ''
     mode: websocket
     mux: true
-    path: ''
+    path: /
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 8.218.71.80
+  server: 8.218.196.35
   type: ss
-  udp: true
