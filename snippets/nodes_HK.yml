@@ -1,26 +1,48 @@
 proxies:
-- alterId: 0
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14,15,18,19,20,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
+- alterId: 64
   cipher: auto
-  country: 🇼TW
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 13,18,42,49,52,68,70,106|🇼TW_912
+  name: 16| HK_73
   network: ws
-  port: 443
-  server: 123.58.197.70
-  servername: ''
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: hrgdvpn.flycdnedc55.vip
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    path: /
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-headers:
+    HOST: hrgdvpn.flycdnedc55.vip
+  ws-path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 16,35|🇭🇰HK_151
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 13|Relay_HK-BE_94 | 8.75Mb
+  name: 17|Relay_HK-BE_236 |21.68Mb
   network: ws
   port: 8880
   server: 103.160.204.38
@@ -32,15 +54,24 @@ proxies:
     headers:
       HOST: food.zhaal.ir
     path: /
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14,15,18,19,20,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
-  obfs: tls1.2_ticket_auth
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  server: 150.107.46.21
-  type: ssr
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42,49,52,68,70,94|CN 2|openitr
+  network: ws
+  port: '443'
+  server: 123.58.197.70
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: chacha20-ietf
   country: HK
   name: 18|Relay_HK-HK_424
@@ -57,7 +88,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,57,74,76,94|RU 8|openitr
+  name: 18,57,76,94|RU 12|openitr
   network: tcp
   port: '80'
   server: 194.156.98.179
@@ -68,10 +99,10 @@ proxies:
   uuid: 0855b410-0e96-4d0a-9b6e-80830edec462
 - alterId: 0
   cipher: auto
-  country: 🇭🇰 HK
+  country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 20,35|🇰 HK_125
+  name: 20,35|🇰 HK_132
   network: ws
   port: 443
   server: 47.242.109.138
@@ -79,7 +110,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 9DC41E4B-53A8-A442-E911-4BC5F490F2CD
+  uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
   ws-headers:
     HOST: 47.242.109.138
   ws-path: /myblog
@@ -1113,7 +1144,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 57,74,77|🇭🇰 香港2|@ripaojiedian
+  name: 57|15|🇭🇰 香港2|@ripaojiedian
   obfs: tls1.2_ticket_auth
   obfs-param: b91a022997.microsoft.com
   password: Fhbe0z
@@ -1124,7 +1155,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 57,70,74,77|🇭🇰 香港4|@ripaojiedian
+  name: 57,70|🇳CN-36.151.192.63-4192
   password: 66f9f4e5-a88d-40b2-a1ae-6b750b71a8bb
   port: 43217
   server: hk05.jjjjjj.icu
@@ -1132,7 +1163,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 57,74,98|香港|@ripaojiedian
+  name: 57,98|香港|@ripaojiedian
   network: tcp
   port: '44827'
   server: hkjcdn03.dorabbb.top
@@ -1142,7 +1173,7 @@ proxies:
   uuid: 40c58958-2432-4f60-9b5d-746f9cded85f
 - alterId: 64
   cipher: auto
-  name: 57,74,98|香港3|@ripaojiedian
+  name: 57,98|香港3|@ripaojiedian
   network: tcp
   port: '54882'
   server: 120.238.122.199
@@ -1415,6 +1446,137 @@ proxies:
   port: 48526
   server: hytron.fuzzybuy.ca
   type: ss
+- alterId: 2
+  cipher: auto
+  name: 71|🇭🇰 香港(欢迎订阅Youtube破解资源君)
+  network: ws
+  port: '10033'
+  server: hkaz1.xmrth-node.xyz
+  tls: false
+  type: vmess
+  uuid: fff8caab-7472-32c1-9a70-3953002ebb35
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /index
+- alterId: 2
+  cipher: auto
+  name: '71|🇭🇰 香港(欢迎订阅Youtube破解资源君) #1'
+  network: ws
+  port: '10009'
+  server: hkaz3.xmrth-node.xyz
+  tls: false
+  type: vmess
+  uuid: fff8caab-7472-32c1-9a70-3953002ebb35
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /index
+- alterId: 2
+  cipher: auto
+  name: '71|🇭🇰 香港(欢迎订阅Youtube破解资源君) #2'
+  network: ws
+  port: '10026'
+  server: hkaz1.xmrth-node.xyz
+  tls: false
+  type: vmess
+  uuid: fff8caab-7472-32c1-9a70-3953002ebb35
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /index
+- alterId: 2
+  cipher: auto
+  name: '71|🇭🇰 香港(欢迎订阅Youtube破解资源君) #3'
+  network: ws
+  port: '10028'
+  server: hkaz3.xmrth-node.xyz
+  tls: false
+  type: vmess
+  uuid: fff8caab-7472-32c1-9a70-3953002ebb35
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /index
+- alterId: 2
+  cipher: auto
+  name: '71|🇭🇰 香港(欢迎订阅Youtube破解资源君) #4'
+  network: ws
+  port: '10019'
+  server: hkaz3.xmrth-node.xyz
+  tls: false
+  type: vmess
+  uuid: fff8caab-7472-32c1-9a70-3953002ebb35
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /index
+- alterId: 2
+  cipher: auto
+  name: '71|🇭🇰 香港(欢迎订阅Youtube破解资源君) #5'
+  network: ws
+  port: '10062'
+  server: hkaz1.xmrth-node.xyz
+  tls: false
+  type: vmess
+  uuid: fff8caab-7472-32c1-9a70-3953002ebb35
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 74,77|🇭🇰 香港|@ripaojiedian
+  network: ws
+  port: 21033
+  server: hk.lianjianode.cc
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5f4548f9-e342-460c-8eb4-0ca81d24d41c
+  ws-opts:
+    headers:
+      Host: hk1.luodi.xyz
+    path: /hongkong
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 74,77|🇭🇰 香港2|@ripaojiedian
+  network: ws
+  port: 443
+  server: hkcft01.xqc.best
+  servername: drplky41bs67j.cloudfront.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: d52ac80d-4bf9-4505-b67a-e0b781b3b2bb
+  ws-opts:
+    headers:
+      Host: drplky41bs67j.cloudfront.net
+    path: /stream
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 74,77|🇭🇰 香港3|@ripaojiedian
+  password: 6f932057-ffd9-4426-8ca7-f0654babf84f
+  port: 20001
+  server: ddns.olucloud.subapi.cc
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 74,77|🇭🇰 香港5|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: b91a022997.microsoft.com
+  password: Fhbe0z
+  port: 11421
+  protocol: auth_aes128_sha1
+  protocol-param: 22997:JeHHT2
+  server: vip3.niuniupremium.xyz
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 75|香港(油管:破解资源君)
@@ -1488,17 +1650,13 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 92,94,106|Relay_-ZZ_702
+  name: 92,94|HK 1|openitr
   network: ws
-  port: 4431
+  port: '4431'
   server: 152.32.190.239
   servername: cfhk.393930.xyz
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
   ws-opts:
     headers:
@@ -1506,9 +1664,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 98|🇭🇰香港HGC-01s-公测
+  name: 98|剩余流量：0
   network: ws
-  port: '33301'
+  port: '443'
+  server: 35.194.142.42
+  servername: hk.pdda.me
+  tls: true
+  type: vmess
+  uuid: b3bb2518-1435-48e5-b01a-4f9f628baaf1
+  ws-opts:
+    headers:
+      Host: hk.pdda.me
+    path: /pdd?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 98|🇭🇰香港宽频-01✨全流媒体
+  network: ws
+  port: '33105'
+  server: 120.238.118.241
+  tls: false
+  type: vmess
+  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /qwe123321ewq
+- alterId: 0
+  cipher: auto
+  name: 98|🇭🇰香港电讯01 | ✨Netflix
+  network: ws
+  port: '33001'
   server: 120.238.118.241
   tls: false
   type: vmess
@@ -1532,9 +1717,9 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: 98|🇭🇰香港-Netflix专线
+  name: 98|🇭🇰香港HGC-01s-公测
   network: ws
-  port: '37101'
+  port: '33301'
   server: 120.238.118.241
   tls: false
   type: vmess
@@ -1545,9 +1730,9 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: 98|🇭🇰香港宽频-01✨全流媒体
+  name: 98|🇭🇰香港-Netflix专线
   network: ws
-  port: '33105'
+  port: '37101'
   server: 120.238.118.241
   tls: false
   type: vmess
@@ -1569,21 +1754,23 @@ proxies:
     headers:
       Host: ''
     path: ''
-- alterId: 0
-  cipher: auto
-  name: 98|🇭🇰香港电讯01 | ✨Netflix
-  network: ws
-  port: '33001'
-  server: 120.238.118.241
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
 - cipher: aes-128-gcm
-  name: 104,106|_14 | 7.21Mb
+  name: 104|HK_speednode_0022
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.71.80
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 104|HK_speednode_0025
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -1595,5 +1782,35 @@ proxies:
     tls: false
   port: 443
   server: 47.243.196.229
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 104|HK_speednode_0026
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.196.35
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 104|HK_speednode_0027
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 47.76.185.99
   type: ss
   udp: true
