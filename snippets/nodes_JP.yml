@@ -1,71 +1,41 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 13,17,104,106| | 6.12Mb
-  password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8
-  port: 20103
-  server: 101.91.214.217
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13,17,33,104,106|Relay_-🇯🇵JP_09 | 6.03Mb
-  password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8
-  port: 20105
-  server: 101.91.214.217
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13,17,33,104,106|Relay_-🇯🇵JP_16 |17.35Mb
-  password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8
-  port: 20101
-  server: 101.91.214.217
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13,17,33,104,106|Relay_-🇯🇵JP_14 |10.42Mb
-  password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8
-  port: 20102
-  server: 101.91.214.217
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13,17,33,104,106|Relay_-JP_12 |17.21Mb
-  password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8
-  port: 20104
-  server: 101.91.214.217
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 14,15,70,95,98,106|Relay_-🇯🇵JP_315 | 3.00Mb
+  name: 14,15,70,95,98|8J%2BHr%2FCfh7VKUC0zLjExMi4xMj...
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: eAokbaDN6
-  port: 8081
+  port: '8081'
   protocol: origin
   protocol-param: ''
   server: jp-am48-6.eqnode.net
   type: ssr
 - cipher: chacha20-ietf-poly1305
   country: JP
-  name: 14,15,18,45,70,86,106|Pool__180 |56.44Mb
+  name: 14,15,16,18,45,70,86|🇯🇵JP-185.172.113.182-0974
   password: G!yBwPWH3Vao
-  port: 811
+  port: '811'
   server: 185.172.113.182
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  country: ' JP'
+  country: JP
   h2-opts: {}
   http-opts: {}
-  name: '16,20,35|_57 #1'
+  name: 14,49,52,68,70,94|JP 1|openitr
   network: ws
-  port: 41597
+  port: '41597'
   server: 183.181.36.194
-  skip-cert-verify: true
+  servername: ''
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-path: /
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-cfb
   country: US
   name: 17,18|Relay_US-JP_596
@@ -78,28 +48,13 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: JP
-  name: 17,18|Pool_JP_415
+  name: 18|Pool_JP_415
   obfs: plain
   password: www.xbvpn.com
   port: 443
   protocol: origin
   server: 45.67.53.250
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 18,20,52,68,92,94|US 1|openitr
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
-  ws-path: /
 - alterId: 0
   cipher: auto
   country: JP
@@ -123,7 +78,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 35|🇺🇸US_319
+  name: 35|🇺🇸US_323
   network: tcp
   port: 11773
   server: jp02-vm0.entry.srthdw.art
@@ -137,7 +92,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 35|🇺🇸US_317
+  name: 35|🇺🇸US_321
   network: tcp
   port: 21581
   server: jp03-alt-vm0.entry.srthdw.art
@@ -194,38 +149,6 @@ proxies:
   ws-opts:
     headers:
       Host: cache-hk-2.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: 38,49,51,53,56,70|🇵JP-154.16.248.177-1202
-  network: ws
-  port: 3380
-  server: 154.16.248.177
-  servername: cache-hk-1.cn-db.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
-  ws-opts:
-    headers:
-      Host: cache-hk-1.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: 38,49,51,53,56,70|🇯🇵JP-154.16.248.177-1203
-  network: ws
-  port: 32100
-  server: 154.16.248.177
-  servername: data-hk-3.cn-db.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
-  ws-opts:
-    headers:
-      Host: data-hk-3.cn-db.top
     path: /db00
 - alterId: 0
   cipher: auto
@@ -570,227 +493,212 @@ proxies:
   name: 45|🇯🇵 JP 10 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 172.104.90.43
+  server: 52.195.228.139
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 11 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 54.95.215.125
+  server: 18.179.197.162
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|🇯🇵 JP 12 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 172.104.90.43
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 13 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 13.231.106.60
+  server: 172.105.205.214
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 14 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 13.114.31.41
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|🇯🇵 JP 15 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 52.69.48.25
+  server: 172.104.96.103
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 16 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 54.178.71.192
+  server: 18.177.142.32
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 17 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 172.105.230.133
+  server: 172.105.220.7
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 18 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 13.230.213.154
+  server: 103.29.70.9
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 19 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 54.65.130.9
+  server: 103.29.68.226
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 2 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 18.179.37.79
+  server: 13.230.213.154
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 20 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 43.207.207.206
+  server: 172.105.219.224
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 21 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 172.104.117.248
+  server: 139.162.108.118
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 22 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 54.249.79.143
+  server: 18.179.16.135
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|🇯🇵 JP 23 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 54.95.215.125
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 24 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 54.250.34.221
+  server: 18.176.215.63
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 25 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 52.195.228.139
+  server: 52.199.249.206
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 26 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 18.179.197.162
+  server: 52.199.164.162
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 27 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 172.105.205.214
+  server: 54.249.220.208
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 28 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 172.104.96.103
+  server: 54.178.26.105
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 3 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 18.177.142.32
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|🇯🇵 JP 30 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 172.105.220.7
+  server: 54.65.130.9
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 31 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 103.29.70.9
+  server: 13.231.106.60
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 32 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 103.29.68.226
+  server: 13.114.31.41
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 33 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 172.105.219.224
+  server: 52.69.48.25
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 34 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 139.162.108.118
+  server: 54.178.71.192
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 35 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 18.179.16.135
+  server: 172.105.230.133
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 4 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 18.176.215.63
+  server: 18.179.37.79
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 5 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 52.199.249.206
+  server: 43.207.207.206
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 6 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 52.199.164.162
+  server: 172.104.117.248
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|🇯🇵 JP 7 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 54.249.220.208
+  server: 54.249.79.143
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇯🇵 JP 8 → tg@nicevpn123
+  name: 45|🇯🇵 JP 9 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 54.178.26.105
+  server: 54.250.34.221
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 49,52,68,70,94,106|_447 |21.50Mb
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 49,68,70|🇯🇵JP-104.238.160.78-0399
@@ -1227,21 +1135,6 @@ proxies:
   uuid: 8e1da325-b69c-417f-9633-544f239b3d40
 - alterId: 0
   cipher: auto
-  name: '57,70,74,98,107|美国【付费推荐：https://jdyvip.link/】7... #2'
-  network: ws
-  port: '443'
-  server: 02.appleid.bf
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: gw.alicdn.com
-    path: /CAT
-- alterId: 0
-  cipher: auto
   name: 57,74|17|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -1280,8 +1173,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  country: 🇨CN
-  name: '57,74,77,106|未命名 #34'
+  name: 57,74,77|🇯🇵 日本3|@ripaojiedian
   obfs: tls1.2_ticket_auth
   obfs-param: b91a022997.microsoft.com
   password: Fhbe0z
@@ -1290,17 +1182,6 @@ proxies:
   protocol-param: 22997:JeHHT2
   server: vip3.niuniupremium.xyz
   type: ssr
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '57,70,74,77,93|未命名 #19'
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20014
-  server: jp2.mhw7e2.online
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: 68|夏夏2-日@SSRSUB
@@ -1351,6 +1232,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 6b9f91a9-4e8d-433b-c8d4-d2564e616afd
+- alterId: 0
+  cipher: auto
+  name: '70,74,98,107|美国【付费推荐：https://jdyvip.link/】7... #2'
+  network: ws
+  port: '443'
+  server: 02.appleid.bf
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /CAT
 - cipher: chacha20-ietf-poly1305
   name: 70|🇵JP-89.31.126.150-0281
   password: G!yBwPWH3Vao
@@ -2214,19 +2110,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 98|🇯🇵日本大阪02 | ✨全流媒体
-  network: ws
-  port: '42002'
-  server: 60.211.205.105
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
   name: 98|🇯🇵日本-Netflix专线
   network: ws
   port: '37102'
@@ -2253,6 +2136,19 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
+  name: 98|🇯🇵日本东京01 | 原生IP
+  network: ws
+  port: '42003'
+  server: 60.211.205.105
+  tls: false
+  type: vmess
+  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /qwe123321ewq
+- alterId: 0
+  cipher: auto
   name: 98|🇯🇵日本大阪03 | ✨全流媒体
   network: ws
   port: '42004'
@@ -2266,9 +2162,9 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: 98|🇯🇵日本东京01 | 原生IP
+  name: 98|🇯🇵日本大阪02 | ✨全流媒体
   network: ws
-  port: '42003'
+  port: '42002'
   server: 60.211.205.105
   tls: false
   type: vmess

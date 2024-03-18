@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,6,7,8,9,10,11,12,24,30,31,49,57,59,64,68,70,71,74,92,94,98,107,108|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+  name: '0,2,6,7,8,9,10,11,12,24,30,31,38,49,53,57,59,64,68,70,71,74,92,98,107,108|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
     #15'
   network: ws
   port: 8880
@@ -10,6 +10,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -20,14 +21,11 @@ proxies:
   country: 🇫🇷 FR
   h2-opts: {}
   http-opts:
-    headers:
-      Host:
-      - 51.159.155.52
     method: GET
     path:
     - /
-  name: '2,4,6,7,10,11,13,15,17,30,31,33,38,49,51,53,56,57,58,59,63,64,68,70,71,74,79,94,98,104,106,108|🇫🇷_FR_法国
-    #12'
+  name: '2,4,6,7,9,10,11,15,17,30,31,38,49,51,53,56,57,58,59,63,64,68,70,71,74,79,94,98,104,108|🇫🇷_FR_法国
+    #13'
   network: http
   port: 3389
   server: 51.159.155.52
@@ -39,7 +37,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - cipher: aes-256-cfb
   country: FR
-  name: 13|Relay_FR-GB_81
+  name: 13,17|Relay_FR-US_269 | 2.13Mb
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 163.172.64.22
@@ -49,11 +47,11 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 13,94|US 103|openitr
+  name: '13,17,68,84,87,93,107|美国【付费推荐：https://jdyvip.link/】5... #6'
   network: ws
   port: '2082'
-  server: 104.21.8.157
-  servername: s1c.v2.v001sss.xyz
+  server: s1c.v2.v001sss.xyz
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -62,46 +60,120 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 13|Relay_ZZ-FR_246
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      HOST: s1c.v2.v001sss.xyz
+    path: /
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 14,15,18,20,35,70|🇪DE-217.182.198.219-2788
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 14,15,18,19,20,35,70|🇫🇷FR-149.202.82.172-0993
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: ' FR'
+  name: 14,15,18,20,35,70|🇪DE-217.182.198.219-2921
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: FR
+  name: 14,15,18|FR_372
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 217.182.198.219
+  type: ss
 - cipher: aes-256-gcm
   country: ' ZZ'
-  name: '14,15,18,35,70,106|_190 #1'
+  name: 14,15,18,35,70|🇷FR-149.202.82.172-2637
   password: KixLvKzwjekG00rm
   port: 8000
   server: 149.202.82.172
   type: ss
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: '14,15,16,18,33,35,70,106|_184 #1'
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 149.202.82.172
+  name: 14,15,18,19,20,35,45,70,86|🇷FR-51.159.111.208-0897
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 51.159.111.208
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '14,15,18,35,70,106|_195 #1'
-  password: e4FCWrgpkji3QY
-  port: 9101
+  country: ' FR'
+  name: 14,15,18,19,20,35,70|🇷FR-149.202.82.172-0988
+  password: TEzjfAYq2IjtuoS
+  port: 6697
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: ' ZZ'
-  name: '14,15,18,35,51,70,97,106|_194 #1'
+  name: 14,15,18,35,51,70|🇷FR-149.202.82.172-2634
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 149.202.82.172
   type: ss
   udp: true
 - cipher: aes-256-gcm
+  country: ' ZZ'
+  name: 14,15,18,70|🇫🇷FR-149.202.82.172-2895
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 14,15,18,35,70|🇫🇷FR-149.202.82.172-2626
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 149.202.82.172
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   country: ' FR'
-  name: '14,15,16,18,35,70,106|_189 #1'
+  name: 14,15,16,18,35,70|🇫🇷FR-149.202.82.172-2843
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: ' FR'
+  name: 14,15,16,18,35,70|🇫🇷FR-149.202.82.172-2636
   password: e4FCWrgpkji3QY
   port: 9102
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: '14,15,18,33,35,36,51,70,106|_193 #1'
+  name: 14,15,18,35,36,70|🇫🇷FR-149.202.82.172-2839
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 14,15,16,18,35,36,70|🇷FR-149.202.82.172-2229
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 149.202.82.172
@@ -109,36 +181,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: '14,15,18,35,70,106|_198 #1'
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 149.202.82.172
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: ' ZZ'
-  name: '14,15,18,35,70,106|_139 #1'
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 14,15,18,20,35,70,106|_151 | 6.61Mb
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 14,15,18,106|🇫🇷FR_794 | 6.74Mb
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '14,15,18,35,70,106|_192 #1'
+  name: 14,15,16,18,35,70|🇫🇷FR-149.202.82.172-2639
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 149.202.82.172
@@ -146,93 +189,65 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: '14,15,18,35,70,106|_159 #1'
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: ' ZZ'
-  name: '14,15,18,70,106|_135 #1'
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 149.202.82.172
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇫🇷FR
-  name: '14,15,18,19,20,33,34,35,45,70,86,106|_213 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.159.111.208
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '14,15,18,19,20,33,34,35,70,106|_211 #1'
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: ' FR'
-  name: 14,15,18,20,35,70,106|_121 | 6.67Mb
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '14,15,18,19,20,33,34,35,70,106|_209 #1'
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '14,15,16,18,33,35,70,106|_119 #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '14,15,18,35,70,106|_148 #1'
+  name: 14,15,18,35,70|🇫🇷FR-149.202.82.172-2820
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  country: ' ZZ'
-  name: '14,15,18,70,106|_137 #1'
-  password: Y6R9pAtvxxzmGC
-  port: 5600
+  country: 🇫🇷FR
+  name: 14,15,16,18,35,36,70|🇫🇷FR-149.202.82.172-2640
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 149.202.82.172
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 14,15,18,35,70|🇷FR-149.202.82.172-2630
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: ' FR'
+  name: 14,15,16,18,35,70|🇷FR-149.202.82.172-2919
+  password: g5MeD6Ft3CWlJId
+  port: 5003
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: ' ZZ'
-  name: '14,15,18,70,106|_140 #1'
+  name: 14,15,18,70|🇫🇷FR-149.202.82.172-2844
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
+  country: ' ZZ'
+  name: 14,15,18,70|🇫🇷FR-149.202.82.172-2855
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 149.202.82.172
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: '14,15,16,18,33,35,70,106|_127 #1'
+  name: 14,15,16,18,35,70|🇫🇷FR-149.202.82.172-2928
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 149.202.82.172
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  name: '18,33,51,97,106|_19 #2'
+  country: 🇫FR
+  name: 16,18,35,36,51|SS-法国:德国-locked-ChatGPT-TikTok...
   password: G!yBwPWH3Vao
   port: 800
   server: 51.178.87.37
   type: ss
 - cipher: aes-256-ctr
-  country: 🇷FR
-  name: 18,106|Pool_🇫🇷FR_812 |235.00Mb
+  country: FR
+  name: 18|Pool_FR_375
   obfs: tls1.2_ticket_auth
   password: NewBypasser2023
   port: 443
@@ -257,29 +272,33 @@ proxies:
       HOST: de1-vmess.greenssh.xyz
     path: /vmess
 - country: FR
-  name: 23|netflix_FR
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.21.90
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: FR
-  name: 23|FR_06
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.36.160.181
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: FR
   name: 23|FR_07
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 35.181.19.106
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: FR
+  name: 23,93|🇺🇸US美国12 741.6KB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.160.181
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 23|FR_09
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.76.17
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -325,7 +344,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 45|🇫🇷 FR 3 → tg@nicevpn123
+  name: 45|🇫🇷 FR 5 → tg@nicevpn123
   network: ws
   port: 45094
   server: 91.121.37.90
@@ -338,7 +357,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 45|🇫🇷 FR 4 → tg@nicevpn123
+  name: 45|🇫🇷 FR 6 → tg@nicevpn123
   network: ws
   port: 8080
   server: 173.245.49.54
@@ -836,20 +855,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 51,53,56,92,93|FR国
-  network: tcp
-  port: 3586
-  server: 213.32.63.176
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c770f126-c0dc-48e5-b225-076876f6c91d
-  ws-headers:
-    Host: zula.ir
-  ws-path: /OUIpxwwmtpJGIWzraW7dl5
-- alterId: 0
-  cipher: chacha20-poly1305
   name: 51,53,56|法国 001
   network: tcp
   port: 56
@@ -870,6 +875,17 @@ proxies:
   uuid: c00824f5-eb18-4321-993b-a69ab2596771
   ws-headers:
     Host: speedtest.net
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 51,53,56,92|🔒 VM-TCP-NA 🇫🇷 FR-213.32.63.17...
+  network: tcp
+  port: '3586'
+  server: 213.32.63.176
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c770f126-c0dc-48e5-b225-076876f6c91d
 - alterId: 64
   cipher: auto
   name: 61|法国_【YouTube-VV科技】
@@ -883,6 +899,20 @@ proxies:
     headers:
       Host: www.49291261.xyz
     path: /path/1693992821776
+- alterId: 0
+  cipher: auto
+  name: 63,70,74|16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
+  network: ws
+  port: '80'
+  server: eu-2.hihu.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 428a7680-e4f5-11ee-b035-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: zula.ir
+    path: /@hopev2ray
 - alterId: 0
   cipher: auto
   name: 68|🇫🇷 法国@SSRSUB
@@ -1314,9 +1344,8 @@ proxies:
   server: 135.125.244.103
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  name: 70,106|Pool_🇫🇷FR_787
-  password: L65Li0O8J98RWcRE6t3PoE
+  name: 70|🇷FR-92.243.27.51-9155
+  password: Kq3iQqtVlyPJBPcD6QpnGE
   port: 9802
   server: paris.telegavpn.com
   type: ss
@@ -1386,17 +1415,10 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  name: 70,106|Relay_🇫🇷FR-🇫🇷FR_811
-  password: L65Li0O8J98RWcRE6t3PoE
+  name: 70|🇷FR-92.243.27.51-9316
+  password: Kq3iQqtVlyPJBPcD6QpnGE
   port: 9802
   server: 92.243.27.51
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 70|🇫🇷FR-51.178.87.37-9371
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 51.178.87.37
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 70|🇷FR-51.178.87.37-9372
@@ -1508,21 +1530,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '84,87,107|美国【付费推荐：https://jdyvip.link/】5... #6'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 84|法国(yudou66.com 玉豆免费节点)_3
   network: ws
   port: 8080
@@ -1537,10 +1544,7 @@ proxies:
     path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
 - alterId: 0
   cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: 86,106|Relay_🇫🇷FR-🇫🇷FR_813
+  name: 86|FR-141.94.115.231-0281
   network: ws
   port: 443
   server: fr-full.privateip.net
@@ -1549,6 +1553,9 @@ proxies:
   type: vmess
   uuid: e8e9537e-1542-41c9-a523-2be5a20d032f
   ws-opts:
+    headers:
+      host: fr-full.privateip.net
+    host: fr-full.privateip.net
     path: /RACEVPN
 - alterId: 0
   cipher: auto
@@ -1562,16 +1569,6 @@ proxies:
   uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
 - alterId: 0
   cipher: auto
-  name: 92,94|US 200|openitr
-  network: tcp
-  port: '44513'
-  server: 162.19.25.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
-- alterId: 0
-  cipher: auto
   name: 98|🇫🇷法国 | ✨全流媒体
   network: ws
   port: '42301'
@@ -1583,24 +1580,3 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
-- cipher: chacha20-ietf-poly1305
-  country: 🇫FR
-  name: 106|Relay_🇷FR-🇫🇷FR_792
-  password: G!yBwPWH3Vao
-  port: 804
-  server: bia-t-o.outline-vpn.cloud
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇷FR
-  name: 106|🇫🇷FR_795 | 7.15Mb
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 51.158.150.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  name: 106|🇫🇷FR_793
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 51.178.87.37
-  type: ss
