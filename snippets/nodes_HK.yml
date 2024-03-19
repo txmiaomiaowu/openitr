@@ -10,23 +10,10 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 16| HK_50
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
-- alterId: 0
-  cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 17|Relay_HK-BE_217 |10.13Mb
+  name: 17|Relay_HK-BE_250 |10.13Mb
   network: ws
   port: 8880
   server: 103.160.204.38
@@ -56,12 +43,23 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf
+  country: HK
+  name: 18|Relay_HK-HK_420
+  obfs: plain
+  obfs-param: 090cf34.microsoft.com
+  password: fXuEWU
+  port: 10002
+  protocol: auth_aes128_sha1
+  protocol-param: 34:tnuzJZDS
+  server: cm01.bestvmr.com
+  type: ssr
 - alterId: 0
   cipher: auto
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 20,35|🇰 HK_131
+  name: 20,35|🇰 HK_129
   network: ws
   port: 443
   server: 47.242.109.138
@@ -75,7 +73,7 @@ proxies:
   ws-path: /myblog
 - alterId: 0
   cipher: auto
-  name: 38,49,51,53,56,70,98|测试节点 01
+  name: 38,49,51,53,70,98|测试节点 01
   network: ws
   port: '13080'
   server: 182.160.14.145
@@ -91,7 +89,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 38,49,51,53,56,70,98|测试节点 02
+  name: 38,49,51,53,70,98|测试节点 02
   network: ws
   port: '30171'
   server: 103.235.18.154
@@ -215,9 +213,9 @@ proxies:
     headers:
       Host: fastly.alipay.ovh
     path: /aries?ed=2048
-- alterId: 32
+- alterId: 64
   cipher: auto
-  name: 49,70,98|🇭🇰HK-182.16.1.194-9313
+  name: 49,70,98|🇭🇰HK-182.16.1.194-9311
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -1136,7 +1134,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 51,53,56,92|🔒 VM-TCP-NA 🇭🇰 HK-62.216.92.70...
+  name: 51,53,92|🔒 VM-TCP-NA 🇭🇰 HK-62.216.92.70...
   network: tcp
   port: '1001'
   server: 62.216.92.70
@@ -1163,7 +1161,6 @@ proxies:
   server: 47.76.185.99
   tfo: false
   type: ss
-  udp: true
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 57,74,77|🇭🇰 香港3|@ripaojiedian
@@ -1530,13 +1527,17 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 92,94|HK 1|openitr
+  h2-opts: {}
+  http-opts: {}
+  name: 92,94,106|Relay_-ZZ_358 |47.88Mb
   network: ws
-  port: '4431'
+  port: 4431
   server: 152.32.190.239
   servername: cfhk.393930.xyz
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
   ws-opts:
     headers:
@@ -1556,3 +1557,19 @@ proxies:
     headers:
       Host: hkt.littleqqq.co
     path: /hls/cctv5phd.m3u8
+- Ltd. - 1: None
+  cipher: aes-128-gcm
+  delay: 1044
+  name: 104|HK_speednode_0030
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    tls: false
+  port: 443
+  server: 8.218.71.80
+  type: ss
+  udp: true
