@@ -1,11 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,12,71|🇨🇳 广东省 移动
+  name: 0,12,49,70,71|🇨🇳 广东省 移动
   network: ws
   port: '16627'
   server: vip.basicnode.host
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
@@ -14,36 +15,26 @@ proxies:
       Host: 193.25.215.160
     path: /niuniu
 - cipher: chacha20-ietf-poly1305
-  country: ' CN'
-  name: 13|Relay_ CN-ZZ_52 |10.36Mb
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 23102
-  server: p1.bxy-fun1.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: CN
-  name: 13,17|Relay_CN-LU_67 | 6.33Mb
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 35127
-  server: p1.bxy-fun3.com
+  name: 13,17|Relay_CN-JP_43 | 2.08Mb
+  password: a501c82c72d790b8
+  port: 8474
+  server: b5d28a9.sd.gladns.com
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   country: CN
-  name: 13,17| |12.01Mb
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 23103
-  server: 183.240.222.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: 14|Relay_CN-ZZ_33 | 8.12Mb
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 23106
-  server: p1.bxy-fun3.com
-  type: ss
+  name: 14,17|Relay_CN-CN_135 |30.06Mb
+  obfs: http_simple
+  obfs-param: ajax.microsoft.com
+  password: 1C0SNZ
+  port: 22141
+  protocol: auth_aes128_sha1
+  protocol-param: 30031:ZDe5ic
+  server: jp.12138.one
+  type: ssr
 - cipher: rc4-md5
   country: CN
-  name: 14|Relay_CN-CN_34 |225.00Mb
+  name: 14|Relay_CN-CN_36 |225.00Mb
   obfs: tls1.2_ticket_auth
   obfs-param: 8443f83013.www.gov.hk
   password: di15PV
@@ -54,7 +45,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 14,17|Relay_CN-CN_125 |66.00Mb
+  name: 14,17|Relay_CN-CN_123 |82.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
@@ -63,23 +54,12 @@ proxies:
   protocol-param: 175910:AcKdLc
   server: yd-04.paofunlink.com
   type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 14,17|Relay_CN-CN_170 |23.70Mb
-  obfs: http_simple
-  obfs-param: ajax.microsoft.com
-  password: 1C0SNZ
-  port: 22141
-  protocol: auth_aes128_sha1
-  protocol-param: 30031:ZDe5ic
-  server: jp.12138.one
-  type: ssr
 - alterId: 64
   cipher: auto
-  country: ' SG'
+  country: 🇨CN
   h2-opts: {}
   http-opts: {}
-  name: 16,20| SG_105
+  name: 16,20,35|CN_67
   network: ws
   port: 443
   server: 202.79.171.239
@@ -96,27 +76,90 @@ proxies:
   country: ' CN'
   h2-opts: {}
   http-opts: {}
-  name: 17|Relay_ CN-CH_62 | 2.77Mb
+  name: 17|Relay_ CN-CH_41 | 2.77Mb
   network: tcp
   port: 30128
   server: 183.232.170.22
   skip-cert-verify: true
   type: vmess
   uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   country: CN
-  name: 17|Relay_CN-CN_205 |259.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdr&dja*/?
-  port: 38010
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level2.unclemanco.com
+  name: 17,51,57,70,74,77|🇭🇰 香港4|@ripaojiedian
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20001
+  server: hk1.mhw7e2.online
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: CN
+  name: 17,38,57,70,74,77|🇰🇷 韩国2|@ripaojiedian
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20019
+  server: kr1.mhw7e2.online
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_132 |69.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5957
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_120 |71.00Mb
+  name: 17|Relay_CN-CN_117 |81.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_119 |69.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5959
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_199 |392.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: QHPy2u
+  port: 29601
+  protocol: auth_aes128_sha1
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_122 |85.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5951
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_133 |291.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
@@ -127,7 +170,29 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_131 |69.00Mb
+  name: 17|Relay_CN-CN_114 |69.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5957
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_121 |69.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_129 |75.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
@@ -138,215 +203,122 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_286
+  name: 17|Relay_CN-CN_130 |69.00Mb
   obfs: plain
-  password: mblank1port
-  port: 562
-  protocol: auth_aes128_md5
-  protocol-param: 48530:LLLiuiuiu787878
-  server: initest08.initcloud.pro
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5959
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-04.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_307
-  obfs: plain
-  password: mblank1port
-  port: 561
-  protocol: auth_aes128_md5
-  protocol-param: 48530:LLLiuiuiu787878
-  server: layercm05.initcloud.pro
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_296
-  obfs: plain
-  password: mblank1port
-  port: 563
-  protocol: auth_aes128_md5
-  protocol-param: 48566:LLLiuiuiu787878
-  server: usstand2.eucdurl.me
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,70,106|Relay_-🇨🇳CN_339 |159.00Mb
-  obfs: plain
-  obfs-param: ''
-  password: mblank1port
-  port: 560
-  protocol: auth_aes128_md5
-  protocol-param: 3866:125458558
-  server: layercm05.initcloud.pro
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_91 |57.00Mb
-  obfs: plain
-  password: mblank1port
-  port: 561
-  protocol: auth_aes128_md5
-  protocol-param: 39052:Lwjz965516244
-  server: 3layer03.initcloud.pro
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_152 |20.00Mb
-  obfs: plain
-  password: mblank1port
-  port: 563
-  protocol: auth_aes128_md5
-  protocol-param: 48465:LLLiuiuiu787878
-  server: cmres.standpro.co
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_153 | 5.10Mb
-  obfs: plain
-  password: mblank1port
-  port: 565
-  protocol: auth_aes128_md5
-  protocol-param: 38086:qwe123qwe
-  server: cmaisallin.debugspace.work
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_71 |22.49Mb
-  obfs: plain
-  password: mblank1port
-  port: 561
-  protocol: auth_aes128_md5
-  protocol-param: 48530:LLLiuiuiu787878
-  server: cmlayer6.standurls.co
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,19|Relay_CN-CN_22
-  obfs: plain
-  password: mblank1port
-  port: 560
-  protocol: auth_aes128_md5
-  protocol-param: 2338:9tQfxMX(0S;40f
-  server: cmlayer6.standurls.co
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_85 |71.00Mb
+  name: 17|Relay_CN-CN_127 |68.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
   port: 5951
   protocol: auth_aes128_sha1
   protocol-param: 175910:AcKdLc
-  server: yd-01.paofunlink.com
+  server: yd-04.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_352
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5950
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-01.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_149 |74.00Mb
+  name: 17|Relay_CN-CN_124 |68.00Mb
   obfs: plain
   obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5955
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_137 |303.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5953
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_334
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5953
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-01.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_142 |67.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
   port: 5954
   protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_350
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5957
-  protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
-  server: yd-01.paofunlink.com
+  server: yd-04.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_147 |64.00Mb
+  name: 17,18|Relay_CN-CN_310
+  obfs: plain
+  obfs-param: 2b49f229225.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 229225:zZ4fCm
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_312
   obfs: plain
   obfs-param: TG@wangcai_1
   password: bxsnucrgk6hfish
-  port: 5957
+  port: 5955
   protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
+  server: yd-04.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_89 |71.00Mb
+  name: 17|Relay_CN-CN_115 |69.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_118 |78.00Mb
+  obfs: plain
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 229225:zZ4fC%%
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_126 |70.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5955
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_116 |69.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5958
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_113 |69.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
   password: bxsnucrgk6hfish
   port: 5952
   protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-01.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_141 |70.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5955
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_320
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5955
-  protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
-  server: yd-01.paofunlink.com
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_134 |69.00Mb
+  obfs: plain
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdL%%
+  server: yd-04.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
@@ -361,90 +333,24 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_136 |67.00Mb
+  name: 17,18|Relay_CN-CN_334
   obfs: plain
-  obfs-param: TG@wangcai_1
+  obfs-param: microsoft.com
   password: bxsnucrgk6hfish
-  port: 5950
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_145 |67.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5952
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_319
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5959
+  port: 5953
   protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
   server: yd-01.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_140 |67.00Mb
+  name: 17,18|Relay_CN-CN_350
   obfs: plain
-  obfs-param: TG@wangcai_1
+  obfs-param: microsoft.com
   password: bxsnucrgk6hfish
-  port: 5951
+  port: 5957
   protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_332
-  obfs: plain
-  obfs-param: 2b49f229225.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5953
-  protocol: auth_aes128_sha1
-  protocol-param: 229225:zZ4fCm
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_146 |65.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5953
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_148 |67.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5954
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_78 |71.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5950
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
   server: yd-01.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
@@ -460,46 +366,25 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_288
-  obfs: plain
-  password: bxsnucrgk6hfish
-  port: 5953
-  protocol: auth_aes128_sha1
-  protocol-param: 229225:zZ4fC%%
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_143 |66.00Mb
+  name: 17,18|Relay_CN-CN_319
   obfs: plain
   obfs-param: TG@wangcai_1
   password: bxsnucrgk6hfish
-  port: 5958
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_300
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5958
+  port: 5959
   protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
   server: yd-01.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_329
+  name: 17|Relay_CN-CN_95 |79.00Mb
   obfs: plain
-  obfs-param: microsoft.com
+  obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
-  port: 5952
+  port: 5951
   protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-07.paofunlink.com
+  protocol-param: 175910:AcKdLc
+  server: yd-01.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
@@ -514,6 +399,93 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
+  name: 17|Relay_CN-CN_103 |84.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_96 |85.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_300
+  obfs: plain
+  obfs-param: microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5958
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_352
+  obfs: plain
+  obfs-param: microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_320
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5955
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-01.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,70|🇨🇳CN-183.232.117.21-4202
+  obfs: plain
+  obfs-param: ''
+  password: mblank1port
+  port: 560
+  protocol: auth_aes128_md5
+  protocol-param: 3866:125458558
+  server: layercm05.initcloud.pro
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_307
+  obfs: plain
+  password: mblank1port
+  port: 561
+  protocol: auth_aes128_md5
+  protocol-param: 48530:LLLiuiuiu787878
+  server: layercm05.initcloud.pro
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_205 |484.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: 2sa2/321a
+  port: 10071
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
   name: 17,18|Relay_CN-CN_336
   obfs: plain
   obfs-param: microsoft.com
@@ -525,50 +497,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_351
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5959
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_328
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5954
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_139 |66.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5956
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-06.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_108 |76.00Mb
-  obfs: plain
-  password: bxsnucrgk6hfish
-  port: 5959
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdL%%
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_101 |70.00Mb
+  name: 17|Relay_CN-CN_83 |69.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
@@ -590,33 +519,22 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_331
+  name: 17,18|Relay_CN-CN_333
   obfs: plain
   obfs-param: microsoft.com
   password: bxsnucrgk6hfish
-  port: 5953
+  port: 5951
   protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
   server: yd-07.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_98 |69.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5957
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_333
+  name: 17,18|Relay_CN-CN_331
   obfs: plain
   obfs-param: microsoft.com
   password: bxsnucrgk6hfish
-  port: 5951
+  port: 5953
   protocol: auth_aes128_sha1
   protocol-param: 40575:fV3Nxq
   server: yd-07.paofunlink.com
@@ -634,6 +552,59 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
+  name: 17|Relay_CN-CN_86 |73.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5958
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_73 |73.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_76 |79.00Mb
+  obfs: plain
+  password: bxsnucrgk6hfish
+  port: 5957
+  protocol: auth_aes128_sha1
+  protocol-param: 229225:zZ4fC%%
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_351
+  obfs: plain
+  obfs-param: microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5959
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_75 |69.00Mb
+  obfs: plain
+  password: bxsnucrgk6hfish
+  port: 5959
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdL%%
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
   name: 17,18|Relay_CN-CN_326
   obfs: plain
   obfs-param: 2b49f229225.microsoft.com
@@ -645,56 +616,13 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17,18|Relay_CN-CN_327
-  obfs: plain
-  obfs-param: fb7bc7521.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5956
-  protocol: auth_aes128_sha1
-  protocol-param: 7521:12HsOu
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_97 |71.00Mb
-  obfs: plain
-  password: bxsnucrgk6hfish
-  port: 5957
-  protocol: auth_aes128_sha1
-  protocol-param: 229225:zZ4fC%%
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_356
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5950
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_105 |71.00Mb
+  name: 17|Relay_CN-CN_84 |74.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
-  port: 5956
+  port: 5957
   protocol: auth_aes128_sha1
   protocol-param: 175910:AcKdLc
-  server: yd-07.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_309
-  obfs: plain
-  obfs-param: microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5956
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
   server: yd-07.paofunlink.com
   type: ssr
 - cipher: chacha20-ietf
@@ -710,14 +638,412 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_107 |69.00Mb
+  name: 17,18|Relay_CN-CN_356
+  obfs: plain
+  obfs-param: microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_309
+  obfs: plain
+  obfs-param: microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_328
+  obfs: plain
+  obfs-param: microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_327
+  obfs: plain
+  obfs-param: fb7bc7521.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 7521:12HsOu
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_329
+  obfs: plain
+  obfs-param: microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-07.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_109 |182.00Mb
+  obfs: plain
+  password: mblank1port
+  port: 561
+  protocol: auth_aes128_md5
+  protocol-param: 39052:Lwjz965516244
+  server: 3layer03.initcloud.pro
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_51 |431.00Mb
   obfs: plain
   obfs-param: 69666175910.microsoft.com
   password: bxsnucrgk6hfish
-  port: 5958
+  port: 5955
   protocol: auth_aes128_sha1
   protocol-param: 175910:AcKdLc
-  server: yd-07.paofunlink.com
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_54 |73.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_150 |75.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5957
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_61 |82.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5951
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_56 |69.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5958
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_62 |70.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_53 |67.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5955
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_50 |70.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_52 |68.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_55 |79.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_58 |67.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_288
+  obfs: plain
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 229225:zZ4fC%%
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_332
+  obfs: plain
+  obfs-param: 2b49f229225.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 229225:zZ4fCm
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_64 |72.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-06.paofunlink.com
+  type: ssr
+- cipher: rc4-md5
+  country: CN
+  name: 17|Relay_CN-CN_110 |312.00Mb
+  obfs: http_simple
+  obfs-param: ajax.microsoft.com
+  password: miejump.com
+  port: 667
+  protocol: auth_aes128_md5
+  protocol-param: 105860:2020931d-1126-3ea1-b931-b750f3ca563d
+  server: iplc-ji.mielink-dns2.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_131 |84.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_125 |67.00Mb
+  obfs: plain
+  obfs-param: 69666175910.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 175910:AcKdLc
+  server: yd-04.paofunlink.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_67 |22.00Mb
+  obfs: plain
+  password: mblank1port
+  port: 563
+  protocol: auth_aes128_md5
+  protocol-param: 48465:LLLiuiuiu787878
+  server: cmres.standpro.co
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_65 | 9.00Mb
+  obfs: plain
+  password: mblank1port
+  port: 565
+  protocol: auth_aes128_md5
+  protocol-param: 38086:qwe123qwe
+  server: cmaisallin.debugspace.work
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_204 |66.20Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: QHPy2u
+  port: 20021
+  protocol: auth_aes128_sha1
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_138 |253.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: d1da&dja*/?
+  port: 11102
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_63 |391.00Mb
+  obfs: tls1.2_ticket_auth
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: ayucl12s1
+  port: 5004
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level1.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,19|Relay_CN-CN_24
+  obfs: plain
+  password: mblank1port
+  port: 560
+  protocol: auth_aes128_md5
+  protocol-param: 2338:9tQfxMX(0S;40f
+  server: cmlayer6.standurls.co
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_93 |209.61Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: ayds23sd1
+  port: 39003
+  protocol: auth_aes128_sha1
+  protocol-param: 61610:G5gdyp
+  server: 231103level2.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_137 |253.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: 2sa2/1a
+  port: 10059
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_139 |503.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dajkdkjda&dja*/?
+  port: 11110
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103levelx.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_69 |20.00Mb
+  obfs: plain
+  password: mblank1port
+  port: 561
+  protocol: auth_aes128_md5
+  protocol-param: 48530:LLLiuiuiu787878
+  server: cmlayer6.standurls.co
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_286
+  obfs: plain
+  password: mblank1port
+  port: 562
+  protocol: auth_aes128_md5
+  protocol-param: 48530:LLLiuiuiu787878
+  server: initest08.initcloud.pro
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_140 |83.00Mb
+  obfs: tls1.2_ticket_auth
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: ayucloud1
+  port: 1876
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_296
+  obfs: plain
+  password: mblank1port
+  port: 563
+  protocol: auth_aes128_md5
+  protocol-param: 48566:LLLiuiuiu787878
+  server: usstand2.eucdurl.me
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17,18|Relay_CN-CN_306
+  obfs: plain
+  password: mblank1port
+  port: 561
+  protocol: auth_aes128_md5
+  protocol-param: 48566:LLLiuiuiu787878
+  server: usstand1.eucdurl.me
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_148 |264.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dajkdr&dja*/?
+  port: 38010
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level2.unclemanco.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
@@ -731,356 +1057,18 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_75 |32.28Mb
-  obfs: plain
-  password: mblank1port
-  port: 560
-  protocol: auth_aes128_md5
-  protocol-param: 39052:Lwjz965516244
-  server: cnhkall.debugex.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_306
-  obfs: plain
-  password: mblank1port
-  port: 561
-  protocol: auth_aes128_md5
-  protocol-param: 48566:LLLiuiuiu787878
-  server: usstand1.eucdurl.me
-  type: ssr
-- cipher: rc4-md5
-  country: CN
-  name: 17|Relay_CN-CN_157 |532.00Mb
-  obfs: http_simple
-  obfs-param: ajax.microsoft.com
-  password: miejump.com
-  port: 667
-  protocol: auth_aes128_md5
-  protocol-param: 105860:2020931d-1126-3ea1-b931-b750f3ca563d
-  server: iplc-ji.mielink-dns2.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_116 |68.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5952
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_113 |69.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5953
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_119 |67.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5955
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_312
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5955
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_169 |188.40Mb
-  obfs: plain
-  obfs-param: 511df45641.microsoft.com
-  password: jFa4F1
-  port: 2406
-  protocol: auth_aes128_sha1
-  protocol-param: 45641:1119_jE165t
-  server: zx02.endhigh.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_180 |251.00Mb
-  obfs: plain
-  obfs-param: cf48250916.microsoft.com
-  password: jFa4F1
-  port: 2405
-  protocol: auth_aes128_sha1
-  protocol-param: 50916:0104-W259_71
-  server: zx02.endhigh.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_114 |77.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5950
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_115 |72.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5951
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_135 |69.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5956
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_243 |36.00Mb
-  obfs: plain
-  obfs-param: cf48250916.microsoft.com
-  password: jFa4F1
-  port: 7700
-  protocol: auth_aes128_sha1
-  protocol-param: 50916:0104-W259_71
-  server: cm01.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_240 |33.75Mb
-  obfs: plain
-  obfs-param: 5d3ee46961.microsoft.com
-  password: jFa4F1
-  port: 3702
-  protocol: auth_aes128_sha1
-  protocol-param: 46961:1210-Tha
-  server: cm01.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_241 |31.83Mb
-  obfs: plain
-  obfs-param: cf48250916.microsoft.com
-  password: jFa4F1
-  port: 7703
-  protocol: auth_aes128_sha1
-  protocol-param: 50916:0104-W259_71
-  server: cm01.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_159 | 7.81Mb
-  obfs: tls1.2_ticket_auth
-  obfs-param: 880e226272.microsoft.com
-  password: Fhbe0z
-  port: 11803
-  protocol: auth_aes128_sha1
-  protocol-param: 26272:09kp3qPzKiKRsAqm
-  server: vip.basicnode.host
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_175 |26.69Mb
-  obfs: plain
-  obfs-param: cf48250916.microsoft.com
-  password: jFa4F1
-  port: 2409
-  protocol: auth_aes128_sha1
-  protocol-param: 50916:0104-W259_71
-  server: zx02.endhigh.xyz
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_188 |109.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: aa2cs/1a
-  port: 10011
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_117 |66.00Mb
-  obfs: plain
-  password: bxsnucrgk6hfish
-  port: 5954
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdL%%
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_190 |79.83Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20010
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_189 |191.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjda&dja*/?
-  port: 6558
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_192 |172.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 29601
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_191 |16.41Mb
+  name: 17|Relay_CN-CN_143 |22.08Mb
   obfs: tls1.2_ticket_auth
   obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayucloud1
-  port: 20452
+  password: fsfal2
+  port: 1001
   protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_193 |208.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: 2sa2/321a
-  port: 10071
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_194 |16.09Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20021
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_197 |214.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: 2sa2/1a
-  port: 10059
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_196 |245.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: d1da&dja*/?
-  port: 11102
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_198 |235.00Mb
-  obfs: tls1.2_ticket_auth
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayucl12s1
-  port: 5004
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level1.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_195 |33.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayds23sd1
-  port: 39003
-  protocol: auth_aes128_sha1
   protocol-param: 61610:G5gdyp
   server: 231103level2.unclemanco.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_199 |57.00Mb
-  obfs: tls1.2_ticket_auth
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayucloud1
-  port: 1876
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17,18|Relay_CN-CN_310
-  obfs: plain
-  obfs-param: 2b49f229225.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5956
-  protocol: auth_aes128_sha1
-  protocol-param: 229225:zZ4fCm
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_200 |269.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjda&dja*/?
-  port: 11110
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103levelx.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_203 |228.00Mb
+  name: 17|Relay_CN-CN_142 |172.00Mb
   obfs: tls1.2_ticket_auth
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: ay2loud1
@@ -1091,40 +1079,17 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_110 |68.00Mb
+  name: 17|Relay_CN-CN_92 |25.38Mb
   obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5951
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_202 |22.89Mb
-  obfs: tls1.2_ticket_auth
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: fsfal2
-  port: 1001
+  password: mblank1port
+  port: 560
   protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level2.unclemanco.com
+  protocol-param: 39052:Lwjz965516244
+  server: cnhkall.debugex.xyz
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_206 |51.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20006
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_207 |61.56Mb
+  name: 17|Relay_CN-CN_147 |42.70Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -1135,18 +1100,18 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_201 |486.00Mb
+  name: 17|Relay_CN-CN_146 |56.11Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjda&dja*/?
-  port: 2406
-  protocol: auth_aes128_md5
+  password: QHPy2u
+  port: 20006
+  protocol: auth_aes128_sha1
   protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
+  server: 231103level3.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_210 |14.59Mb
+  name: 17|Relay_CN-CN_153 |13.84Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -1157,7 +1122,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_213 |14.73Mb
+  name: 17|Relay_CN-CN_157 |18.83Mb
   obfs: tls1.2_ticket_auth
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: ayucles1
@@ -1168,29 +1133,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_208 |206.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: fs23l/
-  port: 2687
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level1.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_212 |54.27Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjda&dj23gsa
-  port: 36592
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_204 |309.00Mb
+  name: 17|Relay_CN-CN_144 |322.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: aa2x2sa2/1a
@@ -1201,7 +1144,62 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_209 |226.00Mb
+  name: 17|Relay_CN-CN_170 |57.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dajkdkjda&dj23gsa
+  port: 36592
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_145 |203.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: fs23l/
+  port: 2687
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level1.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_163 |376.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dajkdkjda&dja*/?
+  port: 2406
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_173 |210.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: 2sa2/1a
+  port: 10055
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_167 |29.14Mb
+  obfs: plain
+  obfs-param: cf48250916.microsoft.com
+  password: jFa4F1
+  port: 7700
+  protocol: auth_aes128_sha1
+  protocol-param: 50916:0104-W259_71
+  server: cm01.newcome.xyz
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_152 |219.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: dajkdkjda&dja*/?
@@ -1212,40 +1210,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_211 |210.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: 2sa2/1a
-  port: 10055
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_214 |253.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: 2sa2/321a
-  port: 11271
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_130 |67.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5958
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_215 |62.00Mb
+  name: 17|Relay_CN-CN_172 |62.80Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: ayucloud1
@@ -1254,9 +1219,20 @@ proxies:
   protocol-param: 61610:G5gdyp
   server: 231103level2.unclemanco.com
   type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_168 |35.35Mb
+  obfs: plain
+  obfs-param: cf48250916.microsoft.com
+  password: jFa4F1
+  port: 7703
+  protocol: auth_aes128_sha1
+  protocol-param: 50916:0104-W259_71
+  server: cm01.newcome.xyz
+  type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_217 |15.31Mb
+  name: 17|Relay_CN-CN_174 |15.03Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -1267,7 +1243,18 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_216 |333.00Mb
+  name: 17|Relay_CN-CN_184 |281.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: 2sa2/321a
+  port: 11271
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_197 |203.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: dajkdkjda&dja*/?
@@ -1278,7 +1265,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_219 |239.00Mb
+  name: 17|Relay_CN-CN_226 |241.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: dajkdkjdsa&dja*/?
@@ -1287,20 +1274,42 @@ proxies:
   protocol-param: 61610:G5gdyp
   server: 231103level2.unclemanco.com
   type: ssr
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_231 |205.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayds232112sffssd1
-  port: 2541
+  name: 17|Relay_CN-CN_179 |36.01Mb
+  obfs: plain
+  obfs-param: 5d3ee46961.microsoft.com
+  password: jFa4F1
+  port: 3702
   protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
+  protocol-param: 46961:1210-Tha
+  server: cm01.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_149 |270.00Mb
+  obfs: plain
+  obfs-param: 511df45641.microsoft.com
+  password: jFa4F1
+  port: 2406
+  protocol: auth_aes128_sha1
+  protocol-param: 45641:1119_jE165t
+  server: zx02.endhigh.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_49 |184.60Mb
+  obfs: plain
+  obfs-param: cf48250916.microsoft.com
+  password: jFa4F1
+  port: 2405
+  protocol: auth_aes128_sha1
+  protocol-param: 50916:0104-W259_71
+  server: zx02.endhigh.xyz
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_218 |336.00Mb
+  name: 17|Relay_CN-CN_227 |330.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: dajsdkdkjda&dja*/?
@@ -1309,20 +1318,20 @@ proxies:
   protocol-param: 61610:G5gdyp
   server: 231103level2.unclemanco.com
   type: ssr
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_70 |288.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdessa&dja*/?
-  port: 38012
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103levelx.unclemanco.com
+  name: 17|Relay_CN-CN_177 |288.96Mb
+  obfs: tls1.2_ticket_auth
+  obfs-param: 880e226272.microsoft.com
+  password: Fhbe0z
+  port: 11803
+  protocol: auth_aes128_sha1
+  protocol-param: 26272:09kp3qPzKiKRsAqm
+  server: vip.basicnode.host
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_221 |47.66Mb
+  name: 17|Relay_CN-CN_207 |51.54Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: dajkdkjda&dja*/?
@@ -1333,160 +1342,18 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_112 |67.00Mb
+  name: 17|Relay_CN-CN_194 |55.74Mb
   obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5957
+  obfs-param: cf48250916.microsoft.com
+  password: jFa4F1
+  port: 2409
   protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_122 |67.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5950
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_132 |67.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5959
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_123 |67.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5954
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-04.paofunlink.com
+  protocol-param: 50916:0104-W259_71
+  server: zx02.endhigh.xyz
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_222 |52.96Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: wedsa
-  port: 27543
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level2.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_118 |68.00Mb
-  obfs: plain
-  password: bxsnucrgk6hfish
-  port: 5956
-  protocol: auth_aes128_sha1
-  protocol-param: 229225:zZ4fC%%
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_129 |72.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5952
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_128 |69.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5954
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_127 |68.00Mb
-  obfs: plain
-  obfs-param: 69666175910.microsoft.com
-  password: bxsnucrgk6hfish
-  port: 5959
-  protocol: auth_aes128_sha1
-  protocol-param: 175910:AcKdLc
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_126 |68.00Mb
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: bxsnucrgk6hfish
-  port: 5957
-  protocol: auth_aes128_sha1
-  protocol-param: 40575:fV3Nxq
-  server: yd-04.paofunlink.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_224 |64.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20029
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_223 |21.66Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20016
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_226 |275.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dadk2jat*/?
-  port: 39200
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level2.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_244 |123.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjdssa&dja*/?
-  port: 38001
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level2.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_245 |64.14Mb
+  name: 17|Relay_CN-CN_191 |64.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -1497,62 +1364,84 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_225 |47.01Mb
+  name: 17|Relay_CN-CN_192 |122.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 28009
-  protocol: auth_aes128_sha1
+  password: dajkdkjdssa&dja*/?
+  port: 38001
+  protocol: auth_aes128_md5
   protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
+  server: 231103level2.unclemanco.com
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_227 |55.00Mb
-  obfs: tls1.2_ticket_auth
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayucew2
-  port: 1875
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
+  name: 17|Relay_CN-CN_112 |73.00Mb
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 40575:fV3Nxq
+  server: yd-04.paofunlink.com
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_230 |184.00Mb
+  name: 17|Relay_CN-CN_225 |296.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjda&dja*/?
-  port: 37862
+  password: dajkdessa&dja*/?
+  port: 38012
   protocol: auth_aes128_md5
   protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: rc4-md5
-  country: CN
-  name: 17|Relay_CN-CN_72 |29.00Mb
-  obfs: http_simple
-  obfs-param: ajax.microsoft.com
-  password: miejump.com
-  port: 668
-  protocol: auth_aes128_md5
-  protocol-param: 105860:2020931d-1126-3ea1-b931-b750f3ca563d
-  server: iplc-xiang.mielink-dns2.com
+  server: 231103levelx.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_238 |278.00Mb
+  name: 17|Relay_CN-CN_200 |77.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjda&dj23gsa
-  port: 19982
+  password: aa2cs/1a
+  port: 10011
   protocol: auth_aes128_md5
   protocol-param: 61610:G5gdyp
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_237 |355.00Mb
+  name: 17|Relay_CN-CN_198 |197.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dajkdkjda&dja*/?
+  port: 6558
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_202 |54.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: QHPy2u
+  port: 20010
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_203 |12.00Mb
+  obfs: tls1.2_ticket_auth
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: ayucloud1
+  port: 20452
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_209 |333.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: ayucloud1
@@ -1563,7 +1452,40 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_234 |13.98Mb
+  name: 17|Relay_CN-CN_208 |290.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dajkdkjda&dj23gsa
+  port: 19982
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_210 |175.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: ayds232112sffssd1
+  port: 2541
+  protocol: auth_aes128_sha1
+  protocol-param: 61610:G5gdyp
+  server: 231103level4.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_211 |197.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: QHPy2u
+  port: 20036
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_213 |14.28Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -1574,7 +1496,18 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_69 |43.57Mb
+  name: 17|Relay_CN-CN_218 |190.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dajkdkjda&dja*/?
+  port: 37862
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_212 |33.00Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: ayds232sffssd1
@@ -1585,29 +1518,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 17|Relay_CN-CN_236 |210.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20036
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 17|Relay_CN-CN_233 |198.00Mb
-  obfs: tls1.2_ticket_auth
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayucloud1
-  port: 1900
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level2.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 17|Relay_CN-CN_229 |52.21Mb
+  name: 17|Relay_CN-CN_216 |53.42Mb
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -1618,7 +1529,18 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 17|Relay_CN-CN_228 |15.55Mb
+  name: 17|Relay_CN-CN_214 |208.00Mb
+  obfs: tls1.2_ticket_auth
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: ayucloud1
+  port: 1900
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level2.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_219 |14.77Mb
   obfs: tls1.2_ticket_auth
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: a12cloud1
@@ -1628,63 +1550,74 @@ proxies:
   server: 231103level3.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_306 |274.66Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 12106
+  country: CN
+  name: 17|Relay_CN-CN_217 |286.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: dadk2jat*/?
+  port: 39200
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level2.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_221 |46.16Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: QHPy2u
+  port: 28009
   protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: snxao52s.xn--8zrwc997j78ud7a.com
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 17|Relay_CN-CN_220 |53.81Mb
+  obfs: tls1.2_ticket_auth
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: ayucew2
+  port: 1875
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_223 |62.00Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: QHPy2u
+  port: 20029
+  protocol: auth_aes128_sha1
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_222 |15.11Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: QHPy2u
+  port: 20016
+  protocol: auth_aes128_sha1
+  protocol-param: 61610:G5gdyp
+  server: 231103level3.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 17|Relay_CN-CN_224 |50.27Mb
+  obfs: http_simple
+  obfs-param: 68e7b61610.download.windowsupdate.com
+  password: wedsa
+  port: 27543
+  protocol: auth_aes128_md5
+  protocol-param: 61610:G5gdyp
+  server: 231103level2.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_318 |81.00Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 11112
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: u73kpx2s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_315 |43.91Mb
-  obfs: plain
-  obfs-param: 0cc4565537.baidu.com
-  password: iuo7tbw4ks
-  port: 11109
-  protocol: auth_aes128_sha1
-  protocol-param: 65537:JEiqlL
-  server: u73kpx2s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_320 | 9.00Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 11115
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: u73kpx2s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_300 |10.37Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 12104
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: snxao52s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_307 |271.94Mb
+  name: 17|Relay_SE-CN_289 |150.60Mb
   obfs: plain
   obfs-param: a59ff91911.baidu.com
   password: iuo7tbw4ks
@@ -1695,7 +1628,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_298 | 7.39Mb
+  name: 17|Relay_SE-CN_279 |16.63Mb
   obfs: plain
   obfs-param: a59ff91911.baidu.com
   password: iuo7tbw4ks
@@ -1706,62 +1639,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_301 | 9.32Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 12109
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: snxao52s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_303 | 5.57Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 12105
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: snxao52s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_313 | 9.90Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 13101
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: iplc.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_305 |37.04Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 13102
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: iplc.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_302 | 6.20Mb
-  obfs: plain
-  obfs-param: 0cc4565537.baidu.com
-  password: iuo7tbw4ks
-  port: 12107
-  protocol: auth_aes128_sha1
-  protocol-param: 65537:JEiqlL
-  server: snxao52s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_312 |12.89Mb
+  name: 17|Relay_SE-CN_296 |60.24Mb
   obfs: plain
   obfs-param: a59ff91911.baidu.com
   password: iuo7tbw4ks
@@ -1772,51 +1650,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_299 | 5.33Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 11110
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: u73kpx2s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_314 | 6.16Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 11107
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: u73kpx2s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_316 |31.78Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 11106
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: u73kpx2s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_319 | 6.31Mb
-  obfs: plain
-  obfs-param: a59ff91911.baidu.com
-  password: iuo7tbw4ks
-  port: 11109
-  protocol: auth_aes128_sha1
-  protocol-param: 91911:uFGcmn
-  server: u73kpx2s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_317 |11.58Mb
+  name: 17|Relay_SE-CN_291 | 8.53Mb
   obfs: plain
   obfs-param: 0cc4565537.baidu.com
   password: iuo7tbw4ks
@@ -1827,7 +1661,62 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_297 | 3.00Mb
+  name: 17|Relay_SE-CN_286 |281.09Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 13102
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: iplc.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_299 |26.40Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 12106
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: snxao52s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_278 |11.55Mb
+  obfs: plain
+  obfs-param: 0cc4565537.baidu.com
+  password: iuo7tbw4ks
+  port: 12107
+  protocol: auth_aes128_sha1
+  protocol-param: 65537:JEiqlL
+  server: snxao52s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_298 | 8.43Mb
+  obfs: plain
+  obfs-param: 0cc4565537.baidu.com
+  password: iuo7tbw4ks
+  port: 11109
+  protocol: auth_aes128_sha1
+  protocol-param: 65537:JEiqlL
+  server: u73kpx2s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_275 |11.20Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 12102
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: snxao52s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_295 |138.00Mb
   obfs: plain
   obfs-param: a59ff91911.baidu.com
   password: iuo7tbw4ks
@@ -1838,14 +1727,69 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_310 | 6.05Mb
+  name: 17|Relay_SE-CN_297 |12.00Mb
   obfs: plain
   obfs-param: a59ff91911.baidu.com
   password: iuo7tbw4ks
-  port: 11113
+  port: 11110
   protocol: auth_aes128_sha1
   protocol-param: 91911:uFGcmn
   server: u73kpx2s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_282 |12.40Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 12105
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: snxao52s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_285 | 6.81Mb
+  obfs: plain
+  obfs-param: 0cc4565537.baidu.com
+  password: iuo7tbw4ks
+  port: 12106
+  protocol: auth_aes128_sha1
+  protocol-param: 65537:JEiqlL
+  server: snxao52s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_276 | 5.30Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 11112
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: u73kpx2s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_284 | 6.13Mb
+  obfs: plain
+  obfs-param: 5e2e190048.baidu.com
+  password: iuo7tbw4ks
+  port: 12107
+  protocol: auth_aes128_sha1
+  protocol-param: 90048:xqUpRL
+  server: snxao52s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_292 | 5.74Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 12109
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: snxao52s.xn--8zrwc997j78ud7a.com
   type: ssr
 - cipher: aes-256-cfb
   country: JP
@@ -1860,7 +1804,73 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_321 |11.69Mb
+  name: 17|Relay_SE-CN_281 | 8.07Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 12104
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: snxao52s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_294 | 7.40Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 11113
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: u73kpx2s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_287 | 5.02Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 13101
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: iplc.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_277 | 6.83Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 11115
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: u73kpx2s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_293 | 7.34Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 11106
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: u73kpx2s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_280 | 4.63Mb
+  obfs: plain
+  obfs-param: a59ff91911.baidu.com
+  password: iuo7tbw4ks
+  port: 11109
+  protocol: auth_aes128_sha1
+  protocol-param: 91911:uFGcmn
+  server: u73kpx2s.xn--8zrwc997j78ud7a.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: SE
+  name: 17|Relay_SE-CN_290 | 5.88Mb
   obfs: plain
   obfs-param: a59ff91911.baidu.com
   password: iuo7tbw4ks
@@ -1871,36 +1881,14 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 17|Relay_SE-CN_304 | 9.61Mb
-  obfs: plain
-  obfs-param: 0cc4565537.baidu.com
-  password: iuo7tbw4ks
-  port: 12106
-  protocol: auth_aes128_sha1
-  protocol-param: 65537:JEiqlL
-  server: snxao52s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_309 | 5.94Mb
-  obfs: plain
-  obfs-param: 5e2e190048.baidu.com
-  password: iuo7tbw4ks
-  port: 12107
-  protocol: auth_aes128_sha1
-  protocol-param: 90048:xqUpRL
-  server: snxao52s.xn--8zrwc997j78ud7a.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: SE
-  name: 17|Relay_SE-CN_308 | 7.75Mb
+  name: 17|Relay_SE-CN_283 | 6.71Mb
   obfs: plain
   obfs-param: a59ff91911.baidu.com
   password: iuo7tbw4ks
-  port: 12102
+  port: 11107
   protocol: auth_aes128_sha1
   protocol-param: 91911:uFGcmn
-  server: snxao52s.xn--8zrwc997j78ud7a.com
+  server: u73kpx2s.xn--8zrwc997j78ud7a.com
   type: ssr
 - cipher: chacha20-ietf
   name: 18|Relay_-CN_256
@@ -2416,18 +2404,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 19|Relay_CN-CN_05
-  obfs: plain
-  obfs-param: c75be84263.microsoft.com
-  password: jFa4F1
-  port: 6707
-  protocol: auth_aes128_sha1
-  protocol-param: 84263:3gj7aB
-  server: cm03.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 19|Relay_CN-CN_07
+  name: 19|Relay_CN-CN_08
   obfs: plain
   obfs-param: 511df45641.microsoft.com
   password: jFa4F1
@@ -2438,13 +2415,24 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 19|Relay_CN-CN_10
+  name: 19|Relay_CN-CN_09
   obfs: plain
   obfs-param: 5d3ee46961.microsoft.com
   password: jFa4F1
-  port: 6706
+  port: 6707
   protocol: auth_aes128_sha1
   protocol-param: 46961:1210-Tha
+  server: cm03.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 19|Relay_CN-CN_11
+  obfs: plain
+  obfs-param: TG@ripaojiedian
+  password: jFa4F1
+  port: 6702
+  protocol: auth_aes128_sha1
+  protocol-param: 84263:3gj7aB
   server: cm03.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf
@@ -2460,46 +2448,46 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 19|Relay_CN-CN_14
+  name: 19|Relay_CN-CN_13
   obfs: plain
   obfs-param: c75be84263.microsoft.com
   password: jFa4F1
-  port: 6703
-  protocol: auth_aes128_sha1
-  protocol-param: 84263:3gj7aB
-  server: cm03.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 19|Relay_CN-CN_16
-  obfs: plain
-  obfs-param: TG@ripaojiedian
-  password: jFa4F1
-  port: 6702
-  protocol: auth_aes128_sha1
-  protocol-param: 84263:3gj7aB
-  server: cm03.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 19|Relay_CN-CN_23
-  obfs: plain
-  obfs-param: 5d3ee46961.microsoft.com
-  password: jFa4F1
   port: 6707
   protocol: auth_aes128_sha1
-  protocol-param: 46961:1210-Tha
+  protocol-param: 84263:3gj7aB
   server: cm03.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 19|Relay_CN-CN_25
+  name: 19|Relay_CN-CN_14
   obfs: plain
   obfs-param: 5d3ee46961.microsoft.com
   password: jFa4F1
   port: 6701
   protocol: auth_aes128_sha1
   protocol-param: 46961:1210-Tha
+  server: cm03.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 19|Relay_CN-CN_21
+  obfs: plain
+  obfs-param: 5d3ee46961.microsoft.com
+  password: jFa4F1
+  port: 6706
+  protocol: auth_aes128_sha1
+  protocol-param: 46961:1210-Tha
+  server: cm03.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 19|Relay_CN-CN_22
+  obfs: plain
+  obfs-param: c75be84263.microsoft.com
+  password: jFa4F1
+  port: 6703
+  protocol: auth_aes128_sha1
+  protocol-param: 84263:3gj7aB
   server: cm03.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf-poly1305
@@ -2526,88 +2514,92 @@ proxies:
     headers:
       Host: yes.cnmjcn.net
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 100 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 221.215.48.68
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 10 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46302
+  server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 101 → tg@nicevpn123
+  name: 45|🇨🇳 CN 100 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 42502
-  server: 927d843.itbdon.xyz
+  port: 44011
+  server: 520b07b.kiitux.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 102 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 42849
+  port: 45063
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 103 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 43748
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 104 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40280
+  port: 47367
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   name: 45|🇨🇳 CN 105 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 221.215.48.117
+  password: 23288813e52245ea
+  port: 41456
+  server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|🇨🇳 CN 108 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 120.241.47.62
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 45,49,51,57,70,74,77,98,107|中国【付费推荐：https://jdyvip.link/】4...
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 11 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 41251
-  server: 520b07b.kiitux.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 110 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 44372
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 112 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 42194
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 113 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 43922
+  port: 46082
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 114 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46259
-  server: 927d843.itbdon.xyz
+  password: 49fd1564-c787-42c5-badf-922f068db787
+  port: 21082
+  server: 0897.e2s.buzz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 119 → tg@nicevpn123
+  name: 45|🇨🇳 CN 118 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 120.241.46.106
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 12 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40231
+  server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -2638,438 +2630,424 @@ proxies:
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   name: 45|🇨🇳 CN 125 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 221.215.48.68
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 126 → tg@nicevpn123
   password: 23288813e52245ea
   port: 44807
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 126 → tg@nicevpn123
+  name: 45|🇨🇳 CN 127 → tg@nicevpn123
   password: 23288813e52245ea
   port: 42225
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 128 → tg@nicevpn123
+  name: 45|🇨🇳 CN 129 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 221.215.48.116
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 129 → tg@nicevpn123
+  name: 45|🇨🇳 CN 130 → tg@nicevpn123
   password: 23288813e52245ea
   port: 45440
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 130 → tg@nicevpn123
+  name: 45|🇨🇳 CN 132 → tg@nicevpn123
   password: 23288813e52245ea
   port: 41475
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 132 → tg@nicevpn123
+  name: 45|🇨🇳 CN 134 → tg@nicevpn123
   password: 23288813e52245ea
   port: 46544
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 135 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45659
-  server: 520b07b.kiitux.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
   name: 45|🇨🇳 CN 136 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 44320
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 137 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45310
+  port: 42502
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 138 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 44269
-  server: 728b7b7.yrpfkl.xyz
+  port: 45659
+  server: 520b07b.kiitux.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 139 → tg@nicevpn123
-  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
-  port: 22466
-  server: v3-js-sg.as9929.uk
+  password: 23288813e52245ea
+  port: 44320
+  server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 14 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45388
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 140 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 39758
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 141 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45513
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 142 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46843
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 143 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 43296
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 144 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 43065
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 145 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45361
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 146 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46622
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 147 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45255
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 149 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 39928
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 151 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 43010
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 154 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40781
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 155 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 44253
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 156 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 43527
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 158 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40159
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 159 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 221.215.48.69
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 16 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46400
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 160 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 42773
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 161 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 42516
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 162 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 221.215.48.114
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 163 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 42044
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 165 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 39823
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 166 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40045
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 168 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 44147
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 171 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45800
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 172 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 43641
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 174 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 41735
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 175 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40983
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 176 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45483
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 180 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 41832
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 181 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 47402
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 183 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46136
-  server: 520b07b.kiitux.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 184 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40845
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 185 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 41770
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 186 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46876
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 188 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46761
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 189 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40848
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 19 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 44730
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 190 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46594
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 191 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 47370
-  server: 520b07b.kiitux.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 194 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 41246
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 195 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46302
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 196 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 46082
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 197 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40231
-  server: 728b7b7.yrpfkl.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 198 → tg@nicevpn123
   password: 23288813e52245ea
   port: 45182
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 199 → tg@nicevpn123
+  name: 45|🇨🇳 CN 140 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45310
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 141 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 44269
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 142 → tg@nicevpn123
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 22466
+  server: v3-js-sg.as9929.uk
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 143 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45388
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 144 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 39758
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 145 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45513
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 146 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46843
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 147 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 42849
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 148 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 43296
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 149 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 43065
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 15 → tg@nicevpn123
   password: 23288813e52245ea
   port: 39973
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 2 → tg@nicevpn123
+  name: 45|🇨🇳 CN 150 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45361
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 151 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46622
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 152 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45255
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 154 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 39928
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 157 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 43010
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 158 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 43748
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 16 → tg@nicevpn123
   password: 23288813e52245ea
   port: 46715
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 20 → tg@nicevpn123
+  name: 45|🇨🇳 CN 161 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40781
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 162 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 44253
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 163 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 43527
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 165 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40159
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|🇨🇳 CN 166 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 221.215.48.69
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 167 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46400
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 168 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 42773
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 169 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40280
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 17 → tg@nicevpn123
   password: 23288813e52245ea
   port: 43702
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 200 → tg@nicevpn123
+  name: 45|🇨🇳 CN 170 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 42516
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|🇨🇳 CN 171 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 221.215.48.114
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 172 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 42044
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 174 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 39823
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 175 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40045
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 177 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 44147
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 18 → tg@nicevpn123
   password: 23288813e52245ea
   port: 46681
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|🇨🇳 CN 180 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 221.215.48.117
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 201 → tg@nicevpn123
+  name: 45|🇨🇳 CN 182 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45800
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 183 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 43641
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 185 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 41735
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 186 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40983
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 187 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45483
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 19 → tg@nicevpn123
   password: 49fd1564-c787-42c5-badf-922f068db787
   port: 13822
   server: 6237.e2s.buzz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 21 → tg@nicevpn123
+  name: 45|🇨🇳 CN 193 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 41832
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 194 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 47402
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 196 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46136
+  server: 520b07b.kiitux.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 197 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40845
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 198 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 41770
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 199 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46876
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 20 → tg@nicevpn123
   password: 23288813e52245ea
   port: 41558
   server: 520b07b.kiitux.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 201 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46761
+  server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -3080,7 +3058,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 24 → tg@nicevpn123
+  name: 45|🇨🇳 CN 23 → tg@nicevpn123
   password: 23288813e52245ea
   port: 47260
   server: 927d843.itbdon.xyz
@@ -3103,34 +3081,48 @@ proxies:
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 3 → tg@nicevpn123
   password: 23288813e52245ea
+  port: 40848
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 30 → tg@nicevpn123
+  password: 23288813e52245ea
   port: 40773
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 30 → tg@nicevpn123
+  name: 45|🇨🇳 CN 31 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 120.241.47.15
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 31 → tg@nicevpn123
+  name: 45|🇨🇳 CN 32 → tg@nicevpn123
   password: 23288813e52245ea
   port: 40890
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 32 → tg@nicevpn123
+  name: 45|🇨🇳 CN 33 → tg@nicevpn123
   password: 23288813e52245ea
   port: 45079
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 35 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 41251
+  server: 520b07b.kiitux.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 45|🇨🇳 CN 36 → tg@nicevpn123
+  name: 45|🇨🇳 CN 38 → tg@nicevpn123
   network: ws
   port: 52052
   server: 223.113.130.55
@@ -3142,96 +3134,122 @@ proxies:
   ws-opts:
     path: /db00
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 37 → tg@nicevpn123
+  name: 45|🇨🇳 CN 39 → tg@nicevpn123
   password: 23288813e52245ea
   port: 42575
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 38 → tg@nicevpn123
+  name: 45|🇨🇳 CN 4 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 44730
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 40 → tg@nicevpn123
   password: 23288813e52245ea
   port: 40457
   server: 520b07b.kiitux.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 40 → tg@nicevpn123
+  name: 45|🇨🇳 CN 43 → tg@nicevpn123
   password: 23288813e52245ea
   port: 45502
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 42 → tg@nicevpn123
+  name: 45|🇨🇳 CN 45 → tg@nicevpn123
   password: 23288813e52245ea
   port: 45743
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 46 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 44372
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 43 → tg@nicevpn123
+  name: 45|🇨🇳 CN 47 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 120.241.47.8
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 45 → tg@nicevpn123
+  name: 45|🇨🇳 CN 49 → tg@nicevpn123
   password: 23288813e52245ea
   port: 39937
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 46 → tg@nicevpn123
+  name: 45|🇨🇳 CN 5 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46594
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 50 → tg@nicevpn123
   password: 23288813e52245ea
   port: 40676
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 48 → tg@nicevpn123
+  name: 45|🇨🇳 CN 52 → tg@nicevpn123
   password: 23288813e52245ea
   port: 40243
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 5 → tg@nicevpn123
+  name: 45|🇨🇳 CN 54 → tg@nicevpn123
   password: 23288813e52245ea
   port: 41234
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 50 → tg@nicevpn123
+  name: 45|🇨🇳 CN 55 → tg@nicevpn123
   password: 23288813e52245ea
   port: 45947
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 51 → tg@nicevpn123
+  name: 45|🇨🇳 CN 56 → tg@nicevpn123
   password: 23288813e52245ea
   port: 47150
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 53 → tg@nicevpn123
+  name: 45|🇨🇳 CN 59 → tg@nicevpn123
   password: 23288813e52245ea
   port: 41328
   server: 520b07b.kiitux.xyz
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 6 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 47370
+  server: 520b07b.kiitux.xyz
+  type: ss
+  udp: true
 - alterId: 64
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 45,94,106|Relay_-🇺🇸US_582 |32.05Mb
+  name: 45,94|CN 2|openitr
   network: ws
-  port: 37000
+  port: '37000'
   server: 198.2.218.122
   skip-cert-verify: true
   tls: true
@@ -3239,79 +3257,95 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
+    headers:
+      Host: ''
     path: /path/181721272114
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 57 → tg@nicevpn123
+  name: 45|🇨🇳 CN 63 → tg@nicevpn123
   password: 23288813e52245ea
   port: 44068
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 58 → tg@nicevpn123
+  name: 45|🇨🇳 CN 64 → tg@nicevpn123
   password: 23288813e52245ea
   port: 47476
   server: 520b07b.kiitux.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 6 → tg@nicevpn123
+  name: 45|🇨🇳 CN 66 → tg@nicevpn123
   password: 23288813e52245ea
   port: 42507
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 60 → tg@nicevpn123
+  name: 45|🇨🇳 CN 67 → tg@nicevpn123
   password: 23288813e52245ea
   port: 44994
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 62 → tg@nicevpn123
+  name: 45|🇨🇳 CN 68 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 42194
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 70 → tg@nicevpn123
   password: 23288813e52245ea
   port: 45542
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 64 → tg@nicevpn123
+  name: 45|🇨🇳 CN 72 → tg@nicevpn123
   password: 23288813e52245ea
   port: 40798
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 66 → tg@nicevpn123
+  name: 45|🇨🇳 CN 74 → tg@nicevpn123
   password: 23288813e52245ea
   port: 43222
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 68 → tg@nicevpn123
+  name: 45|🇨🇳 CN 76 → tg@nicevpn123
   password: 23288813e52245ea
   port: 44776
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 69 → tg@nicevpn123
+  name: 45|🇨🇳 CN 77 → tg@nicevpn123
   password: 23288813e52245ea
   port: 42936
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 7 → tg@nicevpn123
+  name: 45|🇨🇳 CN 78 → tg@nicevpn123
   password: 23288813e52245ea
   port: 42931
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 70 → tg@nicevpn123
+  name: 45|🇨🇳 CN 79 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 43922
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 80 → tg@nicevpn123
   password: 23288813e52245ea
   port: 43858
   server: 728b7b7.yrpfkl.xyz
@@ -3319,7 +3353,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 45|🇨🇳 CN 71 → tg@nicevpn123
+  name: 45|🇨🇳 CN 81 → tg@nicevpn123
   network: ws
   port: 37000
   server: 198.2.222.125
@@ -3331,21 +3365,21 @@ proxies:
   ws-opts:
     path: /path/1710840982803
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 72 → tg@nicevpn123
+  name: 45|🇨🇳 CN 82 → tg@nicevpn123
   password: 23288813e52245ea
   port: 47250
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 73 → tg@nicevpn123
+  name: 45|🇨🇳 CN 83 → tg@nicevpn123
   password: 23288813e52245ea
   port: 43905
   server: 728b7b7.yrpfkl.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 75 → tg@nicevpn123
+  name: 45|🇨🇳 CN 85 → tg@nicevpn123
   password: 23288813e52245ea
   port: 43631
   server: 927d843.itbdon.xyz
@@ -3353,7 +3387,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 45|🇨🇳 CN 76 → tg@nicevpn123
+  name: 45|🇨🇳 CN 86 → tg@nicevpn123
   network: ws
   port: 30171
   server: 103.235.18.154
@@ -3365,118 +3399,98 @@ proxies:
   ws-opts:
     path: /pdd?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 78 → tg@nicevpn123
+  name: 45|🇨🇳 CN 88 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 120.241.47.16
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 79 → tg@nicevpn123
+  name: 45|🇨🇳 CN 89 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 221.215.48.118
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 8 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 41590
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 80 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45192
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 81 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 40618
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 84 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 120.241.46.100
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 87 → tg@nicevpn123
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 120.241.47.20
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 88 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 44011
-  server: 520b07b.kiitux.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 89 → tg@nicevpn123
-  password: 23288813e52245ea
-  port: 45063
-  server: 927d843.itbdon.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
   name: 45|🇨🇳 CN 9 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 47367
+  port: 41246
+  server: 728b7b7.yrpfkl.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 90 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 46259
   server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   name: 45|🇨🇳 CN 91 → tg@nicevpn123
   password: 23288813e52245ea
-  port: 41456
-  server: 728b7b7.yrpfkl.xyz
+  port: 41590
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 92 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 45192
+  server: 927d843.itbdon.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 45|🇨🇳 CN 93 → tg@nicevpn123
+  password: 23288813e52245ea
+  port: 40618
+  server: 927d843.itbdon.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|🇨🇳 CN 94 → tg@nicevpn123
+  name: 45|🇨🇳 CN 96 → tg@nicevpn123
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 120.241.47.62
+  server: 120.241.46.100
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|🇨🇳 CN 99 → tg@nicevpn123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 120.241.47.20
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 45,49,57,70,74,77,98,107|中国【付费推荐：https://jdyvip.link/】4...
+  name: 49,68,70|🇳CN-159.75.178.50-0550
   network: ws
-  port: '20301'
-  server: data-jp-v1.usabooks.com.cn
+  port: 47551
+  server: 159.75.178.50
   servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  uuid: 2500a228-8c00-4934-81e0-22281c015a33
   ws-opts:
-    headers:
-      Host: data-jp-v1.usabooks.com.cn
-    path: /debian
-- cipher: aes-128-gcm
-  name: 45|🇨🇳 CN 98 → tg@nicevpn123
-  password: 49fd1564-c787-42c5-badf-922f068db787
-  port: 21082
-  server: 0897.e2s.buzz
-  type: ss
-  udp: true
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 49,68,70|🇳CN-171.221.21.13-0499
+  network: ws
+  port: 8081
+  server: 171.221.21.13
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f7469e78-d8dc-49fb-c07d-3335dd60b105
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 46,49,52,54,55,57,62,68,70,71,74,98,100,107|中国【付费推荐：https://jdyvip.link/】7...
+  name: 49,52,54,55,57,62,68,70,71,74,98,100,107|中国【付费推荐：https://jdyvip.link/】7...
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -3493,48 +3507,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 49,68,70|🇳CN-159.75.178.50-0372
-  network: ws
-  port: 47551
-  server: 159.75.178.50
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2500a228-8c00-4934-81e0-22281c015a33
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,68,70|🇳CN-171.221.21.13-0321
-  network: ws
-  port: 8081
-  server: 171.221.21.13
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f7469e78-d8dc-49fb-c07d-3335dd60b105
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,70|🇳CN-183.232.170.157-1953
-  network: ws
-  port: 20301
-  server: 183.232.170.157
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-jp-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: '49,70|🇨🇳CN-183.232.159.153-3212 #1'
+  name: '49,70|🇨🇳CN-183.232.159.153-3336 #1'
   network: ws
   port: 30023
   server: v01.gutingting.com
@@ -3549,7 +3522,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-120.233.47.170-3213 #1'
+  name: '49,70|🇨🇳CN-120.233.47.170-3337 #1'
   network: ws
   port: 30015
   server: v02.gutingting.com
@@ -3564,7 +3537,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-153.101.64.221-3214 #1'
+  name: '49,70|🇨🇳CN-153.101.64.221-3338 #1'
   network: ws
   port: 40013
   server: 153.101.64.221
@@ -3577,7 +3550,7 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-183.232.159.153-3263 #1'
+  name: '49,70|🇨🇳CN-183.232.159.153-3387 #1'
   network: ws
   port: 30009
   server: ns01.gutingting.com
@@ -3592,7 +3565,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-120.233.42.195-3264 #1'
+  name: '49,70|🇨🇳CN-120.233.42.195-3388 #1'
   network: ws
   port: 48203
   server: v2hk-ws-tls.ytv2line.top
@@ -3607,7 +3580,7 @@ proxies:
     path: /cpyhyfd3
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-183.232.159.153-3265 #1'
+  name: '49,70|🇨🇳CN-183.232.159.153-3389 #1'
   network: ws
   port: 30044
   server: ns01.gutingting.com
@@ -3622,7 +3595,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-120.233.47.170-3266 #1'
+  name: '49,70|🇨🇳CN-120.233.47.170-3390 #1'
   network: ws
   port: 30041
   server: v02.gutingting.com
@@ -3637,7 +3610,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-110.72.101.49-3307 #1'
+  name: '49,70|🇨🇳CN-110.72.101.49-3431 #1'
   network: ws
   port: 5001
   server: steam.dnspro.icu
@@ -3652,7 +3625,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-183.240.191.106-3332 #1'
+  name: '49,70|🇨🇳CN-183.240.191.106-3456 #1'
   network: ws
   port: 9111
   server: st-1.dnspro.icu
@@ -3667,7 +3640,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-183.240.191.109-3333 #1'
+  name: '49,70|🇨🇳CN-183.240.191.109-3457 #1'
   network: ws
   port: 5100
   server: st-2.dnspro.icu
@@ -3682,7 +3655,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: 49,70|🇳CN-183.240.191.106-3337
+  name: 49,70|🇳CN-183.240.191.106-3461
   network: ws
   port: 20025
   server: sh-cn-1.dnspro.icu
@@ -3697,7 +3670,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-223.111.202.139-3344 #1'
+  name: '49,70|🇨🇳CN-223.111.202.139-3468 #1'
   network: ws
   port: 63088
   server: 223.111.202.139
@@ -3710,7 +3683,7 @@ proxies:
     path: /mugua
 - alterId: 0
   cipher: auto
-  name: 49,70|🇳CN-223.111.202.139-3367
+  name: 49,70|🇳CN-223.111.202.139-3491
   network: ws
   port: 63086
   server: 223.111.202.139
@@ -3723,7 +3696,7 @@ proxies:
     path: /mugua
 - alterId: 1
   cipher: auto
-  name: 49,70|🇳CN-120.233.42.199-3551
+  name: 49,70|🇳CN-120.233.42.199-3675
   network: ws
   port: 50205
   server: data-hk-v2.shwjfkw.cn
@@ -3738,7 +3711,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-106.55.187.139-3562 #1'
+  name: '49,70|🇨🇳CN-106.55.187.139-3686 #1'
   network: ws
   port: 8448
   server: 106.55.187.139
@@ -3751,7 +3724,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,70|🇳CN-124.222.189.225-3630
+  name: 49,70|🇳CN-124.222.189.225-3754
   network: ws
   port: 80
   server: 124.222.189.225
@@ -3768,7 +3741,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '49,70|🇨🇳CN-124.221.131.176-3656 #1'
+  name: '49,70|🇨🇳CN-124.221.131.176-3780 #1'
   network: http
   port: 50797
   server: 124.221.131.176
@@ -3779,7 +3752,7 @@ proxies:
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
 - alterId: 4
   cipher: auto
-  name: 49,70|🇳CN-117.28.242.156-6296
+  name: 49,70|🇳CN-117.28.242.156-6522
   network: ws
   port: 2164
   server: 117.28.242.156
@@ -3794,7 +3767,7 @@ proxies:
     path: /ws
 - alterId: 1
   cipher: auto
-  name: '49,70|🇨🇳CN-112.30.145.132-6297 #1'
+  name: '49,70|🇨🇳CN-112.30.145.132-6523 #1'
   network: ws
   port: 50205
   server: data-hk-v1.heisey.cn
@@ -3807,9 +3780,24 @@ proxies:
     headers:
       Host: tv.cctv.com
     path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: '49,70|🇨🇳CN-120.233.42.199-6524 #1'
+  network: ws
+  port: 50207
+  server: data-hk-v1.shwjfkw.cn
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.shwjfkw.cn
+    path: /hls/cctv5phd.m3u8
 - alterId: 4
   cipher: auto
-  name: 49,70|🇳CN-157.254.193.68-6910
+  name: 49,70|🇳CN-157.254.193.68-7136
   network: ws
   port: 10020
   server: 157.254.193.68
@@ -3822,7 +3810,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,70|🇳CN-123.249.101.15-7106
+  name: 49,70|🇳CN-123.249.101.15-7332
   network: ws
   port: 19709
   server: 123.249.101.15
@@ -3835,7 +3823,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,70|🇳CN-103.184.45.80-10015
+  name: 49,70|🇳CN-103.184.45.80-10241
   network: ws
   port: 80
   server: 103.184.45.80
@@ -3848,7 +3836,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: 49,70|🇳CN-103.184.45.79-10016
+  name: 49,70|🇳CN-103.184.45.79-10242
   network: ws
   port: 80
   server: 103.184.45.79
@@ -3861,7 +3849,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.57-10017 #1'
+  name: '49,70|🇨🇳CN-103.184.45.57-10243 #1'
   network: ws
   port: 443
   server: 103.184.45.57
@@ -3874,7 +3862,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.43-10018 #1'
+  name: '49,70|🇨🇳CN-103.184.45.43-10244 #1'
   network: ws
   port: 443
   server: 103.184.45.43
@@ -3887,7 +3875,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.40-10019 #1'
+  name: '49,70|🇨🇳CN-103.184.45.40-10245 #1'
   network: ws
   port: 80
   server: 103.184.45.40
@@ -3900,7 +3888,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.253-10020 #1'
+  name: '49,70|🇨🇳CN-103.184.45.253-10246 #1'
   network: ws
   port: 80
   server: 103.184.45.253
@@ -3913,7 +3901,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.25-10021 #1'
+  name: '49,70|🇨🇳CN-103.184.45.25-10247 #1'
   network: ws
   port: 80
   server: 103.184.45.25
@@ -3926,7 +3914,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.188-10022 #1'
+  name: '49,70|🇨🇳CN-103.184.45.188-10248 #1'
   network: ws
   port: 80
   server: 103.184.45.188
@@ -3939,7 +3927,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.180-10023 #1'
+  name: '49,70|🇨🇳CN-103.184.45.180-10249 #1'
   network: ws
   port: 80
   server: 103.184.45.180
@@ -3952,7 +3940,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.177-10024 #1'
+  name: '49,70|🇨🇳CN-103.184.45.177-10250 #1'
   network: ws
   port: 443
   server: 103.184.45.177
@@ -3965,7 +3953,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.45.137-10025 #1'
+  name: '49,70|🇨🇳CN-103.184.45.137-10251 #1'
   network: ws
   port: 80
   server: 103.184.45.137
@@ -3978,7 +3966,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.91-10026 #1'
+  name: '49,70|🇨🇳CN-103.184.44.91-10252 #1'
   network: ws
   port: 80
   server: 103.184.44.91
@@ -3991,7 +3979,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.84-10027 #1'
+  name: '49,70|🇨🇳CN-103.184.44.84-10253 #1'
   network: ws
   port: 443
   server: 103.184.44.84
@@ -4004,7 +3992,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.82-10028 #1'
+  name: '49,70|🇨🇳CN-103.184.44.82-10254 #1'
   network: ws
   port: 80
   server: 103.184.44.82
@@ -4017,7 +4005,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.73-10029 #1'
+  name: '49,70|🇨🇳CN-103.184.44.73-10255 #1'
   network: ws
   port: 80
   server: 103.184.44.73
@@ -4030,7 +4018,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.224-10030 #1'
+  name: '49,70|🇨🇳CN-103.184.44.224-10256 #1'
   network: ws
   port: 80
   server: 103.184.44.224
@@ -4043,7 +4031,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.221-10031 #1'
+  name: '49,70|🇨🇳CN-103.184.44.221-10257 #1'
   network: ws
   port: 80
   server: 103.184.44.221
@@ -4056,7 +4044,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.202-10032 #1'
+  name: '49,70|🇨🇳CN-103.184.44.202-10258 #1'
   network: ws
   port: 80
   server: 103.184.44.202
@@ -4069,7 +4057,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.2-10033 #1'
+  name: '49,70|🇨🇳CN-103.184.44.2-10259 #1'
   network: ws
   port: 80
   server: 103.184.44.2
@@ -4082,7 +4070,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.190-10034 #1'
+  name: '49,70|🇨🇳CN-103.184.44.190-10260 #1'
   network: ws
   port: 443
   server: 103.184.44.190
@@ -4095,7 +4083,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.18-10035 #1'
+  name: '49,70|🇨🇳CN-103.184.44.18-10261 #1'
   network: ws
   port: 80
   server: 103.184.44.18
@@ -4108,7 +4096,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.164-10036 #1'
+  name: '49,70|🇨🇳CN-103.184.44.164-10262 #1'
   network: ws
   port: 80
   server: 103.184.44.164
@@ -4121,7 +4109,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.160-10037 #1'
+  name: '49,70|🇨🇳CN-103.184.44.160-10263 #1'
   network: ws
   port: 80
   server: 103.184.44.160
@@ -4134,7 +4122,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.148-10038 #1'
+  name: '49,70|🇨🇳CN-103.184.44.148-10264 #1'
   network: ws
   port: 80
   server: 103.184.44.148
@@ -4147,7 +4135,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.118-10039 #1'
+  name: '49,70|🇨🇳CN-103.184.44.118-10265 #1'
   network: ws
   port: 443
   server: 103.184.44.118
@@ -4160,7 +4148,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '49,70|🇨🇳CN-103.184.44.117-10040 #1'
+  name: '49,70|🇨🇳CN-103.184.44.117-10266 #1'
   network: ws
   port: 80
   server: 103.184.44.117
@@ -4173,20 +4161,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: 51|🇨🇳CN-221.131.165.171-029_2@29
-  network: tcp
-  port: 10306
-  server: br-cn-east-cu1.node-fnf.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304
-  ws-headers:
-    Host: br-cn-east-cu1.node-fnf.xyz
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 51|🇨🇳CN-183.232.170.157-110_2@110
+  name: 51|🇨🇳CN-183.232.170.157-101_1@101
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -4197,16 +4172,13 @@ proxies:
   ws-headers:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 51,54,70,85,87,93|🇸US美国16
+  name: 51,54,70,85,87|市+
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
+  port: '20003'
   server: service.ouluyun9803.com
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -4219,40 +4191,31 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 51,54,70,85,87|广东省江门市+移动
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: '20005'
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 51,70|🇨🇳CN-117.149.247.11-1890
+  name: 51,70|🇳CN-117.149.247.11-2121
   password: 8e949d75-3510-4678-8593-3c5032dd931a
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
 - alterId: 0
   cipher: auto
-  name: 51|🇨🇳CN-183.232.170.157-127_2@127
+  name: 51|🇨🇳CN-183.240.220.84-122_1@122
   network: ws
-  port: 20301
-  server: data-jp-v1.usabooks.com.cn
+  port: 16627
+  server: vip.basicnode.host
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-headers:
-    Host: data-jp-v1.usabooks.com.cn
-  ws-path: /debian
+    Host: 193.25.215.160
+  ws-path: /niuniu
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 51,54,57,70,74,77,93|🇨🇳广东2
+  name: 51,54,57,70,74,77,93|🇳广东2
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20001
-  server: hk1.mhw7e2.online
+  port: 20014
+  server: jp2.mhw7e2.online
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -4261,21 +4224,13 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '51,57,70,74,77,93|未命名 #11'
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20019
-  server: kr1.mhw7e2.online
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 51,57,70,74,77|🇸🇬 新加坡|@ripaojiedian
+  name: '51,54,57,70,74,77,93|未命名 #12'
   password: 6f932057-ffd9-4426-8ca7-f0654babf84f
   port: 20009
   server: ddns.olucloud.subapi.cc
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - alterId: 64
@@ -4307,73 +4262,73 @@ proxies:
   type: vmess
   uuid: 828e30d3-fbe6-4607-bbd6-ba6eaba89d70
 - cipher: aes-128-cfb
-  name: 70|CN-14.29.124.174-0191
+  name: 70|CN-14.29.124.174-0369
   password: QazEdcTgb159@$*
   port: 11043
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨CN-14.29.124.174-0192
+  name: 70|🇨CN-14.29.124.174-0370
   password: QazEdcTgb159@$*
   port: 11009
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0193
+  name: 70|🇨🇳CN-14.29.124.174-0371
   password: QazEdcTgb159@$*
   port: 11036
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0194
+  name: 70|🇨🇳CN-14.29.124.174-0372
   password: QazEdcTgb159@$*
   port: 11013
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0195
+  name: 70|🇨🇳CN-14.29.124.174-0373
   password: QazEdcTgb159@$*
   port: 11004
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0196
+  name: 70|🇨🇳CN-14.29.124.174-0374
   password: QazEdcTgb159@$*
   port: 11005
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0197
+  name: 70|🇨🇳CN-14.29.124.174-0375
   password: QazEdcTgb159@$*
   port: 11016
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0198
+  name: 70|🇨🇳CN-14.29.124.174-0376
   password: QazEdcTgb159@$*
   port: 11040
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0199
+  name: 70|🇨🇳CN-14.29.124.174-0377
   password: QazEdcTgb159@$*
   port: 11003
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0200
+  name: 70|🇨🇳CN-14.29.124.174-0378
   password: QazEdcTgb159@$*
   port: 11047
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-0201
+  name: 70|🇨🇳CN-14.29.124.174-0379
   password: QazEdcTgb159@$*
   port: 11044
   server: 14.29.124.174
   type: ss
 - cipher: rc4-md5
-  name: 70|🇳CN-42.157.196.103-2134
+  name: 70|🇳CN-42.157.196.103-2368
   obfs: http_post
   obfs-param: ajax.microsoft.com
   password: Yk4UdrOyQg
@@ -4383,7 +4338,7 @@ proxies:
   server: 42.157.196.103
   type: ssr
 - cipher: aes-256-cfb
-  name: 70|🇨🇳CN-42.157.196.104-2135
+  name: 70|🇨🇳CN-42.157.196.104-2369
   obfs: tls1.2_ticket_auth
   obfs-param: ajax.microsoft.com
   password: vCmp8ALih6
@@ -4393,7 +4348,7 @@ proxies:
   server: 42.157.196.104
   type: ssr
 - cipher: aes-256-cfb
-  name: 70|🇨🇳CN-42.157.196.104-2136
+  name: 70|🇨🇳CN-42.157.196.104-2370
   obfs: http_post
   obfs-param: ajax.microsoft.com
   password: CWSZscLkjf
@@ -4402,26 +4357,8 @@ proxies:
   protocol-param: ''
   server: 42.157.196.104
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 70|🇳CN-120.238.122.160-2393
-  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
-  port: 26666
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 70|🇨🇳CN-120.238.122.159-2408
-  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
-  port: 26668
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 70|🇨🇳CN-120.238.122.160-2429
-  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
-  port: 26601
-  server: service.ouluyun9803.com
-  type: ss
 - cipher: chacha20-ietf
-  name: 70|🇨🇳CN-120.198.71.184-3186
+  name: 70|🇨🇳CN-120.198.71.184-3310
   obfs: plain
   obfs-param: t.me/vpnhat
   password: mblank1port
@@ -4431,181 +4368,181 @@ proxies:
   server: 120.198.71.184
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 70|🇨🇳CN-211.140.157.183-3343
+  name: 70|🇨🇳CN-211.140.157.183-3467
   password: 030d48b3-80e9-49ae-8cbd-6327b1ba84d2
   port: 34394
   server: zj.bbcloud.life
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3503
+  name: 70|🇨🇳CN-14.29.124.168-3627
   password: QazEdcTgb159@$*
   port: 25226
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3504
+  name: 70|🇨🇳CN-14.29.124.168-3628
   password: QazEdcTgb159@$*
   port: 25261
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3505
+  name: 70|🇨🇳CN-14.29.124.168-3629
   password: QazEdcTgb159@$*
   port: 25267
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3506
+  name: 70|🇨🇳CN-14.29.124.168-3630
   password: QazEdcTgb159@$*
   port: 25233
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3507
+  name: 70|🇨🇳CN-14.29.124.168-3631
   password: QazEdcTgb159@$*
   port: 25238
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3508
+  name: 70|🇨🇳CN-14.29.124.168-3632
   password: QazEdcTgb159@$*
   port: 25235
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3509
+  name: 70|🇨🇳CN-14.29.124.168-3633
   password: QazEdcTgb159@$*
   port: 25219
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3518
+  name: 70|🇨🇳CN-14.29.124.168-3642
   password: QazEdcTgb159@$*
   port: 25266
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3519
+  name: 70|🇨🇳CN-14.29.124.168-3643
   password: QazEdcTgb159@$*
   port: 25245
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3520
+  name: 70|🇨🇳CN-14.29.124.168-3644
   password: QazEdcTgb159@$*
   port: 25231
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3521
+  name: 70|🇨🇳CN-14.29.124.168-3645
   password: QazEdcTgb159@$*
   port: 25220
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3522
+  name: 70|🇨🇳CN-14.29.124.168-3646
   password: QazEdcTgb159@$*
   port: 25296
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3523
+  name: 70|🇨🇳CN-14.29.124.168-3647
   password: QazEdcTgb159@$*
   port: 25287
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3532
+  name: 70|🇨🇳CN-14.29.124.168-3656
   password: QazEdcTgb159@$*
   port: 25283
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3533
+  name: 70|🇨🇳CN-14.29.124.168-3657
   password: QazEdcTgb159@$*
   port: 25270
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3534
+  name: 70|🇨🇳CN-14.29.124.168-3658
   password: QazEdcTgb159@$*
   port: 25247
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3535
+  name: 70|🇨🇳CN-14.29.124.168-3659
   password: QazEdcTgb159@$*
   port: 25218
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3536
+  name: 70|🇨🇳CN-14.29.124.168-3660
   password: QazEdcTgb159@$*
   port: 25222
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3537
+  name: 70|🇨🇳CN-14.29.124.168-3661
   password: QazEdcTgb159@$*
   port: 25254
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3539
+  name: 70|🇳CN-14.29.124.168-3663
   password: QazEdcTgb159@$*
   port: 25286
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3542
+  name: 70|🇳CN-14.29.124.168-3666
   password: QazEdcTgb159@$*
   port: 25217
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨CN-14.29.124.168-3560
+  name: 70|🇨CN-14.29.124.168-3684
   password: QazEdcTgb159@$*
   port: 25294
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3561
+  name: 70|🇳CN-14.29.124.168-3685
   password: QazEdcTgb159@$*
   port: 25210
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3563
+  name: 70|🇨🇳CN-14.29.124.168-3687
   password: QazEdcTgb159@$*
   port: 25256
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3565
+  name: 70|🇨🇳CN-14.29.124.168-3689
   password: QazEdcTgb159@$*
   port: 25284
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3569
+  name: 70|🇨🇳CN-14.29.124.168-3693
   password: QazEdcTgb159@$*
   port: 25272
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3587
+  name: 70|🇳CN-14.29.124.168-3711
   password: QazEdcTgb159@$*
   port: 24003
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3590
+  name: 70|🇳CN-14.29.124.168-3714
   password: QazEdcTgb159@$*
   port: 24007
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3592
+  name: 70|🇨🇳CN-14.29.124.168-3716
   obfs: plain
   obfs-param: ''
   password: QazEdcTgb159@$*
@@ -4615,61 +4552,61 @@ proxies:
   server: 14.29.124.168
   type: ssr
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3597
+  name: 70|🇳CN-14.29.124.168-3721
   password: QazEdcTgb159@$*
   port: 25289
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3604
+  name: 70|🇳CN-14.29.124.168-3728
   password: QazEdcTgb159@$*
   port: 25259
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3605
+  name: 70|🇳CN-14.29.124.168-3729
   password: QazEdcTgb159@$*
   port: 25241
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-3607
+  name: 70|🇳CN-14.29.124.168-3731
   password: QazEdcTgb159@$*
   port: 25268
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3608
+  name: 70|🇨🇳CN-14.29.124.168-3732
   password: QazEdcTgb159@$*
   port: 25279
   server: 14.29.124.168
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 70|🇨🇳CN-183.232.175.163-3609
+  name: 70|🇨🇳CN-183.232.175.163-3733
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 24105
   server: p1.bxy-fun3.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 70|🇨🇳CN-183.240.222.210-3610
+  name: 70|🇨🇳CN-183.240.222.210-3734
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 44101
   server: p1.bxy-fun1.com
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3616
+  name: 70|🇨🇳CN-14.29.124.168-3740
   password: QazEdcTgb159@$*
   port: 25295
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3617
+  name: 70|🇨🇳CN-14.29.124.168-3741
   password: QazEdcTgb159@$*
   port: 25230
   server: 14.29.124.168
   type: ss
 - cipher: chacha20-ietf
-  name: 70|🇨🇳CN-36.156.222.25-3625
+  name: 70|🇨🇳CN-36.156.222.25-3749
   obfs: http_simple
   obfs-param: e5ab06181.microsoft.com
   password: zztw9jk7gu
@@ -4679,36 +4616,42 @@ proxies:
   server: 36.156.222.25
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 70|🇨🇳CN-112.26.46.71-3652
+  name: 70|🇨🇳CN-112.26.46.71-3776
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 24101
   server: p1.bxy-fun2.com
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-3655
+  name: 70|🇨🇳CN-14.29.124.168-3779
   password: QazEdcTgb159@$*
   port: 25207
   server: 14.29.124.168
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 70|🇳CN-36.212.130.244-4086
+  password: 66f9f4e5-a88d-40b2-a1ae-6b750b71a8bb
+  port: 30207
+  server: jp01.jjjjjj.icu
+  type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.174-3912
+  name: 70|🇨🇳CN-14.29.124.174-4138
   password: QazEdcTgb159@$*
   port: 11048
   server: 14.29.124.174
   type: ss
 - cipher: aes-256-gcm
-  name: 70|🇳CN-36.139.166.252-3966
+  name: 70|🇳CN-36.139.166.252-4192
   password: ll668668@
   port: 11023
   server: 36.139.166.252
   type: ss
 - cipher: aes-256-gcm
-  name: 70|🇨🇳CN-101.89.111.34-3975
+  name: 70|🇨🇳CN-101.89.111.34-4201
   password: 44e4e808-db1e-494d-9d7e-c67b38b13556
   port: 30010
   server: 62e2186f.0f7802c4.83df.34fb5e38.cc
   type: ss
-- name: 70|🇳CN-124.15.12.24-3982
+- name: 70|🇳CN-124.15.12.24-4208
   password: password
   port: 251
   server: 124.15.12.24
@@ -4716,79 +4659,79 @@ proxies:
   tls: false
   type: http
   username: username
-- name: 70|🇨🇳CN-124.15.12.24-3983
+- name: 70|🇨🇳CN-124.15.12.24-4209
   port: 2312
   server: 124.15.12.24
   skip-cert-verify: false
   type: socks5
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-4129
+  name: 70|🇳CN-14.29.124.168-4355
   password: QazEdcTgb159@$*
   port: 25251
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.168-4145
+  name: 70|🇳CN-14.29.124.168-4371
   password: QazEdcTgb159@$*
   port: 25252
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|CN-14.29.124.168-6181
+  name: 70|CN-14.29.124.168-6407
   password: QazEdcTgb159@$*
   port: 25271
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇳CN-14.29.124.174-6182
+  name: 70|🇳CN-14.29.124.174-6408
   password: QazEdcTgb159@$*
   port: 11035
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-6184
+  name: 70|🇨🇳CN-14.29.124.174-6410
   password: QazEdcTgb159@$*
   port: 11037
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-6185
+  name: 70|🇨🇳CN-14.29.124.174-6411
   password: QazEdcTgb159@$*
   port: 11049
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-6191
+  name: 70|🇨🇳CN-14.29.124.174-6417
   password: QazEdcTgb159@$*
   port: 11010
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-6192
+  name: 70|🇨🇳CN-14.29.124.174-6418
   password: QazEdcTgb159@$*
   port: 11012
   server: 14.29.124.174
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-6193
+  name: 70|🇨🇳CN-14.29.124.168-6419
   password: QazEdcTgb159@$*
   port: 24009
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-6194
+  name: 70|🇨🇳CN-14.29.124.168-6420
   password: QazEdcTgb159@$*
   port: 24002
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.174-6195
+  name: 70|🇨🇳CN-14.29.124.174-6421
   password: QazEdcTgb159@$*
   port: 11032
   server: 14.29.124.174
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨CN-112.26.46.161-6478
+  name: 70|🇨CN-112.26.46.161-6704
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4798,7 +4741,7 @@ proxies:
   server: bs1.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.175-6479
+  name: 70|🇨🇳CN-112.26.46.175-6705
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4808,7 +4751,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.175-6480
+  name: 70|🇨🇳CN-112.26.46.175-6706
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4818,7 +4761,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.163-6481
+  name: 70|🇨🇳CN-112.26.46.163-6707
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4828,7 +4771,7 @@ proxies:
   server: pr1.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.162-6482
+  name: 70|🇨🇳CN-112.26.46.162-6708
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4838,7 +4781,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.175-6483
+  name: 70|🇨🇳CN-112.26.46.175-6709
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4848,7 +4791,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.162-6485
+  name: 70|🇨🇳CN-112.26.46.162-6711
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4858,7 +4801,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.163-6486
+  name: 70|🇨🇳CN-112.26.46.163-6712
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4868,7 +4811,7 @@ proxies:
   server: pr1.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.162-6487
+  name: 70|🇨🇳CN-112.26.46.162-6713
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4878,7 +4821,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.175-6488
+  name: 70|🇨🇳CN-112.26.46.175-6714
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4888,7 +4831,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.175-6490
+  name: 70|🇨🇳CN-112.26.46.175-6716
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4898,7 +4841,7 @@ proxies:
   server: pr3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-112.26.46.162-6492
+  name: 70|🇨🇳CN-112.26.46.162-6718
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4908,7 +4851,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: rc4-md5
-  name: 70|🇳CN-112.26.46.162-6493
+  name: 70|🇳CN-112.26.46.162-6719
   password: RenzheCloudSS
   plugin: obfs
   plugin-opts:
@@ -4918,7 +4861,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: chacha20-ietf
-  name: 70,106|Relay_-CN_338 |108.00Mb
+  name: 70|🇳CN-120.232.206.251-6787
   obfs: plain
   obfs-param: ''
   password: mblank1port
@@ -4928,13 +4871,13 @@ proxies:
   server: eduall.buzzline.org
   type: ssr
 - cipher: aes-256-cfb
-  name: 70|🇳CN-180.101.193.226-8751
+  name: 70|🇳CN-180.101.193.226-8977
   password: RsDk3peCSuo76B68
   port: 10068
   server: 180.101.193.226
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8752
+  name: 70|🇨🇳CN-111.6.86.119-8978
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4944,13 +4887,13 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-8753
+  name: 70|🇨🇳CN-14.29.124.168-8979
   password: QazEdcTgb159@$*
   port: 24006
   server: 14.29.124.168
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.80-8754
+  name: 70|🇨🇳CN-111.6.86.80-8980
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4960,7 +4903,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8755
+  name: 70|🇨🇳CN-111.6.86.119-8981
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4970,7 +4913,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8756
+  name: 70|🇨🇳CN-111.6.86.119-8982
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4980,7 +4923,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8757
+  name: 70|🇨🇳CN-111.6.86.119-8983
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -4990,7 +4933,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.80-8758
+  name: 70|🇨🇳CN-111.6.86.80-8984
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5000,7 +4943,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.155-8759
+  name: 70|🇨🇳CN-120.195.181.155-8985
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5010,7 +4953,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.82-8760
+  name: 70|🇨🇳CN-120.195.181.82-8986
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5020,7 +4963,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.155-8761
+  name: 70|🇨🇳CN-120.195.181.155-8987
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5030,7 +4973,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.82-8762
+  name: 70|🇨🇳CN-120.195.181.82-8988
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5040,7 +4983,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.111-8763
+  name: 70|🇨🇳CN-120.195.181.111-8989
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5050,7 +4993,7 @@ proxies:
   server: 120.195.181.111
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.155-8764
+  name: 70|🇨🇳CN-120.195.181.155-8990
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5060,7 +5003,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.170-8765
+  name: 70|🇨🇳CN-120.195.181.170-8991
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5070,7 +5013,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.80-8766
+  name: 70|🇨🇳CN-111.6.86.80-8992
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5080,7 +5023,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8767
+  name: 70|🇨🇳CN-111.6.86.119-8993
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5090,7 +5033,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.82-8768
+  name: 70|🇨🇳CN-120.195.181.82-8994
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5100,7 +5043,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.155-8769
+  name: 70|🇨🇳CN-120.195.181.155-8995
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5110,7 +5053,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.111-8770
+  name: 70|🇨🇳CN-120.195.181.111-8996
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5120,7 +5063,7 @@ proxies:
   server: 120.195.181.111
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.82-8771
+  name: 70|🇨🇳CN-120.195.181.82-8997
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5130,7 +5073,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.155-8772
+  name: 70|🇨🇳CN-120.195.181.155-8998
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5140,7 +5083,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.155-8773
+  name: 70|🇨🇳CN-120.195.181.155-8999
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5150,13 +5093,13 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: aes-128-cfb
-  name: 70|🇨🇳CN-14.29.124.168-8774
+  name: 70|🇨🇳CN-14.29.124.168-9000
   password: QazEdcTgb159@$*
   port: 24008
   server: 14.29.124.168
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.170-8776
+  name: 70|🇨🇳CN-120.195.181.170-9002
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5166,7 +5109,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.170-8777
+  name: 70|🇨🇳CN-120.195.181.170-9003
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5176,7 +5119,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-120.195.181.170-8779
+  name: 70|🇨🇳CN-120.195.181.170-9005
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5186,7 +5129,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8780
+  name: 70|🇨🇳CN-111.6.86.119-9006
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5196,7 +5139,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8781
+  name: 70|🇨🇳CN-111.6.86.119-9007
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5206,7 +5149,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: 70|🇨🇳CN-111.6.86.119-8782
+  name: 70|🇨🇳CN-111.6.86.119-9008
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5216,55 +5159,29 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 70|🇨🇳CN-183.240.222.210-8931
+  name: 70|🇨🇳CN-183.240.222.210-9157
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   port: 30470
   server: p1.bxy-fun1.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 70|CN-183.240.222.15-9478
+  name: 70|CN-183.240.222.15-9704
   password: a5a0a8d9-ab2c-407f-89a4-bf027d216184
   port: 870
   server: 183.240.222.15
   type: ss
 - alterId: 64
   cipher: auto
-  name: 74|12|中国济南市|Github搜索TrojanLinks
-  network: ws
-  port: '37000'
-  server: 137.175.12.76
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.86052077.xyz
-    path: /path/153428133302
-- alterId: 64
-  cipher: auto
-  name: 74|12|中国十堰|Github搜索TrojanLinks
+  name: 74|12|中国重庆市|Github搜索TrojanLinks
   network: ws
   port: '38000'
-  server: 137.175.29.67
+  server: 198.2.196.187
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: www.46074906.xyz
-    path: /path/153428133302
-- alterId: 64
-  cipher: auto
-  name: 74|12|中国泉州市|Github搜索TrojanLinks
-  network: ws
-  port: '36000'
-  server: 142.4.108.213
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.17383957.xyz
+      Host: www.53062560.xyz
     path: /path/153428133302
 - alterId: '0'
   cipher: auto
@@ -5281,24 +5198,6 @@ proxies:
       host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     path: /
-- alterId: 64
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 94,106|Relay_🇺🇸US-🇺🇸US_1158 |30.35Mb
-  network: ws
-  port: 30000
-  server: 198.2.218.19
-  servername: www.51360818.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      HOST: www.51360818.xyz
-    path: /path/1699193100388
 - LLC - 1: None
   cipher: chacha20-ietf-poly1305
   delay: 778
