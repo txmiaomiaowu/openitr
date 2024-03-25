@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-128-gcm
   country: ' HK'
-  name: 13,16,70|🇭🇰HK-1.65.218.52-4069
+  name: 13,16,17,70|🇭🇰HK-1.65.218.52-4069
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -11,23 +11,6 @@ proxies:
   port: 443
   server: 1.65.218.52
   type: ss
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 13|Relay_HK-BE_200 | 8.75Mb
-  network: ws
-  port: 8880
-  server: 103.160.204.38
-  servername: food.zhaal.ir
-  skip-cert-verify: true
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      HOST: food.zhaal.ir
-    path: /
 - cipher: aes-256-cfb
   country: 🇰 HK
   name: 14,15,18,19,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
@@ -42,9 +25,9 @@ proxies:
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 14,33,49,68,70,86,92|🔒 VM-WS-NA 🇺🇸 US-156.225.64.76...
+  name: 14,33,49,68,70,86,92,94|ZA 1|openitr
   network: ws
-  port: 16921
+  port: '16921'
   server: 156.225.64.76
   servername: ''
   skip-cert-verify: true
@@ -74,7 +57,7 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 35|🇭🇰 HK_144
+  name: 35|🇭🇰 HK_145
   network: ws
   port: 443
   server: 47.242.109.138
@@ -91,7 +74,7 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 35|🇭🇰HK_164
+  name: 35|🇭🇰HK_165
   network: ws
   port: 80
   server: 182.16.1.194
@@ -99,22 +82,6 @@ proxies:
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 38,49,51,53,70|🇰HK-194.104.147.80-1072
-  network: ws
-  port: 443
-  server: 194.104.147.80
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
-  ws-opts:
-    headers:
-      Host: hk.pdda.me
-    path: /pdd?ed=2048
 - alterId: 0
   cipher: auto
   name: 38,49,51,53,56,70|🇰HK-43.154.230.30-1090
@@ -137,9 +104,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 38,49,51,53,56,70,94|ZA 1|openitr
+  name: '38,49,51,53,56,70|🇺🇸US-154.198.227.34-1091 #1'
   network: http
-  port: '12696'
+  port: 12696
   server: 154.198.227.34
   servername: ''
   skip-cert-verify: false
@@ -308,6 +275,23 @@ proxies:
     path: /4db02294
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 49,57,70,74,77|🇭🇰 香港2|@ripaojiedian
+  network: ws
+  port: 2053
+  server: 8.218.142.253
+  servername: cfhk.393930.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: 49,70|🇰HK-47.243.28.9-0827
   network: ws
   port: 26927
@@ -347,6 +331,21 @@ proxies:
   uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 49,51,70|🇰HK-194.104.147.80-1072
+  network: ws
+  port: 443
+  server: 194.104.147.80
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
+  ws-opts:
+    headers:
+      Host: hk.pdda.me
+    path: /pdd?ed=2048
 - alterId: 0
   cipher: auto
   name: 49,70|🇰HK-104.208.96.44-1400
@@ -1270,6 +1269,16 @@ proxies:
   server: 8.210.33.152
   tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 57,74|22|香港|@ripaojiedian
+  network: tcp
+  port: '42055'
+  server: 120.238.122.251
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 57,74|22|香港1|@ripaojiedian
@@ -1350,6 +1359,12 @@ proxies:
   password: a-wym4ovY4Yw
   port: 443
   server: 47.243.196.229
+  type: ss
+- cipher: aes-128-gcm
+  name: 70|🇰HK-8.210.33.152-4070
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 8.210.33.152
   type: ss
 - cipher: aes-128-gcm
   name: 70|🇰HK-1.65.223.223-4102
@@ -1569,7 +1584,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 92,94|US 452|openitr
+  name: 92|🔒 VM-WS-TLS 🇭🇰 HK-38.207.174.2...
   network: ws
   port: '10000'
   server: 38.207.174.231
@@ -1636,9 +1651,16 @@ proxies:
       Host: cfhk.393930.xyz
     path: /
 - cipher: aes-128-gcm
-  delay: 1590
-  name: 104|HK_speednode_0033
-  password: Yc2CtrIz8L
-  port: 16899
-  server: 50.114.157.77
+  name: 104|HK_speednode_0048
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.218.52
   type: ss
