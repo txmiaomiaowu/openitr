@@ -1,7 +1,19 @@
 proxies:
+- cipher: aes-128-gcm
+  country: ' HK'
+  name: 13,16,17,70|🇰HK-1.65.218.52-3896
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    tls: false
+  port: 443
+  server: 1.65.218.52
+  type: ss
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14,15,18,19,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 14,15,18,19,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -28,23 +40,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 16,35|🇭🇰HK_143
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 16,20| TW_14
+  name: 16| HK_205
   network: ws
   port: 443
   server: 123.58.197.70
@@ -54,29 +53,25 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: HK
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 17|Relay_HK-BE_249 |13.05Mb
+  name: 16| HK_206
   network: ws
-  port: 8880
-  server: 103.160.204.38
-  servername: food.zhaal.ir
+  port: 80
+  server: 182.16.1.194
   skip-cert-verify: true
   type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      HOST: food.zhaal.ir
-    path: /
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: '18,42,52|PP|@Zyw_Channel #1'
+  name: 18,42,52,94|CN 1|openitr
   network: ws
-  port: 443
+  port: '443'
   server: 123.58.197.70
   servername: ''
   skip-cert-verify: true
@@ -103,7 +98,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: '18,49,70,74,86|🇭🇰HK-182.16.1.194-4085 #2'
+  name: '18,49,70,86|🇭🇰HK-182.16.1.194-4085 #2'
   network: ws
   port: 80
   server: 182.16.1.194
@@ -114,23 +109,6 @@ proxies:
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 35|🇭🇰 HK_134
-  network: ws
-  port: 443
-  server: 47.242.109.138
-  servername: 47.242.109.138
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
-  ws-headers:
-    HOST: 47.242.109.138
-  ws-path: /myblog
 - alterId: 0
   cipher: auto
   name: 38,49,51,53,56,70|🇰HK-43.154.230.30-1101
@@ -198,7 +176,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 38,49,53,56,57,70,74,77|🇸🇬 新加坡3|@ripaojiedian
+  name: 38,49,51,53,56,57,70,74,77|🇸🇬 新加坡3|@ripaojiedian
   network: ws
   port: 443
   server: 134.122.184.84
@@ -244,7 +222,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 40,94|HK 3|openitr
+  name: 40,94|HK 2|openitr
   network: ws
   port: '4431'
   server: 152.32.190.239
@@ -1302,9 +1280,9 @@ proxies:
   ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 57|13|香港2
+  name: 57,74|19|香港1
   network: tcp
-  port: '10288'
+  port: '10088'
   server: zz1.xmfvpn.xyz
   servername: ''
   tls: false
@@ -1573,26 +1551,6 @@ proxies:
     headers:
       Host: 71.v2-ray.cyou
     path: /
-- alterId: 64
-  cipher: auto
-  name: 74|22|香港|@ripaojiedian
-  network: tcp
-  port: '34602'
-  server: 120.232.242.88
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 74|22|香港3|@ripaojiedian
-  network: tcp
-  port: '44602'
-  server: 120.232.242.88
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 75|香港(油管:破解资源君)
@@ -1650,19 +1608,6 @@ proxies:
       host: hrgdvpn.flycdnedc55.vip
     host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 94|HK 2|openitr
-  network: ws
-  port: '8080'
-  server: 62.60.135.13
-  tls: false
-  type: vmess
-  uuid: 4dba618a-a752-40b5-a583-8b0ed0724009
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: 98|香港1|@ripaojiedian
