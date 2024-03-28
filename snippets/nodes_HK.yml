@@ -28,8 +28,8 @@ proxies:
       Host: kr.pddf.buzz
     path: /pdd?ed=2048
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 14,15,19,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰 HK
+  name: 14,15,19,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -50,14 +50,27 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 16,35|🇭🇰HK_150
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
+- alterId: 0
+  cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 16,19,94|HK 1|openitr
+  name: 16,17,19,74,94|HK 1|openitr
   network: tcp
   port: '443'
   server: kagoya.hkss.online
-  servername: ip2648428075.mobgslb.tbcache.com
+  servername: kagoya.hkss.online
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -65,7 +78,24 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 40,49,57,70,86,92,94,98|🇭🇰HK-47.76.35.246-0787
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 35|🇰 HK_131
+  network: ws
+  port: 443
+  server: 47.242.109.138
+  servername: 47.242.109.138
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9DC41E4B-53A8-A442-E911-4BC5F490F2CD
+  ws-headers:
+    HOST: 47.242.109.138
+  ws-path: /myblog
+- alterId: 0
+  cipher: auto
+  name: 40,49,57,70,74,86,92,94,98|🇭🇰HK-47.76.35.246-0787
   network: ws
   port: 24101
   server: 47.76.35.246
@@ -149,7 +179,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 49,70,94,98|🇭🇰HK-182.16.1.194-8978
+  name: 49,70,98|🇭🇰HK-182.16.1.194-8978
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -1118,6 +1148,21 @@ proxies:
     headers:
       Host: www.92873889.xyz
     path: /path/1693018744512
+- cipher: aes-128-gcm
+  name: 63,74|6|-https://t.me/MrXbin-31
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 47.76.185.99
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 67|HK
@@ -1143,12 +1188,6 @@ proxies:
   password: a-wym4ovY4Yw
   port: 443
   server: 8.218.196.35
-  type: ss
-- cipher: aes-128-gcm
-  name: 70|🇭🇰HK-47.243.196.229-3477
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 47.243.196.229
   type: ss
 - cipher: aes-128-gcm
   name: 70|🇰HK-1.65.223.223-3780
@@ -1370,20 +1409,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 94|HK 2|openitr
-  network: ws
-  port: '80'
-  server: miracle.bilibili.ovh
-  tls: false
-  type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: miracle.bilibili.ovh
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 94|HK 6|openitr
+  name: 94|HK 3|openitr
   network: ws
   port: '4431'
   server: 152.32.190.239
@@ -1438,17 +1464,3 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
-- cipher: aes-128-gcm
-  delay: 463
-  name: 104|HK_speednode_0035
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: /
-    tls: false
-  port: 443
-  server: 1.65.218.52
-  type: ss
