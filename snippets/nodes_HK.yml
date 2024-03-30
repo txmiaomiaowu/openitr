@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14,15,19,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 14,15,19,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -25,7 +25,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 16| HK_199
+  name: 16| HK_194
   network: ws
   port: 80
   server: 182.16.1.194
@@ -33,40 +33,6 @@ proxies:
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 17|Relay_HK-BE_281 | 7.17Mb
-  network: ws
-  port: 8880
-  server: 103.160.204.38
-  servername: food.zhaal.ir
-  skip-cert-verify: true
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      HOST: food.zhaal.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 35|🇰 HK_132
-  network: ws
-  port: 443
-  server: 47.242.109.138
-  servername: 47.242.109.138
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9DC41E4B-53A8-A442-E911-4BC5F490F2CD
-  ws-headers:
-    HOST: 47.242.109.138
-  ws-path: /myblog
 - alterId: 0
   cipher: auto
   name: 40,49,57,70,74,86,92,94,98|🇭🇰HK-47.76.35.246-0787
@@ -138,22 +104,17 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 45,49,70,74,106|HK_1189
+  name: '45,49,70|🇭🇰HK-202.81.231.30-3263 #1'
   network: ws
   port: 55576
   server: 202.81.231.30
-  servername: hkan.mac2winer.cfd
-  skip-cert-verify: true
+  servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
   uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
   ws-opts:
-    headers:
-      HOST: hkan.mac2winer.cfd
     path: /
 - alterId: 0
   cipher: auto
@@ -1033,7 +994,7 @@ proxies:
   uuid: 87ed289f-cae3-49b4-bbe3-23da298c0e81
 - alterId: 64
   cipher: auto
-  name: 49,70,94,98|🇭🇰HK-182.16.1.194-8978
+  name: 49,70,98|🇭🇰HK-182.16.1.194-8978
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -1118,6 +1079,22 @@ proxies:
   server: 1.65.218.52
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 57,74,77,104|HK_speednode_0040
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.210.33.152
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: 57,74|22|香港|@ripaojiedian
@@ -1163,6 +1140,20 @@ proxies:
     headers:
       Host: www.92873889.xyz
     path: /path/1693018744512
+- cipher: aes-128-gcm
+  name: 63|🇰-HK-001
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: false
+  port: 443
+  server: 47.76.185.99
+  type: ss
 - alterId: 0
   cipher: auto
   name: 67|HK
@@ -1188,6 +1179,12 @@ proxies:
   password: a-wym4ovY4Yw
   port: 443
   server: 8.218.196.35
+  type: ss
+- cipher: aes-128-gcm
+  name: 70|🇭🇰HK-8.210.33.152-3270
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 8.210.33.152
   type: ss
 - cipher: aes-128-gcm
   name: 70|🇰HK-1.65.223.223-3421
@@ -1405,16 +1402,12 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 94,106|Relay_ | 0.00Mb
+  name: 94|HK 2|openitr
   network: ws
-  port: 80
+  port: '80'
   server: fastly.alipay.ovh
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
   ws-opts:
     headers:
@@ -1422,16 +1415,12 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 94,106|Relay_ |44.52Mb
+  name: 94|HK 3|openitr
   network: ws
-  port: 4431
+  port: '4431'
   server: 152.32.190.239
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
   ws-opts:
     headers:
