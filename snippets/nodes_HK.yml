@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 14,15,19,34,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰 HK
+  name: 14,15,19,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -22,10 +22,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: ' HK'
+  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 16| HK_194
+  name: 16,35|🇭🇰HK_150
   network: ws
   port: 80
   server: 182.16.1.194
@@ -33,6 +33,40 @@ proxies:
   type: vmess
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 17|Relay_HK-BE_301 | 9.71Mb
+  network: ws
+  port: 8880
+  server: 103.160.204.38
+  servername: food.zhaal.ir
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      HOST: food.zhaal.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 35|🇰 HK_131
+  network: ws
+  port: 443
+  server: 47.242.109.138
+  servername: 47.242.109.138
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
+  ws-headers:
+    HOST: 47.242.109.138
+  ws-path: /myblog
 - alterId: 0
   cipher: auto
   name: 40,49,57,70,74,86,92,94,98|🇭🇰HK-47.76.35.246-0787
@@ -1022,7 +1056,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '49,70,71|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #2'
+  name: '49,70,71|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #3'
   network: ws
   port: '443'
   server: 165.154.225.176
@@ -1097,7 +1131,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 57,74|22|香港|@ripaojiedian
+  name: 57|16|香港|@ripaojiedian
   network: tcp
   port: '40259'
   server: 120.238.122.148
@@ -1140,20 +1174,6 @@ proxies:
     headers:
       Host: www.92873889.xyz
     path: /path/1693018744512
-- cipher: aes-128-gcm
-  name: 63|🇰-HK-001
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: false
-    tls: false
-  port: 443
-  server: 47.76.185.99
-  type: ss
 - alterId: 0
   cipher: auto
   name: 67|HK
@@ -1179,12 +1199,6 @@ proxies:
   password: a-wym4ovY4Yw
   port: 443
   server: 8.218.196.35
-  type: ss
-- cipher: aes-128-gcm
-  name: 70|🇭🇰HK-8.210.33.152-3270
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 8.210.33.152
   type: ss
 - cipher: aes-128-gcm
   name: 70|🇰HK-1.65.223.223-3421
@@ -1323,19 +1337,6 @@ proxies:
   name: 71|🇭🇰 香港(欢迎订阅Youtube破解资源君)
   network: ws
   port: '443'
-  server: 0320hk567.fans8.xyz
-  tls: true
-  type: vmess
-  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-  ws-opts:
-    headers:
-      Host: 0320hk567.fans8.xyz
-    path: /ray
-- alterId: 2
-  cipher: auto
-  name: '71|🇭🇰 香港(欢迎订阅Youtube破解资源君) #1'
-  network: ws
-  port: '443'
   server: 0320hk857.fans8.xyz
   tls: true
   type: vmess
@@ -1343,6 +1344,19 @@ proxies:
   ws-opts:
     headers:
       Host: 0320hk857.fans8.xyz
+    path: /ray
+- alterId: 2
+  cipher: auto
+  name: '71|🇭🇰 香港(欢迎订阅Youtube破解资源君) #1'
+  network: ws
+  port: '443'
+  server: 0320hk567.fans8.xyz
+  tls: true
+  type: vmess
+  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+  ws-opts:
+    headers:
+      Host: 0320hk567.fans8.xyz
     path: /ray
 - alterId: 0
   cipher: auto
@@ -1400,19 +1414,6 @@ proxies:
     headers:
       Host: cache-hk-2.cn-db.top
     path: /db00
-- alterId: 0
-  cipher: auto
-  name: 94|HK 2|openitr
-  network: ws
-  port: '80'
-  server: fastly.alipay.ovh
-  tls: false
-  type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: nmsl.kp
-    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 94|HK 3|openitr
