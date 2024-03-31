@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 13,14,17,32,33,90|[02-24]-🇸-欧洲-096-150.107.46.21
+  name: 13,14,17,33,90|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -9,9 +9,9 @@ proxies:
   server: 150.107.46.21
   type: ssr
 - cipher: aes-128-gcm
-  country: 🇭🇰 HK
+  country: 🇰 HK
   delay: 438
-  name: 15,16,31,65,99|HK_speednode_0022
+  name: 15,16,31,65,99,101| HK_1093
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -21,6 +21,19 @@ proxies:
   port: 443
   server: 1.65.218.52
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 15,33|🇭🇰HK_150
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   country: 🇭🇰 HK
@@ -40,20 +53,9 @@ proxies:
   ws-path: /myblog
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 33|🇭🇰HK_150
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 37,45,53,65,69,81,87,89,93|🇭🇰HK-47.76.35.246-0787
+  name: 37,45,53,65,69,81,87,89,93,101|_865
   network: ws
   port: 24101
   server: 47.76.35.246
@@ -61,10 +63,9 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1134,6 +1135,12 @@ proxies:
   port: 443
   server: 8.218.196.35
   type: ss
+- cipher: aes-128-gcm
+  name: 65|🇭🇰HK-8.210.33.152-3390
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 8.210.33.152
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 65|🇰HK-148.66.56.99-4169
   password: G!yBwPWH3Vao
@@ -1363,19 +1370,6 @@ proxies:
     headers:
       Host: cache-hk-2.cn-db.top
     path: /db00
-- alterId: 0
-  cipher: auto
-  name: 89|HK 3|openitr
-  network: ws
-  port: '4431'
-  server: 152.32.190.239
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
 - alterId: 64
   cipher: auto
   name: 93|香港1|@ripaojiedian
@@ -1420,3 +1414,17 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- alterId: 64
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 101|🇭🇰HK_1094
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images

@@ -1,14 +1,20 @@
 proxies:
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 0,12,42,53,87|🔒 VM-TCP-NA 🇫🇷 FR-213.32.63.17...
-  network: tcp
-  port: '3586'
-  server: 213.32.63.176
+  cipher: auto
+  name: '0,6,10,11,12,27,28,29,45,53,55,63,65,66,69,93,102,103|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+    #9'
+  network: ws
+  port: 8880
+  server: 94.140.0.110
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      Host: food.zhaal.ir
+    path: /
 - alterId: 0
   cipher: auto
   http-opts:
@@ -20,13 +26,13 @@ proxies:
   port: 3389
   server: 51.159.155.52
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: 10,36,45,49,53,55,63,65,66,69|29|🇺🇸_US_美国->🇫🇷_FR_法国_2_由快嘴科技提...
+  name: 10,45,53,55,63,65,66,69|19,29|🇺🇸_US_美国->🇫🇷_FR_法国_2_由快嘴...
   network: ws
   port: 2086
   server: 104.21.4.14
@@ -34,7 +40,6 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
   ws-opts:
     headers:
@@ -44,7 +49,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 10,13,36,41,45,49,55,59,63,65,66,69,102|美国【付费推荐：https://jdyvip.link/】7...
+  name: 10,13,39,41,42,45,55,63,65,66,69,89,97,102|美国【付费推荐：https://jdyvip.link/】7...
   network: ws
   port: '2086'
   server: admin.arzonhost.ir
@@ -58,130 +63,172 @@ proxies:
     headers:
       Host: admin.arzonhost.ir
     path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 13,45,55,63,65,69|29|🇸🇬_SG_新加坡->🇫🇷_FR_法国_由快嘴科技提供...
-  network: ws
-  port: 2082
-  server: 8.222.174.108
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- cipher: aes-256-gcm
-  country: ' FR'
-  name: 13,14,15,65|🇫🇷FR-149.202.82.172-2295
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: ' FR'
-  name: 13,14,15,65|🇫🇷FR-149.202.82.172-2274
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 149.202.82.172
-  type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 13,14,15,33,65|🇫🇷FR-149.202.82.172-2089
-  password: RexnBgU7EV5ADxG
-  port: 7002
+  name: 13,14,15,17,18,31,33,65,101|_368
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: FR
+  name: 13,14,15,21,33,65,101|_348
+  password: KixLvKzwjekG00rm
+  port: 8000
   server: 149.202.82.172
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 13,14,15,31,33,34,65,88|🇫🇷FR法国2 1.8MB/s
+  name: 13,14,15,31,33,34,65,88,101|_278
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 149.202.82.172
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫FR
+  name: 13,14,15,31,33,34,65,88,101|_276
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 13,14,15,33,65|🇫🇷FR-149.202.82.172-2090
+  name: 13,14,15,33,65,101|_345
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: ' FR'
+  name: 13,14,15,65,101|_304
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: ' FR'
+  name: 13,14,15,65,101|_303
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,33,65,101|_341
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,33,65,101|_322
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,17,18,31,33,65,101|_365
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇫🇷FR
+  name: 13,14,17,31,33,65,81,101|_427
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.159.111.208
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,33,65,101|_302
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: FR
+  name: 13,14,15,21,65,101|_290
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
   country: ' FR'
-  name: 13,14,15| FR_127
+  name: 13,14,15,65,101|_300
   password: Y6R9pAtvxxzmGC
   port: 5000
-  server: 217.182.198.219
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 13,14,15,33,65|🇫🇷FR-149.202.82.172-2077
+  name: 13,14,15,33,65,81,101|_307
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 149.202.82.172
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,33,65,101|_352
   password: XKFKl2rULjIp74
   port: 8008
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: ' FR'
-  name: 13,14,15,33,47,65,92|SS-法国:国-locked-ChatGPT-TikTok-...
+  name: 13,14,15,33,47,65,92,101|_342
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,33,65|🇫🇷FR-149.202.82.172-2290
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,33,65|🇷FR-149.202.82.172-2081
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
   country: ' FR'
-  name: 13,14,15,65|🇫🇷FR-149.202.82.172-2306
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,33,65,81|🇷FR-149.202.82.172-2220
-  password: FoOiGlkAA9yPEGP
-  port: '7306'
-  server: 149.202.82.172
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,17,18,31,32,33,65|🇷FR-149.202.82.172-0874
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: ' FR'
-  name: 13,14,15,33,65|🇫🇷FR-149.202.82.172-2294
+  name: 13,14,15,33,65,101|_305
   password: pKEW8JPByTVTLtM
   port: 443
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,101|🇫🇷FR_1070
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,21,33,65,101|_309 | 6.61Mb
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: DE
+  name: 13,14,15,21,33,65,101|_282 | 6.70Mb
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 13,14,15,33,65,101|_346
+  password: kDWvXYZoTBcGkC4
+  port: 8881
   server: 149.202.82.172
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 13,14,15,31,33,34,65,88|FR国 1.8MB/s
+  name: 13,14,15,31,33,34,65,88,101|_350
   password: e4FCWrgpkji3QY
   port: 9102
   server: 149.202.82.172
@@ -190,77 +237,36 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 13,14,15,21,33,65|🇪DE-217.182.198.219-2239
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: DE
-  name: 13,14,15,21,33,65|🇪DE-217.182.198.219-2372
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: FR
-  name: 13,14,15,21,65|🇫🇷FR-149.202.82.172-2346
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: FR
-  name: 13,14,15,21,33,65|🇷FR-149.202.82.172-2088
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,17,18,31,32,33,65|🇷FR-149.202.82.172-0879
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇫🇷FR
-  name: 13,14,17,31,32,33,65,81|🇫🇷FR-51.159.111.208-1379
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 51.159.111.208
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,33,65|🇫🇷FR-149.202.82.172-2379
+  name: 13,14,15,33,65,101|_280
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 149.202.82.172
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,33,65|🇫🇷FR-149.202.82.172-2091
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 149.202.82.172
-  type: ss
 - alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 13,14,15,31,33,34,65,88|🇷FR法国3 1.8MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
+  cipher: auto
+  country: AE
+  h2-opts: {}
+  http-opts: {}
+  name: 13,16,31,36,41,45,47,49,52,54,65,69,74,101|Relay_-GB_819
+  network: ws
+  port: 8880
+  server: 94.140.0.110
+  servername: food.zhaal.ir
   skip-cert-verify: true
-  tls: true
-  type: ss
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      host: food.zhaal.ir
+    path: /
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '13,54,74,79,82,93|美国 CloudFlare节点 #258'
+  name: '13,16,54,74,79,82,93|美国 CloudFlare节点 #215'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -278,7 +284,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: '13,16,31,45,54,65,74,81|🏁RELAY-104.21.4.14-0138 #1'
+  name: 13,16,31,45,54,65,74,81,101|Relay_-🇷FR_901
   network: ws
   port: 2086
   server: 104.21.4.14
@@ -290,61 +296,22 @@ proxies:
   ws-opts:
     headers:
       host: admin.arzonhost.ir
-    host: admin.arzonhost.ir
     path: /
+- cipher: aes-256-gcm
+  country: FR
+  name: 15,17,33,65,101|_262 | 5.76Mb
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 54.36.174.181
+  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 16|Relay_-FR_93
+  name: 16|Relay_-FR_81
   network: ws
   port: 2082
-  server: 8.222.229.102
-  skip-cert-verify: true
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 16|Relay_-FR_84
-  network: ws
-  port: 2082
-  server: 8.222.248.188
-  skip-cert-verify: true
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 16|Relay_-FR_94
-  network: ws
-  port: 2082
-  server: 8.222.215.228
-  skip-cert-verify: true
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 16|Relay_-FR_89
-  network: ws
-  port: 2082
-  server: 8.222.140.185
+  server: 8.222.145.164
   skip-cert-verify: true
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -359,7 +326,7 @@ proxies:
   name: 16|Relay_-FR_78
   network: ws
   port: 2082
-  server: 8.222.131.102
+  server: 47.245.90.176
   skip-cert-verify: true
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -371,11 +338,12 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 16|Relay_-FR_96
+  name: '16,47,54,65,74|🇸🇬_SG_新加坡->🇫🇷_FR_法国 #2'
   network: ws
   port: 2082
-  server: 8.222.180.86
+  server: 8.222.174.108
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
@@ -386,40 +354,10 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 16|Relay_-FR_98
+  name: 16|Relay_-FR_90
   network: ws
   port: 2082
-  server: 8.222.159.252
-  skip-cert-verify: true
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 16|Relay_-FR_55
-  network: ws
-  port: 2082
-  server: 8.222.212.116
-  skip-cert-verify: true
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 16|Relay_-FR_87
-  network: ws
-  port: 2082
-  server: 8.222.169.182
+  server: 8.222.229.102
   skip-cert-verify: true
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -434,6 +372,96 @@ proxies:
   name: 16|Relay_-FR_85
   network: ws
   port: 2082
+  server: 8.222.190.225
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_93
+  network: ws
+  port: 2082
+  server: 8.222.212.116
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_89
+  network: ws
+  port: 2082
+  server: 8.222.248.188
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_95
+  network: ws
+  port: 2082
+  server: 8.222.131.102
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_94
+  network: ws
+  port: 2082
+  server: 8.222.180.86
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_60
+  network: ws
+  port: 2082
+  server: 8.222.167.147
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_88
+  network: ws
+  port: 2082
   server: 8.222.249.190
   skip-cert-verify: true
   type: vmess
@@ -442,30 +470,132 @@ proxies:
     headers:
       host: s1c.v2.v001sss.xyz
     path: /
-- country: FR
-  name: '21|FR_15 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.134.116
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: FR
-  name: '21|FR_16 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.207.153
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 31,41|🇺🇸 US 63 → tg@nicevpn123
+  name: 16|Relay_-FR_92
+  network: ws
+  port: 2082
+  server: 8.222.237.131
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_59
+  network: ws
+  port: 2082
+  server: 8.222.182.10
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_101
+  network: ws
+  port: 2082
+  server: 8.222.140.185
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_84
+  network: ws
+  port: 2082
+  server: 8.222.224.162
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_97
+  network: ws
+  port: 2082
+  server: 8.222.159.252
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_83
+  network: ws
+  port: 2082
+  server: 8.222.221.197
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_-FR_100
+  network: ws
+  port: 2082
+  server: 8.222.215.228
+  skip-cert-verify: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  country: FR
+  h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /OUIpxwwmtpJGIWzraW7dl5
+  name: 16|Relay_FR-FR_328
+  network: http
+  port: 3586
+  server: max-ip.hiroman5445.ir
+  skip-cert-verify: true
+  type: vmess
+  uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 16,31,41|🇺🇸 US 56 → tg@nicevpn123
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -477,6 +607,73 @@ proxies:
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  country: 🇨🇴CO
+  h2-opts: {}
+  http-opts: {}
+  name: 16,31,54,74,88,101|Relay_-🇷FR_899
+  network: ws
+  port: 2086
+  server: admin.arzonhost.ir
+  servername: admin.arzonhost.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  ws-opts:
+    headers:
+      host: admin.arzonhost.ir
+    path: /
+- country: FR
+  name: 21|netflix_FR
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.237.207.153
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: FR
+  name: 21,88|🇺🇸US美国13
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.79.202
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- country: FR
+  name: '21|netflix_FR #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.134.116
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 21,101|Relay_🇸US-🇪DE_1227
+  network: ws
+  port: 443
+  server: 172.67.71.160
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      HOST: obdii.cfd
+    path: /linkws
 - cipher: aes-256-cfb
   name: 36,56,65|🇷FR-51.158.54.209-6727
   password: asdKkaskJKfnsa
@@ -486,7 +683,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '37,39,48,97,98|@Vip_Security join us - 362
+  name: '37,48,98|@Vip_Security join us - 362
 
     '
   network: ws
@@ -500,20 +697,6 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '39,97|رایگان | VMESS | @DeamNet_Prox... #9'
-  network: ws
-  port: '443'
-  server: zula.ir
-  servername: fr2-vmess.sshmax.xyz
-  tls: true
-  type: vmess
-  uuid: 36359329-ec7e-48f4-9f9f-0036ff345060
-  ws-opts:
-    headers:
-      Host: fr2-vmess.sshmax.xyz
-    path: /vmess
 - alterId: 0
   cipher: auto
   name: '39,97|رایگان | VMESS | @v2ray_swhil ... #7'
@@ -999,6 +1182,12 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '47,92,101|_59 #1'
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 51.178.87.37
+  type: ss
 - cipher: aes-256-gcm
   name: 47|🇫🇷 法国【付费推荐：https://jdyvip.link...
   password: Q3j8V3jIENkzs8ZE
@@ -1007,7 +1196,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 53,87|🔒 VM-TCP-NA 🇫🇷 FR-141.94.237.8...
+  name: 53,69,87|🔒 VM-TCP-NA 🇫🇷 FR-141.94.237.8...
   network: tcp
   port: '8442'
   server: 141.94.237.81
@@ -1015,6 +1204,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 53,69,87|🔒 VM-TCP-NA 🇫🇷 FR-213.32.63.17...
+  network: tcp
+  port: '3586'
+  server: 213.32.63.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
 - alterId: 64
   cipher: auto
   name: 57|法国_【YouTube-VV科技】
@@ -1044,13 +1243,17 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 60,89|IT 7|openitr
+  h2-opts: {}
+  http-opts: {}
+  name: 60,89,101|Relay_-🇺RU_858
   network: ws
-  port: '443'
+  port: 443
   server: 188.114.96.6
   servername: muriel.makeup
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1658,7 +1861,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '79,82|广东省 移动 #1'
+  name: '79,82|广东省 移动 #2'
   network: ws
   port: 16645
   server: m.cnmjcn.com
@@ -1687,7 +1890,7 @@ proxies:
     path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
 - alterId: 0
   cipher: chacha20-poly1305
-  name: '93|法国 OVH SAS #3'
+  name: 93|法国 OVH SAS
   network: tcp
   port: '3586'
   server: max-ip.hiroman5445.ir
@@ -1695,3 +1898,101 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 101|Relay_-🇷FR_792
+  network: ws
+  port: 443
+  server: 147.78.140.68
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      host: 6c47-butterfly-6c47.yexoji3749.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- cipher: chacha20-ietf-poly1305
+  country: 🇷FR
+  name: 101|🇫🇷FR_1059
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 51.178.87.37
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 101|🇫🇷FR_1062
+  password: KkDzY101Oe
+  port: 45816
+  server: 51.195.149.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇫🇷FR
+  name: 101|Relay_🇷FR-🇫🇷FR_1064
+  password: G!yBwPWH3Vao
+  port: 804
+  server: bia-t-o.outline-vpn.cloud
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 101|🇫🇷FR_1072
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 51.158.150.210
+  type: ss
+- cipher: aes-256-ctr
+  country: 🇫🇷FR
+  name: 101|Pool_🇫🇷FR_1073
+  obfs: tls1.2_ticket_auth
+  password: NewBypasser2023
+  port: 443
+  protocol: origin
+  server: 195.154.118.40
+  type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 101|Pool_🇫🇷FR_1074
+  network: ws
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af48fd9a-24d5-4ed0-b268-7acba1693365
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 101|Relay_🇫🇷FR-🇫🇷FR_1075
+  network: ws
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4a87b9b5-bebc-4f07-ac20-4517396f10d0
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 101|Relay_🇫🇷FR-🇫🇷FR_1076
+  network: ws
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7d5953d8-cd09-4c49-a4ca-6b9210871f95
+  ws-opts:
+    path: /RACEVPN
