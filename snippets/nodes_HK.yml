@@ -1,35 +1,17 @@
 proxies:
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14,15,19,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
+  name: 14,15,19,34,35,95|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
   protocol: origin
   server: 150.107.46.21
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|Relay_HK |36.70Mb
-  network: ws
-  port: 2053
-  server: 47.242.155.183
-  servername: cfhk.393930.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      HOST: cfhk.393930.xyz
-    path: /
 - cipher: aes-128-gcm
   country: 🇭🇰 HK
   delay: 438
-  name: 16,17,70,104|HK_speednode_0045
+  name: 16,17,70,104|HK_speednode_0021
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -41,10 +23,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 16,35|🇭🇰HK_150
+  name: 16| HK_196
   network: ws
   port: 80
   server: 182.16.1.194
@@ -57,7 +39,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 17|Relay_HK-BE_317 |12.12Mb
+  name: 17|Relay_HK-BE_293 | 8.89Mb
   network: ws
   port: 8880
   server: 103.160.204.38
@@ -74,7 +56,7 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 35|🇰 HK_131
+  name: 35|🇭🇰 HK_129
   network: ws
   port: 443
   server: 47.242.109.138
@@ -82,7 +64,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
+  uuid: 9DC41E4B-53A8-A442-E911-4BC5F490F2CD
   ws-headers:
     HOST: 47.242.109.138
   ws-path: /myblog
@@ -1134,16 +1116,6 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 57,74|22,26|baipaovpn广东省广州市
-  network: tcp
-  port: '41492'
-  server: 120.232.242.117
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
   name: 61|香港_【YouTube-VV科技】
   network: tcp
   port: 34417
@@ -1438,6 +1410,32 @@ proxies:
     headers:
       Host: cache-hk-2.cn-db.top
     path: /db00
+- alterId: 0
+  cipher: auto
+  name: 94|HK 2|openitr
+  network: ws
+  port: '80'
+  server: fastly.alipay.ovh
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 94|HK 3|openitr
+  network: ws
+  port: '4431'
+  server: 152.32.190.239
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
 - alterId: 64
   cipher: auto
   name: 98|香港1|@ripaojiedian
@@ -1481,4 +1479,18 @@ proxies:
   ws-opts:
     headers:
       Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 104|HK_speednode_0023
+  network: ws
+  port: 8080
+  server: 194.99.79.178
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: 194.99.79.178
     path: /
