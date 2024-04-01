@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 13,14,16,17,32,90|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰 HK
+  name: 13,14,17,32,33,90|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -9,8 +9,8 @@ proxies:
   server: 150.107.46.21
   type: ssr
 - cipher: aes-128-gcm
-  country: 🇰 HK
-  name: 15,16,31,65|🇰HK-1.65.218.52-3371
+  country: ' HK'
+  name: 15,16,65|🇰HK-1.65.218.52-3371
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -25,7 +25,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 15| HK_205
+  name: 15| HK_204
   network: ws
   port: 80
   server: 182.16.1.194
@@ -35,7 +35,24 @@ proxies:
   ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 36,37,45,49,53,63,65,66,69,81,87,89,93|🇭🇰HK-47.76.35.246-0787
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 33|🇭🇰 HK_133
+  network: ws
+  port: 443
+  server: 47.242.109.138
+  servername: 47.242.109.138
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9DC41E4B-53A8-A442-E911-4BC5F490F2CD
+  ws-headers:
+    HOST: 47.242.109.138
+  ws-path: /myblog
+- alterId: 0
+  cipher: auto
+  name: 37,45,53,65,66,69,81,87,89,93|🇭🇰HK-47.76.35.246-0787
   network: ws
   port: 24101
   server: 47.76.35.246
@@ -43,7 +60,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
   ws-opts:
     headers:
@@ -62,6 +78,21 @@ proxies:
   uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 42,53,59,69|19|新加坡【TG：@ccbaohe】定时更新节点订阅 20
+  network: ws
+  port: 2086
+  server: 27.50.48.72
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: krcc1.topf6.com
+    path: /ws?ed=2048
 - alterId: 0
   cipher: auto
   name: 45,65|🇰HK-8.218.142.253-0593
@@ -135,7 +166,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 45,47,65|🇰HK-149.104.27.34-0946
+  name: 45,65|🇰HK-149.104.27.34-0946
   network: ws
   port: 33258
   server: 149.104.27.34
@@ -150,7 +181,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 45,47,65|🇭HK-47.76.77.103-0948
+  name: 45,65|🇭HK-47.76.77.103-0948
   network: ws
   port: 2053
   server: 47.76.77.103
@@ -1054,8 +1085,34 @@ proxies:
   ws-path: /ray
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
+  name: 53,69|19|香港4 c
+  network: ws
+  port: '2053'
+  server: jb.caobi.onflashdrive.app
+  servername: cf7.caobi.onflashdrive.app
+  tls: true
+  type: vmess
+  uuid: e8ad0181-6cdd-4e6f-83cf-f2984d484527
+  ws-opts:
+    headers:
+      Host: cf7.caobi.onflashdrive.app
+    path: /cf
+- alterId: 0
+  cipher: auto
+  name: 53,69|19|香港2 c
+  network: ws
+  port: '2053'
+  server: c.caobi.onflashdrive.app
+  servername: cf4.caobi.onflashdrive.app
+  tls: true
+  type: vmess
+  uuid: e8ad0181-6cdd-4e6f-83cf-f2984d484527
+  ws-opts:
+    headers:
+      Host: cf4.caobi.onflashdrive.app
+    path: /cf
+- alterId: 0
+  cipher: auto
   name: 53,69,99|HK_speednode_0057
   network: ws
   port: 8080
@@ -1086,61 +1143,21 @@ proxies:
   server: 1.65.218.52
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 53,65,69,72|🇭🇰 香港2|@ripaojiedian
-  network: ws
-  port: 46038
-  server: mf838f.micloud.buzz
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4c26518d-75fd-4395-8cea-ede421caae9d
-  ws-opts:
-    headers:
-      Host: mf838f.micloud.buzz
-    path: /zh-cn
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 53,65,69,72|🇭🇰 香港3|@ripaojiedian
-  password: 477df3ae-ce9a-44f7-9ace-187e4061eb57
-  port: 13000
-  server: 106.75.176.75
+  name: 53,69,72,99|HK_speednode_0055
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    tls: false
+  port: 443
+  server: 8.210.33.152
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 53,69|22|香港|@ripaojiedian
-  network: tcp
-  port: '50055'
-  server: 120.238.122.252
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 53,69|22|香港4|@ripaojiedian
-  network: tcp
-  port: '33575'
-  server: xctransfer1st.cokecloud.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db3c3fbc-983c-4dc6-96c3-8e8dd9f67fe6
-- alterId: 64
-  cipher: auto
-  name: 53,69|22|香港5|@ripaojiedian
-  network: tcp
-  port: '54437'
-  server: 183.236.51.57
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 57|香港_【YouTube-VV科技】
@@ -1221,6 +1238,12 @@ proxies:
   password: a-wym4ovY4Yw
   port: 443
   server: 47.243.196.229
+  type: ss
+- cipher: aes-128-gcm
+  name: 65|🇭🇰HK-47.76.185.99-3396
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 47.76.185.99
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 65|🇰HK-148.66.56.99-4046
@@ -1464,19 +1487,6 @@ proxies:
     headers:
       Host: cache-hk-2.cn-db.top
     path: /db00
-- alterId: 0
-  cipher: auto
-  name: 89|HK 5|openitr
-  network: ws
-  port: '4431'
-  server: 152.32.190.239
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
 - alterId: 64
   cipher: auto
   name: 93|香港1|@ripaojiedian
