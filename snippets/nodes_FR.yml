@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 0,12,40,45,47,49,51,61,64,67,85,86|FR国
+  name: 0,12,40,45,47,49,51,61,64,67,86|FR国
   network: tcp
   port: 3586
   server: 213.32.63.176
@@ -34,7 +34,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,11,43,57,63,67|29|🇺🇸_US_美国->🇫🇷_FR_法国_由快嘴科技提供：...
+  name: 10,11,43,63,67|29|🇺🇸_US_美国->🇫🇷_FR_法国_由快嘴科技提供：...
   network: ws
   port: 2086
   server: 172.67.223.242
@@ -50,9 +50,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 10,34,43,45,47,50,51,53,61,63,67|19,29|🇺🇸_US_美国->🇫🇷_FR_法国_2_由快嘴...
+  name: 10,34,43,45,47,50,51,53,61,63,67,85,87|US 91|openitr
   network: ws
-  port: 2086
+  port: '2086'
   server: 104.21.4.14
   servername: ''
   skip-cert-verify: false
@@ -67,9 +67,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,43,61,63,87|SG 2|openitr
+  name: 10,43,61,63|🇬SG-8.222.174.108-0315
   network: ws
-  port: '2082'
+  port: 2082
   server: 8.222.174.108
   servername: ''
   skip-cert-verify: false
@@ -79,6 +79,46 @@ proxies:
   ws-opts:
     headers:
       Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: chacha20-poly1305
+  country: 🇫🇷FR
+  delay: 2170
+  h2-opts: {}
+  http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /OUIpxwwmtpJGIWzraW7dl5
+  name: 16,30,97|FR_speednode_0050
+  network: http
+  port: 3586
+  server: max-ip.hiroman5445.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f61875ea-a167-4c9f-9d2e-2ae3d104c267
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 16,30,43,52,63,72,79|RELAY-104.21.4.14-0590
+  network: ws
+  port: 2086
+  server: 104.21.4.14
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  ws-opts:
+    headers:
+      host: admin.arzonhost.ir
+    host: admin.arzonhost.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -99,41 +139,6 @@ proxies:
       host: admin.arzonhost.ir
     host: admin.arzonhost.ir
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 16,30,39|🇺🇸 US 41 → tg@nicevpn123
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  servername: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '16,30,77,80,86,91|美国 CloudFlare节点 #163'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alpn:
   - h3
   country: FR
@@ -148,20 +153,20 @@ proxies:
   udp: true
   up: 11 Mbps
 - country: FR
-  name: '21|netflix_FR #1'
+  name: '21|FR_13 #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.38.248.87
+  server: 15.188.222.56
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - country: FR
-  name: '21|netflix_FR #2'
+  name: '21|FR_14 #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.237.146.218
+  server: 35.181.249.165
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -182,10 +187,27 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 30,39|🇺🇸 US 29 → tg@nicevpn123
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 30|Relay_ZZ-🇫🇷FR_271 |53.48Mb
+  name: 30|Relay_🏁ZZ-🇫🇷FR_332 |236.22Mb
   network: ws
   port: 443
   server: cn.azhz.eu.org
@@ -207,7 +229,7 @@ proxies:
   udp: true
 - alterId: 23379904
   cipher: auto
-  name: '37,95|رایگان | VMESS | @DeamNet_Prox... #3'
+  name: '37,85,95|رایگان | VMESS | @DeamNet_Prox... #3'
   network: ws
   port: '80'
   server: 94.131.118.246
@@ -220,7 +242,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '37,95|رایگان | VMESS | @v2ray_swhil ... #8'
+  name: '37,95|رایگان | VMESS | @v2ray_swhil ... #6'
   network: tcp
   port: '8442'
   server: fr-v2ray.freevmess.com
@@ -228,6 +250,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
+- alterId: 0
+  cipher: auto
+  name: 39,43,45,52,63,72,86|🇷FR法国2 3.4MB/s
+  network: ws
+  port: 8880
+  server: 94.140.0.110
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      host: food.zhaal.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 43,63|🇷FR-51.77.212.145-0797
@@ -672,12 +710,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|SS-法国:德国-locked-ChatGPT-TikTok...
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 51.178.87.37
-  type: ss
 - alterId: 0
   cipher: auto
   name: 51,67,85|🔒 VM-TCP-NA 🇫🇷 FR-141.94.237.8...
@@ -717,7 +749,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '58,87,91,96|@Vip_Security join us - 28
+  name: '58,87,91,96|@Vip_Security join us - 357
 
     '
   network: ws
@@ -733,7 +765,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 58,87|IT 2|openitr
+  name: 58,87|IT 3|openitr
   network: ws
   port: '443'
   server: 188.114.96.6
@@ -1356,3 +1388,22 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts:
+    headers:
+      Host:
+      - zula.ir
+    method: GET
+    path:
+    - /OUIpxwwmtpJGIWzraW7dl5
+  name: 97|FR_speednode_0051
+  network: http
+  port: 3586
+  server: 213.32.63.176
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
