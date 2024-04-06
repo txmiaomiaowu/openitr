@@ -16,7 +16,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,10,12,26,28,34,36,40,47,48,49,51,53,61,63,64,85,91,100|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+  name: '0,10,11,12,26,28,34,36,40,47,48,49,51,53,61,63,64,85,91,100|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
     #6'
   network: ws
   port: 8880
@@ -34,7 +34,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,36,61,63|🇬SG-8.222.174.108-0382
+  name: 10,11,36,61,63|🇬SG-8.222.174.108-0382
   network: ws
   port: 2082
   server: 8.222.174.108
@@ -50,9 +50,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 10,34,36,45,47,50,53,61,63,87|US 116|openitr
+  name: 10,34,36,45,47,50,53,61,63|🏁RELAY-104.21.4.14-0149
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.21.4.14
   servername: ''
   skip-cert-verify: false
@@ -67,7 +67,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,36,51,53,61,63|🏁RELAY-172.67.223.242-0223
+  name: 10,36,53,61,63|🏁RELAY-172.67.223.242-0223
   network: ws
   port: 2086
   server: 172.67.223.242
@@ -79,31 +79,6 @@ proxies:
   ws-opts:
     headers:
       Host: admin.arzonhost.ir
-    path: /
-- cipher: aes-256-cfb
-  country: FR
-  name: '16,99|未命名 #41'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 163.172.64.22
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: NL
-  h2-opts: {}
-  http-opts: {}
-  name: 16|Relay_NL-FR_314 | 2.08Mb
-  network: ws
-  port: 2086
-  server: 188.114.98.0
-  servername: admin.arzonhost.ir
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
-  ws-opts:
-    headers:
-      HOST: admin.arzonhost.ir
     path: /
 - alpn:
   - h3
@@ -119,11 +94,11 @@ proxies:
   udp: true
   up: 11 Mbps
 - country: FR
-  name: '21|FR_13 #1'
+  name: '21|FR_16 #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 35.180.176.73
+  server: 15.188.196.5
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -132,16 +107,16 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.237.77.213
+  server: 15.236.185.204
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: 21,99|Relay_ |37.43Mb
+  name: '21|netflix_FR #2'
   network: ws
   port: 443
   server: 172.67.71.160
@@ -170,40 +145,21 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  country: 🇨🇴CO
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 30,36,52,72,79,99| | 0.66Mb
+  name: '30,52,72,77,80,86,91|美国 CloudFlare节点 #163'
   network: ws
-  port: 2086
-  server: admin.arzonhost.ir
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      host: admin.arzonhost.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '30,52,63,72,79|🏁RELAY-104.21.4.14-0149 #1'
-  network: ws
-  port: 2086
-  server: 104.21.4.14
-  servername: admin.arzonhost.ir
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
-  ws-opts:
-    headers:
-      host: admin.arzonhost.ir
-    host: admin.arzonhost.ir
+      Host: ''
     path: /
 - cipher: aes-256-cfb
   name: 34,54,63|🇷FR-51.158.54.209-6488
@@ -450,16 +406,6 @@ proxies:
   uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
   ws-opts:
     path: /V2RayyNGvpn
-- alterId: 0
-  cipher: auto
-  name: '37,95|رایگان | VMESS | @v2ray_swhil ... #7'
-  network: tcp
-  port: '8442'
-  server: fr-v2ray.freevmess.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 45,48,63,78|github.com/freefq -   5
@@ -469,12 +415,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|SS-法国:德国-locked-ChatGPT-TikTok...
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 51.178.87.37
-  type: ss
 - alterId: 64
   cipher: auto
   name: 55|法国_【YouTube-VV科技】
@@ -490,7 +430,21 @@ proxies:
     path: /path/1693992821776
 - alterId: 0
   cipher: auto
-  name: 58,87|IT 3|openitr
+  name: 58|🔐FREENET05
+  network: ws
+  port: '443'
+  server: 172.67.196.112
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 58,87|IT 4|openitr
   network: ws
   port: '443'
   server: 188.114.96.6
@@ -504,17 +458,13 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 58,99| | 3.25Mb
+  name: 58|🔐FREENET26
   network: ws
-  port: 2086
+  port: '2086'
   server: 188.114.98.0
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
   ws-opts:
     headers:
@@ -1199,9 +1149,8 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  name: 63,99|🇫🇷FR_982
-  password: 0ChS06NwwS5pGbdeqeJ2k7
+  name: 63|🇷FR-92.243.27.51-8632
+  password: Kq3iQqtVlyPJBPcD6QpnGE
   port: 9802
   server: 92.243.27.51
   type: ss
@@ -1361,67 +1310,14 @@ proxies:
     path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 87,99|_799
+  name: 87|FR 4|openitr
   network: ws
-  port: 80
+  port: '80'
   server: 62.210.116.202
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
   ws-opts:
+    headers:
+      Host: ''
     path: /frfrfffvmn01N
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: 99|Relay_🇫🇷FR-🇫🇷FR_995
-  network: ws
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: dd8eb46d-f970-4c8e-b667-104b7a732a6b
-  ws-opts:
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 99|Relay_🏁ZZ-🇷FR_1229
-  network: ws
-  port: 443
-  server: 502.outline-vpn.cloud
-  servername: glweidf.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      HOST: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 99|Relay_🏁ZZ-🇫🇷FR_1212
-  network: ws
-  port: 443
-  server: 104.21.15.212
-  servername: glweidf.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      HOST: glweidf.sbs
-    path: /linkws
