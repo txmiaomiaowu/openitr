@@ -1,10 +1,55 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 16|Relay_-JP_32 | 1.20Mb
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: JP
+  name: 16|Relay_JP-JP_293 |181.00Mb
+  obfs: plain
+  password: vyunme
+  port: 443
+  protocol: auth_aes128_sha1
+  protocol-param: 16952:9bik8I
+  server: hk5.vfun.icu
+  type: ssr
+- cipher: aes-256-cfb
+  country: JP
+  name: 16|Pool_JP_292 |244.00Mb
+  obfs: plain
+  password: www.xbvpn.com
+  port: 443
+  protocol: origin
+  server: 45.67.53.250
+  type: ssr
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇺LU
+  h2-opts: {}
+  http-opts: {}
+  name: 16,33,36,51,63,67,70,79,85,87,99|_728 |45.42Mb
+  network: ws
+  port: 8080
+  server: 87.120.204.161
+  servername: jp-4.trollfunny.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 32|🇺🇸US_379
+  name: 32|🇺🇸US_389
   network: tcp
   port: 11773
   server: jp02-vm0.entry.srthdw.art
@@ -13,41 +58,6 @@ proxies:
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
   ws-path: /path/040525210130
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 33,87|JP 4|openitr
-  network: ws
-  port: '2052'
-  server: 47.74.6.16
-  servername: jpyouyou.mac2winer.cfd
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
-  ws-opts:
-    headers:
-      Host: ''
-    path: /039fc4e4
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 33|Relay_🇯🇵JP | 8.55Mb
-  network: ws
-  port: 2052
-  server: 47.74.34.38
-  servername: jpyouyou.mac2winer.cfd
-  skip-cert-verify: true
-  type: vmess
-  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
-  ws-opts:
-    headers:
-      HOST: jpyouyou.mac2winer.cfd
-    path: /039fc4e4
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -84,7 +94,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 34,36,47,50,51,57,63|RELAY-172.67.199.155-0140
+  h2-opts: {}
+  http-opts: {}
+  name: 34,36,47,50,51,57,63,99|Relay_-TW_703 |27.38Mb
   network: ws
   port: 8080
   server: kkyx.yydsii.com
@@ -434,6 +446,35 @@ proxies:
       Host: csjp.iiio.wiki
     path: /aries?ed=2048
 - cipher: aes-256-cfb
+  name: 39|🇯🇵 JP 14 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 13.115.234.77
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 39|🇯🇵 JP 15 → tg@nicevpn123
+  network: ws
+  port: 443
+  server: hk5g.xn--vhq70hxyat50h6wk.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce
+  ws-opts:
+    headers:
+      Host: hk5g.xn--vhq70hxyat50h6wk.com
+    path: /
+- cipher: aes-256-cfb
+  name: 39|🇯🇵 JP 19 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 54.249.1.223
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: '39,63,79|🇰🇷KR-43.201.56.52-3292 #1'
   password: amazonskr05
   port: '443'
@@ -441,17 +482,17 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 39|🇯🇵 JP 12 → tg@nicevpn123
+  name: 39,57,63,79|🇵JP-54.238.182.167-3278
   password: amazonskr05
-  port: 443
-  server: 3.112.241.19
+  port: '443'
+  server: 54.238.182.167
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 39|🇯🇵 JP 19 → tg@nicevpn123
+  name: 39|🇯🇵 JP 25 → tg@nicevpn123
   password: amazonskr05
   port: 443
-  server: 54.249.1.223
+  server: 43.201.104.145
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -461,9 +502,16 @@ proxies:
   server: 13.112.216.180
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 39|🇯🇵 JP 34 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 52.194.214.99
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 39|🇯🇵 JP 20 → tg@nicevpn123
+  name: 39|🇯🇵 JP 35 → tg@nicevpn123
   network: ws
   port: 80
   server: hk5g.xn--vhq70hxyat50h6wk.com
@@ -477,55 +525,19 @@ proxies:
       Host: hk5g.xn--vhq70hxyat50h6wk.com
     path: /
 - cipher: aes-256-cfb
-  name: 39|🇯🇵 JP 23 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
-  server: 13.115.234.77
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 39,57,63,79|🇵JP-54.238.182.167-3278
-  password: amazonskr05
-  port: '443'
-  server: 54.238.182.167
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 39|🇯🇵 JP 33 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
-  server: 43.201.104.145
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 39|🇯🇵 JP 5 → tg@nicevpn123
+  name: 39|🇯🇵 JP 6 → tg@nicevpn123
   password: amazonskr05
   port: 443
   server: 43.207.80.176
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 39|🇯🇵 JP 6 → tg@nicevpn123
+  name: 39|🇯🇵 JP 7 → tg@nicevpn123
   password: amazonskr05
   port: 443
-  server: 52.194.214.99
+  server: 3.112.241.19
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 39|🇯🇵 JP 7 → tg@nicevpn123
-  network: ws
-  port: 443
-  server: hk5g.xn--vhq70hxyat50h6wk.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce
-  ws-opts:
-    headers:
-      Host: hk5g.xn--vhq70hxyat50h6wk.com
-    path: /
 - cipher: aes-256-cfb
   name: 45,63|🇵JP-54.199.83.239-1690
   password: doub.io
@@ -605,7 +617,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 51,63,67,70|🇯🇵 日本|@ripaojiedian
+  name: 51,63|🇨🇳CN-120.232.159.108-3349
   network: ws
   port: 46001
   server: mf411f.micloud.buzz
@@ -620,7 +632,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 51,67|6|日本|@ripaojiedian
+  name: 51|16|日本|@ripaojiedian
   network: ws
   port: '46001'
   server: mf411f.micloud.buzz
@@ -751,6 +763,20 @@ proxies:
   type: vmess
   uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 63|🇵JP-87.120.204.161-0678
+  network: ws
+  port: 8080
+  server: 87.120.204.161
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: 87.120.204.161
     path: /
 - cipher: aes-256-cfb
   name: 63|🇵JP-172.104.123.158-0848
@@ -891,7 +917,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 63,79,91|🇯🇵JP-152.69.197.74-3356
+  name: 63,79,85,91|🇯🇵JP-152.69.197.74-3356
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -1595,263 +1621,14 @@ proxies:
   port: 989
   server: 103.75.118.27
   type: ss
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #1'
-  network: ws
-  port: '444'
-  server: jp02-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d
-  ws-opts:
-    headers:
-      Host: jp02-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #2'
-  network: ws
-  port: '444'
-  server: jp03-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d
-  ws-opts:
-    headers:
-      Host: jp03-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #3'
-  network: ws
-  port: '444'
-  server: jp04-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d
-  ws-opts:
-    headers:
-      Host: jp04-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #19'
-  network: ws
-  port: '447'
-  server: jp02-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 74bf73ff-b403-3a17-a662-67d024d0ffec
-  ws-opts:
-    headers:
-      Host: jp02-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #5'
-  network: ws
-  port: '444'
-  server: jp06-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d
-  ws-opts:
-    headers:
-      Host: jp06-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #6'
-  network: ws
-  port: '448'
-  server: jp03-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64
-  ws-opts:
-    headers:
-      Host: jp03-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #7'
-  network: ws
-  port: '447'
-  server: jp01-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 3046e7e6-1c41-361f-8616-434c76c32d48
-  ws-opts:
-    headers:
-      Host: jp01-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #8'
-  network: ws
-  port: '448'
-  server: jp01-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64
-  ws-opts:
-    headers:
-      Host: jp01-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #9'
-  network: ws
-  port: '448'
-  server: jp06-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64
-  ws-opts:
-    headers:
-      Host: jp06-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #18'
-  network: ws
-  port: '447'
-  server: jp03-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 3046e7e6-1c41-361f-8616-434c76c32d48
-  ws-opts:
-    headers:
-      Host: jp03-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #11'
-  network: ws
-  port: '448'
-  server: jp04-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64
-  ws-opts:
-    headers:
-      Host: jp04-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #12'
-  network: ws
-  port: '448'
-  server: jp02-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64
-  ws-opts:
-    headers:
-      Host: jp02-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #15'
-  network: ws
-  port: '447'
-  server: jp04-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 74bf73ff-b403-3a17-a662-67d024d0ffec
-  ws-opts:
-    headers:
-      Host: jp04-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #14'
-  network: ws
-  port: '444'
-  server: jp01-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d
-  ws-opts:
-    headers:
-      Host: jp01-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #16'
-  network: ws
-  port: '447'
-  server: jp06-vm0.entry.ikuuu.casa
-  tls: false
-  type: vmess
-  uuid: 74bf73ff-b403-3a17-a662-67d024d0ffec
-  ws-opts:
-    headers:
-      Host: jp06-vm0.entry.ikuuu.casa
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #17'
-  network: ws
-  port: '889'
-  server: jp01-tls-vm0.entry.ikuuu.casa
-  tls: true
-  type: vmess
-  uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d
-  ws-opts:
-    headers:
-      Host: jp01-tls-vm0.entry.vm-pass.org
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #20'
-  network: ws
-  port: '892'
-  server: jp01-tls-vm0.entry.ikuuu.casa
-  tls: true
-  type: vmess
-  uuid: 3046e7e6-1c41-361f-8616-434c76c32d48
-  ws-opts:
-    headers:
-      Host: jp01-tls-vm0.entry.vm-pass.org
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #21'
-  network: ws
-  port: '893'
-  server: jp01-tls-vm0.entry.ikuuu.casa
-  tls: true
-  type: vmess
-  uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64
-  ws-opts:
-    headers:
-      Host: jp01-tls-vm0.entry.vm-pass.org
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: '64|🇯🇵 日本(欢迎订阅Youtube破解资源君) #22'
-  network: tcp
-  port: '52660'
-  server: 146.56.105.192
-  tls: false
-  type: vmess
-  uuid: b4e44960-44ed-4c5e-9577-e945b93e41fc
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 67|9|baipaovpn日本
-  network: ws
-  port: '3384'
-  server: 154.16.248.177
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b00c57f5-3f8f-38e7-b269-6ca1dea41096
-  ws-opts:
-    headers:
-      Host: data-hk-3.cn-db.top
-    path: /db00
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 67,70|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.250.24.227
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 68|日本(油管:破解资源君)
@@ -1909,19 +1686,15 @@ proxies:
     headers:
       host: 140.238.48.194
     path: /
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 87|JP 3|openitr
-  network: ws
-  port: '443'
-  server: 43.154.96.33
+  name: 87|JP 2|openitr
+  network: tcp
+  port: '21585'
+  server: jp01-alt-vm0.entry.srthdw.art
   tls: true
   type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - cipher: aes-256-cfb
   name: 88|[02-24]-🇵-日本-117-43.201.33.9
   obfs: plain
