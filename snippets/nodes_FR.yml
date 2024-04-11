@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 0,12,40,42,44,46,53,56,69|🇷FR国
+  name: 0,12,40,42,44,46,53,56,69|🇷FR法国2
   network: tcp
   port: 3586
   server: 213.32.63.176
@@ -16,8 +16,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,9,11,12,26,28,37,42,43,44,46,47,53,55,56,68,70,73,81|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
-    #6'
+  name: '0,9,11,12,26,28,37,42,43,44,46,47,53,55,56,68,73,81|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #6'
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -49,7 +48,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9,11,46,47,53,55,68|🔒 VM-WS-NA 🇺🇸 US-172.67.223.24...
+  name: 9,11,46,47,53,55,70|US 40|openitr
   network: ws
   port: '2086'
   server: 172.67.223.242
@@ -65,9 +64,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 9,11,40,42,45,46,47,53,55|RELAY-104.21.4.14-0239
+  name: 9,11,40,42,45,46,47,53,55,70|US 38|openitr
   network: ws
-  port: 2086
+  port: '2086'
   server: 104.21.4.14
   servername: ''
   skip-cert-verify: false
@@ -80,54 +79,37 @@ proxies:
     headers:
       Host: admin.arzonhost.ir
     path: /
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 15,32,37,55,80|_301 | 6.21Mb
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 54.36.174.181
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 16|Relay_FR-LU_258 | 2.13Mb
+  name: 16|Relay_FR-BG_253 | 2.13Mb
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 163.172.64.22
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 16,30,37,55,60,62,80| | 2.52Mb
+  name: '16,60,62|🏁RELAY-10.10.34.36-0240 #1'
   network: ws
   port: 2086
-  server: 104.21.4.14
-  servername: admin.arzonhost.ir
+  server: admin.arzonhost.ir
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
   ws-opts:
     headers:
       host: admin.arzonhost.ir
+    host: admin.arzonhost.ir
     path: /
-- cipher: aes-256-gcm
-  country: 🇷FR
-  name: 17,21,31,32,37,55,80|_285 | 4.30Mb
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 17,33|Relay_🏁ZZ-🇷FR_240
+  name: 17,33|Relay_🏁ZZ-🇷FR_221
   network: ws
   port: 443
   server: obdii.cfd
@@ -163,20 +145,11 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: '21|FR_14 #1'
+  name: '21|netflix_FR #2'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.236.187.237
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: FR
-  name: '21|FR_15 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.174.85
+  server: 13.39.213.61
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -185,7 +158,25 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 21,33,37,80|Relay_🇺🇸US-🇩🇪DE_1204 |33.41Mb
+  name: 21,33|Relay_🇺🇸US-🇺🇸US_105
+  network: ws
+  port: 443
+  server: jahfkjha.cfd
+  servername: jahfkjha.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      HOST: jahfkjha.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 21,33,37,80| |154.46Mb
   network: ws
   port: 443
   server: 172.67.71.160
@@ -201,7 +192,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  country: ZZ
+  country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
   name: 21,33,37,62,80| |45.76Mb
@@ -230,26 +221,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: '30,60,62|🏁RELAY-10.10.34.36-0240 #1'
-  network: ws
-  port: 2086
-  server: admin.arzonhost.ir
-  servername: admin.arzonhost.ir
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
-  ws-opts:
-    headers:
-      host: admin.arzonhost.ir
-    host: admin.arzonhost.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '36,46,68,76|رایگان | VMESS | @v2Line | FR🇫... #1'
+  name: '36,46,68,76|رایگان | VMESS | @Hope_Net | F... #1'
   network: tcp
   port: '8442'
   server: 141.94.237.81
@@ -266,12 +238,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 40|SS-法国:德国-locked-ChatGPT-TikTok...
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 51.178.87.37
-  type: ss
 - alterId: 64
   cipher: auto
   name: 48|法国_【YouTube-VV科技】
@@ -289,7 +255,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 51,70,80|Relay_-🇺RU_787 | 6.73Mb
+  name: 51,70,80|Relay_ | 9.68Mb
   network: ws
   port: 443
   server: 188.114.96.6
@@ -305,17 +271,13 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 51,70,80| | 2.34Mb
+  name: 51|🔐FREENET14
   network: ws
-  port: 2086
+  port: '2086'
   server: 188.114.98.0
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
   ws-opts:
     headers:
@@ -336,13 +298,13 @@ proxies:
       Host: linde06.indiavideo.sbs
     path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇷FR-51.178.87.37-0817
+  name: 55,80|_294
   password: G!yBwPWH3Vao
   port: 810
   server: 51.178.87.37
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇫🇷FR-51.178.87.37-0818
+  name: 55,80|_292
   password: G!yBwPWH3Vao
   port: 804
   server: 51.178.87.37
@@ -1312,10 +1274,20 @@ proxies:
       Host: c8w6stpcephkomzy.gongyiyun.cf
     path: /
 - alterId: 0
+  cipher: chacha20-poly1305
+  name: 68|🔒 VM-TCP-NA 🇫🇷 FR-213.32.63.17...
+  network: tcp
+  port: '8954'
+  server: 213.32.63.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 43d3c519-fb90-4e1c-ab72-ab921f6d3d04
+- alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 70,80|_853
+  name: 70,80|_810
   network: ws
   port: 80
   server: 62.210.116.202
@@ -1336,50 +1308,29 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
-- cipher: aes-256-gcm
-  country: 🇷FR
-  name: 80|🇷FR_936 | 3.00Mb
-  password: KkDzY101Oe
-  port: 45816
-  server: 51.195.149.115
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇷FR
-  name: 80|🇫🇷FR_935 | 6.95Mb
-  password: KG5cJwcYQDIYdkqY
-  port: 50969
-  server: 162.19.175.23
-  type: ss
-- cipher: aes-256-ctr
-  country: 🇫🇷FR
-  name: 80|Pool_🇷FR_938 |232.00Mb
-  obfs: tls1.2_ticket_auth
-  password: NewBypasser2023
-  port: 443
-  protocol: origin
-  server: 195.154.118.40
-  type: ssr
 - alterId: 0
   cipher: auto
-  country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 80|Relay_🇷FR-🇫🇷FR_940 |10.56Mb
+  name: 80|Relay_-FR_480
   network: ws
   port: 443
-  server: uk-full.privateip.net
+  server: 185.146.173.129
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 2f024052-9128-4d8e-944c-124ae738c0d7
+  udp: true
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
   ws-opts:
-    path: /RACEVPN
+    headers:
+      Host: nt-haze-7dad.rogap16875.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
   country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 80|Relay_🇫🇷FR-🇫🇷FR_939
+  name: 80|Relay_🇷FR-🇫🇷FR_949
   network: ws
   port: 443
   server: fr-full.privateip.net
@@ -1387,20 +1338,5 @@ proxies:
   tls: true
   type: vmess
   uuid: 19e84929-f022-406a-ae78-7d0a11c0dd14
-  ws-opts:
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: 80|Pool_🇫🇷FR_941 | 9.77Mb
-  network: ws
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 63f2261a-17d8-44f8-bf93-837f1738b81c
   ws-opts:
     path: /RACEVPN
