@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 0,12,40,42,44,46,53,56,69|🇷FR法国2
+  name: 0,12,35,40,42,44,46,53,56,69|🇷FR法国2
   network: tcp
   port: 3586
   server: 213.32.63.176
@@ -16,7 +16,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,9,11,12,26,28,37,42,43,44,46,47,53,55,56,68,73,81|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #6'
+  name: '0,9,11,12,26,28,35,37,42,43,44,46,47,53,55,56,58,68,73,81|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+    #6'
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -33,7 +34,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9,11,53,55|🇬SG-8.222.174.108-0514
+  name: 9,11,35,53,55|🇬SG-8.222.174.108-0514
   network: ws
   port: 2082
   server: 8.222.174.108
@@ -48,9 +49,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9,11,46,47,53,55,70|US 40|openitr
+  name: 9,11,35,47,53,55,58|10|🇺🇸_US_美国->🇷_FR_国_由快嘴科技提供：kk...
   network: ws
-  port: '2086'
+  port: 2086
   server: 172.67.223.242
   servername: ''
   skip-cert-verify: false
@@ -64,7 +65,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 9,11,40,42,45,46,47,53,55,70|US 38|openitr
+  name: 9,11,35,40,42,45,47,53,55,58,70|US 33|openitr
   network: ws
   port: '2086'
   server: 104.21.4.14
@@ -79,49 +80,89 @@ proxies:
     headers:
       Host: admin.arzonhost.ir
     path: /
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 15,32,37,80| | 2.80Mb
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 54.36.174.181
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: ' FR'
+  name: 15,37,55,80|_414
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 149.202.82.172
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 16|Relay_FR-BG_253 | 2.13Mb
+  name: 16|Relay_FR-GB_276 | 2.13Mb
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 163.172.64.22
   type: ss
 - alterId: 0
   cipher: auto
-  country: ZZ
+  country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: '16,60,62|🏁RELAY-10.10.34.36-0240 #1'
+  name: 16,80|Relay_🇫🇷FR-🇫🇷FR_927
+  network: ws
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 19e84929-f022-406a-ae78-7d0a11c0dd14
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  country: NL
+  h2-opts: {}
+  http-opts: {}
+  name: 16|Relay_NL-FR_316 | 2.82Mb
   network: ws
   port: 2086
-  server: admin.arzonhost.ir
+  server: 188.114.98.0
+  servername: admin.arzonhost.ir
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
   ws-opts:
     headers:
-      host: admin.arzonhost.ir
-    host: admin.arzonhost.ir
+      HOST: admin.arzonhost.ir
     path: /
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 17,33|Relay_🏁ZZ-🇷FR_221
+  name: 16,33,37,55,60,62|🏁RELAY-104.21.4.14-0239
   network: ws
-  port: 443
-  server: obdii.cfd
-  servername: obdii.cfd
+  port: 2086
+  server: 104.21.4.14
+  servername: mizban.arzonhost.ir
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  udp: true
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
   ws-opts:
     headers:
-      HOST: obdii.cfd
-    path: /linkws
+      host: admin.arzonhost.ir
+    host: admin.arzonhost.ir
+    path: /
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 17,31,32,37,55,80| | 3.61Mb
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 145.239.6.202
+  type: ss
+  udp: true
 - alpn:
   - h3
   country: FR
@@ -136,20 +177,20 @@ proxies:
   udp: true
   up: 11 Mbps
 - country: FR
-  name: '21|netflix_FR #1'
+  name: '21|FR_17 #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.37.192.119
+  server: 15.236.187.237
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - country: FR
-  name: '21|netflix_FR #2'
+  name: '21|netflix_FR #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.39.213.61
+  server: 15.236.58.232
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -158,25 +199,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 21,33|Relay_🇺🇸US-🇺🇸US_105
-  network: ws
-  port: 443
-  server: jahfkjha.cfd
-  servername: jahfkjha.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      HOST: jahfkjha.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 21,33,37,80| |154.46Mb
+  name: 21,33,37,80|Relay_🇺🇸US-🇩🇪DE_1200 |154.46Mb
   network: ws
   port: 443
   server: 172.67.71.160
@@ -192,26 +215,6 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 21,33,37,62,80| |45.76Mb
-  network: ws
-  port: 443
-  server: 104.21.15.212
-  servername: glweidf.sbs
-  skip-cert-verify: true
-  sni: glweidf.sbs
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      HOST: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
   name: '26,46,73,81|🇫🇷_FR_法国 #2'
   network: http
   port: 3389
@@ -221,14 +224,293 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '36,46,68,76|رایگان | VMESS | @Hope_Net | F... #1'
-  network: tcp
-  port: '8442'
-  server: 141.94.237.81
+  country: 🇧🇬BG
+  h2-opts: {}
+  http-opts: {}
+  name: 33|Relay_🇧🇬BG-FR_03 |29.43Mb
+  network: ws
+  port: 443
+  server: 147.78.140.30
+  servername: 4868-poetry-4868.napora7003.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      HOST: 4868-poetry-4868.napora7003.workers.dev
+    path: /obdii.cfd/linkws
+- alterId: 0
+  cipher: auto
+  country: 🇨CO
+  h2-opts: {}
+  http-opts: {}
+  name: 33|Relay_CO-🇫🇷FR_16 |29.28Mb
+  network: ws
+  port: 443
+  server: 855.outline-vpn.cloud
+  servername: afrhms16v.bestxray.buzz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      HOST: afrhms16v.bestxray.buzz
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇨🇴CO
+  h2-opts: {}
+  http-opts: {}
+  name: 33,37|IT 5 → tg@nicevpn123
+  network: ws
+  port: 443
+  server: 188.114.97.3
+  servername: afrhms16v.bestxray.buzz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: AE
+  h2-opts: {}
+  http-opts: {}
+  name: 33,37,40,55,58,60,62,69|FR 12.1MB/s
+  network: ws
+  port: 8880
+  server: 94.140.0.110
+  servername: food.zhaal.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      host: food.zhaal.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 33,36,46,76,80|Relay_🇺🇸US-🇺🇸US_1176
+  network: ws
+  port: 443
+  server: afrhms16v.bestxray.buzz
+  servername: afrhms16v.bestxray.buzz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 35|TG@ZDYZ2_🇫🇷_FR_110
+  network: ws
+  port: '80'
+  server: fr1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
+  uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a
+  ws-opts:
+    headers:
+      Host: dl.delivery.mp.microsoft.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35|🇫🇷FR-37.187.75.40-8672
+  network: ws
+  port: '80'
+  server: 37.187.75.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35|法国_Telegram@kxswa
+  network: ws
+  port: '80'
+  server: 173.245.49.1
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4fd4c27a-2b01-4dd6-94ee-a2c465542177
+  ws-opts:
+    headers:
+      Host: 1.digikala.sbs
+    path: /c7z8J4SE3QpsmJZmSRZp3WCDd7QY
+- alterId: 0
+  cipher: auto
+  name: 35|@D_YOU_FREE. . . ☯
+  network: tcp
+  port: '18287'
+  server: RAWALIPAK.SOLARISMASTERMANFREE.SITE
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 644350df-352f-4d9f-97a0-8dea21d7019d
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇷FR-141.95.55.70-9406
+  network: ws
+  port: 443
+  server: 141.95.55.70
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 2496f711-f6c5-40ee-b9a3-972241fb09d4
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇷FR-51.77.158.169-5393
+  network: ws
+  port: 2096
+  server: 51.77.158.169
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇫🇷FR-51.15.19.206-8797
+  network: ws
+  port: 80
+  server: 51.15.19.206
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
+  ws-opts:
+    path: /V2RayyNGvpn
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇫🇷FR-51.15.19.206-8798
+  network: ws
+  port: 8443
+  server: 51.15.19.206
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3a3ac0c0-31f4-11ee-b337-205c6d5f5d78
+  ws-opts:
+    path: /V2RayyNGvpn
+- alterId: 0
+  cipher: auto
+  name: '35,55,59|欧洲(油管:破解资源君) #13'
+  network: ws
+  port: '2096'
+  server: 146.59.92.219
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: aca71b13-ec8a-466d-c28f-43516d3cf246
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇫🇷FR-162.19.224.175-2103
+  network: ws
+  port: 80
+  server: 162.19.224.175
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 42ba278d-65e0-4743-8707-e18ed98cfed5
+  ws-opts:
+    headers:
+      Host: 162.19.224.175
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇷FR-51.159.2.152-4094
+  network: ws
+  port: 80
+  server: 51.159.2.152
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 43587dc1-34f1-4254-ab90-56507e72d7a8
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇷FR-51.38.82.132-8790
+  network: ws
+  port: 80
+  server: 51.38.82.132
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: aca76f27-cda3-47f7-af79-7873034fd3bc
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇫🇷FR-51.15.19.206-8799
+  network: ws
+  port: 2083
+  server: 51.15.19.206
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
+  ws-opts:
+    path: /V2RayyNGvpn
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇷FR-51.77.212.145-0996
+  network: ws
+  port: 80
+  server: 51.77.212.145
+  servername: 51.77.212.145
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 35,55|🇷FR-141.94.141.20-5947
+  network: ws
+  port: 80
+  server: 141.94.141.20
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e20d4b49-06e4-4923-ae85-b2e78344b603
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 40,43,55,61|github.com/freefq -   5
@@ -238,6 +520,12 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 40|SS-法国:德国-locked-ChatGPT-TikTok...
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 51.178.87.37
+  type: ss
 - alterId: 64
   cipher: auto
   name: 48|法国_【YouTube-VV科技】
@@ -251,24 +539,6 @@ proxies:
     headers:
       Host: www.49291261.xyz
     path: /path/1693992821776
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 51,70,80|Relay_ | 9.68Mb
-  network: ws
-  port: 443
-  server: 188.114.96.6
-  servername: muriel.makeup
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: muriel.makeup
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 51|🔐FREENET14
@@ -298,13 +568,13 @@ proxies:
       Host: linde06.indiavideo.sbs
     path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 55,80|_294
+  name: 55|🇷FR-51.178.87.37-0817
   password: G!yBwPWH3Vao
   port: 810
   server: 51.178.87.37
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 55,80|_292
+  name: 55|🇫🇷FR-51.178.87.37-0818
   password: G!yBwPWH3Vao
   port: 804
   server: 51.178.87.37
@@ -315,19 +585,6 @@ proxies:
   port: 2376
   server: 195.154.200.150
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 55|🇷FR-51.77.212.145-0996
-  network: ws
-  port: 80
-  server: 51.77.212.145
-  servername: 51.77.212.145
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652
-  ws-opts:
-    path: /vmess
 - alterId: 64
   cipher: auto
   h2-opts:
@@ -352,20 +609,6 @@ proxies:
   uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 55|🇫🇷FR-162.19.224.175-2103
-  network: ws
-  port: 80
-  server: 162.19.224.175
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 42ba278d-65e0-4743-8707-e18ed98cfed5
-  ws-opts:
-    headers:
-      Host: 162.19.224.175
-    path: /vmess
 - cipher: aes-256-cfb
   name: 55|🇫🇷FR-162.19.83.11-2347
   password: asdKkaskJKfnsa
@@ -714,28 +957,6 @@ proxies:
   port: 443
   server: 146.59.111.184
   type: ss
-- cipher: aes-256-cfb
-  name: 55|🇫🇷FR-35.180.18.130-2876
-  obfs: http_simple
-  obfs-param: ''
-  password: YpX2opBbrfqJzzMs
-  port: 42833
-  protocol: origin
-  protocol-param: ''
-  server: z0111.security-cloudfront-cdn.com
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 55|🇷FR-51.159.2.152-4094
-  network: ws
-  port: 80
-  server: 51.159.2.152
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 43587dc1-34f1-4254-ab90-56507e72d7a8
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 55|🇷FR-51.159.2.152-4177
@@ -750,21 +971,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '55,59|欧洲(油管:破解资源君) #13'
-  network: ws
-  port: '2096'
-  server: 146.59.92.219
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: aca71b13-ec8a-466d-c28f-43516d3cf246
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 55|🇷FR-195.154.77.190-4372
   network: ws
   port: 2082
@@ -775,18 +981,6 @@ proxies:
   uuid: 36fa45db-2d4a-4295-a1fe-223836989878
   ws-opts:
     path: /pineapple
-- alterId: 0
-  cipher: auto
-  name: 55|🇷FR-51.77.158.169-5393
-  network: ws
-  port: 2096
-  server: 51.77.158.169
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 55|🇷FR-141.94.59.200-5638
@@ -811,20 +1005,6 @@ proxies:
   uuid: 35d25899-ed20-46d9-9c7c-99c0d414d5e4
   ws-opts:
     path: /user
-- alterId: 0
-  cipher: auto
-  name: 55|🇷FR-141.94.141.20-5947
-  network: ws
-  port: 80
-  server: 141.94.141.20
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e20d4b49-06e4-4923-ae85-b2e78344b603
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 55|🇫🇷FR-193.70.85.191-6001
@@ -1087,54 +1267,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-51.38.82.132-8790
-  network: ws
-  port: 80
-  server: 51.38.82.132
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: aca76f27-cda3-47f7-af79-7873034fd3bc
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 55|🇫🇷FR-51.15.19.206-8797
-  network: ws
-  port: 80
-  server: 51.15.19.206
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
-  ws-opts:
-    path: /V2RayyNGvpn
-- alterId: 0
-  cipher: auto
-  name: 55|🇫🇷FR-51.15.19.206-8798
-  network: ws
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 3a3ac0c0-31f4-11ee-b337-205c6d5f5d78
-  ws-opts:
-    path: /V2RayyNGvpn
-- alterId: 0
-  cipher: auto
-  name: 55|🇫🇷FR-51.15.19.206-8799
-  network: ws
-  port: 2083
-  server: 51.15.19.206
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
-  ws-opts:
-    path: /V2RayyNGvpn
-- alterId: 0
-  cipher: auto
   name: 55|🇫🇷FR-51.15.105.39-8802
   network: ws
   port: 443
@@ -1231,18 +1363,6 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-141.95.55.70-9406
-  network: ws
-  port: 443
-  server: 141.95.55.70
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 2496f711-f6c5-40ee-b9a3-972241fb09d4
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
   name: 55|🇷FR-141.95.55.70-9407
   network: ws
   port: 80
@@ -1274,20 +1394,10 @@ proxies:
       Host: c8w6stpcephkomzy.gongyiyun.cf
     path: /
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 68|🔒 VM-TCP-NA 🇫🇷 FR-213.32.63.17...
-  network: tcp
-  port: '8954'
-  server: 213.32.63.176
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 43d3c519-fb90-4e1c-ab72-ab921f6d3d04
-- alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 70,80|_810
+  name: 70,80|_770
   network: ws
   port: 80
   server: 62.210.116.202
@@ -1298,45 +1408,42 @@ proxies:
   uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
   ws-opts:
     path: /frfrfffvmn01N
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: '73|法国 OVH SAS #4'
-  network: tcp
-  port: '3586'
-  server: max-ip.hiroman5445.ir
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 80|Relay_-FR_480
-  network: ws
+- cipher: aes-256-ctr
+  country: 🇫🇷FR
+  name: 80|Pool_🇷FR_924 |233.00Mb
+  obfs: tls1.2_ticket_auth
+  password: NewBypasser2023
   port: 443
-  server: 185.146.173.129
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: nt-haze-7dad.rogap16875.workers.dev
-    path: /afrhms16v.bestxray.buzz/linkws
+  protocol: origin
+  server: 195.154.118.40
+  type: ssr
 - alterId: 0
   cipher: auto
   country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 80|Relay_🇷FR-🇫🇷FR_949
+  name: 80|Relay_🇷FR-🇫🇷FR_925 | 7.89Mb
   network: ws
   port: 443
-  server: fr-full.privateip.net
+  server: uk-full.privateip.net
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 19e84929-f022-406a-ae78-7d0a11c0dd14
+  uuid: 2f024052-9128-4d8e-944c-124ae738c0d7
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 80|Pool_🇫🇷FR_926 |10.46Mb
+  network: ws
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 63f2261a-17d8-44f8-bf93-837f1738b81c
   ws-opts:
     path: /RACEVPN
