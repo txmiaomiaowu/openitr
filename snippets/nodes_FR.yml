@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 0,12,35,40,42,44,46,53,56,69|🇷FR法国2
+  name: 0,12,40,42,44,46,53,56,69|🇷FR法国2
   network: tcp
   port: 3586
   server: 213.32.63.176
@@ -16,7 +16,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,9,11,12,26,28,35,37,42,43,44,46,47,53,55,56,58,68,73,81|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+  name: '0,9,11,12,26,28,37,42,43,44,46,47,53,55,56,68,70,73,81|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
     #6'
   network: ws
   port: 8880
@@ -34,7 +34,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9,11,35,53,55|🇬SG-8.222.174.108-0514
+  name: 9,11,53,55|🇬SG-8.222.174.108-0429
   network: ws
   port: 2082
   server: 8.222.174.108
@@ -49,9 +49,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9,11,35,47,53,55,58|10|🇺🇸_US_美国->🇷_FR_国_由快嘴科技提供：kk...
+  name: 9,11,47,53,55,68,70|US 41|openitr
   network: ws
-  port: 2086
+  port: '2086'
   server: 172.67.223.242
   servername: ''
   skip-cert-verify: false
@@ -65,7 +65,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 9,11,35,40,42,45,47,53,55,58,70|US 33|openitr
+  name: 9,11,40,42,45,47,53,55,70|US 40|openitr
   network: ws
   port: '2086'
   server: 104.21.4.14
@@ -81,88 +81,44 @@ proxies:
       Host: admin.arzonhost.ir
     path: /
 - cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 15,32,37,80| | 2.80Mb
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 54.36.174.181
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: ' FR'
-  name: 15,37,55,80|_414
+  country: 🇫🇷FR
+  name: 15,17,32,37,55,80| | 1.96Mb
   password: XKFKl2rULjIp74
   port: 8009
-  server: 149.202.82.172
+  server: 54.36.174.181
   type: ss
   udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 16|Relay_FR-GB_276 | 2.13Mb
+  name: 16|Relay_FR-LU_282 | 2.13Mb
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 163.172.64.22
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇫🇷FR
+  country: FR
   h2-opts: {}
   http-opts: {}
-  name: 16,80|Relay_🇫🇷FR-🇫🇷FR_927
+  name: 16|FR_284
   network: ws
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 19e84929-f022-406a-ae78-7d0a11c0dd14
-  ws-opts:
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  country: NL
-  h2-opts: {}
-  http-opts: {}
-  name: 16|Relay_NL-FR_316 | 2.82Mb
-  network: ws
-  port: 2086
-  server: 188.114.98.0
-  servername: admin.arzonhost.ir
+  port: 80
+  server: eu-2.hihu.net
+  servername: android.googleapis.com
   skip-cert-verify: true
   type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  uuid: ef51f640-f388-11ee-b131-205c6d5f5d78
   ws-opts:
     headers:
-      HOST: admin.arzonhost.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 16,33,37,55,60,62|🏁RELAY-104.21.4.14-0239
-  network: ws
-  port: 2086
-  server: 104.21.4.14
-  servername: mizban.arzonhost.ir
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
-  ws-opts:
-    headers:
-      host: admin.arzonhost.ir
-    host: admin.arzonhost.ir
-    path: /
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 17,31,32,37,55,80| | 3.61Mb
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
+      HOST: android.googleapis.com
+    path: /czh6w4r9
+- cipher: chacha20-ietf-poly1305
+  country: 🇮 IR
+  name: 16,32|🇮 IR_143
+  password: Z5W1uoxgnoa13BbrX29Gjd
+  port: 448
+  server: 88.135.41.97
   type: ss
-  udp: true
 - alpn:
   - h3
   country: FR
@@ -177,7 +133,7 @@ proxies:
   udp: true
   up: 11 Mbps
 - country: FR
-  name: '21|FR_17 #1'
+  name: '21|netflix_FR #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -186,20 +142,20 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: '21|netflix_FR #1'
+  name: '21|netflix_FR #2'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.236.58.232
+  server: 13.39.213.61
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: 21,33,37,80|Relay_🇺🇸US-🇩🇪DE_1200 |154.46Mb
+  name: 21,37|🇺🇸 US 155 → tg@nicevpn123
   network: ws
   port: 443
   server: 172.67.71.160
@@ -210,8 +166,6 @@ proxies:
   udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
-    headers:
-      HOST: obdii.cfd
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -224,63 +178,10 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  country: 🇧🇬BG
+  country: 🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 33|Relay_🇧🇬BG-FR_03 |29.43Mb
-  network: ws
-  port: 443
-  server: 147.78.140.30
-  servername: 4868-poetry-4868.napora7003.workers.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      HOST: 4868-poetry-4868.napora7003.workers.dev
-    path: /obdii.cfd/linkws
-- alterId: 0
-  cipher: auto
-  country: 🇨CO
-  h2-opts: {}
-  http-opts: {}
-  name: 33|Relay_CO-🇫🇷FR_16 |29.28Mb
-  network: ws
-  port: 443
-  server: 855.outline-vpn.cloud
-  servername: afrhms16v.bestxray.buzz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      HOST: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 33,37|IT 5 → tg@nicevpn123
-  network: ws
-  port: 443
-  server: 188.114.97.3
-  servername: afrhms16v.bestxray.buzz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: AE
-  h2-opts: {}
-  http-opts: {}
-  name: 33,37,40,55,58,60,62,69|FR 12.1MB/s
+  name: 30,37,40,55,60,69,80| | 8.04Mb
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -296,221 +197,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 33,36,46,76,80|Relay_🇺🇸US-🇺🇸US_1176
-  network: ws
-  port: 443
-  server: afrhms16v.bestxray.buzz
-  servername: afrhms16v.bestxray.buzz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 35|TG@ZDYZ2_🇫🇷_FR_110
-  network: ws
-  port: '80'
-  server: fr1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a
-  ws-opts:
-    headers:
-      Host: dl.delivery.mp.microsoft.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35|🇫🇷FR-37.187.75.40-8672
-  network: ws
-  port: '80'
-  server: 37.187.75.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35|法国_Telegram@kxswa
-  network: ws
-  port: '80'
-  server: 173.245.49.1
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4fd4c27a-2b01-4dd6-94ee-a2c465542177
-  ws-opts:
-    headers:
-      Host: 1.digikala.sbs
-    path: /c7z8J4SE3QpsmJZmSRZp3WCDd7QY
-- alterId: 0
-  cipher: auto
-  name: 35|@D_YOU_FREE. . . ☯
+  name: 34,68,70|US 35|openitr
   network: tcp
-  port: '18287'
-  server: RAWALIPAK.SOLARISMASTERMANFREE.SITE
+  port: '44513'
+  server: 162.19.25.207
   servername: ''
   tls: false
   type: vmess
-  uuid: 644350df-352f-4d9f-97a0-8dea21d7019d
+  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
 - alterId: 0
   cipher: auto
-  name: 35,55|🇷FR-141.95.55.70-9406
-  network: ws
-  port: 443
-  server: 141.95.55.70
+  name: '36,46,68,76|رایگان | VMESS | @v2Line | FR🇫... #1'
+  network: tcp
+  port: '8442'
+  server: 141.94.237.81
   servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 2496f711-f6c5-40ee-b9a3-972241fb09d4
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇷FR-51.77.158.169-5393
-  network: ws
-  port: 2096
-  server: 51.77.158.169
-  servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇫🇷FR-51.15.19.206-8797
-  network: ws
-  port: 80
-  server: 51.15.19.206
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
-  ws-opts:
-    path: /V2RayyNGvpn
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇫🇷FR-51.15.19.206-8798
-  network: ws
-  port: 8443
-  server: 51.15.19.206
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 3a3ac0c0-31f4-11ee-b337-205c6d5f5d78
-  ws-opts:
-    path: /V2RayyNGvpn
-- alterId: 0
-  cipher: auto
-  name: '35,55,59|欧洲(油管:破解资源君) #13'
-  network: ws
-  port: '2096'
-  server: 146.59.92.219
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: aca71b13-ec8a-466d-c28f-43516d3cf246
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇫🇷FR-162.19.224.175-2103
-  network: ws
-  port: 80
-  server: 162.19.224.175
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 42ba278d-65e0-4743-8707-e18ed98cfed5
-  ws-opts:
-    headers:
-      Host: 162.19.224.175
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇷FR-51.159.2.152-4094
-  network: ws
-  port: 80
-  server: 51.159.2.152
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 43587dc1-34f1-4254-ab90-56507e72d7a8
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇷FR-51.38.82.132-8790
-  network: ws
-  port: 80
-  server: 51.38.82.132
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: aca76f27-cda3-47f7-af79-7873034fd3bc
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇫🇷FR-51.15.19.206-8799
-  network: ws
-  port: 2083
-  server: 51.15.19.206
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
-  ws-opts:
-    path: /V2RayyNGvpn
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇷FR-51.77.212.145-0996
-  network: ws
-  port: 80
-  server: 51.77.212.145
-  servername: 51.77.212.145
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 35,55|🇷FR-141.94.141.20-5947
-  network: ws
-  port: 80
-  server: 141.94.141.20
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e20d4b49-06e4-4923-ae85-b2e78344b603
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+  uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 40,43,55,61|github.com/freefq -   5
@@ -520,12 +224,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 40|SS-法国:德国-locked-ChatGPT-TikTok...
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 51.178.87.37
-  type: ss
 - alterId: 64
   cipher: auto
   name: 48|法国_【YouTube-VV科技】
@@ -539,6 +237,24 @@ proxies:
     headers:
       Host: www.49291261.xyz
     path: /path/1693992821776
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 51,70,80|Relay_-🇷🇺RU_719 | 9.79Mb
+  network: ws
+  port: 443
+  server: 188.114.96.6
+  servername: muriel.makeup
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: muriel.makeup
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 51|🔐FREENET14
@@ -567,29 +283,30 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 55|🇷FR-51.178.87.37-0817
-  password: G!yBwPWH3Vao
-  port: 810
-  server: 51.178.87.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 55|🇫🇷FR-51.178.87.37-0818
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 51.178.87.37
-  type: ss
 - cipher: aes-256-gcm
-  name: 55|🇷FR-195.154.200.150-0931
+  name: 55|🇷FR-195.154.200.150-0846
   password: faBAoD54k87UJG7
   port: 2376
   server: 195.154.200.150
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 55|🇷FR-51.77.212.145-0911
+  network: ws
+  port: 80
+  server: 51.77.212.145
+  servername: 51.77.212.145
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652
+  ws-opts:
+    path: /vmess
 - alterId: 64
   cipher: auto
   h2-opts:
     path: /
-  name: 55|🇫FR-51.15.119.36-1007
+  name: 55|🇷FR-51.15.119.36-0922
   network: h2
   port: 443
   server: 51.15.119.36
@@ -599,7 +316,7 @@ proxies:
   uuid: 05b6b25b-bb5d-4dcd-9710-31e374ffa584
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-146.59.43.129-1103
+  name: 55|🇷FR-146.59.43.129-1018
   network: ws
   port: 443
   server: 146.59.43.129
@@ -609,357 +326,393 @@ proxies:
   uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇫FR-162.19.224.175-1986
+  network: ws
+  port: 80
+  server: 162.19.224.175
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 42ba278d-65e0-4743-8707-e18ed98cfed5
+  ws-opts:
+    headers:
+      Host: 162.19.224.175
+    path: /vmess
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.83.11-2347
+  name: 55|🇫🇷FR-162.19.83.11-2230
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.11
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇷FR-162.19.204.74-2352
+  name: 55|🇷FR-162.19.204.74-2235
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.74
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.83.13-2354
+  name: 55|🇫🇷FR-162.19.83.13-2237
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.13
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.18.107-2355
+  name: 55|🇫🇷FR-162.19.18.107-2238
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.18.107
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.84.198-2356
+  name: 55|🇫🇷FR-162.19.84.198-2239
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.84.198
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-141.95.125.11-2358
+  name: 55|🇫🇷FR-141.95.125.11-2241
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.125.11
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.83.8-2359
+  name: 55|🇫🇷FR-162.19.83.8-2242
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.8
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.18.106-2360
+  name: 55|🇫🇷FR-162.19.18.106-2243
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.18.106
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.204.75-2364
+  name: 55|🇫🇷FR-162.19.204.75-2247
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.75
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-141.95.126.100-2366
+  name: 55|🇫🇷FR-141.95.126.100-2249
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.126.100
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.83.9-2367
+  name: 55|🇫🇷FR-162.19.83.9-2250
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.9
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.204.80-2372
+  name: 55|🇫🇷FR-162.19.204.80-2255
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.80
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.19.210-2373
+  name: 55|🇫🇷FR-162.19.19.210-2256
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.19.210
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.83.28-2376
+  name: 55|🇫🇷FR-162.19.83.28-2259
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.28
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.204.77-2377
+  name: 55|🇷FR-162.19.204.77-2260
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.77
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.71.221-2378
+  name: 55|🇫🇷FR-146.59.71.221-2261
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.71.221
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.59.169-2381
+  name: 55|🇫🇷FR-162.19.59.169-2264
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.169
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.59.164-2382
+  name: 55|🇫🇷FR-162.19.59.164-2265
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.164
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.71.220-2385
+  name: 55|🇫🇷FR-146.59.71.220-2268
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.71.220
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.110.169-2386
+  name: 55|🇫🇷FR-146.59.110.169-2269
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.169
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.110.240-2392
+  name: 55|🇫🇷FR-146.59.110.240-2275
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.240
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-51.159.221.203-2393
+  name: 55|🇫🇷FR-51.159.221.203-2276
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.221.203
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.186-2396
+  name: 55|🇫🇷FR-146.59.111.186-2279
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.186
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-141.95.157.210-2398
+  name: 55|🇫🇷FR-141.95.157.210-2281
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.157.210
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.110.171-2400
+  name: 55|🇫🇷FR-146.59.110.171-2283
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.171
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.183-2402
+  name: 55|🇫🇷FR-146.59.111.183-2285
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.183
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.182-2406
+  name: 55|🇫🇷FR-146.59.111.182-2289
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.182
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇷FR-146.59.110.167-2407
+  name: 55|🇷FR-146.59.110.167-2290
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.167
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-37.59.21.132-2408
+  name: 55|🇫🇷FR-37.59.21.132-2291
   password: asdKkaskJKfnsa
   port: 443
   server: 37.59.21.132
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.181-2409
+  name: 55|🇫🇷FR-146.59.111.181-2292
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.181
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.204.81-2410
+  name: 55|🇫🇷FR-162.19.204.81-2293
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.81
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.212-2411
+  name: 55|🇫🇷FR-146.59.111.212-2294
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.212
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.55.84-2412
+  name: 55|🇫🇷FR-146.59.55.84-2295
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.55.84
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.204.79-2414
+  name: 55|🇫🇷FR-162.19.204.79-2297
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.79
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.209-2416
+  name: 55|🇫🇷FR-146.59.111.209-2299
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.209
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇷FR-162.19.204.83-2434
+  name: 55|🇷FR-162.19.204.83-2317
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.83
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.83.10-2436
+  name: 55|🇫🇷FR-162.19.83.10-2319
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.10
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.18.105-2438
+  name: 55|🇫🇷FR-162.19.18.105-2321
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.18.105
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.204.82-2439
+  name: 55|🇫🇷FR-162.19.204.82-2322
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.82
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.204.76-2440
+  name: 55|🇫🇷FR-162.19.204.76-2323
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.76
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-141.95.125.48-2441
+  name: 55|🇫🇷FR-141.95.125.48-2324
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.125.48
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.169.128-2445
+  name: 55|🇫🇷FR-162.19.169.128-2328
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.169.128
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.0.7-2446
+  name: 55|🇫🇷FR-146.59.0.7-2329
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.0.7
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.210-2447
+  name: 55|🇫🇷FR-146.59.111.210-2330
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.210
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.83.15-2450
+  name: 55|🇫🇷FR-162.19.83.15-2333
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.15
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-141.94.143.221-2452
+  name: 55|🇫🇷FR-141.94.143.221-2335
   password: asdKkaskJKfnsa
   port: 443
   server: 141.94.143.221
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-37.59.21.131-2453
+  name: 55|🇫🇷FR-37.59.21.131-2336
   password: asdKkaskJKfnsa
   port: 443
   server: 37.59.21.131
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.59.165-2454
+  name: 55|🇫🇷FR-162.19.59.165-2337
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.165
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.59.166-2456
+  name: 55|🇫🇷FR-162.19.59.166-2339
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.166
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-37.59.21.130-2457
+  name: 55|🇫🇷FR-37.59.21.130-2340
   password: asdKkaskJKfnsa
   port: 443
   server: 37.59.21.130
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.59.163-2459
+  name: 55|🇫🇷FR-162.19.59.163-2342
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.163
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.195-2469
+  name: 55|🇷FR-146.59.111.195-2352
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.195
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.81.124-2472
+  name: 55|🇫🇷FR-146.59.81.124-2355
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.81.124
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-51.159.222.35-2476
+  name: 55|🇫🇷FR-51.159.222.35-2359
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.222.35
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇷FR-146.59.110.239-2483
+  name: 55|🇷FR-146.59.110.239-2366
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.239
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-162.19.59.161-2484
+  name: 55|🇫🇷FR-162.19.59.161-2367
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.161
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.110.168-2485
+  name: 55|🇫🇷FR-146.59.110.168-2368
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.168
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-146.59.111.184-2493
+  name: 55|🇫🇷FR-146.59.111.184-2376
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.184
   type: ss
+- cipher: aes-256-cfb
+  name: 55|🇫🇷FR-13.38.26.224-2759
+  obfs: http_simple
+  obfs-param: ''
+  password: YpX2opBbrfqJzzMs
+  port: 42833
+  protocol: origin
+  protocol-param: ''
+  server: z0111.security-cloudfront-cdn.com
+  type: ssr
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-51.159.2.152-4177
+  name: 55|🇷FR-51.159.2.152-3998
+  network: ws
+  port: 80
+  server: 51.159.2.152
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 43587dc1-34f1-4254-ab90-56507e72d7a8
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇷FR-51.159.2.152-4081
   network: ws
   port: 8880
   server: 51.159.2.152
@@ -971,7 +724,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-195.154.77.190-4372
+  name: '55,59|欧洲(油管:破解资源君) #13'
+  network: ws
+  port: '2096'
+  server: 146.59.92.219
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: aca71b13-ec8a-466d-c28f-43516d3cf246
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇷FR-195.154.77.190-4276
   network: ws
   port: 2082
   server: 195.154.77.190
@@ -983,7 +751,19 @@ proxies:
     path: /pineapple
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-141.94.59.200-5638
+  name: 55|🇷FR-51.77.158.169-5297
+  network: ws
+  port: 2096
+  server: 51.77.158.169
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇷FR-141.94.59.200-5542
   network: ws
   port: 8080
   server: 141.94.59.200
@@ -995,7 +775,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-57.128.45.161-5640
+  name: 55|🇷FR-57.128.45.161-5544
   network: ws
   port: 80
   server: 57.128.45.161
@@ -1007,7 +787,21 @@ proxies:
     path: /user
 - alterId: 0
   cipher: auto
-  name: 55|🇫🇷FR-193.70.85.191-6001
+  name: 55|🇷FR-141.94.141.20-5851
+  network: ws
+  port: 80
+  server: 141.94.141.20
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e20d4b49-06e4-4923-ae85-b2e78344b603
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇫🇷FR-193.70.85.191-5905
   network: ws
   port: 80
   server: 193.70.85.191
@@ -1021,7 +815,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 55|🇫🇷FR-193.70.85.191-6002
+  name: 55|🇫🇷FR-193.70.85.191-5906
   network: ws
   port: 80
   server: 193.70.85.191
@@ -1033,7 +827,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-51.77.212.145-6024
+  name: 55|🇷FR-51.77.212.145-5928
   network: ws
   port: 80
   server: 51.77.212.145
@@ -1047,7 +841,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-193.70.85.191-6042
+  name: 55|🇷FR-193.70.85.191-5946
   network: ws
   port: 80
   server: 193.70.85.191
@@ -1060,56 +854,56 @@ proxies:
       Host: Irancell.ir
     path: /vmess
 - cipher: aes-256-cfb
-  name: 55|🇷FR-51.158.200.72-6593
+  name: 55|🇷FR-51.158.200.72-6497
   password: asdKkaskJKfnsa
   port: 443
   server: 51.158.200.72
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇷FR-51.158.54.209-6594
+  name: 55|🇷FR-51.158.54.209-6498
   password: asdKkaskJKfnsa
   port: 443
   server: 51.158.54.209
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-51.159.221.227-6595
+  name: 55|🇫🇷FR-51.159.221.227-6499
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.221.227
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-51.159.221.219-6599
+  name: 55|🇫🇷FR-51.159.221.219-6503
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.221.219
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-62.210.88.168-6601
+  name: 55|🇫🇷FR-62.210.88.168-6505
   password: asdKkaskJKfnsa
   port: 443
   server: 62.210.88.168
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇫🇷FR-62.210.88.148-6603
+  name: 55|🇫🇷FR-62.210.88.148-6507
   password: asdKkaskJKfnsa
   port: 443
   server: 62.210.88.148
   type: ss
 - cipher: aes-256-gcm
-  name: 55|🇷FR-195.154.200.150-7056
+  name: 55|🇷FR-195.154.200.150-6960
   password: pKEW8JPByTVTLtM
   port: 443
   server: 195.154.200.150
   type: ss
 - cipher: aes-256-cfb
-  name: 55|FR-135.125.244.103-8071
+  name: 55|FR-135.125.244.103-7975
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 135.125.244.103
   type: ss
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-51.83.97.167-8436
+  name: 55|🇷FR-51.83.97.167-8340
   network: ws
   port: 80
   server: 51.83.97.167
@@ -1121,7 +915,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-152.228.191.232-8498
+  name: 55|🇷FR-152.228.191.232-8402
   network: ws
   port: 443
   server: 152.228.191.232
@@ -1133,14 +927,14 @@ proxies:
   ws-opts:
     path: /ray
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇷FR-92.243.27.51-8577
+  name: 55|🇷FR-92.243.27.51-8481
   password: Kq3iQqtVlyPJBPcD6QpnGE
   port: 9802
   server: paris.telegavpn.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 55|🇫🇷FR-95.179.217.221-8586
+  name: 55|🇫🇷FR-95.179.217.221-8490
   network: ws
   port: 443
   server: nika4.hdfy2.foriran.trade
@@ -1154,7 +948,7 @@ proxies:
     path: /juYLyvNBpY0LBOAommy2aJE
 - alterId: 0
   cipher: auto
-  name: 55|🇫🇷FR-95.179.217.221-8588
+  name: 55|🇫🇷FR-95.179.217.221-8492
   network: ws
   port: 443
   server: nika2.hdfy2.foriran.trade
@@ -1166,7 +960,7 @@ proxies:
     headers:
       Host: nika2.hdfy2.foriran.trade
     path: /juYLyvNBpY0LBOAommy2aJE
-- name: 55|🇷FR-95.179.217.221-8593
+- name: 55|🇷FR-95.179.217.221-8497
   network: ws
   password: 79770a32-9607-4919-9483-0f1794559390
   port: 443
@@ -1179,14 +973,14 @@ proxies:
       Host: nika2.hdfy2.foriran.trade
     path: /M9hnxw1wCQpY0LBOAommy2aJE
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇷FR-141.95.160.152-8649
+  name: 55|🇷FR-141.95.160.152-8553
   password: N2Y5Y
   port: 8388
   server: fr01.proxysocks.xyz
   type: ss
 - grpc-opts:
     grpc-service-name: 6vuNVgOFnqUEvj0rcXIcStL
-  name: 55|🇫🇷FR-146.70.158.111-8695
+  name: 55|🇫🇷FR-146.70.158.111-8599
   network: grpc
   password: db19fc68-c027-4641-a8eb-eed3e1065c8a
   port: 443
@@ -1195,7 +989,7 @@ proxies:
   sni: amin.karkas1.ir
   tls: true
   type: trojan
-- name: 55|🇫🇷FR-146.70.158.111-8696
+- name: 55|🇫🇷FR-146.70.158.111-8600
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
   port: 443
@@ -1209,7 +1003,7 @@ proxies:
     path: /6vuNVgOFnqUEvj0sNkGkxxW7
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 55|🇫🇷FR-146.70.158.111-8697
+  name: 55|🇫🇷FR-146.70.158.111-8601
   network: ws
   port: 80
   server: amin.karkas1.ir
@@ -1225,7 +1019,7 @@ proxies:
   cipher: chacha20-poly1305
   grpc-opts:
     grpc-service-name: /
-  name: 55|🇫🇷FR-146.70.158.111-8698
+  name: 55|🇫🇷FR-146.70.158.111-8602
   network: grpc
   port: 443
   server: amin.karkas1.ir
@@ -1236,7 +1030,7 @@ proxies:
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 55|🇷FR-146.70.158.111-8699
+  name: 55|🇷FR-146.70.158.111-8603
   network: ws
   port: 443
   server: amin.karkas1.ir
@@ -1250,7 +1044,7 @@ proxies:
     path: /t14FEa4TBzLbwZsNkGkxxW7
 - grpc-opts:
     grpc-service-name: M9hnxw1wCQSfVHaiznU
-  name: 55|🇷FR-95.179.217.221-8726
+  name: 55|🇷FR-95.179.217.221-8630
   network: grpc
   password: 79770a32-9607-4919-9483-0f1794559390
   port: 443
@@ -1260,14 +1054,74 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇷FR-92.243.27.51-8738
+  name: 55|🇷FR-92.243.27.51-8642
   password: Kq3iQqtVlyPJBPcD6QpnGE
   port: 9802
   server: 92.243.27.51
   type: ss
 - alterId: 0
   cipher: auto
-  name: 55|🇫🇷FR-51.15.105.39-8802
+  name: 55|🇷FR-51.38.82.132-8694
+  network: ws
+  port: 80
+  server: 51.38.82.132
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: aca76f27-cda3-47f7-af79-7873034fd3bc
+  ws-opts:
+    path: /vmess
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇫🇷FR-51.178.87.37-8697
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 51.178.87.37
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇷FR-51.178.87.37-8698
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 51.178.87.37
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 55|🇫🇷FR-51.15.19.206-8701
+  network: ws
+  port: 80
+  server: 51.15.19.206
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
+  ws-opts:
+    path: /V2RayyNGvpn
+- alterId: 0
+  cipher: auto
+  name: 55|🇫🇷FR-51.15.19.206-8702
+  network: ws
+  port: 8443
+  server: 51.15.19.206
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3a3ac0c0-31f4-11ee-b337-205c6d5f5d78
+  ws-opts:
+    path: /V2RayyNGvpn
+- alterId: 0
+  cipher: auto
+  name: 55|🇫🇷FR-51.15.19.206-8703
+  network: ws
+  port: 2083
+  server: 51.15.19.206
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
+  ws-opts:
+    path: /V2RayyNGvpn
+- alterId: 0
+  cipher: auto
+  name: 55|🇫🇷FR-51.15.105.39-8706
   network: ws
   port: 443
   server: 51.15.105.39
@@ -1279,7 +1133,7 @@ proxies:
     path: /nimvws
 - alterId: 0
   cipher: auto
-  name: 55|🇫🇷FR-217.182.76.202-9009
+  name: 55|🇫🇷FR-217.182.76.202-8913
   network: ws
   port: 443
   server: 217.182.76.202
@@ -1291,7 +1145,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 55|FR-172.232.44.160-9256
+  name: 55|FR-172.232.44.160-9160
   network: ws
   port: 443
   server: 172.232.44.160
@@ -1302,20 +1156,20 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: aes-256-cfb
-  name: 55|🇷FR-162.19.59.162-9262
+  name: 55|🇷FR-162.19.59.162-9166
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.162
   type: ss
 - cipher: aes-256-cfb
-  name: 55|🇷FR-162.19.59.160-9264
+  name: 55|🇷FR-162.19.59.160-9168
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.160
   type: ss
 - grpc-opts:
     grpc-service-name: 6vuNVgOFnqUEvj0rcXIcStL
-  name: 55|🇷FR-146.70.158.111-9390
+  name: 55|🇷FR-146.70.158.111-9294
   network: grpc
   password: db19fc68-c027-4641-a8eb-eed3e1065c8a
   port: 443
@@ -1324,7 +1178,7 @@ proxies:
   sni: amin.karkas1.ir
   tls: true
   type: trojan
-- name: 55|🇫🇷FR-146.70.158.111-9392
+- name: 55|🇫🇷FR-146.70.158.111-9296
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
   port: 443
@@ -1340,7 +1194,7 @@ proxies:
   cipher: chacha20-poly1305
   grpc-opts:
     grpc-service-name: /
-  name: 55|🇫🇷FR-146.70.158.111-9393
+  name: 55|🇫🇷FR-146.70.158.111-9297
   network: grpc
   port: 443
   server: 146.70.158.111
@@ -1351,7 +1205,7 @@ proxies:
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-141.95.55.70-9405
+  name: 55|🇷FR-141.95.55.70-9309
   network: ws
   port: 80
   server: 141.95.55.70
@@ -1363,7 +1217,19 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 55|🇷FR-141.95.55.70-9407
+  name: 55|🇷FR-141.95.55.70-9310
+  network: ws
+  port: 443
+  server: 141.95.55.70
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 2496f711-f6c5-40ee-b9a3-972241fb09d4
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 55|🇷FR-141.95.55.70-9311
   network: ws
   port: 80
   server: 141.95.55.70
@@ -1374,7 +1240,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇷FR-141.95.160.152-9408
+  name: 55|🇷FR-141.95.160.152-9312
   password: N2Y5Y
   port: 8388
   server: 141.95.160.152
@@ -1394,10 +1260,20 @@ proxies:
       Host: c8w6stpcephkomzy.gongyiyun.cf
     path: /
 - alterId: 0
+  cipher: chacha20-poly1305
+  name: 68|🔒 VM-TCP-NA 🇫🇷 FR-213.32.63.17...
+  network: tcp
+  port: '8954'
+  server: 213.32.63.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 43d3c519-fb90-4e1c-ab72-ab921f6d3d04
+- alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 70,80|_770
+  name: 70,80|_645
   network: ws
   port: 80
   server: 62.210.116.202
@@ -1408,9 +1284,19 @@ proxies:
   uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
   ws-opts:
     path: /frfrfffvmn01N
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '73|法国 OVH SAS #4'
+  network: tcp
+  port: '3586'
+  server: max-ip.hiroman5445.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
 - cipher: aes-256-ctr
   country: 🇫🇷FR
-  name: 80|Pool_🇷FR_924 |233.00Mb
+  name: 80|Pool_🇷FR_877 |238.00Mb
   obfs: tls1.2_ticket_auth
   password: NewBypasser2023
   port: 443
@@ -1422,14 +1308,14 @@ proxies:
   country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 80|Relay_🇷FR-🇫🇷FR_925 | 7.89Mb
+  name: 80|Relay_🇷FR-🇫🇷FR_880
   network: ws
   port: 443
-  server: uk-full.privateip.net
+  server: fr-full.privateip.net
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 2f024052-9128-4d8e-944c-124ae738c0d7
+  uuid: 19e84929-f022-406a-ae78-7d0a11c0dd14
   ws-opts:
     path: /RACEVPN
 - alterId: 0
@@ -1437,7 +1323,7 @@ proxies:
   country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 80|Pool_🇫🇷FR_926 |10.46Mb
+  name: 80|Pool_🇫🇷FR_878 | 2.29Mb
   network: ws
   port: 443
   server: de-full.privateip.net
@@ -1445,5 +1331,20 @@ proxies:
   tls: true
   type: vmess
   uuid: 63f2261a-17d8-44f8-bf93-837f1738b81c
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 80|Relay_🇫🇷FR-🇫🇷FR_879 |10.12Mb
+  network: ws
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2f024052-9128-4d8e-944c-124ae738c0d7
   ws-opts:
     path: /RACEVPN
