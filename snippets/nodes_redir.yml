@@ -16,9 +16,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,10,11,36,46,47,52,54|🏁RELAY-172.64.80.1-0903
+  name: 1,10,11,36,46,47,52,54,69|US 47|openitr
   network: ws
-  port: 8880
+  port: '8880'
   server: cdn.vds-server.ir
   servername: ''
   skip-cert-verify: false
@@ -32,9 +32,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,10,36,45,46,47,49,52,54,69|US 33|openitr
+  name: 1,10,36,46,47,52,54|🏁RELAY-10.10.34.36-0103
   network: ws
-  port: '2086'
+  port: 2086
   server: mizban.arzonhost.ir
   servername: ''
   skip-cert-verify: false
@@ -729,7 +729,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '39,54,62|美国 CloudFlare节点 #106'
+  name: '39,54,62|美国 CloudFlare节点 #112'
   network: ws
   port: 80
   server: 104.21.225.104
@@ -1066,6 +1066,18 @@ proxies:
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 39,54|🏁RELAY-172.67.204.84-0028
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 172.67.204.84
+  skip-cert-verify: false
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 39,54|🏁RELAY-104.21.225.176-0029
@@ -1213,7 +1225,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '39,54,62|美国 CloudFlare节点 #142'
+  name: '39,54,62|美国 CloudFlare节点 #148'
   network: ws
   port: 80
   server: 104.21.233.46
@@ -1300,22 +1312,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 39,79|Pool__790 | 5.62Mb
-  network: ws
-  port: 8880
-  server: cdn.vds-server.ir
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      host: cdn.vds-server.ir
-    path: /
-- alterId: 0
-  cipher: auto
   name: 39,74|meta_vmess_01
   network: ws
   port: 8080
@@ -1345,9 +1341,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 39,59,79| | 2.90Mb
+  name: 39,59|🇺🇸_US_美国_2
   network: ws
   port: 2095
   server: onea.flha.ru
@@ -1373,6 +1367,21 @@ proxies:
     headers:
       host: mf838f.micloud.buzz
     path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: '39,52,59|🇺🇸_US_美国->🇬🇧_GB_英国 #6'
+  network: ws
+  port: 2086
+  server: mizban.arzonhost.ir
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
+  ws-opts:
+    headers:
+      host: mizban.arzonhost.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 41|🇨🇳 _TW_台湾->🇺🇸_US_美国
