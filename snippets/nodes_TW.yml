@@ -1,17 +1,63 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 15,36|🇨🇳 CN 198 → tg@nicevpn123
+  password: c44758e2-67a4-40b2-bbc8-4ca97861ea47
+  port: 22001
+  server: beromo.youxinye.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  country: ' TW'
   h2-opts: {}
   http-opts: {}
-  name: '17,31|_48 #1'
+  name: 15|Relay_-TW_186
   network: ws
-  port: 31945
-  server: 103.159.206.35
+  port: 8080
+  server: 172.67.199.144
   skip-cert-verify: true
   type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
+  udp: true
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 15,68|US 180|openitr
+  network: ws
+  port: '8080'
+  server: 172.67.169.90
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 15,32,60|RELAY-172.67.169.250-0263
+  network: ws
+  port: 8080
+  server: kkyx.yydsii.com
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      host: oiictw.yydsii.com
+    host: oiictw.yydsii.com
+    path: /
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 45|15|🇹🇼 台湾2|@ripaojiedian
@@ -31,6 +77,16 @@ proxies:
   server: 35.221.160.224
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 45|16|台湾|@ripaojiedian
+  network: tcp
+  port: '30059'
+  server: 183.232.170.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e456d54e-fb49-42c2-ace7-0dd141fee5a6
 - alterId: 0
   cipher: auto
   http-opts:
@@ -363,19 +419,3 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 78|Relay_-🇹🇼TW_667 | 9.88Mb
-  network: ws
-  port: 8080
-  server: 172.67.199.144
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /
