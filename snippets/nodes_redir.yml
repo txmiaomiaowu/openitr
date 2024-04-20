@@ -17,9 +17,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 1,9,11,15,32,36,41,46,47,51,53,68|US 26|openitr
+  name: 1,9,11,36,45,46,47,51,53,68|US 42|openitr
   network: ws
   port: '8880'
   server: cdn.vds-server.ir
@@ -35,12 +33,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,9,11,36,45,46,47,51,53,68|US 25|openitr
+  client-fingerprint: chrome
+  name: 1,9,11,36,42,43,45,46,47,51,53|🏁RELAY-172.67.223.242-0208
   network: ws
-  port: '2086'
+  port: 2086
   server: mizban.arzonhost.ir
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -51,7 +51,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,9,11,36,45,46,47,51,53,54|🇺🇸 美国 CloudFlare节点 #17'
+  name: '1,9,11,36,45,46,47,51,53,54|🇺🇸 美国 CloudFlare节点 #16'
   network: ws
   port: '2086'
   server: admin.arzonhost.ir
@@ -789,7 +789,7 @@ proxies:
     path: /
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 39,53|🏁RELAY-172.67.204.84-0102
+  name: 39,53|🏁RELAY-172.67.204.84-0078
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -824,6 +824,21 @@ proxies:
   udp: true
   ws-opts:
     path: /argox-tr
+- alterId: 0
+  cipher: auto
+  name: '39,58,60|🏁RELAY-104.21.19.202-0198 #1'
+  network: ws
+  port: 8880
+  server: cdn.vds-server.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      host: cdn.vds-server.ir
+    host: cdn.vds-server.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳_CN_中国->🇩🇪_DE_德国_5@23
@@ -879,7 +894,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,53|🏁RELAY-172.67.184.13-6527
+  name: 41,53|🏁RELAY-172.64.80.1-6537
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -919,7 +934,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,53|🏁RELAY-172.67.184.13-6525
+  name: 41,53|🏁RELAY-172.67.184.13-6535
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -933,7 +948,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 41,53|🏁RELAY-104.21.75.246-6533
+  name: 41,53|🏁RELAY-104.21.75.246-6543
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -947,7 +962,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 41,53|🇳🇱NL-45.199.138.191-6507
+  name: 41,53|🇱NL-45.199.138.191-6517
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -959,7 +974,7 @@ proxies:
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 41,53|🏁RELAY-172.67.184.13-6532
+  name: 41,53|🏁RELAY-172.64.80.1-6542
   network: ws
   port: 80
   server: jd3.shabijichang.com
@@ -1112,4 +1127,18 @@ proxies:
   type: vmess
   uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 58|🇺🇸_US_美国->🇹🇷_TR_土耳其_1
+  network: ws
+  port: 2095
+  server: tu.mahilu.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      host: tu.mahilu.site
     path: /
