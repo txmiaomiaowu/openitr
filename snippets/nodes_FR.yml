@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '10,27,45,53,71,79|🇺🇸_US_美国->🇫🇷_FR_法国 #10'
+  name: '10,27,45,53,68,71,79|🇺🇸_US_美国->🇫🇷_FR_法国 #10'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -18,7 +18,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 15|Relay_-FR_167
+  name: 15|Relay_-FR_218
   network: ws
   port: 2082
   server: 8.222.140.185
@@ -31,10 +31,28 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  country: NL
+  h2-opts: {}
+  http-opts: {}
+  name: 15|netflix_FR
+  network: ws
+  port: 443
+  server: 188.114.97.53
+  servername: fr1-vmess.sshmax.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8c929251-406f-4b32-9173-07ccd242cb58
+  ws-opts:
+    headers:
+      HOST: fr1-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15|Relay_ZZ-FR_412
+  name: 15|Relay_ZZ-FR_508
   network: ws
   port: 2096
   server: 104.21.25.8
@@ -47,25 +65,6 @@ proxies:
     headers:
       HOST: fr2-vmess.sshmax.xyz
     path: /vmess
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '15,29,32,36,53,58|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  servername: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
 - alpn:
   - h3
   country: FR
@@ -84,25 +83,25 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
+  server: 15.188.20.108
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: FR
+  name: '20|FR_18 #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
   server: 13.36.135.57
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - country: FR
-  name: '20|netflix_FR #1'
+  name: '20|FR_19 #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 13.37.254.132
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: FR
-  name: '20|netflix_FR #2'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.78.10
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -127,30 +126,13 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  country: ZZ
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: 20,32,36|🇺🇸 US 1055 → tg@nicevpn123
+  name: 20,60|RELAY-172.67.174.42-0227
   network: ws
   port: 443
-  server: 104.21.15.212
-  servername: glweidf.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '20,60|🏁RELAY-172.67.174.42-0169 #1'
-  network: ws
-  port: 443
-  server: hms082.gwdef.sbs
+  server: 172.67.174.42
   servername: gwdef.sbs
   skip-cert-verify: true
   tls: true
@@ -161,6 +143,24 @@ proxies:
       host: gwdef.sbs
     host: gwdef.sbs
     path: /linkws
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '20|netflix_FR #4'
+  network: ws
+  port: 443
+  server: caretaker.com
+  servername: mikasa.yaemiko.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      HOST: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
   country: ZZ
@@ -183,6 +183,23 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 20,32,36|🇺🇸 US 458 → tg@nicevpn123
+  network: ws
+  port: 443
+  server: 104.21.15.212
+  servername: glweidf.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
   http-opts:
     method: GET
     path:
@@ -198,38 +215,29 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '29,32,36,53,58|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   country: 🇷FR
   h2-opts: {}
   http-opts: {}
-  name: '32,35,45,66,68,74|رایگان | VMESS | @v2Line | PL🇵... #1'
-  network: tcp
-  port: '12960'
-  server: 146.59.17.58
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 48a86563-63c5-4218-e887-d752f801ae82
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: 32,45,66,68|US 122|openitr
-  network: tcp
-  port: '44513'
-  server: 162.19.25.207
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: 32,45|13|GB_分享日记_4
+  name: 32,45|13|GB_分享日记_38
   network: ws
   port: 443
   server: uk-full.privateip.net
@@ -259,6 +267,34 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 32,45,66,68|US 121|openitr
+  network: tcp
+  port: '44513'
+  server: 162.19.25.207
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: '32,35,45,66,68,74|رایگان | VMESS | @v2Line | PL🇵... #1'
+  network: tcp
+  port: '12960'
+  server: 146.59.17.58
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 48a86563-63c5-4218-e887-d752f801ae82
+- alterId: 0
+  cipher: auto
   name: '35,74|رایگان | VMESS | @prrofile_pur... #6'
   network: ws
   port: '443'
@@ -271,20 +307,6 @@ proxies:
     headers:
       Host: fr2-vmess.sshmax.xyz
     path: /vmess
-- cipher: aes-256-gcm
-  name: 36|🇫🇷 FR 18 → tg@nicevpn123
-  password: KkDzY101Oe
-  port: 45816
-  server: 51.195.149.115
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 36,53|🇷FR-92.243.27.51-8724
-  password: Kq3iQqtVlyPJBPcD6QpnGE
-  port: 9802
-  server: 92.243.27.51
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 36,39|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_5@6
@@ -300,8 +322,22 @@ proxies:
     headers:
       host: food.zhaal.ir
     path: /
+- cipher: aes-256-gcm
+  name: 36|🇫🇷 FR 34 → tg@nicevpn123
+  password: KkDzY101Oe
+  port: 45816
+  server: 51.195.149.115
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 36|🇫🇷 FR 33 → tg@nicevpn123
+  name: 36,53|🇷FR-92.243.27.51-8724
+  password: Kq3iQqtVlyPJBPcD6QpnGE
+  port: 9802
+  server: 92.243.27.51
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 36|🇫🇷 FR 40 → tg@nicevpn123
   password: G!yBwPWH3Vao
   port: 805
   server: 51.178.87.37
@@ -315,7 +351,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 36|🇫🇷 FR 35 → tg@nicevpn123
+  name: 36|🇫🇷 FR 42 → tg@nicevpn123
   password: LE6Ee6PELhVu
   port: 443
   server: 92.243.24.236
