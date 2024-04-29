@@ -1,27 +1,13 @@
 proxies:
-- cipher: aes-256-gcm
-  country: ' FR'
-  name: 14,36,53|🇫FR-149.202.82.172-1358
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 149.202.82.172
+- cipher: aes-128-gcm
+  name: 15|netflix_FR
+  password: 83ff8a61-c9a9-4765-8a43-886332499abd
+  port: 35301
+  server: be.digilan.top
   type: ss
   udp: true
-- alpn:
-  - h3
-  country: FR
-  down: 55 Mbps
-  name: 20,73|meta_hysteria2_81
-  password: dongtaiwang.com
-  port: 33390
-  server: 51.159.77.153
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-  up: 11 Mbps
 - country: FR
-  name: '20|FR_22 #1'
+  name: '15,20|netflix_FR #5'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -31,11 +17,68 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  country: ' ZZ'
+  h2-opts: {}
+  http-opts: {}
+  name: '15,60,70|美国 CloudFlare节点 #193'
+  network: ws
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '15|netflix_FR #2'
+  network: ws
+  port: 2052
+  server: 104.18.202.250
+  servername: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      HOST: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+    path: /hms02.fxiaomi.sbs/link
+- alpn:
+  - h3
+  country: FR
+  down: 55 Mbps
+  name: 20,72|meta_hysteria2_81
+  password: dongtaiwang.com
+  port: 33390
+  server: 51.159.77.153
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+  up: 11 Mbps
+- country: FR
+  name: '20|netflix_FR #4'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.137.215
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: '25,36,45,71,79|🇫🇷_FR_法国 #2'
+  name: '25,36,45,70,78|🇫🇷_FR_法国 #2'
   network: http
   port: 3389
   server: 51.159.155.52
@@ -49,39 +92,7 @@ proxies:
   country: 🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 32,45,66,68|US 79|openitr
-  network: tcp
-  port: '44513'
-  server: 162.19.25.207
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: '32,45,60|🇷FR-141.94.115.231-0148 #1'
-  network: ws
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 61c75239-c93a-4fae-baef-d2ede3fe6d98
-  ws-opts:
-    headers:
-      host: fr-full.privateip.net
-    host: fr-full.privateip.net
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷FR
-  h2-opts: {}
-  http-opts: {}
-  name: '32,35,45,66,68,74|رایگان | VMESS | @v2Line | PL🇵... #1'
+  name: '32,35,45,65,67,73|رایگان | VMESS | @v2Line | PL🇵... #1'
   network: tcp
   port: '12960'
   server: 146.59.17.58
@@ -90,29 +101,43 @@ proxies:
   tls: false
   type: vmess
   uuid: 48a86563-63c5-4218-e887-d752f801ae82
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 32,45,65,67|US 72|openitr
+  network: tcp
+  port: '44513'
+  server: 162.19.25.207
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
 - cipher: chacha20-ietf-poly1305
-  name: 36,53|🇷FR-92.243.27.51-8496
+  name: 36,52|🇷FR-51.178.87.37-8615
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 51.178.87.37
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 36|🇫🇷 FR 31 → tg@nicevpn123
+  password: KkDzY101Oe
+  port: 45816
+  server: 51.195.149.115
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 36,52|🇷FR-92.243.27.51-8559
   password: Kq3iQqtVlyPJBPcD6QpnGE
   port: 9802
   server: 92.243.27.51
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 36,53|🇷FR-51.178.87.37-8552
-  password: G!yBwPWH3Vao
-  port: 810
-  server: 51.178.87.37
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 36|🇫🇷 FR 24 → tg@nicevpn123
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 51.178.87.37
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 36|🇫🇷 FR 27 → tg@nicevpn123
+  name: 36|🇫🇷 FR 5 → tg@nicevpn123
   password: LE6Ee6PELhVu
   port: 443
   server: 92.243.24.236
@@ -146,15 +171,9 @@ proxies:
   ws-headers:
     Host: zula.ir
   ws-path: /OUIpxwwmtpJGIWzraW7dl5
-- cipher: chacha20-ietf-poly1305
-  name: 39|SS-法国:德国-locked-ChatGPT-TikTok...
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 51.178.87.37
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 47,51,53|🇬SG-8.222.174.108-0389
+  name: 47,50,52|🇬SG-8.222.174.108-0526
   network: ws
   port: 2082
   server: 8.222.174.108
@@ -183,7 +202,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-141.94.115.231-0609
+  name: 52|🇫🇷FR-141.94.115.231-0783
   network: ws
   port: 443
   server: fr-full.privateip.net
@@ -196,14 +215,14 @@ proxies:
       Host: fr-full.privateip.net
     path: /
 - cipher: aes-256-gcm
-  name: 53|🇷FR-195.154.200.150-0806
+  name: 52|🇷FR-195.154.200.150-0943
   password: faBAoD54k87UJG7
   port: 2376
   server: 195.154.200.150
   type: ss
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-51.77.212.145-0871
+  name: 52|🇷FR-51.77.212.145-1008
   network: ws
   port: 80
   server: 51.77.212.145
@@ -218,7 +237,7 @@ proxies:
   cipher: auto
   h2-opts:
     path: /
-  name: 53|🇷FR-51.15.119.36-0882
+  name: 52|🇷FR-51.15.119.36-1019
   network: h2
   port: 443
   server: 51.15.119.36
@@ -228,7 +247,7 @@ proxies:
   uuid: 05b6b25b-bb5d-4dcd-9710-31e374ffa584
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-146.59.43.129-0973
+  name: 52|🇷FR-146.59.43.129-1110
   network: ws
   port: 443
   server: 146.59.43.129
@@ -240,7 +259,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-162.19.224.175-1886
+  name: 52|🇷FR-162.19.224.175-2019
   network: ws
   port: 80
   server: 162.19.224.175
@@ -253,355 +272,355 @@ proxies:
       Host: 162.19.224.175
     path: /vmess
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.83.11-2130
+  name: 52|🇫🇷FR-162.19.83.11-2263
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.11
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇷FR-162.19.204.74-2135
+  name: 52|🇷FR-162.19.204.74-2268
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.74
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.83.13-2137
+  name: 52|🇫🇷FR-162.19.83.13-2270
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.13
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.18.107-2138
+  name: 52|🇫🇷FR-162.19.18.107-2271
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.18.107
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.84.198-2139
+  name: 52|🇫🇷FR-162.19.84.198-2272
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.84.198
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-141.95.125.11-2141
+  name: 52|🇫🇷FR-141.95.125.11-2274
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.125.11
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.83.8-2142
+  name: 52|🇫🇷FR-162.19.83.8-2275
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.8
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.18.106-2143
+  name: 52|🇫🇷FR-162.19.18.106-2276
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.18.106
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.204.75-2147
+  name: 52|🇫🇷FR-162.19.204.75-2280
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.75
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-141.95.126.100-2149
+  name: 52|🇫🇷FR-141.95.126.100-2282
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.126.100
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.83.9-2150
+  name: 52|🇫🇷FR-162.19.83.9-2283
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.9
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.204.80-2155
+  name: 52|🇫🇷FR-162.19.204.80-2288
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.80
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.19.210-2156
+  name: 52|🇫🇷FR-162.19.19.210-2289
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.19.210
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.83.28-2159
+  name: 52|🇫🇷FR-162.19.83.28-2292
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.28
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇷FR-162.19.204.77-2160
+  name: 52|🇫🇷FR-162.19.204.77-2293
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.77
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.71.221-2161
+  name: 52|🇫🇷FR-146.59.71.221-2294
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.71.221
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.59.169-2164
+  name: 52|🇫🇷FR-162.19.59.169-2297
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.169
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.59.164-2165
+  name: 52|🇫🇷FR-162.19.59.164-2298
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.164
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.71.220-2168
+  name: 52|🇫🇷FR-146.59.71.220-2301
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.71.220
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.110.169-2169
+  name: 52|🇫🇷FR-146.59.110.169-2302
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.169
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.110.240-2175
+  name: 52|🇫🇷FR-146.59.110.240-2308
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.240
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-51.159.221.203-2176
+  name: 52|🇫🇷FR-51.159.221.203-2309
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.221.203
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.186-2179
+  name: 52|🇫🇷FR-146.59.111.186-2312
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.186
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-141.95.157.210-2181
+  name: 52|🇫🇷FR-141.95.157.210-2314
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.157.210
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.110.171-2183
+  name: 52|🇫🇷FR-146.59.110.171-2316
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.171
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.183-2185
+  name: 52|🇫🇷FR-146.59.111.183-2318
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.183
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.182-2189
+  name: 52|🇫🇷FR-146.59.111.182-2322
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.182
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇷FR-146.59.110.167-2190
+  name: 52|🇷FR-146.59.110.167-2323
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.167
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-37.59.21.132-2191
+  name: 52|🇫🇷FR-37.59.21.132-2324
   password: asdKkaskJKfnsa
   port: 443
   server: 37.59.21.132
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.181-2192
+  name: 52|🇫🇷FR-146.59.111.181-2325
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.181
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.204.81-2193
+  name: 52|🇫🇷FR-162.19.204.81-2326
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.81
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.212-2194
+  name: 52|🇫🇷FR-146.59.111.212-2327
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.212
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.55.84-2195
+  name: 52|🇫🇷FR-146.59.55.84-2328
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.55.84
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.204.79-2197
+  name: 52|🇫🇷FR-162.19.204.79-2330
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.79
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.209-2199
+  name: 52|🇫🇷FR-146.59.111.209-2332
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.209
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.204.83-2217
+  name: 52|🇷FR-162.19.204.83-2350
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.83
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.83.10-2219
+  name: 52|🇫🇷FR-162.19.83.10-2352
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.10
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.18.105-2221
+  name: 52|🇫🇷FR-162.19.18.105-2354
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.18.105
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.204.82-2222
+  name: 52|🇫🇷FR-162.19.204.82-2355
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.82
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.204.76-2223
+  name: 52|🇫🇷FR-162.19.204.76-2356
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.204.76
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-141.95.125.48-2224
+  name: 52|🇫🇷FR-141.95.125.48-2357
   password: asdKkaskJKfnsa
   port: 443
   server: 141.95.125.48
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.169.128-2228
+  name: 52|🇫🇷FR-162.19.169.128-2361
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.169.128
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.0.7-2229
+  name: 52|🇫🇷FR-146.59.0.7-2362
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.0.7
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.210-2230
+  name: 52|🇫🇷FR-146.59.111.210-2363
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.210
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.83.15-2233
+  name: 52|🇫🇷FR-162.19.83.15-2366
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.83.15
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-141.94.143.221-2235
+  name: 52|🇫🇷FR-141.94.143.221-2368
   password: asdKkaskJKfnsa
   port: 443
   server: 141.94.143.221
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-37.59.21.131-2236
+  name: 52|🇫🇷FR-37.59.21.131-2369
   password: asdKkaskJKfnsa
   port: 443
   server: 37.59.21.131
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.59.165-2237
+  name: 52|🇫🇷FR-162.19.59.165-2370
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.165
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.59.166-2239
+  name: 52|🇫🇷FR-162.19.59.166-2372
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.166
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-37.59.21.130-2240
+  name: 52|🇫🇷FR-37.59.21.130-2373
   password: asdKkaskJKfnsa
   port: 443
   server: 37.59.21.130
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.59.163-2242
+  name: 52|🇫🇷FR-162.19.59.163-2375
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.163
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.195-2252
+  name: 52|🇷FR-146.59.111.195-2385
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.195
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.81.124-2255
+  name: 52|🇫🇷FR-146.59.81.124-2388
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.81.124
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-51.159.222.35-2259
+  name: 52|🇫🇷FR-51.159.222.35-2392
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.222.35
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇷FR-146.59.110.239-2266
+  name: 52|🇷FR-146.59.110.239-2399
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.239
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-162.19.59.161-2267
+  name: 52|🇫🇷FR-162.19.59.161-2400
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.161
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.110.168-2268
+  name: 52|🇫🇷FR-146.59.110.168-2401
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.110.168
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-146.59.111.184-2276
+  name: 52|🇫🇷FR-146.59.111.184-2409
   password: asdKkaskJKfnsa
   port: 443
   server: 146.59.111.184
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-15.188.250.234-2659
+  name: 52|🇫🇷FR-13.37.3.218-2792
   obfs: http_simple
   obfs-param: ''
   password: YpX2opBbrfqJzzMs
@@ -612,7 +631,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 53|🇫🇷FR-51.159.2.152-3852
+  name: 52|🇷FR-51.159.2.152-3915
   network: ws
   port: 80
   server: 51.159.2.152
@@ -624,7 +643,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-51.159.2.152-3935
+  name: 52|🇷FR-51.159.2.152-3998
   network: ws
   port: 8880
   server: 51.159.2.152
@@ -636,7 +655,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '53,57|欧洲(油管:破解资源君) #13'
+  name: '52,56|欧洲(油管:破解资源君) #13'
   network: ws
   port: '2096'
   server: 146.59.92.219
@@ -651,7 +670,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-195.154.77.190-4130
+  name: 52|🇷FR-195.154.77.190-4193
   network: ws
   port: 2082
   server: 195.154.77.190
@@ -663,7 +682,7 @@ proxies:
     path: /pineapple
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-51.77.158.169-5151
+  name: 52|🇷FR-51.77.158.169-5214
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -675,7 +694,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-141.94.59.200-5396
+  name: 52|🇷FR-141.94.59.200-5459
   network: ws
   port: 8080
   server: 141.94.59.200
@@ -687,7 +706,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-57.128.45.161-5398
+  name: 52|🇷FR-57.128.45.161-5461
   network: ws
   port: 80
   server: 57.128.45.161
@@ -699,7 +718,7 @@ proxies:
     path: /user
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-141.94.141.20-5705
+  name: 52|🇷FR-141.94.141.20-5768
   network: ws
   port: 80
   server: 141.94.141.20
@@ -713,7 +732,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|🇫🇷FR-193.70.85.191-5759
+  name: 52|🇫🇷FR-193.70.85.191-5822
   network: ws
   port: 80
   server: 193.70.85.191
@@ -727,7 +746,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 53|🇫🇷FR-193.70.85.191-5760
+  name: 52|🇫🇷FR-193.70.85.191-5823
   network: ws
   port: 80
   server: 193.70.85.191
@@ -739,7 +758,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-51.77.212.145-5782
+  name: 52|🇷FR-51.77.212.145-5845
   network: ws
   port: 80
   server: 51.77.212.145
@@ -753,7 +772,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-193.70.85.191-5800
+  name: 52|🇷FR-193.70.85.191-5863
   network: ws
   port: 80
   server: 193.70.85.191
@@ -766,56 +785,56 @@ proxies:
       Host: Irancell.ir
     path: /vmess
 - cipher: aes-256-cfb
-  name: 53|🇷FR-51.158.200.72-6351
+  name: 52|🇷FR-51.158.200.72-6414
   password: asdKkaskJKfnsa
   port: 443
   server: 51.158.200.72
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇷FR-51.158.54.209-6352
+  name: 52|🇷FR-51.158.54.209-6415
   password: asdKkaskJKfnsa
   port: 443
   server: 51.158.54.209
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-51.159.221.227-6353
+  name: 52|🇫🇷FR-51.159.221.227-6416
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.221.227
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-51.159.221.219-6357
+  name: 52|🇫🇷FR-51.159.221.219-6420
   password: asdKkaskJKfnsa
   port: 443
   server: 51.159.221.219
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-62.210.88.168-6359
+  name: 52|🇫🇷FR-62.210.88.168-6422
   password: asdKkaskJKfnsa
   port: 443
   server: 62.210.88.168
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇫🇷FR-62.210.88.148-6361
+  name: 52|🇫🇷FR-62.210.88.148-6424
   password: asdKkaskJKfnsa
   port: 443
   server: 62.210.88.148
   type: ss
 - cipher: aes-256-gcm
-  name: 53|🇷FR-195.154.200.150-6814
+  name: 52|🇷FR-195.154.200.150-6877
   password: pKEW8JPByTVTLtM
   port: 443
   server: 195.154.200.150
   type: ss
 - cipher: aes-256-cfb
-  name: 53|FR-135.125.244.103-7829
+  name: 52|FR-135.125.244.103-7892
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 135.125.244.103
   type: ss
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-51.83.97.167-8194
+  name: 52|🇷FR-51.83.97.167-8257
   network: ws
   port: 80
   server: 51.83.97.167
@@ -827,7 +846,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-152.228.191.232-8256
+  name: 52|🇷FR-152.228.191.232-8319
   network: ws
   port: 443
   server: 152.228.191.232
@@ -839,14 +858,14 @@ proxies:
   ws-opts:
     path: /ray
 - cipher: chacha20-ietf-poly1305
-  name: 53|🇷FR-92.243.27.51-8335
+  name: 52|🇷FR-92.243.27.51-8398
   password: Kq3iQqtVlyPJBPcD6QpnGE
   port: 9802
   server: paris.telegavpn.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 53|🇫🇷FR-95.179.217.221-8344
+  name: 52|🇫🇷FR-95.179.217.221-8407
   network: ws
   port: 443
   server: nika4.hdfy2.foriran.trade
@@ -860,7 +879,7 @@ proxies:
     path: /juYLyvNBpY0LBOAommy2aJE
 - alterId: 0
   cipher: auto
-  name: 53|🇫🇷FR-95.179.217.221-8346
+  name: 52|🇫🇷FR-95.179.217.221-8409
   network: ws
   port: 443
   server: nika2.hdfy2.foriran.trade
@@ -872,7 +891,7 @@ proxies:
     headers:
       Host: nika2.hdfy2.foriran.trade
     path: /juYLyvNBpY0LBOAommy2aJE
-- name: 53|🇷FR-95.179.217.221-8351
+- name: 52|🇷FR-95.179.217.221-8414
   network: ws
   password: 79770a32-9607-4919-9483-0f1794559390
   port: 443
@@ -885,14 +904,14 @@ proxies:
       Host: nika2.hdfy2.foriran.trade
     path: /M9hnxw1wCQpY0LBOAommy2aJE
 - cipher: chacha20-ietf-poly1305
-  name: 53|🇷FR-141.95.160.152-8407
+  name: 52|🇷FR-141.95.160.152-8470
   password: N2Y5Y
   port: 8388
   server: fr01.proxysocks.xyz
   type: ss
 - grpc-opts:
     grpc-service-name: 6vuNVgOFnqUEvj0rcXIcStL
-  name: 53|🇫🇷FR-146.70.158.111-8453
+  name: 52|🇫🇷FR-146.70.158.111-8516
   network: grpc
   password: db19fc68-c027-4641-a8eb-eed3e1065c8a
   port: 443
@@ -901,7 +920,7 @@ proxies:
   sni: amin.karkas1.ir
   tls: true
   type: trojan
-- name: 53|🇫🇷FR-146.70.158.111-8454
+- name: 52|🇫🇷FR-146.70.158.111-8517
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
   port: 443
@@ -915,7 +934,7 @@ proxies:
     path: /6vuNVgOFnqUEvj0sNkGkxxW7
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 53|🇫🇷FR-146.70.158.111-8455
+  name: 52|🇫🇷FR-146.70.158.111-8518
   network: ws
   port: 80
   server: amin.karkas1.ir
@@ -931,7 +950,7 @@ proxies:
   cipher: chacha20-poly1305
   grpc-opts:
     grpc-service-name: /
-  name: 53|🇫🇷FR-146.70.158.111-8456
+  name: 52|🇫🇷FR-146.70.158.111-8519
   network: grpc
   port: 443
   server: amin.karkas1.ir
@@ -942,7 +961,7 @@ proxies:
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 53|🇷FR-146.70.158.111-8457
+  name: 52|🇷FR-146.70.158.111-8520
   network: ws
   port: 443
   server: amin.karkas1.ir
@@ -956,7 +975,7 @@ proxies:
     path: /t14FEa4TBzLbwZsNkGkxxW7
 - grpc-opts:
     grpc-service-name: M9hnxw1wCQSfVHaiznU
-  name: 53|🇷FR-95.179.217.221-8484
+  name: 52|🇷FR-95.179.217.221-8547
   network: grpc
   password: 79770a32-9607-4919-9483-0f1794559390
   port: 443
@@ -967,7 +986,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-51.38.82.132-8548
+  name: 52|🇷FR-51.38.82.132-8611
   network: ws
   port: 80
   server: 51.38.82.132
@@ -978,14 +997,14 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: chacha20-ietf-poly1305
-  name: 53|🇫🇷FR-51.178.87.37-8551
+  name: 52|🇫🇷FR-51.178.87.37-8614
   password: G!yBwPWH3Vao
   port: 804
   server: 51.178.87.37
   type: ss
 - alterId: 0
   cipher: auto
-  name: 53|🇫🇷FR-51.15.105.39-8560
+  name: 52|🇫🇷FR-51.15.105.39-8623
   network: ws
   port: 443
   server: 51.15.105.39
@@ -997,7 +1016,7 @@ proxies:
     path: /nimvws
 - alterId: 0
   cipher: auto
-  name: 53|🇫🇷FR-217.182.76.202-8767
+  name: 52|🇫🇷FR-217.182.76.202-8830
   network: ws
   port: 443
   server: 217.182.76.202
@@ -1009,7 +1028,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 53|FR-172.232.44.160-9014
+  name: 52|FR-172.232.44.160-9077
   network: ws
   port: 443
   server: 172.232.44.160
@@ -1020,20 +1039,20 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: aes-256-cfb
-  name: 53|🇷FR-162.19.59.162-9020
+  name: 52|🇷FR-162.19.59.162-9083
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.162
   type: ss
 - cipher: aes-256-cfb
-  name: 53|🇷FR-162.19.59.160-9022
+  name: 52|🇷FR-162.19.59.160-9085
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.160
   type: ss
 - grpc-opts:
     grpc-service-name: 6vuNVgOFnqUEvj0rcXIcStL
-  name: 53|🇷FR-146.70.158.111-9148
+  name: 52|🇷FR-146.70.158.111-9211
   network: grpc
   password: db19fc68-c027-4641-a8eb-eed3e1065c8a
   port: 443
@@ -1042,7 +1061,7 @@ proxies:
   sni: amin.karkas1.ir
   tls: true
   type: trojan
-- name: 53|🇫🇷FR-146.70.158.111-9150
+- name: 52|🇫🇷FR-146.70.158.111-9213
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
   port: 443
@@ -1058,7 +1077,7 @@ proxies:
   cipher: chacha20-poly1305
   grpc-opts:
     grpc-service-name: /
-  name: 53|🇫🇷FR-146.70.158.111-9151
+  name: 52|🇫🇷FR-146.70.158.111-9214
   network: grpc
   port: 443
   server: 146.70.158.111
@@ -1069,7 +1088,7 @@ proxies:
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-141.95.55.70-9163
+  name: 52|🇷FR-141.95.55.70-9226
   network: ws
   port: 80
   server: 141.95.55.70
@@ -1081,7 +1100,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-141.95.55.70-9164
+  name: 52|🇷FR-141.95.55.70-9227
   network: ws
   port: 443
   server: 141.95.55.70
@@ -1093,7 +1112,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 53|🇷FR-141.95.55.70-9165
+  name: 52|🇷FR-141.95.55.70-9228
   network: ws
   port: 80
   server: 141.95.55.70
@@ -1104,14 +1123,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 53|🇷FR-141.95.160.152-9166
+  name: 52|🇷FR-141.95.160.152-9229
   password: N2Y5Y
   port: 8388
   server: 141.95.160.152
   type: ss
 - alterId: 0
   cipher: auto
-  name: 57|法国(油管:破解资源君)
+  name: 56|法国(油管:破解资源君)
   network: ws
   port: '8880'
   server: 45.80.111.169
@@ -1125,7 +1144,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 68|FR 2|openitr
+  name: 67|FR 2|openitr
   network: ws
   port: '80'
   server: 173.245.49.102
@@ -1138,7 +1157,7 @@ proxies:
     path: /google
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 71|法国 OVH SAS
+  name: 70|法国 OVH SAS
   network: tcp
   port: '3586'
   server: max-ip.hiroman5445.ir
