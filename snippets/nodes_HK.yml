@@ -4,7 +4,7 @@ proxies:
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 0,12,13,29,32,45,67|HK 2|openitr
+  name: 0,12,29,32,45,67|HK 1|openitr
   network: tcp
   port: '34180'
   server: hk1.mmmmmmmmmm.cfd
@@ -12,45 +12,61 @@ proxies:
   tls: false
   type: vmess
   uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: '15|disney_netflix_HK #22'
+  name: '15|disney_netflix_HK #12'
   password: b9dbe9a7-a150-4c14-b6e5-91795df70035
   port: 64931
   server: 36.141.40.30
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '15|disney_netflix_HK #23'
+  name: '15|disney_netflix_HK #13'
   password: b9dbe9a7-a150-4c14-b6e5-91795df70035
-  port: 64939
+  port: 64930
   server: 36.141.40.30
   type: ss
 - cipher: aes-128-gcm
-  name: '15|disney_netflix_HK #24'
-  password: 9da21772-de82-42f3-9d3e-115985b52e6f
-  port: 41926
-  server: 03-neibuyong.gangbi.vip
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '15|disney_netflix_HK #25'
+  name: '15|disney_netflix_HK #14'
   password: 9da21772-de82-42f3-9d3e-115985b52e6f
   port: 40765
   server: nbcm01.qingqiu.buzz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '15|disney_netflix_HK #26'
+  name: '15|disney_netflix_HK #15'
   password: b9dbe9a7-a150-4c14-b6e5-91795df70035
-  port: 64930
+  port: 64939
   server: 36.141.40.30
   type: ss
+- cipher: aes-128-gcm
+  name: '15|disney_netflix_HK #16'
+  password: 9da21772-de82-42f3-9d3e-115985b52e6f
+  port: 41926
+  server: 03-neibuyong.gangbi.vip
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: '15|disney_netflix_HK #29'
+  name: '15|disney_HK #13'
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  servername: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      HOST: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '15|disney_netflix_HK #18'
   network: ws
   port: 16627
   server: vip.basicnode.host
@@ -62,9 +78,31 @@ proxies:
     headers:
       HOST: 193.25.215.160
     path: /niuniu
+- cipher: chacha20-ietf-poly1305
+  country: HK
+  name: 15,36|🇪🇸 ES 25 → tg@nicevpn123
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+  port: 61007
+  server: 1.forlive.live
+  type: ss
+  udp: true
+- country: HK
+  name: 15,44|美国 015
+  network: ws
+  password: c24f99d1-ffd1-4239-9f9f-31f1fd4ef6ef
+  port: 41443
+  server: data.us.dbna.amazon.rilegoef.buzz
+  skip-cert-verify: false
+  sni: data.us.dbna.amazon.rilegoef.buzz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: data.us.dbna.amazon.rilegoef.buzz
+    path: /P8TbLV/api
 - cipher: aes-128-gcm
   country: ' SG'
-  name: '15|disney_netflix_HK #30'
+  name: '15|disney_netflix_HK #19'
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -74,12 +112,19 @@ proxies:
   port: 443
   server: 8.218.82.85
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' ZZ'
+  name: 15|Relay_ ZZ-HK_432
+  password: b9dbe9a7-a150-4c14-b6e5-91795df70035
+  port: 30001
+  server: 111.6.87.207
+  type: ss
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15|Relay_ZZ-HK_764
+  name: 15|Relay_ZZ-HK_505
   network: ws
   port: 80
   server: 162.159.142.212
@@ -110,26 +155,8 @@ proxies:
     headers:
       HOST: hk3.889611.com
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,32|Relay_🏁ZZ-🇺🇸US_324 | 6.85Mb
-  network: ws
-  port: 443
-  server: 104.19.49.155
-  servername: cfhk.393930.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      HOST: cfhk.393930.xyz
-    path: /
 - country: HK
-  name: '20|disney_netflix_HK #33'
+  name: '20|disney_netflix_HK #20'
   password: 4984806b-f0f9-4749-bdd5-ea38bd690270
   port: 17766
   server: 141.11.125.225
@@ -159,7 +186,24 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 32,36,45,52,59,65,67|US 25|openitr
+  name: 29,36|🇸🇬 SG 29 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 8.210.9.129
+  servername: mix.tgdns68.vps666.onflashdrive.app
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
+  ws-opts:
+    path: /TG@dns68公益节点
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 32,36,45,52,59,65,67|US 45|openitr
   network: ws
   port: '28681'
   server: 47.242.22.171
@@ -175,42 +219,54 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '33,35,65,73|رایگان | VMESS | @Hope_Net | H... #1'
-  network: tcp
-  port: 48897
-  server: 141.11.90.115
-  tls: false
-  type: vmess
-  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- alterId: 0
-  cipher: auto
-  name: 33,52,65,67|HK 1|openitr
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 32|Relay_🇰HK-🇺RU_47 | 5.50Mb
   network: ws
-  port: '4431'
-  server: 152.32.190.239
-  servername: cfhk.393930.xyz
-  skip-cert-verify: false
-  tls: true
+  port: 80
+  server: 8.210.9.129
+  servername: mix.tgdns68.vps666.onflashdrive.app
+  skip-cert-verify: true
   type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
   ws-opts:
     headers:
-      Host: cfhk.393930.xyz
-    path: /
+      HOST: mix.tgdns68.vps666.onflashdrive.app
+    path: /TG@dns68
+- alterId: 64
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 32,59|🇭🇰HK-182.16.1.194-8383
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      host: hrgdvpn.flycdnedc55.vip
+    host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 33,65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11...
+  name: '33,65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #5'
   network: tcp
-  port: 48894
+  port: 12002
   server: 141.11.90.115
   tls: false
   type: vmess
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: '33,65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #1'
+  name: '35,65,73|رایگان | VMESS | @Hope_Net | H... #1'
   network: tcp
-  port: 34241
+  port: 47765
   server: 141.11.90.115
   tls: false
   type: vmess
@@ -302,6 +358,33 @@ proxies:
     headers:
       Host: 182.16.1.194
     path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 41,50|香港 阿里云
+  network: ws
+  port: '80'
+  server: 47.243.162.49
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
+  ws-opts:
+    headers:
+      Host: mix.tgdns68.vps666.onflashdrive.app
+    path: /TG@dns68公益节点
+- alterId: 0
+  cipher: auto
+  name: '41|🇭🇰 香港 阿里云 #1'
+  network: ws
+  port: '80'
+  server: 8.210.9.129
+  tls: false
+  type: vmess
+  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
+  ws-opts:
+    headers:
+      Host: mix.tgdns68.vps666.onflashdrive.app
+    path: /TG@dns68公益节点
 - name: 44|香港 001
   network: ws
   password: c24f99d1-ffd1-4239-9f9f-31f1fd4ef6ef
@@ -328,9 +411,9 @@ proxies:
     path: /P8TbLV/api
 - alterId: 0
   cipher: auto
-  name: 45|13|HK_190 2
+  name: 45,67|US 349|openitr
   network: ws
-  port: 443
+  port: '443'
   server: 13.35.13.190
   servername: ''
   tls: true
@@ -342,9 +425,9 @@ proxies:
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 45|13|HK_216
+  name: 45,67|US 350|openitr
   network: ws
-  port: 443
+  port: '443'
   server: 99.84.50.216
   servername: ''
   tls: true
@@ -356,9 +439,9 @@ proxies:
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 45|13|HK_208 2
+  name: 45,67|US 351|openitr
   network: ws
-  port: 443
+  port: '443'
   server: 99.84.50.208
   servername: ''
   tls: true
@@ -370,9 +453,9 @@ proxies:
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 45|13|HK_204
+  name: 45,67|US 352|openitr
   network: ws
-  port: 443
+  port: '443'
   server: 13.35.13.204
   servername: ''
   tls: true
@@ -424,6 +507,21 @@ proxies:
   type: vmess
   uuid: 37e2e6fa-c9a0-42f5-97d6-d6e7b29e4ab9
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 52,65,67|HK 2|openitr
+  network: ws
+  port: '4431'
+  server: 152.32.190.239
+  servername: cfhk.393930.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
     path: /
 - alterId: 32
   cipher: auto
@@ -1412,6 +1510,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '53|🇭🇰 香港(欢迎订阅Youtube破解资源君) #3'
+  network: ws
+  port: '16650'
+  server: az.gzfxd.xyz
+  tls: false
+  type: vmess
+  uuid: 04bc191c-aeb8-453a-ba80-fac958363a68
+  ws-opts:
+    headers:
+      Host: az.gzfxd.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: 56|香港(油管:破解资源君)
   network: ws
   port: '443'
@@ -1438,21 +1549,42 @@ proxies:
     headers:
       Host: a.189.cn
     path: /zh-cn/download
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 59|🇭🇰HK-182.16.1.194-8383
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  skip-cert-verify: true
+  name: 65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11...
+  network: tcp
+  port: 48890
+  server: 141.11.90.115
   tls: false
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      host: hrgdvpn.flycdnedc55.vip
-    host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
+  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
+- alterId: 0
+  cipher: auto
+  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #1'
+  network: tcp
+  port: 48894
+  server: 141.11.90.115
+  tls: false
+  type: vmess
+  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
+- alterId: 0
+  cipher: auto
+  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #2'
+  network: tcp
+  port: 13118
+  server: 141.11.90.115
+  tls: false
+  type: vmess
+  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
+- alterId: 0
+  cipher: auto
+  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #3'
+  network: tcp
+  port: 47763
+  server: 141.11.90.115
+  tls: false
+  type: vmess
+  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
   name: 65|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.177...
@@ -1469,7 +1601,16 @@ proxies:
     path: /hk.kejifan88.top
 - alterId: 0
   cipher: auto
-  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #2'
+  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #4'
+  network: tcp
+  port: 34241
+  server: 141.11.90.115
+  tls: false
+  type: vmess
+  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
+- alterId: 0
+  cipher: auto
+  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #6'
   network: tcp
   port: 46781
   server: 141.11.90.115
@@ -1478,45 +1619,9 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #3'
-  network: tcp
-  port: 13118
-  server: 141.11.90.115
-  tls: false
-  type: vmess
-  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- alterId: 0
-  cipher: auto
-  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #4'
-  network: tcp
-  port: 47765
-  server: 141.11.90.115
-  tls: false
-  type: vmess
-  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- alterId: 0
-  cipher: auto
-  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #5'
-  network: tcp
-  port: 48890
-  server: 141.11.90.115
-  tls: false
-  type: vmess
-  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- alterId: 0
-  cipher: auto
-  name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #7'
-  network: tcp
-  port: 12002
-  server: 141.11.90.115
-  tls: false
-  type: vmess
-  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- alterId: 0
-  cipher: auto
   name: '65|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #8'
   network: tcp
-  port: 47763
+  port: 48897
   server: 141.11.90.115
   tls: false
   type: vmess
@@ -1565,36 +1670,3 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 75|HK_speednode_0013
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: b491fd9:82122
-    mode: tls
-  port: 2377
-  server: 45.11.104.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 75|HK_speednode_0016
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: b491fd9:82122
-    mode: tls
-  port: 2377
-  server: 45.11.104.113
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 75|HK_speednode_0021
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: b491fd9:82122
-    mode: tls
-  port: 2377
-  server: 45.11.104.79
-  type: ss
-  udp: true
