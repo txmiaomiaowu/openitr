@@ -16,18 +16,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,39,48,73|US 36|openitr
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 4,15,39,48,56|🏁RELAY-172.67.130.140-0075
   network: ws
-  port: '2082'
+  port: 2082
   server: 172.67.130.140
-  skip-cert-verify: true
+  servername: s1c.v2.v001sss.xyz
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - name: 4,48|1|_CN_->_DE_
   network: tcp
@@ -39,7 +41,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 6,8,9,26,40,44,48,49,53,56,57,73|US 27|openitr
+  name: 6,8,9,26,40,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '2052'
   server: 104.19.250.15
@@ -53,9 +55,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '6,9,15,27,40,48,53,56,57,82|🇺🇸_US_美国->🇫🇷_FR_法国 #8'
+  name: '6,9,26,27,40,44,48,53,56,57,82|🇺🇸_US_美国->🇫🇷_FR_法国 #9'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -69,7 +69,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 8,26,40,42,44,49,53,56,57,73|US 30|openitr
+  name: '8,40,42,49,53,56,57|🇺🇸 美国 CloudFlare节点 #16'
   network: ws
   port: '2052'
   server: 104.18.36.119
@@ -83,9 +83,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 8,26,40,42,49,53,56,71,73|US 29|openitr
+  name: 8,40,42,49,53,56|RELAY-104.18.19.191-2012
   network: ws
-  port: '2052'
+  port: 2052
   server: 104.18.19.191
   servername: ''
   skip-cert-verify: false
@@ -98,9 +98,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 8,40,49,53,56,73|US 31|openitr
+  name: 8,40,44,49,53,56|RELAY-162.159.33.117-2013
   network: ws
-  port: '2052'
+  port: 2052
   server: cfcdn1.sanfencdn9.com
   skip-cert-verify: false
   tls: false
@@ -112,13 +112,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 8,40,44,49,53,56|RELAY-104.19.40.222-2024
+  client-fingerprint: chrome
+  name: 8,40,45,46,48,49,53,56|🏁RELAY-104.19.40.222-1346
   network: ws
   port: 8880
   server: 104.19.40.222
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   ws-opts:
     headers:
@@ -126,7 +129,7 @@ proxies:
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - alterId: 0
   cipher: auto
-  name: '25,43,48,82|🇺🇸_US_美国 #45'
+  name: '25,43,48,82|🇺🇸_US_美国 #42'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -168,7 +171,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '25,27,48,82|🇺🇸_US_美国 #44'
+  name: '25,27,48,82|🇺🇸_US_美国 #41'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -194,12 +197,11 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: 26,40,53,56|🏁RELAY-104.19.40.84-0286
+  name: '40,44,53|美国 CloudFlare节点 #49'
   network: ws
-  port: 8880
+  port: '8880'
   server: 104.19.40.84
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
@@ -209,10 +211,11 @@ proxies:
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - alterId: 0
   cipher: auto
-  name: 40,49,53,56|🏁RELAY-104.19.40.48-1877
+  name: 40,44,49,53,56|🏁RELAY-104.19.40.48-2016
   network: ws
   port: 8880
   server: 104.19.40.48
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -258,20 +261,6 @@ proxies:
   udp: true
   ws-opts:
     path: /argox-tr
-- alterId: 0
-  cipher: auto
-  name: 43|🇺🇸_US_美国->🇬🇧_GB_英国_1_5@5
-  network: ws
-  port: 8880
-  server: cdn.vds-server.ir
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      host: cdn.vds-server.ir
-    path: /
 - alterId: 0
   cipher: auto
   name: 43|🇨🇳_CN_中国->🇩🇪_DE_德国_5@23
@@ -342,7 +331,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-172.64.80.1-6613
+  name: 44,56|🏁RELAY-104.21.75.246-6593
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -382,7 +371,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-104.21.75.246-6611
+  name: 44,56|🏁RELAY-172.67.184.13-6591
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -396,7 +385,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-172.67.184.13-6619
+  name: 44,56|🏁RELAY-104.21.75.246-6599
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -410,7 +399,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 44,56|🇳🇱NL-45.199.138.191-6593
+  name: 44,56|🇳🇱NL-45.199.138.191-6573
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -422,7 +411,7 @@ proxies:
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-172.64.80.1-6618
+  name: 44,56|🏁RELAY-172.67.184.13-6598
   network: ws
   port: 80
   server: jd3.shabijichang.com
@@ -434,6 +423,19 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 48|13|🇿🇦_ZA_南非->🇩🇪_DE_德国
+  network: ws
+  port: 2052
+  server: 206.238.236.36
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: mysan2.jaquay22.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
   name: 52|KR -> US
