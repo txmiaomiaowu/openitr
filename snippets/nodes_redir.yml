@@ -18,12 +18,12 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 4,38,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_4
+  name: 4,38,48,61,72|🇺🇸US美国7
   network: ws
   port: 2052
   server: cfcdn1.sanfencdn9.com
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: false
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
@@ -35,12 +35,12 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 4,38,39,40,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: 4,38,39,40,48,56,61,72|🇸US美国2
   network: ws
   port: 2052
   server: 104.19.250.15
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
@@ -50,7 +50,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 4,38,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 2052
   server: 104.18.36.119
@@ -75,7 +77,8 @@ proxies:
   uuid: ca1af7ca-75b4-4842-a113-7bc34ff06278
   ws-opts:
     path: /?ed=2048
-- name: 4,48|1|_CN_->_DE_
+- country: CN
+  name: 4,15,48|1|_CN_->_DE_
   network: tcp
   password: MyYoZhfX
   port: 40316
@@ -85,7 +88,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '6,8,11,26,40,44,48,49,53,56,57|🇺🇸 美国 CloudFlare节点 #8'
+  name: '6,8,11,26,40,48,49,53,56,57|🇺🇸 美国 CloudFlare节点 #1'
   network: ws
   port: '2052'
   server: 104.19.250.15
@@ -100,7 +103,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,8,11,26,40,42,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国 #3'
+  name: '6,8,11,26,33,40,42,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国 #3'
   network: ws
   port: '2052'
   server: 104.18.36.119
@@ -129,11 +132,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 8,40,44,49,53,56,57,73|US 22|openitr
+  name: '8,40,49,53,56,57|🇺🇸 美国 CloudFlare节点 #6'
   network: ws
   port: '8880'
   server: 104.19.40.48
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -225,18 +227,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- grpc-opts:
-    grpc-service-name: 443trojan
-  name: 43|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
-  network: grpc
-  password: qj1Dz1CJmFQRhWr1SP80aA
-  port: 443
-  server: 172.67.204.84
-  skip-cert-verify: true
-  sni: cdn-21.gsmxreality.com
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 43|🇨🇳_CN_中国->🇫🇷_FR_法国_0@33
@@ -307,151 +297,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44|🇨🇳 _TW_台湾->🇺🇸_US_美国
-  network: ws
-  port: '80'
-  server: 107.167.182.230
-  tls: false
-  type: vmess
-  uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /tg@hkaa0
-- alterId: 0
-  cipher: auto
-  name: 44|🇩🇪 _US_美国->🇩🇪_DE_德国
-  network: ws
-  port: '80'
-  server: flkf2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: flkf2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 44|🇬🇧 _US_美国->🇬🇧_GB_英国_1
-  network: ws
-  port: '80'
-  server: mrb2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mrb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 44,56|🏁RELAY-172.64.80.1-6674
+  name: 48|13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
   network: ws
   port: 80
-  server: ld2.shabijichang.com
-  skip-cert-verify: false
+  server: upload.ir
   tls: false
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
   ws-opts:
     headers:
-      Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 44|🇮🇳 _US_美国->🇮🇳_IN_印度_1
-  network: ws
-  port: '80'
-  server: 104.17.18.26
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 44|🇮🇳 _US_美国->🇮🇳_IN_印度_2
-  network: ws
-  port: '80'
-  server: 104.26.8.44
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 44,56|🏁RELAY-172.67.184.13-6672
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 44,56|🏁RELAY-172.67.184.13-6680
-  network: ws
-  port: 80
-  server: mm3.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm3.shabijichang.com
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 44,56|🇳🇱NL-45.199.138.191-6654
-  network: ws
-  port: 30000
-  server: 45.199.138.191
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    path: /path/1696251522438
-- alterId: 0
-  cipher: auto
-  name: 44,56|🏁RELAY-104.21.75.246-6679
-  network: ws
-  port: 80
-  server: jd3.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: jd3.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 48|13|德国 -> 中国China Telecom
-  network: ws
-  port: 8880
-  server: 217.160.45.31
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
+      Host: is3-vmess.sshmax.xyz
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: 52|KR -> US
