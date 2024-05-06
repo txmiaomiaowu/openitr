@@ -1,12 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_3
+  name: 4,48,61,72|🇺🇸US美国18
   network: ws
   port: 2052
   server: cfcdn1.sanfencdn9.com
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
@@ -15,10 +15,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,48,63|🏁RELAY-162.159.135.205-0325
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 4,15,48,63|🏁RELAY-162.159.135.205-0325
   network: ws
   port: 8080
   server: yh4.dtku41.xyz
+  servername: dual-nothing-prep-exit.trycloudflare.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -30,10 +34,14 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: 4,39,48,56,61|🇺🇸_US_美国->🇫🇷_FR_法国_1
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 4,15,39,48,56,61|🇺🇸_US_美国->🇫🇷_FR_法国_1
   network: ws
   port: 2082
   server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -90,7 +98,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 4,32,39,48,56,61|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  name: 4,15,29,32,39,48,56,61|🇺🇸_US_美国->🇫🇷_FR_法国_2
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -104,21 +112,19 @@ proxies:
     headers:
       host: s1c.v2.v001sss.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: '4,48,72|未命名 #9'
+- country: CN
+  name: 4,15,48|1|_CN_->_DE_
   network: tcp
   password: MyYoZhfX
   port: 40316
   server: 36.138.99.56
   skip-cert-verify: true
-  tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '6,8,26,40,45,46,48,53,56,57|🇺🇸 美国 CloudFlare节点 #23'
+  name: '6,8,26,40,45,46,48,53,56,57|🇺🇸 美国 CloudFlare节点 #21'
   network: ws
   port: '8080'
   server: yh4.dtku41.xyz
@@ -148,10 +154,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 8,56|🏁RELAY-104.21.73.173-3504
+  name: 8,37,56|🏁RELAY-104.21.73.173-3504
   network: ws
   port: 2052
   server: hk.wish.ml
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -228,201 +235,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- alterId: 0
-  cipher: auto
-  name: 40|🇯🇵 日本 04-中转
-  network: ws
-  port: '21013'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 40|🇨🇳台湾 02-中转
-  network: ws
-  port: '21004'
-  server: tw.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: hinet.luodi.xyz
-    path: /hinet
-- alterId: 0
-  cipher: auto
-  name: 40|🇨🇦 加拿大01-中转
-  network: ws
-  port: '21034'
-  server: ca.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
-- alterId: 0
-  cipher: auto
-  name: 40|🇺🇸美国 02-中转
-  network: ws
-  port: '34175'
-  server: us.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: us1.luodi.xyz
-    path: /usa
-- alterId: 0
-  cipher: auto
-  name: 40|🇭🇰 香港 04-中转
-  network: ws
-  port: '21033'
-  server: hk.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
-- alterId: 0
-  cipher: auto
-  name: 40|🇯🇵日本 02-中转
-  network: ws
-  port: '21011'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 40|🇯🇵 日本 01-中转
-  network: ws
-  port: '21010'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 40|🇯🇵 日本 03-中转
-  network: ws
-  port: '21012'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 40|🇭🇰 香港 02-中转
-  network: ws
-  port: '21031'
-  server: hk.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
-- alterId: 0
-  cipher: auto
-  name: 40|🇨🇦 加拿大02-中转
-  network: ws
-  port: '21035'
-  server: ca.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
-- alterId: 0
-  cipher: auto
-  name: 40|🇺🇸美国 01-中转
-  network: ws
-  port: '21000'
-  server: us.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: us1.luodi.xyz
-    path: /usa
-- alterId: 0
-  cipher: auto
-  name: 40|🇭🇰 香港 03-中转
-  network: ws
-  port: '21032'
-  server: hk.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
-- alterId: 0
-  cipher: auto
-  name: 40|🇸🇬新加坡 02-中转
-  network: ws
-  port: '21021'
-  server: sg.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: sg1.luodi.xyz
-    path: /singapore
-- alterId: 0
-  cipher: auto
-  name: 40|🇸🇬新加坡 01-中转
-  network: ws
-  port: '21020'
-  server: sg.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: sg1.luodi.xyz
-    path: /singapore
-- alterId: 0
-  cipher: auto
-  name: 40|🇭🇰香港 01-中转
-  network: ws
-  port: '21030'
-  server: hk.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
 - grpc-opts:
     grpc-service-name: 443trojan
   name: 43|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
