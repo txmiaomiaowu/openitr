@@ -2,7 +2,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,9,11,12,40,42,45,46,48,53,56,57|🇨🇳 广东省深圳市 移动 #1'
+  h2-opts: {}
+  http-opts: {}
+  name: '0,9,11,12,15,40,42,44,45,46,48,53,56,57|🇨🇳 广东省深圳市 移动 #1'
   network: ws
   port: '16632'
   server: m.cnmjin.net
@@ -22,7 +24,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: '0,12,15,40,48,57|🇨🇳 广东省佛山市 移动 #1'
+  name: 0,12,15,40,48|16|香港8|@ripaojiedian
   network: tcp
   port: '15603'
   server: 183.232.199.61
@@ -31,9 +33,69 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '9,15,40,46,48,53,57|🇨🇳 广东省佛山市 移动 #1'
+  network: tcp
+  port: '61001'
+  server: 183.232.199.61
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '9,11,39,40,45,46,48,53,56,57|🇨🇳 广东省 移动 #1'
+  network: ws
+  port: '20206'
+  server: data-hk-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.usabooks.com.cn
+    path: /debian
+- alterId: 64
+  cipher: auto
+  name: '9,11,40,42,46,48,53,57|🇨🇳 广东省江门市 移动 #1'
+  network: tcp
+  port: '40259'
+  server: 120.238.122.243
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '9,39,40,44,45,46,48,50,51,53,56,57|🇨🇳 广东省移动 7 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - cipher: aes-128-gcm
   country: CN
-  name: 15|CN_423
+  name: 15|CN_576
   password: o
   port: 1020
   server: 110.42.99.55
@@ -43,7 +105,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 15|CN_437
+  name: 15|CN_583
   network: ws
   port: 80
   server: 47.106.112.114
@@ -52,20 +114,9 @@ proxies:
   uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  country: CN
-  name: 16,29,30|Pool__02
-  obfs: plain
-  obfs-param: data.bilibili.com/ed5a2165400
-  password: http://cc.ax/
-  port: 41228
-  protocol: auth_aes128_md5
-  protocol-param: 165400:Hr2aXO
-  server: 222.186.20.102
-  type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 16|Relay_CN-CN_06
+  name: 16|Relay_CN-CN_05
   obfs: plain
   password: mblank1port
   port: 560
@@ -75,7 +126,7 @@ proxies:
   type: ssr
 - cipher: rc4-md5
   country: CN
-  name: 16,29,30|Relay_-CN_01
+  name: 16,29|Relay_-CN_61 |304.00Mb
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -83,6 +134,17 @@ proxies:
   protocol: auth_aes128_md5
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 16,29| |225.00Mb
+  obfs: plain
+  obfs-param: data.bilibili.com/ed5a2165400
+  password: http://cc.ax/
+  port: 41228
+  protocol: auth_aes128_md5
+  protocol-param: 165400:Hr2aXO
+  server: 222.186.20.102
   type: ssr
 - alterId: 0
   cipher: auto
@@ -859,7 +921,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 39,50,57|🇨🇳 湖北省武汉市 联通
+  name: 39,50|美国(t.me/vvkj11)_1_72
   network: ws
   port: '20301'
   server: data-jp-v1.usabooks.com.cn
@@ -1049,6 +1111,13 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 39|🇨🇳 CN 325 → tg@nicevpn123
+  password: 99301d55-a41f-4919-986b-1435996533aa
+  port: 20005
+  server: 120.238.122.208
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 39|🇨🇳 CN 327 → tg@nicevpn123
   password: 34a547cd-0bfe-4905-9076-0d7c9a61f325
@@ -1226,25 +1295,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '39,40,45,46,48,50,51,53,56,57|🇨🇳 广东省移动 7 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: 39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie...
+  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #13'
   network: ws
   port: '50080'
   server: 223.113.130.58
@@ -1325,13 +1376,6 @@ proxies:
   password: d9c577328fb349fe
   port: 40676
   server: bff6ce3.xvvrkb.lol
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 39|🇨🇳 CN 39 → tg@nicevpn123
-  password: 99301d55-a41f-4919-986b-1435996533aa
-  port: 20001
-  server: 120.238.122.208
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1496,9 +1540,9 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: '39,56,57|亚洲(欢迎订阅Youtube破解资源君) #4'
+  name: 39,56|🇨🇳CN-120.240.48.19-0056
   network: ws
-  port: '38106'
+  port: 38106
   server: 120.240.48.19
   skip-cert-verify: false
   tls: false
@@ -1506,8 +1550,6 @@ proxies:
   udp: true
   uuid: 79386685-16da-327c-9e14-aa6d702d86bc
   ws-opts:
-    headers:
-      Host: ''
     path: /hls/cctv5phd.m3u8
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 439 → tg@nicevpn123
@@ -1517,17 +1559,17 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 39|🇨🇳 CN 44 → tg@nicevpn123
+  password: 99301d55-a41f-4919-986b-1435996533aa
+  port: 50005
+  server: 120.238.122.208
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 441 → tg@nicevpn123
   password: 3bf7be43-e331-4dad-856c-8d312dedea90
   port: 31583
   server: rk.izoizoizo.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 39|🇨🇳 CN 447 → tg@nicevpn123
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -1539,7 +1581,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #7'
+  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #5'
   network: ws
   port: '21032'
   server: hk.lianjianode.cc
@@ -1782,7 +1824,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #3'
+  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #2'
   network: ws
   port: '16928'
   server: vip3.niuniupremium.xyz
@@ -1835,13 +1877,6 @@ proxies:
   password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69
   port: 44524
   server: zf.miaosu666.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 39|🇨🇳 CN 521 → tg@nicevpn123
-  password: 99301d55-a41f-4919-986b-1435996533aa
-  port: 20001
-  server: 120.238.122.207
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -2577,9 +2612,9 @@ proxies:
   ws-path: /debian
 - alterId: 1
   cipher: auto
-  name: 56,57|🇨🇦 加拿大(欢迎订阅Youtube破解资源君)
+  name: 56|CN-120.240.48.19-0000
   network: ws
-  port: '38106'
+  port: 38106
   server: 120.240.48.19
   skip-cert-verify: false
   tls: false
@@ -2603,9 +2638,9 @@ proxies:
   type: ss
 - alterId: 1
   cipher: auto
-  name: 56,57|亚洲(欢迎订阅Youtube破解资源君)
+  name: 56|🇨🇳CN-120.240.48.20-0051
   network: ws
-  port: '38101'
+  port: 38101
   server: 120.240.48.20
   skip-cert-verify: false
   tls: false
@@ -2631,9 +2666,9 @@ proxies:
     path: /ws
 - alterId: 1
   cipher: auto
-  name: '56,57|亚洲(欢迎订阅Youtube破解资源君) #2'
+  name: 56|🇨🇳CN-120.240.48.20-0053
   network: ws
-  port: '38102'
+  port: 38102
   server: 120.240.48.20
   skip-cert-verify: false
   tls: false
@@ -2651,9 +2686,9 @@ proxies:
   type: ss
 - alterId: 1
   cipher: auto
-  name: '56,57|亚洲(欢迎订阅Youtube破解资源君) #3'
+  name: 56|🇨🇳CN-120.240.48.19-0055
   network: ws
-  port: '38106'
+  port: 38106
   server: 120.240.48.19
   skip-cert-verify: false
   tls: false
@@ -2665,23 +2700,21 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 1
   cipher: auto
-  name: '56,57|亚洲(欢迎订阅Youtube破解资源君) #5'
+  name: 56|🇨🇳CN-120.240.48.20-0057
   network: ws
-  port: '38106'
+  port: 38106
   server: 120.240.48.20
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 79386685-16da-327c-9e14-aa6d702d86bc
   ws-opts:
-    headers:
-      Host: ''
     path: /hls/cctv5phd.m3u8
 - alterId: 1
   cipher: auto
-  name: '56,57|亚洲(欢迎订阅Youtube破解资源君) #6'
+  name: 56|🇨🇳CN-120.240.48.20-0058
   network: ws
-  port: '38106'
+  port: 38106
   server: 120.240.48.20
   skip-cert-verify: false
   tls: false
@@ -4468,7 +4501,7 @@ proxies:
     path: /blue
 - alterId: '0'
   cipher: auto
-  name: '64|广东省 移动 #5'
+  name: '64|广东省 移动 #9'
   network: ws
   port: '16628'
   server: m.cnmjcn.com
@@ -4483,7 +4516,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '64|广东省 移动 #6'
+  name: '64|广东省 移动 #10'
   network: ws
   port: 16645
   server: m.cnmjcn.com
@@ -4496,6 +4529,20 @@ proxies:
       host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 72|🇨🇳
+  network: ws
+  port: 20301
+  server: data-jp-v1.usabooks.com.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      host: data-jp-v1.usabooks.com.cn
+    path: /debian
 - cipher: chacha20-ietf
   name: 79|CN_speednode_0008
   obfs: tls1.2_ticket_auth
