@@ -4,7 +4,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 0,12,15,40,48|16|香港8|@ripaojiedian
+  name: '0,12,15,40,48,57|🇨🇳 广东省佛山市 移动 #1'
   network: tcp
   port: '15603'
   server: 183.232.199.61
@@ -18,7 +18,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: '0,12,15,42,57|🇨🇳 广东省广州市 移动 #1'
+  name: '0,12,15,40,42,53|广东省广州市 移动 #4'
   network: tcp
   port: '54437'
   server: 183.236.51.59
@@ -49,7 +49,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: '9,15,40,44,46,48,53,57|🇨🇳 广东省佛山市 移动 #4'
+  name: '9,15,40,46,48,53,57|🇨🇳 广东省佛山市 移动 #2'
   network: tcp
   port: '61001'
   server: 183.232.199.61
@@ -60,7 +60,9 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '9,39,40,44,53|广东省 移动 #6'
+  h2-opts: {}
+  http-opts: {}
+  name: 9,15,39,40|>🇭🇰 HK|Ls|0404|TG@FProxies|
   network: ws
   port: '20206'
   server: data-hk-v1.usabooks.com.cn
@@ -87,7 +89,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '9,39,44,45,46,48,50,51,53,56,57|🇨🇳 广东省移动 7 #1'
+  name: '9,39,45,46,48,50,51,53,56,57|🇨🇳 广东省移动 7 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -102,9 +104,45 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alpn:
+  - h2
+  - http/1.1
+  alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 13,14,15,22,29,38,39,43,45,48,56,61,63,64,72,79|CN_speednode_0003
+  password: jUYjbUEc0LTf
+  port: 51707
+  server: 183.236.51.59
+  skip-cert-verify: false
+  sni: appsvs.shop
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: h=%2Fwebsocket
+- alterId: 64
+  cipher: auto
+  country: ' CN'
+  h2-opts: {}
+  http-opts: {}
+  name: 14,40|香港7|@ripaojiedian
+  network: tcp
+  port: '32998'
+  server: 120.232.242.122
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - cipher: aes-128-gcm
   country: CN
-  name: 15|CN_435
+  name: 15|CN_432
   password: o
   port: 1020
   server: 110.42.99.55
@@ -128,21 +166,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 15,40|🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK ...
-  network: tcp
-  port: '30874'
-  server: free.6vczxw.xyz
-  servername: vn01.tomoony.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f5e7047-13a6-3ef0-b749-6abb41280331
-- alterId: 0
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 15|CN_451
+  name: 15|CN_445
   network: ws
   port: 80
   server: 47.106.112.114
@@ -151,9 +175,28 @@ proxies:
   uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 15,62,64|江省江市 联IDC
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      host: data-us-v1.shwjfkw.cn
+    host: data-us-v1.shwjfkw.cn
+    path: /debian
 - cipher: aes-256-cfb
   country: CN
-  name: 16,30|Pool__02
+  name: 16,29,30|Pool__02
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -164,7 +207,7 @@ proxies:
   type: ssr
 - cipher: rc4-md5
   country: CN
-  name: 16,30|Relay_-CN_01
+  name: 16,29,30|Relay_-CN_01
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -183,6 +226,15 @@ proxies:
   protocol-param: 2338:9tQfxMX(0S;40f
   server: cmlayer6.standurls.co
   type: ssr
+- alterId: 0
+  cipher: auto
+  name: 35,57|🇸🇬 新加坡(欢迎订阅Youtube破解资源君)
+  network: tcp
+  port: '60301'
+  server: 2.sg.zz.xxxxx.x-t-fuckword.network
+  tls: false
+  type: vmess
+  uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳 CN 437 → tg@nicevpn123
@@ -974,7 +1026,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '39,40,45,46,48,50,53,56,57|🇨🇳 湖北省武汉市 联通 #2'
+  name: '39,40,45,46,48,50,53,56,57|🇨🇳 湖北省武汉市 联通 #1'
   network: ws
   port: '20301'
   server: data-jp-v1.usabooks.com.cn
@@ -1031,19 +1083,6 @@ proxies:
   server: zf.miaosu666.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 39|🇨🇳 CN 292 → tg@nicevpn123
-  network: ws
-  port: 20207
-  server: 120.233.42.83
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    path: /debian
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 294 → tg@nicevpn123
   password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
@@ -1632,7 +1671,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #6'
+  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #7'
   network: ws
   port: '21032'
   server: hk.lianjianode.cc
@@ -1890,7 +1929,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #4'
+  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #1'
   network: ws
   port: '16928'
   server: vip3.niuniupremium.xyz
@@ -2092,16 +2131,6 @@ proxies:
   server: 211.99.97.10
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '40,48,57|🇨🇳 广东省佛山市 移动 #1'
-  network: tcp
-  port: '46001'
-  server: 183.232.199.28
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 43|🇨🇳CN-139.227.223.3-049_1@49
@@ -2712,9 +2741,9 @@ proxies:
     path: /v2ray
 - alterId: 4
   cipher: auto
-  name: '56,57|亚洲(欢迎订阅Youtube破解资源君) #1'
+  name: 56|🇨🇳CN-117.28.242.156-0079
   network: ws
-  port: '2164'
+  port: 2164
   server: 117.28.242.156
   skip-cert-verify: false
   tls: true
@@ -4513,7 +4542,7 @@ proxies:
     path: /blue
 - alterId: '0'
   cipher: auto
-  name: '64|广东省 移动 #7'
+  name: '64|广东省 移动 #3'
   network: ws
   port: '16628'
   server: m.cnmjcn.com
@@ -4528,7 +4557,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '64|广东省 移动 #8'
+  name: '64|广东省 移动 #4'
   network: ws
   port: 16645
   server: m.cnmjcn.com
