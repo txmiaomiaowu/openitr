@@ -1,25 +1,25 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: '10,15,40|广东省佛山市 移动 #2'
+  name: '10,40|广东省佛山市 移动 #4'
   network: tcp
   port: '21006'
   server: 183.232.199.28
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '10,40,46,48,53,57|🇨🇳 广东省汕头市 移动 #1'
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '10,15,40,46,48,53,57|🇨🇳 广东省汕头市 移动 #1'
   network: tcp
   port: '15601'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -42,7 +42,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 10,15|Relay_CN-US_394
+  name: 10,15|Relay_CN-US_389
   network: tcp
   port: 50004
   server: 04.kccic2pa.xyz
@@ -51,6 +51,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
+- cipher: aes-128-gcm
+  name: 15|Relay_-HK_313
+  password: 030741c1-8706-41f6-93ae-f97585365627
+  port: 21103
+  server: ununim.yangliq.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 15,40,56|🇳CN-218.204.178.2-1255
+  network: ws
+  port: 13486
+  server: 218.204.178.2
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 61b81abc-320b-49c1-893c-f3ddd45880de
+  ws-opts:
+    headers:
+      Host: waphk.xlb8.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -59,7 +82,6 @@ proxies:
   network: ws
   port: '20206'
   server: data-hk-v1.usabooks.com.cn
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -71,16 +93,21 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  country: HK
+  country: RU
   h2-opts: {}
   http-opts: {}
-  name: 15|HK_422
-  network: tcp
-  port: 10010
-  server: 163.53.18.219
+  name: 15,42|🔗 Vauth - 159
+  network: ws
+  port: '443'
+  server: hk-full.privateip.net
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 8edc923b-58e7-4bff-8f7d-ec9075e4ba7e
+  uuid: f2c48b2f-c581-4d7d-846e-8bd97d93bd65
+  ws-opts:
+    headers:
+      Host: ''
+    path: /RACEVPN
 - cipher: aes-128-gcm
   name: 39,56|🇰HK-1.65.223.223-4509
   password: a-wym4ovY4Yw
@@ -141,20 +168,284 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 39,42,48|13|🛑@filternet🛑_🇭🇰_HK_6
+  name: 39,42,56|🇰HK-182.16.1.194-9610
   network: ws
   port: 80
-  server: 182.16.1.194
-  servername: ''
-  skip-cert-verify: true
+  server: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
-      Host: ''
+      Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 39|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 40|>🇭🇰 HK|Ms|0329|TG@FProxies|
+  network: ws
+  port: '443'
+  server: aliyunhk.caliburnonline.work
+  tls: true
+  type: vmess
+  uuid: 58816c8a-cebc-4c04-b30e-6829e84c4e33
+  ws-opts:
+    headers:
+      Host: aliyunhk.caliburnonline.work
+    path: /oscarspy
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #1'
+  network: ws
+  port: '443'
+  server: wachk01.caliburnonline.work
+  tls: true
+  type: vmess
+  uuid: 58816c8a-cebc-4c04-b30e-6829e84c4e33
+  ws-opts:
+    headers:
+      Host: wachk01.caliburnonline.work
+    path: /oscarspy
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #13'
+  network: ws
+  port: '443'
+  server: 172.67.186.25
+  tls: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  ws-opts:
+    headers:
+      Host: ''
+    path: /blog
+- alterId: 0
+  cipher: auto
+  name: 40|>🇭🇰 HK|Ls|0329|TG@FProxies|
+  network: tcp
+  port: '15074'
+  server: 15074.kuaiyin02.top
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: auto
+  name: 40|>🇭🇰 HK|Hs|0404|TG@FProxies|
+  network: ws
+  port: '2083'
+  server: 104.19.14.35
+  tls: true
+  type: vmess
+  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 40,73|US 51|openitr
+  network: ws
+  port: '2087'
+  server: gghk.duduskying.cf
+  tls: true
+  type: vmess
+  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
+  ws-opts:
+    headers:
+      Host: gghk.duduskying.cf
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0430|TG@FProxies| #6'
+  network: ws
+  port: '443'
+  server: 95.85.92.5
+  tls: true
+  type: vmess
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #1'
+  network: ws
+  port: '2083'
+  server: 104.18.211.101
+  tls: true
+  type: vmess
+  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0430|TG@FProxies| #1'
+  network: tcp
+  port: '33001'
+  server: sz.zj.my.1.76po.com
+  tls: true
+  type: vmess
+  uuid: 585670be-5f39-494d-9a8c-3287e28f4749
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0430|TG@FProxies| #2'
+  network: ws
+  port: '2087'
+  server: dm2087.duduskying.cloudns.biz
+  tls: true
+  type: vmess
+  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
+  ws-opts:
+    headers:
+      Host: dm2087.duduskying.cloudns.biz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #9'
+  network: ws
+  port: '443'
+  server: 82.213.5.50
+  tls: true
+  type: vmess
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #5'
+  network: ws
+  port: '8080'
+  server: 185.244.208.196
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0430|TG@FProxies| #8'
+  network: ws
+  port: '443'
+  server: 80.240.124.9
+  tls: true
+  type: vmess
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #7'
+  network: ws
+  port: '443'
+  server: 5.188.132.5
+  tls: true
+  type: vmess
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 40,44,48,53,56|🇨🇳CN-116.162.172.161-1249
+  network: ws
+  port: 16632
+  server: yes.cnmjcn.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #6'
+  network: ws
+  port: '443'
+  server: 92.223.12.6
+  tls: true
+  type: vmess
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #8'
+  network: ws
+  port: '2083'
+  server: 104.17.71.16
+  tls: true
+  type: vmess
+  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ls|0329|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: 162.159.142.212
+  tls: false
+  type: vmess
+  uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #1'
+  network: ws
+  port: '443'
+  server: terry.servicex.online
+  tls: true
+  type: vmess
+  uuid: 6dcbb085-ddf6-4f8f-a416-c27454d48077
+  ws-opts:
+    headers:
+      Host: terry.servicex.online
+    path: /world
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ls|0329|TG@FProxies| #3'
+  network: tcp
+  port: '35009'
+  server: tanz-hk.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: e9630109-04ef-394b-8f7f-1baee9f07532
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -174,7 +465,120 @@ proxies:
     path: /ws?ed
 - alterId: 0
   cipher: auto
-  name: 40|>🇭🇰 HK|Ms|0404|TG@FProxies|
+  name: 40|🇭🇰 泰国 - 曼谷 - Kaopu Cloud HK Li...
+  network: tcp
+  port: '30904'
+  server: free.6vczxw.xyz
+  tls: true
+  type: vmess
+  uuid: 6f5e7047-13a6-3ef0-b749-6abb41280331
+- alterId: 0
+  cipher: auto
+  name: 40|>🇭🇰 HK|Hs|0430|TG@FProxies|
+  network: tcp
+  port: '62010'
+  server: zx.zztannel.com
+  tls: false
+  type: vmess
+  uuid: 18d94bd0-2bb0-390b-b815-2edfac3a8fbe
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #3'
+  network: ws
+  port: '2053'
+  server: 104.17.56.56
+  tls: true
+  type: vmess
+  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
+  ws-opts:
+    headers:
+      Host: data-hk-3.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 40|>🇭🇰 HK|Hs|0329|TG@FProxies|
+  network: ws
+  port: '443'
+  server: support.zoom.us
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: support.zoom.us
+    path: /cfhk.393930.xyz:4431/
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #8'
+  network: ws
+  port: '443'
+  server: 185.244.209.4
+  tls: true
+  type: vmess
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #7'
+  network: ws
+  port: '58080'
+  server: 223.113.130.58
+  tls: false
+  type: vmess
+  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
+  ws-opts:
+    headers:
+      Host: cache-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #4'
+  network: ws
+  port: '443'
+  server: 104.17.224.220
+  tls: true
+  type: vmess
+  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
+  ws-opts:
+    headers:
+      Host: data-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 40,42,48,56|🇳CN-120.233.204.126-4446
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ls|0329|TG@FProxies| #4'
+  network: ws
+  port: '52086'
+  server: 223.113.130.58
+  tls: false
+  type: vmess
+  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #10'
   network: ws
   port: '80'
   server: speed.cloudflare.com
@@ -185,9 +589,97 @@ proxies:
     headers:
       Host: speed.cloudflare.com
     path: /db00
+- alterId: 64
+  cipher: auto
+  name: '40,42,46,48,53,57|🇨🇳 广东省江门市 移动 #1'
+  network: tcp
+  port: '40259'
+  server: 120.238.122.243
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #1'
+  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #11'
+  network: ws
+  port: '2083'
+  server: 104.18.205.46
+  tls: true
+  type: vmess
+  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #5'
+  network: ws
+  port: '443'
+  server: 104.17.180.107
+  tls: true
+  type: vmess
+  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #10'
+  network: ws
+  port: '20759'
+  server: hkt.littleqqq.co
+  tls: false
+  type: vmess
+  uuid: 4f06048d-36d8-4ff1-a6ce-6e44ea2cb7a4
+  ws-opts:
+    headers:
+      Host: hkt.littleqqq.co
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #6'
+  network: ws
+  port: '2053'
+  server: 104.19.214.152
+  tls: true
+  type: vmess
+  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
+  ws-opts:
+    headers:
+      Host: cache-hk-2.cn-db.top
+    path: /db00
+- alterId: 64
+  cipher: auto
+  name: 40,48|16|香港7|@ripaojiedian
+  network: tcp
+  port: '32998'
+  server: 120.232.242.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 32
+  cipher: auto
+  name: 40,44,47,56,73|NL 1|openitr
+  network: ws
+  port: '443'
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #12'
   network: ws
   port: '443'
   server: 104.17.224.214
@@ -213,440 +705,6 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: 40|>🇭🇰 HK|Hs|0404|TG@FProxies|
-  network: ws
-  port: '443'
-  server: 104.17.224.220
-  tls: true
-  type: vmess
-  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
-  ws-opts:
-    headers:
-      Host: data-hk-1.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #7'
-  network: ws
-  port: '443'
-  server: 185.244.209.4
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: 40|>🇭🇰 HK|Hs|0329|TG@FProxies|
-  network: ws
-  port: '443'
-  server: support.zoom.us
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: support.zoom.us
-    path: /cfhk.393930.xyz:4431/
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #13'
-  network: ws
-  port: '443'
-  server: 82.213.5.50
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #11'
-  network: ws
-  port: '443'
-  server: 172.67.186.25
-  tls: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  ws-opts:
-    headers:
-      Host: ''
-    path: /blog
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #1'
-  network: ws
-  port: '2083'
-  server: 104.19.14.35
-  tls: true
-  type: vmess
-  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #10'
-  network: ws
-  port: '20759'
-  server: hkt.littleqqq.co
-  tls: false
-  type: vmess
-  uuid: 4f06048d-36d8-4ff1-a6ce-6e44ea2cb7a4
-  ws-opts:
-    headers:
-      Host: hkt.littleqqq.co
-    path: /hls/cctv5phd.m3u8
-- alterId: 64
-  cipher: auto
-  name: '40,42,46,48,53,57|🇨🇳 广东省江门市 移动 #1'
-  network: tcp
-  port: '40259'
-  server: 120.238.122.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 40,42,48,56|🇳CN-120.233.204.126-4446
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 40|>🇭🇰 HK|Ls|0329|TG@FProxies|
-  network: tcp
-  port: '35009'
-  server: tanz-hk.01byx31qzn.download
-  tls: false
-  type: vmess
-  uuid: e9630109-04ef-394b-8f7f-1baee9f07532
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #9'
-  network: ws
-  port: '443'
-  server: 5.188.132.5
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0430|TG@FProxies| #5'
-  network: tcp
-  port: '33001'
-  server: sz.zj.my.1.76po.com
-  tls: true
-  type: vmess
-  uuid: 585670be-5f39-494d-9a8c-3287e28f4749
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #1'
-  network: ws
-  port: '58080'
-  server: 223.113.130.58
-  tls: false
-  type: vmess
-  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
-  ws-opts:
-    headers:
-      Host: cache-hk-1.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #2'
-  network: ws
-  port: '2053'
-  server: 104.17.56.56
-  tls: true
-  type: vmess
-  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
-  ws-opts:
-    headers:
-      Host: data-hk-3.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #10'
-  network: ws
-  port: '443'
-  server: 80.240.124.9
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #5'
-  network: ws
-  port: '2083'
-  server: 104.18.211.101
-  tls: true
-  type: vmess
-  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ls|0329|TG@FProxies| #3'
-  network: ws
-  port: '443'
-  server: 95.85.92.5
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #4'
-  network: ws
-  port: '443'
-  server: aliyunhk.caliburnonline.work
-  tls: true
-  type: vmess
-  uuid: 58816c8a-cebc-4c04-b30e-6829e84c4e33
-  ws-opts:
-    headers:
-      Host: aliyunhk.caliburnonline.work
-    path: /oscarspy
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #6'
-  network: ws
-  port: '2083'
-  server: 104.17.71.16
-  tls: true
-  type: vmess
-  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /db00
-- alterId: 32
-  cipher: auto
-  name: 40,44,47,56,73|NL 1|openitr
-  network: ws
-  port: '443'
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  name: 40,73|US 51|openitr
-  network: ws
-  port: '2087'
-  server: gghk.duduskying.cf
-  tls: true
-  type: vmess
-  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
-  ws-opts:
-    headers:
-      Host: gghk.duduskying.cf
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #9'
-  network: ws
-  port: '443'
-  server: 92.223.12.6
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #6'
-  network: ws
-  port: '8080'
-  server: 185.244.208.196
-  tls: true
-  type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ls|0329|TG@FProxies| #1'
-  network: ws
-  port: '52086'
-  server: 223.113.130.58
-  tls: false
-  type: vmess
-  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /db00
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 40,48,56|🇨🇳CN-116.162.172.161-1249
-  network: ws
-  port: 16632
-  server: yes.cnmjcn.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #4'
-  network: ws
-  port: '2053'
-  server: 104.19.214.152
-  tls: true
-  type: vmess
-  uuid: a6769e77-632a-3cb3-a266-97bff13791bd
-  ws-opts:
-    headers:
-      Host: cache-hk-2.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0329|TG@FProxies| #8'
-  network: ws
-  port: '443'
-  server: wachk01.caliburnonline.work
-  tls: true
-  type: vmess
-  uuid: 58816c8a-cebc-4c04-b30e-6829e84c4e33
-  ws-opts:
-    headers:
-      Host: wachk01.caliburnonline.work
-    path: /oscarspy
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ls|0329|TG@FProxies| #2'
-  network: tcp
-  port: '15074'
-  server: 15074.kuaiyin02.top
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #5'
-  network: ws
-  port: '443'
-  server: terry.servicex.online
-  tls: true
-  type: vmess
-  uuid: 6dcbb085-ddf6-4f8f-a416-c27454d48077
-  ws-opts:
-    headers:
-      Host: terry.servicex.online
-    path: /world
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0430|TG@FProxies| #11'
-  network: ws
-  port: '2087'
-  server: dm2087.duduskying.cloudns.biz
-  tls: true
-  type: vmess
-  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
-  ws-opts:
-    headers:
-      Host: dm2087.duduskying.cloudns.biz
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Hs|0430|TG@FProxies| #1'
-  network: tcp
-  port: '62010'
-  server: zx.zztannel.com
-  tls: false
-  type: vmess
-  uuid: 18d94bd0-2bb0-390b-b815-2edfac3a8fbe
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ls|0329|TG@FProxies| #4'
-  network: ws
-  port: '80'
-  server: 162.159.142.212
-  tls: false
-  type: vmess
-  uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Ms|0404|TG@FProxies| #12'
-  network: ws
-  port: '2083'
-  server: 104.18.205.46
-  tls: true
-  type: vmess
-  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #6'
-  network: ws
-  port: '443'
-  server: 104.17.180.107
-  tls: true
-  type: vmess
-  uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /db00
-- alterId: 0
-  cipher: auto
   name: '40|>🇭🇰 HK|Hs|0404|TG@FProxies| #7'
   network: ws
   port: '2083'
@@ -658,22 +716,6 @@ proxies:
     headers:
       Host: ''
     path: /db00
-- alterId: 64
-  cipher: auto
-  name: 48,63|🇭🇰HK-182.16.1.194-0124
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      host: hrgdvpn.flycdnedc55.vip
-    host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 48|15|🇭🇰 香港KT|@ripaojiedian
@@ -734,44 +776,50 @@ proxies:
   uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
   ws-opts:
     path: /
-- client-fingerprint: chrome
-  name: 56,79|HK_speednode_0012
+- name: 56|🇰HK-47.76.32.108-1181
   network: ws
   password: CMLiu
   port: 2087
   server: 47.76.32.108
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.classelivre.eu.org
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: trojan.classelivre.eu.org
     path: /?ed=2048
-- client-fingerprint: chrome
-  name: 56,79|HK_speednode_0014
+- name: 56|🇭🇰HK-47.76.32.108-1182
   network: ws
   password: CMLiu
   port: 2053
   server: 47.76.32.108
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.classelivre.eu.org
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: trojan.classelivre.eu.org
     path: /?ed=2048
-- client-fingerprint: chrome
-  name: 56,79|HK_speednode_0016
+- name: 56|🇭🇰HK-202.81.235.90-1183
   network: ws
   password: CMLiu
   port: 50100
   server: 202.81.235.90
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.classelivre.eu.org
   type: trojan
-  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.classelivre.eu.org
+    path: /?ed=2048
+- name: 56|🇭🇰HK-103.20.223.16-1184
+  network: ws
+  password: CMLiu
+  port: 55044
+  server: 103.20.223.16
+  skip-cert-verify: false
+  sni: trojan.classelivre.eu.org
+  type: trojan
   ws-opts:
     headers:
       Host: trojan.classelivre.eu.org
@@ -1820,45 +1868,18 @@ proxies:
     headers:
       Host: a.189.cn
     path: /zh-cn/download
-- client-fingerprint: chrome
-  name: 79|HK_speednode_0011
+- alterId: 64
+  cipher: auto
+  name: 63|🇭🇰HK-182.16.1.194-0124
   network: ws
-  password: CMLiu
-  port: 2096
-  server: aliyun.classelivre.eu.org
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
   skip-cert-verify: true
-  sni: trojan.classelivre.eu.org
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
-      Host: trojan.classelivre.eu.org
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 79|HK_speednode_0013
-  network: ws
-  password: CMLiu
-  port: 35123
-  server: 123.58.212.186
-  skip-cert-verify: true
-  sni: trojan.classelivre.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.classelivre.eu.org
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 79|HK_speednode_0015
-  network: ws
-  password: CMLiu
-  port: 4431
-  server: 152.32.190.239
-  skip-cert-verify: true
-  sni: trojan.classelivre.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.classelivre.eu.org
-    path: /?ed=2048
+      host: hrgdvpn.flycdnedc55.vip
+    host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
