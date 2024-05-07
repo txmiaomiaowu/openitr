@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,39,40,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: 4,39,40,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 104.19.250.15
@@ -24,11 +24,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: '4,6,8,9,26,40,48,49,53,56,57,61|🇬🇧_GB_英国->🇺🇸_US_美国 #7'
+  name: '4,6,8,9,26,40,48,49,53,57,61|🇬🇧_GB_英国->🇺🇸_US_美国 #7'
   network: http
   port: 443
   server: 89.213.164.154
@@ -38,7 +34,7 @@ proxies:
   uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
 - alterId: 0
   cipher: auto
-  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  name: 4,39,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 2052
   server: 104.18.36.119
@@ -53,7 +49,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_3
+  name: 4,39,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_3
   network: ws
   port: 2052
   server: 104.18.19.191
@@ -68,11 +64,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,8,9,26,40,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: 6,8,9,26,40,48,49,53,57|🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '2052'
   server: 104.19.250.15
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
@@ -82,11 +77,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,8,9,26,40,44,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
+  name: '6,8,9,26,40,48,49,53,57|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: '2052'
   server: 104.18.36.119
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
@@ -96,13 +90,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '8,27,40,48,49,53,56,73,82|🇺🇸_US_美国->🇫🇷_FR_法国 #10'
+  client-fingerprint: chrome
+  name: '8,27,40,45,46,48,49,53,57,73,82|🇺🇸_US_美国->🇫🇷_FR_法国 #10'
   network: ws
   port: 2082
   server: 172.67.130.140
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -229,21 +226,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 43,54|🏁RELAY-172.67.214.33-3478
-  network: ws
-  port: 2095
-  server: onea.flha.ru
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
   name: 43|🇨🇳_CN_中国->🇩🇪_DE_德国_5@23
   network: ws
   port: 46038
@@ -312,11 +294,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-104.21.75.246-7596
+  name: 44|🇬🇧 _US_美国->🇬🇧_GB_英国_2
   network: ws
-  port: 80
+  port: '80'
   server: ld2.shabijichang.com
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -352,11 +333,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-172.67.184.13-7594
+  name: 44|🇮🇳 _US_美国->🇮🇳_IN_印度_3
   network: ws
-  port: 80
+  port: '80'
   server: mm2.shabijichang.com
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -366,11 +346,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-172.64.80.1-7602
+  name: 44|🇮🇳 _US_美国->🇮🇳_IN_印度_4
   network: ws
-  port: 80
+  port: '80'
   server: mm3.shabijichang.com
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -380,23 +359,23 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 44,56|🇳🇱NL-45.199.138.191-7576
+  name: 44|🇳🇱 _US_美国->🇳🇱_NL_荷兰
   network: ws
-  port: 30000
+  port: '30000'
   server: 45.199.138.191
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
+    headers:
+      Host: ''
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 44,56|🏁RELAY-172.67.184.13-7601
+  name: 44|🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯
   network: ws
-  port: 80
+  port: '80'
   server: jd3.shabijichang.com
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
