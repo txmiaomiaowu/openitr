@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,39,40,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: 4,39,40,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 2052
   server: 104.19.250.15
@@ -28,17 +28,17 @@ proxies:
     method: GET
     path:
     - /
-  name: '4,6,8,9,26,40,48,49,53,56,57,61|🇬🇧_GB_英国->🇺🇸_US_美国 #7'
+  name: 4,6,8,9,26,40,48,49,53,56,57|🇺🇸 _GB_英国->🇺🇸_US_美国
   network: http
-  port: 443
+  port: '443'
   server: 89.213.164.154
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
 - alterId: 0
   cipher: auto
-  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_3
   network: ws
   port: 2052
   server: 104.18.36.119
@@ -53,7 +53,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_3
+  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 104.18.19.191
@@ -96,7 +96,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,8,9,26,40,44,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国 #2'
+  name: '6,8,9,26,40,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国 #2'
   network: ws
   port: '2052'
   server: 104.18.19.191
@@ -112,7 +112,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '8,27,37,40,42,43,45,46,48,49,53,56,57,73,77,82|🇺🇸_US_美国->🇫🇷_FR_法国 #11'
+  name: '8,27,42,43,45,46,48,49,53,56,57,71,73,82|🇺🇸_US_美国->🇫🇷_FR_法国 #11'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -129,7 +129,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '25,43,48,82|🇺🇸_US_美国 #74'
+  name: '25,43,48,82|🇺🇸_US_美国 #77'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -171,7 +171,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '25,27,48,82|🇺🇸_US_美国 #73'
+  name: '25,27,48,82|🇺🇸_US_美国 #76'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -195,6 +195,23 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 40,44,48,56|🇳CN-220.205.37.42-4363
+  network: ws
+  port: 16632
+  server: yes.cnmjcn.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - grpc-opts:
     grpc-service-name: 443trojan
   name: 43|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -245,6 +262,20 @@ proxies:
   ws-opts:
     headers:
       host: cdn.vds-server.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43|🇺🇸_US_美国->🇭🇰_HK_香港_3_5@22
+  network: ws
+  port: 2095
+  server: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
@@ -549,4 +580,19 @@ proxies:
   type: vmess
   uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285
   ws-opts:
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: '61,64|美国 CloudFlare节点 #112'
+  network: ws
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    host: s1c.v2.v001sss.xyz
     path: /
