@@ -46,7 +46,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,8,9,26,40,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: 6,8,9,26,40,44,48,49,53,56,57|🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '2052'
   server: 104.18.36.119
@@ -78,7 +78,6 @@ proxies:
   network: ws
   port: '2052'
   server: 104.18.19.191
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -108,7 +107,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '8,40,45,46,48,53,56,57|🇨🇳 湖南省 联通 #1'
+  name: '8,40,44,45,46,48,53,56,57|🇨🇳 湖南省 联通 #1'
   network: ws
   port: '16632'
   server: yes.cnmjcn.net
@@ -125,7 +124,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '25,43,48,82|🇺🇸_US_美国 #65'
+  name: '25,43,48,82|🇺🇸_US_美国 #54'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -167,7 +166,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '25,27,48,82|🇺🇸_US_美国 #64'
+  name: '25,27,48,82|🇺🇸_US_美国 #53'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -193,22 +192,8 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 26,40,49,53,56|🇺🇸US-89.213.164.154-0084
-  network: http
-  port: 443
-  server: 89.213.164.154
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: '27,42,43,45,46,48,49,53,56,57,71,73,82|🇺🇸_US_美国->🇫🇷_FR_法国 #10'
+  name: '27,43,45,46,48,49,53,56,57,73,82|🇺🇸_US_美国->🇫🇷_FR_法国 #10'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -438,7 +423,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 48|13|德国 -> China Telecom
+  name: 48|13|🇺🇸_US_美国->🇵🇱_PL_波兰
+  network: ws
+  port: 80
+  server: zula.ir
+  tls: false
+  type: vmess
+  uuid: 3fd9190e-a132-42ca-a33b-4a37b4b3e0cd
+  ws-opts:
+    headers:
+      Host: pl2-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 48|13|德国 -> 中国China Telecom
   network: ws
   port: 8880
   server: 217.160.45.31
@@ -452,30 +450,18 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 48|13|🇿🇦_ZA_南非->🇩🇪_DE_德国
-  network: ws
-  port: 2052
-  server: 206.238.236.36
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 49,53,56|🇺🇸US-89.213.164.154-0084
+  network: http
+  port: 443
+  server: 89.213.164.154
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: mysan2.jaquay22.workers.dev
-    path: /afrhms16v.bestxray.buzz/linkws
-- alterId: 0
-  cipher: auto
-  name: 48|13|🇺🇸_US_美国->🇵🇱_PL_波兰
-  network: ws
-  port: 80
-  server: zula.ir
-  tls: false
-  type: vmess
-  uuid: 3fd9190e-a132-42ca-a33b-4a37b4b3e0cd
-  ws-opts:
-    headers:
-      Host: pl2-vmess.sshmax.xyz
-    path: /vmess
+  uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
 - alterId: 0
   cipher: auto
   name: 52|KR -> US
@@ -617,4 +603,18 @@ proxies:
   type: vmess
   uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '61,72|🇳 #1'
+  network: ws
+  port: 16632
+  server: yes.cnmjcn.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
     path: /
