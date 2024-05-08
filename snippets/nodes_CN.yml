@@ -1,17 +1,18 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '0,12,42,44,53|广东省广州市 移动 #2'
+  name: 0,12,42,72|🇨🇳广东4
   network: tcp
-  port: '54437'
+  port: 54437
   server: 183.236.51.59
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '0,8,12,40,44,48,49,53,61|🇨🇳_CN_中国->🇮🇳_IN_印度 #4'
+  name: '0,8,12,40,48,49,53,61|🇨🇳_CN_中国->🇮🇳_IN_印度 #4'
   network: tcp
   port: 44001
   server: 183.232.199.28
@@ -20,9 +21,51 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaad
+- cipher: chacha20-ietf-poly1305
+  country: CN
+  name: 15|Relay_CN-KR_401
+  password: 018bf2c6-c831-43f2-8aec-12d99f753367
+  port: 33014
+  server: a.karyl.cc
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: CN
+  name: 15|Relay_CN-KR_415
+  password: 018bf2c6-c831-43f2-8aec-12d99f753367
+  port: 33014
+  server: b.karyl.cc
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 15|CN_428
+  network: ws
+  port: 80
+  server: 47.106.112.114
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 15,40|🇭🇰 泰国 - 曼谷 - Kaopu Cloud HK Li...
+  network: tcp
+  port: '30904'
+  server: free.6vczxw.xyz
+  servername: th01.tomoony.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6f5e7047-13a6-3ef0-b749-6abb41280331
 - cipher: aes-256-cfb
   country: CN
-  name: 16,30|Pool__02
+  name: 16,29,30|Pool__02
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -31,8 +74,19 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
+- cipher: chacha20-ietf
+  country: CN
+  name: 16|Relay_CN-CN_06
+  obfs: plain
+  password: mblank1port
+  port: 560
+  protocol: auth_aes128_md5
+  protocol-param: 2338:9tQfxMX(0S;40f
+  server: cmlayer6.standurls.co
+  type: ssr
 - cipher: rc4-md5
-  name: 29,30|Relay_-CN_01
+  country: CN
+  name: 16,29,30|Relay_-CN_01
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -41,15 +95,6 @@ proxies:
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
   type: ssr
-- alterId: 0
-  cipher: auto
-  name: 35,42|🔗 Vauth - 58
-  network: tcp
-  port: '25842'
-  server: 4.game.speed.zz.001.oooooooooo.icu
-  tls: false
-  type: vmess
-  uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳 CN 437 → tg@nicevpn123
@@ -159,11 +204,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39,40,44,53,56|🇳CN-120.233.42.83-1179
+  name: 39,40,56|🇳CN-120.233.42.83-1179
   network: ws
   port: 20206
   server: data-hk-v1.usabooks.com.cn
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -717,13 +761,16 @@ proxies:
   server: 9s5g01.a3b5wy.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 39,43,45,56,62,64|广东省江门市+移动
+  name: 39,43,45,56,62,64,72|🇩🇪DE德国2
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: '20005'
+  port: 20005
   server: service.ouluyun9803.com
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -889,26 +936,6 @@ proxies:
   server: 36.212.129.235
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 39|🇨🇳 CN 289 → tg@nicevpn123
-  password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69
-  port: 44584
-  server: zf.miaosu666.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 39|🇨🇳 CN 292 → tg@nicevpn123
-  network: ws
-  port: 20207
-  server: 120.233.42.83
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    path: /debian
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 294 → tg@nicevpn123
   password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
@@ -1024,7 +1051,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 39,43,45,56,62,64,72|🇪DE德国2
+  name: 39,43,45,56,62,64,72|🇪DE德国3
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -1204,21 +1231,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39|🇨🇳 CN 361 → tg@nicevpn123
-  network: ws
-  port: 20206
-  server: 120.233.42.83
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    path: /debian
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: '39,45,46,48,50,51,53,56,57|🇨🇳 广东省移动 7 #1'
+  name: '39,40,45,46,48,50,51,53,56,57|🇨🇳 广东省移动 7 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -1235,7 +1249,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #1'
+  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #5'
   network: ws
   port: '50080'
   server: 223.113.130.58
@@ -1402,13 +1416,6 @@ proxies:
   server: 120.199.94.29
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 39|🇨🇳 CN 415 → tg@nicevpn123
-  password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69
-  port: 44583
-  server: zf.miaosu666.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 418 → tg@nicevpn123
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
@@ -1519,11 +1526,14 @@ proxies:
   server: rk.izoizoizo.top
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 39|🇨🇳 CN 447 → tg@nicevpn123
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 39,72|🇳广东3
   password: a501c82c72d790b8
   port: 8474
   server: 119.23.104.213
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -1535,7 +1545,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #3'
+  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #4'
   network: ws
   port: '21032'
   server: hk.lianjianode.cc
@@ -1754,13 +1764,6 @@ proxies:
   server: 220.195.133.232
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 39|🇨🇳 CN 5 → tg@nicevpn123
-  password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69
-  port: 42574
-  server: zf.miaosu666.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 500 → tg@nicevpn123
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
@@ -1775,13 +1778,16 @@ proxies:
   server: 120.199.94.29
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 39,43,45,56,62|github.com/freefq - 广东省江门市移动 1...
+  name: 39,43,45,56,62,72|🇪DE国
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: '26667'
+  port: 26667
   server: service.ouluyun9803.com
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1793,7 +1799,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie...
+  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #2'
   network: ws
   port: '16928'
   server: vip3.niuniupremium.xyz
@@ -1839,13 +1845,6 @@ proxies:
   password: dbEcUJ
   port: 24603
   server: 211.99.97.20
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 39|🇨🇳 CN 519 → tg@nicevpn123
-  password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69
-  port: 44524
-  server: zf.miaosu666.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1916,13 +1915,6 @@ proxies:
   password: d9c577328fb349fe
   port: 42285
   server: 5fa33d2.vrqfmm.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 39|🇨🇳 CN 74 → tg@nicevpn123
-  password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69
-  port: 44519
-  server: zf.miaosu666.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -4413,7 +4405,7 @@ proxies:
     path: /blue
 - alterId: '0'
   cipher: auto
-  name: '64|广东省 移动 #2'
+  name: '64|广东省 移动 #3'
   network: ws
   port: '16628'
   server: m.cnmjcn.com
@@ -4428,7 +4420,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '64|广东省 移动 #3'
+  name: '64|广东省 移动 #4'
   network: ws
   port: 16645
   server: m.cnmjcn.com
@@ -4441,34 +4433,6 @@ proxies:
       host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 72|🇨🇳广东3
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 72|🇳广东4
-  network: ws
-  port: 20206
-  server: data-hk-v1.usabooks.com.cn
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      host: data-hk-v1.usabooks.com.cn
-    path: /debian
 - cipher: chacha20-ietf-poly1305
   name: 79|CN_speednode_0004
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -4581,25 +4545,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: c5e4e9d0-da73-3a08-8945-ec693a23a240
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  customName: netflix_US
-  h2-opts: {}
-  http-opts: {}
-  name: 79|CN_speednode_0015
-  network: ws
-  port: 16928
-  server: vip3.niuniupremium.xyz
-  servername: 193.25.215.160
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-opts:
-    headers:
-      host: vip3.niuniupremium.xyz
-    path: /v2ray
 - alterId: 0
   cipher: auto
   name: 79|CN_speednode_0016
