@@ -1,4 +1,64 @@
 proxies:
+- cipher: aes-256-cfb
+  country: JP
+  name: 14,15,39,56|🇵JP-3.112.218.182-0807
+  password: amazonskr05
+  port: 443
+  server: 3.112.218.182
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 14,15,63|🇵JP-52.195.189.211-3617
+  password: amazonskr05
+  port: '443'
+  server: 52.195.189.211
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 14,17| JP_05
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 14,17,42,71,73|US 2|openitr
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 14| JP_238
+  network: ws
+  port: 2083
+  server: 146.56.133.140
+  servername: tg.dns68.9669.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: e8c6eb94-0c48-49de-c3eb-e305a26d1074
+  ws-headers:
+    HOST: tg.dns68.9669.link
+  ws-path: /TG@dns68
 - cipher: chacha20-ietf-poly1305
   name: 15,39|🇪🇸 ES 22 → tg@nicevpn123
   password: 95597817-57ba-43e9-b853-c9dab67c59ce
@@ -6,13 +66,35 @@ proxies:
   server: 4.forlive.live
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15,39|🇪🇸 ES 3 → tg@nicevpn123
-  password: 835d21b0-5322-4a77-8aff-4aff633642b0
-  port: 61002
-  server: 4.forlive.live
-  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '15|disney_netflix_JP #26'
+  network: ws
+  port: 80
+  server: jp5g.xn--vhq70hxyat50h6wk.com
+  type: vmess
+  uuid: e7c26c01-186a-479e-9218-4952353d97f1
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 15,39|🇺🇸 US 2029 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 104.19.45.45
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -37,58 +119,67 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '15|disney_netflix_JP #22'
+  name: 15,39|🇺🇸 US 2037 → tg@nicevpn123
   network: ws
   port: 80
-  server: jp5g.xn--vhq70hxyat50h6wk.com
-  type: vmess
-  uuid: e7c26c01-186a-479e-9218-4952353d97f1
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_-JP_350
-  network: ws
-  port: 80
-  server: cf.345673.xyz
+  server: 104.19.45.46
+  skip-cert-verify: true
+  tls: false
   type: vmess
   udp: true
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
   ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '15|disney_netflix_JP #31'
-  password: 018bf2c6-c831-43f2-8aec-12d99f753367
-  port: 33004
-  server: b.karyl.cc
-  type: ss
+    path: /xiaodao?ed=2048
 - cipher: aes-128-gcm
   country: CN
-  name: '15|disney_netflix_JP #32'
+  name: '15|disney_netflix_JP #36'
   password: fcf9cb7c-6bc9-406e-87c0-bd8b09d170ee
   port: 32812
   server: xiaonangua.lwjyj.com
   type: ss
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '15,40,44,48,53|广东省汕头市 移动 #7'
+  network: tcp
+  port: 61001
+  server: 183.240.179.195
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- cipher: chacha20-ietf-poly1305
+  country: JP
+  name: 15|Relay_JP-JP_461
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node1.s.nodelist-gfwairport2.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: JP
+  name: 15|Relay_JP-JP_462
+  password: 6541d170-1507-45bc-9603-e8138a21b28c
+  port: 50001
+  server: cgroup.node1.s.nodelist-gfwairport2.top
+  type: ss
 - cipher: aes-256-cfb
   country: JP
-  name: 15|JP_456
-  password: amazonskr05
+  name: 15|Pool_JP_464
+  obfs: plain
+  password: www.xbvpn.com
   port: 443
-  server: 54.95.164.206
-  type: ss
+  protocol: origin
+  server: 45.67.53.250
+  type: ssr
 - alterId: 0
   cipher: auto
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: '15|disney_netflix_JP #35'
+  name: '15|disney_netflix_JP #37'
   network: ws
   port: 80
   server: 54.238.240.106
@@ -102,1363 +193,10 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_183 | 0.77Mb
-  network: ws
-  port: 80
-  server: 104.19.43.163
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_189 | 0.41Mb
-  network: ws
-  port: 80
-  server: 104.19.43.122
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_632
-  network: ws
-  port: 80
-  server: 104.19.43.155
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_635
-  network: ws
-  port: 80
-  server: 104.19.43.14
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_636
-  network: ws
-  port: 80
-  server: 104.19.43.41
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_637
-  network: ws
-  port: 80
-  server: 104.19.43.109
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_639
-  network: ws
-  port: 80
-  server: 104.19.43.158
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_640
-  network: ws
-  port: 80
-  server: 104.19.43.46
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_641
-  network: ws
-  port: 80
-  server: 104.19.43.48
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_642
-  network: ws
-  port: 80
-  server: 104.19.43.219
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_643
-  network: ws
-  port: 80
-  server: 104.19.43.143
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_644
-  network: ws
-  port: 80
-  server: 104.19.43.169
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29,44,47,56|🏁RELAY-104.19.43.173-1150
-  network: ws
-  port: 80
-  server: 104.19.43.173
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_646
-  network: ws
-  port: 80
-  server: 104.19.43.156
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_647
-  network: ws
-  port: 80
-  server: 104.19.43.159
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_252 | 0.71Mb
-  network: ws
-  port: 80
-  server: 104.19.45.71
-  servername: tk-007.xiaoxiaobujidao.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
-  ws-opts:
-    headers:
-      HOST: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_649
-  network: ws
-  port: 80
-  server: 104.19.43.106
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_195 | 1.05Mb
-  network: ws
-  port: 80
-  server: 104.19.43.103
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_651
-  network: ws
-  port: 80
-  server: 104.19.43.137
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_652
-  network: ws
-  port: 80
-  server: 104.19.43.42
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_653
-  network: ws
-  port: 80
-  server: 104.19.43.198
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_654
-  network: ws
-  port: 80
-  server: 104.19.43.72
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_655
-  network: ws
-  port: 80
-  server: 104.19.43.17
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_207 | 1.01Mb
-  network: ws
-  port: 80
-  server: 104.19.43.182
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_660
-  network: ws
-  port: 80
-  server: 104.19.43.153
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_662
-  network: ws
-  port: 80
-  server: 104.19.43.18
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29,44,47,56|🏁RELAY-104.19.43.74-1152
-  network: ws
-  port: 80
-  server: 104.19.43.74
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_667
-  network: ws
-  port: 80
-  server: 104.19.43.141
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_668
-  network: ws
-  port: 80
-  server: 104.19.43.56
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_669
-  network: ws
-  port: 80
-  server: 104.19.43.125
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_670
-  network: ws
-  port: 80
-  server: 104.19.43.253
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_671
-  network: ws
-  port: 80
-  server: 104.19.43.170
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_673
-  network: ws
-  port: 80
-  server: 104.19.43.52
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_236 | 0.69Mb
-  network: ws
-  port: 80
-  server: 104.19.43.61
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_234 | 0.73Mb
-  network: ws
-  port: 80
-  server: 104.19.43.162
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29,44,47,56|RELAY-104.19.43.214-1155
-  network: ws
-  port: 80
-  server: 104.19.43.214
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_677
-  network: ws
-  port: 80
-  server: 104.19.43.164
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29,44,47,56|🏁RELAY-104.19.43.16-1132
-  network: ws
-  port: 80
-  server: 104.19.43.16
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_680
-  network: ws
-  port: 80
-  server: 104.19.43.254
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_681
-  network: ws
-  port: 80
-  server: 104.19.43.209
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_227 | 0.67Mb
-  network: ws
-  port: 80
-  server: 104.19.43.89
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_204 | 0.94Mb
-  network: ws
-  port: 80
-  server: 104.19.43.161
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_684
-  network: ws
-  port: 80
-  server: 104.19.43.242
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_685
-  network: ws
-  port: 80
-  server: 104.19.43.190
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_687
-  network: ws
-  port: 80
-  server: 104.19.43.105
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_212 | 1.04Mb
-  network: ws
-  port: 80
-  server: 104.19.45.70
-  servername: tk-007.xiaoxiaobujidao.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
-  ws-opts:
-    headers:
-      HOST: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_690
-  network: ws
-  port: 80
-  server: 104.19.43.144
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_691
-  network: ws
-  port: 80
-  server: 104.19.43.50
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_693
-  network: ws
-  port: 80
-  server: 104.19.43.92
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_694
-  network: ws
-  port: 80
-  server: 104.19.43.44
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_696
-  network: ws
-  port: 80
-  server: 104.19.43.193
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_697
-  network: ws
-  port: 80
-  server: 104.19.43.128
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_698
-  network: ws
-  port: 80
-  server: 104.19.43.117
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_208 | 0.18Mb
-  network: ws
-  port: 80
-  server: 104.19.43.188
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_700
-  network: ws
-  port: 80
-  server: 104.19.43.126
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_703
-  network: ws
-  port: 80
-  server: 104.19.43.240
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_704
-  network: ws
-  port: 80
-  server: 104.19.43.184
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_707
-  network: ws
-  port: 80
-  server: 104.19.43.139
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_196 | 0.75Mb
+  name: 15,29|Relay_🏁ZZ-🇺US_257 | 0.93Mb
   network: ws
   port: 80
   server: 104.19.43.97
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_709
-  network: ws
-  port: 80
-  server: 104.19.43.60
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,44,47,56|🏁RELAY-104.19.43.107-1149
-  network: ws
-  port: 80
-  server: 104.19.43.107
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_199 | 1.11Mb
-  network: ws
-  port: 80
-  server: 104.19.43.100
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_231 | 1.07Mb
-  network: ws
-  port: 80
-  server: 104.19.43.73
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_713
-  network: ws
-  port: 80
-  server: 104.19.43.244
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_246 | 0.75Mb
-  network: ws
-  port: 80
-  server: 104.19.43.197
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_715
-  network: ws
-  port: 80
-  server: 104.19.43.45
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_229 | 0.72Mb
-  network: ws
-  port: 80
-  server: 104.19.43.37
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_717
-  network: ws
-  port: 80
-  server: 104.19.43.10
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_223 | 0.79Mb
-  network: ws
-  port: 80
-  server: 104.19.45.2
-  servername: tk-007.xiaoxiaobujidao.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
-  ws-opts:
-    headers:
-      HOST: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_719
-  network: ws
-  port: 80
-  server: 104.19.43.241
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_720
-  network: ws
-  port: 80
-  server: 104.19.43.204
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_721
-  network: ws
-  port: 80
-  server: 104.19.43.123
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_205 | 0.85Mb
-  network: ws
-  port: 80
-  server: 104.19.43.172
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_723
-  network: ws
-  port: 80
-  server: 104.19.43.171
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_241 | 0.24Mb
-  network: ws
-  port: 80
-  server: 104.19.43.138
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29,44,47,56|🏁RELAY-104.19.43.99-1137
-  network: ws
-  port: 80
-  server: 104.19.43.99
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,44,47,56|🏁RELAY-104.19.43.213-1135
-  network: ws
-  port: 80
-  server: 104.19.43.213
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_224 | 2.10Mb
-  network: ws
-  port: 80
-  server: 104.19.45.158
-  servername: tk-007.xiaoxiaobujidao.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
-  ws-opts:
-    headers:
-      HOST: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_728
-  network: ws
-  port: 80
-  server: 104.19.43.25
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_242 | 0.56Mb
-  network: ws
-  port: 80
-  server: 104.19.43.28
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_730
-  network: ws
-  port: 80
-  server: 104.19.43.247
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1485,147 +223,48 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_213 | 2.98Mb
+  name: 15|Relay_ZZ-JP_694
   network: ws
   port: 80
-  server: 104.19.45.142
-  servername: tk-007.xiaoxiaobujidao.xyz
+  server: 104.19.43.247
+  servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
   ws-opts:
     headers:
-      HOST: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
+      HOST: osaka.xlb8.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29,44,47,56|🏁RELAY-104.19.43.0-1154
+  name: 15,29,44,47|加拿大 088
   network: ws
   port: 80
-  server: 104.19.43.0
+  server: 104.19.43.138
   servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
   ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_238 | 0.90Mb
-  network: ws
-  port: 80
-  server: 104.19.43.231
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
     headers:
-      HOST: osaka.xlb8.eu.org
+      host: osaka.xlb8.eu.org
     path: /
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,44,47,56|🏁RELAY-104.19.43.115-1131
+  name: 15|Relay_ZZ-JP_698
   network: ws
   port: 80
-  server: 104.19.43.115
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_190 | 1.96Mb
-  network: ws
-  port: 80
-  server: 104.19.45.61
-  servername: tk-007.xiaoxiaobujidao.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
-  ws-opts:
-    headers:
-      HOST: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_225 | 1.94Mb
-  network: ws
-  port: 80
-  server: 104.19.45.60
-  servername: tk-007.xiaoxiaobujidao.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
-  ws-opts:
-    headers:
-      HOST: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_206 | 1.62Mb
-  network: ws
-  port: 80
-  server: 104.19.43.20
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_739
-  network: ws
-  port: 80
-  server: 104.19.43.82
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_740
-  network: ws
-  port: 80
-  server: 104.19.43.116
+  server: 104.19.43.254
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1639,92 +278,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_185 | 0.99Mb
-  network: ws
-  port: 80
-  server: 104.19.43.237
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_243 | 0.24Mb
-  network: ws
-  port: 80
-  server: 104.19.43.208
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_743
-  network: ws
-  port: 80
-  server: 104.19.43.210
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_744
-  network: ws
-  port: 80
-  server: 104.19.43.69
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_745
-  network: ws
-  port: 80
-  server: 104.19.43.22
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_237 | 0.67Mb
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_245 | 0.67Mb
   network: ws
   port: 80
   server: 104.19.43.27
@@ -1741,10 +295,61 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15|Relay_ZZ-JP_747
+  name: 15|Relay_ZZ-JP_700
   network: ws
   port: 80
-  server: 104.19.43.129
+  server: 104.19.43.192
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_701
+  network: ws
+  port: 80
+  server: 104.19.43.116
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_702
+  network: ws
+  port: 80
+  server: 104.19.43.69
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_703
+  network: ws
+  port: 80
+  server: 104.19.43.15
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1758,10 +363,10 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_245 | 1.56Mb
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_211 | 0.42Mb
   network: ws
   port: 80
-  server: 104.19.43.9
+  server: 104.19.43.93
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1775,10 +380,44 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_203 | 0.89Mb
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_202 | 0.92Mb
   network: ws
   port: 80
-  server: 104.19.43.66
+  server: 104.19.43.239
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_706
+  network: ws
+  port: 80
+  server: 104.19.43.140
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_707
+  network: ws
+  port: 80
+  server: 104.19.43.43
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1808,7 +447,40 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15|Relay_ZZ-JP_751
+  name: 15,44,47,56|🏁RELAY-104.19.43.115-1131
+  network: ws
+  port: 80
+  server: 104.19.43.115
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_710
+  network: ws
+  port: 80
+  server: 104.19.43.3
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_208 | 0.30Mb
   network: ws
   port: 80
   server: 104.19.43.160
@@ -1825,109 +497,7 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15|Relay_ZZ-JP_752
-  network: ws
-  port: 80
-  server: 104.19.43.192
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_753
-  network: ws
-  port: 80
-  server: 104.19.43.3
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_754
-  network: ws
-  port: 80
-  server: 104.19.43.93
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_755
-  network: ws
-  port: 80
-  server: 104.19.43.12
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_756
-  network: ws
-  port: 80
-  server: 104.19.43.43
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_230 | 0.78Mb
-  network: ws
-  port: 80
-  server: 104.19.43.225
-  servername: osaka.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_ZZ-JP_758
+  name: 15|Relay_ZZ-JP_712
   network: ws
   port: 80
   server: 104.19.43.36
@@ -1944,10 +514,26 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_184 | 0.74Mb
+  name: 15,29,44,47,56|RELAY-104.19.43.214-1155
   network: ws
   port: 80
-  server: 104.19.43.239
+  server: 104.19.43.214
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_238 | 1.15Mb
+  network: ws
+  port: 80
+  server: 104.19.43.231
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1961,10 +547,27 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,29|Relay_🏁ZZ-🇺🇸US_221 | 2.47Mb
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_248 | 1.29Mb
   network: ws
   port: 80
-  server: 104.19.43.26
+  server: 104.19.43.162
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_253 | 1.25Mb
+  network: ws
+  port: 80
+  server: 104.19.43.37
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1978,10 +581,10 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15|Relay_ZZ-JP_761
+  name: 15|Relay_ZZ-JP_718
   network: ws
   port: 80
-  server: 104.19.43.15
+  server: 104.19.43.125
   servername: osaka.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -1992,19 +595,1767 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: ' JP'
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 17,42,71,73|US 2|openitr
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
+  name: 15|Relay_ZZ-JP_719
+  network: ws
+  port: 80
+  server: 104.19.43.129
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_266 | 0.36Mb
+  network: ws
+  port: 80
+  server: 104.19.43.112
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_721
+  network: ws
+  port: 80
+  server: 104.19.43.52
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_259 | 1.00Mb
+  network: ws
+  port: 80
+  server: 104.19.45.188
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29,44,47,56|🏁RELAY-104.19.43.107-1149
+  network: ws
+  port: 80
+  server: 104.19.43.107
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,44,47,56|🏁RELAY-104.19.43.233-1130
+  network: ws
+  port: 80
+  server: 104.19.43.233
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,44,47,56|🏁RELAY-104.19.43.213-1135
+  network: ws
+  port: 80
+  server: 104.19.43.213
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_729
+  network: ws
+  port: 80
+  server: 104.19.43.219
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_730
+  network: ws
+  port: 80
+  server: 104.19.43.171
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_262 | 0.55Mb
+  network: ws
+  port: 80
+  server: 104.19.43.1
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_736
+  network: ws
+  port: 80
+  server: 104.19.43.25
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_738
+  network: ws
+  port: 80
+  server: 104.19.43.241
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_247 | 0.89Mb
+  network: ws
+  port: 80
+  server: 104.19.43.29
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_740
+  network: ws
+  port: 80
+  server: 104.19.43.204
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29,44,47,56|🏁RELAY-104.19.43.0-1154
+  network: ws
+  port: 80
+  server: 104.19.43.0
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_256 | 0.78Mb
+  network: ws
+  port: 80
+  server: 104.19.43.225
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_234 | 1.18Mb
+  network: ws
+  port: 80
+  server: 104.19.43.237
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_750
+  network: ws
+  port: 80
+  server: 104.19.43.10
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_251 | 1.61Mb
+  network: ws
+  port: 80
+  server: 104.19.43.197
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29,44,47,56|🏁RELAY-104.19.43.99-1137
+  network: ws
+  port: 80
+  server: 104.19.43.99
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_216 | 1.24Mb
+  network: ws
+  port: 80
+  server: 104.19.45.71
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_772
+  network: ws
+  port: 80
+  server: 104.19.43.139
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_773
+  network: ws
+  port: 80
+  server: 104.19.43.207
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_774
+  network: ws
+  port: 80
+  server: 104.19.43.144
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_775
+  network: ws
+  port: 80
+  server: 104.19.43.105
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_776
+  network: ws
+  port: 80
+  server: 104.19.43.193
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29,44,47,56|🏁RELAY-104.19.43.243-1133
+  network: ws
+  port: 80
+  server: 104.19.43.243
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_264 | 1.18Mb
+  network: ws
+  port: 80
+  server: 104.19.43.73
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_229 | 0.83Mb
+  network: ws
+  port: 80
+  server: 104.19.43.244
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_213 | 0.97Mb
+  network: ws
+  port: 80
+  server: 104.19.43.20
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_223 | 2.20Mb
+  network: ws
+  port: 80
+  server: 104.19.45.142
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_220 | 1.19Mb
+  network: ws
+  port: 80
+  server: 104.19.45.25
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_ZZ-🇺🇸US_201 | 5.27Mb
+  network: ws
+  port: 80
+  server: 104.19.45.158
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_242 | 1.62Mb
+  network: ws
+  port: 80
+  server: 104.19.43.89
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_241 | 0.56Mb
+  network: ws
+  port: 80
+  server: 104.19.43.28
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_269 | 1.37Mb
+  network: ws
+  port: 80
+  server: 104.19.45.2
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_217 | 3.93Mb
+  network: ws
+  port: 80
+  server: 104.19.45.60
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_204 | 1.09Mb
+  network: ws
+  port: 80
+  server: 104.19.43.66
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_790
+  network: ws
+  port: 80
+  server: 104.19.43.50
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_792
+  network: ws
+  port: 80
+  server: 104.19.43.44
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_222 | 2.87Mb
+  network: ws
+  port: 80
+  server: 104.19.45.213
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_794
+  network: ws
+  port: 80
+  server: 104.19.43.190
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_795
+  network: ws
+  port: 80
+  server: 104.19.43.242
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_218 | 4.28Mb
+  network: ws
+  port: 80
+  server: 104.19.45.64
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_797
+  network: ws
+  port: 80
+  server: 104.19.43.184
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_798
+  network: ws
+  port: 80
+  server: 104.19.43.45
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_799
+  network: ws
+  port: 80
+  server: 104.19.43.96
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_800
+  network: ws
+  port: 80
+  server: 104.19.43.126
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_801
+  network: ws
+  port: 80
+  server: 104.19.43.117
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_802
+  network: ws
+  port: 80
+  server: 104.19.43.128
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_221 | 1.08Mb
+  network: ws
+  port: 80
+  server: 104.19.43.122
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_236 | 0.59Mb
+  network: ws
+  port: 80
+  server: 104.19.43.92
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_215 | 4.13Mb
+  network: ws
+  port: 80
+  server: 104.19.45.61
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_207 | 1.14Mb
+  network: ws
+  port: 80
+  server: 104.19.43.188
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_219 | 1.13Mb
+  network: ws
+  port: 80
+  server: 104.19.45.70
+  servername: tk-007.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      HOST: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_816
+  network: ws
+  port: 80
+  server: 104.19.43.14
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_ZZ-🇺🇸US_228 | 1.15Mb
+  network: ws
+  port: 80
+  server: 104.19.43.100
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_818
+  network: ws
+  port: 80
+  server: 104.19.43.198
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_263 | 0.78Mb
+  network: ws
+  port: 80
+  server: 104.19.43.220
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_820
+  network: ws
+  port: 80
+  server: 104.19.43.56
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_821
+  network: ws
+  port: 80
+  server: 104.19.43.240
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_822
+  network: ws
+  port: 80
+  server: 104.19.43.141
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_823
+  network: ws
+  port: 80
+  server: 104.19.43.72
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29,44,47,56|🏁RELAY-104.19.43.173-1150
+  network: ws
+  port: 80
+  server: 104.19.43.173
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_825
+  network: ws
+  port: 80
+  server: 104.19.43.143
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_826
+  network: ws
+  port: 80
+  server: 104.19.43.109
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_827
+  network: ws
+  port: 80
+  server: 104.19.43.253
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_828
+  network: ws
+  port: 80
+  server: 104.19.43.170
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_829
+  network: ws
+  port: 80
+  server: 104.19.43.46
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_830
+  network: ws
+  port: 80
+  server: 104.19.43.48
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_831
+  network: ws
+  port: 80
+  server: 104.19.43.156
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_832
+  network: ws
+  port: 80
+  server: 104.19.43.209
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_833
+  network: ws
+  port: 80
+  server: 104.19.43.158
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_834
+  network: ws
+  port: 80
+  server: 104.19.43.68
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_209 | 0.94Mb
+  network: ws
+  port: 80
+  server: 104.19.43.161
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_836
+  network: ws
+  port: 80
+  server: 104.19.43.41
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_837
+  network: ws
+  port: 80
+  server: 104.19.43.106
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_839
+  network: ws
+  port: 80
+  server: 104.19.43.169
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_840
+  network: ws
+  port: 80
+  server: 104.19.43.164
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_239 | 1.11Mb
+  network: ws
+  port: 80
+  server: 104.19.43.61
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_844
+  network: ws
+  port: 80
+  server: 104.19.43.137
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_845
+  network: ws
+  port: 80
+  server: 104.19.43.183
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_846
+  network: ws
+  port: 80
+  server: 104.19.43.17
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_212 | 1.06Mb
+  network: ws
+  port: 80
+  server: 104.19.43.182
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_848
+  network: ws
+  port: 80
+  server: 104.19.43.159
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_849
+  network: ws
+  port: 80
+  server: 104.19.43.155
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_224 | 1.28Mb
+  network: ws
+  port: 80
+  server: 104.19.43.172
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_851
+  network: ws
+  port: 80
+  server: 104.19.43.18
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_852
+  network: ws
+  port: 80
+  server: 104.19.43.123
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_853
+  network: ws
+  port: 80
+  server: 104.19.43.42
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_233 | 1.45Mb
+  network: ws
+  port: 80
+  server: 104.19.43.103
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_855
+  network: ws
+  port: 80
+  server: 104.19.43.153
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_856
+  network: ws
+  port: 80
+  server: 104.19.43.179
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15|Relay_ZZ-JP_857
+  network: ws
+  port: 80
+  server: 104.19.43.22
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29,44,47,56|🏁RELAY-104.19.43.16-1132
+  network: ws
+  port: 80
+  server: 104.19.43.16
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_265 | 1.50Mb
+  network: ws
+  port: 80
+  server: 104.19.43.26
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_260 | 1.59Mb
+  network: ws
+  port: 80
+  server: 104.19.43.9
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_244 | 1.00Mb
+  network: ws
+  port: 80
+  server: 104.19.43.210
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_240 | 1.14Mb
+  network: ws
+  port: 80
+  server: 104.19.43.208
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29,44,47,56|🏁RELAY-104.19.43.74-1152
+  network: ws
+  port: 80
+  server: 104.19.43.74
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_249 | 1.25Mb
+  network: ws
+  port: 80
+  server: 104.19.43.23
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,44,47|加拿大 087
+  network: ws
+  port: 80
+  server: 104.19.43.60
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 15,29|Relay_🏁ZZ-🇺🇸US_231 | 1.21Mb
+  network: ws
+  port: 80
+  server: 104.19.43.163
+  servername: osaka.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 29,48,54,63|🇵JP-140.238.58.114-0229
+  network: ws
+  port: 57557
+  server: jp-tokyo-oracle-5a26da.ip1.shop
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
-  ws-path: /
+  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+  ws-opts:
+    headers:
+      host: jp-tokyo-oracle-5a26da.ip1.shop
+    host: jp-tokyo-oracle-5a26da.ip1.shop
+    path: /rongseven?ed=2048
 - cipher: aes-256-cfb
   name: 39,56|🇵JP-43.207.197.15-4402
   password: amazonskr05
@@ -2215,13 +2566,6 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 39,56|🇵JP-3.112.218.182-0807
-  password: amazonskr05
-  port: 443
-  server: 3.112.218.182
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 39|🇯🇵 JP 40 → tg@nicevpn123
   password: amazonskr05
   port: 443
@@ -2237,16 +2581,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39,56|🇵JP-183.181.36.194-0316
+  name: 39,56,71|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
   network: ws
-  port: 41597
+  port: '41597'
   server: 183.181.36.194
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: aes-256-cfb
   name: 39|🇯🇵 JP 44 → tg@nicevpn123
@@ -2412,56 +2759,17 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 40|>🇯🇵 JP|Ms|0430|TG@FProxies|
-  network: ws
-  port: '80'
-  server: jp01.beitai.online
-  tls: false
-  type: vmess
-  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
-  ws-opts:
-    headers:
-      Host: jp01.beitai.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|🇯🇵 日本 - 东京 - G-Core Labs S.A. ... #7'
+  name: '40|🇯🇵 日本 - 东京 - G-Core Labs S.A. ... #6'
   network: ws
   port: '443'
   server: jpcft01.xqc.best
   tls: true
   type: vmess
-  uuid: 52dc9378-8288-46df-8d2d-5bb82fdc2bf6
+  uuid: 7e034849-cb4d-43cb-9948-a1d7017d3bd0
   ws-opts:
     headers:
       Host: jpcft01.xqc.best
     path: /stream
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0430|TG@FProxies| #2'
-  network: ws
-  port: '62193'
-  server: jp.littleqqq.co
-  tls: false
-  type: vmess
-  uuid: 2649d4e6-48ee-428c-bbe1-18162675cfbf
-  ws-opts:
-    headers:
-      Host: jp.littleqqq.co
-    path: /live/UKPZrSI3K7dtNJmn
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0430|TG@FProxies| #1'
-  network: ws
-  port: '80'
-  server: jp02.beitai.online
-  tls: false
-  type: vmess
-  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
-  ws-opts:
-    headers:
-      Host: jp02.beitai.online
-    path: /
 - alterId: 0
   cipher: auto
   name: 40|>🇯🇵 JP|Hs|0404|TG@FProxies|
@@ -2477,17 +2785,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 40|>🇯🇵 JP|Ns|0329|TG@FProxies|
+  name: '40|>🇯🇵 JP|Hs|0404|TG@FProxies| #1'
   network: ws
-  port: '8080'
-  server: 87.120.204.248
-  tls: true
+  port: '21012'
+  server: jp.lianjianode.cc
+  tls: false
   type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: jp.lianjianode.cc
+    path: /japan
 - alterId: 0
   cipher: auto
   name: 40,56,73|US 54|openitr
@@ -2504,16 +2812,55 @@ proxies:
     path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
-  name: 40,73|US 53|openitr
+  name: '40|>🇯🇵 JP|Hs|0430|TG@FProxies| #1'
   network: ws
   port: '80'
-  server: cf-004-ipv4.xiaoxiaobujidao.xyz
+  server: jp01.fredericamelody.online
   tls: false
   type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
   ws-opts:
     headers:
-      Host: tk-007.xiaoxiaobujidao.xyz
+      Host: jp01.fredericamelody.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 40|>🇯🇵 JP|Ms|0430|TG@FProxies|
+  network: ws
+  port: '80'
+  server: jp02.beitai.online
+  tls: false
+  type: vmess
+  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
+  ws-opts:
+    headers:
+      Host: jp02.beitai.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 40|>🇯🇵 JP|Ms|0404|TG@FProxies|
+  network: ws
+  port: '8080'
+  server: 87.120.204.126
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 40|>🇯🇵 JP|Hs|0329|TG@FProxies|
+  network: ws
+  port: '80'
+  server: ipv4.ip.sb
+  tls: false
+  type: vmess
+  uuid: 7c525a1d-d8fd-331b-b53f-69f06252ed10
+  ws-opts:
+    headers:
+      Host: tk-000.xiaoxiaobujidao.xyz
     path: /xiaodao?ed=2048
 - alterId: 64
   cipher: auto
@@ -2527,39 +2874,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '40|>🇯🇵 JP|Hs|0430|TG@FProxies| #2'
+  name: '40|>🇯🇵 JP|Hs|0329|TG@FProxies| #2'
   network: ws
-  port: '80'
-  server: jp01.fredericamelody.online
+  port: '62193'
+  server: jp.littleqqq.co
   tls: false
   type: vmess
-  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  uuid: 4f06048d-36d8-4ff1-a6ce-6e44ea2cb7a4
   ws-opts:
     headers:
-      Host: jp01.fredericamelody.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Hs|0404|TG@FProxies| #1'
-  network: ws
-  port: '21011'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb
-  ws-opts:
-    headers:
-      Host: jp.lianjianode.cc
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 40,73|HK 1|openitr
-  network: tcp
-  port: '443'
-  server: kagoya.hkss.online
-  tls: false
-  type: vmess
-  uuid: 4664e760-f5f3-3cc2-8bb3-04f85aa7febb
+      Host: jp.littleqqq.co
+    path: /live/UKPZrSI3K7dtNJmn
 - alterId: 0
   cipher: auto
   name: '40|>🇯🇵 JP|Hs|0329|TG@FProxies| #1'
@@ -2575,38 +2900,64 @@ proxies:
     path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
-  name: '40|>🇯🇵 JP|Hs|0404|TG@FProxies| #2'
+  name: '40|>🇯🇵 JP|Ms|0430|TG@FProxies| #2'
   network: ws
-  port: '21012'
-  server: jp.lianjianode.cc
+  port: '80'
+  server: jp02.fredericamelody.online
   tls: false
   type: vmess
-  uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb
+  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
   ws-opts:
     headers:
-      Host: jp.lianjianode.cc
-    path: /japan
+      Host: jp02.fredericamelody.online
+    path: /
 - alterId: 0
   cipher: auto
-  name: '40|>🇯🇵 JP|Ns|0329|TG@FProxies| #1'
-  network: tcp
-  port: '19831'
-  server: xg-cm2.dx001.top
+  name: '40|>🇯🇵 JP|Hs|0430|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: jp01.handsomequinlan.online
   tls: false
   type: vmess
-  uuid: 94ca2448-6967-3d7d-beb4-29ff5d29c4ca
+  uuid: 4ebcbea9-9da6-40ad-afd1-30cb953c9688
+  ws-opts:
+    headers:
+      Host: jp01.handsomequinlan.online
+    path: /
 - alterId: 0
   cipher: auto
-  name: '40|>🇯🇵 JP|Hs|0329|TG@FProxies| #2'
+  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #4'
   network: ws
+  port: '80'
+  server: jp03.victorialouisa.online
+  tls: false
+  type: vmess
+  uuid: f6125b2b-1c0d-4cb9-9c39-d00b437fc342
+  ws-opts:
+    headers:
+      Host: jp03.victorialouisa.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇯🇵 JP|Ls|0329|TG@FProxies| #1'
+  network: tcp
   port: '443'
-  server: jp4.pay.edu.kg
+  server: 45.76.99.204
   tls: true
   type: vmess
-  uuid: 84661f9d-9ed9-490f-8611-055603a194bf
+  uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
+- alterId: 0
+  cipher: auto
+  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: jp03.oliviapretty.online
+  tls: false
+  type: vmess
+  uuid: b5f40979-0200-428c-8ae1-f8c981560dd3
   ws-opts:
     headers:
-      Host: jp4.pay.edu.kg
+      Host: jp03.oliviapretty.online
     path: /
 - alterId: 0
   cipher: auto
@@ -2623,7 +2974,100 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 40|>🇯🇵 JP|Ns|0329|TG@FProxies|
+  network: ws
+  port: '80'
+  server: fastly.alipay.ovh
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: fastly.alipay.ovh
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 40,73|US 53|openitr
+  network: ws
+  port: '80'
+  server: cf-004-ipv4.xiaoxiaobujidao.xyz
+  tls: false
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      Host: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '40|>🇯🇵 JP|Hs|0404|TG@FProxies| #2'
+  network: ws
+  port: '21011'
+  server: jp.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb
+  ws-opts:
+    headers:
+      Host: jp.lianjianode.cc
+    path: /japan
+- alterId: 0
+  cipher: auto
+  name: '40|>🇯🇵 JP|Ms|0430|TG@FProxies| #3'
+  network: ws
+  port: '80'
+  server: jp01.philbertbeguiling.online
+  tls: false
+  type: vmess
+  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
+  ws-opts:
+    headers:
+      Host: jp01.philbertbeguiling.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #3'
+  network: ws
+  port: '2052'
+  server: 47.74.6.16
+  tls: false
+  type: vmess
+  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
+  ws-opts:
+    headers:
+      Host: ''
+    path: /039fc4e4
+- alterId: 0
+  cipher: auto
+  name: 40,42,53,56,73|US 155|openitr
+  network: ws
+  port: '57557'
+  server: jp-tokyo-oracle-5a26da.ip1.shop
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+  ws-opts:
+    headers:
+      Host: jp-tokyo-oracle-5a26da.ip1.shop
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
   name: '40|>🇯🇵 JP|Hs|0404|TG@FProxies| #3'
+  network: ws
+  port: '80'
+  server: 162.159.142.235
+  tls: false
+  type: vmess
+  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇯🇵 JP|Hs|0404|TG@FProxies| #4'
   network: ws
   port: '80'
   server: 162.159.142.239
@@ -2636,42 +3080,29 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '40|>🇯🇵 JP|Ls|0329|TG@FProxies| #1'
+  name: '40|>🇯🇵 JP|Ns|0329|TG@FProxies| #1'
   network: ws
-  port: '80'
-  server: jp03.victorialouisa.online
-  tls: false
+  port: '8080'
+  server: 87.120.204.248
+  tls: true
   type: vmess
-  uuid: ecbc3680-a5f0-4ac2-b790-2ed6e72564f3
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
     headers:
-      Host: jp03.victorialouisa.online
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0430|TG@FProxies| #3'
+  name: '40|>🇯🇵 JP|Hs|0329|TG@FProxies| #3'
   network: ws
-  port: '80'
-  server: jp02.fredericamelody.online
-  tls: false
+  port: '443'
+  server: jp4.pay.edu.kg
+  tls: true
   type: vmess
-  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  uuid: 84661f9d-9ed9-490f-8611-055603a194bf
   ws-opts:
     headers:
-      Host: jp02.fredericamelody.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Hs|0430|TG@FProxies| #4'
-  network: ws
-  port: '80'
-  server: jp01.handsomequinlan.online
-  tls: false
-  type: vmess
-  uuid: 4ebcbea9-9da6-40ad-afd1-30cb953c9688
-  ws-opts:
-    headers:
-      Host: jp01.handsomequinlan.online
+      Host: jp4.pay.edu.kg
     path: /
 - alterId: 2
   cipher: auto
@@ -2688,118 +3119,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 40,42,56,73|US 155|openitr
-  network: ws
-  port: '57557'
-  server: jp-tokyo-oracle-5a26da.ip1.shop
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
-  ws-opts:
-    headers:
-      Host: jp-tokyo-oracle-5a26da.ip1.shop
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 40|>🇯🇵 JP|Ls|0329|TG@FProxies|
-  network: tcp
-  port: '443'
-  server: 45.76.99.204
-  tls: true
-  type: vmess
-  uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #2'
-  network: ws
-  port: '8080'
-  server: 87.120.204.126
-  tls: true
-  type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: jp02.victorialouisa.online
-  tls: false
-  type: vmess
-  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
-  ws-opts:
-    headers:
-      Host: jp02.victorialouisa.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0430|TG@FProxies| #4'
-  network: ws
-  port: '80'
-  server: jp01.philbertbeguiling.online
-  tls: false
-  type: vmess
-  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
-  ws-opts:
-    headers:
-      Host: jp01.philbertbeguiling.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #4'
-  network: ws
-  port: '80'
-  server: jp03.oliviapretty.online
-  tls: false
-  type: vmess
-  uuid: b5f40979-0200-428c-8ae1-f8c981560dd3
-  ws-opts:
-    headers:
-      Host: jp03.oliviapretty.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Hs|0329|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: ipv4.ip.sb
-  tls: false
-  type: vmess
-  uuid: 7c525a1d-d8fd-331b-b53f-69f06252ed10
-  ws-opts:
-    headers:
-      Host: tk-000.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #5'
-  network: ws
-  port: '2052'
-  server: 47.74.6.16
-  tls: false
-  type: vmess
-  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
-  ws-opts:
-    headers:
-      Host: ''
-    path: /039fc4e4
-- alterId: 0
-  cipher: auto
   name: '40|>🇯🇵 JP|Ns|0329|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: fastly.alipay.ovh
+  network: tcp
+  port: '19831'
+  server: xg-cm2.dx001.top
   tls: false
   type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: fastly.alipay.ovh
-    path: /aries?ed=2048
+  uuid: 94ca2448-6967-3d7d-beb4-29ff5d29c4ca
 - alterId: 0
   cipher: auto
   name: '40|>🇯🇵 JP|Ls|0329|TG@FProxies| #3'
@@ -2815,16 +3141,43 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '40|>🇯🇵 JP|Hs|0404|TG@FProxies| #4'
+  name: '40|>🇯🇵 JP|Ms|0404|TG@FProxies| #5'
   network: ws
   port: '80'
-  server: 162.159.142.235
+  server: jp02.victorialouisa.online
   tls: false
   type: vmess
-  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
   ws-opts:
     headers:
-      Host: ''
+      Host: jp02.victorialouisa.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇯🇵 JP|Ms|0430|TG@FProxies| #4'
+  network: ws
+  port: '80'
+  server: jp01.beitai.online
+  tls: false
+  type: vmess
+  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
+  ws-opts:
+    headers:
+      Host: jp01.beitai.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 44,56|🇵JP-131.186.39.232-0135
+  network: ws
+  port: 57557
+  server: jp-tokyo-oracle-5a26da.ip1.shop
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+  ws-opts:
+    headers:
+      Host: jp-tokyo-oracle-5a26da.ip1.shop
     path: /
 - client-fingerprint: chrome
   name: 47,56|🇵JP-149.62.44.35-1093
@@ -2860,7 +3213,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 40548f7d-205f-40c2-afd0-bd550a0e1c4b
+  uuid: e0974437-0cdb-46df-b520-d647215dbd92
 - alterId: 0
   cipher: auto
   name: 48|14|【BGP】日本 05  | 1x JP
@@ -2870,7 +3223,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 40548f7d-205f-40c2-afd0-bd550a0e1c4b
+  uuid: e0974437-0cdb-46df-b520-d647215dbd92
 - alterId: 0
   cipher: auto
   name: 48|14|【BGP】日本 06  | 1x JP
@@ -2880,20 +3233,21 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 40548f7d-205f-40c2-afd0-bd550a0e1c4b
+  uuid: e0974437-0cdb-46df-b520-d647215dbd92
 - alterId: 0
   cipher: auto
-  name: 56|🇵JP-131.186.39.232-0135
+  client-fingerprint: chrome
+  name: 54,63,73|BG 1|openitr
   network: ws
-  port: 57557
-  server: jp-tokyo-oracle-5a26da.ip1.shop
-  skip-cert-verify: false
-  tls: false
+  port: '8080'
+  server: 87.120.204.6
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
     headers:
-      Host: jp-tokyo-oracle-5a26da.ip1.shop
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
