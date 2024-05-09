@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,39,40,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: 4,39,40,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 104.19.250.15
@@ -33,7 +33,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: '4,29,32,48,61,64|美国 CloudFlare节点 #67'
+  name: '4,32,48,61,64|美国 CloudFlare节点 #56'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -49,12 +49,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: 🏁ZZ
-  fingerprint: ''
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 4,29,32,38,39,48,61|🇺🇸_US_美国->🇫🇷_FR_法国_1
+  name: 4,15,39,48,61|🇺🇸_US_美国->🇫🇷_FR_法国_1
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -70,7 +68,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,39,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_3
+  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_3
   network: ws
   port: 2052
   server: 104.18.36.119
@@ -85,7 +83,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,39,48,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  name: 4,39,48,56,61|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 2052
   server: 104.18.19.191
@@ -101,12 +99,12 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 6,8,9,39,40,43,44,47,48,49,50,53,57|🇺🇸 _US_美国->🇫🇷_FR_法国
+  name: 6,8,9,26,35,39,40,43,44,47,48,49,50,53,56,57|🇺🇸 _US_美国->🇫🇷_FR_法国
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
@@ -119,7 +117,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '6,8,9,27,40,42,43,45,46,48,53,57,71,73,82|🇺🇸_US_美国->🇫🇷_FR_法国 #13'
+  name: '6,8,9,26,27,40,42,43,45,46,48,53,56,57,71,73,82|🇺🇸_US_美国->🇫🇷_FR_法国 #15'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -136,7 +134,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '6,8,9,26,40,45,46,48,49,53,57|🇺🇸 美国 CloudFlare节点 #25'
+  name: '6,8,9,26,40,45,46,48,49,53,56,57|🇺🇸 美国 CloudFlare节点 #19'
   network: ws
   port: '2052'
   server: 104.18.36.119
@@ -152,7 +150,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '25,43,48,82|🇺🇸_US_美国 #36'
+  name: '25,43,48,82|🇺🇸_US_美国 #33'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -194,7 +192,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '25,27,48,82|🇺🇸_US_美国 #35'
+  name: '25,27,48,82|🇺🇸_US_美国 #32'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -218,18 +216,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- grpc-opts:
-    grpc-service-name: 443trojan
-  name: 43|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
-  network: grpc
-  password: qj1Dz1CJmFQRhWr1SP80aA
-  port: 443
-  server: 172.67.204.84
-  skip-cert-verify: true
-  sni: cdn-21.gsmxreality.com
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 43|🇨🇳_CN_中国->🇫🇷_FR_法国_0@33
@@ -268,6 +254,20 @@ proxies:
   ws-opts:
     headers:
       host: cdn.vds-server.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43|🇺🇸_US_美国->🇭🇰_HK_香港_3_5@22
+  network: ws
+  port: 2095
+  server: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
@@ -339,10 +339,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44|🇬🇧 _US_美国->🇬🇧_GB_英国_2
+  name: 44,56|🏁RELAY-172.67.184.13-7409
   network: ws
-  port: '80'
+  port: 80
   server: ld2.shabijichang.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -378,10 +379,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44|🇮🇳 _US_美国->🇮🇳_IN_印度_3
+  name: 44,56|🏁RELAY-172.67.184.13-7407
   network: ws
-  port: '80'
+  port: 80
   server: mm2.shabijichang.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -391,10 +393,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 44|🇮🇳 _US_美国->🇮🇳_IN_印度_4
+  name: 44,56|🏁RELAY-172.67.184.13-7415
   network: ws
-  port: '80'
+  port: 80
   server: mm3.shabijichang.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -404,23 +407,23 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 44|🇳🇱 _US_美国->🇳🇱_NL_荷兰
+  name: 44,56|🇳🇱NL-45.199.138.191-7389
   network: ws
-  port: '30000'
+  port: 30000
   server: 45.199.138.191
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
-    headers:
-      Host: ''
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 44|🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯
+  name: 44,56|🏁RELAY-104.21.75.246-7414
   network: ws
-  port: '80'
+  port: 80
   server: jd3.shabijichang.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -444,10 +447,11 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 48|13|🇺🇸_US_美国->🇵🇱_PL_波兰
+  name: 48,56|🏁RELAY-172.67.204.84-0313
   network: ws
   port: 80
   server: zula.ir
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 3fd9190e-a132-42ca-a33b-4a37b4b3e0cd
