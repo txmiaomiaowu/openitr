@@ -1,17 +1,24 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,10,12,40|广东省佛山市 移动 #4'
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '0,10,12,15,46,48,53,57|🇨🇳 广东省佛山市 移动 #2'
   network: tcp
   port: '61001'
   server: 183.232.199.61
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 64
   cipher: auto
-  name: 0,12,42,72|🇳广东3
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 0,12,15,42,72|🇳广东3
   network: tcp
   port: 54437
   server: 183.236.51.59
@@ -22,26 +29,58 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '0,10,12,40,44,48,53,57|🇨🇳 广东省汕头市 移动 #1'
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '0,10,12,15,40,46,48,53,57|🇨🇳 广东省汕头市 移动 #2'
   network: tcp
   port: '15601'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: 0,12,53|🇨🇳_CN_中国->🇮🇳_IN_印度
+  name: '0,12|广东省佛山市 移动 #3'
   network: tcp
   port: 44001
   server: 183.232.199.28
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaad
+- alterId: 64
+  cipher: auto
+  country: 🇨CN
+  h2-opts: {}
+  http-opts: {}
+  name: 14,29,40,44,53,57|🇨🇳 广东省江门市 移动
+  network: tcp
+  port: '40002'
+  server: 120.238.122.239
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 15|CN_411
+  network: ws
+  port: 80
+  server: 47.106.112.114
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
   country: CN
-  name: 16,29,30|Pool__01
+  name: 16,30|Pool__02
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -52,7 +91,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 16|Relay_CN-CN_07
+  name: 16|Relay_CN-CN_06
   obfs: plain
   password: mblank1port
   port: 560
@@ -62,7 +101,7 @@ proxies:
   type: ssr
 - cipher: rc4-md5
   country: CN
-  name: 16,29,30|Relay_-CN_02
+  name: 16,29,30|Relay_-CN_01
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -82,28 +121,6 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.24
   type: ssr
-- alterId: 0
-  cipher: auto
-  name: '35,37,42,77|رایگان | VMESS | @yaney_01 | U... #9'
-  network: ws
-  port: '80'
-  server: ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub
-  tls: false
-  type: vmess
-  uuid: 46cfcfe1-e450-459d-a3ab-9406011ab3eb
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '35,42,46,48,53,57|🇨🇳 广东省汕头市 移动 #2'
-  network: tcp
-  port: '61001'
-  server: 183.240.179.195
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳 CN 437 → tg@nicevpn123
@@ -213,14 +230,11 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '39,40,45,46,48,53,56,57|🇨🇳 广东省 移动 #3'
+  name: '39,40,57|🇨🇳 广东省 移动 #1'
   network: ws
   port: '20206'
   server: data-hk-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -540,15 +554,6 @@ proxies:
   server: 211.99.97.16
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 39,48,56|🇳CN-61.171.51.197-4295
-  password: 798c4ab8-613f-468f-b3ff-daf43c88aad7
-  port: 38998
-  server: 98899.xef9wvmj31-gc3qil6-jp02.my777999.top
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳 CN 489 → tg@nicevpn123
@@ -778,7 +783,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 39,43,45,56,62,64,72|🇩🇪DE德国2
+  name: 39,43,45,62,64,72|🇩🇪DE德国2
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -917,12 +922,14 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 39,40,44,50,53,56,57|🇨🇳 湖北省武汉市 联通
+  client-fingerprint: chrome
+  name: '39,45,46,48,50,53,57|🇨🇳 湖北省武汉市 联通 #1'
   network: ws
   port: '20301'
   server: data-jp-v1.usabooks.com.cn
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -973,19 +980,6 @@ proxies:
   server: zf.miaosu666.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 39|🇨🇳 CN 292 → tg@nicevpn123
-  network: ws
-  port: 20207
-  server: 120.233.42.83
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    path: /debian
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 294 → tg@nicevpn123
   password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
@@ -1101,7 +1095,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 39,43,45,56,62,64,72|🇪DE国
+  name: 39,43,45,62,64,72|🇪DE国
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -1133,11 +1127,11 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39,56|CN-220.205.37.42-1006
+  name: 39|🇨🇳 CN 329 → tg@nicevpn123
   network: ws
   port: 16632
   server: yes.cnmjcn.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -1281,21 +1275,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39|🇨🇳 CN 361 → tg@nicevpn123
-  network: ws
-  port: 20206
-  server: 120.233.42.83
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    path: /debian
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: '39,44,45,46,48,50,51,53,56,57|🇨🇳 广东省移动 7 #1'
+  name: '39,44,45,46,48,50,51,53,57|🇨🇳 广东省移动 7 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -1312,7 +1293,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #18'
+  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #11'
   network: ws
   port: '50080'
   server: 223.113.130.58
@@ -1612,7 +1593,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #1'
+  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #7'
   network: ws
   port: '21032'
   server: hk.lianjianode.cc
@@ -1761,7 +1742,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 39,56|🇳CN-36.137.117.64-0481
+  name: 39|🇨🇳 CN 477 → tg@nicevpn123
   password: 9bc1eddf-1674-40f1-ad64-00a6fc5c2054
   port: 28894
   server: gran.efnwgood.top
@@ -1854,7 +1835,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 39,43,45,56,62|github.com/freefq - 广东省江门市移动 1...
+  name: 39,43,45,62|github.com/freefq - 广东省江门市移动 1...
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: '26667'
   server: service.ouluyun9803.com
@@ -1870,7 +1851,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #4'
+  name: 39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie...
   network: ws
   port: '16928'
   server: vip3.niuniupremium.xyz
@@ -1933,7 +1914,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 39,43,56|CN-117.149.247.11-1751
+  name: 39,43|🇨🇳CN-117.149.247.11-173_1@173
   password: 8e949d75-3510-4678-8593-3c5032dd931a
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
@@ -2072,21 +2053,6 @@ proxies:
   server: 211.99.97.10
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 40,42,44,53,56|🇳CN-183.232.142.46-1782
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 43|🇨🇳CN-139.227.223.3-049_1@49
@@ -2678,1600 +2644,9 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 0
-  cipher: auto
-  name: 44,46,48,53,57,72|🇳广东4
-  network: tcp
-  port: 21006
-  server: 183.232.199.61
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: hkvip103
-  name: 45,72|🇳CN国
-  network: grpc
-  password: dfeb4fd8-b9a6-341b-854b-da64d588b637
-  port: 21116
-  server: 8.218.144.57
-  skip-cert-verify: true
-  sni: hkvip103.qlgq.fun
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 56,57|🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-  network: ws
-  port: '38106'
-  server: 101.230.149.29
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: www.ivpnpro.net
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '56,57|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #1'
-  network: ws
-  port: '38106'
-  server: 101.230.149.29
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: 101.230.149.29
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: 56,57|亚洲(欢迎订阅Youtube破解资源君)
-  network: ws
-  port: '38106'
-  server: 101.230.149.29
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: ''
-    path: /hls/cctv5phd.m3u8
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.174-0339
-  password: QazEdcTgb159@$*
-  port: 11043
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨CN-14.29.124.174-0340
-  password: QazEdcTgb159@$*
-  port: 11009
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0341
-  password: QazEdcTgb159@$*
-  port: 11036
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0342
-  password: QazEdcTgb159@$*
-  port: 11013
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0343
-  password: QazEdcTgb159@$*
-  port: 11004
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0344
-  password: QazEdcTgb159@$*
-  port: 11005
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0345
-  password: QazEdcTgb159@$*
-  port: 11016
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0346
-  password: QazEdcTgb159@$*
-  port: 11040
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0347
-  password: QazEdcTgb159@$*
-  port: 11003
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0348
-  password: QazEdcTgb159@$*
-  port: 11047
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-0349
-  password: QazEdcTgb159@$*
-  port: 11044
-  server: 14.29.124.174
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇳CN-42.157.196.103-1884
-  obfs: http_post
-  obfs-param: ajax.microsoft.com
-  password: Yk4UdrOyQg
-  port: 10120
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: 42.157.196.103
-  type: ssr
-- cipher: aes-256-cfb
-  name: 56|🇨🇳CN-42.157.196.104-1885
-  obfs: tls1.2_ticket_auth
-  obfs-param: ajax.microsoft.com
-  password: vCmp8ALih6
-  port: 10967
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: 42.157.196.104
-  type: ssr
-- cipher: aes-256-cfb
-  name: 56|🇨🇳CN-42.157.196.104-1886
-  obfs: http_post
-  obfs-param: ajax.microsoft.com
-  password: CWSZscLkjf
-  port: 20037
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: 42.157.196.104
-  type: ssr
-- cipher: chacha20-ietf
-  name: 56|🇨🇳CN-120.198.71.184-3740
-  obfs: plain
-  obfs-param: t.me/vpnhat
-  password: mblank1port
-  port: 560
-  protocol: auth_aes128_md5
-  protocol-param: 63068:ajhjei123456
-  server: 120.198.71.184
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 56|🇳CN-120.233.84.236-3766
-  network: ws
-  port: 30023
-  server: v01.gutingting.com
-  servername: gz.fastcloud.club
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dc773e17-d94e-4f6e-a3cd-26c972a08b89
-  ws-opts:
-    headers:
-      Host: v01.gutingting.com
-    path: /aceamedv
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-120.233.84.236-3767
-  network: ws
-  port: 30015
-  server: v02.gutingting.com
-  servername: gz.fastcloud.club
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dc773e17-d94e-4f6e-a3cd-26c972a08b89
-  ws-opts:
-    headers:
-      Host: v02.gutingting.com
-    path: /aceamedv
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-153.101.64.221-3768
-  network: ws
-  port: 40013
-  server: 153.101.64.221
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5716c1b4-c2d3-4a9d-a9a8-5d9919d0ed8f
-  ws-opts:
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-120.241.47.253-3817
-  network: ws
-  port: 30009
-  server: ns01.gutingting.com
-  servername: sh01.fastcloud.club
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fe82b393-5eca-4efe-a277-54221ae9855c
-  ws-opts:
-    headers:
-      Host: ns01.gutingting.com
-    path: /aceamedv
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-120.241.47.253-3819
-  network: ws
-  port: 30044
-  server: ns01.gutingting.com
-  servername: sh01.fastcloud.club
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d3d90998-7bfd-4fc6-930e-35bf96083d8b
-  ws-opts:
-    headers:
-      Host: ns01.gutingting.com
-    path: /aceamedv
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-120.233.84.236-3820
-  network: ws
-  port: 30041
-  server: v02.gutingting.com
-  servername: sh01.fastcloud.club
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d3d90998-7bfd-4fc6-930e-35bf96083d8b
-  ws-opts:
-    headers:
-      Host: v02.gutingting.com
-    path: /aceamedv
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-183.232.159.39-3861
-  network: ws
-  port: 5001
-  server: steam.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d4c93465-70f0-30d5-ab5f-a8881f3f49e7
-  ws-opts:
-    headers:
-      Host: steam.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 56|🇳CN-183.240.191.106-3886
-  network: ws
-  port: 9111
-  server: st-1.dnspro.icu
-  servername: hkt02.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
-  ws-opts:
-    headers:
-      Host: st-1.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-183.240.191.109-3887
-  network: ws
-  port: 5100
-  server: st-2.dnspro.icu
-  servername: lg-hkg-b.gcorelabs.info
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
-  ws-opts:
-    headers:
-      Host: st-2.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-183.240.191.106-3891
-  network: ws
-  port: 20025
-  server: sh-cn-1.dnspro.icu
-  servername: sh-cn-1.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
-  ws-opts:
-    headers:
-      Host: sh-cn-1.dnspro.icu
-    path: /iso
-- cipher: chacha20-ietf-poly1305
-  name: 56|🇨🇳CN-211.140.157.183-3897
-  password: 030d48b3-80e9-49ae-8cbd-6327b1ba84d2
-  port: 34394
-  server: zj.bbcloud.life
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-223.111.202.139-3898
-  network: ws
-  port: 63088
-  server: 223.111.202.139
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: e159f409-af0e-38b6-b34e-404a98089471
-  ws-opts:
-    path: /mugua
-- alterId: 0
-  cipher: auto
-  name: 56|🇳CN-223.111.202.139-3921
-  network: ws
-  port: 63086
-  server: 223.111.202.139
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: e159f409-af0e-38b6-b34e-404a98089471
-  ws-opts:
-    path: /mugua
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4057
-  password: QazEdcTgb159@$*
-  port: 25226
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4058
-  password: QazEdcTgb159@$*
-  port: 25261
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4059
-  password: QazEdcTgb159@$*
-  port: 25267
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4060
-  password: QazEdcTgb159@$*
-  port: 25233
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4061
-  password: QazEdcTgb159@$*
-  port: 25238
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4062
-  password: QazEdcTgb159@$*
-  port: 25235
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4063
-  password: QazEdcTgb159@$*
-  port: 25219
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4072
-  password: QazEdcTgb159@$*
-  port: 25266
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4073
-  password: QazEdcTgb159@$*
-  port: 25245
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4074
-  password: QazEdcTgb159@$*
-  port: 25231
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4075
-  password: QazEdcTgb159@$*
-  port: 25220
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4076
-  password: QazEdcTgb159@$*
-  port: 25296
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4077
-  password: QazEdcTgb159@$*
-  port: 25287
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4086
-  password: QazEdcTgb159@$*
-  port: 25283
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4087
-  password: QazEdcTgb159@$*
-  port: 25270
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4088
-  password: QazEdcTgb159@$*
-  port: 25247
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4089
-  password: QazEdcTgb159@$*
-  port: 25218
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4090
-  password: QazEdcTgb159@$*
-  port: 25222
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4091
-  password: QazEdcTgb159@$*
-  port: 25254
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4093
-  password: QazEdcTgb159@$*
-  port: 25286
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4096
-  password: QazEdcTgb159@$*
-  port: 25217
-  server: 14.29.124.168
-  type: ss
-- alterId: 1
-  cipher: auto
-  name: 56|🇳CN-120.233.42.83-4105
-  network: ws
-  port: 50205
-  server: data-hk-v2.shwjfkw.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v2.shwjfkw.cn
-    path: /hls/cctv5phd.m3u8
-- cipher: aes-128-cfb
-  name: 56|🇨CN-14.29.124.168-4114
-  password: QazEdcTgb159@$*
-  port: 25294
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4115
-  password: QazEdcTgb159@$*
-  port: 25210
-  server: 14.29.124.168
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-106.55.187.139-4116
-  network: ws
-  port: 8448
-  server: 106.55.187.139
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5a464707-3162-4a09-e9e2-d70a6b892267
-  ws-opts:
-    path: /
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4117
-  password: QazEdcTgb159@$*
-  port: 25256
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4119
-  password: QazEdcTgb159@$*
-  port: 25284
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4123
-  password: QazEdcTgb159@$*
-  port: 25272
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4141
-  password: QazEdcTgb159@$*
-  port: 24003
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4144
-  password: QazEdcTgb159@$*
-  port: 24007
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4146
-  obfs: plain
-  obfs-param: ''
-  password: QazEdcTgb159@$*
-  port: 24005
-  protocol: origin
-  protocol-param: ''
-  server: 14.29.124.168
-  type: ssr
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4151
-  password: QazEdcTgb159@$*
-  port: 25289
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4158
-  password: QazEdcTgb159@$*
-  port: 25259
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4159
-  password: QazEdcTgb159@$*
-  port: 25241
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4161
-  password: QazEdcTgb159@$*
-  port: 25268
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4162
-  password: QazEdcTgb159@$*
-  port: 25279
-  server: 14.29.124.168
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 56|🇨🇳CN-183.232.175.163-4163
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 24105
-  server: p1.bxy-fun3.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 56|🇨🇳CN-183.240.222.210-4164
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 44101
-  server: p1.bxy-fun1.com
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4170
-  password: QazEdcTgb159@$*
-  port: 25295
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4171
-  password: QazEdcTgb159@$*
-  port: 25230
-  server: 14.29.124.168
-  type: ss
-- cipher: chacha20-ietf
-  name: 56|🇨🇳CN-36.156.222.25-4179
-  obfs: http_simple
-  obfs-param: e5ab06181.microsoft.com
-  password: zztw9jk7gu
-  port: 32986
-  protocol: auth_aes128_sha1
-  protocol-param: 6181:m9oDIc
-  server: 36.156.222.25
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 56|🇳CN-124.222.189.225-4184
-  network: ws
-  port: 80
-  server: 124.222.189.225
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: a8c9ad5b-1f58-4234-b5fe-a895bee9a047
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 56|🇨🇳CN-112.26.46.71-4206
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 24101
-  server: p1.bxy-fun2.com
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-4209
-  password: QazEdcTgb159@$*
-  port: 25207
-  server: 14.29.124.168
-  type: ss
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 56|🇨🇳CN-124.221.131.176-4210
-  network: http
-  port: 50797
-  server: 124.221.131.176
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.174-4356
-  password: QazEdcTgb159@$*
-  port: 11048
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-256-gcm
-  name: 56|🇳CN-36.139.166.252-4410
-  password: ll668668@
-  port: 11023
-  server: 36.139.166.252
-  type: ss
-- cipher: aes-256-gcm
-  name: 56|🇨🇳CN-101.89.111.34-4419
-  password: 44e4e808-db1e-494d-9d7e-c67b38b13556
-  port: 30010
-  server: 62e2186f.0f7802c4.83df.34fb5e38.cc
-  type: ss
-- cipher: chacha20-ietf
-  name: 56|🇨🇳CN-183.232.117.21-4420
-  obfs: plain
-  obfs-param: ''
-  password: mblank1port
-  port: 560
-  protocol: auth_aes128_md5
-  protocol-param: 3866:125458558
-  server: layercm05.initcloud.pro
-  type: ssr
-- cipher: aes-256-cfb
-  name: 56|🇨🇳CN-123.88.16.195-4421
-  obfs: plain
-  obfs-param: ab93117422.jd.hk
-  password: vyunme
-  port: 443
-  protocol: auth_aes128_sha1
-  protocol-param: 17422:TTp0SX
-  server: en2.vfun.icu
-  type: ssr
-- name: 56|🇨🇳CN-124.15.12.24-4426
-  password: password
-  port: 251
-  server: 124.15.12.24
-  skip-cert-verify: false
-  tls: false
-  type: http
-  username: username
-- name: 56|🇨🇳CN-124.15.12.24-4427
-  port: 2312
-  server: 124.15.12.24
-  skip-cert-verify: false
-  type: socks5
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4573
-  password: QazEdcTgb159@$*
-  port: 25251
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇳CN-14.29.124.168-4589
-  password: QazEdcTgb159@$*
-  port: 25252
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|CN-14.29.124.168-6625
-  password: QazEdcTgb159@$*
-  port: 25271
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨CN-14.29.124.174-6626
-  password: QazEdcTgb159@$*
-  port: 11035
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-6628
-  password: QazEdcTgb159@$*
-  port: 11037
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-6629
-  password: QazEdcTgb159@$*
-  port: 11049
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-6635
-  password: QazEdcTgb159@$*
-  port: 11010
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-6636
-  password: QazEdcTgb159@$*
-  port: 11012
-  server: 14.29.124.174
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-6637
-  password: QazEdcTgb159@$*
-  port: 24009
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-6638
-  password: QazEdcTgb159@$*
-  port: 24002
-  server: 14.29.124.168
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.174-6639
-  password: QazEdcTgb159@$*
-  port: 11032
-  server: 14.29.124.174
-  type: ss
-- alterId: 4
-  cipher: auto
-  name: 56|🇳CN-117.28.242.156-6740
-  network: ws
-  port: 2164
-  server: 117.28.242.156
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: sxqxj.cn
-    path: /ws
-- alterId: 1
-  cipher: auto
-  name: 56|🇨🇳CN-112.30.145.132-6741
-  network: ws
-  port: 50205
-  server: data-hk-v1.heisey.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: tv.cctv.com
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: 56|🇨🇳CN-120.233.42.83-6742
-  network: ws
-  port: 50207
-  server: data-hk-v1.shwjfkw.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.shwjfkw.cn
-    path: /hls/cctv5phd.m3u8
-- cipher: rc4-md5
-  name: 56|🇨CN-112.26.33.12-6922
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 3607
-  server: bs1.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.15-6923
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 6600
-  server: pr3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.15-6924
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 6601
-  server: pr3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.14-6925
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 3600
-  server: pr1.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.13-6926
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 6603
-  server: bs3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.15-6927
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 3036
-  server: pr3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.13-6929
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 6600
-  server: bs3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.14-6930
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 3605
-  server: pr1.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.13-6931
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 3046
-  server: bs3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.15-6932
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 5601
-  server: pr3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.15-6934
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 5600
-  server: pr3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-112.26.33.13-6936
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 6602
-  server: bs3.jymzffbquawl.com
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇳CN-112.26.33.13-6937
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: c7ea4198729.microsoft.com
-    mode: http
-  port: 6601
-  server: bs3.jymzffbquawl.com
-  type: ss
-- cipher: chacha20-ietf
-  name: 56|🇳CN-120.232.206.251-7005
-  obfs: plain
-  obfs-param: ''
-  password: mblank1port
-  port: 561
-  protocol: auth_aes128_md5
-  protocol-param: 55956:111111
-  server: eduall.buzzline.org
-  type: ssr
-- alterId: 4
-  cipher: auto
-  name: 56|🇳CN-157.254.193.68-7354
-  network: ws
-  port: 10020
-  server: 157.254.193.68
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f1f45005-f074-430b-a4db-7109f50c3bce
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 56|🇳CN-123.249.101.15-7550
-  network: ws
-  port: 19709
-  server: 123.249.101.15
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: 56|🇳CN-180.101.193.226-9195
-  password: RsDk3peCSuo76B68
-  port: 10068
-  server: 180.101.193.226
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9196
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1154
-  server: 111.6.86.119
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-9197
-  password: QazEdcTgb159@$*
-  port: 24006
-  server: 14.29.124.168
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.80-9198
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1157
-  server: 111.6.86.80
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9199
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1173
-  server: 111.6.86.119
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9200
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1150
-  server: 111.6.86.119
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9201
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1172
-  server: 111.6.86.119
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.80-9202
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1158
-  server: 111.6.86.80
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.155-9203
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5985
-  server: 120.195.181.155
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.82-9204
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5985
-  server: 120.195.181.82
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.155-9205
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5984
-  server: 120.195.181.155
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.82-9206
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5980
-  server: 120.195.181.82
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.111-9207
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5981
-  server: 120.195.181.111
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.155-9208
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5982
-  server: 120.195.181.155
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.170-9209
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5987
-  server: 120.195.181.170
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.80-9210
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1185
-  server: 111.6.86.80
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9211
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1171
-  server: 111.6.86.119
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.82-9212
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5988
-  server: 120.195.181.82
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.155-9213
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5987
-  server: 120.195.181.155
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.111-9214
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5980
-  server: 120.195.181.111
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.82-9215
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5983
-  server: 120.195.181.82
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.155-9216
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5988
-  server: 120.195.181.155
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.155-9217
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5980
-  server: 120.195.181.155
-  type: ss
-- cipher: aes-128-cfb
-  name: 56|🇨🇳CN-14.29.124.168-9218
-  password: QazEdcTgb159@$*
-  port: 24008
-  server: 14.29.124.168
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.170-9220
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5989
-  server: 120.195.181.170
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.170-9221
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5981
-  server: 120.195.181.170
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-120.195.181.170-9223
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 5986
-  server: 120.195.181.170
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9224
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1190
-  server: 111.6.86.119
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9225
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1182
-  server: 111.6.86.119
-  type: ss
-- cipher: rc4-md5
-  name: 56|🇨🇳CN-111.6.86.119-9226
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: e61b761245.microsoft.com
-    mode: http
-  port: 1192
-  server: 111.6.86.119
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 56|🇨🇳CN-183.240.222.210-9375
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  port: 30470
-  server: p1.bxy-fun1.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 56|CN-183.240.222.15-9922
-  password: a5a0a8d9-ab2c-407f-89a4-bf027d216184
-  port: 870
-  server: 183.240.222.15
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 56|🇳CN-103.184.45.80-10459
-  network: ws
-  port: 80
-  server: 103.184.45.80
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇳CN-103.184.45.79-10460
-  network: ws
-  port: 80
-  server: 103.184.45.79
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.57-10461
-  network: ws
-  port: 443
-  server: 103.184.45.57
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.43-10462
-  network: ws
-  port: 443
-  server: 103.184.45.43
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.40-10463
-  network: ws
-  port: 80
-  server: 103.184.45.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.253-10464
-  network: ws
-  port: 80
-  server: 103.184.45.253
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.25-10465
-  network: ws
-  port: 80
-  server: 103.184.45.25
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.188-10466
-  network: ws
-  port: 80
-  server: 103.184.45.188
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.180-10467
-  network: ws
-  port: 80
-  server: 103.184.45.180
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.177-10468
-  network: ws
-  port: 443
-  server: 103.184.45.177
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.45.137-10469
-  network: ws
-  port: 80
-  server: 103.184.45.137
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.91-10470
-  network: ws
-  port: 80
-  server: 103.184.44.91
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.84-10471
-  network: ws
-  port: 443
-  server: 103.184.44.84
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.82-10472
-  network: ws
-  port: 80
-  server: 103.184.44.82
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.73-10473
-  network: ws
-  port: 80
-  server: 103.184.44.73
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.224-10474
-  network: ws
-  port: 80
-  server: 103.184.44.224
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.221-10475
-  network: ws
-  port: 80
-  server: 103.184.44.221
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.202-10476
-  network: ws
-  port: 80
-  server: 103.184.44.202
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.2-10477
-  network: ws
-  port: 80
-  server: 103.184.44.2
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.190-10478
-  network: ws
-  port: 443
-  server: 103.184.44.190
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.18-10479
-  network: ws
-  port: 80
-  server: 103.184.44.18
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.164-10480
-  network: ws
-  port: 80
-  server: 103.184.44.164
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.160-10481
-  network: ws
-  port: 80
-  server: 103.184.44.160
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.148-10482
-  network: ws
-  port: 80
-  server: 103.184.44.148
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.118-10483
-  network: ws
-  port: 443
-  server: 103.184.44.118
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 56|🇨🇳CN-103.184.44.117-10484
-  network: ws
-  port: 80
-  server: 103.184.44.117
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    path: /blue
 - alterId: '0'
   cipher: auto
-  name: '64|广东省 移动 #6'
+  name: '64|广东省 移动 #5'
   network: ws
   port: '16628'
   server: m.cnmjcn.com
@@ -4286,7 +2661,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '64|广东省 移动 #7'
+  name: '64|广东省 移动 #6'
   network: ws
   port: 16645
   server: m.cnmjcn.com
@@ -4299,16 +2674,6 @@ proxies:
       host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: 71|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205....
-  network: tcp
-  port: '50002'
-  server: 120.210.205.82
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 72|🇳广东2
@@ -4323,3 +2688,15 @@ proxies:
     headers:
       host: data-hk-v1.usabooks.com.cn
     path: /debian
+- alterId: 0
+  cipher: auto
+  name: 72|🇳CN国
+  network: grpc
+  password: dfeb4fd8-b9a6-341b-854b-da64d588b637
+  port: 21116
+  server: 8.218.144.57
+  skip-cert-verify: true
+  sni: hkvip103.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
