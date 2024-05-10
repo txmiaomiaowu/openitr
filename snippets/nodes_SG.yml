@@ -1,14 +1,16 @@
 proxies:
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
   country: ' SG'
-  name: 14,15| SG_730
+  name: 14,15,48,54,56|🇸🇬SG-18.143.93.163-4264
   password: amazonskr05
   port: 443
-  server: 18.141.186.136
+  server: 18.143.93.163
+  tfo: false
   type: ss
 - cipher: aes-128-gcm
   country: ' SG'
-  name: 14,15| SG_731
+  name: 14,15| SG_794
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -17,6 +19,12 @@ proxies:
     tls: true
   port: 443
   server: 8.210.229.184
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 15|Relay_-SG_445
+  password: cb8bd04c-3e95-472c-bb3b-d0313def9d75
+  port: 50006
+  server: iepl2.forlive.live
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 15,39|🇪🇸 ES 28 → tg@nicevpn123
@@ -44,41 +52,80 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: CN
-  name: 15|disney_SG
+  name: '15|disney_netflix_SG #1'
   password: 26d0d917-c998-4d70-9745-1429ca063168
   port: 58159
   server: 183.240.220.199
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇬SG
-  name: 15,32,48,54,56|🇸🇬SG-18.143.93.163-4264
-  password: amazonskr05
-  port: 443
-  server: 18.143.93.163
-  tfo: false
+- cipher: chacha20-ietf-poly1305
+  country: CN
+  name: '15|disney_netflix_SG #2'
+  password: 578792c0-e46b-46f1-a6cb-d11cff528f04
+  port: 42414
+  server: 183.240.220.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: CN
+  name: '15|disney_netflix_SG #3'
+  password: 3167d70a-12d1-4c4f-bdac-439dfc593e2a
+  port: 56011
+  server: 183.240.220.199
   type: ss
 - cipher: aes-256-cfb
   country: ' SG'
-  name: 15| SG_733
+  name: '15|disney_netflix_SG #4'
   password: amazonskr05
   port: 443
   server: 54.151.216.148
   type: ss
 - cipher: aes-256-cfb
-  country: SG
-  name: 15,39,56|🇸🇬SG-47.129.9.69-4221
+  country: ' SG'
+  name: '15|disney_netflix_SG #7'
   password: amazonskr05
   port: 443
-  server: 47.129.9.69
+  server: 18.141.186.136
   type: ss
-  udp: true
+- cipher: aes-256-cfb
+  country: ' SG'
+  name: '15|disney_netflix_SG #8'
+  password: amazonskr05
+  port: 443
+  server: 54.151.219.143
+  type: ss
 - cipher: aes-256-cfb
   country: SG
-  name: 15|SG_737
+  name: '15|disney_netflix_SG #9'
   password: amazonskr05
   port: 443
   server: 54.254.62.209
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: SG
+  name: '15|disney_netflix_SG #10'
+  password: 6541d170-1507-45bc-9603-e8138a21b28c
+  port: 50001
+  server: 18.139.117.90
+  type: ss
+- cipher: aes-256-cfb
+  country: SG
+  name: 15|SG_800
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 103.172.116.94
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: SG
+  name: '15|disney_netflix_SG #11'
+  password: 6541d170-1507-45bc-9603-e8138a21b28c
+  port: 50001
+  server: cgroup.node3.s.nodelist-gfwairport2.top
+  type: ss
+- cipher: aes-256-cfb
+  country: SG
+  name: '15|disney_netflix_SG #12'
+  password: amazonskr05
+  port: 443
+  server: 54.254.225.115
   type: ss
 - alterId: 0
   cipher: auto
@@ -100,7 +147,20 @@ proxies:
       Host: ''
     path: /
 - country: SG
-  name: 15|SG_742
+  name: 15|SG_805
+  network: ws
+  password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
+  port: 20230
+  server: sg06.421421.xyz
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 421421.xyz
+    path: /
+- country: SG
+  name: 15|SG_809
   network: ws
   password: cf13832b-4ca0-4fee-8e85-2b2411104e75
   port: 20230
@@ -114,21 +174,89 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 15,40,72|未知233
+  name: '15|disney_netflix_SG #21'
   network: ws
-  port: 2052
-  server: 104.21.73.173
-  servername: jp.diao.icu
+  port: 8080
+  server: 104.18.6.253
+  servername: oiictw.yydsii.com
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 3869ede6-6dd2-4883-ae38-491cbc47d45d
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
     headers:
-      host: sg1.wish.ml
+      HOST: oiictw.yydsii.com
     path: /
-- country: ZZ
-  name: 15|Relay_ZZ-SG_1211
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '15|disney_netflix_SG #22'
+  network: ws
+  port: 8080
+  server: 104.18.6.63
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '15|disney_netflix_SG #23'
+  network: ws
+  port: 8080
+  server: 104.19.172.136
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '15|disney_netflix_SG #24'
+  network: ws
+  port: 8080
+  server: 104.19.172.193
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '15|disney_netflix_SG #25'
+  network: ws
+  port: 8080
+  server: 104.19.172.218
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- country: 🏁ZZ
+  delay: 1625
+  name: 15,47|加拿大 135
   network: ws
   password: a36dfa0e-5a34-4e77-8513-87350f38e0a6
   port: 443
@@ -141,32 +269,49 @@ proxies:
       Host: lmtsg3.cfyun01.sbs
     path: /CFYUN
 - cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 16,30,31|🏁ZZ_390
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  server: 103.172.116.90
+  country: SG
+  name: 16,56|🇬SG-103.172.116.79-4376
+  password: KBGjZYcy4SyRShmA
+  port: 9044
+  server: 103.172.116.79
   type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 16,30|🇸🇬SG_34
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: SG
+  name: 16,54,56,63|🇬SG-103.172.116.103-0812
+  password: rNBfNuuANFCAk7KB
+  port: '9056'
+  server: 103.172.116.103
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: ' SG'
+  name: 17,56,63|🇬SG-103.172.116.103-4335
+  password: BwcAUZk8hUFAkDGN
+  port: '9031'
+  server: 103.172.116.103
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: 🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: 32,39,42,48,54,56,63,71,73|SG 2|openitr
+  name: '37,40,42,57,77|رایگان | VMESS | @Hope_Net | S... #1'
   network: ws
-  port: '99'
-  server: 128.199.161.230
+  port: '2052'
+  server: 104.21.73.173
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
+  uuid: 3869ede6-6dd2-4883-ae38-491cbc47d45d
   ws-opts:
     headers:
-      Host: ''
-    path: /v2ray
+      Host: sg1.wish.ml
+    path: /
 - cipher: aes-256-cfb
   name: 39|🇸🇬 SG 10 → tg@nicevpn123
   password: amazonskr05
@@ -410,48 +555,69 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 40|>🇸🇬 SG|Ms|0329|TG@FProxies|
-  network: tcp
-  port: '443'
-  server: 149.28.136.237
-  tls: true
+  name: 40|>🇸🇬 SG|Ns|0329|TG@FProxies|
+  network: ws
+  port: '80'
+  server: sg04.beitai.online
+  tls: false
   type: vmess
-  uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
+  uuid: b363045d-0589-4cf3-8d02-209e406853c5
+  ws-opts:
+    headers:
+      Host: sg04.beitai.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Hs|0404|TG@FProxies| #1'
+  network: ws
+  port: '2082'
+  server: ying.appleid.bf
+  tls: false
+  type: vmess
+  uuid: 41543660-a9ae-4980-aa57-7475c5cee4ae
+  ws-opts:
+    headers:
+      Host: ying.appleid.bf
+    path: /ws?ed=2048
 - alterId: 0
   cipher: auto
   name: 40|>🇸🇬 SG|Ms|0404|TG@FProxies|
   network: ws
   port: '80'
-  server: sg03.oliviapretty.online
+  server: sg02.handsomequinlan.online
   tls: false
   type: vmess
-  uuid: b5f40979-0200-428c-8ae1-f8c981560dd3
+  uuid: b363045d-0589-4cf3-8d02-209e406853c5
   ws-opts:
     headers:
-      Host: sg03.oliviapretty.online
+      Host: sg02.handsomequinlan.online
     path: /
-- alterId: 2
-  cipher: auto
-  name: '40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #15'
-  network: tcp
-  port: '23608'
-  server: 8.v2-ray.cyou
-  tls: false
-  type: vmess
-  uuid: d00d2e13-d027-383b-b648-b7abad7115f5
 - alterId: 0
   cipher: auto
-  name: 40|🇸🇬 新加坡2|cf
+  name: 40|>🇸🇬 SG|Hs|0404|TG@FProxies|
   network: ws
-  port: '2052'
-  server: hk.wish.ml
-  tls: false
+  port: '13337'
+  server: 159.223.68.144
+  tls: true
   type: vmess
-  uuid: 4168440c-41a1-4671-a5b2-8abfe318e1bb
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
     headers:
-      Host: sg2.wish.ml
+      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 40|>🇸🇬 SG|Ms|0329|TG@FProxies|
+  network: ws
+  port: '80'
+  server: max17.flash5g.com
+  tls: false
+  type: vmess
+  uuid: 4e25f91f-603c-4e83-b002-c26030757816
+  ws-opts:
+    headers:
+      Host: max17.flash5g.com
+    path: /AnhBin
 - alterId: 0
   cipher: auto
   name: 40,73|SG 1|openitr
@@ -467,42 +633,20 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: 40|>🇸🇬 SG|Hs|0404|TG@FProxies|
+  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #1'
   network: ws
-  port: '80'
-  server: sg02.victorialouisa.online
-  tls: false
+  port: '8080'
+  server: 128.199.243.157
+  tls: true
   type: vmess
-  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
     headers:
-      Host: sg02.victorialouisa.online
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0329|TG@FProxies| #1'
-  network: ws
-  port: '80'
-  server: max17.flash5g.com
-  tls: false
-  type: vmess
-  uuid: 4e25f91f-603c-4e83-b002-c26030757816
-  ws-opts:
-    headers:
-      Host: max17.flash5g.com
-    path: /AnhBin
-- alterId: 0
-  cipher: auto
-  name: 40|🇸🇬 新加坡 - 新加坡 - Amazon Technolo...
-  network: tcp
-  port: '50001'
-  server: cgroup.node3.v.nodelist-gfwairport2.top
-  tls: false
-  type: vmess
-  uuid: 6541d170-1507-45bc-9603-e8138a21b28c
-- alterId: 0
-  cipher: auto
-  name: 40|>🇸🇬 SG|Ms|0430|TG@FProxies|
+  name: '40|>🇸🇬 SG|Ms|0430|TG@FProxies| #1'
   network: ws
   port: '80'
   server: 104.19.35.187
@@ -515,67 +659,6 @@ proxies:
     path: /TG@dns68公益节点
 - alterId: 0
   cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: sg02.handsomequinlan.online
-  tls: false
-  type: vmess
-  uuid: b363045d-0589-4cf3-8d02-209e406853c5
-  ws-opts:
-    headers:
-      Host: sg02.handsomequinlan.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #9'
-  network: ws
-  port: '80'
-  server: sg02.beitai.online
-  tls: false
-  type: vmess
-  uuid: 8643b6c5-d037-41f4-9081-43756b1e9e8d
-  ws-opts:
-    headers:
-      Host: sg02.beitai.online
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #5'
-  network: ws
-  port: '23617'
-  server: 17.v2-ray.cyou
-  tls: false
-  type: vmess
-  uuid: d00d2e13-d027-383b-b648-b7abad7115f5
-  ws-opts:
-    headers:
-      Host: 17.v2-ray.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Hs|0404|TG@FProxies| #2'
-  network: ws
-  port: '2082'
-  server: ying.appleid.bf
-  tls: false
-  type: vmess
-  uuid: 41543660-a9ae-4980-aa57-7475c5cee4ae
-  ws-opts:
-    headers:
-      Host: ying.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #3'
-  network: tcp
-  port: '58650'
-  server: dgyd1.pmxu.link
-  tls: false
-  type: vmess
-  uuid: defa9670-1143-4712-919b-0b106e242f52
-- alterId: 0
-  cipher: auto
   name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #5'
   network: ws
   port: '80'
@@ -586,6 +669,185 @@ proxies:
   ws-opts:
     headers:
       Host: sg03.victorialouisa.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ms|0329|TG@FProxies| #2'
+  network: tcp
+  port: '443'
+  server: 149.28.136.237
+  tls: true
+  type: vmess
+  uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
+- alterId: 2
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #1'
+  network: ws
+  port: '23612'
+  server: 12.v2-ray.cyou
+  tls: false
+  type: vmess
+  uuid: 50a8616d-5a9d-3fae-9b52-22f2460e7f4c
+  ws-opts:
+    headers:
+      Host: 12.v2-ray.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ms|0329|TG@FProxies| #3'
+  network: tcp
+  port: '443'
+  server: 45.32.120.163
+  tls: true
+  type: vmess
+  uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
+- alterId: 2
+  cipher: auto
+  name: '40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #18'
+  network: ws
+  port: '23613'
+  server: 13.v2-ray.cyou
+  tls: false
+  type: vmess
+  uuid: 50a8616d-5a9d-3fae-9b52-22f2460e7f4c
+  ws-opts:
+    headers:
+      Host: 13.v2-ray.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #3'
+  network: ws
+  port: '80'
+  server: sg03.oliviapretty.online
+  tls: false
+  type: vmess
+  uuid: b5f40979-0200-428c-8ae1-f8c981560dd3
+  ws-opts:
+    headers:
+      Host: sg03.oliviapretty.online
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #7'
+  network: ws
+  port: '23617'
+  server: 17.v2-ray.cyou
+  tls: false
+  type: vmess
+  uuid: 50a8616d-5a9d-3fae-9b52-22f2460e7f4c
+  ws-opts:
+    headers:
+      Host: 17.v2-ray.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 40|>🇸🇬 SG|Hs|0430|TG@FProxies|
+  network: tcp
+  port: '33011'
+  server: sz.zj.my.1.76po.com
+  tls: true
+  type: vmess
+  uuid: 585670be-5f39-494d-9a8c-3287e28f4749
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #6'
+  network: ws
+  port: '80'
+  server: sg02.beitai.online
+  tls: false
+  type: vmess
+  uuid: 8643b6c5-d037-41f4-9081-43756b1e9e8d
+  ws-opts:
+    headers:
+      Host: sg02.beitai.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 40|🇸🇬 新加坡2|cf
+  network: ws
+  port: '2052'
+  server: hk.wish.ml
+  tls: false
+  type: vmess
+  uuid: 4168440c-41a1-4671-a5b2-8abfe318e1bb
+  ws-opts:
+    headers:
+      Host: sg2.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ms|0329|TG@FProxies| #4'
+  network: ws
+  port: '80'
+  server: max11.flash5g.com
+  tls: false
+  type: vmess
+  uuid: 4e25f91f-603c-4e83-b002-c26030757816
+  ws-opts:
+    headers:
+      Host: max11.flash5g.com
+    path: /AnhBin
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #6'
+  network: ws
+  port: '80'
+  server: 206.189.153.83
+  tls: false
+  type: vmess
+  uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Hs|0430|TG@FProxies| #1'
+  network: ws
+  port: '10000'
+  server: 47.236.246.45
+  tls: false
+  type: vmess
+  uuid: 367a6994-059c-11ef-9ef7-00163e0de184
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vpnjantit
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #8'
+  network: ws
+  port: '80'
+  server: sg02.victorialouisa.online
+  tls: false
+  type: vmess
+  uuid: f6125b2b-1c0d-4cb9-9c39-d00b437fc342
+  ws-opts:
+    headers:
+      Host: sg02.victorialouisa.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #9'
+  network: tcp
+  port: '58650'
+  server: dgyd1.pmxu.link
+  tls: false
+  type: vmess
+  uuid: defa9670-1143-4712-919b-0b106e242f52
+- alterId: 0
+  cipher: auto
+  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #7'
+  network: ws
+  port: '80'
+  server: sg01.victorialouisa.online
+  tls: false
+  type: vmess
+  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
+  ws-opts:
+    headers:
+      Host: sg01.victorialouisa.online
     path: /
 - alterId: 0
   cipher: auto
@@ -602,59 +864,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 40|>🇸🇬 SG|Hs|0430|TG@FProxies|
-  network: ws
-  port: '10000'
-  server: 47.236.246.45
-  tls: false
-  type: vmess
-  uuid: 367a6994-059c-11ef-9ef7-00163e0de184
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vpnjantit
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #6'
-  network: ws
-  port: '80'
-  server: 206.189.153.83
-  tls: false
-  type: vmess
-  uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0329|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: max11.flash5g.com
-  tls: false
-  type: vmess
-  uuid: 4e25f91f-603c-4e83-b002-c26030757816
-  ws-opts:
-    headers:
-      Host: max11.flash5g.com
-    path: /AnhBin
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #7'
-  network: ws
-  port: '80'
-  server: sg04.beitai.online
-  tls: false
-  type: vmess
-  uuid: b363045d-0589-4cf3-8d02-209e406853c5
-  ws-opts:
-    headers:
-      Host: sg04.beitai.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #6'
+  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #9'
   network: ws
   port: '80'
   server: sg01.oliviapretty.online
@@ -665,76 +875,6 @@ proxies:
     headers:
       Host: sg01.oliviapretty.online
     path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Hs|0404|TG@FProxies| #3'
-  network: ws
-  port: '13337'
-  server: 159.223.68.144
-  tls: true
-  type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Hs|0430|TG@FProxies| #1'
-  network: tcp
-  port: '33011'
-  server: sz.zj.my.1.76po.com
-  tls: true
-  type: vmess
-  uuid: 585670be-5f39-494d-9a8c-3287e28f4749
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #7'
-  network: ws
-  port: '80'
-  server: sg01.victorialouisa.online
-  tls: false
-  type: vmess
-  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
-  ws-opts:
-    headers:
-      Host: sg01.victorialouisa.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0404|TG@FProxies| #8'
-  network: ws
-  port: '8080'
-  server: 128.199.243.157
-  tls: true
-  type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ns|0329|TG@FProxies| #9'
-  network: ws
-  port: '23612'
-  server: 12.v2-ray.cyou
-  tls: false
-  type: vmess
-  uuid: 50a8616d-5a9d-3fae-9b52-22f2460e7f4c
-  ws-opts:
-    headers:
-      Host: 12.v2-ray.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '40|>🇸🇬 SG|Ms|0329|TG@FProxies| #4'
-  network: tcp
-  port: '443'
-  server: 45.32.120.163
-  tls: true
-  type: vmess
-  uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
 - cipher: aes-256-cfb
   name: 43,56|🇬SG-13.213.46.196-7336
   password: amazonskr05
@@ -754,6 +894,19 @@ proxies:
   ws-headers:
     Host: 159.223.94.156
   ws-path: /anti13.zingfast.vn
+- alterId: 0
+  cipher: auto
+  name: 43|🇸🇬SG-8.222.174.108-205_1@204
+  network: ws
+  port: 2082
+  server: 8.222.174.108
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-headers:
+    Host: s1c.v2.v001sss.xyz
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 43|🇸🇬SG-146.190.87.238-227_1@226
@@ -781,6 +934,30 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
+- alterId: 0
+  cipher: auto
+  name: 44,47|新加坡 002
+  network: tcp
+  port: 50001
+  server: 18.139.115.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6541d170-1507-45bc-9603-e8138a21b28c
+- alterId: 0
+  cipher: auto
+  name: 44,47|新加坡 003
+  network: ws
+  port: 80
+  server: 172.104.190.235
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f15831d2-461c-442e-a11b-9acee6dc5286
+  ws-opts:
+    headers:
+      Host: sg1.pkyun.website
+    path: /ray
 - client-fingerprint: chrome
   name: 47,48,56|SG-54.169.37.75-1122
   network: ws
@@ -863,9 +1040,27 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
+  name: 54,56|🇸🇬SG-103.172.116.103-4300
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
   name: 54,56|🇸🇬SG-103.172.116.79-0280
   password: f8npKgNzdkss2ytn
   port: 9088
+  server: 103.172.116.79
+  type: ss
+- cipher: aes-256-cfb
+  name: 54,56|🇸🇬SG-103.172.116.79-0229
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  server: 103.172.116.79
+  type: ss
+- cipher: aes-256-cfb
+  name: 54,56|🇬SG-103.172.116.79-0230
+  password: a3GFYt36Sm82Vys9
+  port: 9000
   server: 103.172.116.79
   type: ss
 - alterId: 0
@@ -1308,13 +1503,6 @@ proxies:
   uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 56,63|🇬SG-103.172.116.79-0855
-  password: rpgbNnU9rDDU4aWZ
-  port: '9094'
-  server: 103.172.116.79
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 56|🇸🇬SG-139.99.61.53-0837
@@ -2307,15 +2495,9 @@ proxies:
   type: vmess
   uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
 - cipher: aes-256-cfb
-  name: 79|SG_speednode_0075
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 103.172.116.94
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 79|SG_speednode_0077
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
+  country: SG
+  name: 79|SG_speednode_0078
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
   server: 103.172.116.94
   type: ss
