@@ -15,7 +15,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '0,11,12,40|广东省佛山市 移动 #4'
+  name: '0,11,12|广东省佛山市 移动 #3'
   network: tcp
   port: '61001'
   server: 183.232.199.61
@@ -25,7 +25,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 64
   cipher: auto
-  name: 0,11,12,40,42,48,72|未知221
+  name: 0,11,12,40,42,44,48,53,72|未知221
   network: tcp
   port: 40259
   server: 120.238.122.243
@@ -51,18 +51,24 @@ proxies:
     path: /debian
 - cipher: chacha20-ietf-poly1305
   country: CN
-  name: 15,39|🇨🇳 CN 447 → tg@nicevpn123
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
+  name: 15|Relay_CN-KR_667
+  password: c2497ca9-8968-4ff8-99f8-a364e1c4ce80
+  port: 40004
+  server: 183.240.220.229
   type: ss
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: CN
+  name: 15|Relay_CN-KR_678
+  password: f15831d2-461c-442e-a11b-9acee6dc5286
+  port: 27411
+  server: hct.pkyun.xyz
+  type: ss
 - alterId: 0
   cipher: auto
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 15|CN_646
+  name: 15|CN_686
   network: ws
   port: 80
   server: 47.106.112.114
@@ -71,30 +77,9 @@ proxies:
   uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
   ws-opts:
     path: /
-- cipher: chacha20-ietf
-  country: CN
-  name: 16|Relay_CN-CN_06
-  obfs: plain
-  password: mblank1port
-  port: 560
-  protocol: auth_aes128_md5
-  protocol-param: 2338:9tQfxMX(0S;40f
-  server: cmlayer6.standurls.co
-  type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 16,30|Pool__03
-  obfs: plain
-  obfs-param: data.bilibili.com/ed5a2165400
-  password: http://cc.ax/
-  port: 41122
-  protocol: auth_aes128_md5
-  protocol-param: 165400:Hr2aXO
-  server: 222.186.20.24
-  type: ssr
 - cipher: rc4-md5
   country: CN
-  name: 16,30|Relay_-CN_02
+  name: 16,29,30|Relay_-CN_02
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -105,7 +90,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 16,30|Pool__01
+  name: 16,29,30|Pool__01
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -114,17 +99,27 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- alterId: 64
-  cipher: auto
-  name: 35,42,71,72|未知127
-  network: tcp
-  port: 50002
-  server: 120.210.205.82
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf
+  country: CN
+  name: 16|Relay_CN-CN_08
+  obfs: plain
+  password: mblank1port
+  port: 560
+  protocol: auth_aes128_md5
+  protocol-param: 2338:9tQfxMX(0S;40f
+  server: cmlayer6.standurls.co
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 16,29,30|Pool__03
+  obfs: plain
+  obfs-param: data.bilibili.com/ed5a2165400
+  password: http://cc.ax/
+  port: 41122
+  protocol: auth_aes128_md5
+  protocol-param: 165400:Hr2aXO
+  server: 222.186.20.24
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳 CN 437 → tg@nicevpn123
@@ -958,6 +953,19 @@ proxies:
   server: zf.miaosu666.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 39|🇨🇳 CN 292 → tg@nicevpn123
+  network: ws
+  port: 20207
+  server: 120.233.42.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    path: /debian
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 294 → tg@nicevpn123
   password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
@@ -1250,20 +1258,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39|🇨🇳 CN 361 → tg@nicevpn123
-  network: ws
-  port: 20206
-  server: 120.233.42.83
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #4'
+  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #5'
   network: ws
   port: '50080'
   server: 223.113.130.58
@@ -1545,6 +1540,13 @@ proxies:
   password: 3bf7be43-e331-4dad-856c-8d312dedea90
   port: 31583
   server: rk.izoizoizo.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 39|🇨🇳 CN 447 → tg@nicevpn123
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -2021,9 +2023,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 40,48|16|香港3|@ripaojiedian
+  name: '40,44,48,53|广东省广州市 移动 #2'
   network: tcp
-  port: '8443'
+  port: 8443
   server: 120.232.240.38
   servername: ''
   tls: true
@@ -4473,7 +4475,7 @@ proxies:
     path: /blue
 - alterId: '0'
   cipher: auto
-  name: '64|广东省 移动 #8'
+  name: '64|广东省 移动 #7'
   network: ws
   port: '16628'
   server: m.cnmjcn.com
@@ -4488,7 +4490,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '64|广东省 移动 #9'
+  name: '64|广东省 移动 #8'
   network: ws
   port: 16645
   server: m.cnmjcn.com
