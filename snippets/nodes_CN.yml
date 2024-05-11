@@ -1,9 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0,12,15,40,48,53,59,79|CN_speednode_0086
+  name: 0,12,40,48,53,79|CN_speednode_0086
   network: tcp
   port: 51707
   server: 183.236.51.59
@@ -20,7 +18,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,9,11,12,40,48,53,59|6|台湾|@ripaojiedian
+  name: '0,9,11,12,40,48,53|广东省佛山市 移动 #10'
   network: tcp
   port: '21006'
   server: 183.232.199.61
@@ -33,7 +31,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 0,11,12,15,40,48,53,59|6|香港6|@ripaojiedian
+  name: '0,11,12,15,40,44,48,53|广东省汕头市 移动 #7'
   network: tcp
   port: '15601'
   server: 183.240.179.195
@@ -44,7 +42,10 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 64
   cipher: auto
-  name: 0,12,42,53,72|未知92
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 0,12,15,42,53,72|未知92
   network: tcp
   port: 54437
   server: 183.236.51.59
@@ -56,7 +57,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0,11,12,40,42,48,53,56,57,59,61|🇨🇳 广东省 移动 3
+  name: 0,11,12,40,42,48,53,56,57,61|🇨🇳 广东省 移动 3
   network: ws
   port: 16632
   server: m.cnmjin.net
@@ -73,9 +74,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  h2-opts: {}
-  http-opts: {}
-  name: 0,12,15,39,40,53,56,61|🇨🇳 广东省 移动 4
+  name: 0,12,39,40,53,56,61|🇨🇳 广东省 移动 4
   network: ws
   port: 20206
   server: data-hk-v1.usabooks.com.cn
@@ -91,39 +90,53 @@ proxies:
       Host: data-hk-v1.usabooks.com.cn
     path: /debian
 - cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  name: 15,81|Relay_ | 9.55Mb
-  password: 461f4996-a430-4482-a103-acef0713281a
-  port: 26903
-  server: ydyh1.nanbeicloud.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  name: 15,81|Relay_ | 7.57Mb
-  password: 461f4996-a430-4482-a103-acef0713281a
-  port: 26907
-  server: ydyh1.nanbeicloud.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  name: 15,81|Relay_ |11.83Mb
+  country: CN
+  name: 15|Relay_CN-IN_692
   password: 461f4996-a430-4482-a103-acef0713281a
   port: 26901
-  server: ydyh1.nanbeicloud.top
+  server: 36.212.242.46
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  name: 15,81|Relay_ | 2.17Mb
+  country: CN
+  name: 15|Relay_CN-AU_699
+  password: 461f4996-a430-4482-a103-acef0713281a
+  port: 26903
+  server: 36.212.242.46
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: CN
+  name: 15|Relay_CN-AE_711
   password: 461f4996-a430-4482-a103-acef0713281a
   port: 26914
   server: ydyh1.nanbeicloud.top
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: CN
+  name: 15|Relay_CN-KR_712
+  password: 461f4996-a430-4482-a103-acef0713281a
+  port: 26913
+  server: ydyh1.nanbeicloud.top
+  type: ss
+- alterId: 64
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 15,71,72|未知193
+  network: tcp
+  port: 50002
+  server: 120.210.205.82
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 15|CN_657
+  name: 15|CN_720
   network: ws
   port: 80
   server: 47.106.112.114
@@ -132,17 +145,6 @@ proxies:
   uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  country: CN
-  name: 16|Relay_CN-CN_05
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
-  password: dajkdkjda&dj23gsa
-  port: 2212
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103.level3.sdl-sz.com
-  type: ssr
 - cipher: aes-256-cfb
   country: CN
   name: 16,29,30|Pool__03
@@ -154,9 +156,41 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.24
   type: ssr
-- cipher: aes-256-cfb
+- cipher: rc4-md5
+  country: CN
+  name: 16,30|Relay_-CN_02
+  obfs: plain
+  obfs-param: 64334105622.www.gov.hk
+  password: di15PV
+  port: 555
+  protocol: auth_aes128_md5
+  protocol-param: 105622:5EF7C3661EBC
+  server: video23.cdn.globalnetworktraffic.com
+  type: ssr
+- cipher: chacha20-ietf
   country: CN
   name: 16|Relay_CN-CN_07
+  obfs: plain
+  password: mblank1port
+  port: 560
+  protocol: auth_aes128_md5
+  protocol-param: 2338:9tQfxMX(0S;40f
+  server: cmlayer6.standurls.co
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 16|Relay_CN-CN_08
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjda&dj23gsa
+  port: 2212
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103.level3.sdl-sz.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: CN
+  name: 16|Relay_CN-CN_09
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -176,19 +210,9 @@ proxies:
   protocol-param: 11275:KWQHheqWo8
   server: 231103levelx.unclemanco.com
   type: ssr
-- cipher: chacha20-ietf
-  country: CN
-  name: 16|Relay_CN-CN_09
-  obfs: plain
-  password: mblank1port
-  port: 560
-  protocol: auth_aes128_md5
-  protocol-param: 2338:9tQfxMX(0S;40f
-  server: cmlayer6.standurls.co
-  type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 16,29,30|Pool__01
+  name: 16,30|Pool__01
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -196,17 +220,6 @@ proxies:
   protocol: auth_aes128_md5
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
-  type: ssr
-- cipher: rc4-md5
-  country: CN
-  name: 16,29,30|Relay_-CN_02
-  obfs: plain
-  obfs-param: 64334105622.www.gov.hk
-  password: di15PV
-  port: 555
-  protocol: auth_aes128_md5
-  protocol-param: 105622:5EF7C3661EBC
-  server: video23.cdn.globalnetworktraffic.com
   type: ssr
 - alterId: 0
   cipher: auto
@@ -648,6 +661,13 @@ proxies:
     headers:
       Host: hn.xn--wlqw1swrj04ju56d.com
     path: /
+- cipher: aes-128-gcm
+  name: 39|🇨🇳 CN 414 → tg@nicevpn123
+  password: b3a52055-af1a-4cbc-a554-1e107a82e76f
+  port: 22233
+  server: 04.forlive.live
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 196 → tg@nicevpn123
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
@@ -773,6 +793,13 @@ proxies:
   password: dbEcUJ
   port: 24603
   server: 211.99.97.17
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 39,79|CN_speednode_0149
+  password: a061411e-f58b-4c95-8887-a9d3b84b3160
+  port: 22291
+  server: 04.forlive.live
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -933,6 +960,13 @@ proxies:
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
   port: 27274
   server: 120.199.94.29
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 39,79|CN_speednode_0143
+  password: cf448056-b7c2-439d-b708-aaf5ff321052
+  port: 22302
+  server: 04.forlive.live
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -1184,6 +1218,13 @@ proxies:
   server: 211.99.97.21
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 39,79|CN_speednode_0142
+  password: 72fb9321-4818-4050-9048-5fa89827adb2
+  port: 22268
+  server: 04.forlive.live
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 39|🇨🇳 CN 332 → tg@nicevpn123
   password: 3ae13eaa-7e79-4079-9821-6178d35029ff
@@ -1224,6 +1265,13 @@ proxies:
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
   port: 27275
   server: 120.199.94.29
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 39,79|CN_speednode_0144
+  password: 14c7684e-c740-45fc-a9b3-1ccf2ac392fd
+  port: 22291
+  server: 03.forlive.live
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -1298,7 +1346,20 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #2'
+  name: 39|🇨🇳 CN 361 → tg@nicevpn123
+  network: ws
+  port: 20206
+  server: 120.233.42.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: '39,40|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #20'
   network: ws
   port: '50080'
   server: 223.113.130.58
@@ -1598,7 +1659,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 39,40|>🇭🇰 HK|Hs|0404|TG@FProxies|
+  name: '39,40|>🇭🇰 HK|Hs|0404|TG@FProxies| #1'
   network: ws
   port: '21032'
   server: hk.lianjianode.cc
@@ -1856,7 +1917,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #4'
+  name: '39,40|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #3'
   network: ws
   port: '16928'
   server: vip3.niuniupremium.xyz
@@ -2058,35 +2119,37 @@ proxies:
   server: 211.99.97.10
   type: ss
   udp: true
-- alterId: 64
-  cipher: auto
-  name: '40|>🇺🇸 US|Ms|0430|TG@FProxies| #4'
-  network: ws
-  port: '31000'
-  server: 137.175.57.178
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/320410353223
-- alterId: 64
-  cipher: auto
-  name: '40|>🇺🇸 US|Hs|0430|TG@FProxies| #30'
-  network: ws
-  port: '31000'
-  server: 142.4.114.135
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/283423283117
 - alterId: 0
   cipher: auto
-  name: 40,46,48,53,57,59,79|CN_speednode_0055
+  name: 40,48,57,79|CN_speednode_0060
+  network: tcp
+  port: 37997
+  server: 8789-kf49kc85w.uy2w4vf-sg03.my777999.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6399ac7d-8265-436d-b348-299df4b735a5
+  ws-opts:
+    headers:
+      Host: 8789-kf49kc85w.uy2w4vf-sg03.my777999.top
+    path: /
+- alterId: 64
+  cipher: auto
+  name: '40|>🇺🇸 US|Ms|0430|TG@FProxies| #17'
+  network: ws
+  port: '38001'
+  server: 198.2.195.5
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/093401320514
+- alterId: 0
+  cipher: auto
+  name: 40,46,48,53,57,79|CN_speednode_0055
   network: tcp
   port: 8443
   server: 120.232.240.38
@@ -3485,11 +3548,11 @@ proxies:
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: 56,58|NEphZGktMzQ1Mw%3D%3D
+  name: 56|🇨🇳CN-14.29.124.168-4138
   obfs: plain
   obfs-param: ''
   password: QazEdcTgb159@$*
-  port: '24005'
+  port: 24005
   protocol: origin
   protocol-param: ''
   server: 14.29.124.168
@@ -3615,13 +3678,13 @@ proxies:
   server: 62e2186f.0f7802c4.83df.34fb5e38.cc
   type: ss
 - cipher: chacha20-ietf
-  name: 56,58|NEphZGktMzQ4Ng%3D%3D
+  name: 56|🇨🇳CN-183.232.117.21-4383
   obfs: plain
   obfs-param: ''
   password: mblank1port
-  port: '560'
+  port: 560
   protocol: auth_aes128_md5
-  protocol-param: Mzg2NjoxMjU0NTg1NTg%3D
+  protocol-param: 3866:125458558
   server: layercm05.initcloud.pro
   type: ssr
 - cipher: aes-256-cfb
@@ -3886,7 +3949,7 @@ proxies:
   server: bs3.jymzffbquawl.com
   type: ss
 - cipher: chacha20-ietf
-  name: 56,58,81|Relay_ |108.00Mb
+  name: 56|🇳CN-120.232.206.251-6968
   obfs: plain
   obfs-param: ''
   password: mblank1port
@@ -4531,15 +4594,6 @@ proxies:
   uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
   ws-opts:
     path: /blue
-- client-fingerprint: chrome
-  name: 59,79|CN_speednode_0147
-  network: tcp
-  password: MyYoZhfX
-  port: 46011
-  server: 112.29.94.23
-  skip-cert-verify: true
-  type: trojan
-  udp: false
 - alterId: '0'
   cipher: auto
   name: '64|广东省 移动 #8'
@@ -4570,17 +4624,6 @@ proxies:
       host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: 71,72|未知193
-  network: tcp
-  port: 50002
-  server: 120.210.205.82
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
   name: 79|CN_speednode_0003
   password: ayucloud1
@@ -5421,6 +5464,19 @@ proxies:
   server: 231103level3.unclemanco.com
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  country: 🏁 ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 79|CN_speednode_0077
+  network: tcp
+  port: 31778
+  server: 120.232.242.117
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
   name: 79|CN_speednode_0078
   password: QHPy2u
@@ -5460,6 +5516,36 @@ proxies:
   server: 231103level2.unclemanco.com
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 79|CN_speednode_0081
+  network: ws
+  port: 23617
+  server: 17.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37aed724-4508-301b-9848-1e5355f18a87
+  ws-opts:
+    headers:
+      host: 17.v2-ray.cyou
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 79|CN_speednode_0082
+  network: ws
+  port: 23613
+  server: 13.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37aed724-4508-301b-9848-1e5355f18a87
+  ws-opts:
+    headers:
+      host: 13.v2-ray.cyou
+    path: /
 - cipher: aes-128-gcm
   name: 79|CN_speednode_0083
   password: ayucloud1
@@ -5586,6 +5672,38 @@ proxies:
   port: 12345
   server: hk3.lvuy.xyz
   type: ss
+- alterId: 2
+  cipher: auto
+  name: 79|CN_speednode_0096
+  network: ws
+  port: 23619
+  server: 19.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37aed724-4508-301b-9848-1e5355f18a87
+  ws-opts:
+    headers:
+      host: 19.v2-ray.cyou
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 79|CN_speednode_0097
+  password: 55bfca34-47bd-4c81-b58d-22858a59dbaf
+  port: 16223
+  server: d728add903a8d598.cdn.jiashule.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 79|CN_speednode_0148
+  network: tcp
+  port: 30056
+  server: 183.232.170.21
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
 - cipher: aes-128-gcm
   name: 79|CN_speednode_0099
   password: fs23l/
@@ -5599,6 +5717,32 @@ proxies:
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 79|CN_speednode_0146
+  network: tcp
+  port: 30061
+  server: 183.232.170.21
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- alterId: 2
+  cipher: auto
+  name: 79|CN_speednode_0102
+  network: ws
+  port: 23611
+  server: 11.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37aed724-4508-301b-9848-1e5355f18a87
+  ws-opts:
+    headers:
+      host: 11.v2-ray.cyou
+    path: /
 - cipher: chacha20-ietf
   name: 79|CN_speednode_0103
   obfs: tls1.2_ticket_auth
@@ -5673,6 +5817,21 @@ proxies:
   server: 183.240.220.84
   type: ssr
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 79|CN_speednode_0110
+  network: ws
+  port: 23615
+  server: 15.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37aed724-4508-301b-9848-1e5355f18a87
+  ws-opts:
+    headers:
+      host: 15.v2-ray.cyou
+    path: /
 - cipher: aes-128-gcm
   name: 79|CN_speednode_0111
   password: ayucloud1
@@ -5701,98 +5860,66 @@ proxies:
     headers:
       host: 14.v2-ray.cyou
     path: /
-- cipher: rc4-md5
-  name: 81|Relay_-CN_1272 |264.00Mb
-  obfs: http_simple
-  obfs-param: ajax.microsoft.com
-  password: caomeijump.com
-  port: 766
-  protocol: auth_aes128_md5
-  protocol-param: 167153:5b4c3ff4-16c7-35f5-97e9-68eb9a053815
-  server: iplc-hu.cmydns2.com
-  type: ssr
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇨🇳CN
-  name: 81|Pool_🇨🇳CN_1552
-  password: 9cf13c09-16c0-4b30-ac14-6bb937b056e8
-  port: 38523
-  server: xiaonangua.lwjyj.com
+- cipher: chacha20-ietf-poly1305
+  name: 79|CN_speednode_0115
+  password: 55bfca34-47bd-4c81-b58d-22858a59dbaf
+  port: 16934
+  server: 61254ed65353a37b.cdn.jiashule.com
   type: ss
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 81|🇨🇳CN_1564 |406.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: 2sa2/321a
-  port: 10071
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 81|🇨🇳CN_1567 |363.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: dajkdkjda&dja*/?
-  port: 39070
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level4.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 81|Relay_🇨🇳CN-🇳CN_1573 |149.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20029
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: 🇨🇳CN
-  name: 81|🇨🇳CN_1574
-  obfs: tls1.2_ticket_auth
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: ayucloud1
-  port: 1876
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 81|Relay_🇨🇳CN-🇨🇳CN_1575 |141.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20004
-  protocol: auth_aes128_md5
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 81|Relay_🇨🇳CN-🇨🇳CN_1577 |95.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20016
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 81|🇨🇳CN_1578 |99.00Mb
-  obfs: http_simple
-  obfs-param: 68e7b61610.download.windowsupdate.com
-  password: QHPy2u
-  port: 20011
-  protocol: auth_aes128_sha1
-  protocol-param: 61610:G5gdyp
-  server: 231103level3.unclemanco.com
-  type: ssr
+- cipher: aes-128-gcm
+  name: 79|CN_speednode_0116
+  password: ead72f06-8655-4a39-a8ce-b6e4702708f6
+  port: 12554
+  server: 183.240.180.248
+  type: ss
+- cipher: aes-128-gcm
+  name: 79|CN_speednode_0128
+  password: ead72f06-8655-4a39-a8ce-b6e4702708f6
+  port: 12553
+  server: xinyun-hk.07wi0kka34.download
+  type: ss
+- cipher: aes-128-gcm
+  name: 79|CN_speednode_0130
+  password: ead72f06-8655-4a39-a8ce-b6e4702708f6
+  port: 12551
+  server: xinyun-hk.07wi0kka34.download
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 79|CN_speednode_0140
+  network: tcp
+  port: 30119
+  server: 183.232.170.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- alterId: 0
+  cipher: auto
+  name: 79|CN_speednode_0141
+  network: tcp
+  port: 30059
+  server: 183.232.170.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- alterId: 0
+  cipher: auto
+  name: 79|CN_speednode_0145
+  network: tcp
+  port: 30025
+  server: 183.232.170.21
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- client-fingerprint: chrome
+  name: 79|CN_speednode_0147
+  network: tcp
+  password: MyYoZhfX
+  port: 46011
+  server: 112.29.94.23
+  skip-cert-verify: true
+  type: trojan
+  udp: false
