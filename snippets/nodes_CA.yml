@@ -1,11 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '9,11,40,44,46,48,53,57|🇨🇳 广东省佛山市 移动 #2'
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '9,11,15,40,44,46,48,53,57|🇨🇳 广东省佛山市 移动 #5'
   network: tcp
   port: '15603'
   server: 183.232.199.61
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -17,52 +21,6 @@ proxies:
   server: 51.222.157.179
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  country: CA
-  h2-opts: {}
-  http-opts: {}
-  name: '15|netflix_CA #2'
-  network: ws
-  port: 443
-  server: 45.93.28.103
-  servername: 48.sking.app
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8434d193-01d5-4a55-bfca-6f4c2e883ba8
-  ws-opts:
-    headers:
-      HOST: 48.sking.app
-    path: /
-- alterId: 0
-  cipher: auto
-  country: CA
-  h2-opts: {}
-  http-opts: {}
-  name: 15|Relay_CA-KR_964
-  network: ws
-  port: 443
-  server: 48.sking.app
-  servername: 48.sking.app
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8434d193-01d5-4a55-bfca-6f4c2e883ba8
-  ws-opts:
-    headers:
-      HOST: 48.sking.app
-    path: /
-- alterId: 0
-  cipher: aes-256-gcm
-  country: CA
-  name: 20,72|未知332
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.162.200.213
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: 25,48|6|🇨🇦_CA_加拿大
@@ -132,21 +90,40 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  country: 🇦 CA
+  country: 🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 31|🇦 CA_55
+  name: 32,39|🇨🇦 CA 4 → tg@nicevpn123
+  network: ws
+  port: 8080
+  server: 108.181.23.161
+  servername: internet.life.com.by
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
+  ws-opts:
+    path: /1IKYjV0r/
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 32,42,48,63|CA-158.51.121.36-2777
   network: ws
   port: 443
   server: 158.51.121.36
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
+  ws-opts:
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '33,37,42,48,73,77|رایگان | VMESS | @Hope_Net | U... #2'
+  name: '33,37,42,48,73,77|رایگان | VMESS | @ShadowProxy6... #7'
   network: ws
   port: '443'
   server: hms24.ivideos.sbs
@@ -176,7 +153,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 33,42|🔗 Vauth - 166
+  name: 33,42|🔗 Vauth - 162
   network: ws
   port: '443'
   server: 104.26.7.65
@@ -214,6 +191,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  name: 35,42,71|🔒 VM-WS-NONE 🇨🇦 CA-15.156.226....
+  network: ws
+  port: 25996
+  server: 15.156.226.178
+  tls: false
+  type: vmess
+  uuid: 786c0e71-c2d4-4bdc-913f-5c75dd54721f
+  ws-opts:
+    headers:
+      Host: m.linkedin.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 38,72|未知115 1.1MB/s
+  network: ws
+  port: 443
+  server: 104.26.7.65
+  servername: mikasa.yaemiko.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
 - cipher: aes-256-cfb
   name: 39|🇨🇦 CA 1 → tg@nicevpn123
   password: amazonskr05
@@ -527,19 +535,6 @@ proxies:
     headers:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- alterId: 0
-  cipher: auto
-  name: 39|🇨🇦 CA 4 → tg@nicevpn123
-  network: ws
-  port: 8080
-  server: 108.181.23.161
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    path: /1IKYjV0r/
 - name: 39|🇨🇦 CA 40 → tg@nicevpn123
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
@@ -1063,19 +1058,6 @@ proxies:
   name: 40|>🇨🇦 CA|Hs|0404|TG@FProxies|
   network: ws
   port: '443'
-  server: novia.makeup
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: novia.makeup
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '40|>🇨🇦 CA|Hs|0404|TG@FProxies| #1'
-  network: ws
-  port: '443'
   server: naomir.cfd
   tls: true
   type: vmess
@@ -1086,21 +1068,17 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 40,44,47,48|15,16|加拿大|tg频道:@ripaojiedian
+  name: '40|>🇨🇦 CA|Hs|0404|TG@FProxies| #1'
   network: ws
-  port: '2052'
-  server: 104.19.113.227
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  port: '443'
+  server: novia.makeup
+  tls: true
   type: vmess
-  uuid: 28d2fdca-e896-4dea-b36c-42ef133542a7
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: tokyo-appointment-int-convenience.trycloudflare.com
-    path: 28d2fdca
+      Host: novia.makeup
+    path: /linkvws
 - cipher: aes-256-gcm
   name: 43|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -1601,25 +1579,6 @@ proxies:
   network: ws
   port: 8080
   server: 172.67.199.0
-  servername: oiictw.yydsii.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      HOST: oiictw.yydsii.com
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 1268
-  h2-opts: {}
-  http-opts: {}
-  name: 44,47|加拿大 016
-  network: ws
-  port: 8080
-  server: 104.16.58.159
   servername: oiictw.yydsii.com
   skip-cert-verify: true
   tls: false
@@ -2336,6 +2295,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '44,47,53|美国 CloudFlare节点 #42'
+  network: ws
+  port: '80'
+  server: 104.19.43.188
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
   name: 44,47|加拿大 069
   network: ws
   port: 80
@@ -2350,7 +2324,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '44,47,53|美国 CloudFlare节点 #74'
+  name: '44,47,53|美国 CloudFlare节点 #62'
   network: ws
   port: '80'
   server: 104.19.43.122
@@ -2449,7 +2423,7 @@ proxies:
     path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
-  name: '44,47,53|美国 CloudFlare节点 #46'
+  name: '44,47,53|美国 CloudFlare节点 #34'
   network: ws
   port: '80'
   server: 104.19.43.103
@@ -2548,7 +2522,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '44,47,53|美国 CloudFlare节点 #67'
+  name: '44,47,53|美国 CloudFlare节点 #55'
   network: ws
   port: '80'
   server: 104.19.43.61
@@ -2591,7 +2565,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '44,47,53|美国 CloudFlare节点 #66'
+  name: '44,47,53|美国 CloudFlare节点 #54'
   network: ws
   port: '80'
   server: 104.19.43.112
@@ -2635,7 +2609,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '44,45,46,47,48,53,57|🇺🇸 美国 CloudFlare节点 #20'
+  name: '44,45,46,47,48,53,57|🇺🇸 美国 CloudFlare节点 #23'
   network: ws
   port: '80'
   server: 104.19.43.163
@@ -2652,7 +2626,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '44,47,53|美国 CloudFlare节点 #75'
+  name: '44,47,53|美国 CloudFlare节点 #63'
   network: ws
   port: '80'
   server: 104.19.43.210
@@ -2795,7 +2769,7 @@ proxies:
     path: /dabai.in18922117
 - alterId: 0
   cipher: auto
-  name: '44,47,53|美国 CloudFlare节点 #47'
+  name: '44,47,53|美国 CloudFlare节点 #35'
   network: ws
   port: '2052'
   server: 104.18.242.177
@@ -2983,6 +2957,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 44,47,48|15,16|加拿大|tg频道:@ripaojiedian
+  network: ws
+  port: '2052'
+  server: 104.19.113.227
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 28d2fdca-e896-4dea-b36c-42ef133542a7
+  ws-opts:
+    headers:
+      Host: tokyo-appointment-int-convenience.trycloudflare.com
+    path: 28d2fdca
+- alterId: 0
+  cipher: auto
   name: 44,47|加拿大 152
   network: ws
   port: 2095
@@ -3128,7 +3119,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 44,47,53|🇺🇸 V001-US-付费推荐:dlj.tf/ssrsub
+  name: '44,47,53,57|🇺🇸 美国 CloudFlare节点 #16'
   network: ws
   port: '8880'
   server: russia.com
@@ -3324,7 +3315,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: d46083e2-a285-49c8-9576-cc2b3f27155f
+  uuid: 9bea579c-1b5f-441c-ad4b-7d193edd1e25
 - alterId: 0
   cipher: auto
   name: 48|13|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11...
@@ -3372,7 +3363,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b4892354-f769-4703-91c8-797b05122a7d
+  uuid: cd297be5-a6fd-4e53-bea6-495cee24ad2f
 - cipher: chacha20-ietf-poly1305
   name: 54,63|🇦CA-142.4.216.225-1530
   password: JIhN6rBKkaEboLNXVSv5rq
@@ -3429,15 +3420,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 73|CA 2|openitr
-  network: tcp
-  port: '17163'
-  server: 108.181.200.220
-  tls: false
-  type: vmess
-  uuid: d54814a1-7a93-45f8-9117-db317a25d100
 - alterId: 0
   cipher: auto
   name: 73|CA 4|openitr
