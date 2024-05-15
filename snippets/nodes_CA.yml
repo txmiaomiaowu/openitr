@@ -4,7 +4,7 @@ proxies:
   country: ' CA'
   h2-opts: {}
   http-opts: {}
-  name: 14,47,53,61,68|CA-158.51.121.36-2777
+  name: 14,47,53,68|CA-158.51.121.36-2777
   network: ws
   port: 443
   server: 158.51.121.36
@@ -17,10 +17,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  country: ' CA'
+  country: 🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 14,15,16,17,53,78|CA 1|openitr
+  name: 14,15,16,17,35,53,78|CA 1|openitr
   network: tcp
   port: '22324'
   server: 198.57.27.212
@@ -33,7 +33,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: ' CA'
-  name: 17,44,59,61,77|未知104
+  name: 17,44,59,77|未知104
   password: 7gaTTlW73G
   port: 49602
   server: 51.222.157.179
@@ -44,33 +44,16 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 962
-  h2-opts: {}
-  http-opts: {}
-  name: 19,52|加拿大 210
-  network: ws
-  port: 80
-  server: 162.159.133.13
-  servername: ca3.visaapp.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
-  ws-opts:
-    headers:
-      HOST: ca3.visaapp.top
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
   delay: 1028
   h2-opts: {}
   http-opts: {}
-  name: 19,52|加拿大 211
+  name: 19,49,52|加拿大 211
   network: ws
   port: 80
   server: 162.159.133.15
   servername: ca3.889611.com
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
   ws-opts:
@@ -80,15 +63,35 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
+  delay: 962
+  h2-opts: {}
+  http-opts: {}
+  name: 19,49,52|加拿大 210
+  network: ws
+  port: 80
+  server: 162.159.133.13
+  servername: ca3.visaapp.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
+  ws-opts:
+    headers:
+      HOST: ca3.visaapp.top
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
   delay: 956
   h2-opts: {}
   http-opts: {}
-  name: 19,52|加拿大 213
+  name: 19,49,52|加拿大 213
   network: ws
   port: 80
   server: 162.159.133.16
   servername: ca3.889611.com
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
   ws-opts:
@@ -101,12 +104,13 @@ proxies:
   delay: 1480
   h2-opts: {}
   http-opts: {}
-  name: 19,52|加拿大 212
+  name: 19,49,52|加拿大 212
   network: ws
   port: 80
   server: 162.159.133.14
   servername: ca3.889611.com
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
   ws-opts:
@@ -182,12 +186,26 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '39,42,47,52,61,76,82|رایگان | VMESS | @DailyV2RY | ... #6'
+  country: 🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: 35|🇦 CA_51
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '39,42,47,49,52,82|رایگان | VMESS | @DailyV2RY | ... #5'
   network: ws
   port: '80'
   server: 172.64.229.209
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f1b6bc05-40dd-4180-ca18-b05288fd33bb
@@ -195,63 +213,6 @@ proxies:
     headers:
       Host: ccs2.hostmjj.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 39,47,49,52,61|🏁RELAY-108.162.193.100-1161
-  network: ws
-  port: 8080
-  server: 108.162.193.100
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4f1f8f1e-926c-4edb-a398-8627110973f1
-  ws-opts:
-    headers:
-      Host: do-au.alipay.ovh
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: 23.227.39.47
-  name: 39,76|🔒 VM-GRPC-TLS 🇨🇦 CA-23.227.39....
-  network: grpc
-  port: '2083'
-  server: 23.227.39.47
-  servername: behtarinfr.turkalphapro.ir
-  tls: true
-  type: vmess
-  uuid: c24f822f-8233-4996-9183-8caad5a3d19e
-- alterId: 0
-  cipher: auto
-  name: '39|CA🇨🇦 #5'
-  network: ws
-  port: 2053
-  server: 104.21.80.53
-  servername: qin20.rong1104.uk
-  tls: true
-  type: vmess
-  uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c
-  ws-opts:
-    headers:
-      Host: qin20.rong1104.uk
-    path: /qin20
-- alterId: 0
-  cipher: auto
-  name: 39,44,47,53,61|🏁RELAY-104.21.15.212-0137
-  network: ws
-  port: 443
-  server: 104.21.15.212
-  servername: glweidf.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
 - cipher: aes-256-cfb
   name: 44|🇨🇦 CA 1 → tg@nicevpn123
   password: amazonskr05
@@ -353,7 +314,7 @@ proxies:
     path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
 - alterId: 0
   cipher: auto
-  name: 44,47,61,68,78|CA 3|openitr
+  name: 44,47,68,78|CA 3|openitr
   network: ws
   port: '50613'
   server: 108.181.200.220
@@ -679,7 +640,7 @@ proxies:
   ws-opts:
     path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252F%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252CTurk'
 - cipher: aes-256-gcm
-  name: 44,61|🇺🇸US-142.202.48.99-2428
+  name: 44|🇨🇦 CA 49 → tg@nicevpn123
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 142.202.48.99
@@ -763,7 +724,7 @@ proxies:
   ws-opts:
     path: /ray
 - cipher: aes-256-gcm
-  name: 44,61|🇺🇸US-142.202.48.99-2411
+  name: 44|🇨🇦 CA 6 → tg@nicevpn123
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 142.202.48.99
@@ -809,7 +770,7 @@ proxies:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
 - cipher: aes-256-gcm
-  name: 44,61|🇺🇸US-142.202.48.99-8935
+  name: 44|🇨🇦 CA 64 → tg@nicevpn123
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 142.202.48.99
@@ -1000,7 +961,7 @@ proxies:
   ws-opts:
     path: /ray
 - cipher: aes-256-gcm
-  name: 44,61|🇨CA-198.57.27.218-4496
+  name: 44|🇨🇦 CA 82 → tg@nicevpn123
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 198.57.27.218
@@ -1098,25 +1059,12 @@ proxies:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
 - cipher: aes-256-gcm
-  name: 44,61|🇺🇸US-142.202.48.43-2664
+  name: 44|🇨🇦 CA 90 → tg@nicevpn123
   password: faBAoD54k87UJG7
   port: 2376
   server: 142.202.48.43
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 45|>🇨🇦 CA|Hs|0404|TG@FProxies|
-  network: ws
-  port: '443'
-  server: naomir.cfd
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: naomir.cfd
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 45,78|CA 6|openitr
@@ -1132,7 +1080,7 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: '45|>🇨🇦 CA|Hs|0404|TG@FProxies| #1'
+  name: 45|>🇨🇦 CA|Hs|0404|TG@FProxies|
   network: ws
   port: '443'
   server: novia.makeup
@@ -1142,6 +1090,19 @@ proxies:
   ws-opts:
     headers:
       Host: novia.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '45|>🇨🇦 CA|Hs|0404|TG@FProxies| #1'
+  network: ws
+  port: '443'
+  server: naomir.cfd
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: naomir.cfd
     path: /linkvws
 - cipher: aes-256-gcm
   name: 48|🇨🇦CA-134.195.196.51-063_1@63
@@ -1234,11 +1195,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 48,61|🏁RELAY-172.67.145.166-1457
+  name: 48|加拿大 010_2@46
   network: ws
   port: 443
   server: 172.67.145.166
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -1248,11 +1209,11 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 48,61|🏁RELAY-172.67.135.55-1469
+  name: 48|加拿大 011_2@50
   network: ws
   port: 443
   server: 172.67.135.55
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -1262,11 +1223,11 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 48,61|🏁RELAY-162.159.135.42-6935
+  name: 48|加拿大 012_2@53
   network: ws
   port: 443
   server: 162.159.135.42
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -1509,11 +1470,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.106-0992
+  name: 49,52|加拿大 001
   network: ws
   port: 2095
-  server: 104.19.45.106
-  skip-cert-verify: false
+  server: 104.19.45.235
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -1523,11 +1484,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.202-0993
+  name: 49,52|加拿大 009
   network: ws
   port: 2095
-  server: 104.19.45.202
-  skip-cert-verify: false
+  server: 104.19.45.56
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -1537,25 +1498,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.222-0996
-  network: ws
-  port: 2095
-  server: 104.19.45.222
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.117-0998
+  name: 49,52|加拿大 010
   network: ws
   port: 2095
   server: 104.19.45.117
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -1565,11 +1512,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.48-0999
+  name: 49,52|加拿大 011
   network: ws
   port: 2095
   server: 104.19.45.48
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -1579,11 +1526,25 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.7-1000
+  name: 49,52|加拿大 012
   network: ws
   port: 2095
   server: 104.19.45.7
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 49,52|加拿大 013
+  network: ws
+  port: 2095
+  server: 104.19.45.14
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -1597,16 +1558,18 @@ proxies:
   delay: 2831
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-172.67.199.0-1003
+  name: 49,52|加拿大 014
   network: ws
   port: 8080
   server: 172.67.199.0
   servername: oiictw.yydsii.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
     path: /
 - alterId: 0
   cipher: auto
@@ -1614,24 +1577,26 @@ proxies:
   delay: 1268
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-104.16.58.159-1004
+  name: 49,52|加拿大 015
   network: ws
   port: 8080
   server: 104.16.58.159
   servername: oiictw.yydsii.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.165-1006
+  name: 49,52|加拿大 017
   network: ws
   port: 2095
   server: 104.19.45.165
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -1641,11 +1606,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.137-1007
+  name: 49,52|加拿大 018
   network: ws
   port: 2095
   server: 104.19.45.137
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -1658,12 +1623,12 @@ proxies:
   delay: 2195
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61,78|US 68|openitr
+  name: 49,52,78|US 68|openitr
   network: ws
   port: '8080'
   server: 172.67.199.59
   servername: oiictw.yydsii.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
@@ -1673,305 +1638,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.233-1009
-  network: ws
-  port: 80
-  server: 104.19.43.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.115-1010
-  network: ws
-  port: 80
-  server: 104.19.43.115
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.16-1011
-  network: ws
-  port: 80
-  server: 104.19.43.16
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.243-1012
-  network: ws
-  port: 80
-  server: 104.19.43.243
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.213-1013
-  network: ws
-  port: 80
-  server: 104.19.43.213
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.205-1014
-  network: ws
-  port: 80
-  server: 104.19.43.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.99-1015
-  network: ws
-  port: 80
-  server: 104.19.43.99
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.107-1017
-  network: ws
-  port: 80
-  server: 104.19.43.107
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.173-1018
-  network: ws
-  port: 80
-  server: 104.19.43.173
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.174-1019
-  network: ws
-  port: 80
-  server: 104.19.43.174
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.74-1020
-  network: ws
-  port: 80
-  server: 104.19.43.74
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.0-1021
-  network: ws
-  port: 80
-  server: 104.19.43.0
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.214-1022
-  network: ws
-  port: 80
-  server: 104.19.43.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|RELAY-104.19.43.244-1024
-  network: ws
-  port: 80
-  server: 104.19.43.244
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,58,61|🏁RELAY-104.19.43.188-0434
-  network: ws
-  port: 80
-  server: 104.19.43.188
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.172-1026
-  network: ws
-  port: 80
-  server: 104.19.43.172
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,58,61|🏁RELAY-104.19.43.122-0464
-  network: ws
-  port: 80
-  server: 104.19.43.122
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.100-1028
-  network: ws
-  port: 80
-  server: 104.19.43.100
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.237-1029
-  network: ws
-  port: 80
-  server: 104.19.43.237
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.161-1030
-  network: ws
-  port: 80
-  server: 104.19.43.161
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.20-1031
-  network: ws
-  port: 80
-  server: 104.19.43.20
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.60-1032
-  network: ws
-  port: 80
-  server: 104.19.43.60
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.138-1033
-  network: ws
-  port: 80
-  server: 104.19.43.138
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.172.136-1034
+  name: 49,52|加拿大 021
   network: ws
   port: 8080
   server: 104.19.172.136
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
@@ -1981,268 +1652,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,58,61|🏁RELAY-104.19.43.103-0423
-  network: ws
-  port: 80
-  server: 104.19.43.103
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.231-1036
-  network: ws
-  port: 80
-  server: 104.19.43.231
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.197-1037
-  network: ws
-  port: 80
-  server: 104.19.43.197
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.220-1038
-  network: ws
-  port: 80
-  server: 104.19.43.220
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.97-1039
-  network: ws
-  port: 80
-  server: 104.19.43.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.66-1041
-  network: ws
-  port: 80
-  server: 104.19.43.66
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.93-1042
-  network: ws
-  port: 80
-  server: 104.19.43.93
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,58,61|RELAY-104.19.43.61-0450
-  network: ws
-  port: 80
-  server: 104.19.43.61
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.29-1044
-  network: ws
-  port: 80
-  server: 104.19.43.29
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.162-1045
-  network: ws
-  port: 80
-  server: 104.19.43.162
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.170-1046
-  network: ws
-  port: 80
-  server: 104.19.43.170
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.28-1047
-  network: ws
-  port: 80
-  server: 104.19.43.28
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,58,61|🏁RELAY-104.19.43.112-0448
-  network: ws
-  port: 80
-  server: 104.19.43.112
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.240-1049
-  network: ws
-  port: 80
-  server: 104.19.43.240
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.89-1050
-  network: ws
-  port: 80
-  server: 104.19.43.89
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.1-1051
-  network: ws
-  port: 80
-  server: 104.19.43.1
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,58,61|RELAY-104.19.43.163-0440
-  network: ws
-  port: 80
-  server: 104.19.43.163
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.19.43.123-1053
-  network: ws
-  port: 80
-  server: 104.19.43.123
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.155.181-1055
+  name: 49,52|加拿大 022
   network: ws
   port: 2052
   server: 104.20.155.181
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2253,12 +1668,12 @@ proxies:
     path: /dabai.in18115520
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.226.111-1056
+  name: 49,52|加拿大 023
   network: ws
   port: 80
   server: 104.17.226.111
   servername: data-us-1.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2269,12 +1684,12 @@ proxies:
     path: /dabai.in11122617
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.78.90-1057
+  name: 49,52|加拿大 024
   network: ws
   port: 8080
   server: 104.19.78.90
   servername: data-us-2.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2285,12 +1700,12 @@ proxies:
     path: /dabai.in907819
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.182.27-1058
+  name: 49,52|加拿大 025
   network: ws
   port: 80
   server: 104.20.182.27
   servername: data-us-1.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2301,42 +1716,12 @@ proxies:
     path: /dabai.in2718220
 - alterId: 0
   cipher: auto
-  name: 49,58,61|🏁RELAY-104.19.43.26-0419
-  network: ws
-  port: 80
-  server: 104.19.43.26
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,58,61|🏁RELAY-104.19.43.210-0465
-  network: ws
-  port: 80
-  server: 104.19.43.210
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: osaka.xlb8.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.21.121-1061
+  name: 49,52|加拿大 026
   network: ws
   port: 80
   server: 104.17.21.121
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2347,12 +1732,12 @@ proxies:
     path: /dabai.in1212117
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.16.20.185-1062
+  name: 49,52|加拿大 027
   network: ws
   port: 8080
   server: 104.16.20.185
   servername: data-us-1.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2363,12 +1748,12 @@ proxies:
     path: /dabai.in1852016
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.99.6-1063
+  name: 49,52|加拿大 028
   network: ws
   port: 8080
   server: 104.20.99.6
   servername: data-us-2.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2379,12 +1764,12 @@ proxies:
     path: /dabai.in69920
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.248.137-1064
+  name: 49,52|加拿大 029
   network: ws
   port: 2095
   server: 104.19.248.137
   servername: data-us-2.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2395,12 +1780,12 @@ proxies:
     path: /dabai.in13724819
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.83.225-1065
+  name: 49,52|加拿大 030
   network: ws
   port: 8080
   server: 104.19.83.225
   servername: data-us-1.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2411,12 +1796,12 @@ proxies:
     path: /dabai.in2258319
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.217.127-1066
+  name: 49,52|加拿大 031
   network: ws
   port: 2052
   server: 104.17.217.127
   servername: data-us-1.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2427,12 +1812,12 @@ proxies:
     path: /dabai.in12721717
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.142.173-1067
+  name: 49,52|加拿大 032
   network: ws
   port: 2052
   server: 104.17.142.173
   servername: data-us-2.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2443,12 +1828,12 @@ proxies:
     path: /dabai.in17314217
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.201.56-1068
+  name: 49,52|加拿大 033
   network: ws
   port: 2095
   server: 104.17.201.56
   servername: data-us-2.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2459,12 +1844,12 @@ proxies:
     path: /dabai.in5620117
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.182.43-1069
+  name: 49,52|加拿大 034
   network: ws
   port: 2086
   server: 104.20.182.43
   servername: data-us-1.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2475,27 +1860,12 @@ proxies:
     path: /dabai.in4318220
 - alterId: 0
   cipher: auto
-  name: 49,61,78|US 62|openitr
-  network: ws
-  port: '80'
-  server: 172.67.132.209
-  servername: lv1-vmess.sshmax.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7e85049a-2b44-4621-991f-1e10e2210bc9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.131.240-1072
+  name: 49,52|加拿大 036
   network: ws
   port: 2086
   server: 104.20.131.240
   servername: data-us-3.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2506,12 +1876,12 @@ proxies:
     path: /dabai.in24013120
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.37.182-1073
+  name: 49,52|加拿大 037
   network: ws
   port: 8880
   server: 104.17.37.182
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2522,12 +1892,12 @@ proxies:
     path: /dabai.in1823717
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.16.181.218-1074
+  name: 49,52|加拿大 038
   network: ws
   port: 2082
   server: 104.16.181.218
   servername: data-us-3.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2538,12 +1908,12 @@ proxies:
     path: /dabai.in21818116
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.18.216.123-1075
+  name: 49,52|加拿大 039
   network: ws
   port: 8880
   server: 104.18.216.123
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2554,12 +1924,12 @@ proxies:
     path: /dabai.in12321618
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.18.179.96-1076
+  name: 49,52|加拿大 040
   network: ws
   port: 80
   server: 104.18.179.96
   servername: data-us-1.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2570,12 +1940,12 @@ proxies:
     path: /dabai.in9617918
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.231.211-1077
+  name: 49,52|加拿大 041
   network: ws
   port: 2086
   server: 104.19.231.211
   servername: data-us-2.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2586,12 +1956,12 @@ proxies:
     path: /dabai.in21123119
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.221.189-1078
+  name: 49,52|加拿大 042
   network: ws
   port: 80
   server: 104.17.221.189
   servername: data-us-1.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2602,41 +1972,12 @@ proxies:
     path: /dabai.in18922117
 - alterId: 0
   cipher: auto
-  name: 49,58,61|🏁RELAY-104.18.242.177-0424
-  network: ws
-  port: 2052
-  server: 104.18.242.177
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2eec45db-dfcd-43d6-8514-b141aff651be
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.73.173-1081
-  network: ws
-  port: 8880
-  server: cdn.bethebest.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1ca13961-3a5b-42da-b08e-5c62a01fa640
-  ws-opts:
-    headers:
-      Host: us.bethebest.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.12.33-1082
+  name: 49,52|加拿大 043
   network: ws
   port: 2082
   server: 104.19.12.33
   servername: cache-us-1.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2647,12 +1988,12 @@ proxies:
     path: /dabai.in331219
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.186.64-1083
+  name: 49,52|加拿大 044
   network: ws
   port: 80
   server: 104.19.186.64
   servername: data-us-3.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2663,12 +2004,12 @@ proxies:
     path: /dabai.in6418619
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.18.230.161-1084
+  name: 49,52|加拿大 045
   network: ws
   port: 2082
   server: 104.18.230.161
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2679,12 +2020,12 @@ proxies:
     path: /dabai.in16123018
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.77.152-1085
+  name: 49,52|加拿大 046
   network: ws
   port: 2095
   server: 104.17.77.152
   servername: data-us-3.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2695,12 +2036,12 @@ proxies:
     path: /dabai.in1527717
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.73.138-1086
+  name: 49,52|加拿大 047
   network: ws
   port: 2052
   server: 104.19.73.138
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2711,12 +2052,12 @@ proxies:
     path: /dabai.in1387319
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.224.66-1087
+  name: 49,52|加拿大 048
   network: ws
   port: 2082
   server: 104.19.224.66
   servername: data-us-1.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2727,12 +2068,12 @@ proxies:
     path: /dabai.in6622419
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.12.36-1088
+  name: 49,52|加拿大 049
   network: ws
   port: 8880
   server: 104.17.12.36
   servername: data-us-2.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2743,12 +2084,12 @@ proxies:
     path: /dabai.in361217
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.171.95-1089
+  name: 49,52|加拿大 050
   network: ws
   port: 8880
   server: 104.20.171.95
   servername: data-us-2.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2759,12 +2100,12 @@ proxies:
     path: /dabai.in9517120
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.18.113.240-1090
+  name: 49,52|加拿大 051
   network: ws
   port: 2082
   server: 104.18.113.240
   servername: data-us-1.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2779,16 +2120,18 @@ proxies:
   delay: 2571
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-172.67.171.89-1092
+  name: 49,52|加拿大 053
   network: ws
   port: 80
   server: 172.67.171.89
   servername: Dk2-vmess.sshmax.xyz.
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: eeb5cc8b-19e8-4b33-9193-1c29cda6dd2c
   ws-opts:
+    headers:
+      HOST: Dk2-vmess.sshmax.xyz.
     path: /vmess
 - alterId: 0
   cipher: auto
@@ -2796,16 +2139,18 @@ proxies:
   delay: 979
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-104.21.25.39-1094
+  name: 49,52|加拿大 054
   network: ws
   port: 80
   server: 104.21.25.39
   servername: De2-vmess.sshmax.xyz.
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6a748ac2-5eaa-4ba9-bd49-a5dc4786e2f5
   ws-opts:
+    headers:
+      HOST: De2-vmess.sshmax.xyz.
     path: /vmess
 - alterId: 0
   cipher: auto
@@ -2813,16 +2158,18 @@ proxies:
   delay: 1143
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-104.21.25.96-1095
+  name: 49,52|加拿大 055
   network: ws
   port: 443
   server: 104.21.25.96
   servername: be1-vmess.sshmax.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 9805b4d2-0cdf-4440-87cc-cdb974da99e5
   ws-opts:
+    headers:
+      HOST: be1-vmess.sshmax.xyz
     path: /vmess
 - alterId: 0
   cipher: auto
@@ -2830,16 +2177,18 @@ proxies:
   delay: 874
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-172.67.171.48-1097
+  name: 49,52|加拿大 056
   network: ws
   port: 80
   server: 172.67.171.48
   servername: Fr2-vmess.sshmax.xyz.
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a17b5497-35a2-4292-bc59-90e6e596c64b
   ws-opts:
+    headers:
+      HOST: Fr2-vmess.sshmax.xyz.
     path: /vmess
 - alterId: 0
   cipher: auto
@@ -2847,16 +2196,18 @@ proxies:
   delay: 2922
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-172.67.171.96-1098
+  name: 49,52|加拿大 057
   network: ws
   port: 80
   server: 172.67.171.96
   servername: Pl2-vmess.sshmax.xyz.
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 56e76d5a-374d-46f8-9147-3a4de91f8de5
   ws-opts:
+    headers:
+      HOST: Pl2-vmess.sshmax.xyz.
     path: /vmess
 - alterId: 0
   cipher: auto
@@ -2864,25 +2215,46 @@ proxies:
   delay: 1448
   h2-opts: {}
   http-opts: {}
-  name: 49,52,61|🏁RELAY-172.67.171.44-1099
+  name: 49,52|加拿大 058
   network: ws
   port: 443
   server: 172.67.171.44
   servername: pl2-vmess.sshmax.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 56e76d5a-374d-46f8-9147-3a4de91f8de5
   ws-opts:
+    headers:
+      HOST: pl2-vmess.sshmax.xyz
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.122.108-1113
+  country: 🏁ZZ
+  delay: 1717
+  h2-opts: {}
+  http-opts: {}
+  name: 49,52|加拿大 061
+  network: ws
+  port: 2086
+  server: 104.16.60.8
+  servername: worker-lingering-fog-c021.gesofog870.workers.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      HOST: worker-lingering-fog-c021.gesofog870.workers.dev
+    path: /linde06.indiavideo.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 49,52|加拿大 063
   network: ws
   port: 2095
   server: 104.19.122.108
   servername: cache-us-1.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2893,12 +2265,12 @@ proxies:
     path: /dabai.in10812219
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.16.113.48-1114
+  name: 49,52|加拿大 064
   network: ws
   port: 8080
   server: 104.16.113.48
   servername: data-us-3.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2909,12 +2281,12 @@ proxies:
     path: /dabai.in4811316
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.38.245-1115
+  name: 49,52|加拿大 065
   network: ws
   port: 8080
   server: 104.20.38.245
   servername: data-us-3.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2925,12 +2297,12 @@ proxies:
     path: /dabai.in2453820
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.72.209-1116
+  name: 49,52|加拿大 066
   network: ws
   port: 2086
   server: 104.19.72.209
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2941,12 +2313,12 @@ proxies:
     path: /dabai.in2097219
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.66.143-1117
+  name: 49,52|加拿大 067
   network: ws
   port: 80
   server: 104.17.66.143
   servername: data-us-1.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2957,12 +2329,12 @@ proxies:
     path: /dabai.in1436617
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.104.152-1118
+  name: 49,52|加拿大 068
   network: ws
   port: 2082
   server: 104.19.104.152
   servername: data-us-2.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2973,12 +2345,12 @@ proxies:
     path: /dabai.in15210419
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.84.4-1119
+  name: 49,52|加拿大 069
   network: ws
   port: 2052
   server: 104.19.84.4
   servername: data-us-2.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2989,12 +2361,12 @@ proxies:
     path: /dabai.in48419
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.18.93.151-1120
+  name: 49,52|加拿大 070
   network: ws
   port: 8880
   server: 104.18.93.151
   servername: data-us-1.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3005,12 +2377,12 @@ proxies:
     path: /dabai.in1519318
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.163.59-1121
+  name: 49,52|加拿大 071
   network: ws
   port: 2095
   server: 104.20.163.59
   servername: cache-us-4.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3021,11 +2393,11 @@ proxies:
     path: /dabai.in5916320
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.64.36.208-1124
+  name: 49,52|加拿大 074
   network: ws
   port: 2095
   server: 172.64.36.208
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3036,12 +2408,12 @@ proxies:
     path: /dabai.in172.64.36.208
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.145.85-1125
+  name: 49,52|加拿大 075
   network: ws
   port: 2083
   server: 104.20.145.85
   servername: 100-100-17-304.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3052,11 +2424,11 @@ proxies:
     path: /dabai.in104.20.145.85
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.127.99-1126
+  name: 49,52|加拿大 076
   network: ws
   port: 2082
   server: 172.67.127.99
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3067,12 +2439,12 @@ proxies:
     path: /dabai.in172.67.127.99
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.75.33-1127
+  name: 49,52|加拿大 077
   network: ws
   port: 2087
   server: 172.67.75.33
   servername: 100-100-17-411.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3083,12 +2455,12 @@ proxies:
     path: /dabai.in172.67.75.33
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.193.234-1128
+  name: 49,52|加拿大 078
   network: ws
   port: 2083
   server: 104.20.193.234
   servername: 100-100-17-241.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3099,11 +2471,11 @@ proxies:
     path: /dabai.in104.20.193.234
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.82.121-1129
+  name: 49,52|加拿大 079
   network: ws
   port: 80
   server: 172.67.82.121
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3114,11 +2486,11 @@ proxies:
     path: /dabai.in172.67.82.121
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.222.82-1130
+  name: 49,52|加拿大 080
   network: ws
   port: 8880
   server: 104.20.222.82
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3129,12 +2501,12 @@ proxies:
     path: /dabai.in104.20.222.82
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.216.194-1131
+  name: 49,52|加拿大 081
   network: ws
   port: 2083
   server: 104.24.216.194
   servername: 100-100-17-441.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3145,12 +2517,12 @@ proxies:
     path: /dabai.in104.24.216.194
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.68.36-1132
+  name: 49,52|加拿大 082
   network: ws
   port: 2053
   server: 172.67.68.36
   servername: 100-100-17-493.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3161,11 +2533,11 @@ proxies:
     path: /dabai.in172.67.68.36
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.54.249-1134
+  name: 49,52|加拿大 083
   network: ws
   port: 2082
   server: 104.17.54.249
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3176,12 +2548,12 @@ proxies:
     path: /dabai.in104.17.54.249
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.221.93-1135
+  name: 49,52|加拿大 084
   network: ws
   port: 2083
   server: 104.17.221.93
   servername: 100-100-17-103.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3192,11 +2564,11 @@ proxies:
     path: /dabai.in104.17.221.93
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.163.8-1136
+  name: 49,52|加拿大 085
   network: ws
   port: 2095
   server: 104.20.163.8
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3207,11 +2579,11 @@ proxies:
     path: /dabai.in104.20.163.8
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.112.73-1137
+  name: 49,52|加拿大 086
   network: ws
   port: 8880
   server: 172.67.112.73
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3222,11 +2594,11 @@ proxies:
     path: /dabai.in172.67.112.73
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.59.73-1143
+  name: 49,52|加拿大 089
   network: ws
   port: 80
   server: 104.20.59.73
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3237,11 +2609,11 @@ proxies:
     path: /dabai.in104.20.59.73
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.129.206-1144
+  name: 49,52|加拿大 090
   network: ws
   port: 80
   server: 104.20.129.206
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3252,12 +2624,12 @@ proxies:
     path: /dabai.in104.20.129.206
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.125.67-1145
+  name: 49,52|加拿大 091
   network: ws
   port: 2053
   server: 172.67.125.67
   servername: 100-100-17-107.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3268,12 +2640,12 @@ proxies:
     path: /dabai.in172.67.125.67
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.222.119-1146
+  name: 49,52|加拿大 092
   network: ws
   port: 2083
   server: 104.24.222.119
   servername: 100-100-17-417.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3284,11 +2656,11 @@ proxies:
     path: /dabai.in104.24.222.119
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.237.78-1147
+  name: 49,52|加拿大 093
   network: ws
   port: 2086
   server: 104.17.237.78
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3299,12 +2671,12 @@ proxies:
     path: /dabai.in104.17.237.78
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.110.234-1148
+  name: 49,52|加拿大 094
   network: ws
   port: 2096
   server: 172.67.110.234
   servername: 100-100-17-331.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3315,12 +2687,12 @@ proxies:
     path: /dabai.in172.67.110.234
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.165.5-1149
+  name: 49,52|加拿大 095
   network: ws
   port: 2087
   server: 104.24.165.5
   servername: 100-100-17-334.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3331,12 +2703,12 @@ proxies:
     path: /dabai.in104.24.165.5
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.0.104-1150
+  name: 49,52|加拿大 096
   network: ws
   port: 2053
   server: 172.67.0.104
   servername: 100-100-17-352.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3347,11 +2719,11 @@ proxies:
     path: /dabai.in172.67.0.104
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.12.80-1152
+  name: 49,52|加拿大 097
   network: ws
   port: 80
   server: 104.24.12.80
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3362,11 +2734,11 @@ proxies:
     path: /dabai.in104.24.12.80
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.25.178.136-1153
+  name: 49,52|加拿大 098
   network: ws
   port: 2086
   server: 104.25.178.136
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3377,11 +2749,11 @@ proxies:
     path: /dabai.in104.25.178.136
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.8.49-1154
+  name: 49,52|加拿大 099
   network: ws
   port: 2086
   server: 172.67.8.49
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3392,11 +2764,11 @@ proxies:
     path: /dabai.in172.67.8.49
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.225.107-1155
+  name: 49,52|加拿大 100
   network: ws
   port: 8880
   server: 104.20.225.107
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3407,12 +2779,12 @@ proxies:
     path: /dabai.in104.20.225.107
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.244.93-1156
+  name: 49,52|加拿大 101
   network: ws
   port: 2087
   server: 104.19.244.93
   servername: 100-100-17-330.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3423,11 +2795,11 @@ proxies:
     path: /dabai.in104.19.244.93
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.232.39-1157
+  name: 49,52|加拿大 102
   network: ws
   port: 8080
   server: 104.19.232.39
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3438,11 +2810,11 @@ proxies:
     path: /dabai.in104.19.232.39
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.48.55-1158
+  name: 49,52|加拿大 103
   network: ws
   port: 2095
   server: 172.67.48.55
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3453,12 +2825,12 @@ proxies:
     path: /dabai.in172.67.48.55
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.64.49.222-1159
+  name: 49,52|加拿大 104
   network: ws
   port: 2053
   server: 172.64.49.222
   servername: 100-100-17-288.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3469,12 +2841,12 @@ proxies:
     path: /dabai.in172.64.49.222
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.190.58-1160
+  name: 49,52|加拿大 105
   network: ws
   port: 2087
   server: 104.24.190.58
   servername: 100-100-17-90.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3485,11 +2857,25 @@ proxies:
     path: /dabai.in104.24.190.58
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.31.207-1162
+  name: 49,52|加拿大 106
+  network: ws
+  port: 8080
+  server: 108.162.193.100
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4f1f8f1e-926c-4edb-a398-8627110973f1
+  ws-opts:
+    headers:
+      Host: do-au.alipay.ovh
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 49,52|加拿大 107
   network: ws
   port: 2082
   server: 172.67.31.207
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3500,11 +2886,11 @@ proxies:
     path: /dabai.in172.67.31.207
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.20.29.196-1163
+  name: 49,52|加拿大 108
   network: ws
   port: 8880
   server: 104.20.29.196
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3515,11 +2901,11 @@ proxies:
     path: /dabai.in104.20.29.196
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.27.225-1164
+  name: 49,52|加拿大 109
   network: ws
   port: 2095
   server: 104.24.27.225
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3530,12 +2916,12 @@ proxies:
     path: /dabai.in104.24.27.225
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.49.93-1166
+  name: 49,52|加拿大 110
   network: ws
   port: 2096
   server: 172.67.49.93
   servername: 100-100-17-416.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3546,11 +2932,11 @@ proxies:
     path: /dabai.in172.67.49.93
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.246.1-1167
+  name: 49,52|加拿大 111
   network: ws
   port: 80
   server: 104.24.246.1
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3561,12 +2947,12 @@ proxies:
     path: /dabai.in104.24.246.1
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.25.217.113-1168
+  name: 49,52|加拿大 112
   network: ws
   port: 2053
   server: 104.25.217.113
   servername: 100-100-17-424.db-link02.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3577,11 +2963,10 @@ proxies:
     path: /dabai.in104.25.217.113
 - alterId: 0
   cipher: auto
-  name: 49,61|🏁RELAY-172.64.80.1-1169
+  name: 49|🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯
   network: ws
-  port: 80
+  port: '80'
   server: jd3.shabijichang.com
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -3591,12 +2976,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.93.93-1170
+  name: 49,52|加拿大 114
   network: ws
   port: 2087
   server: 104.17.93.93
   servername: 100-100-17-464.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3607,12 +2992,12 @@ proxies:
     path: /dabai.in104.17.93.93
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.25.129.206-1171
+  name: 49,52|加拿大 115
   network: ws
   port: 443
   server: 104.25.129.206
   servername: 100-100-17-428.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3623,11 +3008,11 @@ proxies:
     path: /dabai.in104.25.129.206
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.25.111.162-1172
+  name: 49,52|加拿大 116
   network: ws
   port: 2052
   server: 104.25.111.162
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3638,12 +3023,12 @@ proxies:
     path: /dabai.in104.25.111.162
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.148.74-1174
+  name: 49,52|加拿大 117
   network: ws
   port: 443
   server: 104.24.148.74
   servername: 100-100-17-110.db-link01.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3654,12 +3039,12 @@ proxies:
     path: /dabai.in104.24.148.74
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.25.51.110-1175
+  name: 49,52|加拿大 118
   network: ws
   port: 2083
   server: 104.25.51.110
   servername: 100-100-17-469.cn-db.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -3670,586 +3055,11 @@ proxies:
     path: /dabai.in104.25.51.110
 - alterId: 0
   cipher: auto
-  name: 49,61|🏁RELAY-172.67.126.114-1176
-  network: ws
-  port: 2096
-  server: 172.67.126.114
-  servername: 100-100-17-321.db-link01.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-321.db-link01.top
-    path: /dabai.in172.67.126.114
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.24.220.79-1177
-  network: ws
-  port: 2087
-  server: 104.24.220.79
-  servername: 100-100-17-235.db-link01.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-235.db-link01.top
-    path: /dabai.in104.24.220.79
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.39.95-1179
-  network: ws
-  port: 2087
-  server: 104.21.39.95
-  servername: 100-100-17-273.db-link01.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-273.db-link01.top
-    path: /dabai.in104.21.39.95
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.64.38.130-1180
-  network: ws
-  port: 8880
-  server: 172.64.38.130
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-225.db-link01.top
-    path: /dabai.in172.64.38.130
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.24.246.180-1181
-  network: ws
-  port: 2082
-  server: 104.24.246.180
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-103.cn-db.top
-    path: /dabai.in104.24.246.180
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.20.124.56-1182
-  network: ws
-  port: 8880
-  server: 104.20.124.56
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-42.cn-db.top
-    path: /dabai.in104.20.124.56
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.25.73.14-1183
-  network: ws
-  port: 2052
-  server: 104.25.73.14
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-335.cn-db.top
-    path: /dabai.in104.25.73.14
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.30.236-1188
-  network: ws
-  port: 8880
-  server: 172.67.30.236
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-194.cn-db.top
-    path: /dabai.in172.67.30.236
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.112.85-1190
-  network: ws
-  port: 443
-  server: 172.67.112.85
-  servername: 100-100-17-47.cn-db.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-47.cn-db.top
-    path: /dabai.in172.67.112.85
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.64.37.179-1192
-  network: ws
-  port: 80
-  server: 172.64.37.179
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-20.db-link01.top
-    path: /dabai.in172.64.37.179
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.8.185-1193
-  network: ws
-  port: 2052
-  server: 172.67.8.185
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-34.db-link01.top
-    path: /dabai.in172.67.8.185
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.20.246.230-1194
-  network: ws
-  port: 2096
-  server: 104.20.246.230
-  servername: 100-100-17-308.cn-db.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-308.cn-db.top
-    path: /dabai.in104.20.246.230
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1195
-  network: ws
-  port: 2096
-  server: hk5vm.fuckvps.top
-  servername: hk5vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk5vm.fuckvps.top
-    path: /hk5vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1196
-  network: ws
-  port: 2096
-  server: hk6vm.fuckvps.top
-  servername: hk6vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk6vm.fuckvps.top
-    path: /hk6vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1197
-  network: ws
-  port: 2096
-  server: hk2vm.fuckvps.top
-  servername: hk2vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk2vm.fuckvps.top
-    path: /hk2vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1198
-  network: ws
-  port: 2096
-  server: hk3vm.fuckvps.top
-  servername: hk3vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk3vm.fuckvps.top
-    path: /hk3vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1199
-  network: ws
-  port: 2096
-  server: hk8vm.fuckvps.top
-  servername: hk8vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk8vm.fuckvps.top
-    path: /hk8vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1200
-  network: ws
-  port: 2096
-  server: hk7vm.fuckvps.top
-  servername: hk7vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk7vm.fuckvps.top
-    path: /hk7vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1202
-  network: ws
-  port: 2096
-  server: hk1vm.fuckvps.top
-  servername: hk1vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk1vm.fuckvps.top
-    path: /hk1vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1203
-  network: ws
-  port: 2096
-  server: hk4vm.fuckvps.top
-  servername: hk4vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: hk4vm.fuckvps.top
-    path: /hk4vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1205
-  network: ws
-  port: 2096
-  server: sg2vm.fuckvps.top
-  servername: sg2vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: sg2vm.fuckvps.top
-    path: /sg2vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1206
-  network: ws
-  port: 2096
-  server: sg4vm.fuckvps.top
-  servername: sg4vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: sg4vm.fuckvps.top
-    path: /sg4vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1207
-  network: ws
-  port: 2096
-  server: sg1vm.fuckvps.top
-  servername: sg1vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: sg1vm.fuckvps.top
-    path: /sg1vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1209
-  network: ws
-  port: 2096
-  server: sg3vm.fuckvps.top
-  servername: sg3vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: sg3vm.fuckvps.top
-    path: /sg3vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1210
-  network: ws
-  port: 2096
-  server: sg5vm.fuckvps.top
-  servername: sg5vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: sg5vm.fuckvps.top
-    path: /sg5vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1211
-  network: ws
-  port: 2096
-  server: jp3vm.fuckvps.top
-  servername: jp3vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: jp3vm.fuckvps.top
-    path: /jp3vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1212
-  network: ws
-  port: 2096
-  server: jp5vm.fuckvps.top
-  servername: jp5vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: jp5vm.fuckvps.top
-    path: /jp5vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1213
-  network: ws
-  port: 2096
-  server: jp4vm.fuckvps.top
-  servername: jp4vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: jp4vm.fuckvps.top
-    path: /jp4vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1216
-  network: ws
-  port: 2096
-  server: jp1vm.fuckvps.top
-  servername: jp1vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: jp1vm.fuckvps.top
-    path: /jp1vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1217
-  network: ws
-  port: 2096
-  server: us4vm.fuckvps.top
-  servername: us4vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: us4vm.fuckvps.top
-    path: /us4vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1218
-  network: ws
-  port: 2096
-  server: us2vm.fuckvps.top
-  servername: su2vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: us2vm.fuckvps.top
-    path: /us2vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.21.86.234-1221
-  network: ws
-  port: 2096
-  server: tw1vm.fuckvps.top
-  servername: tw1vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: tw1vm.fuckvps.top
-    path: /tw1vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1222
-  network: ws
-  port: 2096
-  server: kr1vm.fuckvps.top
-  servername: kr1vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: kr1vm.fuckvps.top
-    path: /kr1vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.67.137.155-1223
-  network: ws
-  port: 2096
-  server: kp1vm.fuckvps.top
-  servername: kp1vm.fuckvps.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8cd6315a-d3c9-4377-b4f0-06455876e909
-  ws-opts:
-    headers:
-      Host: kp1vm.fuckvps.top
-    path: /kp1vm
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.16.239.254-1224
-  network: ws
-  port: 8443
-  server: www.okcupid.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 6c08df77-b99e-48e6-829d-2f4d423e7e60
-  ws-opts:
-    headers:
-      Host: yumi.888553.xyz
-    path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.18.72.194-1229
-  network: ws
-  port: 2087
-  server: 104.18.72.194
-  servername: 100-100-17-100.db-link01.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-100.db-link01.top
-    path: /dabai.in104.18.72.194
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-172.64.46.153-1230
-  network: ws
-  port: 2096
-  server: 172.64.46.153
-  servername: 100-100-17-364.db-link02.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-364.db-link02.top
-    path: /dabai.in172.64.46.153
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.24.185.230-1231
-  network: ws
-  port: 2052
-  server: 104.24.185.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-359.cn-db.top
-    path: /dabai.in104.24.185.230
-- alterId: 0
-  cipher: auto
-  name: 49,61|🏁RELAY-104.24.1.222-1232
-  network: ws
-  port: 2086
-  server: 104.24.1.222
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-487.db-link01.top
-    path: /dabai.in104.24.1.222
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|RELAY-104.21.7.162-1240
+  name: 49,52|加拿大 120
   network: ws
   port: 2087
   server: 104.21.7.162
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 520a5f45-d354-42f4-a658-18dbc3754645
@@ -4259,11 +3069,11 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.22.59.107-1241
+  name: 49,52|加拿大 121
   network: ws
   port: 443
   server: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
@@ -4273,11 +3083,11 @@ proxies:
     path: /azumase.ren
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.36.165-1242
+  name: 49,52|加拿大 122
   network: ws
   port: 443
   server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
@@ -4424,11 +3234,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.164.125-1474
+  name: 49,52|加拿大 134
   network: ws
   port: 443
   server: 172.67.164.125
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -4438,11 +3248,11 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.132.15-1499
+  name: 49,52|加拿大 135
   network: ws
   port: 443
   server: 172.67.132.15
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
@@ -4452,30 +3262,17 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 113
-  network: ws
-  port: 80
-  server: jd3.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: jd3.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
   country: 🏁ZZ
   delay: 1785
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 136
+  name: 49,52|加拿大 136
   network: ws
   port: 80
   server: 104.19.173.61
   servername: hk3.889611.com
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
   ws-opts:
@@ -4485,7 +3282,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2205
-  name: 52|加拿大 137
+  name: 49,52|加拿大 137
   network: ws
   port: 2052
   server: 104.19.54.72
@@ -4500,7 +3297,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1769
-  name: 52|加拿大 138
+  name: 49,52|加拿大 138
   network: ws
   port: 8880
   server: 104.19.55.79
@@ -4515,7 +3312,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2162
-  name: 52|加拿大 139
+  name: 49,52|加拿大 139
   network: ws
   port: 2052
   server: 104.19.54.102
@@ -4530,7 +3327,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2637
-  name: 52|加拿大 140
+  name: 49,52|加拿大 140
   network: ws
   port: 8880
   server: 104.19.55.175
@@ -4545,7 +3342,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1517
-  name: 52|加拿大 141
+  name: 49,52|加拿大 141
   network: ws
   port: 8880
   server: 104.19.55.194
@@ -4560,7 +3357,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1634
-  name: 52|加拿大 142
+  name: 49,52|加拿大 142
   network: ws
   port: 8880
   server: 104.19.55.169
@@ -4575,7 +3372,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1777
-  name: 52|加拿大 143
+  name: 49,52|加拿大 143
   network: ws
   port: 8880
   server: 104.19.55.110
@@ -4590,7 +3387,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2796
-  name: 52|加拿大 144
+  name: 49,52|加拿大 144
   network: ws
   port: 2052
   server: 104.19.54.188
@@ -4605,7 +3402,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2302
-  name: 52|加拿大 145
+  name: 49,52|加拿大 145
   network: ws
   port: 8880
   server: 104.19.55.159
@@ -4623,12 +3420,13 @@ proxies:
   delay: 2488
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 146
+  name: 49,52|加拿大 146
   network: ws
   port: 2052
   server: 104.19.54.224
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -4641,12 +3439,13 @@ proxies:
   delay: 1349
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 147
+  name: 49,52|加拿大 147
   network: ws
   port: 8880
   server: 104.19.55.190
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: ca245f69-b4c6-4201-b5fc-a9280e2d4fc3
   ws-opts:
@@ -4659,12 +3458,13 @@ proxies:
   delay: 1235
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 148
+  name: 49,52|加拿大 148
   network: ws
   port: 8880
   server: 104.19.55.145
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: ca245f69-b4c6-4201-b5fc-a9280e2d4fc3
   ws-opts:
@@ -4677,12 +3477,13 @@ proxies:
   delay: 1577
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 149
+  name: 49,52|加拿大 149
   network: ws
   port: 2052
   server: 104.19.54.19
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -4692,7 +3493,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1880
-  name: 52|加拿大 150
+  name: 49,52|加拿大 150
   network: ws
   port: 8880
   server: 104.19.55.165
@@ -4710,12 +3511,13 @@ proxies:
   delay: 2032
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 151
+  name: 49,52|加拿大 151
   network: ws
   port: 2052
   server: 104.19.54.10
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -4728,12 +3530,13 @@ proxies:
   delay: 2045
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 152
+  name: 49,52|加拿大 152
   network: ws
   port: 2052
   server: 104.19.54.16
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -4746,12 +3549,13 @@ proxies:
   delay: 1361
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 153
+  name: 49,52|加拿大 153
   network: ws
   port: 8880
   server: 104.19.55.233
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: ca245f69-b4c6-4201-b5fc-a9280e2d4fc3
   ws-opts:
@@ -4764,12 +3568,13 @@ proxies:
   delay: 1669
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 154
+  name: 49,52|加拿大 154
   network: ws
   port: 2052
   server: 104.19.54.20
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -4782,12 +3587,13 @@ proxies:
   delay: 2677
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 155
+  name: 49,52|加拿大 155
   network: ws
   port: 2052
   server: 104.19.54.164
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -4797,7 +3603,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1705
-  name: 52|加拿大 156
+  name: 49,52|加拿大 156
   network: ws
   port: 2052
   server: 104.19.54.3
@@ -4812,7 +3618,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1234
-  name: 52|加拿大 157
+  name: 49,52|加拿大 157
   network: ws
   port: 2052
   server: 104.19.54.0
@@ -4827,7 +3633,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1900
-  name: 52|加拿大 158
+  name: 49,52|加拿大 158
   network: ws
   port: 2052
   server: 104.19.54.31
@@ -4842,7 +3648,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1663
-  name: 52|加拿大 159
+  name: 49,52|加拿大 159
   network: ws
   port: 8880
   server: 104.19.55.63
@@ -4857,7 +3663,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1503
-  name: 52|加拿大 160
+  name: 49,52|加拿大 160
   network: ws
   port: 8880
   server: 104.19.55.40
@@ -4872,7 +3678,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1356
-  name: 52|加拿大 161
+  name: 49,52|加拿大 161
   network: ws
   port: 2052
   server: 104.19.54.4
@@ -4890,12 +3696,13 @@ proxies:
   delay: 1608
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 162
+  name: 49,52|加拿大 162
   network: ws
   port: 2052
   server: 104.19.54.35
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -4905,7 +3712,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1639
-  name: 52|加拿大 163
+  name: 49,52|加拿大 163
   network: ws
   port: 8880
   server: 104.19.55.61
@@ -4920,7 +3727,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1528
-  name: 52|加拿大 164
+  name: 49,52|加拿大 164
   network: ws
   port: 8880
   server: 104.19.55.59
@@ -4935,7 +3742,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1518
-  name: 52|加拿大 165
+  name: 49,52|加拿大 165
   network: ws
   port: 8880
   server: 104.19.55.46
@@ -4950,7 +3757,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2392
-  name: 52|加拿大 166
+  name: 49,52|加拿大 166
   network: ws
   port: 8880
   server: 104.19.55.158
@@ -4968,12 +3775,13 @@ proxies:
   delay: 2225
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 167
+  name: 49,52|加拿大 167
   network: ws
   port: 8880
   server: 104.19.55.54
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: ca245f69-b4c6-4201-b5fc-a9280e2d4fc3
   ws-opts:
@@ -4986,12 +3794,13 @@ proxies:
   delay: 2180
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 168
+  name: 49,52|加拿大 168
   network: ws
   port: 8880
   server: 104.19.55.76
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: ca245f69-b4c6-4201-b5fc-a9280e2d4fc3
   ws-opts:
@@ -5001,7 +3810,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2119
-  name: 52|加拿大 169
+  name: 49,52|加拿大 169
   network: ws
   port: 8880
   server: 104.19.55.71
@@ -5016,7 +3825,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1612
-  name: 52|加拿大 170
+  name: 49,52|加拿大 170
   network: ws
   port: 2052
   server: 104.19.54.61
@@ -5034,12 +3843,13 @@ proxies:
   delay: 1529
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 171
+  name: 49,52|加拿大 171
   network: ws
   port: 2052
   server: 104.19.54.90
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -5049,7 +3859,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1547
-  name: 52|加拿大 172
+  name: 49,52|加拿大 172
   network: ws
   port: 2052
   server: 104.19.54.82
@@ -5067,12 +3877,13 @@ proxies:
   delay: 1638
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 173
+  name: 49,52|加拿大 173
   network: ws
   port: 8880
   server: 104.19.55.50
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: ca245f69-b4c6-4201-b5fc-a9280e2d4fc3
   ws-opts:
@@ -5082,7 +3893,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1182
-  name: 52|加拿大 174
+  name: 49,52|加拿大 174
   network: ws
   port: 8880
   server: 104.19.55.187
@@ -5097,7 +3908,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2130
-  name: 52|加拿大 175
+  name: 49,52|加拿大 175
   network: ws
   port: 8880
   server: 104.19.55.49
@@ -5112,7 +3923,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2568
-  name: 52|加拿大 176
+  name: 49,52|加拿大 176
   network: ws
   port: 2052
   server: 104.19.54.65
@@ -5130,12 +3941,13 @@ proxies:
   delay: 1568
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 177
+  name: 49,52|加拿大 177
   network: ws
   port: 8880
   server: 104.19.55.43
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: ca245f69-b4c6-4201-b5fc-a9280e2d4fc3
   ws-opts:
@@ -5145,7 +3957,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1398
-  name: 52|加拿大 178
+  name: 49,52|加拿大 178
   network: ws
   port: 8880
   server: 104.19.55.37
@@ -5160,7 +3972,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2042
-  name: 52|加拿大 179
+  name: 49,52|加拿大 179
   network: ws
   port: 2052
   server: 104.19.54.113
@@ -5175,7 +3987,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1708
-  name: 52|加拿大 180
+  name: 49,52|加拿大 180
   network: ws
   port: 2052
   server: 104.19.54.120
@@ -5193,12 +4005,13 @@ proxies:
   delay: 2352
   h2-opts: {}
   http-opts: {}
-  name: 52|加拿大 181
+  name: 49,52|加拿大 181
   network: ws
   port: 2052
   server: 104.19.54.165
   servername: hk2.wish.ml
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
@@ -5208,7 +4021,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1835
-  name: 52|加拿大 182
+  name: 49,52|加拿大 182
   network: ws
   port: 2052
   server: 104.19.54.1
@@ -5223,7 +4036,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2090
-  name: 52|加拿大 183
+  name: 49,52|加拿大 183
   network: ws
   port: 2052
   server: 104.19.54.91
@@ -5238,7 +4051,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2368
-  name: 52|加拿大 184
+  name: 49,52|加拿大 184
   network: ws
   port: 2052
   server: 104.19.54.193
@@ -5253,7 +4066,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1970
-  name: 52|加拿大 185
+  name: 49,52|加拿大 185
   network: ws
   port: 2052
   server: 104.19.54.234
@@ -5268,7 +4081,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1506
-  name: 52|加拿大 186
+  name: 49,52|加拿大 186
   network: ws
   port: 2052
   server: 104.19.54.168
@@ -5283,7 +4096,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1603
-  name: 52|加拿大 187
+  name: 49,52|加拿大 187
   network: ws
   port: 8880
   server: 104.19.55.149
@@ -5298,7 +4111,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1516
-  name: 52|加拿大 188
+  name: 49,52|加拿大 188
   network: ws
   port: 2052
   server: 104.19.54.170
@@ -5313,7 +4126,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1727
-  name: 52|加拿大 189
+  name: 49,52|加拿大 189
   network: ws
   port: 2052
   server: 104.19.54.187
@@ -5328,7 +4141,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1741
-  name: 52|加拿大 190
+  name: 49,52|加拿大 190
   network: ws
   port: 2052
   server: 104.19.54.98
@@ -5343,7 +4156,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2803
-  name: 52|加拿大 191
+  name: 49,52|加拿大 191
   network: ws
   port: 2052
   server: 104.19.54.70
@@ -5358,7 +4171,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2485
-  name: 52|加拿大 192
+  name: 49,52|加拿大 192
   network: ws
   port: 2052
   server: 104.19.54.163
@@ -5373,7 +4186,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1515
-  name: 52|加拿大 193
+  name: 49,52|加拿大 193
   network: ws
   port: 8880
   server: 104.19.55.170
@@ -5388,7 +4201,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2017
-  name: 52|加拿大 194
+  name: 49,52|加拿大 194
   network: ws
   port: 2052
   server: 104.19.54.27
@@ -5403,7 +4216,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1760
-  name: 52|加拿大 195
+  name: 49,52|加拿大 195
   network: ws
   port: 2052
   server: 104.19.54.131
@@ -5418,7 +4231,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1887
-  name: 52|加拿大 196
+  name: 49,52|加拿大 196
   network: ws
   port: 2052
   server: 104.19.54.140
@@ -5433,7 +4246,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2487
-  name: 52|加拿大 197
+  name: 49,52|加拿大 197
   network: ws
   port: 2052
   server: 104.19.54.73
@@ -5448,7 +4261,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2654
-  name: 52|加拿大 198
+  name: 49,52|加拿大 198
   network: ws
   port: 2052
   server: 104.19.54.251
@@ -5463,7 +4276,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2039
-  name: 52|加拿大 199
+  name: 49,52|加拿大 199
   network: ws
   port: 2052
   server: 104.19.54.191
@@ -5478,7 +4291,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1889
-  name: 52|加拿大 200
+  name: 49,52|加拿大 200
   network: ws
   port: 2052
   server: 104.19.54.204
@@ -5493,7 +4306,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2082
-  name: 52|加拿大 201
+  name: 49,52|加拿大 201
   network: ws
   port: 2052
   server: 104.19.54.176
@@ -5508,7 +4321,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1675
-  name: 52|加拿大 202
+  name: 49,52|加拿大 202
   network: ws
   port: 2052
   server: 104.19.54.77
@@ -5523,7 +4336,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1681
-  name: 52|加拿大 203
+  name: 49,52|加拿大 203
   network: ws
   port: 8880
   server: 104.19.55.89
@@ -5538,7 +4351,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2530
-  name: 52|加拿大 204
+  name: 49,52|加拿大 204
   network: ws
   port: 8880
   server: 104.19.55.97
@@ -5553,7 +4366,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2441
-  name: 52|加拿大 205
+  name: 49,52|加拿大 205
   network: ws
   port: 8880
   server: 104.19.55.197
@@ -5568,7 +4381,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2307
-  name: 52|加拿大 206
+  name: 49,52|加拿大 206
   network: ws
   port: 8880
   server: 104.19.55.90
@@ -5583,7 +4396,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2295
-  name: 52|加拿大 207
+  name: 49,52|加拿大 207
   network: ws
   port: 2052
   server: 104.19.54.100
@@ -5598,7 +4411,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1224
-  name: 52|加拿大 208
+  name: 49,52|加拿大 208
   network: ws
   port: 8880
   server: 104.19.55.95
@@ -5613,7 +4426,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1908
-  name: 52|加拿大 209
+  name: 49,52|加拿大 209
   network: ws
   port: 8880
   server: 104.19.55.68
@@ -5628,10 +4441,11 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2203
-  name: 52,84|US_speednode_0297
+  name: 49,52,84|US_speednode_0297
   network: ws
   port: 2086
   server: vip2.hpyjc.top
+  tls: false
   type: vmess
   udp: true
   uuid: 32c24a94-eb17-4081-aa57-48df2bc58342
@@ -5644,7 +4458,33 @@ proxies:
   ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 226
+  name: 49|🇨🇦 加拿大 216
+  network: ws
+  port: '2086'
+  server: jp01.appleid.bf
+  tls: false
+  type: vmess
+  uuid: 100657a3-8d49-415b-852f-1f9466ea7a86
+  ws-opts:
+    headers:
+      Host: jp01.appleid.bf
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 49,78|US 77|openitr
+  network: ws
+  port: '8880'
+  server: cdn3.internetcdn.ggff.net
+  tls: false
+  type: vmess
+  uuid: 5c5fa328-cb4f-4d53-9758-9beb34ef11af
+  ws-opts:
+    headers:
+      Host: cdn3.internetcdn.ggff.net
+    path: /microsoft?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 49,52|加拿大 226
   network: ws
   port: 8880
   server: 172.67.72.167
@@ -5659,7 +4499,7 @@ proxies:
     path: /dabai.in172.67.72.167
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 227
+  name: 49,52|加拿大 227
   network: ws
   port: 2082
   server: 172.64.35.230
@@ -5674,7 +4514,7 @@ proxies:
     path: /dabai.in172.64.35.230
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 228
+  name: 49,52|加拿大 228
   network: ws
   port: 80
   server: 104.19.143.138
@@ -5689,7 +4529,7 @@ proxies:
     path: /dabai.in104.19.143.138
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 229
+  name: 49,52|加拿大 229
   network: ws
   port: 2082
   server: 104.24.61.170
@@ -5704,7 +4544,7 @@ proxies:
     path: /dabai.in104.24.61.170
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 230
+  name: 49,52|加拿大 230
   network: ws
   port: 80
   server: 104.24.231.69
@@ -5719,7 +4559,7 @@ proxies:
     path: /dabai.in104.24.231.69
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 231
+  name: 49,52|加拿大 231
   network: ws
   port: 2096
   server: 104.21.15.254
@@ -5735,7 +4575,7 @@ proxies:
     path: /dabai.in104.21.15.254
 - alterId: 0
   cipher: auto
-  name: 52|加拿大 232
+  name: 49,52|加拿大 232
   network: ws
   port: 2053
   server: 172.67.49.142
@@ -5751,6 +4591,35 @@ proxies:
     path: /dabai.in172.67.49.142
 - alterId: 0
   cipher: auto
+  name: 52|加拿大 113
+  network: ws
+  port: 80
+  server: jd3.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: jd3.shabijichang.com
+    path: /
+- country: 🇺🇸US
+  delay: 1237
+  fingerprint: chrome
+  name: 52|加拿大 119
+  network: ws
+  password: 7fc8e7f0-bf17-4ace-a9c2-153c5499ddb9
+  port: 443
+  server: 172.67.191.234
+  sni: dE1.tROJaNvPn.xYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: dE1.tROJaNvPn.xYZ
+    path: /
+- alterId: 0
+  cipher: auto
   name: 53|10|🇨🇦加拿大04
   network: tcp
   port: '36701'
@@ -5758,7 +4627,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 8afd08fe-9360-4299-8dfa-64a6611c358e
+  uuid: c9a24070-9933-469d-9584-3045dc72d63e
 - alterId: 0
   cipher: auto
   name: 53|13|🔒 VM-TCP-NA 🇨🇦 CA-142.93.14...
@@ -5816,23 +4685,23 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 90cefd6c-b30d-4552-b89d-c1d723f8b355
+  uuid: db0ce600-e715-49ca-af10-7d884be92bc5
 - cipher: chacha20-ietf-poly1305
-  name: 59,61,68|🇦CA-142.4.216.225-1530
+  name: 59,68|🇦CA-142.4.216.225-1530
   password: JIhN6rBKkaEboLNXVSv5rq
   port: '80'
   server: ca225.vpnbook.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 59,61|🇦CA-146.19.106.89-0735
+  name: 59|🇨🇦CA-146.19.106.89-0750
   password: ZjNmOGE0
   port: 8388
   server: ca1.ssproxy.xyz
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 59,61,68,77|未知295 7.0MB/s
+  name: 59,68,77|未知295 7.0MB/s
   password: Gyd5QnbPvzh8I89q
   port: 25717
   server: 149.56.95.135
@@ -5842,1316 +4711,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 61|CA-158.51.121.36-0085
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  skip-cert-verify: false
+  grpc-opts:
+    grpc-service-name: 23.227.39.47
+  name: '76,82|رایگان | VMESS | @Hope_Net | U... #3'
+  network: grpc
+  port: '2083'
+  server: 23.227.39.47
+  servername: behtarinfr.turkalphapro.ir
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 61|🇦CA-23.162.200.227-0174
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 23.162.200.227
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 61|🇦CA-91.194.11.168-0254
-  network: ws
-  port: 443
-  server: ca-full.privateip.net
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8da41d0a-0454-4ced-a7e2-4de2a3dcc525
-  ws-opts:
-    headers:
-      Host: ca-full.privateip.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 61|🇨🇦CA-23.162.200.227-0624
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.149-0809
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 134.195.196.149
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.154-0826
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 196.247.59.154
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.61-0929
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 85.208.108.61
-  type: ss
-- cipher: aes-256-cfb
-  name: 61|🇦CA-3.99.111.175-1505
-  obfs: http_simple
-  obfs-param: ''
-  password: YpX2opBbrfqJzzMs
-  port: 42833
-  protocol: origin
-  protocol-param: ''
-  server: z0115.security-cloudfront-cdn.com
-  type: ssr
-- cipher: aes-256-gcm
-  name: 61|🇦CA-198.8.92.84-1870
-  password: ugyBkSEFxVEmUYSHyvxmWNj9
-  port: 40220
-  server: 198.8.92.84
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-138.197.174.245-1892
-  password: yuMqkGIx6Ia0
-  port: 56443
-  server: 138.197.174.245
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-198.8.92.84-1909
-  password: J9Y2ncrdPEC38gwydNFFGBna
-  port: 35294
-  server: 198.8.92.84
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-198.8.92.84-1913
-  password: F5bKkb9ggkLx4JbQrbLn7LjZ
-  port: 44945
-  server: 198.8.92.84
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-198.8.92.84-1925
-  password: Kquv5UhvZXNMemAQy8DxZ7qn
-  port: 38620
-  server: 198.8.92.84
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-198.8.92.84-1926
-  password: BdRWC38L5JUDMTYNNxJGcUwB
-  port: 49396
-  server: 198.8.92.84
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.213-2169
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.162.200.213
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.239-2179
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-2199
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.239-2244
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.189-2246
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-2339
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.239-2528
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.189-2531
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.239-2533
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.213-2534
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 23.162.200.213
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-2544
-  password: lGqs95QkFHo2NV
-  port: 5499
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-2551
-  password: Y6R9pAtvxxzmGC
-  port: 9090
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-216.39.250.113-2556
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 216.39.250.113
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-2557
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-2572
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 23.162.200.189
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 61,77|未知362
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 23.162.200.189
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.239-2580
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.181-2633
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 23.162.200.181
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 61,77|未知278 1.6MB/s
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 23.162.200.181
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.181-2650
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.162.200.181
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|CA-23.162.200.239-3641
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.239-3644
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3645
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.181-3647
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 23.162.200.181
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3650
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3651
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.239-3653
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.239-3655
-  password: Y6R9pAtvxxzmGC
-  port: 9090
-  server: 23.162.200.239
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3657
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.162.200.189
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 61,77|未知288
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 23.162.200.239
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3659
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.181-3661
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 23.162.200.181
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3662
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.189-3663
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3664
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3665
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3670
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3671
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.225-3672
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 23.162.200.225
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.189-3673
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3674
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.189-3676
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.189-3677
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3678
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3679
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3681
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-23.162.200.189-3682
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3684
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.189-3690
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 23.162.200.189
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-51.161.118.38-3803
-  password: G!yBwPWH3Vao
-  port: 801
-  server: 51.161.118.38
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.90-3819
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 85.208.108.90
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.90-3838
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 85.208.108.90
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3876
-  password: G!yBwPWH3Vao
-  port: 812
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨CA-51.161.118.38-3877
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3878
-  password: G!yBwPWH3Vao
-  port: 808
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3879
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨CA-51.161.118.38-3880
-  password: G!yBwPWH3Vao
-  port: 807
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3881
-  password: G!yBwPWH3Vao
-  port: 802
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3882
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3883
-  password: G!yBwPWH3Vao
-  port: 810
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3885
-  password: G!yBwPWH3Vao
-  port: 803
-  server: 51.161.118.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-3886
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 51.161.118.38
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.90-3887
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 85.208.108.90
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 61|🇦CA-132.145.99.228-3938
-  network: ws
-  port: 13724
-  server: 132.145.99.228
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 52768552-c2b2-4460-89f1-e740cc145b99
-  ws-opts:
-    path: /ws-path
-- alterId: 0
-  cipher: auto
-  name: 61|🇦CA-192.99.8.99-4038
-  network: ws
-  port: 36005
-  server: 192.99.8.99
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05c38399-5296-4bf2-a606-1cec3b71c942
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 61|🇦CA-192.99.8.99-4041
-  network: ws
-  port: 36005
-  server: tcas.padra-holding.com
-  servername: tcas.padra-holding.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05c38399-5296-4bf2-a606-1cec3b71c942
-  ws-opts:
-    headers:
-      Host: tcas.padra-holding.com
-    path: /
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4065
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨CA-85.208.108.60-4121
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨CA-134.195.196.149-4480
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 134.195.196.149
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.149-4489
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 134.195.196.149
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-72.140.224.195-4613
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 72.140.224.195
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4643
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4680
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨CA-85.208.108.60-4697
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4827
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4800
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-5486
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-4844
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-4804
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4805
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4806
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4807
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4808
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4809
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4810
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4812
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨CA-85.208.108.60-6174
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-4817
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-5500
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4824
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-4831
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4838
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-4849
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4855
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4856
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-6149
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-4868
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-5496
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-4876
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.20-5475
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.18-5090
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 85.208.108.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-5229
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-5368
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-6125
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.60-6135
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.61-6478
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 85.208.108.61
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.92-6479
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 85.208.108.92
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.156-6654
-  password: G!yBwPWH3Vao
-  port: 806
-  server: 196.247.59.156
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.20-6741
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.20-6742
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.20-6745
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.20-6746
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 85.208.108.20
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 61|🇦CA-159.203.18.119-6875
-  network: ws
-  port: 80
-  server: 159.203.18.119
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: bce57c91-6c2d-4ae5-8906-795b6cfeaf20
-  ws-opts:
-    headers:
-      Host: 159.203.18.119
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 61|🇨CA-159.203.18.119-6884
-  network: ws
-  port: 80
-  server: 159.203.18.119
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: bce57c91-6c2d-4ae5-8906-795b6cfeaf20
-  ws-opts:
-    path: /vmess
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.196.231-6902
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 134.195.196.231
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨CA-134.195.196.231-6903
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 134.195.196.231
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.231-6904
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 134.195.196.231
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.60-6910
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 85.208.108.60
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 61|🇨🇦CA-149.56.95.159-7066
-  network: ws
-  port: 23784
-  server: 149.56.95.159
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1c78909e-18a8-4c7f-f6a0-e092aae6243f
-  ws-opts:
-    path: /
-- alterId: 4
-  cipher: auto
-  name: 61|CA-138.197.165.31-7422
-  network: ws
-  port: 8080
-  server: 138.197.165.31
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
-  ws-opts:
-    path: /cctv13/hd.m3u8
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.196.149-7700
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 134.195.196.149
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.154-7706
-  password: G!yBwPWH3Vao
-  port: 801
-  server: 196.247.59.154
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨CA-134.195.196.149-7726
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 134.195.196.149
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.149-7727
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 134.195.196.149
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.85-7728
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 134.195.196.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.154-7729
-  password: G!yBwPWH3Vao
-  port: 806
-  server: 196.247.59.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.154-7731
-  password: G!yBwPWH3Vao
-  port: 809
-  server: 196.247.59.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.154-7732
-  password: G!yBwPWH3Vao
-  port: 803
-  server: 196.247.59.154
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.93-7748
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 85.208.108.93
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.230-7801
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 134.195.196.230
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-38.111.114.246-7902
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.111.114.246
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-38.111.114.246-7903
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.111.114.246
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7949
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.18-7951
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 85.208.108.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7953
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.20-7954
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.21-7955
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 85.208.108.21
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-7956
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.21-7957
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 85.208.108.21
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.20-7958
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.21-7959
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 85.208.108.21
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7962
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.20-7963
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.20-7964
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7966
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-7967
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.94-7969
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 85.208.108.94
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-7972
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-7977
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7981
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-7982
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.21-7984
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 85.208.108.21
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7985
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.58-7986
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 85.208.108.58
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.94-7988
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 85.208.108.94
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-7989
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7990
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7992
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-7994
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-7998
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.21-7999
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 85.208.108.21
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.20-8000
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.20-8002
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-85.208.108.59-8003
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-85.208.108.59-8005
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨CA-85.208.108.59-8006
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 85.208.108.59
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.154-8148
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 196.247.59.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.156-8153
-  password: G!yBwPWH3Vao
-  port: 803
-  server: 196.247.59.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.154-8154
-  password: G!yBwPWH3Vao
-  port: 802
-  server: 196.247.59.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-196.247.59.156-8155
-  password: G!yBwPWH3Vao
-  port: 801
-  server: 196.247.59.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇦CA-196.247.59.156-8156
-  password: G!yBwPWH3Vao
-  port: 808
-  server: 196.247.59.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-196.247.59.156-8159
-  password: G!yBwPWH3Vao
-  port: 809
-  server: 196.247.59.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-196.247.59.156-8162
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 196.247.59.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-51.161.118.38-8164
-  password: G!yBwPWH3Vao
-  port: 806
-  server: 51.161.118.38
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.149-8245
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 134.195.196.149
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.198.95-8246
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 134.195.198.95
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.196.149-8247
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 134.195.196.149
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.198.95-8248
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 134.195.198.95
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.196.149-8249
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 134.195.196.149
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 61|🇨🇦CA-134.195.196.143-8250
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 134.195.196.143
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.196.107-8251
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 134.195.196.107
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.196.107-8256
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 134.195.196.107
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.198.95-8257
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 134.195.198.95
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.198.95-8258
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 134.195.198.95
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇨🇦CA-134.195.196.107-8261
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 134.195.196.107
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-134.195.196.149-8263
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 134.195.196.149
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 61|CA-137.184.164.233-9365
-  network: ws
-  port: 80
-  server: 137.184.164.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5cee90e3-b915-4f1e-bb8d-efadad0c6feb
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 61|🇦CA-23.26.239.163-9823
-  network: ws
-  port: 18420
-  server: 23.26.239.163
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 65578c09-f23e-49cc-abee-4ad2a1850f9a
-  ws-opts:
-    path: /
+  uuid: c24f822f-8233-4996-9183-8caad5a3d19e
 - alterId: 0
   cipher: auto
   name: 78|CA 2|openitr
