@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '0,12,45,58|广东省广州市 移动 #5'
+  name: '0,12,45,58|广东省广州市 移动 #6'
   network: tcp
   port: '51707'
   server: 183.236.51.59
@@ -14,7 +14,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: '0,12,19,58|广东省佛山市 移动 #11'
+  name: '0,12,19,49,58|广东省佛山市 移动 #11'
   network: tcp
   port: '21006'
   server: 183.232.199.61
@@ -28,18 +28,18 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: '0,12,19,45,51,53,58,62|🇨🇳 广东省佛山市 移动 #2'
+  name: 0,12,19,51,53,58,62,77|🇨🇳广东3
   network: tcp
-  port: '21006'
+  port: 21006
   server: 183.232.199.28
   servername: ''
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 64
   cipher: auto
-  name: 0,10,12,47,58,77|未知140
+  name: 0,10,12,47,58,77|未知56
   network: tcp
   port: 40259
   server: 120.238.122.243
@@ -50,14 +50,29 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '0,9,10,12,45,51,53,58,62|🇨🇳 广东省汕头市 移动 #1'
+  name: '0,9,10,12,51,53,58,62,77|未命名 #10'
   network: tcp
-  port: '61002'
+  port: 61002
   server: 183.240.179.195
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- cipher: chacha20-ietf-poly1305
+  country: ' CN'
+  name: 15| CN_01
+  password: 6027e101-7084-3b4a-be0d-ff1230366180
+  port: 50021
+  server: 183.232.238.120
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' CN'
+  name: 15| CN_02
+  password: d52848a3-5101-3ccc-aed8-113ce65928a8
+  port: 61020
+  server: 120.233.204.91
+  type: ss
 - alterId: 0
   cipher: auto
   country: ' CN'
@@ -71,9 +86,24 @@ proxies:
   type: vmess
   uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
   ws-path: /
+- alterId: 64
+  cipher: auto
+  country: ' CN'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,47,76,77|未知666
+  network: tcp
+  port: 50002
+  server: 120.210.205.82
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - cipher: aes-128-gcm
   country: CN
-  name: 19|CN_341
+  name: 19|CN_531
   password: o
   port: 1020
   server: 110.42.99.55
@@ -83,7 +113,19 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 19|CN_343
+  name: 19|CN_536
+  network: tcp
+  port: 21003
+  server: 183.240.179.195
+  skip-cert-verify: true
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 19|CN_546
   network: ws
   port: 80
   server: 47.106.112.114
@@ -93,8 +135,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  country: 🇨CN
-  name: 20,34|Relay_🇨🇳CN-🇨🇳CN_08
+  country: 🇨🇳CN
+  name: 20,34|Relay_🇨🇳CN-🇨🇳CN_10
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjd2a&dj23gsa
@@ -105,7 +147,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 20,33,34|Pool__03
+  name: 20,34|Pool__01
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -115,8 +157,30 @@ proxies:
   server: 222.186.20.24
   type: ssr
 - cipher: aes-256-cfb
+  country: CN
+  name: 20,34|Pool__03
+  obfs: plain
+  obfs-param: data.bilibili.com/ed5a2165400
+  password: http://cc.ax/
+  port: 41228
+  protocol: auth_aes128_md5
+  protocol-param: 165400:Hr2aXO
+  server: 222.186.20.102
+  type: ssr
+- cipher: aes-256-cfb
   country: 🇨🇳CN
-  name: 20,34|Relay_🇨🇳CN-🇨🇳CN_10
+  name: 20,34|Relay_🇨🇳CN-🇨🇳CN_09
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjda&dj23gsa
+  port: 19970
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103.level3.sdl-sz.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: 🇨CN
+  name: 20,34|Relay_🇨🇳CN-🇨🇳CN_08
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -127,7 +191,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: CN
-  name: 20|Relay_CN-CN_08
+  name: 20|Relay_CN-CN_10
   obfs: plain
   password: mblank1port
   port: 560
@@ -145,17 +209,6 @@ proxies:
   protocol: auth_aes128_md5
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 20,34|Relay_🇨🇳CN-🇨🇳CN_09
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
-  password: dajkdkjda&dj23gsa
-  port: 19970
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103.level3.sdl-sz.com
   type: ssr
 - alterId: 0
   cipher: auto
@@ -185,35 +238,20 @@ proxies:
   tls: false
   type: vmess
   uuid: dffc697a-2535-470c-bb6a-8157b6c157a7
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: '41,45,51,53,58|湖北省武汉市 联通 #2'
+  name: 41|China_Changsha_vmess_1310
   network: ws
-  port: 20301
-  server: data-jp-v1.usabooks.com.cn
+  port: '16632'
+  server: yes.cnmjcn.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
     headers:
-      Host: ''
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: 41,67,69|江省江市 联IDC
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      host: data-us-v1.shwjfkw.cn
-    host: data-us-v1.shwjfkw.cn
-    path: /debian
+      host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 44|🇨🇳 CN 437 → tg@nicevpn123
@@ -321,22 +359,6 @@ proxies:
   server: 04.forlive.live
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 44,45,58,84|NN_speednode_0023
-  network: ws
-  port: 20206
-  server: data-hk-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.usabooks.com.cn
-    path: /debian
 - cipher: chacha20-ietf-poly1305
   name: 44|🇨🇳 CN 124 → tg@nicevpn123
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
@@ -1089,13 +1111,6 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 44|🇨🇳 CN 61 → tg@nicevpn123
-  password: c44758e2-67a4-40b2-bbc8-4ca97861ea47
-  port: 22001
-  server: beromo.youxinye.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
   name: 44|🇨🇳 CN 78 → tg@nicevpn123
   password: 1a64d040-c56c-4e11-bcbb-272ff330f694
   port: 22302
@@ -1172,16 +1187,13 @@ proxies:
   server: 211.99.97.4
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 44,48,50,67,69,77|🇨🇳
+  name: 44,48,50,67,69|市+
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
+  port: '20003'
   server: service.ouluyun9803.com
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1356,7 +1368,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '44,45,50,51,53,55,56,58,62|🇨🇳 广东省移动 7 #1'
+  name: '44,49,50,51,53,55,56,58,62|🇨🇳 广东省移动 7 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -1373,7 +1385,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '44,45|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #8'
+  name: '44,45|>Beta|🇺🇳 FP|Ns|0329|TG@FProxie... #17'
   network: ws
   port: '50080'
   server: 223.113.130.58
@@ -1673,7 +1685,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '44,45|>🇭🇰 HK|Hs|0404|TG@FProxies| #1'
+  name: '44,45|>🇭🇰 HK|Hs|0404|TG@FProxies| #6'
   network: ws
   port: '21032'
   server: hk.lianjianode.cc
@@ -1913,16 +1925,13 @@ proxies:
   server: 120.199.94.29
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 44,48,50,67,77|🇨🇳广东2
+  name: 44,48,50,67|github.com/freefq - 广东省江门市移动 1...
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
+  port: '26667'
   server: service.ouluyun9803.com
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1934,7 +1943,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '44,45|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #4'
+  name: '44,45|>Beta|🇺🇳 FP|Ms|0430|TG@FProxie... #3'
   network: ws
   port: '16928'
   server: vip3.niuniupremium.xyz
