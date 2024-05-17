@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,45,47,53,62,76|🔒 VM-WS-NONE 🇨🇦 CA-15.156.226....
+  name: 6,30,45,47,53,62,76|🔒 VM-WS-NONE 🇨🇦 CA-15.156.226....
   network: ws
   port: 25996
   server: 15.156.226.178
@@ -31,7 +31,7 @@ proxies:
   country: CA
   h2-opts: {}
   http-opts: {}
-  name: 14,19,41,47,53,61,68|CA-158.51.121.36-2777
+  name: 14,19,33,41,47,49,53,58,61,68|CA-158.51.121.36-2777
   network: ws
   port: 443
   server: 158.51.121.36
@@ -44,8 +44,25 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: aes-256-gcm
-  country: CA
-  name: 16,17,24,44,61,77|未知185 1.9MB/s
+  country: ' CA'
+  name: 16,77|未知187 1.6MB/s
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.111.114.133
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇨🇦CA
+  name: 16,17,33|🇨🇦CA | 8.69Mb
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.111.114.133
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🏁ZZ
+  name: 16,17,24,33,44,61,77|未知185 1.9MB/s
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 23.162.200.28
@@ -69,7 +86,7 @@ proxies:
   country: ' CA'
   h2-opts: {}
   http-opts: {}
-  name: 17| CA_33
+  name: 17| CA_31
   network: ws
   port: 443
   server: 158.51.121.36
@@ -78,13 +95,25 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
-- cipher: aes-256-gcm
-  country: CA
-  name: 19|CA_544
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 38.111.114.133
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  h2-opts: {}
+  http-opts: {}
+  name: 19,33,50,84|US_speednode_0277
+  network: ws
+  port: 443
+  server: 23.154.136.2
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.154.136.2
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '29,53|6|🇨🇦_CA_加拿大 #1'
@@ -130,7 +159,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '29,31,44,53,87|🇨🇦_CA_加拿大 #8'
+  name: '29,31,44,53,87|🇨🇦_CA_加拿大 #9'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -154,18 +183,33 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '39,42,47,82|رایگان | VMESS | @prrofile_pur... #2'
+  name: 37,47|🔗 Vauth - 42
   network: ws
-  port: '8443'
-  server: atlasnet1.myatlasnet.ir
+  port: '80'
+  server: 172.67.171.44
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 63e54742-a244-4bb0-c9cb-17a545f4ca3f
+  uuid: 70938d26-6d9f-4930-bf80-396ef3bfdeab
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: Fr2-vmess.sshmax.xyz.
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '37,42,47,61,82|رایگان | VMESS | @nofiltering2... #1'
+  network: ws
+  port: '443'
+  server: 104.21.83.108
+  servername: hms02.fxiaomi.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: hms02.fxiaomi.sbs
+    path: /link
 - client-fingerprint: chrome
   name: 41|Canada_Montreal_trojan_1318
   network: tcp
@@ -1056,19 +1100,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 45,78|CA 6|openitr
-  network: ws
-  port: '10000'
-  server: 192.99.247.52
-  tls: false
-  type: vmess
-  uuid: a403f694-059a-11ef-8787-63ed939f7530
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vpnjantit
-- alterId: 0
-  cipher: auto
   name: '45|>🇨🇦 CA|Hs|0404|TG@FProxies| #1'
   network: ws
   port: '443'
@@ -1093,6 +1124,19 @@ proxies:
     headers:
       Host: m2-ca1.m2network.icu
     path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 45,78|CA 6|openitr
+  network: ws
+  port: '10000'
+  server: 192.99.247.52
+  tls: false
+  type: vmess
+  uuid: a403f694-059a-11ef-8787-63ed939f7530
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vpnjantit
 - cipher: aes-256-gcm
   name: 48|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -1459,132 +1503,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.235-1031
-  network: ws
-  port: 2095
-  server: 104.19.45.235
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|RELAY-104.19.45.172-1032
-  network: ws
-  port: 2095
-  server: 104.19.45.172
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.70-1033
-  network: ws
-  port: 2095
-  server: 104.19.45.70
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.135-1034
-  network: ws
-  port: 2095
-  server: 104.19.45.135
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.106-1035
-  network: ws
-  port: 2095
-  server: 104.19.45.106
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.202-1036
-  network: ws
-  port: 2095
-  server: 104.19.45.202
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.17-1037
-  network: ws
-  port: 2095
-  server: 104.19.45.17
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.222-1038
-  network: ws
-  port: 2095
-  server: 104.19.45.222
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.56-1039
-  network: ws
-  port: 2095
-  server: 104.19.45.56
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
   name: 49,52,61|🏁RELAY-104.19.45.117-1040
   network: ws
   port: 2095
@@ -1599,38 +1517,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.48-1041
-  network: ws
-  port: 2095
-  server: 104.19.45.48
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
   name: 49,52,61|🏁RELAY-104.19.45.7-1042
   network: ws
   port: 2095
   server: 104.19.45.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.14-1043
-  network: ws
-  port: 2095
-  server: 104.19.45.14
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1675,34 +1565,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.165-1048
-  network: ws
-  port: 2095
-  server: 104.19.45.165
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.45.137-1049
-  network: ws
-  port: 2095
-  server: 104.19.45.137
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
   delay: 2195
   h2-opts: {}
   http-opts: {}
@@ -1721,11 +1583,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  delay: 1238
-  h2-opts: {}
-  http-opts: {}
-  name: 49,52,61|🏁RELAY-104.21.25.68-1052
+  name: 49,61|🏁RELAY-104.21.25.68-1052
   network: ws
   port: 443
   server: 104.21.25.68
@@ -1738,11 +1596,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  delay: 2864
-  h2-opts: {}
-  http-opts: {}
-  name: 49,52,61|🏁RELAY-104.16.68.38-1056
+  name: 49,61|🏁RELAY-104.16.68.38-1056
   network: ws
   port: 2052
   server: 104.16.68.38
@@ -1871,7 +1725,7 @@ proxies:
   delay: 2488
   h2-opts: {}
   http-opts: {}
-  name: 49,52|加拿大 041
+  name: 49,52|加拿大 039
   network: ws
   port: 2052
   server: 104.19.54.224
@@ -2704,7 +2558,7 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-172.67.184.13-1181
+  name: 49,61|🏁RELAY-172.67.184.13-1181
   network: ws
   port: 80
   server: sbl2.shabijichang.com
@@ -3150,14 +3004,13 @@ proxies:
     path: /dT9s3HqgZeD3eApzDAfhOHq
 - alterId: 0
   cipher: auto
-  name: 49,52,61|RELAY-104.20.75.50-1231
+  name: 49,61|RELAY-104.20.75.50-1231
   network: ws
   port: 80
   server: 104.20.75.50
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3165,14 +3018,13 @@ proxies:
     path: /dabai.in104.20.75.50
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.25.118.35-1232
+  name: 49,61|🏁RELAY-104.25.118.35-1232
   network: ws
   port: 2095
   server: 104.25.118.35
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3180,14 +3032,13 @@ proxies:
     path: /dabai.in104.25.118.35
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.128.176-1233
+  name: 49,61|🏁RELAY-104.24.128.176-1233
   network: ws
   port: 2082
   server: 104.24.128.176
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3195,7 +3046,7 @@ proxies:
     path: /dabai.in104.24.128.176
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.19.134.217-1234
+  name: 49,61|🏁RELAY-104.19.134.217-1234
   network: ws
   port: 2053
   server: 104.19.134.217
@@ -3203,7 +3054,6 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3211,14 +3061,13 @@ proxies:
     path: /dabai.in104.19.134.217
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.17.114.11-1235
+  name: 49,61|🏁RELAY-104.17.114.11-1235
   network: ws
   port: 2082
   server: 104.17.114.11
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3226,14 +3075,13 @@ proxies:
     path: /dabai.in104.17.114.11
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.25.76.157-1236
+  name: 49,61|🏁RELAY-104.25.76.157-1236
   network: ws
   port: 80
   server: 104.25.76.157
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3241,14 +3089,13 @@ proxies:
     path: /dabai.in104.25.76.157
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.18.224.35-1237
+  name: 49,61|🏁RELAY-104.18.224.35-1237
   network: ws
   port: 2082
   server: 104.18.224.35
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3256,14 +3103,13 @@ proxies:
     path: /dabai.in104.18.224.35
 - alterId: 0
   cipher: auto
-  name: 49,52,61|🏁RELAY-104.24.75.145-1238
+  name: 49,61|🏁RELAY-104.24.75.145-1238
   network: ws
   port: 8880
   server: 104.24.75.145
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e6933218-ad65-3943-9afd-0d78638a61dd
   ws-opts:
     headers:
@@ -3278,7 +3124,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c0ae08ba-db5e-4be2-bb29-04f4c7b2f9ac
+  uuid: a9a10128-3135-4612-a6b5-1c0e16d5c52a
 - alterId: 0
   cipher: auto
   name: 53|13|🔒 VM-TCP-NA 🇨🇦 CA-142.93.14...
@@ -3376,7 +3222,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 72b704a9-92d2-459f-be25-0fc6927b5981
+  uuid: ec107f77-94c8-416c-aab7-35f661c447dc
 - cipher: chacha20-ietf-poly1305
   name: 59,61,68|🇦CA-142.4.216.225-1530
   password: JIhN6rBKkaEboLNXVSv5rq
@@ -3710,12 +3556,6 @@ proxies:
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 23.162.200.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 61|🇦CA-23.162.200.181-3654
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 23.162.200.181
   type: ss
 - cipher: aes-256-gcm
   name: 61|🇦CA-23.162.200.189-3655
