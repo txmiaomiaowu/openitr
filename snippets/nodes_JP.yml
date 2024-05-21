@@ -1,48 +1,95 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   country: ' JP'
-  name: 16|Relay  JP_159
-  password: 1172b614-b9d0-447e-a8a9-5f1db0c5affc
-  port: 45131
-  server: gz.quanstring.top
+  name: 16,17,18,39,42|🇯🇵 JP 21 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 13.231.229.48
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: ' US'
+  name: 16,17,42,57,66|🇵JP-154.47.20.240-0719
+  password: shadowsocks
+  port: '443'
+  server: 154.47.20.240
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,20| JP_05
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-path: /
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 17,18| JP_701
+  password: amazonskr05
+  port: 443
+  server: 13.231.105.129
+  type: ss
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 17,39|Japan_Tokyo_ss_1123
+  password: amazonskr05
+  port: 443
+  server: 54.95.164.206
   type: ss
 - cipher: aes-256-cfb
   country: JP
-  name: 16,17,18,39|Japan_Tokyo_ss_1144
+  name: 17,39|Japan_Tokyo_ss_1144
   password: amazonskr05
   port: 443
   server: 18.181.198.10
   type: ss
 - cipher: aes-256-cfb
-  country: ' JP'
-  name: 17,18| JP_645
+  name: '18|disney_netflix_JP #2'
   password: amazonskr05
   port: 443
-  server: 13.231.105.129
+  server: 43.207.72.91
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 17| JP_205
-  network: ws
-  port: 443
-  server: tls.19.node-for-bigairport.win
-  servername: tls.19.node-for-bigairport.win
+  name: 18,39,43,51,82|CN_speednode_0014
+  network: tcp
+  port: 30038
+  server: 183.240.179.207
+  servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 323c4178-e9ad-4eb9-9731-fabe6d652537
-  ws-headers:
-    HOST: tls.19.node-for-bigairport.win
-  ws-path: /
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_-JP_544
+  network: ws
+  port: 80
+  server: 104.16.45.180
+  type: vmess
+  udp: true
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: jp.xlb8.eu.org
+    path: /?ed=2048&amp;Telegram @WangCai_8
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   h2-opts: {}
   http-opts: {}
-  name: 18,42,48,53,56|湖北省武汉市 联通
+  name: 18,42,47,48,53,56|湖北省武汉市 联通
   network: ws
   port: '20301'
   server: data-jp-v1.usabooks.com.cn
@@ -57,124 +104,60 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 18,39,43,51,82|CN_speednode_0014
-  network: tcp
-  port: 30038
-  server: 183.240.179.207
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
-- alterId: 64
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   country: ' CN'
-  h2-opts: {}
-  http-opts: {}
-  name: '18,43,56|广东省广州市 移动 #8'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.59
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '18|disney_netflix_JP #3'
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-  port: 30007
-  server: jp07.mmyjiedian.com
+  name: '18|disney_JP #3'
+  password: 6027e101-7084-3b4a-be0d-ff1230366180
+  port: 50114
+  server: 183.232.238.120
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '18|disney_netflix_JP #5'
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-  port: 30001
-  server: jp01.mmyjiedian.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: 18,42|🇨🇳 CN 191 → tg@nicevpn123
-  password: 861de7db-5ada-4b36-903c-0ad6ba25d75a
-  port: 38998
-  server: 98899.xef9wvmj31-gc3qil6-jp02.my777999.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: CN
+  country: ' CN'
   name: '18|disney_JP #4'
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-  port: 30012
-  server: jp12.mmyjiedian.com
+  password: 1172b614-b9d0-447e-a8a9-5f1db0c5affc
+  port: 45131
+  server: gz.quanstring.top
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '18|disney_netflix_JP #6'
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-  port: 30017
-  server: jp17.mmyjiedian.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '18|disney_netflix_JP #7'
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-  port: 30003
-  server: jp03.mmyjiedian.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   country: CN
   name: '18|disney_JP #5'
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-  port: 30006
-  server: jp06.mmyjiedian.com
+  password: 918eba0d3ff04abc803fb00e18d0fcb5
+  port: 60283
+  server: any.hmbiplc-02.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '18|disney_JP #6'
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-  port: 30011
-  server: jp11.mmyjiedian.com
-  type: ss
-- cipher: aes-256-cfb
-  country: ' JP'
-  name: 18,39,42|🇯🇵 JP 4 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
-  server: 3.112.218.182
+  country: HK
+  name: 18,42|🇪🇸 ES 3 → tg@nicevpn123
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+  port: 61002
+  server: 4.forlive.live
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
   country: ' JP'
-  name: 18,39,51|15|🇯🇵 日本特殊|@ripaojiedian
+  name: 18,39|Japan_Tokyo_ss_1121
   password: amazonskr05
   port: 443
-  server: 3.112.189.248
-  tfo: false
+  server: 18.182.6.181
   type: ss
 - cipher: aes-256-cfb
   country: JP
-  name: 18|JP_652
+  name: 18,39,66|🇵JP-18.183.73.152-4305
+  password: amazonskr05
+  port: '443'
+  server: 18.183.73.152
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: JP
+  name: 18|JP_703
   password: amazonskr05
   port: 443
-  server: 3.112.219.236
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: JP
-  name: 18|JP_653
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node1.s.nodelist-gfwairport2.top
+  server: 54.95.163.121
   type: ss
 - cipher: aes-256-cfb
   country: JP
-  name: 18|Pool_JP_654
+  name: 18|Pool_JP_704
   obfs: plain
   password: www.xbvpn.com
   port: 443
@@ -183,29 +166,10 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 18,31,57|🏁RELAY-172.66.40.173-1082
-  network: ws
-  port: 80
-  server: 172.66.40.173
-  servername: tk-000.xiaoxiaobujidao.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 85b2515e-5373-3cec-b6ae-4750693b7e2b
-  ws-opts:
-    headers:
-      host: tk-000.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
   country: US
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #10'
+  name: '18|disney_JP #7'
   network: ws
   port: 2086
   server: vip2.hpyjc.top
@@ -219,13 +183,13 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  country: US
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #11'
+  name: '18|disney_JP #8'
   network: ws
   port: 2086
-  server: vip1.hpyjc.top
+  server: vip3.hpyjc.top
   servername: jp1.hpyjc.top
   skip-cert-verify: true
   type: vmess
@@ -234,596 +198,20 @@ proxies:
     headers:
       HOST: jp1.hpyjc.top
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #12'
-  network: ws
-  port: 2083
-  server: 104.25.70.103
-  servername: 100-100-17-65.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-65.db-link01.top
-    path: /dabai.in104.25.70.103
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #13'
-  network: ws
-  port: 8880
-  server: 172.64.52.106
-  servername: 100-100-17-272.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-272.db-link01.top
-    path: /dabai.in172.64.52.106
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #14'
-  network: ws
-  port: 2086
-  server: 104.24.207.74
-  servername: 100-100-17-146.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-146.cn-db.top
-    path: /dabai.in104.24.207.74
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #15'
-  network: ws
-  port: 8880
-  server: 104.24.46.52
-  servername: 100-100-17-167.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-167.db-link01.top
-    path: /dabai.in104.24.46.52
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #16'
-  network: ws
-  port: 8880
-  server: 172.64.49.222
-  servername: 100-100-17-314.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-314.db-link01.top
-    path: /dabai.in172.64.49.222
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #17'
-  network: ws
-  port: 2083
-  server: 104.24.36.90
-  servername: 100-100-17-217.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-217.cn-db.top
-    path: /dabai.in104.24.36.90
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #18'
-  network: ws
-  port: 2082
-  server: 104.25.232.21
-  servername: 100-100-17-435.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-435.cn-db.top
-    path: /dabai.in104.25.232.21
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #19'
-  network: ws
-  port: 2082
-  server: 172.64.35.93
-  servername: 100-100-17-293.db-link02.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-293.db-link02.top
-    path: /dabai.in172.64.35.93
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #20'
-  network: ws
-  port: 80
-  server: 104.25.207.86
-  servername: 100-100-17-29.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-29.cn-db.top
-    path: /dabai.in104.25.207.86
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #21'
-  network: ws
-  port: 2095
-  server: 172.67.11.128
-  servername: 100-100-17-154.db-link02.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-154.db-link02.top
-    path: /dabai.in172.67.11.128
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #22'
-  network: ws
-  port: 2086
-  server: 172.64.52.162
-  servername: 100-100-17-419.db-link02.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-419.db-link02.top
-    path: /dabai.in172.64.52.162
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #23'
-  network: ws
-  port: 2052
-  server: 172.64.33.84
-  servername: 100-100-17-224.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-224.db-link01.top
-    path: /dabai.in172.64.33.84
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #24'
-  network: ws
-  port: 2086
-  server: 104.24.221.185
-  servername: 100-100-17-341.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-341.cn-db.top
-    path: /dabai.in104.24.221.185
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #25'
-  network: ws
-  port: 8080
-  server: 172.67.30.204
-  servername: 100-100-17-170.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-170.db-link01.top
-    path: /dabai.in172.67.30.204
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #26'
-  network: ws
-  port: 443
-  server: 172.64.33.45
-  servername: 100-100-17-275.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-275.db-link01.top
-    path: /dabai.in172.64.33.45
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #27'
-  network: ws
-  port: 8880
-  server: 104.25.137.15
-  servername: 100-100-17-60.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-60.cn-db.top
-    path: /dabai.in104.25.137.15
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #28'
-  network: ws
-  port: 2095
-  server: 104.19.186.45
-  servername: 100-100-17-198.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-198.cn-db.top
-    path: /dabai.in104.19.186.45
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #29'
-  network: ws
-  port: 8880
-  server: 104.16.183.118
-  servername: 100-100-17-174.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-174.cn-db.top
-    path: /dabai.in104.16.183.118
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #30'
-  network: ws
-  port: 2095
-  server: 104.16.154.31
-  servername: 100-100-17-214.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-214.cn-db.top
-    path: /dabai.in104.16.154.31
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #31'
-  network: ws
-  port: 2095
-  server: 104.21.227.47
-  servername: 100-100-17-22.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-22.db-link01.top
-    path: /dabai.in104.21.227.47
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #32'
-  network: ws
-  port: 2095
-  server: 104.16.246.119
-  servername: 100-100-17-373.db-link02.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-373.db-link02.top
-    path: /dabai.in104.16.246.119
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #33'
-  network: ws
-  port: 2052
-  server: 104.20.198.218
-  servername: 100-100-17-117.db-link02.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-117.db-link02.top
-    path: /dabai.in104.20.198.218
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #34'
-  network: ws
-  port: 8880
-  server: 104.20.95.82
-  servername: 100-100-17-457.db-link02.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-457.db-link02.top
-    path: /dabai.in104.20.95.82
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #35'
-  network: ws
-  port: 443
-  server: 104.20.179.229
-  servername: 100-100-17-73.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-73.db-link01.top
-    path: /dabai.in104.20.179.229
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #36'
-  network: ws
-  port: 2087
-  server: 104.16.148.174
-  servername: 100-100-17-45.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-45.db-link02.top
-    path: /dabai.in104.16.148.174
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #37'
-  network: ws
-  port: 2083
-  server: 104.18.170.112
-  servername: 100-100-17-276.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-276.db-link01.top
-    path: /dabai.in104.18.170.112
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #38'
-  network: ws
-  port: 2095
-  server: 104.17.241.139
-  servername: 100-100-17-433.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-433.db-link01.top
-    path: /dabai.in104.17.241.139
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #39'
-  network: ws
-  port: 443
-  server: 104.18.151.45
-  servername: 100-100-17-438.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-438.cn-db.top
-    path: /dabai.in104.18.151.45
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #40'
-  network: ws
-  port: 8080
-  server: 104.17.23.73
-  servername: 100-100-17-58.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-58.db-link01.top
-    path: /dabai.in104.17.23.73
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #41'
-  network: ws
-  port: 2052
-  server: 104.17.217.238
-  servername: 100-100-17-151.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-151.cn-db.top
-    path: /dabai.in104.17.217.238
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #42'
-  network: ws
-  port: 2052
-  server: 104.20.18.96
-  servername: 100-100-17-61.db-link02.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-61.db-link02.top
-    path: /dabai.in104.20.18.96
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #43'
-  network: ws
-  port: 8880
-  server: 104.21.200.173
-  servername: 100-100-17-18.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-18.db-link01.top
-    path: /dabai.in104.21.200.173
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #44'
-  network: ws
-  port: 8880
-  server: 104.20.250.167
-  servername: 100-100-17-76.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-76.cn-db.top
-    path: /dabai.in104.20.250.167
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #45'
-  network: ws
-  port: 2082
-  server: 104.20.10.249
-  servername: 100-100-17-79.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
-  ws-opts:
-    headers:
-      HOST: 100-100-17-79.cn-db.top
-    path: /dabai.in104.20.10.249
 - cipher: aes-256-cfb
-  name: 39|Japan_Tokyo_ss_1121
+  name: 39,42|🇯🇵 JP 4 → tg@nicevpn123
   password: amazonskr05
   port: 443
-  server: 18.182.6.181
+  server: 3.112.218.182
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 39,51|15|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 35.77.99.126
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 42|🇯🇵 JP 1 → tg@nicevpn123
@@ -1177,6 +565,13 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: 42|🇯🇵 JP 63 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 43.201.47.36
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: 42|🇯🇵 JP 65 → tg@nicevpn123
   password: amazonskr05
   port: 443
@@ -1219,20 +614,72 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 43|>🇯🇵 JP|Ms|0518|TG@FProxies|
+  name: 43|>🇯🇵 JP|Ls|0518|TG@FProxies|
   network: ws
-  port: '2052'
-  server: 64.110.101.126
+  port: '5004'
+  server: zf-lolilio89u-jp1.8top.top
   tls: false
   type: vmess
-  uuid: e554e170-cc0d-4f4a-f7fa-4c23eaf63a2c
+  uuid: 4e9a5a3b-e6a9-4d0e-a754-376378d9b9bc
   ws-opts:
     headers:
-      Host: ''
-    path: /?ed=2048
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43|>🇯🇵 JP|Ms|0430|TG@FProxies|
+  network: ws
+  port: '80'
+  server: jp02.beitai.online
+  tls: false
+  type: vmess
+  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
+  ws-opts:
+    headers:
+      Host: jp02.beitai.online
+    path: /
 - alterId: 0
   cipher: auto
   name: 43|>🇯🇵 JP|Hs|0404|TG@FProxies|
+  network: ws
+  port: '80'
+  server: 162.159.142.235
+  tls: false
+  type: vmess
+  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Hs|0404|TG@FProxies| #1'
+  network: ws
+  port: '80'
+  server: 162.159.142.239
+  tls: false
+  type: vmess
+  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43|>🇯🇵 JP|Ms|0518|TG@FProxies|
+  network: ws
+  port: '80'
+  server: jp04.victoriousmelvina.online
+  tls: false
+  type: vmess
+  uuid: e5e2206d-8650-4dfb-9731-fe2ee99b944e
+  ws-opts:
+    headers:
+      Host: jp04.victoriousmelvina.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Hs|0404|TG@FProxies| #2'
   network: ws
   port: '21012'
   server: jp.lianjianode.cc
@@ -1245,20 +692,33 @@ proxies:
     path: /japan
 - alterId: 0
   cipher: auto
-  name: 43,76|US 53|openitr
+  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #1'
   network: ws
-  port: '80'
-  server: cf-004-ipv4.xiaoxiaobujidao.xyz
+  port: '62193'
+  server: jp.littleqqq.co
   tls: false
   type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  uuid: 2649d4e6-48ee-428c-bbe1-18162675cfbf
   ws-opts:
     headers:
-      Host: tk-007.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
+      Host: jp.littleqqq.co
+    path: /live/UKPZrSI3K7dtNJmn
 - alterId: 0
   cipher: auto
-  name: '43|>🇯🇵 JP|Hs|0430|TG@FProxies| #1'
+  name: 43|日本【免费 03】
+  network: ws
+  port: '80'
+  server: cf3.ftclashcloud.site
+  tls: false
+  type: vmess
+  uuid: 066f5f51-6190-4cfe-84e9-37b05b087fa3
+  ws-opts:
+    headers:
+      Host: azjp01.ftclashcloud.online
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 43|>🇯🇵 JP|Hs|0430|TG@FProxies|
   network: ws
   port: '2087'
   server: ggjp.duduskying.tk
@@ -1271,33 +731,46 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0518|TG@FProxies| #1'
+  name: '43|>🇯🇵 JP|Hs|0404|TG@FProxies| #3'
   network: ws
-  port: '38752'
-  server: 0000000000000000000000000022.agroup-node-for-bigairport.sbs
-  tls: true
+  port: '80'
+  server: 162.159.142.236
+  tls: false
   type: vmess
-  uuid: 323c4178-e9ad-4eb9-9731-fabe6d652537
+  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
   ws-opts:
     headers:
-      Host: 0000000000000000000000000022.agroup-node-for-bigairport.sbs
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 43|日本【免费 04】
+  name: 43|>🇯🇵 JP|Ms|0404|TG@FProxies|
   network: ws
-  port: '80'
-  server: cf4.ftclashcloud.site
-  tls: false
+  port: '8080'
+  server: 87.120.204.126
+  tls: true
   type: vmess
-  uuid: 066f5f51-6190-4cfe-84e9-37b05b087fa3
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
     headers:
-      Host: azjp01.ftclashcloud.online
-    path: /ws?ed=2560
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 43|>🇯🇵 JP|Ms|0430|TG@FProxies|
+  name: '43|>🇯🇵 JP|Hs|0430|TG@FProxies| #1'
+  network: ws
+  port: '80'
+  server: jp01.fredericamelody.online
+  tls: false
+  type: vmess
+  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  ws-opts:
+    headers:
+      Host: jp01.fredericamelody.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #2'
   network: ws
   port: '80'
   server: jp01.beitai.online
@@ -1307,6 +780,93 @@ proxies:
   ws-opts:
     headers:
       Host: jp01.beitai.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Ms|0518|TG@FProxies| #1'
+  network: ws
+  port: '443'
+  server: tls.19.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: 323c4178-e9ad-4eb9-9731-fabe6d652537
+  ws-opts:
+    headers:
+      Host: tls.19.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #1'
+  network: ws
+  port: '80'
+  server: jp02.victorialouisa.online
+  tls: false
+  type: vmess
+  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
+  ws-opts:
+    headers:
+      Host: jp02.victorialouisa.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: jp03.victorialouisa.online
+  tls: false
+  type: vmess
+  uuid: f6125b2b-1c0d-4cb9-9c39-d00b437fc342
+  ws-opts:
+    headers:
+      Host: jp03.victorialouisa.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43,76|HK 1|openitr
+  network: tcp
+  port: '443'
+  server: kagoya.hkss.online
+  tls: false
+  type: vmess
+  uuid: 4664e760-f5f3-3cc2-8bb3-04f85aa7febb
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #3'
+  network: ws
+  port: '80'
+  server: jp01.philbertbeguiling.online
+  tls: false
+  type: vmess
+  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
+  ws-opts:
+    headers:
+      Host: jp01.philbertbeguiling.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Hs|0430|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: jp01.handsomequinlan.online
+  tls: false
+  type: vmess
+  uuid: 4ebcbea9-9da6-40ad-afd1-30cb953c9688
+  ws-opts:
+    headers:
+      Host: jp01.handsomequinlan.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #4'
+  network: ws
+  port: '80'
+  server: jp02.fredericamelody.online
+  tls: false
+  type: vmess
+  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  ws-opts:
+    headers:
+      Host: jp02.fredericamelody.online
     path: /
 - alterId: 0
   cipher: auto
@@ -1325,46 +885,43 @@ proxies:
     path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #1'
+  name: '43|>🇯🇵 JP|Ls|0518|TG@FProxies| #1'
   network: ws
   port: '80'
-  server: jp01.philbertbeguiling.online
+  server: jp-d.rcdn.link
   tls: false
   type: vmess
-  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
+  uuid: 9e49cdf4-2f50-4f94-b7ec-3496a5cf509b
   ws-opts:
     headers:
-      Host: jp01.philbertbeguiling.online
-    path: /
+      Host: svideo.mfa.gov.cn
+    path: /masvod/public/2023/03/07/20230307_186bcc301d4_r1_1200k.mp4
 - alterId: 0
   cipher: auto
   name: '43|>🇯🇵 JP|Ms|0518|TG@FProxies| #3'
   network: ws
-  port: '443'
-  server: tls.19.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 323c4178-e9ad-4eb9-9731-fabe6d652537
-  ws-opts:
-    headers:
-      Host: tls.19.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Hs|0404|TG@FProxies| #1'
-  network: ws
-  port: '21011'
-  server: jp.lianjianode.cc
+  port: '2052'
+  server: 64.110.101.126
   tls: false
   type: vmess
-  uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb
+  uuid: e554e170-cc0d-4f4a-f7fa-4c23eaf63a2c
   ws-opts:
     headers:
-      Host: jp.lianjianode.cc
-    path: /japan
+      Host: ''
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 43|>🇯🇵 JP|Ms|0404|TG@FProxies|
+  name: '43,56|广东省汕头市 移动 #7'
+  network: tcp
+  port: '61002'
+  server: 183.240.179.195
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #4'
   network: ws
   port: '80'
   server: jp03.oliviapretty.online
@@ -1377,30 +934,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 43|>🇯🇵 JP|Ls|0518|TG@FProxies|
+  name: '43|>🇯🇵 JP|Ms|0518|TG@FProxies| #4'
   network: ws
-  port: '34699'
-  server: zf-lolilio89u-jp1.8top.top
-  tls: false
+  port: '38752'
+  server: 0000000000000000000000000022.agroup-node-for-bigairport.sbs
+  tls: true
   type: vmess
-  uuid: 4e9a5a3b-e6a9-4d0e-a754-376378d9b9bc
+  uuid: 323c4178-e9ad-4eb9-9731-fabe6d652537
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
+      Host: 0000000000000000000000000022.agroup-node-for-bigairport.sbs
     path: /
 - alterId: 0
   cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #1'
+  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #5'
   network: ws
-  port: '8080'
-  server: 87.120.204.126
-  tls: true
+  port: '2052'
+  server: 47.74.6.16
+  tls: false
   type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
   ws-opts:
     headers:
       Host: ''
-    path: /
+    path: /039fc4e4
 - alterId: 0
   cipher: auto
   name: 43,76|US 54|openitr
@@ -1416,137 +973,33 @@ proxies:
     path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #2'
+  name: '43|>🇯🇵 JP|Ls|0518|TG@FProxies| #3'
   network: ws
-  port: '80'
-  server: jp02.victorialouisa.online
+  port: '34699'
+  server: zf-lolilio89u-jp1.8top.top
   tls: false
   type: vmess
-  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
+  uuid: 4e9a5a3b-e6a9-4d0e-a754-376378d9b9bc
   ws-opts:
     headers:
-      Host: jp02.victorialouisa.online
+      Host: tms.dingtalk.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 43|>🇯🇵 JP|Hs|0518|TG@FProxies|
+  name: 43,76|US 53|openitr
   network: ws
   port: '80'
-  server: 162.159.135.42
+  server: cf-004-ipv4.xiaoxiaobujidao.xyz
   tls: false
   type: vmess
-  uuid: 85b2515e-5373-3cec-b6ae-4750693b7e2b
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
   ws-opts:
     headers:
-      Host: tk-000.xiaoxiaobujidao.xyz
+      Host: tk-007.xiaoxiaobujidao.xyz
     path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #2'
-  network: ws
-  port: '62193'
-  server: jp.littleqqq.co
-  tls: false
-  type: vmess
-  uuid: 2649d4e6-48ee-428c-bbe1-18162675cfbf
-  ws-opts:
-    headers:
-      Host: jp.littleqqq.co
-    path: /live/UKPZrSI3K7dtNJmn
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0518|TG@FProxies| #4'
-  network: ws
-  port: '80'
-  server: jp04.victoriousmelvina.online
-  tls: false
-  type: vmess
-  uuid: e5e2206d-8650-4dfb-9731-fe2ee99b944e
-  ws-opts:
-    headers:
-      Host: jp04.victoriousmelvina.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Hs|0404|TG@FProxies| #2'
-  network: ws
-  port: '80'
-  server: 162.159.142.235
-  tls: false
-  type: vmess
-  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: jp03.victorialouisa.online
-  tls: false
-  type: vmess
-  uuid: f6125b2b-1c0d-4cb9-9c39-d00b437fc342
-  ws-opts:
-    headers:
-      Host: jp03.victorialouisa.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Hs|0404|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: 162.159.142.239
-  tls: false
-  type: vmess
-  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: jp02.beitai.online
-  tls: false
-  type: vmess
-  uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
-  ws-opts:
-    headers:
-      Host: jp02.beitai.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Hs|0430|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: jp01.fredericamelody.online
-  tls: false
-  type: vmess
-  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
-  ws-opts:
-    headers:
-      Host: jp01.fredericamelody.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Hs|0430|TG@FProxies| #4'
-  network: ws
-  port: '80'
-  server: jp01.handsomequinlan.online
-  tls: false
-  type: vmess
-  uuid: 4ebcbea9-9da6-40ad-afd1-30cb953c9688
-  ws-opts:
-    headers:
-      Host: jp01.handsomequinlan.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Hs|0518|TG@FProxies| #1'
+  name: 43|>🇯🇵 JP|Hs|0518|TG@FProxies|
   network: ws
   port: '80'
   server: jp01.travisdependable.online
@@ -1561,28 +1014,15 @@ proxies:
   cipher: auto
   name: '43|>🇯🇵 JP|Hs|0404|TG@FProxies| #4'
   network: ws
-  port: '80'
-  server: 162.159.142.236
+  port: '21011'
+  server: jp.lianjianode.cc
   tls: false
   type: vmess
-  uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+  uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 43|日本【免费 03】
-  network: ws
-  port: '80'
-  server: cf3.ftclashcloud.site
-  tls: false
-  type: vmess
-  uuid: 066f5f51-6190-4cfe-84e9-37b05b087fa3
-  ws-opts:
-    headers:
-      Host: azjp01.ftclashcloud.online
-    path: /ws?ed=2560
+      Host: jp.lianjianode.cc
+    path: /japan
 - alterId: 2
   cipher: auto
   name: 43|>🇯🇵 JP|Ns|0518|TG@FProxies|
@@ -1598,75 +1038,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '43,56|广东省汕头市 移动 #7'
-  network: tcp
-  port: '61002'
-  server: 183.240.179.195
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 43,76|HK 1|openitr
-  network: tcp
-  port: '443'
-  server: kagoya.hkss.online
-  tls: false
-  type: vmess
-  uuid: 4664e760-f5f3-3cc2-8bb3-04f85aa7febb
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Ls|0518|TG@FProxies| #2'
-  network: ws
-  port: '5004'
-  server: zf-lolilio89u-jp1.8top.top
-  tls: false
-  type: vmess
-  uuid: 4e9a5a3b-e6a9-4d0e-a754-376378d9b9bc
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Ls|0518|TG@FProxies| #3'
+  name: 43|日本【免费 04】
   network: ws
   port: '80'
-  server: jp-d.rcdn.link
+  server: cf4.ftclashcloud.site
   tls: false
   type: vmess
-  uuid: 9e49cdf4-2f50-4f94-b7ec-3496a5cf509b
+  uuid: 066f5f51-6190-4cfe-84e9-37b05b087fa3
   ws-opts:
     headers:
-      Host: svideo.mfa.gov.cn
-    path: /masvod/public/2023/03/07/20230307_186bcc301d4_r1_1200k.mp4
+      Host: azjp01.ftclashcloud.online
+    path: /ws?ed=2560
 - alterId: 0
   cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0430|TG@FProxies| #4'
+  name: '43|>🇯🇵 JP|Hs|0518|TG@FProxies| #1'
   network: ws
   port: '80'
-  server: jp02.fredericamelody.online
+  server: 162.159.135.42
   tls: false
   type: vmess
-  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  uuid: 85b2515e-5373-3cec-b6ae-4750693b7e2b
   ws-opts:
     headers:
-      Host: jp02.fredericamelody.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇯🇵 JP|Ms|0404|TG@FProxies| #5'
-  network: ws
-  port: '2052'
-  server: 47.74.6.16
-  tls: false
-  type: vmess
-  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
-  ws-opts:
-    headers:
-      Host: ''
-    path: /039fc4e4
+      Host: tk-000.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
 - alterId: 64
   cipher: auto
   name: 47,50|日本 001
@@ -1680,6 +1075,20 @@ proxies:
     headers:
       Host: www.44317374.xyz
     path: /path/182320181512
+- alterId: 0
+  cipher: auto
+  name: 47,50|日本 002
+  network: ws
+  port: 80
+  server: 18.181.190.41
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e7c26c01-186a-479e-9218-4952353d97f1
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 64
   cipher: auto
   name: 47,50|日本 003
@@ -1693,6 +1102,20 @@ proxies:
     headers:
       Host: www.90015096.xyz
     path: /path/182320181512
+- alterId: 0
+  cipher: auto
+  name: 47,50|日本 004
+  network: ws
+  port: 443
+  server: 172.104.80.40
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 323c4178-e9ad-4eb9-9731-fabe6d652537
+  ws-opts:
+    headers:
+      Host: tls.19.node-for-bigairport.win
+    path: /
 - alterId: 0
   cipher: auto
   name: 51,66|🇯🇵JP-150.230.100.32-2749
@@ -1736,6 +1159,20 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
+  name: 51|13|RU_分享日记_17
+  network: ws
+  port: 443
+  server: hk-full.privateip.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: f2c48b2f-c581-4d7d-846e-8bd97d93bd65
+  ws-opts:
+    headers:
+      Host: ''
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
   name: 51|14|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -1743,7 +1180,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4b07ebb5-4796-47db-a944-d7a69894297d
+  uuid: bd1d555e-76f3-460d-bbca-1665b80c6c94
 - alterId: 0
   cipher: auto
   name: 51|14|【BGP】日本 05  | 1x JP
@@ -1753,7 +1190,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4b07ebb5-4796-47db-a944-d7a69894297d
+  uuid: bd1d555e-76f3-460d-bbca-1665b80c6c94
 - alterId: 0
   cipher: auto
   name: 51|14|【BGP】日本 06  | 1x JP
@@ -1763,7 +1200,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4b07ebb5-4796-47db-a944-d7a69894297d
+  uuid: bd1d555e-76f3-460d-bbca-1665b80c6c94
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1888,12 +1325,22 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 2
+  cipher: auto
+  name: 74|🔒 VM-TCP-NA 🇯🇵 JP-154.31.112.5...
+  network: tcp
+  port: '229'
+  server: 154.31.112.51
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
 - alterId: 0
   cipher: auto
-  name: 74|🔒 VM-TCP-NA 🇯🇵 JP-18.183.39.91...
+  name: 74|🔒 VM-TCP-NA 🇯🇵 JP-35.78.241.13...
   network: tcp
   port: 11773
-  server: 18.183.39.91
+  server: 35.78.241.13
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
