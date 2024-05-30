@@ -1,64 +1,70 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: JP
-  name: 13,82|CN_speednode_0018
-  password: 256f9142-09e2-31f4-8b1b-8c8d0f4068b1
-  port: 61005
-  server: 2.forlive.live
-  type: ss
-- cipher: rc4-md5
-  country: TW
-  name: 13|Relay_TW_TW_1153
-  obfs: tls1.2_ticket_auth
-  obfs-param: 11.au.download.windowsupdate.com
-  password: GKSLCJRw163W
-  port: 995
-  protocol: auth_aes128_md5
-  protocol-param: 20030:xBnnSWhmpbzT
-  server: tw1.mydarkcloud.info
-  type: ssr
-- cipher: aes-256-gcm
-  country: TW
-  name: 13|Relay_TW-TW_1400
-  password: 93daa32e-f753-4fb6-9d1c-8a46796dad67
-  port: 37070
-  server: hinet-wap.myddns.me
-  type: ss
 - cipher: aes-128-gcm
-  name: 18,82|CN_speednode_0017
+  name: 18,42,82|CN_speednode_0017
   password: 5dc640e2-5f78-4e90-9fce-f21e1e62cc41
   port: 22302
   server: 04.forlive.live
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '18|disney_netflix_TW #4'
-  password: 5a4c9426-0dfe-4797-a24a-e7cd4f0beb20
-  port: 40009
-  server: tw04.mmyjiedian.com
-  type: ss
-- country: TW
-  name: 18|Relay_TW-TW_894
-  network: ws
-  password: moist
-  port: 13688
-  server: 118.163.128.81
-  sni: trojan.freenods.sbs
-  type: trojan
   udp: true
+- alterId: 64
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_TW #1'
+  network: ws
+  port: 30000
+  server: 103.123.132.27
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: trojan.freenods.sbs
-    path: /
+      host: www.97254291.xyz
+    path: /path/182320181512
+- alterId: 64
+  cipher: auto
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_TW #2'
+  network: ws
+  port: 30000
+  server: 103.177.33.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/341901080027
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🏁ZZ
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 18,31,41|2136c7cfdfaf453db10f142d736b0a...
+  network: ws
+  port: 80
+  server: go.alipay.ovh
+  servername: hinet.alipay.ovh
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
+  ws-opts:
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 18|Relay_ZZ-TW_1055
+  name: 18|Relay_ZZ-TW_967
   network: ws
   port: 8080
-  server: 104.19.47.0
+  server: 104.19.47.126
   servername: oiictw.yydsii.com
   skip-cert-verify: true
   type: vmess
@@ -67,6 +73,91 @@ proxies:
     headers:
       HOST: oiictw.yydsii.com
     path: /?ed=2048&Telegram @WangCai2
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-TW_994
+  network: ws
+  port: 80
+  server: 104.26.0.129
+  servername: hinet.alipay.ovh
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
+  ws-opts:
+    headers:
+      HOST: hinet.alipay.ovh
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 31|TW_111 | 2.32Mb
+  network: ws
+  port: 80
+  server: 61.227.217.177
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: bb7d0ae0-85bd-4d9f-8391-b3d927ccb497
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 31|Relay_🇼TW-🇹🇼TW_112 | 1.60Mb
+  network: ws
+  port: 80
+  server: tw1g.forlive.live
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: bb7d0ae0-85bd-4d9f-8391-b3d927ccb497
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 31|Relay_🏁ZZ-🇼TW_265 | 3.85Mb
+  network: ws
+  port: 80
+  server: 162.159.9.55
+  servername: hinet.alipay.ovh
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
+  ws-opts:
+    headers:
+      HOST: hinet.alipay.ovh
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 31|Relay_🏁ZZ-🇼TW_281 | 1.68Mb
+  network: ws
+  port: 8080
+  server: 104.19.172.136
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 39|Taiwan_Taichung_ss_112
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -80,7 +171,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 39,43,45,51,62|5,6||@ripaojiedian
+  name: 39,43,51,62|5,6||@ripaojiedian
   network: ws
   port: '80'
   server: tw1g.forlive.live
@@ -124,16 +215,47 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 43|台湾01-家宽
-  network: ws
-  port: '2052'
-  server: yx.sulink.one
+  name: 43|>🇹🇼 TW|Hs|0430|TG@FProxies|
+  network: tcp
+  port: '35072'
+  server: 183.240.188.35
   tls: false
   type: vmess
-  uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
+  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
+- alterId: 0
+  cipher: auto
+  name: '43|>🇹🇼 TW|Hs|0430|TG@FProxies| #1'
+  network: ws
+  port: '20009'
+  server: 188.253.6.35
+  tls: false
+  type: vmess
+  uuid: aec0b8bb-7544-4e60-8065-5fa3ad480cf7
   ws-opts:
     headers:
-      Host: tw01.susulian.cyou
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43|>🇹🇼 TW|Ms|0430|TG@FProxies|
+  network: tcp
+  port: '35068'
+  server: tanz-tw.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: 1e6904f3-d925-33cf-88b1-d992f268e1ac
+- alterId: 0
+  cipher: auto
+  name: '43|>🇹🇼 TW|Hs|0518|TG@FProxies| #2'
+  network: ws
+  port: '8080'
+  server: 104.18.189.123
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -150,7 +272,29 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai2
 - alterId: 0
   cipher: auto
-  name: 43|>🇹🇼 TW|Hs|0518|TG@FProxies|
+  name: 43|>🇹🇼 TW|Ms|0518|TG@FProxies|
+  network: ws
+  port: '21004'
+  server: tw.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 10e2ec07-a8bf-4bc7-b1b2-51507c5b6818
+  ws-opts:
+    headers:
+      Host: tw.lianjianode.cc
+    path: /hinet
+- alterId: 0
+  cipher: auto
+  name: '43|>🇹🇼 TW|Ms|0518|TG@FProxies| #1'
+  network: tcp
+  port: '21003'
+  server: 183.240.179.195
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: '43|>🇹🇼 TW|Hs|0518|TG@FProxies| #3'
   network: ws
   port: '33540'
   server: zf-lolilio89u-jp1.8top.top
@@ -160,37 +304,6 @@ proxies:
   ws-opts:
     headers:
       Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 43|>🇹🇼 TW|Ms|0430|TG@FProxies|
-  network: tcp
-  port: '35068'
-  server: tanz-tw.01byx31qzn.download
-  tls: false
-  type: vmess
-  uuid: 1e6904f3-d925-33cf-88b1-d992f268e1ac
-- alterId: 0
-  cipher: auto
-  name: 43|>🇹🇼 TW|Ms|0518|TG@FProxies|
-  network: tcp
-  port: '21003'
-  server: 183.240.179.195
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 43|台湾02-奈非-3倍率
-  network: ws
-  port: '80'
-  server: yx.sulink.one
-  tls: false
-  type: vmess
-  uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
-  ws-opts:
-    headers:
-      Host: tw02.sulink.one
     path: /
 - alterId: 0
   cipher: auto
@@ -207,33 +320,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai2
 - alterId: 0
   cipher: auto
-  name: '43|>🇹🇼 TW|Ms|0404|TG@FProxies| #1'
-  network: ws
-  port: '20009'
-  server: 188.253.6.35
-  tls: false
-  type: vmess
-  uuid: 6f43e729-95fe-4e19-b2e4-1ab3eb69112c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43|>🇹🇼 TW|Ms|0518|TG@FProxies| #1'
-  network: ws
-  port: '21004'
-  server: tw.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 10e2ec07-a8bf-4bc7-b1b2-51507c5b6818
-  ws-opts:
-    headers:
-      Host: tw.lianjianode.cc
-    path: /hinet
-- alterId: 0
-  cipher: auto
-  name: '43|>🇹🇼 TW|Hs|0518|TG@FProxies| #3'
+  name: '43|>🇹🇼 TW|Hs|0518|TG@FProxies| #4'
   network: ws
   port: '39603'
   server: hinet-wap.myddns.me
@@ -246,22 +333,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '43|>🇹🇼 TW|Hs|0430|TG@FProxies| #1'
-  network: tcp
-  port: '35072'
-  server: 183.240.188.35
-  tls: false
-  type: vmess
-  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
-- alterId: 0
-  cipher: auto
-  name: '43|>🇹🇼 TW|Hs|0518|TG@FProxies| #4'
+  name: 74|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17...
   network: ws
-  port: '8080'
-  server: 104.18.189.123
-  tls: false
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
   type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
       Host: ''
@@ -306,29 +385,3 @@ proxies:
     headers:
       host: hinet-wap.myddns.me
     path: /index?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 76|TW 6|openitr
-  network: ws
-  port: '80'
-  server: 7cc02ab9-3478-1733-ea94-2b45d8e115a0.bugtik.ltd
-  tls: false
-  type: vmess
-  uuid: 3ae2132f-bc69-4782-9a65-c7ad4002b5c2
-  ws-opts:
-    headers:
-      Host: 7cc02ab9-3478-1733-ea94-2b45d8e115a0.bugtik.ltd
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 76|TW 7|openitr
-  network: ws
-  port: '80'
-  server: 207c13fb-83b6-2021-766b-6c95e56a4a33.bugtik.ltd
-  tls: false
-  type: vmess
-  uuid: 3ae2132f-bc69-4782-9a65-c7ad4002b5c2
-  ws-opts:
-    headers:
-      Host: 207c13fb-83b6-2021-766b-6c95e56a4a33.bugtik.ltd
-    path: /
