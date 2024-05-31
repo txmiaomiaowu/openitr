@@ -1,10 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '1,11|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  name: 1,11,59|🏁RELAY-104.18.19.191-3041
   network: ws
   port: 2052
   server: 104.18.19.191
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
@@ -36,8 +37,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
-- client-fingerprint: chrome
-  name: 4,39,51|1|_CN_->_US__2
+- country: CN
+  name: 4,18,51|1|_CN_->_US__2
   network: tcp
   password: TNDSJfNv
   port: 4787
@@ -45,7 +46,8 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 4,39,51,62,82|CN_speednode_0020
+- country: CN
+  name: 4,18,39,51,62,82|CN_speednode_0020
   network: tcp
   password: TNDSJfNv
   port: 4603
@@ -55,10 +57,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '4,42,51,64|🇺🇸_US_美国->🇮🇳_IN_印度 #9'
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: '4,13,18,23,42,51,59,64|🇺🇸_US_美国->🇮🇳_IN_印度 #9'
   network: ws
   port: 2052
   server: 172.67.164.78
+  servername: in3.wish.ml
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -70,24 +76,27 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,51|1|_US_->_IN__2
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 4,13,18,51,59|🏁RELAY-104.17.156.224-0109
   network: ws
   port: 2052
   server: 104.17.156.224
-  skip-cert-verify: true
+  servername: in4.wish.ml
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
-    headers:
-      host: in4.wish.ml
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,8,28,43,51,52,56,60|🇺🇸 _US_美国->🇮🇳_IN_印度
+  name: 6,8,28,43,51,52,56,59,60|🇺🇸 _US_美国->🇮🇳_IN_印度
   network: ws
   port: '2052'
   server: 172.67.164.78
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
@@ -97,10 +106,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,28,43,45,51,60|🇺🇸 _US_美国->🇮🇳_IN_印度 #1'
+  name: '6,28,43,51,59,60|🇺🇸 _US_美国->🇮🇳_IN_印度 #1'
   network: ws
   port: '2052'
   server: 104.17.156.224
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
@@ -136,12 +146,12 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '27,29,42,50,51,53,85|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #2'
+  name: '27,29,42,50,51,53,59,85|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #2'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -178,10 +188,11 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '29,46,51,76,85|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: '29,46,51,59,76,85|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
   network: ws
   port: 2082
   server: 104.21.8.157
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -191,10 +202,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '29,45,51,76,85|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
+  name: '29,51,59,76,85|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
   network: ws
   port: 2082
   server: 172.67.130.140
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -285,10 +297,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 51|13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
+  name: 51,59|🏁RELAY-104.21.13.125-0136
   network: ws
   port: 80
   server: upload.ir
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
@@ -312,10 +325,11 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 51|13|🇺🇸_US_美国->🇵🇱_PL_波兰
+  name: 51,59|🏁RELAY-104.21.69.44-0350
   network: ws
   port: 80
   server: zula.ir
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 3fd9190e-a132-42ca-a33b-4a37b4b3e0cd
