@@ -11,7 +11,7 @@ proxies:
   uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
 - alterId: 0
   cipher: auto
-  name: 11,12,56,60|🇨🇳 广东省深圳市 移动
+  name: '11,12,47,56,60|🇨🇳 广东省深圳市 移动 #1'
   network: ws
   port: '16632'
   server: 183.232.142.47
@@ -95,12 +95,13 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '11,43,56|广东省佛山市 移动 #17'
+  name: '11,56,75|未命名 #10'
   network: tcp
-  port: '61001'
+  port: 61001
   server: 183.232.199.61
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
@@ -119,7 +120,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,12,43,45,56|广东省 移动
+  name: 11,12,45,56|广东省 移动
   network: ws
   port: '16632'
   server: m.cnmjin.net
@@ -133,7 +134,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,12,56|湖南省 联通
+  name: '11,12,47,56|湖南省 联通 #2'
   network: ws
   port: '16632'
   server: yes.cnmjcn.net
@@ -145,12 +146,27 @@ proxies:
     headers:
       Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
     path: /
+- alterId: 64
+  cipher: auto
+  country: ' CN'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,45,74,75|未知1078
+  network: tcp
+  port: 50002
+  server: 120.210.205.82
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' CN'
   h2-opts: {}
   http-opts: {}
-  name: 16| CN_73
+  name: 16| CN_87
   network: ws
   port: 80
   server: 47.106.112.114
@@ -158,36 +174,12 @@ proxies:
   type: vmess
   uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
   ws-path: /
-- alterId: 64
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 18|CN_675
-  network: tcp
-  port: 50004
-  server: 112.132.212.19
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 18|CN_676
-  network: tcp
-  port: 50002
-  server: 47.116.173.76
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18|CN_678
+  name: 18|CN_766
   network: ws
   port: 80
   server: 47.106.112.114
@@ -201,31 +193,21 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18,43|🇰🇷 韩国 - 首尔特别市 - Oracle Corpora...
-  network: tcp
-  port: '20006'
-  server: kr01.aikunapp.com
+  name: 18|Relay_CN-CN_767
+  network: ws
+  port: 80
+  server: ah.xn--wlqw1swrj04ju56d.com
+  servername: tms.dingtalk.com
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 62771ce7-db7e-4e82-b143-48499a991d89
-- alterId: 64
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 18,45,74,75|未知291
-  network: tcp
-  port: 50002
-  server: 120.210.205.82
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 91234155-8fab-43e1-b22a-2fd831b74c21
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
 - cipher: rc4-md5
   country: CN
-  name: 19,32|Relay_-CN_02
+  name: 19,31,32|Relay_-CN_02
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -236,7 +218,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 19,32|Pool__01
+  name: 19,31,32|Pool__01
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -247,7 +229,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 19,32|Pool__03
+  name: 19,31,32|Pool__03
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -256,27 +238,31 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- alterId: 0
-  cipher: aes-128-gcm
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 39,51,62,75|🇨2
+  name: 39,51,62|5|🇬 新加坡2|@ripaojiedian
   password: fcf9cb7c-6bc9-406e-87c0-bd8b09d170ee
   port: 32652
   server: xiaonangua.lwjyj.com
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
-  name: 39,43,51,62|6|香港7|@ripaojiedian
+  name: 39,43,51,62|6|香港5|@ripaojiedian
   network: tcp
-  port: '35996'
-  server: 786huix-ee.dc-zix4ssc1-hk03.my777999.top
+  port: '15606'
+  server: 183.232.170.47
   servername: ''
   tls: false
   type: vmess
-  uuid: 33aefd89-3285-4347-9083-6249711f02e9
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- name: 39,62,82|CN_speednode_0013
+  network: tcp
+  password: TNDSJfNv
+  port: 29529
+  server: 120.236.196.21
+  skip-cert-verify: true
+  type: trojan
 - alterId: '0'
   cipher: auto
   name: 39|China_None_vmess_1215
@@ -1272,7 +1258,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '42,46,48,65,67,75|KR #1'
+  name: 42,46,48,65,67,75|DE
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -2794,20 +2780,20 @@ proxies:
   ws-path: /debian
 - alterId: 64
   cipher: auto
-  name: '47,56|广东省广州市 移动 #2'
+  name: 56|广东省江门市 移动
   network: tcp
-  port: '54437'
-  server: 183.236.51.59
+  port: '34414'
+  server: 120.238.122.250
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 56|广东省江门市 移动
+  name: '56|广东省广州市 移动 #2'
   network: tcp
-  port: '34414'
-  server: 120.238.122.250
+  port: '54437'
+  server: 183.236.51.59
   servername: ''
   tls: false
   type: vmess
@@ -2842,3 +2828,14 @@ proxies:
       host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 75|🇨🇳广东4
+  network: tcp
+  password: TNDSJfNv
+  port: 41446
+  server: 183.232.139.22
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
