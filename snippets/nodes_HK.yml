@@ -13,62 +13,72 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14,15,16,19,33| HK_120
+  name: 14,15,16,19,32,33| HK_116
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
   protocol: origin
   server: 150.107.46.21
   type: ssr
-- alterId: 64
+- alterId: 32
+  cipher: auto
+  country: ' NL'
+  h2-opts: {}
+  http-opts: {}
+  name: 14|Relay_ NL-HK_160
+  network: ws
+  port: 443
+  server: 77.83.141.171
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
+- cipher: chacha20-ietf-poly1305
+  country: ' HK'
+  name: 16|ChatGPT  HK_230
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node4.s.nodelist-gfwairport2.top
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,18|Relay_-HK_591
+  network: ws
+  port: 2095
+  server: onea.flha.ru
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts: {}
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 18,42|🇪🇸 ES 25 → tg@nicevpn123
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+  port: 61007
+  server: 1.forlive.live
+  type: ss
+  udp: true
+- alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 18,43|🇭🇰 中国 - 香港 - CTG Server Ltd. -...
+  name: 18,43,82|CN_speednode_0019
   network: tcp
-  port: '54100'
-  server: 183.236.51.59
+  port: 15601
+  server: 183.232.142.179
+  servername: None
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_-HK_792
-  network: tcp
-  port: 15604
-  server: 183.232.142.179
-  type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #8'
-  network: ws
-  port: 2052
-  server: 104.19.54.70
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: hk2.wish.ml
-    path: /?ed=2048&Telegram @WangCai2
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #9'
-  network: ws
-  port: 2052
-  server: 104.19.54.98
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: hk2.wish.ml
-    path: /?ed=2048&Telegram @WangCai2
 - name: 18,39,62,82|CN_speednode_0013
   network: tcp
   password: TNDSJfNv
@@ -82,7 +92,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,45,57,62|0|-https://t.me/MrXbin-88
+  name: 18,39,45,57|🇭🇰HK-210.3.159.224-0955
   network: ws
   port: 12909
   server: 210.3.159.224
@@ -91,149 +101,35 @@ proxies:
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
+    headers:
+      host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  country: US
+  name: '18|disney_HK #11'
+  password: 44616c04-57e1-491a-9239-80b805b8d770
+  port: 50001
+  server: iepl1.forlive.live
+  type: ss
 - alterId: 0
   cipher: auto
-  country: ZZ
+  country: SG
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_HK #11'
-  network: ws
-  port: 2052
-  server: 104.19.54.10
-  servername: hk2.wish.ml
+  name: '18|disney_netflix_HK #10'
+  network: tcp
+  port: 15074
+  server: 15074.kuaiyin02.top
+  servername: 15074.kuaiyin02.top
   skip-cert-verify: true
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048&Telegram@WangCai2
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_HK #12'
-  network: ws
-  port: 2052
-  server: 104.19.54.102
-  servername: hk2.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048&Telegram@WangCai2
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #13'
-  network: ws
-  port: 2052
-  server: 104.19.54.131
-  servername: hk2.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_HK #9'
-  network: ws
-  port: 2052
-  server: 104.19.54.188
-  servername: hk2.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #14'
-  network: ws
-  port: 2052
-  server: 104.19.54.204
-  servername: hk2.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #15'
-  network: ws
-  port: 2052
-  server: 104.19.54.20
-  servername: hk2.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048&Telegram@WangCai2
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #16'
-  network: ws
-  port: 2052
-  server: 104.19.54.77
-  servername: hk2.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #17'
-  network: ws
-  port: 2052
-  server: 104.17.61.207
-  servername: hk2.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_HK #18'
+  name: '18|disney_HK #16'
   network: ws
   port: 80
   server: 104.16.45.60
@@ -250,31 +146,1160 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_HK #19'
+  name: 18,42|🇺🇸 US 870 → tg@nicevpn123
   network: ws
-  port: 2052
-  server: 104.19.54.19
-  servername: hk2.wish.ml
+  port: 2095
+  server: 104.19.45.190
+  servername: onea.flha.ru
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   ws-opts:
-    headers:
-      HOST: hk2.wish.ml
-    path: /?ed=2048&Telegram@WangCai2
+    path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 33|🇭🇰HK_129
+  name: 18,23,42|🇺🇸 US 787 → tg@nicevpn123
   network: ws
-  port: 80
-  server: 182.16.1.194
+  port: 2095
+  server: 104.19.45.17
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 271 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.137
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1333 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.232
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1887 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.114
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 852 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.108
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1592 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.203
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 986 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.74
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1868 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.202
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 880 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.3
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 120 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.15
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 613 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.235
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 931 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.117
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1015 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.253
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 590 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.80
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1628 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.33
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 840 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.9
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 61 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.34
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 193 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.12
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 454 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.57
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 869 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.238
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1572 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.179
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1268 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.191
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 233 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.201
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1834 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.222
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1498 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.172
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1550 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.0
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 232 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.14
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1387 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.166
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1350 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.220
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-HK_1035
+  network: ws
+  port: 2095
+  server: 104.19.45.254
+  servername: onea.flha.ru
   skip-cert-verify: true
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 424 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.75
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1745 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.154
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  delay: 2582
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42,47,50|加拿大 021
+  network: ws
+  port: 2095
+  server: 104.19.45.240
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 216 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.199
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 976 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.228
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1889 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.13
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1179 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.209
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 954 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.48
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1810 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.212
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 704 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.25
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 151 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.85
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1339 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.128
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1817 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.98
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1747 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.66
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1220 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.178
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 949 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.176
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1472 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.237
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1903 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.5
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1260 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.161
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 79 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.92
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 385 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.106
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-HK_1095
+  network: ws
+  port: 2095
+  server: 104.19.45.193
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-HK_1096
+  network: ws
+  port: 2095
+  server: 104.19.45.248
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 325 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.70
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 266 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.184
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1549 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.197
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-HK_1135
+  network: ws
+  port: 2095
+  server: 104.19.45.164
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1306 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.175
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1905 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.194
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 297 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.230
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1404 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.2
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 561 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.73
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 1060 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.111
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-HK_1146
+  network: ws
+  port: 2095
+  server: 104.19.45.4
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 483 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.151
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42|🇺🇸 US 973 → tg@nicevpn123
+  network: ws
+  port: 2095
+  server: 104.19.45.226
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-HK_1153
+  network: ws
+  port: 2095
+  server: 104.19.45.196
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
+    path: /
 - cipher: aes-128-gcm
   name: 42|🇭🇰 HK 1 → tg@nicevpn123
   password: a-wym4ovY4Yw
@@ -335,7 +1360,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 42,45|🔗 Vauth - 572
+  name: 42,45|🔗 Vauth - 521
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -363,67 +1388,6 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 43|香港家宽-06-5倍率
-  network: ws
-  port: '80'
-  server: yx.sulink.one
-  tls: false
-  type: vmess
-  uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
-  ws-opts:
-    headers:
-      Host: hk06.susulian.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 43|pq香港1
-  network: ws
-  port: '2082'
-  server: yx1.xsjhl.xyz
-  tls: false
-  type: vmess
-  uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c
-  ws-opts:
-    headers:
-      Host: pqhk.xsjhl.xyz
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 43|🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK...
-  network: tcp
-  port: '62001'
-  server: 183.232.199.28
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 43|香港04
-  network: ws
-  port: '80'
-  server: yx.sulink.one
-  tls: false
-  type: vmess
-  uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
-  ws-opts:
-    headers:
-      Host: hk04.sulink.one
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 43|pq香港3
-  network: ws
-  port: '2082'
-  server: yx3.xsjhl.xyz
-  tls: false
-  type: vmess
-  uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c
-  ws-opts:
-    headers:
-      Host: pqhk.xsjhl.xyz
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
   name: 43|香港03
   network: ws
   port: '80'
@@ -437,7 +1401,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 43|香港10极速节点|油管速度优化|奈非|速度非常快
+  name: 43|香港07极速节点|油管速度优化
   network: ws
   port: '2052'
   server: yx.sulink.one
@@ -446,8 +1410,8 @@ proxies:
   uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
   ws-opts:
     headers:
-      Host: hk010.susulian.cyou
-    path: /fdaf
+      Host: hk0007.sulian.life
+    path: /sfdf
 - alterId: 0
   cipher: auto
   name: 43|香港高速|最新官网https://sulian.life
@@ -463,6 +1427,19 @@ proxies:
     path: /a
 - alterId: 0
   cipher: auto
+  name: 43|pq香港3
+  network: ws
+  port: '2082'
+  server: yx3.xsjhl.xyz
+  tls: false
+  type: vmess
+  uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c
+  ws-opts:
+    headers:
+      Host: pqhk.xsjhl.xyz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 43|香港05家宽|5倍率
   network: ws
   port: '2052'
@@ -473,6 +1450,19 @@ proxies:
   ws-opts:
     headers:
       Host: hk005.sulian.life
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43|香港家宽-06-5倍率
+  network: ws
+  port: '80'
+  server: yx.sulink.one
+  tls: false
+  type: vmess
+  uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
+  ws-opts:
+    headers:
+      Host: hk06.susulian.top
     path: /
 - alterId: 0
   cipher: auto
@@ -502,7 +1492,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 43|香港07极速节点|油管速度优化
+  name: 43|香港10极速节点|油管速度优化|奈非|速度非常快
   network: ws
   port: '2052'
   server: yx.sulink.one
@@ -511,8 +1501,43 @@ proxies:
   uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
   ws-opts:
     headers:
-      Host: hk0007.sulian.life
-    path: /sfdf
+      Host: hk010.susulian.cyou
+    path: /fdaf
+- alterId: 0
+  cipher: auto
+  name: 43|香港04
+  network: ws
+  port: '80'
+  server: yx.sulink.one
+  tls: false
+  type: vmess
+  uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36
+  ws-opts:
+    headers:
+      Host: hk04.sulink.one
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 43|🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK...
+  network: tcp
+  port: '62001'
+  server: 183.232.199.28
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: 43|pq香港1
+  network: ws
+  port: '2082'
+  server: yx1.xsjhl.xyz
+  tls: false
+  type: vmess
+  uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c
+  ws-opts:
+    headers:
+      Host: pqhk.xsjhl.xyz
+    path: /?ed=2048
 - name: 50|香港 007
   network: tcp
   password: 4CCF9A9AB80E9889198B02ECE7FA08DD
