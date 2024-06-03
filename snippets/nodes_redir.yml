@@ -47,7 +47,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: '4,18,39,41,51,64|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  name: '4,18,41,51,64|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
@@ -61,7 +61,7 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- name: 4,51|1|_US_->_AU__3
+- name: 4,50,51|1|_US_->_AU__3
   network: ws
   password: 50e10abd-3920-42a6-ad0c-6ec731d8c826
   port: 443
@@ -105,9 +105,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  h2-opts: {}
-  http-opts: {}
-  name: 8,10,14,42,43,46,52,53,56,59|🏁RELAY-172.67.130.140-0077
+  name: 8,10,42,43,46,52,53,56,59|🏁RELAY-172.67.130.140-0077
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -138,10 +136,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '8,29,43,45,46,51,52,56,59,76,85|🇺🇸_US_美国->🇫🇷_FR_法国 #11'
+  name: '8,29,43,45,46,51,52,56,59,74,76,85|🇺🇸_US_美国->🇫🇷_FR_法国 #11'
   network: ws
   port: 2082
   server: 104.21.8.157
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -218,14 +217,16 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- grpc-opts:
+- alterId: 0
+  cipher: auto
+  grpc-opts:
     grpc-service-name: 443trojan
-  name: 46,59|🏁RELAY-172.67.204.84-2916
+  name: 46,59,75|未知1181
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
   server: 172.67.204.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cdn-21.gsmxreality.com
   tls: true
   type: trojan
@@ -268,6 +269,20 @@ proxies:
   ws-opts:
     headers:
       host: cdn.vds-server.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 46|🇺🇸_US_美国->🇭🇰_HK_香港_3_5@22
+  network: ws
+  port: 2095
+  server: onea.flha.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
@@ -616,7 +631,7 @@ proxies:
     path: /
 - alterId: '0'
   cipher: auto
-  name: '64,67|美国 CloudFlare节点 #54'
+  name: '64,67|美国 CloudFlare节点 #37'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
