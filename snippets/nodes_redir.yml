@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,12,28,51,60|🇹🇷 _CN_中国->🇹🇷_TR_土耳其
+  name: 4,12,28,47,51,60|🇹🇷 _CN_中国->🇹🇷_TR_土耳其
   network: tcp
   port: '21991'
   server: x.y49t1kh1.5ebf71z0-tro1.my777999.top
@@ -24,10 +24,14 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4,51|1|_US_->_SE_
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 4,18,31,39,51|1|_US_->_SE_
   network: ws
   port: 80
   server: www.speedtest.net
+  servername: Se2.vmess.site.
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -38,14 +42,10 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '4,18,51,64|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
+  name: '4,51,64|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
-  servername: ca-cfcdn.aikunapp.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -110,9 +110,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 6,8,43,48,49,51,52,56,59,60,74|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.204....
+  name: '6,8,43,48,49,51,52,56,59,60|🇺🇸 美国 CloudFlare节点 #19'
   network: ws
-  port: 2095
+  port: '2095'
   server: 172.67.204.84
   skip-cert-verify: false
   tfo: false
@@ -157,9 +157,9 @@ proxies:
   client-fingerprint: chrome
   h2-opts: {}
   http-opts: {}
-  name: 6,12,14,42,43,46,51,53,59|RELAY-172.67.130.140-0237
+  name: '6,12,14,42,43,46,51,53,59,60|🇺🇸 美国 CloudFlare节点 #9'
   network: ws
-  port: 2082
+  port: '2082'
   server: s1c.v2.v001sss.xyz
   servername: ''
   skip-cert-verify: false
@@ -174,7 +174,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 8,43,52,56,59|RELAY-104.17.70.206-1918
+  name: 8,52,56,59|RELAY-104.17.70.206-1918
   network: ws
   port: 2095
   server: c1.v2raybrasil.cloud
@@ -188,7 +188,7 @@ proxies:
     path: /DDD
 - alterId: 0
   cipher: auto
-  name: '27,46,51,85|🇺🇸_US_美国 #46'
+  name: '27,46,51,85|🇺🇸_US_美国 #48'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -230,7 +230,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '27,29,51,85|🇺🇸_US_美国 #45'
+  name: '27,29,51,85|🇺🇸_US_美国 #47'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -270,7 +270,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: 28,59,60|🇺🇸 _US_美国->🇸🇪_SE_瑞典
+  name: 28,43,56,59,60|🇺🇸 _US_美国->🇸🇪_SE_瑞典
   network: ws
   port: '80'
   server: www.speedtest.net
@@ -296,6 +296,31 @@ proxies:
     headers:
       Host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 43|🇫🇮_FI_芬兰->🇩🇪_DE_德国
+  network: ws
+  port: 80
+  server: 135.181.109.197
+  tls: false
+  type: vmess
+  uuid: 1b457053-80cc-4391-b2bf-badfd71ad8cd
+  ws-opts:
+    path: /ZXzpLGLXPrYffqWUhE
+- alterId: 0
+  cipher: auto
+  name: 43,59|RELAY-188.114.97.3-0847
+  network: ws
+  port: 80
+  server: 188.114.97.3
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b25f8da6-54a2-49b3-bacf-8403b4c36556
+  ws-opts:
+    headers:
+      Host: De1.vmess.site.
+    path: /
 - grpc-opts:
     grpc-service-name: 443trojan
   name: 46,59|🏁RELAY-172.67.204.84-2807
@@ -663,19 +688,4 @@ proxies:
   ws-opts:
     headers:
       host: in4.wish.ml
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: '64,67|美国 CloudFlare节点 #47'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    host: s1c.v2.v001sss.xyz
     path: /
