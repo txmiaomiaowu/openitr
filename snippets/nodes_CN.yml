@@ -62,12 +62,43 @@ proxies:
   uuid: 8a93a616-6042-49af-800b-dbe8690801b4
   ws-opts:
     path: /
+- alterId: 64
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 18,45,74,75|未知650
+  network: tcp
+  port: 50002
+  server: 120.210.205.82
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18|CN_152
+  name: 18|Relay_CN-CN_182
+  network: ws
+  port: 80
+  server: hn.xn--wlqw1swrj04ju56d.com
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3386ba49-a04b-49c7-8dfd-169981793568
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 18|CN_183
   network: ws
   port: 80
   server: 47.106.112.114
@@ -81,19 +112,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18|CN_155
-  network: tcp
-  port: 50002
-  server: 47.92.152.169
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 18|CN_158
+  name: 18|CN_184
   network: tcp
   port: 50002
   server: 112.132.215.12
@@ -105,24 +124,10 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18,45,74,75|未知939
+  name: 18|CN_186
   network: tcp
   port: 50002
-  server: 120.210.205.82
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 18|CN_160
-  network: tcp
-  port: 50002
-  server: 47.116.173.76
+  server: 47.92.152.169
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -131,40 +136,35 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18|CN_161
+  name: 18|CN_187
   network: tcp
   port: 50002
   server: 114.55.132.202
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18|Relay_CN-CN_162
-  network: ws
-  port: 80
-  server: hn.xn--wlqw1swrj04ju56d.com
-  servername: tms.dingtalk.com
+  name: 18|CN_191
+  network: tcp
+  port: 50002
+  server: 47.116.173.76
   skip-cert-verify: true
   type: vmess
-  uuid: 3386ba49-a04b-49c7-8dfd-169981793568
-  ws-opts:
-    headers:
-      HOST: tms.dingtalk.com
-    path: /
-- cipher: rc4-md5
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
   country: CN
-  name: 19,31|Relay_-CN_01 |502.00Mb
+  name: 19,32|Pool__03
   obfs: plain
-  obfs-param: 64334105622.www.gov.hk
-  password: di15PV
-  port: 555
+  obfs-param: data.bilibili.com/ed5a2165400
+  password: http://cc.ax/
+  port: 41228
   protocol: auth_aes128_md5
-  protocol-param: 105622:5EF7C3661EBC
-  server: video23.cdn.globalnetworktraffic.com
+  protocol-param: 165400:Hr2aXO
+  server: 222.186.20.102
   type: ssr
 - cipher: chacha20-ietf
   country: CN
@@ -176,9 +176,20 @@ proxies:
   protocol-param: 2338:9tQfxMX(0S;40f
   server: cmlayer6.standurls.co
   type: ssr
+- cipher: rc4-md5
+  country: CN
+  name: 19,32|Relay_-CN_02
+  obfs: plain
+  obfs-param: 64334105622.www.gov.hk
+  password: di15PV
+  port: 555
+  protocol: auth_aes128_md5
+  protocol-param: 105622:5EF7C3661EBC
+  server: video23.cdn.globalnetworktraffic.com
+  type: ssr
 - cipher: aes-256-cfb
   country: CN
-  name: 19,31|Pool__03 |299.00Mb
+  name: 19,32|Pool__01
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -187,30 +198,22 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.24
   type: ssr
-- cipher: aes-256-cfb
-  country: CN
-  name: 19|Pool_CN_08
-  obfs: plain
-  obfs-param: data.bilibili.com/ed5a2165400
-  password: http://cc.ax/
-  port: 41228
-  protocol: auth_aes128_md5
-  protocol-param: 165400:Hr2aXO
-  server: 222.186.20.102
-  type: ssr
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 39,42,51,59,62|5|🇭🇰 香港|@ripaojiedian
+  name: 39,42,51,59,62,75|2
   password: 4aa5bc5a-5574-4ec6-9c34-d2a5e9ee1d53
   port: 46091
   server: rk2.izoizoizo.top
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 39,43,45,47,51,56,59,62|5,6|香港5|@ripaojiedian
+  name: 39,43,45,51,56,59,62|5,6|香港5|@ripaojiedian
   network: ws
   port: '16632'
   server: m.cnmjin.net
@@ -227,7 +230,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 39,43,51,56,59,60,62|5,6|香港6|@ripaojiedian
+  name: 39,43,47,51,56,59,60,62|5,6|香港6|@ripaojiedian
   network: ws
   port: '16632'
   server: yes.cnmjcn.net
@@ -241,22 +244,6 @@ proxies:
     headers:
       Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
     path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 39,51,59,62|5|🇭🇰 香港R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15001
-  server: 59.56.77.178
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 39,51,59,62|5|🇵 日本R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15084
-  server: 59.56.77.178
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -281,6 +268,17 @@ proxies:
   server: 36.151.195.48
   skip-cert-verify: true
   type: trojan
+- alterId: 64
+  cipher: auto
+  name: 39,43,45,51,62,75|未知1163
+  network: tcp
+  port: 51193
+  server: 183.238.202.173
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 39,43,51,62|6|台湾 2|@ripaojiedian
@@ -303,7 +301,7 @@ proxies:
   uuid: 33aefd89-3285-4347-9083-6249711f02e9
 - alterId: 0
   cipher: auto
-  name: '39,75|🇨3 #1'
+  name: 39,75|未知1099
   network: ws
   port: 16632
   server: m.cnmjin.net
@@ -1333,7 +1331,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '42,43|>🇭🇰 HK|Ms|0518|TG@FProxies| #7'
+  name: '42,43|>🇭🇰 HK|Ms|0518|TG@FProxies| #2'
   network: ws
   port: '16632'
   server: yes.cnmjcn.net
@@ -1763,14 +1761,11 @@ proxies:
   server: rk.izoizoizo.top
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 42,59,75|🇨🇳广东2
+- cipher: chacha20-ietf-poly1305
+  name: 42,59|🇳CN-119.23.104.213-0454
   password: a501c82c72d790b8
   port: 8474
   server: 119.23.104.213
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -2022,16 +2017,13 @@ proxies:
   server: 120.199.94.29
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 42,46,48,59,65,75|DE国
+  name: 42,46,48,59,65|github.com/freefq - 广东省江门市移动 1...
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
+  port: '26667'
   server: service.ouluyun9803.com
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - alterId: 0
