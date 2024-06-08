@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14,16,19,32,33,43|PvCfh63wn4ewIEhLfE1zfDA1MTh8VE...
+  name: 14,15,16,19,32,33,43|PvCfh63wn4ewIEhLfE1zfDA1MTh8VE...
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -11,30 +11,75 @@ proxies:
   server: 150.107.46.21
   type: ssr
 - alterId: 0
-  cipher: aes-128-gcm
-  country: ' HK'
-  name: 16,57,59,75|HK31 856.6KB/s
-  password: a-wym4ovY4Yw
-  port: 81
-  server: 47.243.45.101
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14,42|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
+- alterId: 32
+  cipher: auto
+  country: ' NL'
+  h2-opts: {}
+  http-opts: {}
+  name: 14|Relay_ NL-HK_153
+  network: ws
+  port: 443
+  server: 77.83.141.171
+  servername: vc.fly.dev
   skip-cert-verify: true
   tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
+- cipher: chacha20-ietf-poly1305
+  country: ' HK'
+  name: 16|ChatGPT  HK_255
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node4.s.nodelist-gfwairport2.top
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  country: ' US'
-  name: 16,17,18,39,51,59,62|5|🇭🇰 香港|@ripaojiedian
+  country: US
+  name: 16,17,18,39,48,51,59,62|5|🇭🇰 香港|@ripaojiedian
   password: a-wym4ovY4Yw
   port: 81
   server: 47.76.197.86
   tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 16| HK_269
+  name: 16| HK_258
+  network: ws
+  port: 28681
+  server: 47.242.22.171
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 16| HK_259
   network: ws
   port: 80
   server: 103.28.68.181
@@ -47,62 +92,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 16,76|US 209|openitr
-  network: tcp
-  port: '49879'
-  server: 206.237.31.203
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2aa1a094-8320-4567-b833-c0b4934eb7e2
-  ws-path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 18,39,51,59,62|5|🇭🇰 香港R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15001
-  server: 59.56.77.178
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '18|netflix_HK #13'
-  network: ws
-  port: 2095
-  server: 47.242.176.237
-  skip-cert-verify: true
-  type: vmess
-  uuid: f62c5668-ef76-47fd-8f91-86eed7ccd81b
-  ws-opts:
-    headers:
-      host: aeza.baijia.cfd
-    path: /fdsffgfdgdfgdf
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '18|netflix_HK #15'
-  network: ws
-  port: 8443
-  server: 47.242.59.216
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f62c5668-ef76-47fd-8f91-86eed7ccd81b
-  ws-opts:
-    headers:
-      host: apper.bitsbear.com
-    path: /fdsffgfdgdfgdf
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '18|netflix_HK #16'
+  name: '18|disney_HK #3'
   network: ws
   port: 2096
   server: 47.243.27.217
@@ -116,102 +108,41 @@ proxies:
     path: /gd3245vd2S32cr
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,39,45,47,51,56,57,59,62|0|-https://t.me/MrXbin-86
+  name: '18|disney_netflix_HK #11'
   network: ws
-  port: 12909
-  server: 210.3.159.224
-  servername: ''
+  port: 8443
+  server: 47.242.59.216
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_HK-HK_310
-  network: ws
-  port: 443
-  server: hk5g.xn--vhq70hxyat50h6wk.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 47c14f5f-a2cf-4483-87c9-b9688fb1ba56
-  ws-opts:
-    path: /
-- country: HK
-  delay: 964
-  fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-47.243.70.186-1264
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.243.70.186
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
+  uuid: b35a9c68-8406-4c6f-bb0d-2671d53e55eb
   ws-opts:
     headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+      host: apper.bitsbear.com
+    path: /fdsffgfdgdfgdf
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #153'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.243.42.155
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_15
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 47.243.70.186
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_13
+  name: 18,23|Relay_HK-HK_84
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
-  server: 47.76.32.108
+  server: 47.242.171.94
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
-  delay: 1469
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.218.3.198-1276
+  name: '18|disney_netflix_HK #14'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2096
-  server: 8.218.3.198
-  skip-cert-verify: false
+  server: 8.218.228.152
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -221,11 +152,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #148'
+  name: 18,23|Relay_HK-HK_74
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 8.210.119.11
+  server: 8.218.65.171
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -235,25 +166,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_22
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.210.101.157
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_23
+  name: 18,23|Relay_HK-HK_122
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 8.218.122.55
+  server: 8.210.21.65
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -263,7 +180,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #136'
+  name: 18,23|Relay_HK-HK_40
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -277,11 +194,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_12
+  name: 18,23|Relay_HK-HK_20
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
-  server: 8.210.192.93
+  server: 47.243.91.58
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -290,13 +207,43 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
-  delay: 1976
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-47.243.139.243-1178
+  name: 18,23|Relay_HK-HK_23
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 47.242.171.94
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 964
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-47.243.70.186-1227
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
-  server: 47.243.139.243
+  server: 47.243.70.186
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1237
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-47.242.107.109-1234
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.107.109
   skip-cert-verify: false
   sni: mfjd.591haoka.com
   type: trojan
@@ -307,7 +254,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #144'
+  name: 18,23|Relay_HK-HK_75
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -321,11 +268,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #121'
+  name: 18,23|Relay_HK-HK_12
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.42.153
+  port: 2083
+  server: 8.210.43.213
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -335,7 +282,49 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_82
+  name: 18,23|Relay_HK-HK_93
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.243.26.83
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_116
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 8.218.173.78
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_26
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 47.243.74.220
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_72
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
@@ -349,27 +338,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #146'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.7.162
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  delay: 1511
-  fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.217.181.213-1274
+  name: 18,23|Relay_HK-HK_115
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
-  server: 8.217.181.213
-  skip-cert-verify: false
+  server: 8.217.154.218
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -379,11 +352,81 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #106'
+  name: 18,23|Relay_HK-HK_42
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 47.242.157.96
+  port: 443
+  server: 16.162.37.167
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_92
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 8.218.65.171
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_70
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.210.101.157
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_77
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.243.18.199
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_98
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 8.210.107.246
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_45
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.210.85.222
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -406,9 +449,287 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_110
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.243.18.199
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_65
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.242.155.183
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_56
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.243.60.150
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1373
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-47.243.243.14-1233
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.243.243.14
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1495
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-47.243.26.83-1238
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.243.26.83
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1498
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-47.242.107.109-1235
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 47.242.107.109
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_82
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.242.119.104
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_11
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 8.210.85.222
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_44
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 47.242.157.96
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_71
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.217.250.222
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1560
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-8.218.173.78-1240
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.218.173.78
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_34
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.242.174.27
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_117
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.243.51.171
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_73
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.210.192.93
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_39
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.217.123.243
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1358
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-8.217.154.218-1231
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 8.217.154.218
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_103
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.243.27.217
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_111
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 47.243.204.32
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1469
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-8.218.3.198-1239
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 8.218.3.198
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
   delay: 1504
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.210.207.214-1273
+  name: 18,23,50,59|🇭🇰HK-8.210.207.214-1236
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -423,11 +744,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #135'
+  name: 18,23|Relay_HK-HK_43
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 47.243.18.199
+  server: 8.218.204.128
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -437,95 +758,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #118'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.65.171
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #109'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.243.169.63
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #159'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.243.60.150
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #152'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.243.107.148
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  delay: 1495
-  fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-47.243.26.83-1275
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.243.26.83
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  delay: 1373
-  fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-47.243.243.14-1270
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.243.243.14
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #133'
+  name: 18,23|Relay_HK-HK_87
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -538,40 +771,8 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
-  delay: 1394
   fingerprint: chrome
-  name: 18,23,50,59|🇰HK-8.217.127.73-1265
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.127.73
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  delay: 1237
-  fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-47.242.107.109-1271
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.107.109
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #139'
+  name: 18,23|Relay_HK-HK_67
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -584,14 +785,12 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
-  delay: 1358
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.217.154.218-1268
+  name: 18,23|Relay_HK-HK_107
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.217.154.218
-  skip-cert-verify: false
+  port: 2053
+  server: 8.210.101.157
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -600,42 +799,12 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
-  delay: 1388
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.217.50.252-1267
+  name: 18,23|Relay_HK-HK_22
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
-  server: 8.217.50.252
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #125'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.242.119.104
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #103'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.242.174.27
+  server: 8.210.107.246
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -646,6 +815,62 @@ proxies:
 - country: HK
   fingerprint: chrome
   name: 18,23|Relay_HK-HK_86
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.183.7
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_59
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.210.119.11
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_19
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.242.119.104
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_64
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.242.54.157
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_54
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -659,39 +884,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_37
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.210.3.24
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #115'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.210.43.213
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #108'
+  name: 18,23|Relay_HK-HK_101
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 47.242.54.157
+  server: 8.218.98.75
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -701,79 +898,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_47
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.243.27.217
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  delay: 1248
-  fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.210.43.213-1179
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 8.210.43.213
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #111'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.210.244.38
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_21
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.218.53.110
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #119'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 47.242.171.94
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #110'
+  name: 18,23|Relay_HK-HK_35
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -787,27 +912,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_26
+  name: 18,23|Relay_HK-HK_31
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
-  server: 8.217.248.220
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  delay: 1498
-  fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-47.242.107.109-1272
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 47.242.107.109
-  skip-cert-verify: false
+  server: 8.210.21.65
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -817,21 +926,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_87
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.243.91.58
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_44
+  name: 18,23|Relay_HK-HK_68
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2096
@@ -844,12 +939,14 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
+  delay: 1511
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_71
+  name: 18,23,50,59|🇭🇰HK-8.217.181.213-1237
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.242.54.157
+  port: 2087
+  server: 8.217.181.213
+  skip-cert-verify: false
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -859,11 +956,27 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #126'
+  name: 18,23|Relay_HK-HK_90
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.210.85.222
+  port: 2053
+  server: 47.242.252.237
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1248
+  fingerprint: chrome
+  name: 18,23,50,59|🇰HK-8.210.43.213-1288
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 8.210.43.213
+  skip-cert-verify: false
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -873,35 +986,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #134'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.218.228.152
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18|netflix_HK #64'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 47.243.74.220
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #129'
+  name: 18,23|Relay_HK-HK_38
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -915,11 +1000,25 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #123'
+  name: 18,23|Relay_HK-HK_48
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
-  server: 47.76.37.57
+  server: 8.218.142.253
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_52
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.76.32.108
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -928,13 +1027,69 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
 - country: HK
-  delay: 1368
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.217.123.243-1269
+  name: 18,23|Relay_HK-HK_30
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 8.217.248.220
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_28
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.242.17.250
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_66
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
-  server: 8.217.123.243
+  server: 47.243.107.148
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_91
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 47.243.60.150
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1388
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-8.217.50.252-1230
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.217.50.252
   skip-cert-verify: false
   sni: mfjd.591haoka.com
   type: trojan
@@ -946,7 +1101,7 @@ proxies:
 - country: HK
   delay: 1381
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-47.76.49.246-1266
+  name: 18,23,50,59|🇭🇰HK-47.76.49.246-1229
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -961,11 +1116,25 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_62
+  name: 18,23|Relay_HK-HK_55
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 8.217.164.10
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_25
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
-  server: 8.210.21.65
+  server: 47.243.27.217
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -974,54 +1143,14 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
+  delay: 1976
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_85
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 16.162.37.167
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_101
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.243.51.171
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_104
+  name: 18,23,50,59|🇭🇰HK-47.243.139.243-1142
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
-  server: 47.76.33.40
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #127'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.242.155.183
+  server: 47.243.139.243
+  skip-cert-verify: false
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1031,11 +1160,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #157'
+  name: 18,23|Relay_HK-HK_95
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 47.242.176.237
+  server: 8.217.232.246
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1044,12 +1173,14 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
+  delay: 1394
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_39
+  name: 18,23,50,59|🇰HK-8.217.127.73-1228
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 8.218.204.128
+  server: 8.217.127.73
+  skip-cert-verify: false
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1059,7 +1190,21 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_18
+  name: '18,23|netflix_HK #2'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 47.243.70.186
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_50
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
@@ -1073,11 +1218,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #142'
+  name: 18,23|Relay_HK-HK_97
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2096
-  server: 8.218.65.171
+  server: 8.210.39.96
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1087,39 +1232,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_53
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.242.171.94
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_103
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.210.107.246
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_99
+  name: 18,23|Relay_HK-HK_21
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 8.217.232.246
+  server: 47.242.54.157
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1129,7 +1246,107 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #130'
+  name: '18|disney_netflix_HK #65'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 8.218.228.152
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  delay: 1368
+  fingerprint: chrome
+  name: 18,23,50,59|🇭🇰HK-8.217.123.243-1232
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.217.123.243
+  skip-cert-verify: false
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_80
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.243.169.63
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_36
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.76.37.57
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_16
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.210.244.38
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_62
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.243.42.155
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_27
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.210.3.24
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 18,23|Relay_HK-HK_51
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
@@ -1143,11 +1360,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_61
+  name: 18,23|Relay_HK-HK_60
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 8.217.123.243
+  server: 8.217.164.10
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1157,21 +1374,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_96
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.210.42.171
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #141'
+  name: 18,23|Relay_HK-HK_100
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -1184,41 +1387,11 @@ proxies:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
-  delay: 1560
   fingerprint: chrome
-  name: 18,23,50,59|🇭🇰HK-8.218.173.78-1278
+  name: 23|Relay_HK-HK_13
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.218.173.78
-  skip-cert-verify: false
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #154'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.210.85.222
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #156'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
+  port: 2096
   server: 8.217.154.218
   sni: mfjd.591haoka.com
   type: trojan
@@ -1229,24 +1402,10 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '18,23|netflix_HK #107'
+  name: 23|Relay_HK-HK_18
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
-  server: 8.210.21.65
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #155'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
   server: 47.242.42.153
   sni: mfjd.591haoka.com
   type: trojan
@@ -1257,318 +1416,21 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_41
+  name: 23|Relay_HK-HK_24
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
-  server: 8.210.107.246
+  server: 47.76.33.40
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 18,23|Relay_HK-HK_67
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 47.243.204.32
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_107
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.183.7
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_109
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.243.26.83
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #128'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 8.217.164.10
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_20
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.210.101.157
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #138'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.164.10
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #104'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 16.163.18.210
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_89
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.252.237
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_81
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.218.142.253
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #151'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 8.218.228.152
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_16
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.242.119.104
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #149'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.218.173.78
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_108
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 47.243.60.150
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18|netflix_HK #97'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.250.222
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 18,23|Relay_HK-HK_90
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.121.207
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #113'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.242.17.250
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '18,23|netflix_HK #105'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 8.210.39.96
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_ZZ-HK_608
-  network: ws
-  port: 80
-  server: 104.16.45.60
-  servername: akhk.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: akhk.xlb8.eu.org
-    path: /?ed=2048&Telegram @WangCai_8
-- country: HK
-  fingerprint: chrome
-  name: '23|netflix_HK #112'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 8.217.154.218
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '23|netflix_HK #114'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 8.218.81.14
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '23|netflix_HK #120'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.3.198
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 23|Relay_HK-HK_42
+  name: 23|Relay_HK-HK_29
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -1582,7 +1444,119 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '23|netflix_HK #124'
+  name: 23|Relay_HK-HK_32
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.218.3.198
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_46
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.218.53.110
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_57
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.218.178.79
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_63
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 16.163.18.210
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_78
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 18.162.32.152
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_79
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.79.71
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_83
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.218.122.55
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_88
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.242.42.153
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_94
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -1596,12 +1570,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 23,59|🇭🇰HK-8.218.178.79-1277
+  name: 23|Relay_HK-HK_96
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.178.79
-  skip-cert-verify: false
+  port: 2096
+  server: 8.210.42.171
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1611,11 +1584,165 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '23|netflix_HK #147'
+  name: 23|Relay_HK-HK_99
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 8.217.164.10
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_102
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 47.242.234.127
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_104
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 8.210.34.188
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_105
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.217.121.207
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_106
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.210.42.171
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_108
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.174.27
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_112
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 8.218.81.14
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_113
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.7.162
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_114
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 443
-  server: 18.162.32.152
+  server: 18.167.20.205
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '23|netflix_HK #1'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.176.237
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_119
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 16.162.10.198
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 23|Relay_HK-HK_120
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.210.174.156
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -1626,7 +1753,24 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 39,43,51,59,62|5,6||@ripaojiedian
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 39,45,51,57,59|🇰HK-210.3.159.224-0166
+  network: ws
+  port: 12909
+  server: 210.3.159.224
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 39,43,45,51,59,62|5,6||@ripaojiedian
   network: ws
   port: '43794'
   server: 103.30.78.115
@@ -1641,7 +1785,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-128-gcm
-  name: 42,59|🇰HK-1.65.223.223-2854
+  name: 42,59|🇰HK-1.65.223.223-2852
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -1671,7 +1815,7 @@ proxies:
       Host: 182.16.1.194
     path: /opt/video/images
 - cipher: aes-128-gcm
-  name: 42,59|🇰HK-1.65.139.54-2861
+  name: 42,59|🇰HK-1.65.139.54-2859
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -1700,7 +1844,7 @@ proxies:
     path: /
 - alterId: 32
   cipher: auto
-  name: 42,45,59|🇭🇰HK-182.16.1.194-7980
+  name: 42,45,59|🇭🇰HK-182.16.1.194-7978
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -1715,20 +1859,7 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 42|🇭🇰 HK 6 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #10'
+  name: '43|>🇭🇰 HK|Ms|0430|TG@FProxies| #9'
   network: ws
   port: '443'
   server: 82.213.5.50
@@ -1741,34 +1872,10 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  name: 43|>🇭🇰 HK|Ls|0518|TG@FProxies|
-  network: ws
-  port: '13486'
-  server: 218.204.178.2
-  tls: false
-  type: vmess
-  uuid: 61b81abc-320b-49c1-893c-f3ddd45880de
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 43,45,75|未知138
-  network: tcp
-  port: 15603
-  server: 183.240.179.195
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 43|>🇭🇰 HK|Ns|0518|TG@FProxies|
+  name: 43|>🇭🇰 HK|Ns|0607|TG@FProxies|
   network: ws
   port: '80'
-  server: 104.16.45.236
+  server: 104.19.57.53
   tls: false
   type: vmess
   uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
@@ -1776,6 +1883,41 @@ proxies:
     headers:
       Host: ''
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: 43|香港1_NF
+  network: tcp
+  port: '14251'
+  server: ooo.jjjbnode.top
+  tls: false
+  type: vmess
+  uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #11'
+  network: ws
+  port: '20759'
+  server: hkt.littleqqq.co
+  tls: false
+  type: vmess
+  uuid: 03504111-5573-489d-8bb8-f1e3fa7bca44
+  ws-opts:
+    headers:
+      Host: hkt.littleqqq.co
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #1'
+  network: ws
+  port: '16632'
+  server: 120.233.204.126
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 43|香港5_网页
@@ -1787,26 +1929,66 @@ proxies:
   uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
 - alterId: 0
   cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #2'
+  name: '43|>🇭🇰 HK|Ls|0518|TG@FProxies| #2'
   network: ws
-  port: '80'
-  server: hk03.thomasinaglorious.online
-  tls: false
+  port: '443'
+  server: 95.85.92.5
+  tls: true
   type: vmess
-  uuid: e5e2206d-8650-4dfb-9731-fe2ee99b944e
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
   ws-opts:
     headers:
-      Host: hk03.thomasinaglorious.online
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #2'
+  network: ws
+  port: '12543'
+  server: hgc.miaoddns.top
+  tls: false
+  type: vmess
+  uuid: 4e9a5a3b-e6a9-4d0e-a754-376378d9b9bc
+  ws-opts:
+    headers:
+      Host: hgc.miaoddns.top
     path: /
 - alterId: 0
   cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #3'
-  network: tcp
-  port: '33005'
-  server: sz.zj.my.1.76po.com
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #7'
+  network: ws
+  port: '443'
+  server: 80.240.124.9
   tls: true
   type: vmess
-  uuid: 76c191cd-fba1-4d6f-b766-6f68a7392f71
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #3'
+  network: ws
+  port: '80'
+  server: hk03.beautifuloctavia.fun
+  tls: false
+  type: vmess
+  uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc
+  ws-opts:
+    headers:
+      Host: hk03.beautifuloctavia.fun
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 43,56|广东省广州市 移动
+  network: tcp
+  port: '54437'
+  server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 43|香港4
@@ -1816,19 +1998,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
-- alterId: 64
-  cipher: auto
-  name: '43,56|广东省广州市 移动 #1'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.59
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '43|>🇭🇰 HK|Ns|0518|TG@FProxies| #1'
+  name: '43|>🇭🇰 HK|Ms|0430|TG@FProxies| #3'
+  network: tcp
+  port: '33001'
+  server: sz.zj.my.1.76po.com
+  tls: true
+  type: vmess
+  uuid: 585670be-5f39-494d-9a8c-3287e28f4749
+- alterId: 0
+  cipher: auto
+  name: 43,76|US 51|openitr
+  network: ws
+  port: '2087'
+  server: gghk.duduskying.cf
+  tls: true
+  type: vmess
+  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
+  ws-opts:
+    headers:
+      Host: gghk.duduskying.cf
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 43|香港_高速_稳定在线
+  network: tcp
+  port: '14951'
+  server: hk1.jjjnode.top
+  tls: false
+  type: vmess
+  uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
+- alterId: 0
+  cipher: auto
+  name: 43|>🇭🇰 HK|Ns|0518|TG@FProxies|
   network: ws
   port: '80'
   server: 104.19.57.177
@@ -1854,263 +2057,7 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: 43|>🇭🇰 HK|Ns|0607|TG@FProxies|
-  network: ws
-  port: '80'
-  server: 104.16.45.91
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: ''
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ns|0607|TG@FProxies| #1'
-  network: ws
-  port: '80'
-  server: 104.19.57.143
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: ''
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #4'
-  network: ws
-  port: '12543'
-  server: hgc.miaoddns.top
-  tls: false
-  type: vmess
-  uuid: 4e9a5a3b-e6a9-4d0e-a754-376378d9b9bc
-  ws-opts:
-    headers:
-      Host: hgc.miaoddns.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 43|香港_高速_稳定在线
-  network: tcp
-  port: '14951'
-  server: hk1.jjjnode.top
-  tls: false
-  type: vmess
-  uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ls|0518|TG@FProxies| #2'
-  network: ws
-  port: '443'
-  server: 95.85.92.5
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #11'
-  network: ws
-  port: '443'
-  server: 80.240.124.9
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ns|0607|TG@FProxies| #2'
-  network: ws
-  port: '80'
-  server: 104.19.57.53
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: ''
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 2
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ns|0607|TG@FProxies| #3'
-  network: tcp
-  port: '23608'
-  server: 8.v2-ray.cyou
-  tls: false
-  type: vmess
-  uuid: 82ba5b28-bea7-3507-b0a2-ef95f2f42ff5
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Hs|0430|TG@FProxies| #1'
-  network: tcp
-  port: '62010'
-  server: zx.zztannel.com
-  tls: false
-  type: vmess
-  uuid: 18d94bd0-2bb0-390b-b815-2edfac3a8fbe
-- alterId: 0
-  cipher: auto
-  name: 43|>🇭🇰 HK|Hs|0518|TG@FProxies|
-  network: tcp
-  port: '33004'
-  server: sz.zj.my.1.76po.com
-  tls: true
-  type: vmess
-  uuid: 76c191cd-fba1-4d6f-b766-6f68a7392f71
-- alterId: 0
-  cipher: auto
-  name: 43|超级|香港2
-  network: ws
-  port: '2082'
-  server: chaojj2.chaozhijc.xyz
-  tls: false
-  type: vmess
-  uuid: b389350b-4d26-496b-9c77-c4a16592fb7d
-  ws-opts:
-    headers:
-      Host: xg.chaozhijc.xyz
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #5'
-  network: ws
-  port: '16632'
-  server: 120.233.204.126
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '43,56|广东省佛山市 移动 #3'
-  network: tcp
-  port: '15603'
-  server: 183.232.199.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 43|香港3
-  network: tcp
-  port: '14253'
-  server: ooo.jjjbnode.top
-  tls: false
-  type: vmess
-  uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #6'
-  network: ws
-  port: '80'
-  server: hk03.beautifuloctavia.fun
-  tls: false
-  type: vmess
-  uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc
-  ws-opts:
-    headers:
-      Host: hk03.beautifuloctavia.fun
-    path: /
-- alterId: 0
-  cipher: auto
   name: '43|>🇭🇰 HK|Ms|0430|TG@FProxies| #7'
-  network: ws
-  port: '2087'
-  server: dm2087.duduskying.cloudns.biz
-  tls: true
-  type: vmess
-  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
-  ws-opts:
-    headers:
-      Host: dm2087.duduskying.cloudns.biz
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 43|>🇭🇰 HK|Ms|0607|TG@FProxies|
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: 9ed7614b-d69e-4f38-ba35-bf7152048be5
-  ws-opts:
-    headers:
-      Host: cfcdn2.sanfencdn9.com
-    path: /video/VuDFdktz
-- alterId: 64
-  cipher: auto
-  name: 43,56|广东省广州市 移动
-  network: tcp
-  port: '54437'
-  server: 183.236.51.59
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0430|TG@FProxies| #8'
-  network: tcp
-  port: '33001'
-  server: sz.zj.my.1.76po.com
-  tls: true
-  type: vmess
-  uuid: 585670be-5f39-494d-9a8c-3287e28f4749
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #9'
-  network: ws
-  port: '443'
-  server: 92.223.12.6
-  tls: true
-  type: vmess
-  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #13'
-  network: ws
-  port: '20759'
-  server: hkt.littleqqq.co
-  tls: false
-  type: vmess
-  uuid: 03504111-5573-489d-8bb8-f1e3fa7bca44
-  ws-opts:
-    headers:
-      Host: hkt.littleqqq.co
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 43,76|US 51|openitr
-  network: ws
-  port: '2087'
-  server: gghk.duduskying.cf
-  tls: true
-  type: vmess
-  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
-  ws-opts:
-    headers:
-      Host: gghk.duduskying.cf
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0430|TG@FProxies| #13'
   network: ws
   port: '443'
   server: 172.67.186.25
@@ -2123,13 +2070,27 @@ proxies:
     path: /blog
 - alterId: 0
   cipher: auto
-  name: 43|香港1_NF
+  name: '43,56|广东省佛山市 移动 #3'
   network: tcp
-  port: '14251'
-  server: ooo.jjjbnode.top
+  port: '15603'
+  server: 183.232.199.61
+  servername: ''
   tls: false
   type: vmess
-  uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0430|TG@FProxies| #8'
+  network: ws
+  port: '2087'
+  server: dm2087.duduskying.cloudns.biz
+  tls: true
+  type: vmess
+  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
+  ws-opts:
+    headers:
+      Host: dm2087.duduskying.cloudns.biz
+    path: /?ed=2048
 - alterId: 32
   cipher: auto
   name: 43,76|NL 1|openitr
@@ -2145,10 +2106,66 @@ proxies:
     path: /vc
 - alterId: 0
   cipher: auto
-  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #12'
+  name: '43|>🇭🇰 HK|Ns|0607|TG@FProxies| #1'
+  network: ws
+  port: '80'
+  server: 104.16.45.91
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: 43|香港3
+  network: tcp
+  port: '14253'
+  server: ooo.jjjbnode.top
+  tls: false
+  type: vmess
+  uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
+- alterId: 64
+  cipher: auto
+  name: '43,56|广东省广州市 移动 #1'
+  network: tcp
+  port: '51707'
+  server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 43,45,75|未知138
+  network: tcp
+  port: 15603
+  server: 183.240.179.195
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ns|0607|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: 104.19.57.143
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #6'
   network: ws
   port: '443'
-  server: 185.244.209.4
+  server: 92.223.12.6
   tls: true
   type: vmess
   uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
@@ -2167,6 +2184,24 @@ proxies:
   uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7
 - alterId: 0
   cipher: auto
+  name: '43|>🇭🇰 HK|Hs|0430|TG@FProxies| #1'
+  network: tcp
+  port: '62010'
+  server: zx.zztannel.com
+  tls: false
+  type: vmess
+  uuid: 18d94bd0-2bb0-390b-b815-2edfac3a8fbe
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #8'
+  network: tcp
+  port: '33005'
+  server: sz.zj.my.1.76po.com
+  tls: true
+  type: vmess
+  uuid: 76c191cd-fba1-4d6f-b766-6f68a7392f71
+- alterId: 0
+  cipher: auto
   name: 43|超级|香港1
   network: ws
   port: '2082'
@@ -2178,6 +2213,102 @@ proxies:
     headers:
       Host: xg.chaozhijc.xyz
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #12'
+  network: ws
+  port: '443'
+  server: 185.244.209.4
+  tls: true
+  type: vmess
+  uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: 43|超级|香港2
+  network: ws
+  port: '2082'
+  server: chaojj2.chaozhijc.xyz
+  tls: false
+  type: vmess
+  uuid: b389350b-4d26-496b-9c77-c4a16592fb7d
+  ws-opts:
+    headers:
+      Host: xg.chaozhijc.xyz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 43|>🇭🇰 HK|Ms|0607|TG@FProxies|
+  network: ws
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 9ed7614b-d69e-4f38-ba35-bf7152048be5
+  ws-opts:
+    headers:
+      Host: cfcdn2.sanfencdn9.com
+    path: /video/VuDFdktz
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ns|0518|TG@FProxies| #2'
+  network: ws
+  port: '80'
+  server: 104.16.45.236
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: 43|>🇭🇰 HK|Hs|0518|TG@FProxies|
+  network: tcp
+  port: '33004'
+  server: sz.zj.my.1.76po.com
+  tls: true
+  type: vmess
+  uuid: 76c191cd-fba1-4d6f-b766-6f68a7392f71
+- alterId: 2
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ns|0607|TG@FProxies| #3'
+  network: tcp
+  port: '23608'
+  server: 8.v2-ray.cyou
+  tls: false
+  type: vmess
+  uuid: 82ba5b28-bea7-3507-b0a2-ef95f2f42ff5
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ls|0518|TG@FProxies| #3'
+  network: ws
+  port: '13486'
+  server: 218.204.178.2
+  tls: false
+  type: vmess
+  uuid: 61b81abc-320b-49c1-893c-f3ddd45880de
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '43|>🇭🇰 HK|Ms|0518|TG@FProxies| #13'
+  network: ws
+  port: '80'
+  server: hk03.thomasinaglorious.online
+  tls: false
+  type: vmess
+  uuid: e5e2206d-8650-4dfb-9731-fe2ee99b944e
+  ws-opts:
+    headers:
+      Host: hk03.thomasinaglorious.online
+    path: /
 - alterId: 0
   cipher: auto
   name: 55|HK
@@ -2192,7 +2323,21 @@ proxies:
     headers:
       Host: ss.sxmzkfyy.com
     path: /8uEzB6n2/
-- name: 59|🇰HK-152.32.169.42-1037
+- alterId: 32
+  cipher: auto
+  name: 59|🇰HK-182.16.1.194-0809
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /
+- name: 59|🇰HK-152.32.169.42-1025
   port: 21830
   server: www.chrome-helper.cc
   skip-cert-verify: false
@@ -2200,7 +2345,7 @@ proxies:
   type: http
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-20.239.145.115-1082
+  name: 59|🇭🇰HK-20.239.145.115-1047
   network: ws
   port: 443
   server: 20.239.145.115
@@ -2212,7 +2357,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 59|🇰HK-165.154.244.100-1114
+  name: 59|🇰HK-165.154.244.100-1079
   network: ws
   port: 443
   server: 165.154.244.100
@@ -2224,7 +2369,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-104.208.96.44-1367
+  name: 59|🇭🇰HK-104.208.96.44-1401
   network: ws
   port: 80
   server: 104.208.96.44
@@ -2240,7 +2385,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-8.210.131.2-2426
+  name: 59|🇰HK-8.210.131.2-2425
   network: http
   port: 31357
   server: 8.210.131.2
@@ -2254,7 +2399,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-47.242.69.124-2434
+  name: 59|🇰HK-47.242.69.124-2433
   network: http
   port: 54620
   server: 47.242.69.124
@@ -2268,7 +2413,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-47.243.230.222-2454
+  name: 59|🇰HK-47.243.230.222-2453
   network: http
   port: 35668
   server: 47.243.230.222
@@ -2282,7 +2427,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-47.243.187.171-2477
+  name: 59|🇰HK-47.243.187.171-2476
   network: http
   port: 60808
   server: 47.243.187.171
@@ -2296,7 +2441,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.243.185.128-2484
+  name: 59|🇭🇰HK-47.243.185.128-2483
   network: http
   port: 47365
   server: 47.243.185.128
@@ -2310,7 +2455,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.15.231-2578
+  name: 59|🇭🇰HK-8.210.15.231-2577
   network: http
   port: 41083
   server: 8.210.15.231
@@ -2325,7 +2470,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-47.242.26.30-2588
+  name: 59|🇰HK-47.242.26.30-2587
   network: http
   port: 28045
   server: 47.242.26.30
@@ -2335,7 +2480,7 @@ proxies:
   uuid: bb73d6fe-9700-4607-8dc1-eb9f15253e9d
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-207.46.147.148-2620
+  name: 59|🇰HK-207.46.147.148-2619
   network: ws
   port: 443
   server: fullaccesstohongkongnet.azurewebsites.net
@@ -2354,7 +2499,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-47.242.65.80-2635
+  name: 59|🇰HK-47.242.65.80-2634
   network: http
   port: 62307
   server: 47.242.65.80
@@ -2369,7 +2514,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.236.45-2642
+  name: 59|🇭🇰HK-8.210.236.45-2641
   network: http
   port: 61228
   server: 8.210.236.45
@@ -2384,7 +2529,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-47.242.1.160-2670
+  name: 59|🇰HK-47.242.1.160-2669
   network: http
   port: 36298
   server: 47.242.1.160
@@ -2399,7 +2544,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.166.114-2673
+  name: 59|🇭🇰HK-8.210.166.114-2672
   network: http
   port: 48236
   server: 8.210.166.114
@@ -2410,7 +2555,7 @@ proxies:
   uuid: 9a3ab916-0662-45ae-8844-8efa29365f84
 - alterId: 0
   cipher: auto
-  name: 59|🇭🇰HK-103.96.149.243-2716
+  name: 59|🇭🇰HK-103.96.149.243-2715
   network: ws
   port: 443
   server: n1672318788.lyqrdde.cn
@@ -2428,7 +2573,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.248.210-2727
+  name: 59|🇭🇰HK-8.210.248.210-2726
   network: http
   port: 54570
   server: 8.210.248.210
@@ -2442,7 +2587,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.242.21.177-2729
+  name: 59|🇭🇰HK-47.242.21.177-2728
   network: http
   port: 51007
   server: 47.242.21.177
@@ -2453,7 +2598,7 @@ proxies:
   uuid: 318b3dd1-09cf-4980-81ed-6cf689e5825a
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-202.64.124.252-2757
+  name: 59|🇰HK-202.64.124.252-2756
   network: ws
   port: 80
   server: 202.64.124.252
@@ -2463,13 +2608,19 @@ proxies:
   uuid: 58d4ad2b-82d5-4847-b88c-889de4d38c19
   ws-opts:
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 59|🇭🇰HK-194.104.146.113-2808
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 194.104.146.113
+  type: ss
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: 59|🇰HK-8.210.20.159-2985
+  name: 59|🇰HK-8.210.20.159-2983
   network: http
   port: 45751
   server: 8.210.20.159
@@ -2483,7 +2634,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-8.210.153.242-2991
+  name: 59|🇰HK-8.210.153.242-2989
   network: http
   port: 48577
   server: 8.210.153.242
@@ -2497,7 +2648,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.206.163-2993
+  name: 59|🇭🇰HK-8.210.206.163-2991
   network: http
   port: 45719
   server: 8.210.206.163
@@ -2511,7 +2662,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-47.242.52.13-3174
+  name: 59|🇰HK-47.242.52.13-3172
   network: http
   port: 31152
   server: 47.242.52.13
@@ -2525,7 +2676,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-8.210.48.219-3180
+  name: 59|🇰HK-8.210.48.219-3178
   network: http
   port: 26812
   server: 8.210.48.219
@@ -2535,7 +2686,7 @@ proxies:
   uuid: cbe5ac22-eb42-4ca9-9fdc-283e57f98008
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-198.252.107.240-3249
+  name: 59|🇰HK-198.252.107.240-3247
   network: ws
   port: 443
   server: hk2.safepn.net
@@ -2553,7 +2704,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.242.95.19-3271
+  name: 59|🇭🇰HK-47.242.95.19-3269
   network: http
   port: 40988
   server: 47.242.95.19
@@ -2567,7 +2718,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.70.156-3278
+  name: 59|🇭🇰HK-8.210.70.156-3276
   network: http
   port: 54148
   server: 8.210.70.156
@@ -2576,68 +2727,68 @@ proxies:
   type: vmess
   uuid: 1346261e-3201-4932-bfba-df869ab48116
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3389
+  name: 59|🇰HK-148.66.56.99-3387
   password: G!yBwPWH3Vao
   port: 802
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3394
+  name: 59|🇰HK-148.66.56.99-3392
   password: G!yBwPWH3Vao
   port: 800
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇭🇰HK-148.66.56.99-3404
+  name: 59|🇭🇰HK-148.66.56.99-3402
   password: G!yBwPWH3Vao
   port: 804
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3418
+  name: 59|🇰HK-148.66.56.99-3416
   password: G!yBwPWH3Vao
   port: 807
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3426
+  name: 59|🇭🇰HK-148.66.56.99-3424
   password: G!yBwPWH3Vao
   port: 806
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇭🇰HK-148.66.56.99-3431
+  name: 59|🇭🇰HK-148.66.56.99-3429
   password: G!yBwPWH3Vao
   port: 808
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3449
+  name: 59|🇰HK-148.66.56.99-3447
   password: G!yBwPWH3Vao
   port: 805
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇭🇰HK-148.66.56.99-3533
+  name: 59|🇭🇰HK-148.66.56.99-3531
   password: G!yBwPWH3Vao
   port: 801
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3553
+  name: 59|🇰HK-148.66.56.99-3551
   password: G!yBwPWH3Vao
   port: 810
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3582
+  name: 59|🇰HK-148.66.56.99-3580
   password: G!yBwPWH3Vao
   port: 803
   server: 148.66.56.99
   type: ss
 - alterId: 0
   cipher: auto
-  name: 59|🇭🇰HK-185.14.47.240-3655
+  name: 59|🇭🇰HK-185.14.47.240-3653
   network: ws
   port: 2086
   server: 185.14.47.240
@@ -2649,7 +2800,7 @@ proxies:
     path: /aries
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-188.116.22.171-3675
+  name: 59|🇰HK-188.116.22.171-3673
   network: ws
   port: 443
   server: 188.116.22.171
@@ -2660,26 +2811,26 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3683
+  name: 59|🇰HK-148.66.56.99-3681
   password: G!yBwPWH3Vao
   port: 812
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3684
+  name: 59|🇰HK-148.66.56.99-3682
   password: G!yBwPWH3Vao
   port: 811
   server: 148.66.56.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇰HK-148.66.56.99-3863
+  name: 59|🇰HK-148.66.56.99-3861
   password: G!yBwPWH3Vao
   port: 809
   server: 148.66.56.99
   type: ss
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-188.116.22.171-4681
+  name: 59|🇰HK-188.116.22.171-4679
   network: ws
   port: 80
   server: 188.116.22.171
@@ -2691,7 +2842,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-209.9.201.118-4753
+  name: 59|🇰HK-209.9.201.118-4751
   network: ws
   port: 8300
   server: hk3.grpc.stream
@@ -2704,14 +2855,14 @@ proxies:
       Host: hk3.grpc.stream
     path: /event
 - cipher: chacha20-ietf-poly1305
-  name: 59|🇭🇰HK-148.66.56.98-4974
+  name: 59|🇭🇰HK-148.66.56.98-4972
   password: G!yBwPWH3Vao
   port: 805
   server: 148.66.56.98
   type: ss
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-104.208.117.86-5077
+  name: 59|🇰HK-104.208.117.86-5075
   network: ws
   port: 443
   server: univstar-104-208-117-86.nip.io
@@ -2725,7 +2876,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-18.167.121.42-5123
+  name: 59|🇰HK-18.167.121.42-5121
   network: ws
   port: 35781
   server: 18.167.121.42
@@ -2737,7 +2888,7 @@ proxies:
     path: /hk.wumaojichang.ml
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-20.239.179.251-5310
+  name: 59|🇰HK-20.239.179.251-5308
   network: ws
   port: 50044
   server: 20.239.179.251
@@ -2749,7 +2900,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 59|🇭🇰HK-20.239.179.251-5696
+  name: 59|🇭🇰HK-20.239.179.251-5694
   network: ws
   port: 50045
   server: 20.239.179.251
@@ -2761,7 +2912,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-8.218.140.111-6501
+  name: 59|🇰HK-8.218.140.111-6499
   network: ws
   port: 34193
   server: 8.218.140.111
@@ -2778,7 +2929,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-8.210.234.189-7820
+  name: 59|🇰HK-8.210.234.189-7818
   network: http
   port: 46644
   server: 8.210.234.189
@@ -2793,7 +2944,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-8.218.73.227-7821
+  name: 59|🇰HK-8.218.73.227-7819
   network: http
   port: 58641
   server: 8.218.73.227
@@ -2808,7 +2959,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.218.80.207-7822
+  name: 59|🇭🇰HK-8.218.80.207-7820
   network: http
   port: 58793
   server: 8.218.80.207
@@ -2823,7 +2974,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.218.86.250-7823
+  name: 59|🇭🇰HK-8.218.86.250-7821
   network: http
   port: 22362
   server: 8.218.86.250
@@ -2838,7 +2989,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.34.212-7824
+  name: 59|🇭🇰HK-8.210.34.212-7822
   network: http
   port: 51578
   server: 8.210.34.212
@@ -2853,7 +3004,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.210.203.189-7825
+  name: 59|🇭🇰HK-8.210.203.189-7823
   network: http
   port: 37309
   server: 8.210.203.189
@@ -2868,7 +3019,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.218.86.226-7826
+  name: 59|🇭🇰HK-8.218.86.226-7824
   network: http
   port: 51616
   server: 8.218.86.226
@@ -2883,7 +3034,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇰HK-8.218.63.184-7829
+  name: 59|🇰HK-8.218.63.184-7827
   network: http
   port: 20113
   server: 8.218.63.184
@@ -2898,7 +3049,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-8.218.85.43-7830
+  name: 59|🇭🇰HK-8.218.85.43-7828
   network: http
   port: 43645
   server: 8.218.85.43
@@ -2913,7 +3064,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.242.56.3-7832
+  name: 59|🇭🇰HK-47.242.56.3-7830
   network: http
   port: 37064
   server: 47.242.56.3
@@ -2928,7 +3079,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.242.205.255-7835
+  name: 59|🇭🇰HK-47.242.205.255-7833
   network: http
   port: 49935
   server: 47.242.205.255
@@ -2939,7 +3090,7 @@ proxies:
   uuid: 3ffddc7c-80a3-4677-ab9e-30da4190ec6a
 - alterId: 0
   cipher: auto
-  name: 59|🇭🇰HK-47.243.62.222-7837
+  name: 59|🇭🇰HK-47.243.62.222-7835
   network: ws
   port: 443
   server: 47.243.62.222
@@ -2956,7 +3107,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.242.61.125-7839
+  name: 59|🇭🇰HK-47.242.61.125-7837
   network: http
   port: 51784
   server: 47.242.61.125
@@ -2971,7 +3122,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.242.243.218-7840
+  name: 59|🇭🇰HK-47.242.243.218-7838
   network: http
   port: 48471
   server: 47.242.243.218
@@ -2986,7 +3137,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 59|🇭🇰HK-47.243.36.34-7850
+  name: 59|🇭🇰HK-47.243.36.34-7848
   network: http
   port: 55986
   server: 47.243.36.34
@@ -2997,7 +3148,7 @@ proxies:
   uuid: 87ed289f-cae3-49b4-bbe3-23da298c0e81
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-218.255.149.45-8322
+  name: 59|🇰HK-218.255.149.45-8320
   network: ws
   port: 80
   server: 218.255.149.45
@@ -3009,7 +3160,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 59|🇰HK-218.255.149.39-9046
+  name: 59|🇰HK-218.255.149.39-9044
   network: ws
   port: 80
   server: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
