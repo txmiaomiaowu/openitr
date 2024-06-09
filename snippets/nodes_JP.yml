@@ -1,15 +1,20 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: JP
-  name: 14|Relay_JP-JP_686
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node1.s.nodelist-gfwairport2.top
-  type: ss
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 14,16,42,59|🇵JP-57.180.20.23-2667
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: 8081
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 14,16,75|US114
+  name: 14,16,75|US259
   password: iRbWmdBiReS1OC8ClKz3sl
   port: 55672
   server: 103.35.190.211
@@ -18,49 +23,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: ' JP'
-  name: 16,75|未知824
-  password: amazonskr05
-  port: 443
-  server: 3.112.219.236
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   country: JP
-  name: 16,18|Relay_JP-AI_284
-  password: cb8bd04c-3e95-472c-bb3b-d0313def9d75
-  port: 50006
-  server: iepl2.forlive.live
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-cfb
-  country: ' JP'
-  name: 16,17,18,59,75|未知882 419.9KB/s
-  password: amazonskr05
-  port: 443
-  server: 3.112.44.123
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: ' JP'
-  name: 16,17,18,51,57,59,62,75|未知1342 947.7KB/s
-  password: amazonskr05
-  port: 443
-  server: 13.113.253.68
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: ' JP'
-  name: 16,18,51,59,62,75|未知399
+  name: 14,16,17,18,51,59,62,75|未知358 499.9KB/s
   password: amazonskr05
   port: 443
   server: 3.112.233.37
@@ -68,12 +33,136 @@ proxies:
   tfo: false
   tls: true
   type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: ' JP'
+  name: 14,16,17,18,51,57,59,62,75|未知736
+  password: amazonskr05
+  port: 443
+  server: 13.113.253.68
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' JP'
+  name: 14,16|ChatGPT  JP_429
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node1.s.nodelist-gfwairport2.top
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14,43|Tokyo V2 - B Group
+  network: tcp
+  port: '41001'
+  server: bgroup.node1.v.nodelist-gfwairport2.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+- alterId: 0
+  cipher: aes-256-cfb
+  country: ' JP'
+  name: 16,17,75|未知35
+  password: amazonskr05
+  port: 443
+  server: 3.112.219.236
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: ' JP'
+  name: 16,17,18,59,75|未知1109 198.9KB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.44.123
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 16|ChatGPT  JP_432
+  network: ws
+  port: 443
+  server: 141.147.174.244
+  servername: gw.alicdn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3c5d5534-4b08-4f1a-f8da-f1f9134554f6
+  ws-headers:
+    HOST: gw.alicdn.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,17| JP_165
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 18,42,59|🇳CN-119.23.104.213-0444
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 18,51,59,62|5|🇵 日本R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 15084
+  server: 59.56.77.178
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 18|disney_JP
+  network: ws
+  port: 80
+  server: 104.19.37.75
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: akjp.xlb8.eu.org
+    path: /?ed=2048&Telegram@WangCai_8
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_JP #1'
+  network: ws
+  port: 80
+  server: 104.19.37.17
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: akjp.xlb8.eu.org
+    path: /?ed=2048&Telegram@WangCai_8
 - alterId: 64
   cipher: auto
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 18,43,45,51,60,62,75|未知518
+  name: 18,43,51,60,62,75|未知221
   network: tcp
   port: 51193
   server: 183.238.202.173
@@ -82,12 +171,55 @@ proxies:
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  country: JP
+  name: 18,42|🇪🇸 ES 3 → tg@nicevpn123
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+  port: 61002
+  server: 4.forlive.live
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: JP
+  name: 18,42|🇪🇸 ES 20 → tg@nicevpn123
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+  port: 61005
+  server: 2.forlive.live
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: JP
+  name: 18|Pool_JP_370
+  obfs: plain
+  password: www.xbvpn.com
+  port: 443
+  protocol: origin
+  server: 45.67.53.250
+  type: ssr
+- alterId: 64
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_netflix_JP #3'
+  network: ws
+  port: 443
+  server: 137.220.130.39
+  servername: www.90015096.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 78e1c35c-7f45-4998-b45a-578cef59a5cf
+  ws-opts:
+    headers:
+      HOST: www.90015096.xyz
+    path: /path/191019072927
 - alterId: 64
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #2'
+  name: 18,62|0|-https://t.me/MrXbin-96
   network: ws
   port: 443
   server: 134.122.135.89
@@ -100,40 +232,40 @@ proxies:
     headers:
       HOST: www.79102825.xyz
     path: /path/191019072927
-- cipher: chacha20-ietf-poly1305
-  country: JP
-  name: 18,42|🇪🇸 ES 3 → tg@nicevpn123
-  password: 835d21b0-5322-4a77-8aff-4aff633642b0
-  port: 61002
-  server: 4.forlive.live
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: JP
-  name: 18|Pool_JP_286
-  obfs: plain
-  password: www.xbvpn.com
-  port: 443
-  protocol: origin
-  server: 45.67.53.250
-  type: ssr
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 18|Relay_ZZ-JP_400
+  name: '18|disney_netflix_JP #4'
   network: ws
-  port: 2052
-  server: 104.16.133.78
-  servername: wtywwcrzjp5.yofnhkfc.xyz
+  port: 80
+  server: 104.16.45.212
+  servername: jp.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
-  uuid: bf475e6c-a607-415e-a7f7-45c889320633
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
   ws-opts:
     headers:
-      HOST: wtywwcrzjp5.yofnhkfc.xyz
-    path: /video/9TfVEyku
+      HOST: jp.xlb8.eu.org
+    path: /?ed=2048&Telegram @WangCai_8
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  delay: 1385
+  h2-opts: {}
+  http-opts: {}
+  name: 18,47,50,59|🏁RELAY-104.25.84.14-1161
+  network: ws
+  port: 2095
+  server: 104.25.84.14
+  servername: 100-100-17-276.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2be5f070-1c5e-359f-a6e6-f2499bfc6c54
+  ws-opts:
+    path: /dabai.in104.25.84.14
 - alterId: 0
   cipher: auto
   country: ZZ
@@ -154,20 +286,37 @@ proxies:
 - alterId: 0
   cipher: auto
   country: ZZ
+  delay: 1267
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #7'
+  name: 18,47,50,59|🏁RELAY-104.24.79.182-1181
   network: ws
-  port: 80
-  server: 104.16.45.212
-  servername: jp.xlb8.eu.org
+  port: 2086
+  server: 104.24.79.182
+  servername: 100-100-17-197.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2be5f070-1c5e-359f-a6e6-f2499bfc6c54
+  ws-opts:
+    path: /dabai.in104.24.79.182
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-JP_672
+  network: ws
+  port: 2052
+  server: 104.16.133.78
+  servername: wtywwcrzjp5.yofnhkfc.xyz
   skip-cert-verify: true
   type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  uuid: bf475e6c-a607-415e-a7f7-45c889320633
   ws-opts:
     headers:
-      HOST: jp.xlb8.eu.org
-    path: /?ed=2048&Telegram @WangCai_8
+      HOST: wtywwcrzjp5.yofnhkfc.xyz
+    path: /video/9TfVEyku
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1028,14 +1177,19 @@ proxies:
     headers:
       Host: tk-000.xiaoxiaobujidao.xyz
     path: /xiaodao?ed=2048
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 51,59,62|5|🇵 日本R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15084
-  server: 59.56.77.178
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 46|🇯🇵 节点日期：04-02_8@0
+  network: ws
+  port: 2052
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1740,13 +1894,24 @@ proxies:
     path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 74|🔒 VM-TCP-NA 🇯🇵 JP-43.207.185.6...
+  name: 74|🔒 VM-TCP-NA 🇯🇵 JP-3.112.17.118...
   network: tcp
   port: 11773
-  server: 43.207.185.67
+  server: 3.112.17.118
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
+- alterId: 2
+  cipher: auto
+  name: 74,75|未知1383
+  network: tcp
+  port: 229
+  server: 154.31.112.51
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
 - alterId: 0
   cipher: auto
   name: 76|JP 3|openitr
