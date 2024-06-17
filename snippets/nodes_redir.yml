@@ -1,66 +1,44 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 4,41,49,57|🇵JP-154.16.55.112-0074
-  password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7
-  port: 60033
-  server: 5.forlive.live
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 4,18,41,49,57,62|🇺🇸_US_美国->🇫🇷_FR_法国_2
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  servername: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: CN
-  name: 4,18,38,49,57,60|5|🇸 美国R|@ripaojiedian
+  name: 4,18,38,49,57,60|5|🇷 R|@ripaojiedian
   password: hGkQ6915tD
-  port: 16058
+  port: 15111
   server: 59.56.77.178
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 4,49,57|🏁RELAY-172.67.193.67-0100
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 4,18,49,57|🇨CN-120.232.240.56-1129
   network: ws
-  port: 80
-  server: 172.67.193.67
+  port: 16928
+  server: 120.232.240.56
+  servername: '%7B%22Host%22:%22193.25.215.160%22%7D'
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 4,49,57|🏁RELAY-104.19.38.112-0102
-  network: ws
-  port: 8880
-  server: 104.19.38.112
+    path: /v2ray
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 4,49,57|🏁RELAY-104.21.69.44-1130
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 104.21.69.44
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
-  ws-opts:
-    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 4,49|1|_US_->_GB_
+  client-fingerprint: chrome
+  name: 4,49,55|🏁RELAY-104.21.69.44-0269
   network: ws
   port: 80
   server: zula.ir
@@ -74,64 +52,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4,49,57|RELAY-162.159.136.23-0108
+  client-fingerprint: chrome
+  name: 6,8,9,10,12,38,42,49,50,54,57,58,60|5,6|美国3|@ripaojiedian
   network: ws
-  port: 8880
-  server: 162.159.136.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
-  ws-opts:
-    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
-- alterId: 0
-  cipher: auto
-  name: '6,8,9,28,29,42,45,49,54,57,58,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #8'
-  network: ws
-  port: 2082
-  server: 104.21.8.157
+  port: '16928'
+  server: 120.232.240.56
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
     headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
+      Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
+    path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 6,8,9,28,42,49,54,57,58|🇺🇸 _US_美国->🇦🇹_AT_奥地利
-  network: ws
-  port: '80'
-  server: 172.67.193.67
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
-  ws-opts:
-    headers:
-      Host: gulasch.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 6,8,9,28,42,48,49,57,58|🇺🇸 _US_美国->🇨🇦_CA_加拿大
-  network: ws
-  port: '8880'
-  server: 104.19.38.112
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
-  ws-opts:
-    headers:
-      Host: division-rachel-sic-mileage.trycloudflare.com
-    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
-- alterId: 0
-  cipher: auto
-  name: 6,8,9,12,28,37,42,44,49,57,58|🇺🇸 _US_美国->🇬🇧_GB_英国
+  name: 6,9,12,28,37,42,44,49,57,58|🇺🇸 _US_美国->🇬🇧_GB_英国
   network: ws
   port: '80'
   server: zula.ir
@@ -146,21 +84,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,8,9,28,42,44,48,49,57,58|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
-  network: ws
-  port: '8880'
-  server: 162.159.136.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
-  ws-opts:
-    headers:
-      Host: division-rachel-sic-mileage.trycloudflare.com
-    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
-- alterId: 0
-  cipher: auto
-  name: '27,45,49,83|🇺🇸_US_美国 #57'
+  name: '27,45,49,83|🇺🇸_US_美国 #53'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -173,7 +97,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #16'
+  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -202,7 +126,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '27,29,49,83|🇺🇸_US_美国 #56'
+  name: '27,29,49,83|🇺🇸_US_美国 #52'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -215,7 +139,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '27,29,45,49|6,7|🇺🇸_US_美国 #20'
+  name: '27,29,45,49|6,7|🇺🇸_US_美国 #19'
   network: ws
   port: 8080
   server: 162.159.5.6
@@ -228,19 +152,47 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '29,42,49,54,57,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
+  name: 28,42,54,57,58|🇺🇸 _US_美国->🇦🇹_AT_奥地利
   network: ws
-  port: 2082
-  server: 172.67.130.140
+  port: '80'
+  server: 172.67.193.67
   servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
   ws-opts:
     headers:
-      Host: s1c.v2.v001sss.xyz
+      Host: gulasch.online
     path: /
+- alterId: 0
+  cipher: auto
+  name: 28,42,57,58|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  network: ws
+  port: '8880'
+  server: 104.19.38.112
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
+  ws-opts:
+    headers:
+      Host: division-rachel-sic-mileage.trycloudflare.com
+    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
+- alterId: 0
+  cipher: auto
+  name: '28,42,44,57,58|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: '8880'
+  server: 162.159.136.23
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
+  ws-opts:
+    headers:
+      Host: division-rachel-sic-mileage.trycloudflare.com
+    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -410,7 +362,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #15'
+  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
