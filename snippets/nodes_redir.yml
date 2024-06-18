@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 4,18,49,57,60|5|🇷 R|@ripaojiedian
+  name: 4,18,38,49,60|5|🇷 R|@ripaojiedian
   password: hGkQ6915tD
   port: 15111
   server: 59.56.77.178
@@ -9,43 +9,40 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: CN
-  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 4,18,40,49,57|🇨🇳CN-120.232.240.56-0118
+  name: 4,18,49|1|_CN_->_US_
   network: ws
   port: 16928
   server: 120.232.240.56
   servername: '%7B%22Host%22:%22193.25.215.160%22%7D'
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
+    headers:
+      host: '%7B%22Host%22:%22193.25.215.160%22%7D'
     path: /v2ray
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 4,49,57|RELAY-104.21.69.44-0125
+  name: 4,49|1|_US_->_RU_
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
   server: 104.21.69.44
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cdn-21.gsmxreality.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: 🇨CO
-  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 4,31,38,40,49|1|_US_->_GB_
+  name: 4,18,31,49|1|_US_->_GB_
   network: ws
   port: 80
   server: zula.ir
@@ -53,7 +50,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
@@ -62,7 +58,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 6,8,9,10,12,28,42,49,50,54,57,58,60|5,6|美国3|@ripaojiedian
+  name: 6,8,9,10,12,28,38,42,49,50,54,58,60|5,6|美国3|@ripaojiedian
   network: ws
   port: '16928'
   server: 120.232.240.56
@@ -78,12 +74,11 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 6,9,12,28,42,44,49,57,58|🇺🇸 _US_美国->🇬🇧_GB_英国
+  name: '6,9,12,28,42,49,58|🇺🇸 美国 CloudFlare节点 #4'
   network: ws
   port: '80'
   server: zula.ir
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
@@ -93,7 +88,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '27,45,49,83|🇺🇸_US_美国 #49'
+  name: '8,42,49,50,54|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
+  network: ws
+  port: 8080
+  server: 172.64.97.235
+  tls: false
+  type: vmess
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  ws-opts:
+    headers:
+      Host: luther-soon-uploaded-anxiety.trycloudflare.com
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+- alterId: 0
+  cipher: auto
+  name: '27,45,49,83|🇺🇸_US_美国 #60'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -106,7 +114,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
+  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -133,7 +141,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '27,29,49,83|🇺🇸_US_美国 #48'
+  name: '27,29,49,83|🇺🇸_US_美国 #59'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -159,7 +167,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '45,65|美国 CloudFlare节点 #123'
+  name: '45,65|美国 CloudFlare节点 #125'
   network: ws
   port: 80
   server: 104.21.225.104
@@ -550,14 +558,16 @@ proxies:
     headers:
       host: a.prapt5.ir
     path: /?ed=2048
-- grpc-opts:
+- alterId: 0
+  cipher: auto
+  grpc-opts:
     grpc-service-name: 443trojan
-  name: 45,57|🏁RELAY-172.67.204.84-3065
+  name: 45,73|未知616
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
   server: 172.67.204.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cdn-21.gsmxreality.com
   tls: true
   type: trojan
@@ -729,7 +739,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '45,65|美国 CloudFlare节点 #159'
+  name: '45,65|美国 CloudFlare节点 #161'
   network: ws
   port: 80
   server: 104.21.233.46
@@ -998,7 +1008,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
@@ -1010,21 +1020,6 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- alterId: '0'
-  cipher: auto
-  name: '62,65|美国 CloudFlare节点 #68'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 62|🇺🇸_US_美国->🇮🇳_IN_印度_2
