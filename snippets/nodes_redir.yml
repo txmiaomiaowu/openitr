@@ -44,8 +44,8 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: ' ZZ'
-  name: 4,14,15,16,41,49|1|_CN_->_DE_
+  country: JP
+  name: 4,18,41,49|1|_CN_->_DE_
   password: 4c0e5766-0d17-318b-bff2-046c14cb27b5
   port: 60033
   server: 5.forlive.live
@@ -71,15 +71,18 @@ proxies:
   type: vmess
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts: {}
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: ZZ
   grpc-opts:
     grpc-service-name: 443trojan
-  name: 4,46,49,57|RELAY-104.16.1.10-0100
+  name: 4,18,46,49,57,73|🇺🇸US美国42
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
   server: 104.16.1.10
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cdn-21.gsmxreality.com
   tls: true
   type: trojan
@@ -87,7 +90,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 8,10,12,28,42,49,50,54,57,58,60,80|CN_speednode_0017
+  h2-opts: {}
+  http-opts: {}
+  name: 8,10,12,18,28,38,42,49,50,54,57,60,80|CN_speednode_0017
   network: ws
   port: 16928
   server: 120.232.240.56
@@ -371,7 +376,7 @@ proxies:
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
 - alterId: 0
   cipher: auto
-  name: '27,45,49,83|🇺🇸_US_美国 #96'
+  name: '27,45,49,83|🇺🇸_US_美国 #94'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -384,7 +389,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -413,7 +418,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '27,29,49,83|🇺🇸_US_美国 #95'
+  name: '27,29,49,83|🇺🇸_US_美国 #93'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -439,9 +444,9 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: 28,42,49,57,58|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  name: 28,44,57|RELAY-172.64.97.235-0272
   network: ws
-  port: '8080'
+  port: 8080
   server: 172.64.97.235
   skip-cert-verify: false
   tls: false
@@ -453,9 +458,9 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: 28,42,48,49,54,58|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: 28,48|加拿大 164
   network: ws
-  port: '80'
+  port: 80
   server: 104.25.77.191
   tls: false
   type: vmess
@@ -466,9 +471,9 @@ proxies:
     path: /other
 - alterId: 0
   cipher: auto
-  name: '28,42,48,49,54,57,58|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
+  name: 28,48,57|🏁RELAY-104.23.97.11-0237
   network: ws
-  port: '80'
+  port: 80
   server: 104.23.97.11
   skip-cert-verify: false
   tls: false
@@ -573,6 +578,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 58|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  network: ws
+  port: '8080'
+  server: 172.64.97.235
+  tls: false
+  type: vmess
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 58|🇺🇸 _CN_中国->🇺🇸_US_美国
+  network: ws
+  port: '16928'
+  server: 120.232.240.56
+  tls: false
+  type: vmess
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
   name: 62|mattkaydiary.com|中国香港/中国台湾(CN)...
   network: ws
@@ -645,7 +676,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
+  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
@@ -657,18 +688,3 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- alterId: '0'
-  cipher: auto
-  name: '62,65|美国 CloudFlare节点 #52'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    host: s1c.v2.v001sss.xyz
-    path: /
