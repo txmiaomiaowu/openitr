@@ -58,20 +58,22 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: none
-  name: 8,12,42,50,54,57,80|CN_speednode_0039
+  name: 8,12,38,42,50,54,57,73,80|CN_speednode_0039
   network: ws
   port: 16928
   server: 120.232.240.56
   servername: ''
-  skip-cert-verify: false
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '8,29,42,45,48,49,50,54,57,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
+  h2-opts: {}
+  http-opts: {}
+  name: '8,14,29,42,45,48,49,50,54,57,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -87,7 +89,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1210
-  name: 8,42,44,48,50,54,57|🏁RELAY-172.67.218.206-1140
+  name: 8,42,48,50,54,57|🏁RELAY-172.67.218.206-1140
   network: ws
   port: 443
   server: hdfy1sub1.achaemenidempireofpersia.uk
@@ -170,20 +172,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- alterId: 0
-  cipher: auto
-  name: '29,48,49,57,58,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
 - grpc-opts:
     grpc-service-name: 443trojan
   name: 45,57|🏁RELAY-172.67.204.84-3017
@@ -363,3 +351,18 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
+- alterId: '0'
+  cipher: auto
+  name: '62,65|美国 CloudFlare节点 #19'
+  network: ws
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    host: s1c.v2.v001sss.xyz
+    path: /
