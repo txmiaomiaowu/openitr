@@ -61,14 +61,22 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '6,42,44,47,49,54|美国 CloudFlare节点 #32'
+  country: ' FR'
+  h2-opts: {}
+  http-opts: {}
+  name: '6,16,42,44,47,49,54|美国 CloudFlare节点 #25'
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
+  servername: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-headers:
+    HOST: s1c.v2.v001sss.xyz
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '6,42,45,49|3|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
@@ -136,9 +144,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '8,42,50,54,57,58|🇺🇸 美国 CloudFlare节点 #4'
+  name: 8,42,50,54,57,58,72|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.38.1...
   network: ws
-  port: '80'
+  port: 80
   server: 104.19.38.10
   skip-cert-verify: false
   tls: false
@@ -382,3 +390,18 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
+- alterId: '0'
+  cipher: auto
+  name: '62,65|美国 CloudFlare节点 #33'
+  network: ws
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    host: s1c.v2.v001sss.xyz
+    path: /
