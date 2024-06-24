@@ -25,11 +25,16 @@ proxies:
     headers:
       Host: gulasch.online
     path: /
-- name: 4,49|1|_US_->_RU_
+- client-fingerprint: chrome
+  country: ZZ
+  grpc-opts:
+    grpc-service-name: 443trojan
+  name: 4,18,38,49,57|RELAY-104.16.1.10-0094
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
   server: 104.16.1.10
+  skip-cert-verify: false
   sni: cdn-21.gsmxreality.com
   tls: true
   type: trojan
@@ -57,7 +62,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: none
-  name: 8,12,38,42,50,54,73,80|CN_speednode_0039
+  name: 8,12,38,42,50,54,57,73,80|CN_speednode_0039
   network: ws
   port: 16928
   server: 120.232.240.56
@@ -70,13 +75,27 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
+  country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: '8,14,29,42,45,48,49,50,54,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
+  name: 8,16,18,42,44,50,54,72|🔒 VM-TCP-NA 🇮🇷 IR-31.40.4.240:...
+  network: tcp
+  port: '36078'
+  server: 31.40.4.240
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6d1baeb4-7bc0-43a8-d48d-79394b3bed1e
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '8,18,29,42,45,48,49,50,54,57,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #11'
   network: ws
   port: 2082
   server: 104.21.8.157
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -87,26 +106,44 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  delay: 1210
-  name: '8,42,48,50,54|🇺🇸_US_美国->🇩🇪_DE_德国 #6'
+  name: '8,29,42,48,49,50,54,57,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #10'
   network: ws
-  port: 443
-  server: hdfy1sub1.achaemenidempireofpersia.uk
-  servername: hdfy1sub1.achaemenidempireofpersia.uk
-  skip-cert-verify: true
-  tls: true
+  port: 2082
+  server: 172.67.130.140
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      Host: hdfy1sub1.achaemenidempireofpersia.uk
-    path: /QvtvPdDXXIlSdZMqnuxG
+      Host: s1c.v2.v001sss.xyz
+    path: /
 - alterId: 0
   cipher: auto
-  name: '27,45,48,49,83|🇺🇸_US_美国 #58'
+  delay: 966
+  h2-opts: {}
+  http-opts: {}
+  name: '8,38,42,48,50,54,57,58|🇺🇸 美国 CloudFlare节点 #1'
+  network: ws
+  port: '80'
+  server: 104.19.38.10
+  servername: doctor-granny-openings-br.trycloudflare.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
+  ws-opts:
+    headers:
+      Host: doctor-granny-openings-br.trycloudflare.com
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '27,45,48,49,57,83|🇺🇸_US_美国 #70'
   network: ws
   port: 8080
   server: 162.159.1.33
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -116,7 +153,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
+  name: '27,49,83|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -145,7 +182,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '27,29,49,83|🇺🇸_US_美国 #57'
+  name: '27,29,49,83|🇺🇸_US_美国 #69'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -158,10 +195,11 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '27,29,45,48,49|6,7|🇺🇸_US_美国 #18'
+  name: 27,29,45,48,49,57|🏁RELAY-162.159.5.6-1331
   network: ws
   port: 8080
   server: 162.159.5.6
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -171,12 +209,12 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 45|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
+  name: 45,57|🏁RELAY-172.67.204.84-3017
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
   server: 172.67.204.84
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: cdn-21.gsmxreality.com
   tls: true
   type: trojan
@@ -264,32 +302,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 58|🇺🇸 _CN_中国->🇺🇸_US_美国
-  network: ws
-  port: '16928'
-  server: 120.232.240.56
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 58|🇺🇸 _US_美国->🇩🇪_DE_德国
-  network: ws
-  port: '443'
-  server: hdfy1sub1.achaemenidempireofpersia.uk
-  tls: true
-  type: vmess
-  uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
-  ws-opts:
-    headers:
-      Host: hdfy1sub1.achaemenidempireofpersia.uk
-    path: /
-- alterId: 0
-  cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
   name: 62|mattkaydiary.com|中国香港/中国台湾(CN)...
   network: ws
@@ -362,7 +374,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  name: '62|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
