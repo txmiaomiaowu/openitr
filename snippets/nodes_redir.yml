@@ -27,14 +27,14 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 4,6,42,49,54,58,73,80|CN_speednode_0022
+  name: 4,6,42,49,54,58,80|CN_speednode_0022
   network: tcp
   port: 34002
   server: 120.232.153.27
   servername: ''
   skip-cert-verify: true
   sni: ''
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -90,13 +90,13 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: 4,6,42,47,49,54,58,73,80|CN_speednode_0014
+  name: 4,6,38,42,47,49,54,58,80|CN_speednode_0014
   network: tcp
   port: 54965
   server: 120.232.153.71
   servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -126,7 +126,7 @@ proxies:
   alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: US
+  country: KR
   h2-opts: {}
   http-opts: {}
   name: 4,14,15,16,17,31,38,41,45,46,49,57,60,62,64,65,73,80|CN_speednode_0038
@@ -135,24 +135,28 @@ proxies:
   server: 183.232.139.22
   servername: kz-v2ray.ipracevpn.com
   skip-cert-verify: true
-  sni: us04.ckcloud.info
+  sni: appsvs.shop
   tfo: false
   tls: false
   type: trojan
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: h=%2Fwebsocket
-- name: 4,49|1|_KR_->_US_
+- alterId: 0
+  cipher: auto
+  name: 4,49,73|未知572
   network: ws
   password: moist
   port: 27335
   server: 116.47.10.236
+  skip-cert-verify: true
   sni: trojan.freenods.sbs
+  tls: true
   type: trojan
   udp: true
 - alterId: 64
   cipher: auto
-  name: 4,6,38,42,47,49,54,58,73,80|CN_speednode_0009
+  name: 4,6,42,47,49,54,58,72,73,80|CN_speednode_0009
   network: tcp
   port: 35972
   server: 120.232.153.71
@@ -235,13 +239,13 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: 10,12,42,50,54,58,73,80|CN_speednode_0010
+  name: 10,12,42,50,54,80|CN_speednode_0010
   network: tcp
   port: 32998
   server: 183.240.235.164
   servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -383,7 +387,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '29,45,48,49,57,58,72,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
+  name: '29,42,45,48,49,57,72,74,83|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -414,7 +418,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: 443trojan
-  name: 45,73|未知1143
+  name: 45,73|未知1820
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -507,6 +511,45 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '58|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
+  network: ws
+  port: '2086'
+  server: 104.18.57.111
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '58|🇺🇸 _US_美国->🇨🇳_CN_中国 #1'
+  network: ws
+  port: '8080'
+  server: 104.19.47.182
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '58|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #4'
+  network: ws
+  port: '2086'
+  server: 104.19.55.49
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
   name: 62|mattkaydiary.com|中国香港/中国台湾(CN)...
   network: ws
@@ -591,18 +634,3 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- alterId: '0'
-  cipher: auto
-  name: '62,65|美国 CloudFlare节点 #42'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    host: s1c.v2.v001sss.xyz
-    path: /
