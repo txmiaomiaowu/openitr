@@ -37,7 +37,7 @@ proxies:
   type: ssr
 - cipher: aes-256-gcm
   country: ' HK'
-  name: 14,15,16,17| HK_150
+  name: 14,17| HK_151
   password: Yubw8d6sag@31@
   port: 13223
   server: 103.242.3.130
@@ -47,38 +47,19 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 14|Relay_HK-HK_779
+  name: 14|Relay_HK-HK_745
   network: tcp
   port: 60001
   server: bgroup.node4.v.nodelist-gfwairport2.top
   skip-cert-verify: true
   type: vmess
   uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14,41,44|🔗 Vauth - 157
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: ''
-    path: /opt/video/images
 - alterId: 32
   cipher: auto
   country: ' NL'
   h2-opts: {}
   http-opts: {}
-  name: 14|Relay_ NL-HK_809
+  name: 14|Relay_ NL-HK_775
   network: ws
   port: 443
   server: 77.83.141.171
@@ -96,14 +77,20 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 16,49|13|🇭🇰 香港 | V1 | 直连
+  name: 16|ChatGPT  HK_582
   network: tcp
   port: 39589
   server: line.acetace.com
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
+- cipher: aes-128-gcm
+  country: CN
+  name: '18|disney_netflix_HK #25'
+  password: 56fac09c-9a2a-4f61-ada2-4f7ac30fc286
+  port: 43873
+  server: e7a0.ens3.buzz
+  type: ss
 - cipher: aes-128-gcm
   name: 41,57|🇭🇰HK-1.65.223.223-2831
   password: a-wym4ovY4Yw
@@ -179,21 +166,40 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 42,44,49|15,16|香港|@ripaojiedian
+  name: 41|🇭🇰 HK 6 → tg@nicevpn123
   network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 42|香港|cf优选
+  network: ws
+  port: '8443'
+  server: www.okcupid.com
+  tls: true
+  type: vmess
+  uuid: 620b3ad2-6d72-4795-9b36-729a705a8070
   ws-opts:
     headers:
-      Host: zifstzamhk1.yofnhkfc.xyz
-    path: /video/VuDFdktz
+      Host: xg6.888553.xyz
+    path: /cctv13.m3u8
+- alterId: 0
+  cipher: auto
+  name: 42,44,49,60,72|🔒 VM-TCP-NA 🇺🇸 US-156.251.217....
+  network: tcp
+  port: '23870'
+  server: 156.251.217.3
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7e32a0d3-8ee7-4542-a4fc-a8dfeefac923
 - alterId: 0
   cipher: auto
   name: 42|p香港-1
@@ -209,16 +215,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42,49,72|🔒 VM-TCP-NA 🇺🇸 US-156.251.217....
-  network: tcp
-  port: '23870'
-  server: 156.251.217.3
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7e32a0d3-8ee7-4542-a4fc-a8dfeefac923
-- alterId: 0
-  cipher: auto
   name: 42|p香港-3
   network: ws
   port: '8880'
@@ -232,6 +228,23 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 42,44,49,60|5,6|香港|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
+  ws-opts:
+    headers:
+      Host: zifstzamhk1.yofnhkfc.xyz
+    path: /video/VuDFdktz
+- alterId: 0
+  cipher: auto
   name: 42|p香港-2
   network: ws
   port: '8880'
@@ -243,24 +256,9 @@ proxies:
     headers:
       Host: pqxg1.gyyun.top
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 49,57|🇳CN-180.178.234.95-0208
-  network: ws
-  port: 21949
-  server: sui.forlive.live
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: beb77ae8-7949-45a9-9bcf-3ecee2c19beb
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 49|15|🇭🇰 香港KT|@ripaojiedian
+  name: 49,60|5|🇰 KT|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -276,7 +274,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 49,57|🇳CN-59.56.77.178-0574
+  name: 49,57,60|5|🇭🇰 香港R|@ripaojiedian
   password: hGkQ6915tD
   port: 15001
   server: 59.56.77.178
@@ -1380,6 +1378,19 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 72|🔒 VM-WS-NA 🇭🇰 HK-18.163.121.11...
+  network: ws
+  port: '10163'
+  server: 18.163.121.115
+  tls: false
+  type: vmess
+  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+  ws-opts:
+    headers:
+      Host: hk.lalayunssl.xyz
+    path: /v2ray
 - alterId: 0
   cipher: auto
   name: 74|HK 1|openitr

@@ -1,27 +1,35 @@
 proxies:
 - cipher: aes-256-cfb
   country: ' JP'
-  name: 14,15,16,41,57|🇵JP-13.112.176.223-2566
+  name: 14,15,16,41,57,60|0|-https://t.me/MrXbin-18
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: eAokbaDN6
   port: 8081
   protocol: origin
-  protocol-param: ''
+  protocol-param: None
   server: jp-am48-6.eqnode.net
   type: ssr
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 14,15,16|ChatGPT  US_1360
-  password: as96B8QTtYwApMXjEbfMNx
-  port: 55672
-  server: 103.35.190.211
-  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 14,15,17| JP_171
+  network: ws
+  port: 11443
+  server: tls.17.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   udp: true
+  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
+  ws-opts: {}
+  ws-path: /
 - cipher: aes-256-cfb
   country: JP
-  name: 14,17,18|JP_452
+  name: 14,15,16,60|0|-https://t.me/MrXbin-96
   password: amazonskr05
   port: 443
   server: 18.181.170.157
@@ -31,7 +39,7 @@ proxies:
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: 14|Relay_JP-JP_789
+  name: 14|Relay_JP-JP_756
   network: tcp
   port: 21585
   server: jp03-alt-vm0.entry.srthdw.art
@@ -39,109 +47,12 @@ proxies:
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- alterId: 0
+- alterId: 1
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 16,17| JP_172
-  network: ws
-  port: 11443
-  server: tls.17.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
-  ws-path: /
-- cipher: aes-128-gcm
-  country: CN
-  name: '18|disney_netflix_JP #14'
-  password: 8958d8d4-56e2-4643-9a17-d92a231683d9
-  port: 18119
-  server: alibaba1.xn--z7x16bf6t.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: JP
-  name: 18,41|🇪🇸 ES 22 → tg@nicevpn123
-  password: 95597817-57ba-43e9-b853-c9dab67c59ce
-  port: 61001
-  server: 4.forlive.live
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: JP
-  name: 18|Pool_JP_453
-  obfs: plain
-  password: www.xbvpn.com
-  port: 443
-  protocol: origin
-  server: 45.67.53.250
-  type: ssr
-- alterId: 0
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 18|JP_454
-  network: ws
-  port: 80
-  server: 151.248.68.5
-  servername: tms.dingtalk.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: d013dc38-8c27-4312-9041-ab18f4f03431
-  ws-opts:
-    headers:
-      HOST: tms.dingtalk.com
-    path: /
-- alterId: 1
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_JP-JP_455
-  network: tcp
-  port: 11775
-  server: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  type: vmess
-  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
-- alterId: 0
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_JP-JP_456
-  network: ws
-  port: 33443
-  server: tls.12.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 18|JP_457
-  network: ws
-  port: 44443
-  server: tls.20.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
-  ws-opts:
-    path: /
-- alterId: 1
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_JP-JP_458
+  name: 16|ChatGPT  JP_723
   network: tcp
   port: 28786
   server: 7oi23-g04.jp06-7c5a-vm0.entry.fr0307a.art
@@ -149,40 +60,127 @@ proxies:
   tls: true
   type: vmess
   uuid: e147ce52-2598-31b0-950d-6b12c306b360
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' CA'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,17| CA_42
+  network: ws
+  port: 49232
+  server: 167.88.184.129
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1a331b20-4822-4c5f-b1ec-206a86d51b7c
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: ' JP'
+  name: 17| JP_170
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node1.s.nodelist-gfwairport2.top
+  type: ss
+- cipher: aes-128-gcm
+  country: CN
+  name: '18|disney_netflix_JP #15'
+  password: 56fac09c-9a2a-4f61-ada2-4f7ac30fc286
+  port: 29803
+  server: 2a53.ens3.buzz
+  type: ss
+- alterId: 64
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 18,42,44,54,58|🇨🇳 广东省 移动
+  network: tcp
+  port: '51193'
+  server: 183.238.202.173
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 1
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_JP-JP_313
+  network: tcp
+  port: 28788
+  server: 1ridh-g06.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2278146c-8fb0-3683-8300-342238f8a9d0
 - alterId: 0
   cipher: auto
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: 18|Relay_JP-JP_459
+  name: 18|Relay_JP-JP_314
   network: ws
-  port: 11443
-  server: tls.01.node-for-bigairport.win
+  port: 22443
+  server: tls.18.node-for-bigairport.win
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
   ws-opts:
     path: /
-- alterId: 1
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #15'
-  network: tcp
-  port: 21581
-  server: 01eb6-g01.jp03-7d22-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
 - alterId: 0
   cipher: auto
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: 18|JP_461
+  name: 18|JP_315
+  network: ws
+  port: 443
+  server: tls.08.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 18|JP_316
+  network: ws
+  port: 33443
+  server: tls.19.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 18|JP_317
+  network: ws
+  port: 443
+  server: tls.06.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 18|JP_318
   network: ws
   port: 44443
   server: tls.13.node-for-bigairport.win
@@ -192,108 +190,18 @@ proxies:
   uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
   ws-opts:
     path: /
-- alterId: 0
+- alterId: 1
   cipher: auto
-  country: ZZ
+  country: JP
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #20'
-  network: ws
-  port: 80
-  server: 104.16.45.224
-  servername: jp.xlb8.eu.org
+  name: 18|Relay_JP-JP_319
+  network: tcp
+  port: 11775
+  server: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: true
   type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: jp.xlb8.eu.org
-    path: /?ed=2048&Telegram @WangCai_8
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_ZZ-JP_649
-  network: ws
-  port: 80
-  server: 104.16.45.144
-  servername: jp.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: jp.xlb8.eu.org
-    path: /?ed=2048&Telegram @WangCai_8
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_ZZ-JP_650
-  network: ws
-  port: 2052
-  server: 104.19.76.230
-  servername: jpcdn.vbdf.lol
-  skip-cert-verify: true
-  type: vmess
-  uuid: d013dc38-8c27-4312-9041-ab18f4f03431
-  ws-opts:
-    headers:
-      HOST: jpcdn.vbdf.lol
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #21'
-  network: ws
-  port: 80
-  server: 104.16.45.212
-  servername: jp.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: jp.xlb8.eu.org
-    path: /?ed=2048&Telegram @WangCai_8
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_ZZ-JP_684
-  network: ws
-  port: 80
-  server: 104.16.45.140
-  servername: jp.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: jp.xlb8.eu.org
-    path: /?ed=2048&Telegram @WangCai_8
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_ZZ-JP_690
-  network: ws
-  port: 80
-  server: 104.16.45.206
-  servername: jp.xlb8.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      HOST: jp.xlb8.eu.org
-    path: /?ed=2048
+  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
 - alterId: 0
   cipher: auto
   country: ZZ
@@ -302,7 +210,7 @@ proxies:
   name: '18|disney_netflix_JP #22'
   network: ws
   port: 80
-  server: 104.16.45.201
+  server: 104.19.42.49
   servername: jp.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -310,16 +218,16 @@ proxies:
   ws-opts:
     headers:
       HOST: jp.xlb8.eu.org
-    path: /?ed=2048&Telegram @WangCai_8
+    path: /
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 18|Relay_ZZ-JP_693
+  name: 18|Relay_ZZ-JP_491
   network: ws
   port: 80
-  server: 104.16.45.93
+  server: 104.16.45.188
   servername: jp.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -336,7 +244,7 @@ proxies:
   name: '18|disney_netflix_JP #23'
   network: ws
   port: 80
-  server: 104.16.45.180
+  server: 104.16.45.140
   servername: jp.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -350,44 +258,10 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #24'
-  network: ws
-  port: 8880
-  server: 104.25.44.30
-  servername: 100-100-17-495.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6dfc2f4e-a7cf-370d-bc5a-572486a3cf0f
-  ws-opts:
-    headers:
-      HOST: 100-100-17-495.cn-db.top
-    path: /dabai.in104.25.44.30
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 18,31|Relay_ZZ-🇺🇸US_59
+  name: 18|Relay_ZZ-JP_563
   network: ws
   port: 80
-  server: cfcdn3.sanfencdn9.com
-  servername: GWYp69Yujp2.yofnhkfc.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
-  ws-opts:
-    headers:
-      HOST: GWYp69Yujp2.yofnhkfc.xyz
-    path: /video/VDXcaM7r
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18|disney_netflix_JP #25'
-  network: ws
-  port: 80
-  server: 104.19.42.49
+  server: 104.16.45.201
   servername: jp.xlb8.eu.org
   skip-cert-verify: true
   type: vmess
@@ -395,7 +269,48 @@ proxies:
   ws-opts:
     headers:
       HOST: jp.xlb8.eu.org
-    path: /
+    path: /?ed=2048&Telegram @WangCai_8
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-JP_615
+  network: ws
+  port: 80
+  server: 104.16.45.206
+  servername: jp.xlb8.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      HOST: jp.xlb8.eu.org
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 38|Japan_Tokyo_trojan_138
+  network: tcp
+  password: cf13832b-4ca0-4fee-8e85-2b2411104e75
+  port: 20230
+  server: jp06.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: '39,44,78|رایگان | VMESS | @v2Line | JP🇯... #1'
+  network: ws
+  port: '443'
+  server: jp-full.privateip.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 124fe4ff-0ee4-4189-bd99-ed1a317b42dd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /RACEVPN
 - cipher: aes-256-cfb
   name: 41,57|🇵JP-43.207.197.15-2855
   password: amazonskr05
@@ -642,16 +557,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 41|🇯🇵 JP 42 → tg@nicevpn123
+  name: 41,49,72|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
   network: ws
-  port: 41597
+  port: '41597'
   server: 183.181.36.194
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: aes-256-cfb
   name: 41|🇯🇵 JP 44 → tg@nicevpn123
@@ -824,7 +742,101 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 42,44,49|16|日本4|@ripaojiedian
+  name: 42|p日本-3
+  network: ws
+  port: '8880'
+  server: yx3.gyyun.top
+  tls: false
+  type: vmess
+  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  ws-opts:
+    headers:
+      Host: pqrb1.gyyun.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 42,48,57|🏁RELAY-104.16.152.220-1299
+  network: ws
+  port: 2052
+  server: yx3.gyyun.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  ws-opts:
+    headers:
+      Host: lrb1.gyyun.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 42|日本 - 东京 - Oracle Corporation -...
+  network: ws
+  port: '80'
+  server: 104.16.45.188
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: 42|p日本-2
+  network: ws
+  port: '8880'
+  server: yx2.gyyun.top
+  tls: false
+  type: vmess
+  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  ws-opts:
+    headers:
+      Host: pqrb1.gyyun.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '42|日本 - 东京 - Oracle Corporation -... #1'
+  network: ws
+  port: '80'
+  server: 104.16.45.193
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: 42|[vmess]Japan 01 Osaka Direct 联...
+  network: ws
+  port: '80'
+  server: jp1.pkyun.website
+  servername: jp1.pkyun.website
+  tls: true
+  type: vmess
+  uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f
+  ws-opts:
+    headers:
+      Host: jp1.pkyun.website
+    path: /cloud
+- alterId: 0
+  cipher: auto
+  name: 42,48,57|🏁RELAY-104.19.151.246-1302
+  network: ws
+  port: 2052
+  server: yx2.gyyun.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  ws-opts:
+    headers:
+      Host: lrb1.gyyun.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 42,44,49,60|6|日本4|@ripaojiedian
   network: ws
   port: '46011'
   server: mmjp11.micloud.buzz
@@ -852,19 +864,6 @@ proxies:
     path: /cfcloud
 - alterId: 0
   cipher: auto
-  name: 42|日本 - 东京 - Oracle Corporation -...
-  network: ws
-  port: '80'
-  server: 104.16.45.188
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: ''
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
   name: 42|p日本-1
   network: ws
   port: '8880'
@@ -876,20 +875,6 @@ proxies:
     headers:
       Host: pqrb1.gyyun.top
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42|[vmess]Japan 01 Osaka Direct 联...
-  network: ws
-  port: '80'
-  server: jp1.pkyun.website
-  servername: jp1.pkyun.website
-  tls: true
-  type: vmess
-  uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f
-  ws-opts:
-    headers:
-      Host: jp1.pkyun.website
-    path: /cloud
 - alterId: 0
   cipher: auto
   name: 42,48,57|🏁RELAY-104.17.218.15-1300
@@ -906,65 +891,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42,48,57|🏁RELAY-104.19.151.246-1302
-  network: ws
-  port: 2052
-  server: yx2.gyyun.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
-  ws-opts:
-    headers:
-      Host: lrb1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '42|日本 - 东京 - Oracle Corporation -... #1'
-  network: ws
-  port: '80'
-  server: 104.16.45.193
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: ''
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  name: 42|p日本-2
-  network: ws
-  port: '8880'
-  server: yx2.gyyun.top
-  tls: false
-  type: vmess
-  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
-  ws-opts:
-    headers:
-      Host: pqrb1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42,48,57|🏁RELAY-104.16.152.220-1299
-  network: ws
-  port: 2052
-  server: yx3.gyyun.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
-  ws-opts:
-    headers:
-      Host: lrb1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42,49,57|🏁RELAY-172.64.151.238-0227
+  name: 42,57|🏁RELAY-172.64.151.238-0227
   network: ws
   port: 80
   server: cfcdn3.sanfencdn9.com
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -975,44 +905,8 @@ proxies:
     path: /video/VDXcaM7r
 - alterId: 0
   cipher: auto
-  name: 42|p日本-3
-  network: ws
-  port: '8880'
-  server: yx3.gyyun.top
-  tls: false
-  type: vmess
-  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
-  ws-opts:
-    headers:
-      Host: pqrb1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 49,57|🏁RELAY-162.159.152.2-0228
-  network: ws
-  port: 2086
-  server: tgqyjc2024.qyjc.xyz
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 760e05da-2333-4db4-9de4-2926cd3c64cf
-  ws-opts:
-    headers:
-      Host: japan.tgqyjc2024.qyjc666.xyz
-    path: /?ed=2048
-- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 49|15|🇯🇵 日本R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15084
-  server: 59.56.77.178
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 49,57|🇳CN-124.225.68.224-1364
+  name: 49,57,60|5|🇵 日本4|@ripaojiedian
   network: ws
   port: 46011
   server: mmjp11.micloud.buzz
@@ -2516,20 +2410,10 @@ proxies:
     path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-167.88.184.6...
-  network: tcp
-  port: '49455'
-  server: 167.88.184.65
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 46dc80bd-4883-4021-8c37-f3c6d6c46a34
-- alterId: 0
-  cipher: auto
-  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-3.112.199.20...
+  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-54.248.135.2...
   network: tcp
   port: 11773
-  server: 3.112.199.202
+  server: 54.248.135.253
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
