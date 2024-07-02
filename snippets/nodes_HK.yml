@@ -37,17 +37,33 @@ proxies:
   type: ssr
 - cipher: aes-256-gcm
   country: ' HK'
-  name: 14,16| HK_551
+  name: 14,15,16,17| HK_156
   password: Yubw8d6sag@31@
   port: 13223
   server: 103.242.3.130
   type: ss
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14,41|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
 - alterId: 32
   cipher: auto
   country: ' NL'
   h2-opts: {}
   http-opts: {}
-  name: 14|Relay_ NL-HK_823
+  name: 14|Relay_ NL-HK_834
   network: ws
   port: 443
   server: 77.83.141.171
@@ -60,6 +76,67 @@ proxies:
     headers:
       HOST: vc.fly.dev
     path: /vc
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 16| HK_600
+  network: tcp
+  port: 60001
+  server: bgroup.node4.v.nodelist-gfwairport2.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 16|ChatGPT  HK_603
+  network: tcp
+  port: 39589
+  server: line.acetace.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
+- cipher: chacha20-ietf-poly1305
+  name: 18,41,57|🇵JP-154.16.55.112-1760
+  password: ae025e7f-6a54-3cf8-9ab5-8aa8b2b1fe2d
+  port: 61008
+  server: 1.forlive.live
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 18,54,80|CN_speednode_0003
+  network: tcp
+  port: 34002
+  server: 120.232.153.27
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 38,49,60|5| KT|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: a111.illos.site
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: true
+  port: 80
+  server: 47.243.99.111
+  tfo: false
+  type: ss
 - cipher: aes-128-gcm
   name: 41,57|🇭🇰HK-1.65.223.223-2831
   password: a-wym4ovY4Yw
@@ -135,37 +212,10 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 42,44,49,60|5,6|香港|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
-  ws-opts:
-    headers:
-      Host: zifstzamhk1.yofnhkfc.xyz
-    path: /video/VuDFdktz
-- alterId: 0
-  cipher: auto
-  name: 42,44,49,60,72|🔒 VM-TCP-NA 🇺🇸 US-156.251.217....
-  network: tcp
-  port: '23870'
-  server: 156.251.217.3
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7e32a0d3-8ee7-4542-a4fc-a8dfeefac923
-- alterId: 0
-  cipher: auto
-  name: 42|p香港-2
+  name: 42|p香港-1
   network: ws
   port: '8880'
-  server: yx2.gyyun.top
+  server: yx1.gyyun.top
   tls: false
   type: vmess
   uuid: f3049610-7c44-4912-b20e-00c296d55d6c
@@ -175,10 +225,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42|p香港-1
+  name: 42|p香港-2
   network: ws
   port: '8880'
-  server: yx1.gyyun.top
+  server: yx2.gyyun.top
   tls: false
   type: vmess
   uuid: f3049610-7c44-4912-b20e-00c296d55d6c
@@ -199,30 +249,16 @@ proxies:
     headers:
       Host: pqxg1.gyyun.top
     path: /?ed=2048
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 49,60|5|🇰 KT|@ripaojiedian
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: a111.illos.site
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: false
-    tls: true
-  port: 80
-  server: 47.243.99.111
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 49,57,60|5|🇭🇰 香港R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15001
-  server: 59.56.77.178
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 42,60|6|香港5|@ripaojiedian
+  network: tcp
+  port: '45201'
+  server: 120.233.42.203
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cf7d0dea-d2ac-4af2-b8ee-b42c6750503b
 - name: 57|🇰HK-152.32.169.42-1204
   port: 21830
   server: www.chrome-helper.cc
@@ -1039,231 +1075,33 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 58|🇭🇰 香港(油管:破解资源君2.0)
-  network: tcp
-  port: '50010'
-  server: 1.5.1.fuckppppp.today
+  name: '58,61|欧洲(油管:破解资源君) #3'
+  network: ws
+  port: '38106'
+  server: ingress-i2.iivvppnn.info
+  servername: ''
   tls: false
   type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: www.ivpnpro.net
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: '58|🇭🇰 香港(油管:破解资源君2.0) #1'
-  network: tcp
-  port: '47835'
-  server: hk2.v3.zz.cn.fuckword.club
+  network: ws
+  port: '80'
+  server: 9.vip341.xyz
   tls: false
   type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #2'
-  network: tcp
-  port: '20001'
-  server: word.10.1.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #3'
-  network: tcp
-  port: '20000'
-  server: 2.8.1.fuckppppp.today
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #4'
-  network: tcp
-  port: '58418'
-  server: 4.3.1.fuckppppp.today
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #5'
-  network: tcp
-  port: '49120'
-  server: 6.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #6'
-  network: tcp
-  port: '53941'
-  server: iplc-9-8-7-6-5-4-3-2-1.001.zz.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #7'
-  network: tcp
-  port: '35419'
-  server: 2.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #8'
-  network: tcp
-  port: '36679'
-  server: 3.sg.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #9'
-  network: tcp
-  port: '50001'
-  server: word.1.1.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #10'
-  network: tcp
-  port: '60302'
-  server: 3.2.1.fuckppppp.today
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #11'
-  network: tcp
-  port: '60301'
-  server: 2.sg.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #12'
-  network: tcp
-  port: '36676'
-  server: 4.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #13'
-  network: tcp
-  port: '36672'
-  server: 1.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #14'
-  network: tcp
-  port: '56812'
-  server: hkt01.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #15'
-  network: tcp
-  port: '50000'
-  server: 2.3.1.fuckppppp.today
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #16'
-  network: tcp
-  port: '47605'
-  server: hk1.v3.zz.cn.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #17'
-  network: tcp
-  port: '49112'
-  server: hk2.v2.zz.cn.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #27'
-  network: tcp
-  port: '50002'
-  server: 2.7.1.fuckppppp.today
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #19'
-  network: tcp
-  port: '47836'
-  server: gb1.v2.zz.cn.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #22'
-  network: tcp
-  port: '58417'
-  server: word.18.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #23'
-  network: tcp
-  port: '49511'
-  server: hk1.v2.zz.cn.fuckword.club
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #24'
-  network: tcp
-  port: '36690'
-  server: 5.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #25'
-  network: tcp
-  port: '58416'
-  server: 7.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
-- alterId: 0
-  cipher: auto
-  name: '58|🇭🇰 香港(油管:破解资源君2.0) #26'
-  network: tcp
-  port: '36681'
-  server: 3.hk.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d
+  uuid: 2f0415a4-9acd-3435-a780-e447a2ce79fb
+  ws-opts:
+    headers:
+      Host: 9.vip341.xyz
+    path: /ny
 - alterId: 0
   cipher: auto
   name: 61|香港(油管:破解资源君)
@@ -1309,6 +1147,19 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
+  name: 72|🔒 VM-WS-NA 🇭🇰 HK-18.163.121.11...
+  network: ws
+  port: '10163'
+  server: 18.163.121.115
+  tls: false
+  type: vmess
+  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+  ws-opts:
+    headers:
+      Host: hk.lalayunssl.xyz
+    path: /v2ray
+- alterId: 0
+  cipher: auto
   name: 72|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2...
   network: ws
   port: '4431'
@@ -1321,19 +1172,6 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 72|🔒 VM-WS-NA 🇭🇰 HK-18.163.121.11...
-  network: ws
-  port: '10163'
-  server: 18.163.121.115
-  tls: false
-  type: vmess
-  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
-  ws-opts:
-    headers:
-      Host: hk.lalayunssl.xyz
-    path: /v2ray
 - alterId: 0
   cipher: auto
   name: 74|HK 1|openitr
