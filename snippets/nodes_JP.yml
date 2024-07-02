@@ -1,10 +1,31 @@
 proxies:
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 14,15,16,41,57|🇵JP-35.77.92.214-0850
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: 8081
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: ' JP'
+  name: 14,16,49,55,57,60|10|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.181.170.157
+  tfo: false
+  type: ss
 - alterId: 1
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 14,15,16|ChatGPT  JP_726
+  name: 14,15,16|ChatGPT  JP_705
   network: tcp
   port: 21585
   server: jp01-alt-vm0.entry.srthdw.art
@@ -12,35 +33,27 @@ proxies:
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- cipher: chacha20-ietf-poly1305
-  country: ' JP'
-  name: 16|ChatGPT  JP_710
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node1.s.nodelist-gfwairport2.top
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: JP
-  name: 16,49,55,57,60|0,10| |@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 18.181.170.157
-  tfo: false
-  type: ss
-- alterId: 0
+- alterId: 1
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 16|ChatGPT  JP_725
-  network: ws
-  port: 49232
-  server: 167.88.184.129
+  name: 14,15,16|ChatGPT  JP_708
+  network: tcp
+  port: 21583
+  server: jp01-alt-vm0.entry.srthdw.art
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 1a331b20-4822-4c5f-b1ec-206a86d51b7c
-  ws-path: /
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 16,20,41,57|🇯🇵JP-154.16.55.112-0476
+  password: 1ebd556c-b630-3d2f-9f5f-e97ef248198c
+  port: 61002
+  server: 4.forlive.live
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: 38|Japan_Tokyo_trojan_137
   network: tcp
@@ -482,28 +495,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 42,48,57|🏁RELAY-104.17.178.83-1177
+  name: 42|[vmess]Japan 01 Osaka Direct 联...
   network: ws
-  port: 2052
-  server: yx3.gyyun.top
-  skip-cert-verify: false
-  tls: false
+  port: '80'
+  server: jp1.pkyun.website
+  servername: jp1.pkyun.website
+  tls: true
   type: vmess
-  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f
   ws-opts:
     headers:
-      Host: lrb1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42,49,60|11|日本6|@ripaojiedian
-  network: tcp
-  port: '37459'
-  server: bvip.hongxingdl.vip
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d5c462c7-859a-44e2-aac3-31d19a3e1362
+      Host: jp1.pkyun.website
+    path: /cloud
 - alterId: 0
   cipher: auto
   name: 42|p日本-1
@@ -519,47 +522,41 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42|[vmess]Japan 01 Osaka Direct 联...
-  network: ws
-  port: '80'
-  server: jp1.pkyun.website
-  servername: jp1.pkyun.website
-  tls: true
-  type: vmess
-  uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f
-  ws-opts:
-    headers:
-      Host: jp1.pkyun.website
-    path: /cloud
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 42,44,49,57,60|10,11|日本3|@ripaojiedian
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
+  name: 42,49,60|11|日本6|@ripaojiedian
+  network: tcp
+  port: '37459'
+  server: bvip.hongxingdl.vip
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: d22e082c-3742-421f-aabd-2511eec9148c
-  ws-opts:
-    headers:
-      Host: 6Sn8mFtTjp3.yofnhkfc.xyz
-    path: /video/X37qXHip
+  uuid: d5c462c7-859a-44e2-aac3-31d19a3e1362
 - alterId: 0
   cipher: auto
-  name: 42|p日本-3
+  name: 42,48,57|🏁RELAY-172.67.159.98-1180
   network: ws
-  port: '8880'
-  server: yx3.gyyun.top
+  port: 2052
+  server: yx2.gyyun.top
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
   ws-opts:
     headers:
-      Host: pqrb1.gyyun.top
+      Host: lrb1.gyyun.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 42,48,57|🏁RELAY-104.17.178.83-1177
+  network: ws
+  port: 2052
+  server: yx3.gyyun.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  ws-opts:
+    headers:
+      Host: lrb1.gyyun.top
     path: /?ed=2048
 - alterId: 0
   cipher: auto
@@ -575,6 +572,19 @@ proxies:
     headers:
       Host: jp2.pkyun.website
     path: /cfcloud
+- alterId: 0
+  cipher: auto
+  name: 42|p日本-2
+  network: ws
+  port: '8880'
+  server: yx2.gyyun.top
+  tls: false
+  type: vmess
+  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  ws-opts:
+    headers:
+      Host: pqrb1.gyyun.top
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 42,44,49,60|11|日本4|@ripaojiedian
@@ -605,30 +615,29 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42|p日本-2
+  name: 42|日本 - 东京 - Oracle Corporation -...
+  network: ws
+  port: '80'
+  server: 104.16.45.79
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: 42|p日本-3
   network: ws
   port: '8880'
-  server: yx2.gyyun.top
+  server: yx3.gyyun.top
   tls: false
   type: vmess
   uuid: f3049610-7c44-4912-b20e-00c296d55d6c
   ws-opts:
     headers:
       Host: pqrb1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42,48,57|🏁RELAY-172.67.159.98-1180
-  network: ws
-  port: 2052
-  server: yx2.gyyun.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
-  ws-opts:
-    headers:
-      Host: lrb1.gyyun.top
     path: /?ed=2048
 - alterId: 0
   cipher: auto
@@ -702,13 +711,6 @@ proxies:
     headers:
       Host: tls.04.node-for-bigairport.win
     path: /
-- cipher: aes-256-cfb
-  country: JP
-  name: 55,57,60|0|-https://t.me/MrXbin-80
-  password: amazonskr05
-  port: 443
-  server: 3.112.219.236
-  type: ss
 - alterId: 0
   cipher: auto
   name: '57,58|🇪🇺 欧洲(油管:破解资源君2.0) #11'
@@ -2041,24 +2043,23 @@ proxies:
     path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-13.115.179.1...
+  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-167.88.184.6...
+  network: tcp
+  port: '49455'
+  server: 167.88.184.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 46dc80bd-4883-4021-8c37-f3c6d6c46a34
+- alterId: 0
+  cipher: auto
+  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-54.248.214.2...
   network: tcp
   port: 11773
-  server: 13.115.179.127
+  server: 54.248.214.210
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
-- alterId: 0
-  cipher: auto
-  name: 72,73|未知53 38.5KB/s
-  network: tcp
-  port: 49455
-  server: 167.88.184.65
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 46dc80bd-4883-4021-8c37-f3c6d6c46a34
 - alterId: 0
   cipher: auto
   name: 74|JP 1|openitr
