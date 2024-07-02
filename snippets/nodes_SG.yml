@@ -1,32 +1,25 @@
 proxies:
 - cipher: aes-256-cfb
-  country: 🇬SG
-  name: 14,15,16,17,19,32|🇬SG_98
+  country: SG
+  name: 14,15,16,17,19|SG_109
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.94
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14,15,57|🇸🇬SG-52.221.223.215-2722
+  password: amazonskr05
+  port: 443
+  server: 52.221.223.215
+  type: ss
+- cipher: aes-256-cfb
   country: SG
-  name: 14,15,16,17,18,57|🇸🇬SG-18.141.239.48-2724
+  name: 14,16,18,57|🇸🇬SG-18.141.239.48-2724
   password: amazonskr05
   port: 443
   server: 18.141.239.48
-  type: ss
-- cipher: aes-256-cfb
-  country: ' US'
-  name: 14,15,16,17| US_450
-  password: amazonskr05
-  port: 443
-  server: 13.212.117.24
-  type: ss
-- cipher: aes-256-cfb
-  country: ' SG'
-  name: 14,15,16,17,18,57|🇬SG-18.141.240.110-2720
-  password: amazonskr05
-  port: 443
-  server: 18.141.240.110
   type: ss
 - cipher: aes-256-cfb
   country: ' SG'
@@ -37,11 +30,20 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: ' SG'
-  name: 14,15,16,17,57|🇬SG-52.77.246.165-0941
+  country: SG
+  name: 14,15,16,17,18,57|🇬SG-18.141.240.110-2720
   password: amazonskr05
   port: 443
-  server: 52.77.246.165
+  server: 18.141.240.110
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: SG
+  name: 14,15,16,17,18,49,57,60|0,5| 2|@ripaojiedian
+  password: zoogvpn
+  port: 443
+  server: 172.104.49.76
+  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
@@ -52,35 +54,20 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: SG
-  name: 14,15,16,17,18,38,49,57,60|0,5| 2|@ripaojiedian
-  password: zoogvpn
+  country: ' SG'
+  name: 14,15,16,17,57|🇬SG-52.77.246.165-0941
+  password: amazonskr05
   port: 443
-  server: 172.104.49.76
-  tfo: false
+  server: 52.77.246.165
   type: ss
 - cipher: aes-256-cfb
-  country: ' ZZ'
-  name: '16,17| ZZ_682 #1'
-  password: kSPmvwdFzGMMW5pY
-  port: 9007
-  server: 103.172.116.103
+  country: ' US'
+  name: 16,17,57|🇬SG-13.215.177.171-2721
+  password: amazonskr05
+  port: 443
+  server: 13.215.177.171
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: '18|disney_netflix_SG #8'
-  password: 155be64c-75ec-4a44-a1a3-344b10676ef6
-  port: 50106
-  server: free-big.themars.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CN
-  name: 18|disney_SG
-  password: 4aab66d9-4bc6-4ad3-afef-aee01188e903
-  port: 32102
-  server: free-relay.m.themars.top
-  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   country: SG
@@ -100,16 +87,24 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  name: 38|Singapore_Singapore_trojan_138
-  network: tcp
-  password: 0m1nBD2gBw
-  port: 57957
-  server: 35.213.139.114
-  skip-cert-verify: false
-  sni: m.zoom.us
-  type: trojan
-  udp: false
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-SG_623
+  network: ws
+  port: 443
+  server: ipyd.52pokemon.cc
+  servername: sg01.52pokemon.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 04a4d837-8d5d-4560-b909-6c6852ad9525
+  ws-opts:
+    headers:
+      HOST: sg01.52pokemon.cc
+    path: /52pokemon?ed=2560
 - cipher: aes-256-cfb
   name: 41|🇸🇬 SG 10 → tg@nicevpn123
   password: amazonskr05
@@ -117,11 +112,14 @@ proxies:
   server: 13.250.61.18
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41|🇸🇬 SG 11 → tg@nicevpn123
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 41,73|未知102
   password: df30da54-317f-4726-98bd-8bc8ec8140c9
   port: 20177
   server: 139.59.119.251
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -359,13 +357,29 @@ proxies:
   server: 18.142.225.182
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41|🇸🇬 SG 9 → tg@nicevpn123
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 41,73|未知17
   password: df30da54-317f-4726-98bd-8bc8ec8140c9
   port: 20172
   server: 139.59.119.251
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 42|d新加坡-2
+  network: ws
+  port: '8880'
+  server: yx2.gyyun.top
+  tls: false
+  type: vmess
+  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  ws-opts:
+    headers:
+      Host: doxjp1.gyyun.top
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 42|d新加坡-3
@@ -394,7 +408,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42|d新加坡-2
+  name: 42|l新加坡-2
   network: ws
   port: '8880'
   server: yx2.gyyun.top
@@ -403,7 +417,7 @@ proxies:
   uuid: f3049610-7c44-4912-b20e-00c296d55d6c
   ws-opts:
     headers:
-      Host: doxjp1.gyyun.top
+      Host: lxjp1.gyyun.top
     path: /?ed=2048
 - alterId: 0
   cipher: auto
@@ -430,19 +444,6 @@ proxies:
   ws-opts:
     headers:
       Host: doxjp1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42|l新加坡-2
-  network: ws
-  port: '8880'
-  server: yx2.gyyun.top
-  tls: false
-  type: vmess
-  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
-  ws-opts:
-    headers:
-      Host: lxjp1.gyyun.top
     path: /?ed=2048
 - cipher: aes-256-cfb
   name: 45,57|🇬SG-13.213.46.196-5848
@@ -503,6 +504,30 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
+- alterId: 0
+  cipher: auto
+  name: 49|13|PRO 新加坡03 | 4x
+  network: ws
+  port: 3041
+  server: pro01.dns2024.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 4b804301-23ce-378f-87df-af85f73c611f
+  ws-opts:
+    headers:
+      Host: sg03.li.nbsd.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 49|13|PRO 新加坡05 | 4x 原生IP
+  network: tcp
+  port: 3051
+  server: pro01.dns2024.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 4b804301-23ce-378f-87df-af85f73c611f
 - alterId: 0
   cipher: auto
   name: '57,58|🇺🇸 美国(油管:破解资源君2.0) #2'
@@ -948,15 +973,15 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: aes-256-cfb
-  name: 57|🇬SG-103.172.116.94-0447
-  password: dML2sfhbVwvtfNPe
-  port: 9058
+  name: 57|🇸🇬SG-103.172.116.94-0478
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 103.172.116.94
   type: ss
 - cipher: aes-256-cfb
-  name: 57|🇸🇬SG-103.172.116.94-0499
-  password: f8npKgNzdkss2ytn
-  port: 9088
+  name: 57|🇸🇬SG-103.172.116.94-0519
+  password: GeregetR8cvQHzYr
+  port: 9030
   server: 103.172.116.94
   type: ss
 - cipher: aes-256-cfb
@@ -1270,6 +1295,24 @@ proxies:
   uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  country: ZA
+  h2-opts: {}
+  http-opts: {}
+  name: 57,60,74|US 60|openitr
+  network: ws
+  port: '80'
+  server: 206.238.236.36
+  servername: mysan2.jaquay22.workers.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      Host: ''
+    path: /gwdef.sbs/linkws
 - cipher: aes-256-cfb
   name: 57|🇬SG-103.172.116.103-2779
   password: ueLXVkvh4hckhErQ
@@ -1918,16 +1961,6 @@ proxies:
   server: 103.172.116.79
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 72|🔒 VM-TCP-TLS 🇸🇬 SG-139.162.21....
-  network: tcp
-  port: '2083'
-  server: 139.162.21.128
-  servername: sg2-v2ray.ipracevpn.com
-  tls: true
-  type: vmess
-  uuid: 0eb76650-5dda-4466-a142-b2097b93c50a
 - alterId: 0
   cipher: auto
   name: 74|SG 1|openitr
