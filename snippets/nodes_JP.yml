@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
-  country: JP
-  name: 14,15,16,38,41,57|🇵JP-3.112.223.159-1014
+  country: ' JP'
+  name: 14,15,16,41,57|🇵JP-3.112.223.159-1014
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: eAokbaDN6
@@ -11,12 +11,19 @@ proxies:
   server: jp-am48-6.eqnode.net
   type: ssr
   udp: true
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 14,15,17,57|🇵JP-18.181.170.157-1016
+  password: amazonskr05
+  port: 443
+  server: 18.181.170.157
+  type: ss
 - alterId: 1
   cipher: auto
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: 14|Relay_JP-JP_791
+  name: 14|Relay_JP-JP_795
   network: tcp
   port: 21585
   server: jp03-alt-vm0.entry.srthdw.art
@@ -24,25 +31,41 @@ proxies:
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+- cipher: chacha20-ietf-poly1305
+  country: ' JP'
+  name: 16|ChatGPT  JP_654
+  password: 127e812d-4f78-4eb4-8c3c-4ae7ffe0368c
+  port: 61001
+  server: 154.16.55.112
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' JP'
+  name: 16|ChatGPT  JP_655
+  password: 84521966-3d29-3b68-b303-3c19f3533d18
+  port: 61002
+  server: 154.16.55.112
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: US
+  name: 16,18,41|🇪🇸 ES 22 → tg@nicevpn123
+  password: 95597817-57ba-43e9-b853-c9dab67c59ce
+  port: 61001
+  server: 4.forlive.live
+  type: ss
+  udp: true
 - alterId: 1
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 16|ChatGPT  JP_704
+  name: 16|ChatGPT  JP_674
   network: tcp
-  port: 21585
+  port: 21583
   server: jp01-alt-vm0.entry.srthdw.art
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- cipher: aes-128-gcm
-  name: 18,80|CN_speednode_0149
-  password: 823cbf4d-3633-4540-833a-02c40333d3d7
-  port: 11523
-  server: jp-01.0626.lol
-  type: ss
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
 - alterId: 0
   cipher: auto
   country: CN
@@ -57,21 +80,14 @@ proxies:
   uuid: 60626f2a-a43d-3ef0-9e7a-f527d5ebe6fb
 - cipher: chacha20-ietf-poly1305
   country: JP
-  name: 18|JP_439
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node1.s.nodelist-gfwairport2.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: JP
-  name: 18|JP_440
-  password: 4a67f957-d53d-486d-8295-1add754fc16d
-  port: 50001
-  server: agroup.node1.s.nodelist-gfwairport2.top
+  name: '18|disney_netflix_JP #17'
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  port: 52422
+  server: jp1.mmmmmmmmmm.cfd
   type: ss
 - cipher: aes-256-cfb
   country: JP
-  name: 18|Pool_JP_441
+  name: 18|Pool_JP_362
   obfs: plain
   password: www.xbvpn.com
   port: 443
@@ -80,10 +96,62 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_JP-JP_363
+  network: ws
+  port: 45123
+  server: jp5.mmmmmmmmmm.cfd
+  servername: QWQ
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  ws-opts:
+    headers:
+      HOST: QWQ
+    path: /
+- alterId: 0
+  cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 18|Relay_ZZ-JP_621
+  name: 18|Relay_ZZ-JP_527
+  network: ws
+  port: 8880
+  server: baobaojichang.bbjc.xyz
+  servername: riben.mojc.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5f2f9755-9232-4147-892b-9d1f7dfacf19
+  ws-opts:
+    headers:
+      HOST: riben.mojc.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-JP_529
+  network: ws
+  port: 2052
+  server: 104.18.142.36
+  servername: zifstzamhk1.yofnhkfc.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: d22e082c-3742-421f-aabd-2511eec9148c
+  ws-opts:
+    headers:
+      HOST: zifstzamhk1.yofnhkfc.xyz
+    path: /video/VuDFdktz
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-JP_561
   network: ws
   port: 8080
   server: baobaojichang.bbjc.xyz
@@ -95,8 +163,76 @@ proxies:
     headers:
       HOST: riben.mojc.xyz
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-JP_538
+  network: ws
+  port: 8880
+  server: baobaojichang.bbjc.xyz
+  servername: riben.mojc.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: b1a05545-9541-4a38-9bc7-91f8a57b0a07
+  ws-opts:
+    headers:
+      HOST: riben.mojc.xyz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-JP_547
+  network: ws
+  port: 80
+  server: 104.19.17.133
+  servername: 6Sn8mFtTjp3.yofnhkfc.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: d22e082c-3742-421f-aabd-2511eec9148c
+  ws-opts:
+    headers:
+      HOST: 6Sn8mFtTjp3.yofnhkfc.xyz
+    path: /video/X37qXHip
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_netflix_JP #20'
+  network: ws
+  port: 2052
+  server: baobaojichang.bbjc.xyz
+  servername: riben.mojc.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: aa94d5ad-c4af-4af3-abf9-edd0ede6322f
+  ws-opts:
+    headers:
+      HOST: riben.mojc.xyz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_ZZ-JP_588
+  network: ws
+  port: 2082
+  server: baobaojichang.bbjc.xyz
+  servername: riben.mojc.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: de20ca94-3f5c-4879-af63-0fd78b17aed1
+  ws-opts:
+    headers:
+      HOST: riben.mojc.xyz
+    path: /?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: 38,60|0|-https://t.me/MrXbin-22
+  name: 38,60|0|-https://t.me/MrXbin-18
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -550,44 +686,18 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42|p日本-2
+  name: 42,48,57|🏁RELAY-198.41.208.197-1277
   network: ws
-  port: '8880'
+  port: 2052
   server: yx2.gyyun.top
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
   ws-opts:
     headers:
-      Host: pqrb1.gyyun.top
+      Host: lrb1.gyyun.top
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42|p日本-3
-  network: ws
-  port: '8880'
-  server: yx3.gyyun.top
-  tls: false
-  type: vmess
-  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
-  ws-opts:
-    headers:
-      Host: pqrb1.gyyun.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42|[vmess]Japan 02 Tokyo Direct 移...
-  network: ws
-  port: '80'
-  server: jp2.pkyun.website
-  servername: jp2.pkyun.website
-  tls: true
-  type: vmess
-  uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f
-  ws-opts:
-    headers:
-      Host: jp2.pkyun.website
-    path: /cfcloud
 - alterId: 0
   cipher: auto
   name: 42|日本 - 东京 - Oracle Corporation -...
@@ -603,18 +713,18 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: 42,48,57|🏁RELAY-198.41.208.197-1277
+  name: 42|[vmess]Japan 02 Tokyo Direct 移...
   network: ws
-  port: 2052
-  server: yx2.gyyun.top
-  skip-cert-verify: false
-  tls: false
+  port: '80'
+  server: jp2.pkyun.website
+  servername: jp2.pkyun.website
+  tls: true
   type: vmess
-  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f
   ws-opts:
     headers:
-      Host: lrb1.gyyun.top
-    path: /?ed=2048
+      Host: jp2.pkyun.website
+    path: /cfcloud
 - alterId: 0
   cipher: auto
   name: 42,48,57|🏁RELAY-104.17.102.128-1275
@@ -645,6 +755,19 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: 42|p日本-3
+  network: ws
+  port: '8880'
+  server: yx3.gyyun.top
+  tls: false
+  type: vmess
+  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  ws-opts:
+    headers:
+      Host: pqrb1.gyyun.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 42|[vmess]Japan 01 Osaka Direct 联...
   network: ws
   port: '80'
@@ -659,6 +782,19 @@ proxies:
     path: /cloud
 - alterId: 0
   cipher: auto
+  name: 42|p日本-2
+  network: ws
+  port: '8880'
+  server: yx2.gyyun.top
+  tls: false
+  type: vmess
+  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
+  ws-opts:
+    headers:
+      Host: pqrb1.gyyun.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 45|🇯🇵 节点日期：04-02_8@0
   network: ws
   port: 2052
@@ -670,384 +806,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_225
-  network: ws
-  port: '2082'
-  server: 104.19.46.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_84
-  network: ws
-  port: '2082'
-  server: 104.19.46.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_168
-  network: ws
-  port: '2082'
-  server: 104.19.46.168
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_247
-  network: ws
-  port: '8080'
-  server: 104.19.45.247
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_60
-  network: ws
-  port: '2082'
-  server: 104.19.46.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_15
-  network: ws
-  port: '2082'
-  server: 104.19.46.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_240
-  network: ws
-  port: '8080'
-  server: 104.19.45.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_199
-  network: ws
-  port: '8080'
-  server: 104.19.45.199
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_69
-  network: ws
-  port: '2082'
-  server: 104.19.46.69
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_207
-  network: ws
-  port: '8080'
-  server: 104.19.45.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_140
-  network: ws
-  port: '2082'
-  server: 104.19.46.140
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_24
-  network: ws
-  port: '2082'
-  server: 104.19.46.24
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_248
-  network: ws
-  port: '2082'
-  server: 104.19.46.248
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_13
-  network: ws
-  port: '2082'
-  server: 104.19.46.13
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_174
-  network: ws
-  port: '2082'
-  server: 104.19.46.174
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_89
-  network: ws
-  port: '2082'
-  server: 104.19.46.89
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_200
-  network: ws
-  port: '2082'
-  server: 104.19.46.200
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_16
-  network: ws
-  port: '2082'
-  server: 104.19.46.16
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_181
-  network: ws
-  port: '2082'
-  server: 104.19.46.181
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_71
-  network: ws
-  port: '2082'
-  server: 104.19.46.71
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_59
-  network: ws
-  port: '2082'
-  server: 104.19.46.59
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_212
-  network: ws
-  port: '8080'
-  server: 104.19.45.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_187
-  network: ws
-  port: '2082'
-  server: 104.19.46.187
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_224
-  network: ws
-  port: '8080'
-  server: 104.19.45.224
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_145
-  network: ws
-  port: '2082'
-  server: 104.19.46.145
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_28
-  network: ws
-  port: '2082'
-  server: 104.19.46.28
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: 49|13|🇯🇵JP_129
-  network: ws
-  port: '2082'
-  server: 104.19.46.129
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
-    path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
   name: 54,57|🇵JP-172.104.90.167-0434
@@ -2420,20 +2178,10 @@ proxies:
     path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-167.88.184.6...
-  network: tcp
-  port: '49455'
-  server: 167.88.184.65
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 46dc80bd-4883-4021-8c37-f3c6d6c46a34
-- alterId: 0
-  cipher: auto
-  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-43.207.210.1...
+  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-54.199.172.2...
   network: tcp
   port: 11773
-  server: 43.207.210.170
+  server: 54.199.172.213
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
