@@ -1,6 +1,80 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_netflix_TW #3'
+  network: ws
+  port: 443
+  server: tw1g.xn--vhq70hxyat50h6wk.com
+  type: vmess
+  uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_netflix_TW #4'
+  network: ws
+  port: 443
+  server: tw1g.forlive.live
+  servername: tms.dingtalk.com
+  type: vmess
+  uuid: b74eae4e-90c6-46c0-b744-595ca9dd3b8a
+  ws-opts:
+    headers:
+      Host: tw1g.forlive.live
+    path: /
+- alterId: 0
+  cipher: auto
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: 18|Relay_TW-TW_378
+  network: ws
+  port: 443
+  server: tw1g.forlive.live
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ccc923e-8452-418c-9222-87ee8f295e14
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 38|Taiwan_Taipei_vmess_1221
+  network: ws
+  port: '80'
+  server: 207c13fb-83b6-2021-766b-6c95e56a4a33.bugtik.ltd
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 46cfcfe1-e450-459d-a3ab-9406011ab3eb
+  ws-opts:
+    headers:
+      host: tms.dingtalk.com
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 38|Taiwan_Banqiao_vmess_1222
+  network: ws
+  port: '80'
+  server: 7cc02ab9-3478-1733-ea94-2b45d8e115a0.bugtik.ltd
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 46cfcfe1-e450-459d-a3ab-9406011ab3eb
+  ws-opts:
+    headers:
+      host: tms.dingtalk.com
+    path: /
 - client-fingerprint: chrome
-  name: 18,46|🇹🇼 台湾省 中华电信(HiNet)
+  name: 46|🇹🇼 台湾省 中华电信(HiNet)
   network: ws
   password: moist
   port: 23555
@@ -13,26 +87,6 @@ proxies:
     headers:
       Host: trojan.freenods.sbs
     path: /
-- alterId: 0
-  cipher: auto
-  name: 42,49,60|11|台湾|@ripaojiedian
-  network: tcp
-  port: '19821'
-  server: xg-cm2.dx001.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 457eb626-5cb6-3916-8158-1a3e76bb3754
-- alterId: 0
-  cipher: auto
-  name: 42,49,54,60|11|台湾2|@ripaojiedian
-  network: tcp
-  port: '32012'
-  server: alm2.the-galgo.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 242c0dc5-f692-4f52-baa1-16add40c801e
 - alterId: 0
   cipher: auto
   name: 54,57|🏁RELAY-104.19.172.163-0423
@@ -391,14 +445,3 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
-- alterId: 0
-  name: 73|TW
-  network: ws
-  password: moist
-  port: 23555
-  server: 211.72.156.17
-  skip-cert-verify: true
-  sni: trojan.freenods.sbs
-  tls: true
-  type: trojan
-  udp: true
