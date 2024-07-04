@@ -1,17 +1,17 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: JP
-  name: '14,15,16,18|disney_netflix_JP #17'
-  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  port: 52422
-  server: jp1.mmmmmmmmmm.cfd
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 14,15,16,55,57|🇵JP-18.181.170.157-0950
+  password: amazonskr05
+  port: 443
+  server: 18.181.170.157
   type: ss
 - alterId: 1
   cipher: auto
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: 14|Relay_JP-JP_834
+  name: 14|Relay_JP-JP_831
   network: tcp
   port: 21585
   server: jp03-alt-vm0.entry.srthdw.art
@@ -19,23 +19,80 @@ proxies:
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- cipher: chacha20-ietf-poly1305
-  country: ' JP'
-  name: 16|ChatGPT  JP_779
-  password: 84521966-3d29-3b68-b303-3c19f3533d18
-  port: 61002
-  server: 154.16.55.112
-  type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   country: JP
-  name: 18|Relay_JP-AI_373
-  password: e7623dcf-82db-4b5c-89e4-3885fc4c3d86
-  port: 50006
-  server: iepl2.forlive.live
+  h2-opts: {}
+  http-opts: {}
+  name: 14|Relay_JP-JP_833
+  network: tcp
+  port: 60001
+  server: bgroup.node1.v.nodelist-gfwairport2.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 16| JP_775
+  network: tcp
+  port: 60001
+  server: bgroup.node1.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,60|0|-https://t.me/MrXbin-29
+  network: ws
+  port: 80
+  server: 131.186.41.136
+  type: vmess
+  uuid: b0e5414d-9d51-460d-8dd3-66d015a6df36
+  ws-opts: {}
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: ' JP'
+  name: '17,49,57,60|10| |@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 13.114.74.148
+  tfo: false
   type: ss
+- alterId: 0
+  client-fingerprint: chrome
+  name: 18,38,73|未知10
+  network: ws
+  password: moist
+  port: 443
+  server: 64.110.88.46
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 18,44,54|🇨🇳 CN😈SSRSUB_-1843361734
+  network: tcp
+  port: '51193'
+  server: 183.238.202.173
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   country: JP
-  name: 18|Pool_JP_375
+  name: 18|Pool_JP_359
   obfs: plain
   password: www.xbvpn.com
   port: 443
@@ -44,29 +101,68 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  country: ' ZZ'
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #19'
+  name: '18|disney_netflix_JP #24'
   network: ws
   port: 80
-  server: 131.186.41.136
+  server: 104.24.230.223
+  servername: 100-100-17-291.cn-db.top
+  skip-cert-verify: true
   type: vmess
-  uuid: b0e5414d-9d51-460d-8dd3-66d015a6df36
-  ws-opts: {}
+  uuid: ac3a3e47-47d5-347c-a7c7-fc692a486a0c
+  ws-opts:
+    headers:
+      HOST: 100-100-17-291.cn-db.top
+    path: /dabai.in104.24.230.223
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_netflix_JP #25'
+  network: ws
+  port: 8080
+  server: 104.24.54.7
+  servername: 100-100-17-336.cn-db.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: ac3a3e47-47d5-347c-a7c7-fc692a486a0c
+  ws-opts:
+    headers:
+      HOST: 100-100-17-336.cn-db.top
+    path: /dabai.in104.24.54.7
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_JP #20'
+  name: '18|disney_netflix_JP #26'
   network: ws
   port: 8080
+  server: 104.19.78.96
+  servername: 100-100-17-426.cn-db.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: ac3a3e47-47d5-347c-a7c7-fc692a486a0c
+  ws-opts:
+    headers:
+      HOST: 100-100-17-426.cn-db.top
+    path: /dabai.in104.19.78.96
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '18|disney_netflix_JP #27'
+  network: ws
+  port: 80
   server: baobaojichang.bbjc.xyz
   servername: riben.mojc.xyz
   skip-cert-verify: true
   type: vmess
-  uuid: 5f2f9755-9232-4147-892b-9d1f7dfacf19
+  uuid: 04d1a868-4010-4c05-854f-1d49370c86fb
   ws-opts:
     headers:
       HOST: riben.mojc.xyz
@@ -111,7 +207,7 @@ proxies:
   type: trojan
   udp: false
 - cipher: aes-256-cfb
-  name: 41|🇯🇵 JP 1 → tg@nicevpn123
+  name: 41,57|🇵JP-43.207.197.15-3023
   password: amazonskr05
   port: 443
   server: 43.207.197.15
@@ -133,7 +229,7 @@ proxies:
       Host: ''
     path: /vmess
 - cipher: aes-256-cfb
-  name: 41,45|🇯🇵JP-54.199.83.239-171_1@171
+  name: 41,45,57|🇯🇵JP-54.199.83.239-1960
   password: doub.io
   port: 2333
   server: 54.199.83.239
@@ -250,7 +346,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 41|🇯🇵 JP 26 → tg@nicevpn123
+  name: 41,57|🇷KR-43.203.119.237-3029
   password: amazonskr05
   port: 443
   server: 43.203.119.237
@@ -356,7 +452,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 41,49,72|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
+  name: 41,72|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
   network: ws
   port: '41597'
   server: 183.181.36.194
@@ -478,14 +574,14 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 41|🇯🇵 JP 61 → tg@nicevpn123
+  name: 41,57|🇰🇷KR-43.201.55.242-2997
   password: amazonskr05
   port: 443
   server: 43.201.55.242
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 41|🇯🇵 JP 62 → tg@nicevpn123
+  name: 41,57|🇯🇵JP-13.231.78.35-3027
   password: amazonskr05
   port: 443
   server: 13.231.78.35
@@ -554,10 +650,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42,48|加拿大 186
+  name: 42,48,57|🏁RELAY-104.17.208.47-1315
   network: ws
   port: 2052
   server: yx2.gyyun.top
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
@@ -607,10 +704,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42,48|加拿大 081
+  name: 42,48,57|🏁RELAY-104.16.152.232-1312
   network: ws
   port: 2052
   server: yx3.gyyun.top
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
@@ -647,10 +745,11 @@ proxies:
     path: /cfcloud
 - alterId: 0
   cipher: auto
-  name: 42,48|加拿大 131
+  name: 42,48,57|🏁RELAY-104.17.162.87-1313
   network: ws
   port: 2052
   server: yx1.gyyun.top
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
@@ -660,41 +759,1804 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 49|13,15,16|日本3|@ripaojiedian
+  name: 49|13|JP_148
   network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
+  port: 2082
+  server: 104.19.46.148
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: d22e082c-3742-421f-aabd-2511eec9148c
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
   ws-opts:
     headers:
-      Host: 6Sn8mFtTjp3.yofnhkfc.xyz
-    path: /video/X37qXHip
-- client-fingerprint: chrome
-  name: 49|15|🇯🇵 日本4|@ripaojiedian
-  network: ws
-  password: g76wex
-  port: 443
-  server: aws-jp-tokyo-1.f1cflined.com
-  skip-cert-verify: false
-  sni: aws-jp-tokyo-1.f1cflined.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aws-jp-tokyo-1.f1cflined.com
-    path: /f1rocket
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 54|🇯🇵 JP😈SSRSUB_476951725
+  name: 49|13|JP_250 2
   network: ws
-  port: '44443'
+  port: 8080
+  server: 104.19.45.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_4 2
+  network: ws
+  port: 2082
+  server: 104.19.46.4
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_17
+  network: ws
+  port: '2082'
+  server: 104.19.46.17
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_137
+  network: ws
+  port: 2082
+  server: 104.19.46.137
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_139
+  network: ws
+  port: 2082
+  server: 104.19.46.139
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_180
+  network: ws
+  port: 2082
+  server: 104.19.46.180
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_207
+  network: ws
+  port: '8080'
+  server: 104.19.45.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_217
+  network: ws
+  port: '8080'
+  server: 104.19.45.217
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_227
+  network: ws
+  port: '8080'
+  server: 104.19.45.227
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_240
+  network: ws
+  port: '8080'
+  server: 104.19.45.240
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_245 2
+  network: ws
+  port: 2082
+  server: 104.19.46.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_223 2
+  network: ws
+  port: 2082
+  server: 104.19.46.223
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_243 2
+  network: ws
+  port: 2082
+  server: 104.19.46.243
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_134
+  network: ws
+  port: 2082
+  server: 104.19.46.134
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_193
+  network: ws
+  port: 8080
+  server: 104.19.45.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_241
+  network: ws
+  port: 2082
+  server: 104.19.46.241
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_198
+  network: ws
+  port: '8080'
+  server: 104.19.45.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_228
+  network: ws
+  port: '8080'
+  server: 104.19.45.228
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_215 2
+  network: ws
+  port: 2082
+  server: 104.19.46.215
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_238
+  network: ws
+  port: '8080'
+  server: 104.19.45.238
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_35
+  network: ws
+  port: 2082
+  server: 104.19.46.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_70
+  network: ws
+  port: 2082
+  server: 104.19.46.70
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_246
+  network: ws
+  port: 8080
+  server: 104.19.45.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_143
+  network: ws
+  port: 2082
+  server: 104.19.46.143
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_158
+  network: ws
+  port: 2082
+  server: 104.19.46.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_132
+  network: ws
+  port: 2082
+  server: 104.19.46.132
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_91
+  network: ws
+  port: 2082
+  server: 104.19.46.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_122
+  network: ws
+  port: 2082
+  server: 104.19.46.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_26
+  network: ws
+  port: 2082
+  server: 104.19.46.26
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_253
+  network: ws
+  port: '8080'
+  server: 104.19.45.253
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_205
+  network: ws
+  port: '8080'
+  server: 104.19.45.205
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_141
+  network: ws
+  port: 2082
+  server: 104.19.46.141
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_48
+  network: ws
+  port: 2082
+  server: 104.19.46.48
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_248
+  network: ws
+  port: 8080
+  server: 104.19.45.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_214 2
+  network: ws
+  port: 2082
+  server: 104.19.46.214
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_194
+  network: ws
+  port: 2082
+  server: 104.19.46.194
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_142
+  network: ws
+  port: 2082
+  server: 104.19.46.142
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_171
+  network: ws
+  port: 2082
+  server: 104.19.46.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_226 2
+  network: ws
+  port: 2082
+  server: 104.19.46.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_106
+  network: ws
+  port: 2082
+  server: 104.19.46.106
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_81
+  network: ws
+  port: 2082
+  server: 104.19.46.81
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_210 2
+  network: ws
+  port: 8080
+  server: 104.19.45.210
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_146
+  network: ws
+  port: 2082
+  server: 104.19.46.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_189
+  network: ws
+  port: 2082
+  server: 104.19.46.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_121
+  network: ws
+  port: 2082
+  server: 104.19.46.121
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_218
+  network: ws
+  port: '8080'
+  server: 104.19.45.218
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_66
+  network: ws
+  port: 2082
+  server: 104.19.46.66
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_203
+  network: ws
+  port: '8080'
+  server: 104.19.45.203
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_115
+  network: ws
+  port: 2082
+  server: 104.19.46.115
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_163
+  network: ws
+  port: 2082
+  server: 104.19.46.163
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_53
+  network: ws
+  port: 2082
+  server: 104.19.46.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_46
+  network: ws
+  port: 2082
+  server: 104.19.46.46
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_138
+  network: ws
+  port: 2082
+  server: 104.19.46.138
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_193 2
+  network: ws
+  port: 2082
+  server: 104.19.46.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_205 2
+  network: ws
+  port: 2082
+  server: 104.19.46.205
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_254 2
+  network: ws
+  port: 8080
+  server: 104.19.45.254
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_92
+  network: ws
+  port: 2082
+  server: 104.19.46.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_128
+  network: ws
+  port: 2082
+  server: 104.19.46.128
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_243
+  network: ws
+  port: '8080'
+  server: 104.19.45.243
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_14 2
+  network: ws
+  port: 2082
+  server: 104.19.46.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_234
+  network: ws
+  port: 8080
+  server: 104.19.45.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_214
+  network: ws
+  port: 8080
+  server: 104.19.45.214
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_16
+  network: ws
+  port: '2082'
+  server: 104.19.46.16
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_175
+  network: ws
+  port: 2082
+  server: 104.19.46.175
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_150
+  network: ws
+  port: 2082
+  server: 104.19.46.150
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_57
+  network: ws
+  port: 2082
+  server: 104.19.46.57
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_55
+  network: ws
+  port: 2082
+  server: 104.19.46.55
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_82
+  network: ws
+  port: 2082
+  server: 104.19.46.82
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_204 2
+  network: ws
+  port: 2082
+  server: 104.19.46.204
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_179
+  network: ws
+  port: 2082
+  server: 104.19.46.179
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_120
+  network: ws
+  port: 2082
+  server: 104.19.46.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_162
+  network: ws
+  port: 2082
+  server: 104.19.46.162
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_56
+  network: ws
+  port: 2082
+  server: 104.19.46.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_222 2
+  network: ws
+  port: 2082
+  server: 104.19.46.222
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_178
+  network: ws
+  port: 2082
+  server: 104.19.46.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_251
+  network: ws
+  port: 2082
+  server: 104.19.46.251
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_212
+  network: ws
+  port: 2082
+  server: 104.19.46.212
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_165
+  network: ws
+  port: 2082
+  server: 104.19.46.165
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_107
+  network: ws
+  port: 2082
+  server: 104.19.46.107
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_236 2
+  network: ws
+  port: 8080
+  server: 104.19.45.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_208
+  network: ws
+  port: 2082
+  server: 104.19.46.208
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_246 2
+  network: ws
+  port: 2082
+  server: 104.19.46.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_206 2
+  network: ws
+  port: 8080
+  server: 104.19.45.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_125
+  network: ws
+  port: 2082
+  server: 104.19.46.125
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_251
+  network: ws
+  port: '8080'
+  server: 104.19.45.251
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_233 2
+  network: ws
+  port: 2082
+  server: 104.19.46.233
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_103
+  network: ws
+  port: 2082
+  server: 104.19.46.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_236
+  network: ws
+  port: 2082
+  server: 104.19.46.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_245
+  network: ws
+  port: 8080
+  server: 104.19.45.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_197
+  network: ws
+  port: '8080'
+  server: 104.19.45.197
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_226
+  network: ws
+  port: 8080
+  server: 104.19.45.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_221 2
+  network: ws
+  port: 2082
+  server: 104.19.46.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_99
+  network: ws
+  port: 2082
+  server: 104.19.46.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_177
+  network: ws
+  port: 2082
+  server: 104.19.46.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_9
+  network: ws
+  port: 2082
+  server: 104.19.46.9
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_37
+  network: ws
+  port: 2082
+  server: 104.19.46.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_170
+  network: ws
+  port: 2082
+  server: 104.19.46.170
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_60
+  network: ws
+  port: 2082
+  server: 104.19.46.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_222
+  network: ws
+  port: '8080'
+  server: 104.19.45.222
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_229
+  network: ws
+  port: '8080'
+  server: 104.19.45.229
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_211
+  network: ws
+  port: '8080'
+  server: 104.19.45.211
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_220
+  network: ws
+  port: '8080'
+  server: 104.19.45.220
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_219
+  network: ws
+  port: '8080'
+  server: 104.19.45.219
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_199
+  network: ws
+  port: '8080'
+  server: 104.19.45.199
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_153
+  network: ws
+  port: 2082
+  server: 104.19.46.153
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_90
+  network: ws
+  port: 2082
+  server: 104.19.46.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_250
+  network: ws
+  port: 2082
+  server: 104.19.46.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_195
+  network: ws
+  port: 2082
+  server: 104.19.46.195
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_104
+  network: ws
+  port: 2082
+  server: 104.19.46.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_191
+  network: ws
+  port: 2082
+  server: 104.19.46.191
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_233
+  network: ws
+  port: 8080
+  server: 104.19.45.233
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_159
+  network: ws
+  port: 2082
+  server: 104.19.46.159
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_215
+  network: ws
+  port: '8080'
+  server: 104.19.45.215
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_75
+  network: ws
+  port: 2082
+  server: 104.19.46.75
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_63
+  network: ws
+  port: 2082
+  server: 104.19.46.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_76
+  network: ws
+  port: 2082
+  server: 104.19.46.76
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_49
+  network: ws
+  port: 2082
+  server: 104.19.46.49
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_34
+  network: ws
+  port: 2082
+  server: 104.19.46.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_6
+  network: ws
+  port: 2082
+  server: 104.19.46.6
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_149
+  network: ws
+  port: 2082
+  server: 104.19.46.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_242 2
+  network: ws
+  port: 2082
+  server: 104.19.46.242
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_11 2
+  network: ws
+  port: 2082
+  server: 104.19.46.11
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_216
+  network: ws
+  port: '8080'
+  server: 104.19.45.216
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|🇯🇵JP_223
+  network: ws
+  port: '8080'
+  server: 104.19.45.223
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_200 2
+  network: ws
+  port: 2082
+  server: 104.19.46.200
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_255 2
+  network: ws
+  port: 8080
+  server: 104.19.45.255
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 49|13|JP_114
+  network: ws
+  port: 2082
+  server: 104.19.46.114
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3feb3ece-f602-40c8-bfff-ab3112210a5f
+  ws-opts:
+    headers:
+      Host: riben.mojc.xyz
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 54,57|🇵JP-172.104.90.167-0474
+  network: ws
+  port: 44443
   server: tls.07.node-for-bigairport.win
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
@@ -703,26 +2565,26 @@ proxies:
       Host: tls.07.node-for-bigairport.win
     path: /
 - alterId: 0
-  cipher: auto
-  name: 54|🇯🇵 JP😈SSRSUB_-987295354
+  cipher: none
+  name: 54,57|🇯🇵JP-141.147.174.244-0781
   network: ws
-  port: '443'
+  port: 443
   server: 141.147.174.244
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 3c5d5534-4b08-4f1a-f8da-f1f9134554f6
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 54|🇯🇵 JP😈SSRSUB_-1534771290
+  name: 54,57|🇵JP-172.104.90.89-0487
   network: ws
-  port: '22443'
+  port: 22443
   server: tls.04.node-for-bigairport.win
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
@@ -730,19 +2592,1227 @@ proxies:
     headers:
       Host: tls.04.node-for-bigairport.win
     path: /
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 58|🇯🇵 日本(油管:破解资源君2.0)
+  name: 57,58|🇭🇰 香港(油管:破解资源君2.0)
   network: ws
-  port: '38301'
-  server: in-jp-1.iivvppnn.info
+  port: '80'
+  server: 152.69.193.245
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  uuid: 6697776b-d009-413b-8708-822ee2e02515
   ws-opts:
     headers:
-      Host: www.ivpnpro.net
-    path: /hls/cctv5phd.m3u8
+      Host: 152.69.193.245
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇵JP-194.156.231.254-0008
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 194.156.231.254
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇵JP-194.156.231.254-0011
+  password: G!yBwPWH3Vao
+  port: 803
+  server: 194.156.231.254
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-194.156.231.126-0016
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 194.156.231.126
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇵JP-89.31.126.150-0367
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 89.31.126.150
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0368
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0369
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-89.31.126.150-0370
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 89.31.126.150
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-185.160.24.217-0371
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 185.160.24.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-185.160.24.217-0372
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 185.160.24.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0373
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-185.160.24.217-0374
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 185.160.24.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0375
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0376
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0377
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-89.31.126.171-0378
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 89.31.126.171
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0379
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0380
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-185.160.24.217-0381
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 185.160.24.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-185.160.24.217-0382
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 185.160.24.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-45.66.134.176-0383
+  password: G!yBwPWH3Vao
+  port: 803
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-185.160.24.217-0384
+  password: G!yBwPWH3Vao
+  port: 803
+  server: 185.160.24.217
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-57.180.25.130-0545
+  password: amazonskr05
+  port: 443
+  server: 57.180.25.130
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-18.179.23.67-0547
+  password: amazonskr05
+  port: 443
+  server: 18.179.23.67
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-13.113.204.156-0551
+  password: amazonskr05
+  port: 443
+  server: 13.113.204.156
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-43.206.232.169-0552
+  password: amazonskr05
+  port: 443
+  server: 43.206.232.169
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-18.183.168.200-0565
+  password: amazonskr05
+  port: 443
+  server: 18.183.168.200
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-3.112.233.37-0566
+  password: amazonskr05
+  port: 443
+  server: 3.112.233.37
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-3.112.44.123-0569
+  password: amazonskr05
+  port: 443
+  server: 3.112.44.123
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-18.181.172.112-0571
+  password: amazonskr05
+  port: 443
+  server: 18.181.172.112
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-54.238.36.211-0574
+  password: amazonskr05
+  port: 443
+  server: 54.238.36.211
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-18.183.130.46-0576
+  password: amazonskr05
+  port: 443
+  server: 18.183.130.46
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-52.195.8.183-0600
+  password: amazonskr05
+  port: 443
+  server: 52.195.8.183
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-52.194.225.73-0602
+  password: amazonskr05
+  port: 443
+  server: 52.194.225.73
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-35.72.5.88-0617
+  password: amazonskr05
+  port: 443
+  server: 35.72.5.88
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-13.113.253.68-0620
+  password: amazonskr05
+  port: 443
+  server: 13.113.253.68
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-3.112.128.40-0621
+  password: amazonskr05
+  port: 443
+  server: 3.112.128.40
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-18.179.23.67-0680
+  obfs: plain
+  obfs-param: ''
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  protocol-param: ''
+  server: 18.179.23.67
+  type: ssr
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-18.183.130.46-0731
+  obfs: plain
+  obfs-param: ''
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  protocol-param: ''
+  server: 18.183.130.46
+  type: ssr
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-3.112.233.37-0743
+  obfs: plain
+  obfs-param: ''
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  protocol-param: ''
+  server: 3.112.233.37
+  type: ssr
+- cipher: aes-256-cfb
+  name: 57|🇵JP-13.113.204.156-0793
+  obfs: plain
+  obfs-param: ''
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  protocol-param: ''
+  server: 13.113.204.156
+  type: ssr
+- cipher: aes-256-cfb
+  name: 57|🇵JP-13.113.253.68-0871
+  obfs: plain
+  obfs-param: ''
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  protocol-param: ''
+  server: 13.113.253.68
+  type: ssr
+- cipher: aes-256-cfb
+  name: 57|🇵JP-172.104.123.158-1175
+  password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
+  port: 8097
+  server: 172.104.123.158
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-40.74.100.129-1176
+  network: ws
+  port: 443
+  server: fullaccesstojapannetsubnode1.azurewebsites.net
+  servername: fullaccesstojapannetsubnode1.azurewebsites.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: '57,61|欧洲(油管:破解资源君) #38'
+  network: ws
+  port: '443'
+  server: suzhihan.eu.org
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 0b873cff-11ab-4716-c41a-04f886135091
+  ws-opts:
+    headers:
+      Host: suzhihan.eu.org
+    path: /roewesu
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.61-1221
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 85.208.108.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-20.210.122.21-1243
+  password: 233blog.com
+  port: 443
+  server: 20.210.122.21
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-172.105.219.18-1255
+  network: ws
+  port: 443
+  server: 172.105.219.18
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-139.162.117.173-1455
+  network: ws
+  port: 443
+  server: 139.162.117.173
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /chat
+- alterId: 64
+  cipher: auto
+  name: 57|JP-152.70.103.195-1629
+  network: ws
+  port: 37206
+  server: 152.70.103.195
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ff3fd078-99b5-46b6-8cd5-d48ff271719a
+  ws-opts:
+    headers:
+      Host: 152.70.103.195
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-138.2.52.176-1634
+  network: ws
+  port: 24429
+  server: 138.2.52.176
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8d5ca59e-8e3e-4a10-e023-53cfcd87a72b
+  ws-opts:
+    headers:
+      Host: 138.2.52.176
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 57|JP-154.16.55.112-2322
+  password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
+  port: 61006
+  server: api-a-asia-2.mcqqn.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-140.83.84.209-2323
+  network: ws
+  port: 1234
+  server: 140.83.84.209
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e94247e0-d3e5-4f96-d8f3-b2144b383292
+  ws-opts:
+    path: /1234
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇵JP-154.16.55.112-2351
+  password: dbefcef0-836b-4d58-aa05-146f7e63f06f
+  port: 61005
+  server: api-a-asia-2.mcqqn.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-154.16.55.112-2352
+  password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
+  port: 61019
+  server: api-a-asia-3.mcqqn.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-154.16.55.112-2353
+  password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
+  port: 61007
+  server: api-a-asia-1.mcqqn.com
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.90-2363
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 85.208.108.90
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.90-2382
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 85.208.108.90
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-154.16.55.112-2416
+  password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
+  port: 61002
+  server: api-a-asia-4.mcqqn.com
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.90-2431
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 85.208.108.90
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-43.207.166.104-2432
+  password: amazonskr05
+  port: 443
+  server: 43.207.166.104
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-52.196.144.61-2458
+  network: ws
+  port: 3331
+  server: f1f3227.u1.glados-config.net
+  servername: f1f3227.u1.glados-config.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: f1f3227.u1.glados-config.net
+    path: /s/f1f3227.fm.apple.com:111548
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-35.72.161.88-2514
+  network: ws
+  port: 22356
+  server: 001.AP.POP.node-for-smallairport.win
+  servername: 001.AP.POP.node-for-smallairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cd0e1cd4-9aac-41df-9746-4d76182c8009
+  ws-opts:
+    headers:
+      Host: 001.AP.POP.node-for-smallairport.win
+    path: /
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-2609
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 85.208.108.60
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-172.104.78.98-2617
+  network: ws
+  port: 443
+  server: 172.104.78.98
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /chat
+- cipher: aes-256-cfb
+  name: 57|🇵JP-43.207.153.185-2630
+  password: amazonskr05
+  port: 443
+  server: 43.207.153.185
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-175.41.205.247-2652
+  password: amazonskr05
+  port: 443
+  server: 175.41.205.247
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-2665
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 85.208.108.60
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-138.2.45.89-2705
+  network: ws
+  port: 4430
+  server: 138.2.45.89
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 6abfad5a-24be-3657-85da-ceac782b7e19
+  ws-opts:
+    path: /osav101
+- cipher: aes-256-cfb
+  name: 57|🇵JP-54.178.60.213-2733
+  password: amazonskr05
+  port: 443
+  server: 54.178.60.213
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-43.128.225.220-2735
+  network: ws
+  port: 80
+  server: 43.128.225.220
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fa8e54-41be-4e3b-b70c-50b3750b5fdc
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-138.2.39.67-2754
+  network: ws
+  port: 80
+  server: 138.2.39.67
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ab335c88-d14a-4e67-b52c-54ed8be80c49
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-141.147.181.219-2757
+  network: ws
+  port: 443
+  server: 141.147.181.219
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 0b873cff-11ab-4716-c41a-04f886135091
+  ws-opts:
+    path: /roewesu
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-3.112.210.227-2761
+  network: ws
+  port: 23245
+  server: jp04.170203.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b
+  ws-opts:
+    headers:
+      Host: jp04.170203.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-140.83.35.62-2800
+  network: ws
+  port: 443
+  server: jp-amd1.018999.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 65e619e7-0bf1-4f5b-a390-5735b01a3713
+  ws-opts:
+    headers:
+      Host: jp-amd1.018999.xyz
+    path: /65e619e7-0bf1-4f5b-a390-5735b01a3713
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-43.207.82.53-2838
+  password: amazonskr05
+  port: 443
+  server: 43.207.82.53
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3270
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3307
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-43.207.68.169-3311
+  password: amazonskr05
+  port: 443
+  server: 43.207.68.169
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3324
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-43.207.1.14-3408
+  password: amazonskr05
+  port: 443
+  server: 43.207.1.14
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3454
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3427
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-4113
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-3471
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-3431
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3432
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3433
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3434
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3435
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3436
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3437
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3439
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-4801
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-3444
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-4127
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3451
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-3458
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3465
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇵JP-43.206.221.164-3468
+  password: amazonskr05
+  port: 443
+  server: 43.206.221.164
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-3476
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3482
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3483
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-4776
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-3495
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-4123
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-3503
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 85.208.108.60
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 57|🇵JP-153.122.173.53-3572
+  network: ws
+  port: 32407
+  server: 153.122.173.53
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 26c5fdc7-b3be-3482-9a45-d97b958a889a
+  ws-opts:
+    path: /v2ray
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-43.206.219.140-3632
+  password: amazonskr05
+  port: 443
+  server: 43.206.219.140
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.20-4102
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.18-3717
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 85.208.108.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇯🇵JP-185.160.26.91-3794
+  password: Xs9ORT4j65b8HreZrg0p
+  port: 1664
+  server: 185.160.26.91
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-3856
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 85.208.108.59
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-138.2.49.230-3873
+  network: ws
+  port: 10021
+  server: 138.2.49.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a12e496e-f89a-434a-8011-108846f0e412
+  ws-opts:
+    path: /
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-3995
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-4752
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.60-4762
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|🇯🇵JP-3.112.193.151-4764
+  password: amazonskr05
+  port: 443
+  server: 3.112.193.151
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.61-5105
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 85.208.108.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.92-5106
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 85.208.108.92
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.20-5368
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.20-5369
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.20-5372
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.20-5373
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.60-5537
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 85.208.108.60
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-172.105.223.136-5639
+  network: ws
+  port: 443
+  server: 172.105.223.136
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8964ea79-1422-460e-b6e2-a16e83a22aab
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-52.196.144.61-5648
+  network: ws
+  port: 3331
+  server: f1f3227.v1.glados-config.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: f1f3227.v1.glados-config.net
+    path: /s/f1f3227.fm.apple.com:111548
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-152.69.193.245-5756
+  network: ws
+  port: 80
+  server: 152.69.193.245
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6697776b-d009-413b-8708-822ee2e02515
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇵JP-147.78.244.7-5801
+  network: ws
+  port: 443
+  server: 147.78.244.7
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: c2907a9a-5024-41fd-be3c-30885585e3ef
+  ws-opts:
+    headers:
+      Host: virmach.qweasdzxc.gq
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 57|🇯🇵JP-124.156.225.184-5830
+  network: ws
+  port: 443
+  server: 124.156.225.184
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 7a010436-7b4a-4e65-ade4-844ba074ad58
+  ws-opts:
+    headers:
+      Host: azjp.pengui.xyz
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇵JP-193.38.139.204-6026
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 193.38.139.204
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 57|🇵JP-193.38.139.204-6029
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 193.38.139.204
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.93-6375
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 85.208.108.93
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6576
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.18-6578
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 85.208.108.18
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6580
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.20-6581
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.21-6582
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-6583
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.21-6584
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.20-6585
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.21-6586
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6589
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.20-6590
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.20-6591
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6593
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-6594
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.94-6596
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 85.208.108.94
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-6599
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6604
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6608
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-6609
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.21-6611
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6612
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.58-6613
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 85.208.108.58
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.94-6615
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 85.208.108.94
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-6616
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6617
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6619
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6621
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-6625
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.21-6626
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.20-6627
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.20-6629
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6630
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇯🇵JP-85.208.108.59-6632
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 57|🇵JP-85.208.108.59-6633
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 85.208.108.59
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 57|JP-138.2.52.244-7986
+  network: ws
+  port: 443
+  server: 138.2.52.244
+  servername: lg30.cfcdn3.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    path: /ray
+- cipher: aes-256-cfb
+  name: 57|🇵JP-43.207.83.221-8373
+  password: amazonskr05
+  port: 443
+  server: 43.207.83.221
+  type: ss
+- cipher: aes-256-cfb
+  name: 57|JP-103.75.118.27-9157
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.75.118.27
+  type: ss
 - alterId: 0
   cipher: auto
   name: 61|日本(油管:破解资源君)
@@ -845,10 +3915,10 @@ proxies:
     path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-43.207.112.2...
+  name: 72|🔒 VM-TCP-NA 🇯🇵 JP-52.198.71.27...
   network: tcp
   port: 11773
-  server: 43.207.112.225
+  server: 52.198.71.27
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
