@@ -1,54 +1,24 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: TW
-  name: 14,15,16,18,80|TW_speednode_0122
+  country: ' JP'
+  name: 14,15,16,31|Relay_ | 3.77Mb
   password: bb24b8e1-7a1d-49bc-a5f2-69dc5787ef2e
   port: 22061
   server: z3.moonriver.sbs
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: ' ZZ'
-  name: '14,16,18|disney_netflix_SG #12'
+  country: ' SG'
+  name: '14,15,16,18|disney_netflix_SG #10'
   password: bb24b8e1-7a1d-49bc-a5f2-69dc5787ef2e
   port: 19202
   server: z4.moonriver.sbs
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' TW'
-  name: 16| TW_229
-  password: bb24b8e1-7a1d-49bc-a5f2-69dc5787ef2e
-  port: 20542
-  server: z.moonriver.sbs
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 16|ChatGPT  TW_231
-  network: ws
-  port: 443
-  server: tw1g.forlive.live
-  servername: tms.dingtalk.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4ccc923e-8452-418c-9222-87ee8f295e14
-  ws-headers:
-    HOST: tms.dingtalk.com
-  ws-path: /
-- cipher: aes-256-gcm
-  country: CN
-  name: '18|disney_netflix_TW #5'
-  password: 3ce72168-730e-4020-baf8-620ee14634ac
-  port: 10051
-  server: uhisfgy78eu.cfprefer1.xyz
   type: ss
 - alterId: 0
   cipher: auto
   country: TW
   h2-opts: {}
   http-opts: {}
-  name: '18|disney_netflix_TW #6'
+  name: '18|disney_netflix_TW #9'
   network: tcp
   port: 56568
   server: hinet.mmmmmmmmmm.cfd
@@ -57,7 +27,7 @@ proxies:
   uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
 - alterId: '0'
   cipher: auto
-  name: 38|Taiwan_Taipei_vmess_1226
+  name: 38|Taiwan_Taipei_vmess_1222
   network: ws
   port: '80'
   server: 207c13fb-83b6-2021-766b-6c95e56a4a33.bugtik.ltd
@@ -71,7 +41,7 @@ proxies:
     path: /
 - alterId: '0'
   cipher: auto
-  name: 38|Taiwan_Banqiao_vmess_1227
+  name: 38|Taiwan_Banqiao_vmess_1223
   network: ws
   port: '80'
   server: 7cc02ab9-3478-1733-ea94-2b45d8e115a0.bugtik.ltd
@@ -83,23 +53,20 @@ proxies:
     headers:
       host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 42,44,45,49,57,60|10,11||@ripaojiedian
+- client-fingerprint: chrome
+  name: 46|🇹🇼 台湾省 中华电信(HiNet)
   network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
+  password: moist
+  port: 23555
+  server: 211.72.156.17
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
+  sni: trojan.freenods.sbs
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
+      Host: trojan.freenods.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 49,72|🔒 VM-WS-NA 🇹🇼 TW-103.159.206.3...
@@ -457,3 +424,14 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
+- alterId: 0
+  name: 73|TW
+  network: ws
+  password: moist
+  port: 23555
+  server: 211.72.156.17
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
