@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 14,15,16,19,32|Pool_HK_61
+  name: 14,15,16,19,32|Pool_HK_60
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -10,37 +10,43 @@ proxies:
   type: ssr
 - cipher: aes-256-gcm
   country: ' HK'
-  name: 14,15,16| HK_580
+  name: 14,15,16| HK_522
   password: Yubw8d6sag@31@
   port: 13223
   server: 103.242.3.130
   type: ss
-- alterId: 0
+- alterId: 32
   cipher: auto
-  country: HK
+  country: ' NL'
   h2-opts: {}
   http-opts: {}
-  name: 14,41|🇭🇰 HK 6 → tg@nicevpn123
+  name: 14|Relay_ NL-HK_794
   network: ws
-  port: 80
-  server: 182.16.1.194
+  port: 443
+  server: 77.83.141.171
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 16,74|US 209|openitr
+  network: tcp
+  port: '49879'
+  server: 206.237.31.203
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /opt/video/images
-- cipher: aes-256-ctr
-  name: 18,80|CN_speednode_0028
-  password: JHe7ay97yuw8ue
-  plugin: obfs
-  plugin-opts:
-    host: 607ab498e8.v4-dy.ixigua.com
-    mode: http
-  port: 37041
-  server: speedtest-rtc.xtspeeder002.xyz
-  type: ss
+  uuid: 2aa1a094-8320-4567-b833-c0b4934eb7e2
+  ws-path: /
 - alterId: 64
   cipher: auto
   h2-opts: {}
@@ -52,29 +58,50 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: CN
+  name: 18,38,49,57,60|10|🇭🇰 香港|@ripaojiedian
+  password: 6743AB87-5912-4E9B-8AED-667F4B0EC14B
+  port: 18021
+  server: hk05-auto-console.suya.ink
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 18,49|13|用最新软件不然节点显示不全
+  name: 18|Relay_HK-HK_310
   network: tcp
-  port: '20003'
+  port: 20003
   server: shdxus.aikunapp.com
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 18b741ca-5dcb-4a7f-96d1-845807f2ec49
-- client-fingerprint: chrome
-  name: 38|Hong Kong_Yuen Long San Hui_tr...
-  network: tcp
-  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  port: 28069
-  server: hk2.mmmmmmmmmm.cfd
-  skip-cert-verify: true
-  sni: apple.com
-  type: trojan
-  udp: false
+  uuid: 0f009c42-61fb-4d4e-8620-31ada433537b
+- cipher: chacha20-ietf-poly1305
+  country: US
+  name: '18|disney_netflix_HK #20'
+  password: 44616c04-57e1-491a-9239-80b805b8d770
+  port: 50001
+  server: iepl1.forlive.live
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 38,49,60|10| KT|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: a111.illos.site
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: true
+  port: 80
+  server: 47.243.99.111
+  tfo: false
+  type: ss
 - cipher: aes-128-gcm
   name: 41,57|🇰HK-1.65.223.223-3013
   password: a-wym4ovY4Yw
@@ -150,10 +177,10 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 42|p香港-1
+  name: 42|p香港-3
   network: ws
   port: '8880'
-  server: yx1.gyyun.top
+  server: yx3.gyyun.top
   tls: false
   type: vmess
   uuid: f3049610-7c44-4912-b20e-00c296d55d6c
@@ -176,10 +203,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 42|p香港-3
+  name: 42|p香港-1
   network: ws
   port: '8880'
-  server: yx3.gyyun.top
+  server: yx1.gyyun.top
   tls: false
   type: vmess
   uuid: f3049610-7c44-4912-b20e-00c296d55d6c
@@ -187,60 +214,6 @@ proxies:
     headers:
       Host: pqxg1.gyyun.top
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 49|13|香港 01 专线
-  network: tcp
-  port: '20002'
-  server: shdxus.aikunapp.com
-  tls: false
-  type: vmess
-  uuid: 18b741ca-5dcb-4a7f-96d1-845807f2ec49
-- alterId: 0
-  cipher: auto
-  name: 49|13|香港高速1最新官网地址：https://one.moo...
-  network: ws
-  port: '2052'
-  server: ss.moonriver.sbs
-  tls: false
-  type: vmess
-  uuid: ff36ae93-15e5-4d66-8901-9926a31cb3e7
-  ws-opts:
-    headers:
-      Host: hkgs1.moonriver.sbs
-    path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 49,60|10| KT|@ripaojiedian
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: a111.illos.site
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: false
-    tls: true
-  port: 80
-  server: 47.243.99.111
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 49,57,60|10|🇭🇰 香港|@ripaojiedian
-  password: 6743AB87-5912-4E9B-8AED-667F4B0EC14B
-  port: 18021
-  server: hk05-auto-console.suya.ink
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 49,57,60|10|🇭🇰 香港R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15001
-  server: 59.56.77.178
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: '57,58|🇺🇸 美国(油管:破解资源君2.0) #18'
@@ -1148,32 +1121,19 @@ proxies:
       Host: cfhk.393930.xyz
     path: /
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 73|HK
-  network: tcp
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  port: 20897
-  server: 8.217.193.174
+  password: d31534ff-83a3-4137-91b7-79e144489643
+  port: 50223
+  server: 46.232.123.37
   skip-cert-verify: true
-  sni: hkhe02.bcloudv.cyou
   tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 73|HK2
-  network: ws
-  password: moist
-  port: 2087
-  server: 8.210.203.7
-  skip-cert-verify: true
-  sni: trojan.freenods.sbs
-  tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 73|HK3
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 10015
+  name: 73|HK2
+  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
+  port: 50213
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
@@ -1182,7 +1142,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   name: 73|HK4
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 10011
+  port: 20006
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
@@ -1191,49 +1151,22 @@ proxies:
   cipher: chacha20-ietf-poly1305
   name: 73|HK5
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 30012
+  port: 30017
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 73|HK6
-  password: d31534ff-83a3-4137-91b7-79e144489643
-  port: 50216
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 73|HK7
-  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
-  port: 50236
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 73|HK8
   network: ws
-  password: NISHIKUITAN222
-  port: 443
-  server: 47.242.202.230
+  password: moist
+  port: 2096
+  server: 47.238.0.114
   skip-cert-verify: true
-  sni: t667.ylks.link
+  sni: trojan.freenods.sbs
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 73|HK9
-  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
-  port: 50213
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: 74|HK 1|openitr
