@@ -10,11 +10,29 @@ proxies:
   type: ssr
 - cipher: aes-256-gcm
   country: ' HK'
-  name: 14,15,16| HK_513
+  name: 14,15,16| HK_562
   password: Yubw8d6sag@31@
   port: 13223
   server: 103.242.3.130
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: HK
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 14,40,41|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
 - alterId: 32
   cipher: auto
   country: ' NL'
@@ -55,52 +73,33 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 18|Relay_HK-HK_260
-  network: tcp
-  port: 20003
-  server: shdxus.aikunapp.com
+  name: 18,73|HK6
+  network: ws
+  password: moist
+  port: 2096
+  server: 47.238.0.114
   skip-cert-verify: true
-  type: vmess
-  uuid: 0f009c42-61fb-4d4e-8620-31ada433537b
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 18,55|🏁RELAY-104.19.47.177-0245
+  name: 18|Relay_ZZ-HK_598
   network: ws
-  port: 8443
-  server: 104.19.47.177
-  servername: hk01.linkitnow.net
+  port: 2052
+  server: ss.moonriver.sbs
+  servername: hkgs1.moonriver.sbs
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 39135a39-e6ca-43df-a360-d859eea58d86
+  uuid: ff36ae93-15e5-4d66-8901-9926a31cb3e7
   ws-opts:
     headers:
-      host: hk01.linkitnow.net
+      HOST: hkgs1.moonriver.sbs
     path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 38,49,60|10| KT|@ripaojiedian
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: a111.illos.site
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: false
-    tls: true
-  port: 80
-  server: 47.243.99.111
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   name: 41,57|🇰HK-1.65.223.223-3033
   password: a-wym4ovY4Yw
@@ -176,17 +175,17 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 42|[vmess]距离下次重置剩余：4 天
+  name: 42|p香港-3
   network: ws
-  port: '80'
-  server: m2-hk1.go-relay.top
+  port: '8880'
+  server: yx3.gyyun.top
   tls: false
   type: vmess
-  uuid: fb3a77ab-3d6f-4497-8a1f-4375503f4550
+  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
   ws-opts:
     headers:
-      Host: m2-hk1.go-relay.top
-    path: /ws?ed=2560
+      Host: pqxg1.gyyun.top
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 42|p香港-1
@@ -213,19 +212,30 @@ proxies:
     headers:
       Host: pqxg1.gyyun.top
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 42|p香港-3
-  network: ws
-  port: '8880'
-  server: yx3.gyyun.top
-  tls: false
-  type: vmess
-  uuid: f3049610-7c44-4912-b20e-00c296d55d6c
-  ws-opts:
-    headers:
-      Host: pqxg1.gyyun.top
-    path: /?ed=2048
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 49,60|10| KT|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: a111.illos.site
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: true
+  port: 80
+  server: 47.243.99.111
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 49,57,60|10|🇭🇰 香港R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 15001
+  server: 59.56.77.178
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '57,58|🇺🇸 美国(油管:破解资源君2.0) #18'
@@ -1133,6 +1143,16 @@ proxies:
       Host: cfhk.393930.xyz
     path: /
 - alterId: 0
+  cipher: auto
+  name: 72|🔒 VM-TCP-NA 🇭🇰 HK-42.3.135.173...
+  network: tcp
+  port: '23129'
+  server: 42.3.135.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a83fccdb-eeec-4dab-a8c9-a105acbd89e5
+- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 73|HK
   password: d31534ff-83a3-4137-91b7-79e144489643
@@ -1168,17 +1188,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  name: 73|HK6
-  network: ws
-  password: moist
-  port: 2096
-  server: 47.238.0.114
-  skip-cert-verify: true
-  sni: trojan.freenods.sbs
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 74|HK 1|openitr
