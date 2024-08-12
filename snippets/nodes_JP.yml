@@ -1,11 +1,14 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,9,10,12,25,32|🇯🇵 11|日本5|@ripaojiedian
+  client-fingerprint: chrome
+  name: '0,9,10,12,24,25,32|🇯🇵 11|日本5|@ripaojiedian #1'
   network: ws
   port: '46011'
   server: mmjp11.micloud.buzz
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
@@ -15,11 +18,14 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 0,10,12,25,32|🇯🇵 10,11|日本4|@ripaojiedian
+  client-fingerprint: chrome
+  name: '0,10,12,24,25,32|🇯🇵 10,11|日本4|@ripaojiedian #1'
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 9a403efc-18d7-4a78-8532-fb15541ef836
@@ -43,12 +49,19 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- cipher: chacha20-ietf-poly1305
+  country: 🇵JP
+  name: 21|JP_632
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node1.s.nodelist-airport.com
+  type: ss
 - alterId: 1
   cipher: auto
   country: 🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 21|JP_636
+  name: 21|🇵JP_633
   network: tcp
   port: 21583
   server: jp01-alt-vm0.entry.srthdw.art
@@ -56,24 +69,12 @@ proxies:
   tls: true
   type: vmess
   uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
-- alterId: 0
-  cipher: auto
-  country: 🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 21|🇵JP_637
-  network: tcp
-  port: 60001
-  server: bgroup.node1.v.nodelist-airport.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
 - alterId: 1
   cipher: auto
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 21|🇵JP_638
+  name: 21|🇵JP_634
   network: tcp
   port: 21585
   server: jp01-alt-vm0.entry.srthdw.art
@@ -86,7 +87,7 @@ proxies:
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 21|🇯🇵JP_639
+  name: 21|🇯🇵JP_635
   network: tcp
   port: 21585
   server: jp03-alt-vm0.entry.srthdw.art
@@ -94,6 +95,53 @@ proxies:
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 24|🇯🇵 10|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.194.188.15
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 24|12|JP_speednode_0102
+  network: ws
+  password: CMLiu
+  port: 2096
+  server: 103.201.130.227
+  skip-cert-verify: false
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 24|12|JP_speednode_0103
+  network: ws
+  password: CMLiu
+  port: 8443
+  server: 154.40.62.78
+  skip-cert-verify: false
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 24|12|JP_speednode_0104
+  network: ws
+  password: CMLiu
+  port: 47519
+  server: 193.32.149.235
+  skip-cert-verify: false
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: '32|🇯🇵 日本(油管:破解资源君2.0) #6'
